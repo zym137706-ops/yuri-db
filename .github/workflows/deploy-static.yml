@@ -17,14 +17,12 @@
 name: deploy-static
 
 on:
+  # 刻意**不加 paths 过滤**。
+  # 原本只让 data/** web/** 等路径触发，但第一次推送时 deploy-static 一次都没跑
+  # （仓库里其它 5 个 workflow 都触发了，只有它 0 次运行）。对一个小站来说，
+  # 「每次 push 到 main 就重建」的代价远小于「某次数据更新没触发部署」。
   push:
     branches: [main]
-    paths:
-      - "data/**"
-      - "web/**"
-      - "sources.yaml"
-      - "schemas/**"
-      - ".github/workflows/deploy-static.yml"
   workflow_dispatch:
   schedule:
     # 每天 04:10 UTC（= 13:10 JST）兜底重建一次

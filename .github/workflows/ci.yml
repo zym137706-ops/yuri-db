@@ -5,7 +5,11 @@
 #   - Work schema 的 D1/D2/D3 规则
 #   - 数据集能重建且逐条符合 schema
 #   - 仓库内不出现盗版域名
-#   - Web 应用能构建
+#   - Web 应用能验证、能类型检查、能构建
+#
+# 注意：本文件的 web 作业曾经假设项目用 pnpm，但本项目一直用 npm，
+# 且引用了不存在的 scripts/check-data-contract.mjs（真名 assert-data-contract.mjs），
+# 导致该作业从未通过过。现在改为 npm，并直接跑仓库里真实存在的 verify 套件。
 # =============================================================================
 name: ci
 
@@ -21,14 +25,21 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
 
-      - run: pip install --quiet pyyaml jsonschema
+      # requests 是必需的：scripts/test_ndl_parser.py 导入 collectors/ndl.py，
+      # 而 ndl.py 在模块层 import requests。此前漏装会导致该步骤直接
+      # ModuleNotFoundError，而不是测试本身失败。
+      # （urllib3 随 requests 一起装；ssl/email 是标准库；lxml 只有采集器需要，
+      #   本作业不跑采集器。）
+      - run: pip install --quiet pyyaml jsonschema requests
 
       - name: Prisma schema validation
         # 之前从未验证过 prisma/schema.prisma；第一次跑就抓到 Source 缺失反向关联。
@@ -54,34 +65,35 @@ jobs:
       - name: Privacy / piracy denylist
         run: python research/compliance_check.py
 
+      - name: Workflow files reference scripts that exist
+        run: python scripts/validate_workflows.py
+
   web:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: pnpm
-          cache-dependency-path: web/pnpm-lock.yaml
+          cache: npm
+          cache-dependency-path: web/package-lock.json
 
       - name: Install
         working-directory: web
-        run: pnpm install --frozen-lockfile
+        run: npm ci
+
+      # 数据契约 / 导入解析 / 合规政策 / 溯源 / 动画目录
+      # （会先跑 npm run slim 生成客户端投影，因此不会用到过期的生成物）
+      - name: Verify
+        working-directory: web
+        run: npm run verify
 
       - name: Type check
         working-directory: web
-        run: pnpm run typecheck
+        run: npm run typecheck
 
-      - name: Build
+      - name: Build (static export)
         working-directory: web
-        run: pnpm run build
-
-      - name: Data-contract check (fields the UI reads exist in works.json)
-        working-directory: web
-        run: node scripts/check-data-contract.mjs
+        run: npm run build

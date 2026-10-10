@@ -33,8 +33,22 @@ Write-Line ''
 
 # 允许把网址当参数传进来；否则交互输入
 $repo = $args[0]
+
+# 如果没给网址，但 origin 已经配置好了，就直接用它 ——
+# 这样双击后只需按一次回车，不用再粘贴网址。
 if ([string]::IsNullOrWhiteSpace($repo)) {
-    $repo = Read-Host '  请把那个网址粘贴到这里，然后按回车'
+    Push-Location -LiteralPath $PSScriptRoot
+    $existingOrigin = git remote get-url origin 2>$null
+    if ($LASTEXITCODE -ne 0) { $existingOrigin = $null }
+    Pop-Location
+    if (-not [string]::IsNullOrWhiteSpace($existingOrigin)) {
+        Write-Line '    检测到已配置的仓库地址，直接使用：'
+        Write-Line "        $existingOrigin"
+        Write-Line ''
+        $repo = $existingOrigin
+    } else {
+        $repo = Read-Host '  请把那个网址粘贴到这里，然后按回车'
+    }
 }
 $repo = $repo.Trim().Trim('"').Trim("'")
 
@@ -93,7 +107,7 @@ Write-Line '    你的密码不会经过本脚本。'
 Write-Line ''
 Write-Line '    ------------------------------------------------------------'
 
-git push -u origin main
+git -c http.lowSpeedLimit=1000 -c http.lowSpeedTime=60 -c http.postBuffer=524288000 push -u origin main
 $rc = $LASTEXITCODE
 
 Write-Line '    ------------------------------------------------------------'

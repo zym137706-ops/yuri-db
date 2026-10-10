@@ -1,0 +1,227 @@
+// yuri-db — future Postgres path.
+//
+// The Phase 4 MVP does NOT use a database: every page reads ../data/works.json,
+// ../data/dataset_report.json, ../data/change_log.json and ../sources.yaml.
+// This schema exists so the same records can be loaded into Postgres later
+// (`prisma migrate`, `prisma db push`) without changing the JSON contract.
+//
+// Field names mirror schemas/work.schema.json exactly. Enums mirror its `enum`
+// keywords; nullable unions become `?`; unknown values are stored as NULL.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum MediaType {
+  manga
+  light_novel
+  web_novel
+}
+
+enum SerializationStatus {
+  ongoing
+  completed
+  hiatus
+  unknown
+}
+
+enum YuriType {
+  orthodox_yuri
+  light_yuri
+  s_class
+  gl
+  micro_yuri
+  uncertain
+}
+
+enum ClassificationBasis {
+  official_tag
+  editorial
+}
+
+enum AnimeStatus {
+  none
+  announced
+  in_production
+  airing
+  finished
+  movie
+}
+
+enum PlatformKind {
+  magazine
+  web_platform
+  web_novel_site
+  label
+  other
+}
+
+enum AnimeFormat {
+  tv
+  movie
+  ova
+  web
+}
+
+enum OfficialZhCnKind {
+  print
+  digital
+  both
+  none
+  unknown
+}
+
+enum UnofficialZhStatus {
+  unknown
+  manually_flagged
+}
+
+enum RatingRegion {
+  ja
+  zh_tw
+  zh_cn
+}
+
+/// score_scale is an explicit content column: scores from different scales must
+/// never be averaged together (docs/phase1-feasibility-report.md §5.2 P3).
+enum ScoreScale {
+  scale_5
+  scale_10
+  scale_100
+}
+
+enum FieldBasis {
+  official
+  official_tag
+  editorial
+  derived
+}
+
+model Work {
+  id     String @id
+  slug   String @unique
+  titleJa String @map("title_ja")
+
+  titleZhTw String? @map("title_zh_tw")
+  titleZhCn String? @map("title_zh_cn")
+  titleEn   String? @map("title_en")
+
+  mediaType           MediaType           @map("media_type")
+  serializationStatus SerializationStatus @map("serialization_status")
+
+  publisherJa             String?      @map("publisher_ja")
+  publisherZhTw           String?      @map("publisher_zh_tw")
+  publisherZhCn           String?      @map("publisher_zh_cn")
+  magazineOrPlatform      String?      @map("magazine_or_platform")
+  magazineOrPlatformKind  PlatformKind? @map("magazine_or_platform_kind")
+  magazineOrPlatformActive Boolean?    @map("magazine_or_platform_active")
+
+  authors      String[] @default([])
+  illustrators String[] @default([])
+
+  startDate DateTime? @map("start_date") @db.Date
+  endDate   DateTime? @map("end_date") @db.Date
+
+  /// Official sources usually publish only a label ("第12話"), not a total, so
+  /// this is the primary field and chapter_count stays NULL unless truly known.
+  latestChapterLabel String? @map("latest_chapter_label")
+  chapterCount       Int?    @map("chapter_count")
+
+  volumeCountJa   Int? @map("volume_count_ja")
+  volumeCountZhTw Int? @map("volume_count_zh_tw")
+  volumeCountZhCn Int? @map("volume_count_zh_cn")
+
+  genres         String[] @default([])
+  genresOfficial Boolean? @map("genres_official")
+
+  /// [D2] editorial judgement — there is no official data source for it.
+  yuriType             YuriType            @map("yuri_type")
+  classificationBasis  ClassificationBasis @map("classification_basis")
+
+  animeStatus  AnimeStatus  @map("anime_status")
+  animeDetails Json?        @map("anime_details")
+
+  jaVolumes   Json @default("[]") @map("ja_volumes")
+  zhTwVolumes Json @default("[]") @map("zh_tw_volumes")
+  zhCnVolumes Json @default("[]") @map("zh_cn_volumes")
+
+  officialZhCn Json @map("official_zh_cn")
+
+  /// [D1] manual-only, and must never contain or display a link.
+  unofficialZh Json @map("unofficial_zh")
+
+  /// [A] aggregate scores only — the review body column deliberately does not exist.
+  ratings    Rating[]
+  /// [B] review/ranking metadata only — no body.
+  reviewMeta ReviewMeta[]
+
+  /// Per-field provenance, kept as JSONB because the key set evolves per record.
+  fieldSources    Json @default("{}") @map("field_sources")
+  fieldConfidence Json @default("{}") @map("field_confidence")
+
+  sources     WorkSource[]
+  lastChecked DateTime     @map("last_checked")
+  createdAt   DateTime     @default(now()) @map("created_at")
+  updatedAt   DateTime     @updatedAt @map("updated_at")
+
+  @@map("works")
+}
+
+/// [A] 评分层 — score_value + score_scale + count. Never a review body.
+model Rating {
+  id        String       @id @default(cuid())
+  workId    String       @map("work_id")
+  work      Work         @relation(fields: [workId], references: [id], onDelete: Cascade)
+  sourceId  String       @map("source_id")
+  region    RatingRegion
+  scoreValue Float       @map("score_value")
+  scoreScale ScoreScale  @map("score_scale")
+  scoreCount Int?        @map("score_count")
+  /// false ⇒ the front end renders an outbound link only, with no number (P4).
+  displayAllowed Boolean @map("display_allowed")
+  licenseNote    String? @map("license_note")
+  sourceUrl      String  @map("source_url")
+  retrievedAt    DateTime @map("retrieved_at")
+
+  @@index([workId, scoreScale])
+  @@map("ratings")
+}
+
+/// [B] 书评/榜单元数据层 — metadata only.
+model ReviewMeta {
+  id            String   @id @default(cuid())
+  workId        String   @map("work_id")
+  work          Work     @relation(fields: [workId], references: [id], onDelete: Cascade)
+  sourceId      String   @map("source_id")
+  outlet        String
+  reviewer      String?
+  publishedDate String?  @map("published_date")
+  rank          Int?
+  points        Int?
+  sourceUrl     String   @map("source_url")
+  retrievedAt   DateTime @map("retrieved_at")
+
+  @@index([workId])
+  @@map("review_meta")
+}
+
+/// 溯源列表 — each row must carry url + retrieved_at + confidence.
+model WorkSource {
+  id          String   @id @default(cuid())
+  workId      String   @map("work_id")
+  work        Work     @relation(fields: [workId], references: [id], onDelete: Cascade)
+  sourceId    String?  @map("source_id")
+  name        String
+  url         String
+  retrievedAt DateTime @map("retrieved_at")
+  confidence  Float
+  note        String?
+
+  @@index([workId])
+  @@map("work_sources")
+}

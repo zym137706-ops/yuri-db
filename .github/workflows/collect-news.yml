@@ -1,0 +1,85 @@
+# =============================================================================
+# 新闻 / 动画化候选（每 3 小时）
+# =============================================================================
+# 阶段 1 建议频率：动画化新闻 1–6 小时。
+#
+# 范围说明（诚实标注）：
+#   本 job 只跑 RSS 新闻采集器。它提供「feed 健康度 + 候选新闻」，
+#   日文侧实测 340 条里百合相关命中极少（见 data/news_run_stats.json 的
+#   parsed vs matched），因此**不构成动画化状态的覆盖**。
+#
+#   动画化状态（anime_status / anime_details）目前**尚未实现自动采集**：
+#     - しょぼいカレンダー：实测 db.php 的 TitleLookup 必须给 TID，
+#       而 Title=/Limit= 等检索参数返回空；ProgLookup 的 StTime+Range
+#       查询亦返回空。title→TID 的可靠路径未验证 → 未实现。
+#     - AniList GraphQL：端点可达（GET 返回 404 说明需 POST），设计已定
+#       （tag:"Yuri"，非商用，禁止全量镜像），但未实测。
+#   在补齐之前，anime_status 一律为 none/unknown，**不得推测**。
+#
+#   参照 sources.yaml 的 an_shobocal / an_anilist / an_official_site。
+# =============================================================================
+name: collect-news
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-news
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests lxml pyyaml jsonschema python-dateutil
+
+      - name: Collect RSS news
+        run: python collectors/news.py --since-days 7 --delay 2.0
+
+      - name: Collect yuri anime catalogue + status (AniList)
+        # 这是「已宣布動畫化但未播出」的主要侦测手段：新番宣布会在下次运行时
+        # 以 status=announced 出现。AniList 限速 30 req/min，故 3 小时间隔充裕。
+        run: python collectors/anime.py --pages 20 --sleep 3.0
+        continue-on-error: true
+
+      - name: Rebuild datasets
+        run: |
+          python scripts/build_anime_dataset.py
+          python scripts/build_dataset.py
+
+      - name: Change log
+        run: python scripts/make_changelog.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: news-${{ github.run_id }}
+          path: |
+            data/news_items.json
+            data/news_run_stats.json
+            data/anime_catalog.json
+            data/anime.json
+            data/anime_report.json
+            data/anime_status.json
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Commit
+        run: |
+          git config user.name  "yuri-db bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "no changes"; else
+            git commit -m "chore(data): news $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

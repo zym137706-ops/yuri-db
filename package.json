@@ -1,0 +1,17 @@
+{
+  "name": "yuri-db",
+  "version": "1.0.0",
+  "description": "面向百合向 ACG 的**可搜索、可筛选、可持续更新**的连载与出版信息数据库。 覆盖：杂志连载、Web 平台、单行本（日版 / 繁中 / 简中官方授权）、连载状态、 百合类型、动画化、以及**日文 / 繁中 / 简中三地评价**。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "prisma": "^6.19.3"
+  }
+}

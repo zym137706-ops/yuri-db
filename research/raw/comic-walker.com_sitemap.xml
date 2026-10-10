@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://comic-walker.com/sitemap-static.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://comic-walker.com/sitemap-series.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://comic-walker.com/sitemap-ranking.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://comic-walker.com/sitemap-label.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://comic-walker.com/sitemap-free-campaign.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://comic-walker.com/sitemap-genre.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://comic-walker.com/sitemap-tag.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://comic-walker.com/sitemap-topic.xml</loc>
+  </sitemap>
+</sitemapindex>

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /api/
+Disallow: /includes/
+Disallow: /tokuten/
+
+Sitemap: https://www.gentosha.co.jp/sitemap.xml

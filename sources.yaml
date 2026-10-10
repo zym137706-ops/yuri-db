@@ -1,0 +1,3087 @@
+# =============================================================================
+# 日本百合漫画 / 轻小说 连载与出版信息数据库 —— 数据源清单
+# =============================================================================
+# 阶段 1 交付物 · sources.yaml
+# 版本        : 0.1.0-draft
+# 生成日期    : 2026-10-09
+# 时区        : Asia/Hong_Kong
+# 维护者      : 待定（项目 owner）
+#
+# 本文件描述「候选数据源」，不包含任何采集到的作品数据。
+# 每条数据源都标注了：可获取字段、认证要求、更新频率、robots.txt 实测结果、
+# 条款风险、反爬风险、建议采集方式、证据链接、可信度、2026 年现状。
+#
+# -----------------------------------------------------------------------------
+# 可信度与证据等级（confidence / verified_by）
+# -----------------------------------------------------------------------------
+# confidence:
+#   high   = 有官方一手文档或实测响应体作为证据
+#   medium = 有可靠的二手资料或多方一致的说法，但未取得一手证据
+#   low    = 仅来自搜索结果片段或无法访问，需要人工复核
+#
+# verified_by:
+#   lead_direct    = 本项目 Lead 在本次调研中直接访问/实测取得（最强证据）
+#   research_agent = 调研子代理联网查证后报告，附有 evidence_urls
+#   search_only    = 仅来自搜索结果，未打开原文
+#
+# -----------------------------------------------------------------------------
+# 环境事实（**已修正**，2026-10-09 第二轮）
+# -----------------------------------------------------------------------------
+# 【修正说明】本文件初版把多个域名标为「本机不可达」。该结论是错的：
+# 当时主要用 curl 与 node 测连通性，而**本机的 curl(schannel) 与 node TLS 栈是坏的**，
+# 于是把「客户端握手失败」误判成「网络阻断」。改用与采集器一致的
+# **Python requests** 复测后，绝大多数域名其实可达，并且阶段 3 已在本机
+# 实际完成了 東立 / 百合姫 / ガレット / AniList / NDL 的采集。
+#
+# 修正后的真实情况：
+#   ✅ 可达（改用 requests 后）：ndlsearch.ndl.go.jp（慢但成功取回数据）、
+#      app.rakuten.co.jp（401 = 真实 API 鉴权拒绝）、www.googleapis.com
+#      （429 = 真实配额耗尽）、api.calil.jp（200）、isbn.ncl.edu.tw（404 = 无 robots）、
+#      www.books.com.tw（200）、cal.syoboi.jp（200）、graphql.anilist.co（POST 200）、
+#      ga.sbcr.jp、comic-action.com、prtimes.jp 等
+#   ❌ 确实被劫持/不可达：api.syosetu.com（DNS 指向无关 IP，返回非なろう 的 403）、
+#      www.pixiv.net、api.jikan.moe（超时）
+#   ⛔ 站点主动拒绝：natalie.mu（robots.txt 405 + AWS WAF）、
+#      www.alphapolis.co.jp（202 空响应 + WAF）
+#
+# 因此：**不要把单次超时或单一客户端的失败当作站点策略。**
+# 本文件中的 reachable_from_dev_host 已按上述结论标注，但仍以「用生产客户端复现」
+# 为准。云端 CI 仍推荐（定时与稳定），但不再是「本机做不到」的替代。
+#
+# dev_host_reachability: verified_reachable | verified_unreachable | unverified
+#   初版用了坏掉的 curl/node TLS 客户端，导致大量 false 误判（见文件头修正说明）。
+#   本轮只复测了一部分；**未复测一律记 unverified，而不是留一个假阴性**。
+# -----------------------------------------------------------------------------
+# 全局合规红线（所有采集器必须遵守）
+# -----------------------------------------------------------------------------
+# R1. 不访问、不索引、不存储任何盗版站 / 漫画聚合站 / 汉化组发布页的内容与链接。
+# R2. 不绕过付费墙、登录墙、验证码或 AWS WAF 挑战。遇到即跳过并记录。
+# R3. 尊重 robots.txt。UA 必须带可识别标识与联系 URL。
+# R4. 不存储评论正文全文（第三方著作权）。评价只存聚合分数与件数 + 原文链接。
+# R5. 书影（封面图）默认**不镜像**，只存原始 URL 或本地缓存后即时清理；
+#     openBD 条款（本文件 ja_openbd）明确禁止向第三方再配布。
+# R6. 无法确认的字段一律写 "unknown"，不得推测填充。
+# R7. openBD 等按「书籍介绍目的」授权得到的字段，不对外提供批量数据转储。
+# =============================================================================
+
+meta:
+  version: "0.1.0-draft"
+  generated_at: "2026-10-09"
+  timezone: "Asia/Hong_Kong"
+  scope: "phase1_source_survey"
+  robot_policy: "respect_robots_txt"
+  default_user_agent: "YuriDBBot/0.1 (+https://example.org/yuri-db/bot; contact: TODO)"
+  crawl_delay_default_seconds: 2
+  licensing_note: >-
+    本清单只登记「合法公开来源」。任何盗版、汉化发布、在线盗版阅读站点均不在
+    调研与采集范围内，也不得写入本文件。
+
+# -----------------------------------------------------------------------------
+# 采集方式枚举（method 字段取值）
+#   official_api    : 官方 API，首选
+#   bulk_download   : 官方提供的批量文件下载（ZIP/MARC/TSV）
+#   sitemap_crawl   : 依官方 sitemap 枚举 URL 后低频抓取页面
+#   html_crawl      : 低频 HTML 抓取（无 sitemap 时）
+#   rss             : 官方 RSS/Atom
+#   manual_curation : 人工核对录入（无可用自动源时）
+#   do_not_collect  : 明确不建议采集（条款/技术限制）
+# -----------------------------------------------------------------------------
+
+sources:
+
+  # ===========================================================================
+  # A. 日本书目 / ISBN / 书影 元数据
+  # ===========================================================================
+
+  - id: ja_ndl_search_sru_opensearch
+    name: "国立国会図書館サーチ 検索用API（SRU / OpenSearch / OpenURL）"
+    name_ja: "NDLサーチ 外部提供インタフェース"
+    url: "https://ndlsearch.ndl.go.jp/help/api/specifications"
+    category: ja_bibliography
+    source_type: official_api
+    api_endpoint: >-
+      https://ndlsearch.ndl.go.jp/api/sru?operation=searchRetrieve&query=...
+      / https://ndlsearch.ndl.go.jp/api/opensearch?...
+      / https://ndlsearch.ndl.go.jp/api/opensearch_description
+    auth_requirement: none
+    fields_available:
+      - ISBN
+      - title / titleTranscription
+      - creator (著者)
+      - publisher / publicationPlace
+      - date (出版年月)
+      - NDC / NDLC / LCC / DDC / UDC
+      - subject
+      - jpno (全国書誌番号)
+      - ISSN / price / extent
+      - NDLBibID / mediaType / dpid
+    limits: >-
+      SRU maximumRecords 上限 500（默认 200）；OpenSearch cnt 上限 500（默认 200），
+      且 idx+cnt 指定 501 件以后无法取得。禁止多并发；官方不公布并发上限但保留遮断权利。
+    update_frequency: "准实时（2026-09-25〜27 因データ全件入替作业受影响）"
+    robots_txt_finding: "实测 200：Disallow /account /favorite /search/history 等个人化页面，以及 /api 与 /statistics 給通用爬虫。"
+    terms_finding: >-
+      NDL 自建書誌データ（含全国書誌）営利・非営利を問わず無償，需出典表示，
+      加工时另标「加工して作成」。第三方数据提供机构的 metadata 需逐库看条件。
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: official_api
+    evidence_urls:
+      - "https://ndlsearch.ndl.go.jp/help/api/specifications"
+      - "https://ndlsearch.ndl.go.jp/robots.txt"
+      - "https://ndlsearch.ndl.go.jp/api/opensearch_description"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【本地不可达】实测 ndlsearch.ndl.go.jp:443 连接超时，须改用云端 CI 采集。
+      规格书 PDF 附有改版履历（第1.4版 2026-03-31、第1.5版 2026-09-25），证明在持续维护。
+      重要：書影API 已于 2026-03-31 服务終了（见 ja_ndl_thumbnail_terminated）。
+
+  - id: ja_ndl_search_oaipmh
+    name: "NDLサーチ ハーベスト用API（OAI-PMH）"
+    url: "https://ndlsearch.ndl.go.jp/help/api/specifications"
+    category: ja_bibliography
+    source_type: official_api
+    api_endpoint: "https://ndlsearch.ndl.go.jp/api/oaipmh?verb=Identify|ListRecords|GetRecord|..."
+    auth_requirement: none
+    fields_available:
+      - "metadataPrefix=oai_dc / dcndl / dcndl_v3"
+      - "identifier=oai:ndlsearch.ndl.go.jp:[リポジトリ番号]-[アイテム番号]"
+      - "set (dpid / データグループID / Access Rights)"
+      - "from / until (JST)"
+      - "deletedRecord=persistent"
+    limits: >-
+      ListRecords / ListIdentifiers 一次最多 200 件，用 resumptionToken 翻页；
+      from 必填且 from–until 期间不得超过 1 年。
+    update_frequency: "准实时差分（earliestDatestamp=2022-10-01T00:00:00Z）"
+    robots_txt_finding: "同 ndlsearch 域：/api 对通用爬虫 Disallow，但官方 API 走「利用申請」制度，不算冲突。"
+    terms_finding: "同 NDL 書誌データ条件：無償、需出典表示。"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: bulk_download
+    evidence_urls:
+      - "https://ndlsearch.ndl.go.jp/api/oaipmh?verb=Identify"
+      - "https://ndlsearch.ndl.go.jp/help/api/specifications"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【本地不可达】建议作为**全量采集主通道**（走云端 CI）。
+      坑：OAI-PMH 返回的是「同定处理前」的各提供方原始元数据，与 SRU/OpenSearch
+      的「同定后」口径不同，去重时必须意识到这是两套记录。
+
+  - id: ja_ndl_japanmarc_bulk
+    name: "国立国会図書館 全国書誌 / JAPAN/MARC 一括ダウンロード"
+    url: "https://www.ndl.go.jp/en/data/data_service/quickguide"
+    category: ja_bibliography
+    source_type: official_website
+    api_endpoint: "无 API，为文件下载：JAPAN/MARC 週次 ZIP / 全国書誌（電子書籍編）週次 TSV ZIP"
+    auth_requirement: none
+    fields_available:
+      - MARC21 / JAPAN/MARC (ISO 2709)
+      - MARCXML / MARCタグ形式
+      - TSV / JSON / BibTeX / DC-NDL(RDF)
+      - 全国書誌番号 (JPNO)
+      - ISBN / NDC / NDLC
+      - 典拠データ (Web NDL Authorities)
+    update_frequency: "JAPAN/MARC 週次（全件为年4回：3/6/9/12月）；電子書籍編 TSV 每週二更新"
+    robots_txt_finding: "下载页为普通公开页面，未见访问限制说明（本次未单独取 www.ndl.go.jp/robots.txt）。"
+    terms_finding: >-
+      条款为全组最优：NDL 自建書誌・典拠・雑誌記事索引データ「営利・非営利の目的を
+      問わず、どなたでも無償で利用」，只需出典表示。
+    anti_bot_risk: low
+    compliance_risk: low
+    method: bulk_download
+    evidence_urls:
+      - "https://www.ndl.go.jp/en/data/data_service/quickguide"
+      - "https://www.ndl.go.jp/jp/data/data_service/index.html"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      规模：JAPAN/MARC(M/S) 全件约 4.27GB（分3文件）、JAPAN/MARC(A) 约 301MB；
+      全件需通过 NDL 咨询表单申请。注意 TSV/JSON/BibTeX 是簡略数据（会缺字段），
+      完整書誌须用 MARC 系。
+
+  - id: ja_openbd
+    name: "openBD（版元ドットコム × カーリル）書誌・書影API"
+    url: "https://openbd.jp/"
+    category: ja_bibliography
+    source_type: official_api
+    api_endpoint: "https://api.openbd.jp/v1/get?isbn=ISBN[,ISBN...] / /v1/coverage / /v1/schema"
+    auth_requirement: none
+    fields_available:
+      - ISBN
+      - 書名 / サブタイトル
+      - シリーズ・レーベル名
+      - 著者 (Contributor)
+      - 出版社 (Imprint / Publisher)
+      - 発売予定日 (PublishingDate)
+      - 内容紹介 / 目次 (TextContent)
+      - 書影 URL (最大3枚)
+      - 判型実寸 / ページ数
+      - "hanmoto: lanove（ライトノベルフラグ）"
+      - "hanmoto: reviews（書評情報）"
+      - "hanmoto: ndccode / zaiko / datezeppan / jyuhan"
+    update_frequency: "不定（实测 datemodified 反映近期更新）"
+    robots_txt_finding: "https://openbd.jp/robots.txt 返回 404（未设置，无 Disallow 规则）。"
+    terms_finding: >-
+      【重要·已读全文】2017-03-09 制定。①数据「本の販促・紹介目的に限り」可用，
+      个人/团体/企业均可、无偿；②**禁止将取得的信息「第三者に貸与、譲渡、売買」**，
+      即禁止再配布/转售；③**不得任意改変**；④项目方要求删除时必须迅速响应；
+      ⑤缓存时必须尽快反映变更。
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: official_api
+    evidence_urls:
+      - "https://openbd.jp/terms/"
+      - "https://openbd.jp/spec/"
+      - "https://openbd.jp/news/20230725.html"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【本机可访问但偏慢】实测 /v1/get 返回 302→200 有数据；/terms/、/spec/ 已直接读取全文。
+      上游重大变化：2023-06-05 起 JPRO 停止向版元ドットコム配信，非会員社数据停更；
+      2023-08-29 起以 NDL 的 CC-BY 書誌为基础提供「代替書誌情報」，规格不变但
+      収録範囲・内容大幅变化，**書影収録範囲大幅下降**。
+      因此当前 openBD ≈ 版元ドットコム会員社 + NDL 替代書誌，命中率需逐 ISBN 实测。
+      /coverage 返回全量 ISBN 列表，响应体极大（实测超时），须流式处理。
+      【合规】因条款②，本项目**不得**对外提供 openBD 派生字段的批量数据转储。
+
+  - id: ja_jpro
+    name: "JPRO（出版情報登録センター / 日本出版インフラセンター JPO）"
+    url: "https://jpro2.jpo.or.jp/"
+    category: ja_bibliography
+    source_type: official_website
+    auth_requirement: application_review
+    fields_available:
+      - 出版情報（書誌項目）
+      - 近刊情報
+      - 書影（「画像等」）
+      - 発行年月日
+      - 取次搬入情報
+      - 情報解禁日
+    update_frequency: unknown
+    robots_txt_finding: "未实测（不外提供公开检索界面）。"
+    terms_finding: >-
+      《JPRO利用規約改定 20251001》：第4条 提供者以「周知や流通・販売促進」为目的
+      非独占许諾，范围含让第三方閲覧，但**不含再许諾権**；第5条(4)(1)「その他事業者」
+      使用「画像等」在提供者要求时须逐家书面承諾；第5条(4)(2) 不得用于生成式 AI 开发
+      或机器学习等信息分析；取次搬入情報不得让社内外第三者利用或开示。
+    anti_bot_risk: unknown
+    compliance_risk: high
+    method: manual_curation
+    evidence_urls:
+      - "https://jpro2.jpo.or.jp/"
+      - "https://openbd.jp/news/20230725.html"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      日本书影元数据的**真正权利源头**。是 NDL 書影API 终止、openBD 上游断供的
+      共同原因。本项目不抓取；若未来要合法分发书影，须走 JPO 契约。
+
+  - id: ja_ndl_thumbnail_terminated
+    name: "NDLサーチ 書影API（書影画像提供インタフェース）"
+    url: "https://ndlsearch.ndl.go.jp/help/api/specifications"
+    category: ja_bibliography
+    source_type: official_api
+    auth_requirement: none
+    fields_available: []
+    update_frequency: "已终止"
+    robots_txt_finding: "n/a"
+    terms_finding: "2026-04-01 官方公告「外部提供を停止しました」。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: do_not_collect
+    evidence_urls:
+      - "https://ndlsearch.ndl.go.jp/news/20260401_thumbnail"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: discontinued
+    dev_host_reachability: unverified
+    notes: >-
+      **2026-03-31 服务終了**。原因：数据提供机构 JPRO 的利用規約改定。
+      NDL 引导用户向日本出版インフラセンター（JPO）询问。
+      任何依赖 NDL 書影的管线在 2026 年已断。规格书第1.4版改版履历明确写有「7.書影API 削除」。
+
+  - id: ja_rakuten_books_api
+    name: "楽天ブックス書籍検索API（Rakuten Books Book Search API）"
+    url: "https://webservice.rakuten.co.jp/documentation/books-book-search"
+    category: retailer
+    source_type: retailer_api
+    api_endpoint: "https://openapi.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=...&accessKey=..."
+    auth_requirement: free_api_key
+    fields_available:
+      - itemName（書名）
+      - author
+      - publisherName
+      - salesDate
+      - isbn / jan
+      - itemPrice / itemUrl / itemCaption
+      - booksGenreId
+      - seriesName / size（判型）
+      - "reviewAverage / reviewCount ★評価"
+    update_frequency: "楽天ブックス在售商品为准（随上架/改价更新），非书目库式全量"
+    robots_txt_finding: "webservice.rakuten.co.jp/robots.txt = 200，仅 User-agent: * 无 Disallow；openapi.rakuten.co.jp/robots.txt = 404。"
+    terms_finding: >-
+      须为注册楽天会員；有 branding/attribution 展示义务（How to display branding
+      credit and notice）；文档提示短时间内对同一 URL 大量访问会被临时封禁。
+    anti_bot_risk: medium
+    compliance_risk: medium
+    method: official_api
+    evidence_urls:
+      - "https://webservice.rakuten.co.jp/documentation/books-book-search"
+      - "https://webservice.rakuten.co.jp/guide/rule"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【认证已升级】除 App ID 外新增 Access Key，官方标为「Required along with app ID」。
+      实测无凭据请求：新 host 返回 400、旧 host 返回 401。网络大量旧教程已过期。
+      本项目将其定位为「补完 + 日文评分」源，而非主书目源。
+      【本地不可达】app.rakuten.co.jp / openapi.rakuten.co.jp 实测连接超时。
+
+  - id: ja_calil_api
+    name: "カーリル 図書館API（Calil Library API）"
+    url: "https://calil.jp/doc/api.html"
+    category: library
+    source_type: official_api
+    api_endpoint: "https://api.calil.jp/library?appkey=... / https://api.calil.jp/check?appkey=...&isbn=...&systemid=..."
+    auth_requirement: free_api_key
+    fields_available:
+      - 図書館データベース（systemid / libkey / address / geocode / category）
+      - 蔵書検索ステータス（OK / Cache / Running / Error）
+      - libkey 別貸出状況
+      - reserveurl
+      - session / continue（轮询控制）
+    limits: >-
+      /check：每 appkey 每 IP 1,000書籍リクエスト/時，一次 session 最多同时 100 書籍，
+      轮询间隔须 ≥2 秒；/library：每 appkey 每 IP 1,000リクエスト/時。
+    update_frequency: "蔵書/貸出 = 查询时实时；図書館DB = 不定期维护"
+    robots_txt_finding: >-
+      calil.jp/robots.txt = 200：Disallow /library_selector；对 bingbot/claudebot 设
+      Crawl-delay 10，对多個 bot 设 120。api.calil.jp 的 robots.txt 返回 404。
+    terms_finding: >-
+      使用图书馆名或「蔵書あり/貸出可」等状态显示时，**必须**链回カーリル页面
+      （https://calil.jp/book/{ISBN10} 等）。利用にはアプリケーションキーの登録が必要。
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: official_api
+    evidence_urls:
+      - "https://calil.jp/doc/api_ref.html"
+      - "https://calil.jp/robots.txt"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【本地不可达】用于「日本国内图书馆馆藏/可得性」维度，对百合数据库属加分项而非核心。
+      注意 attribution 强制要求。
+
+  - id: ja_google_books_api
+    name: "Google Books API (Books API v1)"
+    url: "https://developers.google.com/books/"
+    category: aggregator
+    source_type: official_api
+    api_endpoint: "https://www.googleapis.com/books/v1/volumes?q=isbn:..."
+    auth_requirement: unknown
+    fields_available:
+      - volumeInfo（title / authors / publisher / publishedDate）
+      - industryIdentifiers（ISBN_10 / ISBN_13）
+      - pageCount / language / categories
+      - imageLinks（thumbnail）
+      - saleInfo / accessInfo
+    update_frequency: unknown
+    robots_txt_finding: "n/a（API）"
+    terms_finding: "ToS 长期有效（Last modified 2012-04-25），受 Google APIs ToS 约束。"
+    anti_bot_risk: medium
+    compliance_risk: medium
+    method: official_api
+    evidence_urls:
+      - "https://developers.google.com/books/terms"
+    confidence: low
+    verified_by: research_agent
+    status_2026: unknown
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【未验证覆盖率】本次所有请求均返回 HTTP 429（共享 IP 匿名配额耗尽），
+      因此「日文书籍覆盖率」记为 unknown，**不做推断**。
+      【本地不可达】www.googleapis.com 实测连接超时。仅作补充校验，不作主源。
+
+  - id: ja_isbn_center
+    name: "日本図書コード管理センター（ISBN センター）"
+    url: "https://isbn.jpo.or.jp/"
+    category: isbn_registry
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - ISBN チェック数字検算
+      - 登録出版者の照会（出版者記号）
+      - ISBN 使用規約
+    update_frequency: "出版者登録の都度"
+    robots_txt_finding: "未实测。"
+    terms_finding: "《ISBN 使用規約》：第6条为登録出版者情報の公開，第7条为使用期限与再使用禁止。"
+    anti_bot_risk: unknown
+    compliance_risk: low
+    method: do_not_collect
+    evidence_urls:
+      - "https://isbn.jpo.or.jp/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      **关键结论**：日本 ISBN 体系**没有**公开的「ISBN→书名/著者」查询 API。
+      该中心只管番号与出版者登记。想要 ISBN→書誌 必须依赖 NDL 全国書誌 / openBD /
+      楽天 / Google Books 等下游来源。
+
+  - id: ja_amazon_creators_api
+    name: "Amazon Product Advertising API 5.0 → Creators API"
+    url: "https://webservices.amazon.com/paapi5/documentation/"
+    category: retailer
+    source_type: retailer_api
+    api_endpoint: "旧: https://webservices.amazon.com/paapi5/... （已废弃）；新: https://creatorsapi.amazon/catalog/v1/..."
+    auth_requirement: application_review
+    fields_available:
+      - GetItems（一次最多10个 item id）
+      - GetBrowseNodes
+      - OffersV2
+      - 多 marketplace 通过 x-marketplace 头切换
+    update_frequency: "实时（Amazon 商品目录）"
+    robots_txt_finding: "n/a（API）"
+    terms_finding: "分列 Operating agreement / Program policies / License agreement，使用前须接受。"
+    anti_bot_risk: high
+    compliance_risk: high
+    method: do_not_collect
+    evidence_urls:
+      - "https://webservices.amazon.com/paapi5/documentation/"
+      - "https://affiliate-program.amazon.com/creatorsapi/docs/en-us/migrating-to-creatorsapi-from-paapi"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: discontinued
+    dev_host_reachability: unverified
+    notes: >-
+      【2026 重大变化】PA-API 5.0 已废弃，继续调用返回 HTTP 403 +
+      AccessDeniedException「Product Advertising API is deprecated. Please migrate to
+      Creators API」。新 API 改为 OAuth 2.0（Credential ID + Credential Secret），
+      旧 AWS 签名凭据完全失效。准入须先成为 Amazon Associate 并按 marketplace 获批。
+      是否有既往销售门槛未在官方页面确认，标 unknown。
+
+  # ===========================================================================
+  # B. 百合向 / 百合邻接 漫画连载杂志与 Web 漫画平台
+  # ===========================================================================
+
+  - id: ja_yurihime
+    name: "コミック百合姫 公式サイト（一迅社）"
+    name_ja: "コミック百合姫"
+    url: "https://www.ichijinsha.co.jp/yurihime/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 雑誌名 / 号数 / 発売日
+      - 連載作品一覧（作品名・著者）
+      - 新刊コミックス（巻数・著者・発売日）
+      - 次号予告
+      - バックナンバー
+      - ニュース（百合姫コミックス刊行告知）
+    update_frequency: "月刊（毎月16日頃発売）＋ニュース随時"
+    robots_txt_finding: "实测 200：仅 Disallow /wp-admin/，Allow /wp-admin/admin-ajax.php；Sitemap: wp-sitemap.xml。作品一覧・検索・ニュース页无 Disallow。"
+    terms_finding: "未见明文禁止抓取条款；页面著作权归一迅社（©ICHIJINSHA）。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://www.ichijinsha.co.jp/yurihime/"
+      - "https://www.ichijinsha.co.jp/robots.txt"
+      - "https://www.ichijinsha.co.jp/wp-sitemap.xml"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【本项目最核心的连载源，已直接实测】2026-10-09 抓取成功：最新号为
+      「コミック百合姫 2026年11月号」（2026-09-16 发售）；作品紹介页列出约 30 部
+      连载作品的作品名与作者（如「ささやくように恋を唄う／竹嶋えく」、
+      「citrus+／サブロウタ」、「私の推しは悪役令嬢。／漫画：青乃下 原作：いのり。」等）；
+      ニュース含「百合姫コミックス9月刊のお知らせ」类单行本刊行告知 → 可同时支撑
+      「连载作品」与「单行本新刊」两条数据流。
+      站点为 WordPress，wp-sitemap.xml 提供 page/category 站点地图。
+      注意：wp-sitemap 索引未包含 post（ニュース）地图，新闻列表需走 HTML 或分类页。
+
+  - id: ja_ichicomi
+    name: "一迅プラス（一迅社 公式Webマンガサイト）"
+    url: "https://ichicomi.com/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - ジャンル別一覧（/genres/yuri）
+      - 作品検索（/search）
+      - シリーズ一覧（/series、/series/babydoll 等）
+      - 更新履歴（/history）
+    update_frequency: "公式説明「ほぼ毎日更新中」"
+    robots_txt_finding: "https://ichicomi.com/robots.txt = 404（未设置）；sitemap.xml = 404。"
+    terms_finding: "未见 API/数据提供记载；作品本文仅可閲覧，不可再配布。"
+    anti_bot_risk: medium
+    compliance_risk: medium
+    method: html_crawl
+    evidence_urls:
+      - "https://ichicomi.com/"
+      - "https://ichicomi.com/genres/yuri"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【域名迁移】旧域名 ichijin-plus.com → ichicomi.com（301）。旧 URL 硬编码会失败。
+      Next.js SPA，需从 __NEXT_DATA__ 类内嵌 JSON 抽取，无 sitemap。
+      站点存在官方「/genres/yuri」百合分类页，是难得的官方百合标签页。
+
+  - id: ja_kadokawa_comiccune
+    name: "コミックキューン レーベルサイト（KADOKAWA）"
+    url: "https://www.kadokawa.co.jp/label/comiccune/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 雑誌名 / 発売日（毎月27日）
+      - 新刊ラインナップ
+      - 連載作品 / 試し読み
+      - 号数別商品ページ（/product/<code>/）
+    update_frequency: "月刊（毎月27日発売）"
+    robots_txt_finding: "kadokawa.co.jp/robots.txt = 200：一般 UA 无 Disallow；bingbot Crawl-delay 30；AhrefsBot/SemrushBot/MJ12bot/DotBot/PetalBot/MauiBot 等 Disallow。"
+    terms_finding: "无 API 提供；二次利用须依 KADOKAWA 利用規約。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: html_crawl
+    evidence_urls:
+      - "https://www.kadokawa.co.jp/label/comiccune/"
+      - "https://www.kadokawa.co.jp/robots.txt"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【纠正常见误解】comiccune.jp 现以 www.kadokawa.co.jp/label/comiccune/ 为 canonical，
+      对其请求 robots.txt 会返回 HTML 标签页（本机实测 comiccune.jp 301 后超时）。
+      **未发现「Web 移行导致休刊」的证据**；至少到 2026年11月号仍作为纸+电子月刊存在。
+      遵循 Crawl-delay，1 req/s 以下、每日 1 次。
+
+  - id: ja_houbunsha
+    name: "芳文社 公式サイト（書誌・レーベル索引）"
+    url: "https://houbunsha.co.jp/"
+    category: ja_bibliography
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 今週の発刊情報（雑誌・コミックス、発売日）
+      - 新刊マガジン / 新刊コミックス一覧
+      - 作品名・著者名・レーベル別検索
+      - ニュース
+    update_frequency: "週次（毎週の発刊情報）＋ニュース随時"
+    robots_txt_finding: "houbunsha.co.jp/robots.txt = 200，内容仅「User-Agent: 360Spider / Disallow: /」→ 对一般 UA 无限制。www.houbunsha.co.jp 301 到 houbunsha.co.jp。"
+    terms_finding: "有 /copyright.html 图像使用与著作权说明页；书影/本文转载条件须个别确认。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: html_crawl
+    evidence_urls:
+      - "https://houbunsha.co.jp/robots.txt"
+      - "https://houbunsha.co.jp/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【实现陷阱·高优先级】本机实测 robots.txt 可访问；但**站点字符编码为 Shift_JIS**，
+      以 UTF-8 解析会乱码，采集器必须显式指定编码。
+      搜索 CGI 参数使用 EUC-JP/Shift_JIS 百分号编码。
+
+  - id: ja_kirara_web
+    name: "まんがタイムきららWeb（芳文社 きらら系列 公式）"
+    url: "https://www.dokidokivisual.com/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 誌名 / 号数 / 発売日
+      - 最新号 / バックナンバー
+      - コミックス情報（巻数・発売日・レーベル）
+      - ニュース / メディア展開
+    update_frequency: "各誌月次（きらら毎月9日、MAX 19日、フォワード 24日、キャラット 28日）"
+    robots_txt_finding: "dokidokivisual.com/robots.txt = 200：仅 Disallow /wp-admin/；Sitemap: /sitemap.xml、/sitemap.html。"
+    terms_finding: "有 /privacy-policy/、/copyright/ 页；本文不可再配布。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://www.dokidokivisual.com/robots.txt"
+      - "https://www.dokidokivisual.com/magazine/"
+      - "https://www.dokidokivisual.com/sitemap.xml"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      2026-10 时点现行きらら系列为 4 誌：まんがタイムきらら、きららMAX、
+      きららフォワード、きららキャラット。
+      【已废刊】**きららミラク** 已終刊：NDL 書誌显示 2011-2017、
+      6巻12号=70号（2017年12月号）、以後休刊、刊行終了（不是 2015 年）。
+      サイトマップ含 cpt_comics-sitemap.xml（コミックス単位 URL）。
+
+  - id: ja_comic_fuz
+    name: "COMIC FUZ（芳文社 公式Webマンガサービス）"
+    url: "https://comic-fuz.com/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available: []
+    update_frequency: unknown
+    robots_txt_finding: "comic-fuz.com/robots.txt = 404；sitemap.xml / sitemap_index.xml = 404。"
+    terms_finding: "未特定利用規約 URL。"
+    anti_bot_risk: unknown
+    compliance_risk: medium
+    method: do_not_collect
+    evidence_urls:
+      - "https://comic-fuz.com/robots.txt"
+      - "https://houbunsha.co.jp/"
+    confidence: low
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【本机不可达】SPA，无 robots、无 sitemap、无公开 API，HTML 仅返回 SPA 外壳。
+      作品目录**未能验证**，故标 unknown，不写入作品数据。
+      建议先走芳文社门户/きららWeb 交叉确认，或向芳文社咨询。
+
+  - id: ja_comic_trail
+    name: "コミックトレイル（芳文社 Webマンガサイト）"
+    url: "https://comic-trail.com/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available: []
+    update_frequency: unknown
+    robots_txt_finding: "comic-trail.com/robots.txt = 404（未设置）。"
+    terms_finding: "未验证。"
+    anti_bot_risk: unknown
+    compliance_risk: medium
+    method: do_not_collect
+    evidence_urls:
+      - "https://houbunsha.co.jp/"
+    confidence: low
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: "对百合主线贡献有限，仅作芳文社Web网罗记录。内容与字段均未验证。"
+
+  - id: ja_web_ace_youngaceup
+    name: "webエース ヤングエースUP（KADOKAWA）"
+    url: "https://web-ace.jp/youngaceup/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 作品一覧
+      - 新連載
+      - 最新コミックス（巻数・発売日）
+      - カドコミ更新情報（話数・タグ）
+      - お知らせ
+    update_frequency: "平日更新（实测 2026-10-09 / 10-08 / 10-07 均有更新情报）"
+    robots_txt_finding: "web-ace.jp/robots.txt = 200（48 bytes）：仅 User-agent: AmazonAdBot / Crawl-Delay: 2 / Disallow: → 对一般 UA 无禁止。"
+    terms_finding: "利用規約 https://web-ace.jp/terms.html 明示。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://web-ace.jp/robots.txt"
+      - "https://web-ace.jp/sitemap.xml"
+      - "https://web-ace.jp/youngaceup/"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【本机可直接访问，且 sitemap 极大】实测 web-ace.jp/sitemap.xml = 200、
+      1,624,792 bytes、**13,030 条 <loc>** → 是 KADOKAWA Web 漫画的大型可枚举入口。
+      web-ace.jp 统一承载ヤングエースUP／少年エースplus／TYPE-MOONコミックエース／
+      コミックNewtype／ガンダムエース／ヤングエース／少年エース／コンプエース／コンプティーク。
+      页面提供「カドコミ更新情報」含日付别話数（第12話、第9話-3 等）与标签
+      → 是「连载话数」字段的高质量来源。
+      作品详情链接到 comic-walker.com/detail/KC_xxxxxx_S，须与カドコミ ID 对齐。
+
+  - id: ja_comic_newtype
+    name: "コミックNewtype（KADOKAWA / webエース）"
+    url: "https://web-ace.jp/comicnewtype/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 作品一覧（/lineup/）
+      - コミックス
+      - お知らせ
+    update_frequency: "不定期（連載開始・移籍時）"
+    robots_txt_finding: "web-ace.jp 共通 robots（Disallow 指定なし）。"
+    terms_finding: "依 web-ace.jp/terms.html。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://web-ace.jp/comicnewtype/lineup/"
+      - "https://comic-walker.com/sitemap-label.xml"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      正規 URL 为 web-ace.jp/comicnewtype/；旧域名 comic.webnewtype.com 已失效。
+      作品一覧带分页（/lineup/page/2/ 等）。
+
+  - id: ja_kadocomi
+    name: "カドコミ（comic-walker.com，旧コミックウォーカー）"
+    name_ja: "カドコミ"
+    url: "https://comic-walker.com/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 作品（series）単位ページ
+      - レーベル別 ranking/serialization/news/one-shot/release
+      - ジャンル別一覧（21件）
+      - タグ別一覧（218件）
+      - ランキング / 特集
+      - 話数・更新日（__NEXT_DATA__ 内嵌 JSON）
+    update_frequency: "毎日〜週次（sitemap-series.xml 的 lastmod 以日为单位更新）"
+    robots_txt_finding: >-
+      实测 200：User-agent: * → Allow: /、Disallow: /?、Disallow: /api/、Disallow: /auth/；
+      Sitemap: sitemap.xml。作品一覧・検索・詳細页无 Disallow。
+    terms_finding: "robots 内以日文注释明示爬取方针；ABJ マーク（正規版配信サービス）掲載。数据再配布许诺须另行确认。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://comic-walker.com/robots.txt"
+      - "https://comic-walker.com/sitemap-series.xml"
+      - "https://comic-walker.com/sitemap-label.xml"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【本项目最结构化的商业源，已实测】sitemap-series.xml = 1,018,984 bytes、
+      **8,151 条 series URL**（形如 /detail/KC_000232_S）并带 lastmod；
+      另有 sitemap-label.xml（aily/alive-plus/aohane/aokishi/apanta/asuka/bar/
+      comicnewtype/youngaceup 等）、sitemap-genre.xml、sitemap-tag.xml、
+      sitemap-ranking.xml、sitemap-topic.xml。
+      详情页为 Next.js，元数据在 __NEXT_DATA__（无 JSON-LD）。
+      ジャンル/タグ是 UUID，需首次构建 slug↔UUID 对照表。
+      【务必】robots 禁止 /? → 不要用带查询串的 URL 取列表；且不要打 /api/。
+
+  - id: ja_niconico_manga
+    name: "ニコニコ漫画（旧ニコニコ静画 / manga.nicovideo.jp）"
+    url: "https://manga.nicovideo.jp/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: unknown
+    fields_available:
+      - 作品・話数・更新情報（未検証）
+      - 公式チャンネル（例 /manga/official/kirara = きららベース）
+    update_frequency: unknown
+    robots_txt_finding: "manga.nicovideo.jp/robots.txt = 200 但 0 bytes（无 Disallow）；www.nicovideo.jp/robots.txt 禁 /api/ 并 Disallow GPTBot；旧 seiga.nicovideo.jp = 403。"
+    terms_finding: "未验证（推定依ニコニコ共通規約）。"
+    anti_bot_risk: medium
+    compliance_risk: medium
+    method: do_not_collect
+    evidence_urls:
+      - "https://manga.nicovideo.jp/robots.txt"
+      - "https://www.nicovideo.jp/robots.txt"
+    confidence: low
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【本机不可达】SPA，无 RSS/站点地图/公开 API；HTML 无法抽出作品目录。
+      旧域名 seiga.nicovideo.jp 已不能使用。
+      公开 API 未发现；api.search.nicovideo.jp 快照搜索 API 返回 403（是否需 key 未确认）。
+      在取得明确许可前不采集。
+
+  - id: ja_galette
+    name: "ガレット（自主制作百合コミック誌）公式WEBサイト"
+    url: "https://galetteweb.com/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 号数・発行日・判型・ページ数
+      - 掲載作品と**話数**（作品名#号数形式）
+      - 価格（紙版／電子版）
+      - 電子配信先（BOOTH / Fantia / BookLive! / kobo / BOOK☆WALKER / シーモア）
+      - RSS（/feed/）
+    update_frequency: "不定期刊（No.36 = 2025/11、No.37 = 2026/2）"
+    robots_txt_finding: "实测 200：仅 Disallow /wp-admin/；Sitemap: wp-sitemap.xml、sitemap.xml、sitemap.html。"
+    terms_finding: "未取得转载条款；页面标注 © GALETTE WORKS。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: rss
+    evidence_urls:
+      - "https://galetteweb.com/archives/3190"
+      - "https://galetteweb.com/feed/"
+      - "https://galetteweb.com/robots.txt"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【已实测，最易采集的百合专门志】官方自述为「自主制作百合マンガ誌」，
+      発行主体为 GALETTE WORKS（**自主制作，非大型商业出版社**，数据建模时
+      publisher 不要误填为大社）。
+      实测 No.37：2026年2月22日发行、B5判/190ページ、10周年記念号；
+      掲載作品带话数（例「乙女の神殿#5」「恋にしたくないな#4」），
+      新連載「悪役令嬢が転生したら百合作家になってました／袴田めら」。
+      RSS 的 sy:updatePeriod=hourly，可直接做增量。
+      【注意】Kindle 先行配信自 No.32 起中止。
+
+  - id: ja_yurinavi
+    name: "百合ナビ（yurinavi.com）"
+    url: "https://yurinavi.com/"
+    category: aggregator
+    source_type: aggregator
+    auth_requirement: none
+    fields_available:
+      - 百合コラム
+      - 作品情報（syoseki-jyouhou-*）
+      - 百合漫画/百合小説/百合动画 总览（alllist/yuricomic、yuri-novel、yuri-anime）
+      - インタビュー
+      - プレスリリース
+    update_frequency: "随時（WordPress）"
+    robots_txt_finding: "实测 200：仅 Disallow /wp-admin/，Allow /wp-admin/admin-ajax.php；Sitemap: wp-sitemap.xml。"
+    terms_finding: "未取得具体转载条款。"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://yurinavi.com/robots.txt"
+      - "https://yurinavi.com/wp-sitemap-taxonomies-category-1.xml"
+    confidence: medium
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【可信度定位：民间编辑型媒体，非官方】本机实测 robots 宽松。
+      分类站点地图中**没有** review/感想 类目 → 它**不是**评价源，
+      应定位为「发现线索（discovery）」层：用来发现新作/动画化/新刊，
+      再回到官方源核对。**任何字段都不得只以本站为唯一来源**，
+      confidence 上限应低于官方源。
+
+  - id: ja_comic_natalie
+    name: "コミックナタリー（株式会社ナターシャ）"
+    url: "https://natalie.mu/comic"
+    category: anime_news
+    source_type: news_media
+    auth_requirement: none
+    fields_available:
+      - 漫画/动画新闻（连载开始、动画化发表、新刊）
+      - 作品・作者标签页
+    update_frequency: "每日多次"
+    robots_txt_finding: "实测：https://natalie.mu/robots.txt 返回 **HTTP 405**；/comic/news/feed 返回 AWS WAF「Human Verification」挑战页。"
+    terms_finding: "未取得（站点被 WAF 阻挡）。"
+    anti_bot_risk: high
+    compliance_risk: high
+    method: do_not_collect
+    evidence_urls:
+      - "https://natalie.mu/robots.txt"
+      - "https://natalie.mu/comic/news/feed"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_unreachable
+    notes: >-
+      【已实测：自动化不可行】robots.txt 本身返回 405，RSS 端点返回 AWS WAF 挑战页。
+      **不得绕过 WAF**（违反本项目 R2）。定位为「人工参考源」：
+      人工阅读后手工登记新闻事件，并在 sources 里记录原文 URL 与检索时间。
+      替代自动源：官方动画官网、出版社官网新刊页。
+
+  - id: ja_ganma
+    name: "GANMA!（ガンマ）Webマンガ・ウェブトゥーン平台"
+    url: "https://ganma.jp/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: unknown
+    fields_available:
+      - 作品一覧（SPA）
+      - 公式サイトマップ（/api/2.0/sitemap.xml）
+    update_frequency: unknown
+    robots_txt_finding: "ganma.jp/robots.txt = 200：Disallow /web/account/、/web/signin、/web/signup、/web/bookshelf、/web/pwreset、/web/error 等账号类路径；其余允许；Sitemap: /api/2.0/sitemap.xml。"
+    terms_finding: "未验证。"
+    anti_bot_risk: medium
+    compliance_risk: medium
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://ganma.jp/robots.txt"
+      - "https://ganma.jp/web/qa"
+    confidence: low
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【运营主体未确认，标 unknown】本站 title 为「GANMA!(ガンマ)｜話題のマンガ・
+      ウェブトゥーンが無料で読める！」。本机可直接访问，robots 宽松且给出
+      API 路径下的 sitemap。因运营方与百合覆盖度均未确认，列为低优先级候选。
+
+  # ===========================================================================
+  # D. 繁体中文（台湾）版出版信息
+  # ===========================================================================
+
+  - id: tw_tongli
+    name: "東立出版社 Tong Li（繁中书目）"
+    url: "https://www.tongli.com.tw/"
+    category: zh_tw_edition
+    source_type: official_website
+    api_endpoint: "BooksDetail.aspx?BD={id} / ThemeGL.aspx?page=N&s=1 / BooksLst_Srh.aspx / NovelDetail.aspx"
+    auth_requirement: none
+    fields_available:
+      - "**原文書名**（对回日文原作的键）"
+      - "**集數**（第N集）"
+      - "**譯者**"
+      - "出版日期"
+      - ISBN
+      - 作者 / 原作
+      - 系列別 / 圖書分級
+      - 售價 / 內容簡介
+    update_frequency: "每日（預定出書、新書上架、新聞頁）"
+    robots_txt_finding: "实测 200：User-agent * → Allow: /，无任何 Disallow；Sitemap: tongli.com.tw/sitemap.xml（含 sitemap-pages.xml 与 SitemapBooks.aspx）。"
+    terms_finding: "未见限制自动撷取的明文条款；全站放行且有 sitemap。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://www.tongli.com.tw/SitemapBooks.aspx"
+      - "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+      - "https://www.tongli.com.tw/BooksDetail.aspx?BD=AF0149006A"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【繁中侧最佳书目源，已实测】SitemapBooks.aspx = 10,000 条
+      BooksDetail.aspx?BD=... URL（实测 1,942,100 bytes）。
+      单页字段实测完整：原文書名（例「魔入りました!入間くん if Episode of 魔フィア」）、
+      集數（第6集）、譯者（杜信彰）、出版日期（2026/10/7）、ISBN（978-626-02-8055-0）、
+      系列別、圖書分級、售價、內容簡介、同系列其他卷（套書資料）。
+      **導覽含「百合姬專區 ThemeGL」**、紫界（BL）、唯美專區、預定出書、授權書單。
+      【硬限制】SitemapBooks 固定 10,000 条，`?page=2` 与 `?p=2` 返回**完全相同**的
+      1,942,100 bytes → 分页失效，覆盖不完整，须用分类专区补齐。
+
+  - id: tw_kadokawa
+    name: "台灣角川 Kadokawa Taiwan 官方商店"
+    url: "https://www.kadokawa.com.tw/"
+    category: zh_tw_edition
+    source_type: official_website
+    api_endpoint: "无（/products/{handle}.json 返回 HTML，非 JSON）"
+    auth_requirement: none
+    fields_available:
+      - 書名
+      - ISBN（书籍商品 handle 即 ISBN-13）
+      - 定價 / 封面圖
+      - 書系分類
+      - 百合館專頁
+    update_frequency: "持续上架；sitemap lastmod 为抓取当日"
+    robots_txt_finding: "实测 200（SHOPLINE 制式）：允许一般抓取，Disallow /api/、/themes/、/orders、/users/、/products*?*query=*；MJ12bot 与 HubSpot 全站禁止；提供 sitemap.xml。Crawl-delay: 5。"
+    terms_finding: unknown（未查到明文服务条款页）。
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://www.kadokawa.com.tw/sitemap.xml?locale=zh-hant"
+      - "https://www.kadokawa.com.tw/zh-hant/pages/girlslove"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【纠正常见误解】实测为 **SHOPLINE**（cdn.shoplineapp.com），**不是 Shopify**；
+      `/products/{handle}.json` 返回 HTML 商品页，无商品 JSON。
+      sitemap 实测 **15,334 条**，其中 /products/ **14,246**、blog 539、categories 413、pages 62。
+      书籍商品 handle 多为 ISBN-13（如 9786264356503），周边为 13 码 EAN。
+      **`/zh-hant/pages/girlslove` = 「百合館」专页**（约 197 处 products 引用）。
+      【抽验结论】4 个商品页中 譯者=0、出版日期=0、集數=0 → **不宜作书目主源**，
+      适合「百合館选书发现 + 补 ISBN」。
+
+  - id: tw_chingwin
+    name: "青文出版社 Ching Win"
+    url: "https://www.ching-win.com.tw/"
+    category: zh_tw_edition
+    source_type: official_website
+    api_endpoint: "product-detail/{id}；/products/?First={id}；/products/?keyword="
+    auth_requirement: none
+    fields_available:
+      - ISBN
+      - 出版日期
+      - 譯者
+      - 集數（第NN集 / 全系列 NN 集）
+      - 作者 / 繪者
+      - 定價 / 開本 / 頁數 / 級別 / 系列別
+    update_frequency: "随新书上架；首页含最新商品清单"
+    robots_txt_finding: "实测 200：Googlebot 与 Googlebot-image 允许全站，User-agent * → Allow: /。**五家出版社中最宽松**，无任何 Disallow，亦未宣告 sitemap。"
+    terms_finding: unknown（未查到明文禁止自动撷取条款）。
+    anti_bot_risk: low
+    compliance_risk: low
+    method: html_crawl
+    evidence_urls:
+      - "https://www.ching-win.com.tw/robots.txt"
+      - "https://www.ching-win.com.tw/product-detail/10288701"
+      - "https://www.ching-win.com.tw/products/chingwin/books/comic/"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      商品页字段实测完整：譯者（六六）、集數「第01集(全系列 01 集)」并链接
+      /products/?First=10288701 做同系列汇总、出版日期（2026-09-16）、
+      ISBN（9786260300173）、頁數、定價 NT$140。
+      分类树公开可枚举：comic/{bl,girl,boy,EROS,knowledge,youth,Taiwan} 与
+      novel/{blnovel,cwnovel,elitenovel,lilithnovel,orginnovel,...}。
+      **有 BL 专区但无独立 GL 专区** → 百合须靠 NCL ISBN 以出版者「青文」补全。
+      关键字 /products/?keyword= 端点存在，但以「百合」实测未回传明显百合清单，行为未确认。
+
+  - id: tw_egmanga
+    name: "長鴻出版社 EGMANGA"
+    url: "https://www.egmanga.com.tw/"
+    category: zh_tw_edition
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 書名（含集數）
+      - ISBN / 商品條碼
+      - 出版日期
+      - 定價 / 作者 / 規格
+    update_frequency: "近乎每日（sitemap lastmod 2026-10-08，changefreq weekly）"
+    robots_txt_finding: "实测 200：User-Agent * 且 **Content-Signal: ai-train=no, search=yes, ai-input=yes**；Disallow /admin/、/user/sign_in、/cart、/account；宣告 Sitemap。"
+    terms_finding: >-
+      Content-Signal 明确表达「不得用于 AI 训练，但允许搜索索引与作为 AI 输入」。
+      → 本项目可索引与展示，**不得将内容用于模型训练**。
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://www.egmanga.com.tw/robots.txt"
+      - "https://www.egmanga.com.tw/sitemap.xml"
+      - "https://www.egmanga.com.tw/products/cl0371"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      CYBERBIZ 平台。sitemap 单一 urlset 共 4,200 条（products 3,968、blogs 107、pages 56…）。
+      商品页 ISBN（9789865393984）、商品條碼（4712805826353）、出版日期（2008/08/20）
+      藏于描述 HTML 内。**无譯者欄、無原文書名欄、無獨立集數欄** → 集數须从书名括號解析
+      （如「王家の紋章 (44)」）；书名含日文原名，利于对回日文原作。
+
+  - id: tw_spp
+    name: "尖端出版 Sharp Point 網路書店"
+    url: "https://www.spp.com.tw/"
+    category: zh_tw_edition
+    source_type: official_website
+    api_endpoint: "/Search/Index?q={keyword}（实测 200 可用）；商品页 /SalePage/Index/{id}"
+    auth_requirement: none
+    fields_available:
+      - 書名（检索）
+      - SalePage 商品页（字段未验证）
+    update_frequency: unknown
+    robots_txt_finding: "**未能取得**（本次 requests 未取回内容，无法确认规则）。"
+    terms_finding: unknown（未查证服务条款页）。
+    anti_bot_risk: low
+    compliance_risk: unknown
+    method: do_not_collect
+    evidence_urls:
+      - "https://www.spp.com.tw/"
+      - "https://www.spp.com.tw/Search/Index?q=%E7%99%BE%E5%90%88"
+    confidence: low
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified  # 初版测为超时，但子代理用别的客户端成功取得 200
+    notes: >-
+      实测首页 200（166,786 bytes，标题「尖端網路書店」），/Search/Index?q=百合 命中 4 处。
+      【重要更正】「spp.com.tw 连不上」在本次环境**不成立**（可访问但慢）。
+      商品详页 /SalePage/Index/{id} 的 ISBN/譯者/出版日期**尚未验证**，
+      /Book/Search 与 /sale/index 返回 404。
+      → 先补验 robots 与商品页字段，再决定是否纳入管线。
+
+  - id: tw_tohan
+    name: "台灣東販 Tohan"
+    url: "https://www.tohan.com.tw/"
+    category: zh_tw_edition
+    source_type: official_website
+    api_endpoint: "product.php?act=list&cid={cid}&page={n}（公开）；product.php?act=view&...（**需登入**）"
+    auth_requirement: "分类列页免登录；**商品详页需会员登入**"
+    fields_available:
+      - 分類列頁（書名）
+      - 商品詳頁（需登入，字段未知）
+    update_frequency: unknown
+    robots_txt_finding: "**无 robots.txt**：/robots.txt 实测 404 并附 HTML 错误页（页面本身含 meta robots noindex,noarchive,nofollow）。"
+    terms_finding: unknown；商品详页以会员登入为闸门，暗示存取限制。
+    anti_bot_risk: low
+    compliance_risk: low
+    method: do_not_collect
+    evidence_urls:
+      - "https://www.tohan.com.tw/"
+      - "https://www.tohan.com.tw/product.php?cid=2"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      分类列页公开（cid=2 有 7 页）；但商品详页仅回 233 bytes 的 JS 转址
+      `alert('您必須先登入會員才能執行這個動作')`。
+      **不得绕过会员登入**（违反 R2）→ 书目细节改用 NCL ISBN 以出版者检索补齐。
+
+  - id: tw_ncl_isbn
+    name: "國家圖書館 ISBN／CIP 書目資料庫（國際標準編碼申辦整合服務平臺）"
+    url: "https://isbn.ncl.edu.tw/NEW_ISBNNet/index.php"
+    category: zh_tw_edition
+    source_type: database
+    api_endpoint: "POST https://isbn.ncl.edu.tw/NEW_ISBNNet/H30_SearchBooks.php?Pact=DisplayAll4Simple"
+    auth_requirement: "查询免登入但需 cookie session + csrftoken；**批次下载需帐号密码**"
+    fields_available:
+      - 書名
+      - 作者（**含譯者，併入作者欄**）
+      - 出版者
+      - 確認／預計出版年月
+      - ISBN
+      - 叢書名 / 分類號
+      - 適讀對象 / 分級註記 / 裝訂方式
+    update_frequency: "CIP 随申请即时；另有每日预告书讯"
+    robots_txt_finding: "**无 robots.txt**：isbn.ncl.edu.tw/robots.txt 实测 404。"
+    terms_finding: unknown（未查证条款页；为政府公开书目服务）。
+    anti_bot_risk: low
+    compliance_risk: low
+    method: official_api
+    evidence_urls:
+      - "https://isbn.ncl.edu.tw/NEW_ISBNNet/index.php"
+      - "https://isbn.ncl.edu.tw/NEW_ISBNNet/I20_MarcDataForDL.php?Ptarget=34&Pact=ViewContent"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【繁中最权威的书目源】实测以 ISBN 9786260280550 POST 查得：書名
+      「入間同學入魔了! if episode of魔手黨」、作者「hiro者作; 杜信彰譯」、
+      出版者「東立」、日期 115/07、適讀對象「青少年」、分級「普遍級」。
+      可查字段：書名／作者／出版者／主題詞／叢書名／分類號／ISBN／確認出版年月／
+      預計出版年月；并有聚类 facet（出版者、出版年月）可辅助按出版社枚举。
+      **实现注意**：须先 GET index.php 取 csrftoken，再 POST；
+      GET ?Pact=Search&Pval= 只回查询表单与全库笔数，不可用。務必限速。
+
+  - id: tw_ncl_bulk
+    name: "國家圖書館「書目下載」（新書書目 PDF ／ 批次 MARC21／CSV）"
+    url: "https://isbn.ncl.edu.tw/NEW_ISBNNet/I20_MarcDataForDL.php?Ptarget=34&Pact=ViewContent"
+    category: zh_tw_edition
+    source_type: database
+    auth_requirement: "批次下载需帐号密码；**每月新書書目 PDF 公开免登入**"
+    fields_available:
+      - MARC21 全量書目
+      - CSV / 詳細格式
+      - ISBN-13/ISBN-10
+      - UTF8/BIG5/CCCII 編碼
+      - 政府/非政府分流
+    update_frequency: "每月（含上／下半月）＋每日预告书讯"
+    robots_txt_finding: "同 isbn.ncl.edu.tw：robots.txt 404。批次页以帐密登入作为存取控管。"
+    terms_finding: unknown（政府出版品与国家书目通常可再利用，仍建议先确认授权）。
+    anti_bot_risk: low
+    compliance_risk: low
+    method: bulk_download
+    evidence_urls:
+      - "https://isbn.ncl.edu.tw/NEW_ISBNNet/main_ProcessMenuItems.php?Ptarget=218&Pact=ViewContent&Pval=218&Pfld=Ffile"
+      - "https://isbn.ncl.edu.tw/NEW_ISBNNet/I20_MarcDataForDL.php?Ptarget=34&Pact=ViewContent"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      「新書書目」为公开 PDF，自 2017-12 起逐月，链接形如
+      /FCKEDITOR_UploadFiles/{timestamp}.pdf，**无需登入** → 可用于月度增量。
+      「批次下载」提供每月 MARC21／詳細格式／CSV，分 UTF8-BIG5-CCCII 与
+      ISBN-13/ISBN-10、政府／非政府；实测 115 年 8 月非政府 4,560 笔，
+      但须登入。**这是判断繁中出版进度最权威、且能覆盖未上市新卷的来源。**
+
+  - id: tw_cite
+    name: "城邦讀書花園 cite.com.tw（出版社书系聚合）"
+    url: "https://www.cite.com.tw/"
+    category: zh_tw_edition
+    source_type: aggregator
+    api_endpoint: "/publisher/series/{id}"
+    auth_requirement: none
+    fields_available:
+      - 出版社書系清單
+      - 書名 / 作者 / 出版日
+    update_frequency: "随新书上架（未量化）"
+    robots_txt_finding: "unknown（本次未取得 robots.txt 内容）。"
+    terms_finding: unknown。
+    anti_bot_risk: low
+    compliance_risk: unknown
+    method: html_crawl
+    evidence_urls:
+      - "https://www.cite.com.tw/publisher/series/2685"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      /publisher/series/2685 为「台灣角川」书系页，列出 Kadokawa Comics Girl Series、
+      Girl Series DX／Jr.、**BLOOM Series Comics**、Kadokawa Fantastic Novels DX 等书系。
+      实测该页 ISBN=0、譯者=0、集數=0 → 仅能作书系盘点与出版日线索。
+      对百合有用的书系标签：Girl Series DX／Jr.、Kadokawa Comics Girl Series、BLOOM Series Comics。
+
+  - id: tw_retailers_blocked
+    name: "博客來 / 誠品線上 / 讀冊生活 / Readmoo（零售侧）"
+    url: "https://www.books.com.tw/"
+    category: retailer
+    source_type: retailer
+    auth_requirement: none
+    fields_available:
+      - "博客來：403 不可取得"
+      - "誠品：403 不可取得"
+      - "讀冊：書名/作者/出版社/二手庫存（robots 允许商品页）"
+      - "Readmoo：書名/作者/出版社/電子版售價/EPUB 規格"
+    update_frequency: "持续更新"
+    robots_txt_finding: >-
+      books.com.tw / robots.txt 实测 **403**（连商品页在有/无浏览器 UA 下皆 403）；
+      readmoo.com/robots.txt 返回 200 但内容是 1.19MB 的**站点首页 HTML**（等于未提供）；
+      taaze.tw/robots.txt = 200（1,419 bytes，禁 /single_getProdComments.html 等）。
+    terms_finding: "博客來：《會員服務條款》第十一條——网站内容不得逕自使用、重製、公開傳輸；引用或轉載须**事前書面同意**。"
+    anti_bot_risk: high
+    compliance_risk: medium
+    method: manual_curation
+    evidence_urls:
+      - "https://www.books.com.tw/robots.txt"
+      - "https://www.taaze.tw/robots.txt"
+      - "https://www.kingstone.com.tw/robots.txt"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      **重要更正**：子代理实测 kingstone、taaze、readmoo 均可连线 200，
+      与「连不上」的假设不符；只有 books.com.tw 与 eslite.com 持续 403（WAF 封锁）。
+      结论：博客来/诚品**不纳入自动化管线，也不得尝试绕过**；
+      讀冊仅作辅助核价（二手书版本/集数可能与公告不一致）；
+      Readmoo 仅作电子版补充（无 robots 指示，须先确认条款并严格限速）。
+
+  - id: tw_season_unknown
+    name: "四季出版（四季國際）"
+    url: "https://www.google.com/search?q=%E5%9B%9B%E5%AD%A3%E5%87%BA%E7%89%88+%E5%8F%B0%E7%81%A3"
+    category: zh_tw_edition
+    source_type: publication
+    auth_requirement: unknown
+    fields_available: []
+    update_frequency: unknown
+    robots_txt_finding: "unknown（本次未查证该出版社官网）。"
+    terms_finding: unknown。
+    anti_bot_risk: unknown
+    compliance_risk: unknown
+    method: do_not_collect
+    evidence_urls: []
+    confidence: low
+    verified_by: research_agent
+    status_2026: unknown
+    dev_host_reachability: unverified
+    notes: >-
+      **未查证来源**：本次未确认其官方网域、是否提供可检索书目页、
+      是否揭露 ISBN／譯者／出版日期，亦未确认其百合／轻小说书系范围。
+      依规则全部标 unknown。后续可先以 NCL ISBN 以出版者名称检索间接取得。
+
+  # ===========================================================================
+  # E. 简体中文官方授权版
+  # ===========================================================================
+
+  - id: cn_cppinfo
+    name: "国家出版发行信息公共服务平台（书目百科）"
+    url: "https://book.cppinfo.cn/"
+    category: zh_cn_edition
+    source_type: database
+    api_endpoint: "ISBN 直链 /Encyclopedias/home/index2?isbn=…；开放接口 openapi.cppinfo.cn（需机构申请）"
+    auth_requirement: "检索免登录；开放接口需机构申请接入"
+    fields_available:
+      - 书名
+      - 著者 / **译者**
+      - 出版社
+      - ISBN
+      - 定价 / 出版时间
+      - 中图分类
+      - 内容提要 / 目录 / 关键词
+    update_frequency: "随出版社上传同步（平台称书目 208.10 万条）"
+    robots_txt_finding: "**/robots.txt 返回 404，未设任何抓取限制**。"
+    terms_finding: "中宣部机关服务中心运营，定位为面向公众的书目查询；未检索到禁止引用书目事实字段的公开条款。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: official_api
+    evidence_urls:
+      - "https://book.cppinfo.cn/"
+      - "https://openapi.cppinfo.cn/HelpPage/Help"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【简中侧首选官方源】中宣部机关服务中心（信息中心）运营。
+      实测 **ISBN 直链返回书名/著者/译者/出版社/定价/出版时间/中图分类/提要/目录**
+      （服务端渲染、字段完整）。
+      **关键词检索页为 JS 渲染，静态抓取为空壳** → 必须按 ISBN 查，或人工。
+      Zotero 中文社区已有该站转换器，说明结构稳定。
+      判定「简中实体书是否存在」的第一依据。
+
+  - id: cn_pdc
+    name: "国家版本数据中心 PDC（出版物信息查询）"
+    url: "https://pdc.capub.cn/"
+    category: zh_cn_edition
+    source_type: database
+    auth_requirement: "unknown（首页未见登录要求，实则未验证）"
+    fields_available:
+      - 书名 / ISBN / CIP核字号 / 出版社 / 出版时间
+    update_frequency: unknown
+    robots_txt_finding: "**User-agent: * → Disallow: /（全站禁止抓取）**。"
+    terms_finding: unknown（SPA 站点未取得公开用户协议）。
+    anti_bot_risk: high
+    compliance_risk: high
+    method: do_not_collect
+    evidence_urls:
+      - "https://pdc.capub.cn/robots.txt"
+      - "https://www.nppa.gov.cn/bsfw/cyjghcpcx/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: "人工可用；自动抓取被 robots 禁止"
+    dev_host_reachability: unverified
+    notes: >-
+      国家新闻出版署「从业机构和产品查询」页把「出版物信息查询」指向 pdc.capub.cn，
+      即**官方 CIP/ISBN 入口**。但 robots 全站 Disallow → **仅人工浏览器核验**，
+      不做任何自动化请求。首页为 SPA，字段清单为预期值未验证。
+
+  - id: cn_nppa
+    name: "国家新闻出版署 从业机构和产品查询（名录与入口导航）"
+    url: "https://www.nppa.gov.cn/bsfw/cyjghcpcx/"
+    category: zh_cn_edition
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 图书出版单位名录
+      - 出版物信息查询入口
+      - 报纸期刊名录 / 发行机构名录
+    update_frequency: "名录随行政审批更新"
+    robots_txt_finding: "unknown（http/https 反复跨域跳转，robots.txt 未能取回）。"
+    terms_finding: unknown（政府网站，通常允许合理引用）。
+    anti_bot_risk: low
+    compliance_risk: low
+    method: manual_curation
+    evidence_urls:
+      - "https://www.nppa.gov.cn/bsfw/cyjghcpcx/"
+      - "https://www.nppa.gov.cn/bsfw/ywpt/"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      **用于核验「出版方是否具备图书出版资质」的第一道依据**，
+      并作为 PDC / cppinfo 等官方查询入口的权威导航。人工查阅，不批量抓取。
+
+  - id: cn_douban
+    name: "豆瓣读书（**明确排除**）"
+    url: "https://book.douban.com/"
+    category: zh_cn_edition
+    source_type: community
+    api_endpoint: "无（api.douban.com/v2 已于 2019-10 关闭）"
+    auth_requirement: "官方 API 需豆瓣书面授权（bd-team@douban.com）"
+    fields_available:
+      - 书名 / ISBN / 出版社 / 出版时间 / 定价 / 译者 / 系列丛书 / 评分
+    update_frequency: "用户贡献，持续"
+    robots_txt_finding: "www.douban.com/robots.txt 禁 /search、/subject_search、/j/、/link2/、/people/*/collect 等；条目页未禁；api.douban.com/robots.txt = Disallow: /。book.douban.com/robots.txt = 404（该主机无规则，**不等于允许抓取**）。"
+    terms_finding: >-
+      《豆瓣法律声明》第二节：未获书面许可，不得商业使用或展示豆瓣评分与用户评论、
+      不得用于大语言模型/AI 训练、不得数据统计与舆情监测、**不得任何数据采集与网络爬虫**。
+    anti_bot_risk: high
+    compliance_risk: high
+    method: do_not_collect
+    evidence_urls:
+      - "https://www.douban.com/about/legal"
+      - "https://api.douban.com/robots.txt"
+      - "https://book.douban.com/series/39990"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "公开 API 关闭（2019-03 图书 API 关、2019-10 第三方批量关闭）；条目页仍可匿名浏览"
+    dev_host_reachability: unverified
+    notes: >-
+      **合规风险最高的源，明确排除自动化。**
+      但它的**系列/版本页**对「繁中版 ↔ 简中版 ↔ 日文版」对映极有价值
+      （实测 series/39990 = 《終將成為妳》系列，出版社标「台灣角川」共 8 册，
+      逐册有评分与评价人数；works/1094200 显示「全部版本(3)」）。
+      → 仅允许**人工抽查并人工记录少量事实字段**（ISBN/出版社）用于交叉核对，
+      不入库、不写爬虫、不用于模型训练。
+
+  - id: cn_dangdang
+    name: "当当图书检索（在售核验）"
+    url: "https://search.dangdang.com/"
+    category: retailer
+    source_type: retailer
+    auth_requirement: none
+    fields_available:
+      - 书名 / 作者 / 出版社 / 出版时间 / 定价 / 售价 / 店铺 / 评论数
+    update_frequency: "实时（在售状态）"
+    robots_txt_finding: "www.dangdang.com/robots.txt **未提供**（跳转 null.html 的 404 页，HTTP 200）。"
+    terms_finding: "《当当网交易条款》第10条：未经书面授权或许可，不得以任何目的对网站或其任何部分进行复制、出售、转售、访问或以其他方式利用。"
+    anti_bot_risk: medium
+    compliance_risk: medium
+    method: manual_curation
+    evidence_urls:
+      - "https://search.dangdang.com/?key=%E7%99%BE%E5%90%88"
+      - "http://static.dangdang.com/helpcenter/question_sort/2238/180367.shtml"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      **用法限制**：只按 ISBN 精确核验在售，不做关键词批量采集。
+      实测关键词「百合」命中 9,371 条，**绝大多数是百合花、病虫害等无关品**。
+      这是「有简中版且在售」的终点核验环节。
+
+  - id: cn_bilibili_manga
+    name: "哔哩哔哩漫画（正版数字授权，仅判存在性）"
+    url: "https://manga.bilibili.com/"
+    category: zh_cn_edition
+    source_type: official_website
+    auth_requirement: "浏览作品页免登录（阅读需登录）"
+    fields_available:
+      - 作品ID（mc*）
+      - 标题 / 分类标签 / 榜单
+      - 版权方/翻译方标注
+    update_frequency: "随连载更新"
+    robots_txt_finding: "manga.bilibili.com/robots.txt = 404；主域 www.bilibili.com/robots.txt 仅 Disallow /medialist/detail/ 与 /index.html。"
+    terms_finding: "未取得漫画站单独条款；哔哩哔哩用户协议一般禁止未经许可的抓取与批量获取。实测内容页返回「验证码_哔哩哔哩」风控页。"
+    anti_bot_risk: high
+    compliance_risk: medium
+    method: manual_curation
+    evidence_urls:
+      - "https://manga.bilibili.com/"
+      - "https://www.bilibili.com/robots.txt"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      **只做存在性判断**：人工站内检索作品名，记录作品页是否存在与版权方标注。
+      **不抓章节内容、不提供阅读链接。**
+      有 WAF/验证码 → 自动化不可行且不应绕过。
+      例：citrus 仅有简中数字连载、无实体简中版 → 说明必须区分「实体书」与「数字授权」。
+
+  - id: cn_kuaikan
+    name: "快看漫画（正版数字授权，经 sitemap 判存在性）"
+    url: "https://www.kuaikanmanhua.com/"
+    category: zh_cn_edition
+    source_type: official_website
+    api_endpoint: "sitemapindex: /sitemap/sitemapindex.xml"
+    auth_requirement: "浏览免登录"
+    fields_available:
+      - 作品ID（/qa1/comics/{id}）
+      - 作品名 / 分类 / 更新
+    update_frequency: "sitemap 最后更新 2026-07-22"
+    robots_txt_finding: "User-agent: * → Disallow /404.html、**/*?*（含站内搜索）**、/adminisssers/、/admrs/；**Allow: /sitemap/sitemapindex.xml**。"
+    terms_finding: "《快看漫画App用户协议》6.7：不得对平台任何部分以任何方式复制、拷贝、出售、转售或用于任何其它商业目的；7.1：未经明示授权不得修改、出租、散布平台资料。"
+    anti_bot_risk: medium
+    compliance_risk: medium
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://www.kuaikanmanhua.com/robots.txt"
+      - "https://www.kuaikanmanhua.com/sitemap/sitemapindex.xml"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      robots 禁止一切带查询串的 URL（站内搜索不可抓），**但显式放行 sitemapindex**。
+      实测分片 sub-comic/comic/sitemap1.xml 列出 /qa1/comics/{id} 序列，
+      可按 ID 做存在性核对。**不提供 ISBN** → 仅作「简中数字授权存在性」的补充证据。
+      注意：快看的「评分」是用户发帖形态的长帖，**没有统一数值分字段**。
+
+  - id: cn_tianwen
+    name: "天闻角川官网（广州天闻角川动漫有限公司）"
+    url: "https://www.gztwkadokawa.com/"
+    category: zh_cn_edition
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 公司简介 / 授权品牌
+      - 图书列表（**JS 渲染，静态为空壳**）
+      - 官方微店 / 淘宝入口
+      - 官方社交账号
+    update_frequency: unknown
+    robots_txt_finding: "**User-agent: * → Disallow:（全站允许抓取）**。"
+    terms_finding: "页脚「天闻角川版权所有 未经许可不得转载」，限制转载，未见禁止检索。"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: manual_curation
+    evidence_urls:
+      - "https://www.gztwkadokawa.com/"
+      - "https://www.gztwkadokawa.com/robots.txt"
+      - "https://www.gztwkadokawa.com/sitemap.xml"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "站点可用但书目信息量低"
+    dev_host_reachability: unverified
+    notes: >-
+      域名确认为 **www.gztwkadokawa.com**（粤ICP备20006388号，广州天闻角川动漫有限公司）。
+      sitemap 仅约 180 条 URL、/books/{id}.html 约 25 个；
+      实测 /books.html 与书页**只返回占位符**（book list / book detail），正文由 JS 渲染。
+      → **不能作书目库**。改用 cppinfo 的 ISBN 查询 + 官方微店 + B站官方号交叉。
+
+  - id: cn_tianwen_bilibili
+    name: "天闻角川_Official（B站官方账号）"
+    url: "https://space.bilibili.com/285318902"
+    category: zh_cn_edition
+    source_type: official_website
+    auth_requirement: "浏览免登录"
+    fields_available:
+      - 新书预告 / 出版时间 / 书系名 / 封面 / 卷次讨论
+    update_frequency: "随新书发布"
+    robots_txt_finding: "适用 www.bilibili.com/robots.txt：仅 Disallow /medialist/detail/ 与 /index.html。"
+    terms_finding: "未取到单独条款；哔哩哔哩用户协议通常禁止未经许可的抓取/批量获取。"
+    anti_bot_risk: medium
+    compliance_risk: medium
+    method: manual_curation
+    evidence_urls:
+      - "https://space.bilibili.com/285318902"
+      - "https://www.bilibili.com/robots.txt"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      官方新书出口，可人工判断某作是否有简中版及到第几卷，
+      **但不含 ISBN**，必须与 cppinfo/PDC 交叉。不宜程序化抓取。
+
+  - id: cn_others_unknown
+    name: "其他简中授权出版方（次元书馆 / 99读书人 / 新星·幻象文库 / 力潮文创 / 磨铁）"
+    url: "https://m.weibo.cn/status/5323555496530722"
+    category: zh_cn_edition
+    source_type: publication
+    auth_requirement: unknown
+    fields_available:
+      - 出版动态 / 预售信息（零散）
+    update_frequency: unknown
+    robots_txt_finding: "99read.com 与本机连接失败；motie.com/robots.txt 返回空内容；其余未验证。"
+    terms_finding: unknown。
+    anti_bot_risk: unknown
+    compliance_risk: unknown
+    method: do_not_collect
+    evidence_urls:
+      - "https://m.weibo.cn/status/5323555496530722"
+      - "https://www.motie.com/robots.txt"
+    confidence: low
+    verified_by: research_agent
+    status_2026: unknown
+    dev_host_reachability: unverified
+    notes: >-
+      **全部标 unknown**：本次未能确认这些品牌的官网、出版主体、是否独立持证、
+      以及百合/轻小说产品线。建议一律**改用 cppinfo 按出版社/品牌维度反查**，
+      再用 nppa 名录验证出版资质。
+
+  # ===========================================================================
+  # F. 动画化与新闻源
+  # ===========================================================================
+
+  - id: an_shobocal
+    name: "しょぼいカレンダー（cal.syoboi.jp）"
+    url: "https://cal.syoboi.jp/"
+    category: anime_news
+    source_type: official_api
+    api_endpoint: "https://cal.syoboi.jp/db.php?Command=TitleLookup|ProgLookup（XML/CSV）；rss2.php"
+    auth_requirement: none
+    fields_available:
+      - TID / Title / Cat（カテゴリ）
+      - FirstYear / FirstMonth
+      - SubTitles（**各话副标题 → 话数**）
+      - StTime / EdTime（**放送日时**）
+      - ChID / Count
+      - LastUpdate（**增量键**）
+    update_frequency: "随时（志愿编辑）"
+    robots_txt_finding: "实测 200：Disallow /tid/*/summary、/graph、/usr、/uc 等；**db.php / rss.php / rss2.php 不在禁止列表内**。"
+    terms_finding: "官方规格页明示速率限制：db/rss/rss2/json 为 **1 req/秒**；无自定义 UA、超 500 次/时或 10000 次/日者降为 1 req/10 秒。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: official_api
+    evidence_urls:
+      - "https://cal.syoboi.jp/db.php?Command=TitleLookup&TID=1"
+      - "https://docs.cal.syoboi.jp/spec/rate_limit/"
+      - "https://cal.syoboi.jp/rss2.php"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【**放送日期与话数最强的公开来源**】实测 db.php?Command=TitleLookup&TID=1 返回 200 XML，
+      rss2.php 返回播出预定 RSS（约 40KB）。
+      ProgLookup 支持 StTime/Range/LastUpdate 差分，fmt=csv 可用。
+      **必须设置自定义 User-Agent** 并限速 ≤1 req/s。
+      注意：`json.php?Req=TitleLookup` 返回空数组 `[]`，**已失效**，勿使用。
+
+  - id: an_anilist
+    name: "AniList GraphQL API"
+    url: "https://graphql.anilist.co"
+    category: anime_news
+    source_type: official_api
+    api_endpoint: "POST https://graphql.anilist.co"
+    auth_requirement: "公开查询无需认证；写入需 OAuth"
+    fields_available:
+      - title(romaji/native) / coverImage
+      - startDate / status / format
+      - studios(isMain) / relations
+      - genres / tags
+    update_frequency: "随时（用户编辑）"
+    robots_txt_finding: "未确认（GET / 实测 404，说明仅支持 POST）。"
+    terms_finding: >-
+      非商用免费；月收入 <150USD 可商用；**禁止 hoarding/大量收集、禁止当备份存储、
+      禁止同类竞品服务**。
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: official_api
+    evidence_urls:
+      - "https://graphql.anilist.co"
+      - "https://docs.anilist.co/guide/rate-limiting"
+      - "https://docs.anilist.co/guide/terms-of-use"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "运营中，但官方标注 degraded，限 **30 req/分**（实测响应头 X-RateLimit-Limit: 30；文档称正常 90）"
+    dev_host_reachability: verified_reachable
+    notes: >-
+      实测（Media id=21）成功取得 title/startDate/status/format/studios/relations。
+      status 取值含 NOT_YET_RELEASED / RELEASING / FINISHED，可做「已发表/未发表」候选检测。
+      **百合必须用 `tag:"Yuri"`**（genres 集合仅 19 项，**没有 yuri**）。
+      未公开作品多为 startDate=null → 日期须交叉核对。
+      【合规】因 ToS 禁止存储/囤积，本项目只做**短 TTL 缓存 + 实时查询**，不做全量落库。
+
+  - id: an_mal
+    name: "MyAnimeList 官方 API v2"
+    url: "https://api.myanimelist.net/v2/"
+    category: anime_news
+    source_type: official_api
+    api_endpoint: "GET https://api.myanimelist.net/v2/anime/{id}"
+    auth_requirement: "需 OAuth2 access token 或 X-MAL-CLIENT-ID"
+    fields_available:
+      - title / alternative_titles
+      - start_date / end_date / status
+      - studios / num_episodes / media_type
+      - synopsis / pictures
+    update_frequency: "随时"
+    robots_txt_finding: "未确认（未对 api.myanimelist.net 请求 robots.txt）。"
+    terms_finding: "无凭据访问被拒：403 {\"error\":\"forbidden\"}（实测），属明确鉴权拒绝而非 WAF。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: official_api
+    evidence_urls:
+      - "https://api.myanimelist.net/v2/anime/1"
+      - "https://myanimelist.net/apiconfig/references/api/v2"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: "运营中（文档页 200，标注 beta ver.）；2026-10 实测无凭据请求 403"
+    dev_host_reachability: unverified
+    notes: >-
+      无凭据时详情与检索端点均返回 403。
+      status 值域因未取得 token 而**未实测验证**，不外推。
+      官方 v2 **不含评论端点**。
+
+  - id: an_annict
+    name: "Annict GraphQL API（日本）"
+    url: "https://annict.com/"
+    category: anime_news
+    source_type: official_api
+    api_endpoint: "POST https://api.annict.com/graphql"
+    auth_requirement: "需个人访问令牌（Bearer），OAuth 或 PAT"
+    fields_available:
+      - works / episodes / programs（放送予定）
+      - casts / staffs / series
+      - "syobocalTid（与しょぼいカレンダー关联）"
+      - title / watchersCount
+    update_frequency: "随时"
+    robots_txt_finding: "实测 200：User-Agent:* 仅 Disallow /db/，其余允许。"
+    terms_finding: "利用規約禁过度负荷行为；运营方可作统计信息公开（第14条2）。API 数据授权条款无明文。"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: official_api
+    evidence_urls:
+      - "https://api.annict.com/graphql"
+      - "https://annict.com/terms"
+      - "https://wikino.app/s/annict/pages/359"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "运营中（旧 developers.annict.com 返回 404，文档已迁至 wikino.app）"
+    dev_host_reachability: unverified
+    notes: >-
+      无认证 POST /graphql 实测返回 400 → **端点存在**。
+      GraphQL 可取作品/剧集/放送预定，并与しょぼいカレンダー TID 关联。
+      定位为**辅助**，不能替代官方发表。
+
+  - id: an_animeanime
+    name: "アニメ！アニメ！（animeanime.jp）"
+    url: "https://animeanime.jp/"
+    category: anime_news
+    source_type: rss
+    api_endpoint: "https://animeanime.jp/rss20/index.rdf"
+    auth_requirement: none
+    fields_available:
+      - 記事タイトル / 記事URL / 公開日時 / カテゴリ
+    update_frequency: "每日多篇"
+    robots_txt_finding: "实测 200：User-agent:* 仅 Disallow /test/；bingbot 与 ClaudeBot 指定 Crawl-delay: 5；列出 sitemap。"
+    terms_finding: "robots 宽松。文章正文不可转载，采用标题+链接+出处形式。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: rss
+    evidence_urls:
+      - "https://animeanime.jp/robots.txt"
+      - "https://animeanime.jp/rss20/index.rdf"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "RSS 正常（2026-10-09 实测返回当日最新文章）"
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【**natalie 被 WAF 封锁后的主力新闻替代源**】实测 /rss20/index.rdf 为 RSS2.0（54KB）、
+      /rss/index.rdf 为 RSS1.0 RDF（23KB），均 200，无 WAF。
+      轮询间隔 ≥5 秒以遵守 Crawl-delay。
+
+  - id: an_animatetimes
+    name: "アニメイトタイムズ（animatetimes.com）"
+    url: "https://www.animatetimes.com/"
+    category: anime_news
+    source_type: news_media
+    auth_requirement: none
+    fields_available:
+      - 記事タイトル / 記事URL / 公開日
+      - タグ別一覧（可按作品追踪）
+    update_frequency: "每日"
+    robots_txt_finding: "/robots.txt 经 301 跳到 /robots.txt/ 后 **404**（等于无 robots.txt，但非明示许可）。"
+    terms_finding: "页脚明示「すべての画像、文章等の無断転載を禁じます」；/tos.php 存在。"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: html_crawl
+    evidence_urls:
+      - "https://www.animatetimes.com/robots.txt"
+      - "https://www.animatetimes.com/"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "**RSS 与 API 均不可用**（2026-10 实测 /feed、/rss/、/rss.xml 全 404）"
+    dev_host_reachability: unverified
+    notes: >-
+      WordPress 架构但**未开放 feed**。替代入口是标签页
+      （如 tag/details.php?id=25671 上伊那ぼたん），可按作品追踪动画化报道。
+      适合做新闻源辅助，**不宜作状态判定依据**。
+
+  - id: an_dengeki
+    name: "電ファミニコゲーマー（dengekionline.com）"
+    url: "https://dengekionline.com/"
+    category: anime_news
+    source_type: news_media
+    api_endpoint: "https://dengekionline.com/newsSitemap.xml"
+    auth_requirement: none
+    fields_available:
+      - 記事タイトル / 記事URL / 公開日時（news sitemap）
+    update_frequency: "每日"
+    robots_txt_finding: "实测 200：User-agent:* Disallow:（空＝全允许）；列出 newsSitemap.xml 与 sitemap.xml。"
+    terms_finding: "未取得专门条款页，按媒体通例仅引用标题与链接。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://dengekionline.com/robots.txt"
+      - "https://dengekionline.com/newsSitemap.xml"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "**无 RSS**（/feed、/rss/、/feed.xml 均 404）；news sitemap 200 可用（62KB）"
+    dev_host_reachability: unverified
+    notes: "news sitemap 实测含 <news:title> 与 URL，可作替代发现渠道。动画化消息密度低于专门动画媒体。"
+
+  - id: an_official_site
+    name: "アニメ公式サイト（一手来源，范例：上伊那ぼたん）"
+    url: "https://kamiina-botan.com/"
+    category: anime_news
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - News 記事
+      - "放送開始日"
+      - 放送局 / 配信
+      - Staff / Cast / Episode / Music
+      - Blu-ray/DVD / Goods / 公式X
+    update_frequency: "发表时与播出期（不定期）"
+    robots_txt_finding: "各作品域名独立，本例未取得 robots.txt（通常无或很宽松）。"
+    terms_finding: "页脚「著作物の無断利用を禁じます」，版权标注 ©塀（秋田書店）／上伊那ぼたん製作委員会。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: html_crawl
+    evidence_urls:
+      - "https://kamiina-botan.com/"
+      - "https://www.aniplex.co.jp/robots.txt"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【**动画化状态的最终正确解**】实测《上伊那ぼたん、酔へる姿は百合の花》官网：
+      **2026年4月10日放送开始**，News 至 2026.09.01，7 月公告全 12 话一挙配信
+      → 可判定 `anime_status: finished`。
+      比新闻源慢，但是权威一手来源。各作品域名需逐一确认。
+
+  - id: an_yahoo_rss
+    name: "Yahoo!ニュース RSS（WAF 替代渠道）"
+    url: "https://news.yahoo.co.jp/rss/topics/entertainment.xml"
+    category: anime_news
+    source_type: rss
+    auth_requirement: none
+    fields_available:
+      - title / link / pubDate / description（見出し）
+    update_frequency: "高频（分钟级）"
+    robots_txt_finding: "未取得 robots.txt；RSS 本体实测 200。"
+    terms_finding: "为标题配信，正文转载不可，须链接回原报道并标注出处。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: rss
+    evidence_urls:
+      - "https://news.yahoo.co.jp/rss/topics/entertainment.xml"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      natalie 等被 WAF 阻断时的替代通道：拉娱乐/国内 RSS，
+      用「アニメ化」等关键词过滤后跳转原报道确认。
+      同批实测：**Google News RSS 在本环境连接失败**；
+      **Bing News RSS 被重定向到 cn.bing.com 的 HTML**，不能当 RSS 用。
+
+  - id: an_jikan
+    name: "Jikan API（MyAnimeList 非官方）"
+    url: "https://api.jikan.moe/v4/"
+    category: anime_news
+    source_type: unofficial_api
+    auth_requirement: "不需要（文档称无认证）"
+    fields_available:
+      - title / titles / aired / status / studios / relations / genres / score
+    update_frequency: unknown
+    robots_txt_finding: "未取得（api.jikan.moe 连接超时，无法请求 robots.txt）。"
+    terms_finding: "unknown（官方文档站为 JS 渲染，正文无法机取；openapi.json 返回 404）。"
+    anti_bot_risk: unknown
+    compliance_risk: medium
+    method: do_not_collect
+    evidence_urls:
+      - "https://api.jikan.moe/v4/anime/1"
+      - "https://docs.api.jikan.moe/"
+    confidence: low
+    verified_by: research_agent
+    status_2026: "unknown（DNS 解析到 135.181.39.91，但 IPv4/IPv6 均 TCP timeout 21 秒）"
+    dev_host_reachability: verified_unreachable
+    notes: >-
+      【本机不可达】端点与速率限制均**未实测**，按规则记 unknown，不引用未验证数值。
+      该 API 本质是 MAL 数据的第三方二次分发 → 可信度定位为辅助，
+      **不能作为「动画化发表」的证据源**。
+
+  # ===========================================================================
+  # C. Web 百合小说平台 与 百合轻小说文库
+  # ===========================================================================
+
+  - id: wn_narou_api
+    name: "なろう小説API（小説家になろう）"
+    url: "https://api.syosetu.com/novelapi/api/"
+    category: web_novel
+    source_type: official_api
+    auth_requirement: none
+    fields_available:
+      - Nコード
+      - タイトル / あらすじ
+      - 作者名 / ユーザID
+      - 大ジャンル / ジャンル
+      - キーワード
+      - 話数
+      - 文字数 / 読了時間
+      - 最終掲載日
+      - "is_gl（ガールズラブ フラグ）"
+      - 各種ポイント
+    limits: >-
+      参数：out / gzip=5 / of / lim（默认20・**最大500**）/ st（**上限2000**）/ order /
+      word / notword / title / keyword / wname / biggenre / genre / ncode /
+      type(t,r,er,re,ter) / isgl / notgl。
+      官方利用制限为 **1日8万件 / 400MB / IP**（**目前休止中**，但官方明记可能恢复）。
+    update_frequency: "作品修正后 平均5分〜最大2小时反映"
+    robots_txt_finding: "本机 syosetu 系全部不可达（DNS 被解析到 Facebook IP + TCP 阻断），robots.txt 未取得。"
+    terms_finding: "须遵守「なろうデベロッパー利用ガイドライン」（URL 存在但本机无法取得正文 → 条文 unknown）。"
+    anti_bot_risk: high
+    compliance_risk: low
+    method: official_api
+    evidence_urls:
+      - "https://dev.syosetu.com/man/api"
+      - "https://dev.syosetu.com/site/guideline/"
+      - "https://syosetu.com/helpcenter/helppage/helppageid/59/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: "稼働（但本机 403 / 不可达，未取得实测响应）"
+    dev_host_reachability: verified_unreachable
+    notes: >-
+      【**最关键的一条发现**】**なろう 没有「百合」这个ジャンル**。
+      大ジャンル只有：恋愛1 / ファンタジー2 / 文芸3 / SF4 / その他99 / ノンジャンル98。
+      下位ジャンル为 101,102,201,202,301-307,401-404,9901-9904,9999,9801 —— **无百合/GL**。
+      但 API **有 `is_gl` 字段**（来自登记必须的キーワード「ガールズラブ」）
+      以及 `isgl` / `notgl` 过滤参数 → **这才是百合判定的基础**。
+      因此「用なろう API 判定百合类作品」是**可行的，但必须走 is_gl / isgl，
+      不能靠ジャンル**。这也意味着：百合判定依赖作者填写的关键词，
+      **存在漏标与误标**，confidence 不应给满。
+      【本机不可达】api.syosetu.com 实测 DNS 解析为 31.13.96.195（Facebook IP）→
+      须在云端 CI 采集。
+
+  - id: wn_narou_rank_api
+    name: "なろう小説ランキングAPI／殿堂入りAPI"
+    url: "https://api.syosetu.com/rank/rankget/"
+    category: web_novel
+    source_type: official_api
+    api_endpoint: "https://api.syosetu.com/rank/rankget/ ＋ https://api.syosetu.com/rank/rankin/"
+    auth_requirement: none
+    fields_available:
+      - Nコード / 順位 / 総合ポイント
+      - 週間ユニーク
+      - 集計日 / 種別
+      - 殿堂入り履歴（rankin）
+    update_frequency: "rtype 可指定日次/週次/月次/四半期"
+    robots_txt_finding: "未取得（403）"
+    terms_finding: "unknown（dev.syosetu.com 不可达）"
+    anti_bot_risk: high
+    compliance_risk: low
+    method: official_api
+    evidence_urls:
+      - "https://dev.syosetu.com/man/rankapi/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: "稼働（端点与 rtype 格式经第三方实现 node-narou 确认）"
+    dev_host_reachability: verified_unreachable
+    notes: >-
+      `rankget` 只返回 Nコード・順位・ポイント，**不含作品信息** →
+      必须与小説API 结合。`rankin` 以 ncode 取殿堂入り履歴。
+      **没有百合排行榜**，只能取恋愛/ファンタジー等ジャンル别榜再过滤。
+      rtype 形式：`YYYYMMDD-d|w|m|q`。
+
+  - id: wn_narou_r18_api
+    name: "なろう R18小説API（ノクターン／ムーンライト／ミッドナイト）"
+    url: "https://api.syosetu.com/novel18api/api/"
+    category: web_novel
+    source_type: official_api
+    auth_requirement: none
+    fields_available:
+      - Nコード / タイトル / 作者
+      - 掲載サイト / キーワード
+      - 話数 / 字数 / 最終掲載日
+      - is_gl
+      - ポイント
+    update_frequency: "本体API と同等"
+    robots_txt_finding: "未取得（403）"
+    terms_finding: "unknown（xman 侧规约未取得）"
+    anti_bot_risk: high
+    compliance_risk: medium
+    method: do_not_collect
+    evidence_urls:
+      - "https://dev.syosetu.com/xman/api/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: "稼働（官方 doc URL 在搜索结果中存在）"
+    dev_host_reachability: verified_unreachable
+    notes: >-
+      `nocgenre`：1=ノクターン(男性向け) 2=ムーンライト(女性向け)
+      3=ムーンライトBL 4=ミッドナイト(大人向け)。
+      **无大ジャンル/ジャンル字段**，百合判定只能靠关键词 + `is_gl`。
+      本体 API 与此 API 字段不同（尤其 gn 系）。
+      【本项目决定】**暂不纳入**：涉及 18 禁，须先定义年龄区分与展示策略。
+      若纳入，必须与全年龄内容物理隔离。
+
+  - id: wn_narou_genre_spec
+    name: "なろう ジャンル体系 与 書籍化情報（公式）"
+    url: "https://syosetu.com/helpcenter/helppage/helppageid/59/"
+    category: web_novel
+    source_type: official_website
+    api_endpoint: "https://syosetu.com/syuppan/list/?publisherid=..&labelid=.."
+    auth_requirement: none
+    fields_available:
+      - 大ジャンル区分 / 下位ジャンル区分
+      - 書籍化・刊行一覧（出版社别 / レーベル别）
+      - 作品タイトル / 著者
+    update_frequency: "随時"
+    robots_txt_finding: "未取得（syosetu 系 403）"
+    terms_finding: "unknown"
+    anti_bot_risk: high
+    compliance_risk: low
+    method: manual_curation
+    evidence_urls:
+      - "https://syosetu.com/helpcenter/helppage/helppageid/59/"
+      - "https://syosetu.com/syuppan/list/"
+    confidence: low
+    verified_by: research_agent
+    status_2026: "存在（URL 在搜索结果中真实出现）／本机不可达"
+    dev_host_reachability: verified_unreachable
+    notes: >-
+      `syuppan/list/` 可按 `publisherid` / `labelid` 浏览「なろう发作品的书籍化」，
+      是**把 Web 小说与商业单行本连起来的关键枢纽**，
+      可用来发现「哪部 Web 百合小说被哪家文库出版」。
+      本机不可达，内容未确认（confidence low）。
+
+  - id: wn_kakuyomu
+    name: "カクヨム（KADOKAWA）"
+    url: "https://kakuyomu.jp/tags/%E7%99%BE%E5%90%88"
+    category: web_novel
+    source_type: official_website
+    auth_requirement: "浏览免登录"
+    fields_available:
+      - 作品ID / タイトル / 作者
+      - "**タグ（百合 / GL / ガールズラブ）**"
+      - ジャンル / 話数 / 文字数
+      - 更新日時
+      - "**書籍化有無**（作品页有书籍化链接）"
+      - レビュー数
+    update_frequency: "随時（作品更新・書籍化告知）"
+    robots_txt_finding: "实测 200：Disallow /shared_drafts/、/works/*/episodes/*/read$、/login?、/auth/login? 等；ClaudeBot Crawl-delay: 1。作品页未禁。"
+    terms_finding: >-
+      利用規約（2025-08-06 改定）第12条=私的使用の範囲を超える複製/販売/出版禁止；
+      第13条=営利目的利用禁止；第5条=過剰負荷で遮断；第14条=禁止事項。
+      **无明文「禁止爬取」条文**，但 12+13 组合对「DB 化 + 再配布」风险高。
+    anti_bot_risk: medium
+    compliance_risk: high
+    method: do_not_collect
+    evidence_urls:
+      - "https://kakuyomu.jp/tags/%E7%99%BE%E5%90%88"
+      - "https://kakuyomu.jp/legal/tos"
+      - "https://kakuyomu.jp/robots.txt"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "稼働。**タグ「百合」在 2026-10-09 时点为 17,287 作品**"
+    dev_host_reachability: unverified  # 子代理实测 robots 200，本轮未复测
+    notes: >-
+      【**官方百合标签存在**】カクヨム 的 12 个ジャンル里没有百合，
+      但**「百合」是官方运营的标签**，页面 https://kakuyomu.jp/tags/百合 可直接枚举，
+      实测 17,287 作品 —— 这是**最干净的 Web 百合小说官方入口**。
+      【但合规上受限】无公开 API，且第12/13条使「抓取→建库→对外发布」存在实质风险。
+      **建议**：只做「标签页 → 作品页标题/作者/URL」的浅层引用，
+      不建全文库，并对每条标明取自カクヨム。**法务确认前不批量入库。**
+
+  - id: wn_alphapolis
+    name: "アルファポリス"
+    url: "https://www.alphapolis.co.jp/"
+    category: web_novel
+    source_type: official_website
+    auth_requirement: unknown
+    fields_available:
+      - 作品タイトル / 作者 / 話数 / 更新日時
+    update_frequency: "随時"
+    robots_txt_finding: "**实测 202 且响应体为空**（AWS WAF 拦断）→ robots.txt 不可得。"
+    terms_finding: "unknown（WAF 同时挡住规约页）。"
+    anti_bot_risk: high
+    compliance_risk: medium
+    method: do_not_collect
+    evidence_urls:
+      - "https://www.alphapolis.co.jp/robots.txt"
+      - "https://www.alphapolis.co.jp/novel/65079382/19087377/episode/11831873"
+    confidence: low
+    verified_by: lead_direct
+    status_2026: "站点稼働；**未确认存在公开 API**"
+    dev_host_reachability: verified_unreachable
+    notes: >-
+      本机实测 robots.txt 与作品页均为 **202 空响应**（WAF）。
+      **不得绕过 WAF**（违反 R2）。定位为人工参考源。
+      百合标签运营的有无也未确认。
+
+  - id: wn_pixiv_novel
+    name: "pixiv 小説"
+    url: "https://www.pixiv.net/"
+    category: web_novel
+    source_type: official_website
+    auth_requirement: "浏览免登录；**API 非公开**"
+    fields_available:
+      - 作品タイトル / 作者 / タグ / ブックマーク数
+    update_frequency: "随時"
+    robots_txt_finding: "本机不可达（DNS 被解析到 157.240.3.8 = Facebook IP）+ timeout。"
+    terms_finding: >-
+      pixiv ガイドライン将「クローラー等のプログラムによる作品収集」列为禁止行为。
+      现行为未取得正文，但**第三方多次引用同一结论**。
+    anti_bot_risk: high
+    compliance_risk: high
+    method: do_not_collect
+    evidence_urls:
+      - "https://pixiv.github.io/pixiv-api-doc/"
+      - "https://teratail.com/questions/39920"
+    confidence: low
+    verified_by: research_agent
+    status_2026: "**官方公开 API 不存在**（pixiv.github.io/pixiv-api-doc 返回 404）"
+    dev_host_reachability: verified_unreachable
+    notes: >-
+      【**明确排除**】官方无公开 API；现存 pixivpy 等均为逆向非公开 App API，
+      属规约违反高风险。ガイドライン禁止程序化收集作品。
+      → 不采集。小説元数据改由 なろう / カクヨム / レーベル官方 替代。
+
+  - id: wn_novelup_estar
+    name: "ノベルアップ+ ／ エブリスタ"
+    url: "https://novelup.plus/"
+    category: web_novel
+    source_type: official_website
+    auth_requirement: unknown
+    fields_available:
+      - 作品タイトル / 作者 / タグ / 話数 / ポイント
+    update_frequency: "随時"
+    robots_txt_finding: "novelup.plus：**CloudFront 403**（根与 robots.txt 均 403）。estar.jp/robots.txt = 404（未设置＝无限制）。"
+    terms_finding: "unknown（novelup 全站 403）。"
+    anti_bot_risk: high
+    compliance_risk: medium
+    method: do_not_collect
+    evidence_urls:
+      - "https://novelup.plus/robots.txt"
+      - "https://support.estar.jp/hc/ja/articles/360020543614"
+      - "https://estar.jp/robots.txt"
+    confidence: low
+    verified_by: research_agent
+    status_2026: "両站稼働／novelup 自动取得实质被阻断"
+    dev_host_reachability: unverified
+    notes: >-
+      **ノベルアップ+**：CloudFront 403，无 API/RSS → 排除。
+      书籍化信息改由ホビージャパン官方书志检索补全。
+      **エブリスタ**：官方ジャンル 16 区分（恋愛/ファンタジー/…/BL/…），
+      **没有百合，只有 BL** → 优先级低，需靠关键词/标签近似。
+
+  # ---- 轻小说文库官方刊行目录 ----
+
+  - id: ln_ga_bunko
+    name: "GA文庫（SBクリエイティブ）"
+    url: "https://ga.sbcr.jp/"
+    category: ln_label
+    source_type: official_website
+    api_endpoint: "https://ga.sbcr.jp/sitemap.rss ；商品页 /product/<ISBN>/"
+    auth_requirement: none
+    fields_available:
+      - 作品タイトル
+      - 発売日
+      - "**ISBN（作为 URL 路径）**"
+      - レーベル（GA文庫 / GAノベル / GAコミック）
+      - 店舗特典記事 / 大賞情報
+    update_frequency: "日次（RSS lastBuildDate 2026-09-30）"
+    robots_txt_finding: "实测：User-agent:* 仅 Disallow /wp-admin/；Sitemap: /sitemap.xml 与 /sitemap.rss 明示。"
+    terms_finding: "unknown（站点政策未精读）"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: rss
+    evidence_urls:
+      - "https://ga.sbcr.jp/robots.txt"
+      - "https://ga.sbcr.jp/sitemap.rss"
+      - "https://ga.sbcr.jp/product/9784815639860/"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "稼働（2026-10-09 RSS 取得 200）"
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【**所有轻小说文库中机械可读性最好的一个，应作为模板**】
+      sitemap.rss 为 RSS2.0，返回 guid/link/title/pubDate；
+      商品 URL 直接是 **`/product/<ISBN>/`** → ISBN 即主键，无需再解析。
+      覆盖 GA文庫・GAノベル・GAコミック。
+      书籍单位的著者/价格在个别商品页。
+
+  - id: ln_ichijinsha_data
+    name: "一迅社WEB 発売カレンダー（data.ichijinsha.co.jp）"
+    url: "https://data.ichijinsha.co.jp/calendar"
+    category: ln_label
+    source_type: official_website
+    api_endpoint: "https://data.ichijinsha.co.jp/month/YYYY-MM ；详细 /detail/<id>"
+    auth_requirement: none
+    fields_available:
+      - タイトル
+      - 著者 / イラスト
+      - 発売日
+      - レーベル
+      - 作品詳細URL
+      - 書影
+    update_frequency: "月次（毎月20日新刊等）"
+    robots_txt_finding: "实测（ichijinsha 域）：User-agent:* 仅 Disallow /wp-admin/；Sitemap: wp-sitemap.xml。"
+    terms_finding: "unknown（站点政策未精读）"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: sitemap_crawl
+    evidence_urls:
+      - "https://www.ichijinsha.co.jp/robots.txt"
+      - "https://data.ichijinsha.co.jp/month/2026-10"
+      - "https://data.ichijinsha.co.jp/calendar"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "稼働（2026-10 日历取得 200）"
+    dev_host_reachability: unverified
+    notes: >-
+      一迅社ノベルス=`/novels/`、一迅社文庫アイリス=`/iris/`、コミック百合姫=`/yurihime/`。
+      発売カレンダー是月别 HTML，列挙タイトル・著者・発売日・書影 ——
+      **直接支撑 `ja_volumes[]` 与 `volume_count_ja`**。
+      **ISBN 未在日历页暴露**，须从 detail 页取，或用 openBD 反查。
+      注意：`/novel/` 已 410 Gone，现行是 `/novels/`。
+      **未发现百合专门的小说レーベル** —— 百合在一迅社是漫画侧（百合姫/百合姫コミックス）。
+
+  - id: ln_hobbyjapan
+    name: "HJ文庫／HJノベルス（ホビージャパン）公式書誌検索"
+    url: "https://hobbyjapan.co.jp/books/search/g4672.html"
+    category: ln_label
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 書名 / 概要 / ジャンル
+      - シリーズ（レーベル：HJ文庫 / HJ NOVELS / HJ文庫G）
+      - 著者 / イラスト
+      - "**ISBN**"
+      - "**出版年月日**"
+      - 定価 / 電子有無
+    update_frequency: "随時（含近刊）"
+    robots_txt_finding: "www.hobbyjapan.co.jp/robots.txt 返回 **404（未设置）**。"
+    terms_finding: "站点政策有「一切の無断転載を禁止」。条文未精读。"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: html_crawl
+    evidence_urls:
+      - "https://hobbyjapan.co.jp/books/search/g4672.html"
+      - "https://hobbyjapan.co.jp/books/search/index.php?next_book=true"
+      - "https://hobbyjapan.co.jp/rss/news/"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "稼働（2026-10-09 取得 200，ライトノベル 1,921 件）"
+    dev_host_reachability: unverified
+    notes: >-
+      【**字段最全的文库源**】官方书志检索为 HTML 表格，**直接返回 ISBN・出版年月日・
+      定価・シリーズ**，无需二次反查。
+      近刊用 `next_book=true`；详细页 `/book/b<id>.html`。
+      レーベル靠「シリーズ」字段判别。
+      **RSS 只有新闻，没有新刊 feed**。旧 `/hjnovel/` 已 404。
+
+  - id: ln_dash_x
+    name: "ダッシュエックス文庫（集英社）"
+    url: "https://dash.shueisha.co.jp/release/"
+    category: ln_label
+    source_type: official_website
+    api_endpoint: "/release/ 与 /release/future.php"
+    auth_requirement: none
+    fields_available:
+      - タイトル / 著者 / イラスト
+      - 発売月 / 刊行予定
+      - "**ISBN（锚点或书影文件名中暴露）**"
+    update_frequency: "月次（新刊案内・刊行予定）"
+    robots_txt_finding: "dash.shueisha.co.jp/robots.txt = **404（未设置）**。"
+    terms_finding: "unknown（集英社规约未精读；站点有禁止擅自转载表示）"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: html_crawl
+    evidence_urls:
+      - "https://dash.shueisha.co.jp/release/future.php"
+      - "https://www.shueisha.co.jp/robots.txt"
+    confidence: high
+    verified_by: research_agent
+    status_2026: "稼働（2026-10-09 取得 200）"
+    dev_host_reachability: unverified
+    notes: >-
+      `/release/` 与 `/release/future.php`（刊行预定）为 HTML。
+      **ISBN 藏在锚点 `#978-4-08-…` 或书影文件名中**（例 978-4-08-631666-8）→ 需正则抽取。
+      更新告知在官方博客 sdbunko.blogspot.com。
+      注意：集英社 `www.shueisha.co.jp/robots.txt` 实测宽松（仅禁 /wp-admin/）。
+
+  - id: ln_sqex_novel
+    name: "SQEXノベル（スクウェア・エニックス）"
+    url: "https://magazine.jp.square-enix.com/sqexnovel/"
+    category: ln_label
+    source_type: official_website
+    api_endpoint: "/sqexnovel/novel/YYYY.html ；series/detail/<slug>/"
+    auth_requirement: none
+    fields_available:
+      - タイトル / 巻数 / 著者 / イラスト
+      - 発売月
+      - "**ISBN（书影文件名即 ISBN）**"
+      - 来月以降の予定
+    update_frequency: "月次（每月上旬更新告知）"
+    robots_txt_finding: "magazine.jp.square-enix.com/robots.txt 实测仅 Twitterbot 一条；www.jp.square-enix.com/robots.txt = 404。"
+    terms_finding: "站点有无断复制禁止与著作权表示（条文未精读）。"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: html_crawl
+    evidence_urls:
+      - "https://magazine.jp.square-enix.com/sqexnovel/"
+      - "https://magazine.jp.square-enix.com/sqexnovel/novel/2026.html"
+    confidence: high
+    verified_by: lead_direct
+    status_2026: "稼働（2026-10-09 取得 200，2026 年 10 月刊まで掲載）"
+    dev_host_reachability: verified_reachable
+    notes: >-
+      月别一览 `/sqexnovel/novel/2026.html` 存在。
+      **书影 URL 文件名即 ISBN**（例 9784301008064.jpg）→ 可直接作为书志主键。
+      无 API/RSS。旧预想 URL `/sqexnovel/` 为 404。
+
+  - id: ln_kadokawa_labels
+    name: "電撃文庫／富士見ファンタジア文庫／MF文庫J（KADOKAWA）"
+    url: "https://www.kadokawa.co.jp/label/dengekibunko/"
+    category: ln_label
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 書名 / 著者 / イラスト
+      - 発売日
+      - レーベル名 / シリーズ
+      - ISBN
+    update_frequency: "月刊"
+    robots_txt_finding: "未取得（kadokawa.co.jp 在本机实测连接超时）。"
+    terms_finding: "unknown（未取得）"
+    anti_bot_risk: high
+    compliance_risk: low
+    method: do_not_collect
+    evidence_urls:
+      - "https://www.kadokawa.co.jp/label/dengekibunko/"
+      - "https://www.kadokawa.co.jp/label/fantasiabunko/"
+    confidence: low
+    verified_by: research_agent
+    status_2026: "レーベル页经 301 存续（推定）／本机不可达，正文未取得"
+    dev_host_reachability: unverified
+    notes: >-
+      【旧域名全部失效】`dengekibunko.jp`、`fantasiabunko.jp`、`mfbunkoj.jp`
+      **全部 301 到 `kadokawa.co.jp/label/*`** → 硬编码旧域名会失败。
+      **替代方案（已验证可行）**：用 openBD 的 `series` 字段按レーベル名抽取
+      （实测 9784040763279 → series=富士見ファンタジア文庫, publisher=KADOKAWA）。
+      注意 Fujimi 系新增 **「GirlsLine」**（女性向/百合向新レーベル，2024 创刊）。
+      但实测 2026-10-30 发售的 HJ文庫 近刊 9784798643267 在 openBD 返回 **null** →
+      **近刊必须由版元官网补**。
+
+  - id: ln_overlap_pash
+    name: "オーバーラップ文庫 ／ PASH!ブックス"
+    url: "https://over-lap.co.jp/"
+    category: ln_label
+    source_type: official_website
+    auth_requirement: none
+    fields_available:
+      - 書名 / 著者 / レーベル / 発売日 / 価格 / ISBN
+    update_frequency: "月次（推定）"
+    robots_txt_finding: "over-lap.co.jp 本机连接 reset；shufu.co.jp/robots.txt curl 200 但 web_fetch 403（WAF 不稳定）。"
+    terms_finding: "unknown"
+    anti_bot_risk: high
+    compliance_risk: unknown
+    method: do_not_collect
+    evidence_urls:
+      - "https://over-lap.co.jp/"
+      - "https://www.shufu.co.jp/bookstore/"
+      - "https://www.pashplus.jp/robots.txt"
+    confidence: low
+    verified_by: research_agent
+    status_2026: "両社サイト稼働／レーベル单位的机械可读新刊一览未确认"
+    dev_host_reachability: unverified
+    notes: >-
+      【域名纠正】正しいドメインは **over-lap.co.jp**（`overlapjp.co.jp` 为 DNS 不可解析）。
+      官方商店的レーベル别目录与广报博客的新刊分类在搜索结果中可见，但本机连接 reset。
+      **PASH!ブックス 的专用刊行目录未找到**：主婦と生活社 `/books/` 301 到
+      `/bookstore/`；PASH! PLUS(pashplus.jp) 是动画/周边新闻站，**不是**书目。
+      → 两者均以 openBD + 书店数据补充。
+
+  - id: ln_web_action_prtimes
+    name: "双葉社 webアクション ／ PR TIMES ／ ラノベニュースオンライン"
+    url: "https://comic-action.com/rss"
+    category: ja_serialization
+    source_type: rss
+    api_endpoint: "https://comic-action.com/rss ；https://prtimes.jp/index.rdf"
+    auth_requirement: none
+    fields_available:
+      - 新連載 / 更新情報 / 作品一覧（webアクション）
+      - 新刊・新レーベル発表（PR TIMES）
+      - 百合ジャンル动向・刊行点数统计（ラノベニュース）
+    update_frequency: "webアクション：日次〜週次；PR TIMES：随時（大量）"
+    robots_txt_finding: "未确认。"
+    terms_finding: "unknown（PR TIMES 转载条件需确认）"
+    anti_bot_risk: low
+    compliance_risk: medium
+    method: rss
+    evidence_urls:
+      - "https://comic-action.com/rss"
+      - "https://prtimes.jp/index.rdf"
+      - "https://ln-news.com/articles/124446"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: "webアクション RSS 稼働（200・RSS2.0）；PR TIMES RSS 稼働（RSS1.0）；ln-news 稼働"
+    dev_host_reachability: verified_reachable
+    notes: >-
+      **webアクション**（双葉社）RSS 可直接监控新连载。
+      **PR TIMES** 是出版社「创刊/新レーベル/新连载」的一次发表源，
+      宜用「百合」「レーベル名」过滤后**必链回一次情报**。
+      ラノベニュースオンライン 为年次总括与レーベル动向的参考信息（数值须标出所与时点）。
+
+  - id: ja_yurihime_rss_note
+    name: "コミック百合姫 公式RSS（补充）"
+    url: "https://www.ichijinsha.co.jp/yurihime/feed/"
+    category: ja_serialization
+    source_type: rss
+    auth_requirement: none
+    fields_available:
+      - 記事タイトル / URL / 公開日時（RSS）
+    update_frequency: "月刊＋随時"
+    robots_txt_finding: "同 ichijinsha 域：仅禁 /wp-admin/。"
+    terms_finding: "未见禁止抓取条款。"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: rss
+    evidence_urls:
+      - "https://www.ichijinsha.co.jp/yurihime/feed/"
+      - "https://www.ichijinsha.co.jp/yurihime/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: "稼働（200・application/rss+xml）"
+    dev_host_reachability: verified_reachable
+    notes: >-
+      **重要补充**：コミック百合姫 有官方 RSS `/yurihime/feed/`（实测 200）。
+      这比抓 HTML 更稳，应作为「百合姫 新刊/告知」的增量通道。
+      【需修正的一处矛盾】子代理称「毎月18日発売」，
+      但我在 2026-10-09 直接实测官方页面显示
+      **「コミック百合姫 2026年11月号 / 2026年09月16日(水) 発売」** →
+      以**实测的 16 日**为准，此处保留冲突记录待阶段 3 复核。
+
+  - id: ja_dead_yuri_magazines
+    name: "已休刊/废止的百合杂志（负向清单，避免误采）"
+    url: "https://www.ichijinsha.co.jp/yurihime/"
+    category: ja_serialization
+    source_type: official_website
+    auth_requirement: none
+    fields_available: []
+    update_frequency: "已终止"
+    robots_txt_finding: "n/a"
+    terms_finding: "n/a"
+    anti_bot_risk: low
+    compliance_risk: low
+    method: do_not_collect
+    evidence_urls:
+      - "https://www.ichijinsha.co.jp/yurihime/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: discontinued
+    dev_host_reachability: verified_reachable
+    notes: >-
+      **这些杂志已终止，采集时不得当作现役对象**：
+      つぼみ（芳文社・まんがタイムKRコミックスGL）— 2012年12月 vol.21 休刊，
+      つぼみWebコミック 2013-05-22 闭锁；
+      コミック百合姫S（一迅社）— 2010-09-18 vol.14 废刊并与隔月刊百合姫统合；
+      百合姉妹（マガジン・マガジン）— 2005年7月废刊（百合姫创刊的契机）；
+      ニコニコ百合姫（Web）— 2016年10月配信终了（2021年11月再开，此后动向未确认）；
+      きららミラク（芳文社）— 2017年12月号（6巻12号=70号）以后休刊。
+      另：電撃文庫MAGAZINE（2020年休刊）、ドラゴンマガジン（2025年休刊）非百合专门志。
+      2024-2026 **未确认有百合专门商业新杂志创刊**；
+      新动向为ぶんか社「orSiS」（2025-10-08，女性同士を描く新レーベル）
+      与 KADOKAWA 富士見ファンタジア文庫「GirlsLine」。
+
+# =============================================================================
+# 评价 / 评分数据源（review_sources）
+# =============================================================================
+# 与上面 sources 分开建模，因为评价源有额外维度：
+#   rating_fields                : 可取得的评分字段
+#   review_text_available        : full_text | excerpt_only | aggregate_only | none
+#   copyright_risk_for_reviews   : 评论正文的著作权风险
+#   display_policy               : 本项目允许的展示方式（写死，前端必须遵守）
+#
+# 【本项目对评价数据的强制策略】
+#   P1. 数据库**不设评论正文列**。正文一律以「外链卡片」呈现。
+#   P2. 只存聚合分数、评分人数、评论件数，并**显式记录分数口径**（score_scale）。
+#   P3. 不同源的分数**不得直接合并计算**（5分制/10分制/100分制/刻度未验证）。
+#   P4. 只要该源条款或 robots 禁止，就不展示其数值，只做链接。
+#   P5. 每条评分展示必须带 source_url + retrieved_at。
+# =============================================================================
+
+review_sources:
+
+  # ---------- 日文 ----------
+  - id: rv_ja_rakuten
+    name: "楽天ブックス レビュー平均・件数"
+    region: ja
+    url: "https://webservice.rakuten.co.jp/documentation/books-book-search"
+    source_type: official_api
+    api_endpoint: "https://openapi.rakuten.co.jp/services/api/BooksBook/Search/20170404"
+    auth_requirement: free_api_key
+    rating_fields: ["reviewAverage（5分制平均）", "reviewCount（件数）"]
+    review_text_available: aggregate_only
+    copyright_risk_for_reviews: low
+    anti_bot_risk: low
+    method: official_api
+    display_policy: "可展示数值；必须同时展示楽天 branding/attribution 并挂 itemUrl 外链（条款要求）。"
+    evidence_urls:
+      - "https://webservice.rakuten.co.jp/documentation/books-book-search"
+      - "https://webservice.rakuten.co.jp/robots.txt"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【结论修正】现行 2017-04-04 版输出参数中，评分字段只有 reviewCount 与
+      reviewAverage，**未列出 reviewUrl** → 评论页 URL 只能靠 itemUrl 跳商品页。
+      日文侧最可用的量化评分源。
+
+  - id: rv_ja_openbd_shohyo
+    name: "openBD 書評情報（紙媒书评刊登索引）"
+    region: ja
+    url: "https://openbd.jp/spec/"
+    source_type: official_api
+    api_endpoint: "https://api.openbd.jp/v1/get?isbn=ISBN"
+    auth_requirement: none
+    rating_fields: ["無用户评分；仅书评刊登元数据：appearance(掲載日)", "reviewer(書評者)", "source(掲載元)", "choyukan(朝刊/夕刊)", "link"]
+    review_text_available: none
+    copyright_risk_for_reviews: low
+    anti_bot_risk: low
+    method: official_api
+    display_policy: "可展示「某报某日由某某评论过此书」这一层元数据 + 原文链接；不得展示正文。遵循 openBD 介绍用途/不改版/删除请求即配合。"
+    evidence_urls:
+      - "https://openbd.jp/spec/"
+      - "https://api.openbd.jp/v1/get?isbn=9784163902302"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: verified_reachable
+    notes: >-
+      【已实测样本】刊载源含 産經新聞/朝日新聞/読売新聞/東京新聞・中日新聞/
+      毎日新聞/日本経済新聞/週刊読書人 → 是报纸书评索引，不含评论文。
+      带书评的 ISBN 占比官方未公布，覆盖率标 unknown，预计漫画/轻小说偏低。
+
+  - id: rv_ja_anilist
+    name: "AniList GraphQL API"
+    region: ja
+    url: "https://graphql.anilist.co"
+    source_type: official_api
+    api_endpoint: "https://graphql.anilist.co (POST)"
+    auth_requirement: none
+    rating_fields: ["Media.averageScore（0-100）", "Media.meanScore", "Media.popularity", "Media.favourites", "Media.stats.scoreDistribution"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: low
+    method: official_api
+    display_policy: "只展示聚合分 + 标注 Source: AniList + 回链；**不落库评论正文、不做全量镜像、不做长期存储**（ToS 禁止 backup/data storage）。"
+    evidence_urls:
+      - "https://docs.anilist.co/guide/terms-of-use"
+      - "https://docs.anilist.co/guide/rate-limiting"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      ToS 四条硬约束：① 免费仅限非商用；② **禁止把 API 作为备份或数据存储服务**；
+      ③ **禁止 hoarding / 大规模收集**；④ 不得用于同性质竞品（含动漫/漫画列表与追踪服务）。
+      ⇒ 本项目可作「短 TTL 缓存 + 实时查询」的评分展示，但不可做全量落库；
+      一旦加入个人书单/追番追踪功能即可能落入竞品条款。
+
+  - id: rv_ja_mal_official
+    name: "MyAnimeList 官方 API v2"
+    region: ja
+    url: "https://myanimelist.net/apiconfig/references/api/v2"
+    source_type: official_api
+    api_endpoint: "https://api.myanimelist.net/v2/manga/{id}?fields=..."
+    auth_requirement: free_api_key
+    rating_fields: ["mean（0-10）", "rank", "popularity", "num_list_users", "num_scoring_users"]
+    review_text_available: aggregate_only
+    copyright_risk_for_reviews: medium
+    anti_bot_risk: high
+    method: official_api
+    display_policy: "只取 mean / num_scoring_users / rank，标注出典并回链。"
+    evidence_urls:
+      - "https://myanimelist.net/apiconfig/references/api/v2"
+      - "https://myanimelist.net/robots.txt"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      官方 v2 **不含评论端点**（参考页全文检索 reviews 命中 0 次）→ 无正文问题。
+      robots 点名封禁大量 AI 爬虫（含 ClaudeBot / DeepSeekBot / GPTBot 等）。
+
+  - id: rv_ja_sugoiweb
+    name: "宝島社「このマンガがすごい！」「このライトノベルがすごい！」"
+    region: ja
+    url: "https://sugoiweb.jp/"
+    source_type: official_website
+    auth_requirement: none
+    rating_fields: ["年度榜单排名", "得点 pt"]
+    review_text_available: none
+    copyright_risk_for_reviews: medium
+    anti_bot_risk: low
+    method: html_crawl
+    display_policy: "只登载名次与得分，注明「出典：『このマンガがすごい！2026』（宝島社）」并回链；不整表复制。"
+    evidence_urls:
+      - "https://sugoiweb.jp/robots.txt"
+      - "https://sugoiweb.jp/ranking/"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      性价比最高的「日文评价」替代指标：同时覆盖漫画榜与轻小说榜，
+      robots 宽松（仅禁 /official/wp-admin/）。2026 榜单页 2025-12-10 公开。
+
+  - id: rv_ja_bookmeter
+    name: "読書メーター（bookmeter.com）"
+    region: ja
+    url: "https://bookmeter.com/"
+    source_type: community
+    auth_requirement: none
+    rating_fields: ["作品页汇总評価（刻度未验证）", "感想件数", "読了/本棚登记数", "ナイス件数"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: medium
+    method: manual_curation
+    display_policy: "只显示汇总量 + 外链；正文不复制。刻度未验证 → 数值不入库，只作参考展示或直接外链。"
+    evidence_urls:
+      - "https://bookmeter.com/robots.txt"
+      - "https://bookmeter.com/terms"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      **无官方 API**（仅第三方抓取封装 bookmeter-api / bookmeter_scraper）。
+      robots 仅禁 /users/linkages/；条款未明文禁自动取得，但禁止「对服务器施加显著负荷」，
+      且投稿内容著作权**归投稿者**（用户给 bookmeter 的再许可不等于授权我们）。
+      评分刻度未验证。
+
+  - id: rv_ja_amazon
+    name: "Amazon.co.jp カスタマーレビュー"
+    region: ja
+    url: "https://webservices.amazon.com/paapi5/documentation/"
+    source_type: retailer_api
+    auth_requirement: application_review
+    rating_fields: ["PA-API v5 曾提供平均星与件数；Creators API 是否提供星级存在矛盾记载 → unknown"]
+    review_text_available: none
+    copyright_risk_for_reviews: high
+    anti_bot_risk: high
+    method: do_not_collect
+    display_policy: "**不展示**。Amazon 运营政策禁止在 PA API 之外展示客户评论或星级（in part or in whole）。"
+    evidence_urls:
+      - "https://affiliate-program.amazon.com/help/operating/policies"
+      - "https://webservices.amazon.com/paapi5/documentation/"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: discontinued
+    dev_host_reachability: unverified
+    notes: >-
+      PA-API v5：2026-04-30 deprecated、2026-05-15 端点退役（AWS SigV4 认证被拒）。
+      无论新旧 API 都**不提供评论正文**。第三方 scraper 属规约违反高风险。
+
+  - id: rv_ja_ebookjapan
+    name: "ebookjapan レビュー"
+    region: ja
+    url: "https://ebookjapan.yahoo.co.jp/"
+    source_type: retailer
+    auth_requirement: none
+    rating_fields: ["评分与评论（页面存在）"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: high
+    method: do_not_collect
+    display_policy: "仅作品页外链，不取评论。"
+    evidence_urls:
+      - "https://ebookjapan.yahoo.co.jp/robots.txt"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【最清晰的禁止案例】robots.txt 对**所有 UA（含 Googlebot）** Disallow /review，
+      另对 GPTBot/ClaudeBot/CCBot 等整站 Disallow。
+
+  - id: rv_ja_booklog
+    name: "ブクログ（booklog.jp）"
+    region: ja
+    url: "https://booklog.jp/"
+    source_type: community
+    api_endpoint: "https://api.booklog.jp/v2/json/{account}?count=N"
+    auth_requirement: none
+    rating_fields: ["官方 API 无任何评分字段（仅书架元数据）"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: high
+    method: do_not_collect
+    display_policy: "不作为评分源；仅外链。"
+    evidence_urls:
+      - "https://booklog.jp/robots.txt"
+      - "https://api.booklog.jp/v2/json/nironero?count=3"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      api.booklog.jp/v2/json/{account} 无需 key 但只返回个人书架；
+      api.booklog.jp/v1/search = 404；booklog.jp HTML 返回 202 + 0 字节（反爬拦截）；
+      robots.txt = 404。**评分与评论只在被拦截的 HTML 里 → 不可行**。
+
+  - id: rv_ja_annict
+    name: "Annict（annict.com）"
+    region: ja
+    url: "https://annict.com/"
+    source_type: official_api
+    api_endpoint: "https://api.annict.com/v1/works"
+    auth_requirement: free_api_key
+    rating_fields: ["記録の rating（作品评分）", "視聴状态", "感想（reviews）正文"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: low
+    method: official_api
+    display_policy: "仅作动画化作品的辅助评分；感想正文不转载，只外链。"
+    evidence_urls:
+      - "https://annict.com/robots.txt"
+      - "https://api.annict.com/v1/works?per_page=1"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      需 OAuth2 应用注册（无令牌 401）。robots 仅禁 /db/。
+      **官方 API 文档站 developers.annict.com / developers.annict.jp 实测 404**，
+      仅确认 v1 REST。Annict 是动画观看记录站，不覆盖漫画/轻小说本体。
+
+  - id: rv_ja_others_blocked
+    name: "其他日文评价源（honto / BOOK☆WALKER / コミックシーモア / 紀伊國屋）"
+    region: ja
+    url: "https://honto.jp/"
+    source_type: retailer
+    auth_requirement: none
+    rating_fields: ["honto: みんなのレビュー星与件数", "BOOK☆WALKER: 評価（5星）与件数", "コミックシーモア: 未验证"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: high
+    method: do_not_collect
+    display_policy: "一律外链，不抓取、不转载正文。"
+    evidence_urls:
+      - "https://honto.jp/robots.txt"
+      - "https://bookwalker.jp/robots.txt"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      honto：robots 点名 **User-agent: ClaudeBot → Disallow: /**，页面对本环境 UA 返回 403。
+      BOOK☆WALKER：robots 点名 Disallow ClaudeBot / GPTBot / CCBot / Google-Extended 等。
+      コミックシーモア：本机 TLS 无法连通，字段未验证。
+      紀伊國屋：未确认存在用户评价功能，标 unknown。
+
+  # ---------- 繁体中文 ----------
+  - id: rv_tw_bahamut
+    name: "巴哈姆特 ACG 資料庫（acg.gamer.com.tw）"
+    region: zh_tw
+    url: "https://acg.gamer.com.tw/"
+    source_type: community
+    api_endpoint: "sitemap: https://acg.gamer.com.tw/sitemap/sitemap.xml"
+    auth_requirement: none
+    rating_fields: ["網友評價平均分（1-5 星換算）", "評價人數", "人氣", "所有評價列表"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: low
+    method: sitemap_crawl
+    display_policy: "可展示平均分與評價人數（註明粒度）；评论正文僅必要時短引用 + 標註巴哈姆特會員 + 原文連結。"
+    evidence_urls:
+      - "https://acg.gamer.com.tw/robots.txt"
+      - "https://acg.gamer.com.tw/sitemap/sitemap.xml"
+      - "https://acg.gamer.com.tw/acgDetail.php?s=94420"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【繁中侧最佳评分源】robots = `User-agent: * / Allow: /` 且提供 sitemap
+      （sitemap1-3.xml 含 acgDetail.php?s=<id>，lastmod 当日），无 Crawl-delay。
+      同一作品按媒体类型分列并各自带评分（例：《終將成為妳》漫畫 s=94420 → 5.0 / 60人；
+      動畫 s=97159 → 4.8 / 226人；輕小說 s=109362）。
+      页面明示评分定义「1~5 星各自代表 1~5 分，加總後除以總評價人數」。
+      【建模注意】漫畫條目常以「系列」為單位，一則評價對應整個系列而非單冊。
+
+  - id: rv_tw_kingstone
+    name: "金石堂網路書店（kingstone.com.tw）"
+    region: zh_tw
+    url: "https://www.kingstone.com.tw/"
+    source_type: retailer
+    auth_requirement: none
+    rating_fields: ["會員好評星等（1-5 星，.star.star_solid）", "評價則數", "評論正文（SSR 内嵌）"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: low
+    method: html_crawl
+    display_policy: "聚合值（星等＋評價數）可採集；正文預設不落地，必要時 ≤50–80 字短引用 + 標註會員（帳號遮罩）+ 日期 + 原文連結。"
+    evidence_urls:
+      - "https://www.kingstone.com.tw/robots.txt"
+      - "https://www.kingstone.com.tw/basic/2019479678861/"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      robots 直连 200：Disallow /api/、/bms/、/dks/、/cart/ 等，其余允许；
+      且明确 Allow: / 给多家 AI 爬虫（含 ClaudeBot、GPTBot）。
+      商品页 SSR 直接输出评论全文（已实测含 2024-06-27 评论）。
+      会员服务条款全文未发现反爬/禁止重製条款。分类含「漫畫 > GL/百合」。
+
+  - id: rv_tw_readmoo
+    name: "Readmoo 讀墨電子書"
+    region: zh_tw
+    url: "https://readmoo.com/"
+    source_type: retailer
+    auth_requirement: none
+    rating_fields: ["平均評分（.avg-rating）", "共 N 人評分", "N 篇書評", "N 則劃線"]
+    review_text_available: aggregate_only
+    copyright_risk_for_reviews: high
+    anti_bot_risk: high
+    method: sitemap_crawl
+    display_policy: "只採 /book/<id> SSR 頁的平均分/評分人數/書評篇數；**嚴禁呼叫 /api/reviews 與 /book/social_dashboard/**；正文一律外鏈。"
+    evidence_urls:
+      - "https://readmoo.com/robots.txt"
+      - "https://readmoo.com/book/210502606000101"
+      - "https://readmoo.com/terms/service"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      robots：一般 UA 設 **Crawl-delay: 10**，Disallow /search/、/api/reviews、
+      /api/product/overview、/book/social_dashboard/ 等；
+      2026-08 新增区段对 GPTBot/ClaudeBot/anthropic-ai/Bytespider 等**整站 Disallow**。
+      条款：网站内容不得逕自重製/公開傳輸，引用或轉載须事前書面同意；
+      会员上载内容权利仍属会员 → 第三方无转载授权。
+      【重要】若采集管线以 AI agent 抓取即属违规 → 必须用可识别、非 AI 的 UA 或人工。
+
+  - id: rv_tw_books
+    name: "博客來 books.com.tw（會員評鑑）"
+    region: zh_tw
+    url: "https://www.books.com.tw/"
+    source_type: retailer
+    auth_requirement: none
+    rating_fields: ["會員評鑑星等（未验证）", "會員評鑑則數"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: high
+    method: manual_curation
+    display_policy: "只取聚合值 + 深層連結；**嚴禁轉載評鑑正文**。"
+    evidence_urls:
+      - "https://web.archive.org/web/20260509224951id_/https://www.books.com.tw/robots.txt"
+      - "https://web.archive.org/web/20220323153751id_/https://www.books.com.tw/data/qanda/servicepolicy.htm?loc=footer_01_003"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      【本机直连一律 HTTP 403（WAF）】，结论来自 Wayback 快照。
+      robots（Cloudflare Managed）声明 **Content-Signal: search=yes, ai-train=no**，
+      并对 GPTBot/ClaudeBot/CCBot/Google-Extended 等整站 Disallow。
+      条款第十一条：网站内容不得逕自使用、重製、公開傳輸；引用或轉載须**事前書面同意**。
+      会员评鉴授权对象是博客来，不及于第三方。媒体称全站累积约 8 万则会员书评。
+
+  - id: rv_tw_taaze
+    name: "讀冊生活 TAAZE（taaze.tw）"
+    region: zh_tw
+    url: "https://www.taaze.tw/"
+    source_type: retailer
+    auth_requirement: none
+    rating_fields: ["評價筆數（SSR 可見）", "星評與評論（端點被禁）"]
+    review_text_available: aggregate_only
+    copyright_risk_for_reviews: high
+    anti_bot_risk: medium
+    method: do_not_collect
+    display_policy: "只取商品頁可見的「評價筆數」並跳轉原文；**絕對不要呼叫 /single_getProdComments.html**。"
+    evidence_urls:
+      - "https://www.taaze.tw/robots.txt"
+      - "https://www.taaze.tw/products/11100012808.html"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      robots 明确 Disallow **/single_getProdComments.html**（商品评论端点）
+      与 /single_getUsedList.html → 机器可读的评论端点在 robots 层面即被排除。
+
+  - id: rv_tw_kobo_pubu
+    name: "Kobo 台灣 / Pubu（判定为不可用）"
+    region: zh_tw
+    url: "https://www.kobo.com/tw/zh"
+    source_type: retailer
+    auth_requirement: none
+    rating_fields: ["Kobo: #RatingsBrief 星等與評論數（前端 widget）"]
+    review_text_available: none
+    copyright_risk_for_reviews: medium
+    anti_bot_risk: high
+    method: do_not_collect
+    display_policy: "仅深層連結跳轉；不自行抓取评分。"
+    evidence_urls:
+      - "https://ratingsapi.kobo.com/robots.txt"
+      - "https://www.pubu.com.tw/robots.txt"
+    confidence: high
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      Kobo：www.kobo.com 允许 /tw/zh，但 **ratingsapi.kobo.com/robots.txt = Disallow: /**
+      （仅 Allow /*.js、/*.css）→ 评分后端对所有爬虫关闭。
+      Pubu：robots 为白名单制，末尾明写「Block every crawler not explicitly approved
+      above」+ User-agent: * / Disallow: / → 本项目爬虫属未列名者，整站不可存取。
+
+  - id: rv_tw_goodreads
+    name: "Goodreads（繁中版條目，跨語言 work 層級）"
+    region: global
+    url: "https://www.goodreads.com/"
+    source_type: community
+    auth_requirement: none
+    rating_fields: ["averageRating（5分制，work 層級）", "ratingsCount", "reviews 數"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: high
+    method: html_crawl
+    display_policy: "僅取 /book/show 或 /book/isbn 頁的 averageRating 與 ratingsCount，且**必須標註「work 層級、跨語言版本聚合，非繁中版專屬評分」**。評論正文不採集。"
+    evidence_urls:
+      - "https://www.goodreads.com/robots.txt"
+      - "https://www.goodreads.com/book/isbn/9789864732654"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      robots：Disallow /api、/search、/book/reviews/、/review/show、/work 等；
+      **/book/show 未被禁止（故聚合分可讀）**。
+      已實證：以繁中版 ISBN 9789864732654（《終將成為妳（１）》台灣角川）可命中，
+      頁面內嵌 "averageRating":4.04、"ratingsCount":9417。
+      公开 API 已于 2020 年退役。
+
+  - id: rv_tw_douban_fallback
+    name: "豆瓣讀書（繁中版條目，作为繁中评分替代来源）"
+    region: zh_cn
+    url: "https://book.douban.com/"
+    source_type: community
+    auth_requirement: unknown
+    rating_fields: ["评分（0-10）", "评价人数", "系列/版本关联"]
+    review_text_available: full_text
+    copyright_risk_for_reviews: high
+    anti_bot_risk: high
+    method: manual_curation
+    display_policy: "以聚合值為主，且**必須標明其為 zh-CN 社群意見，不得當作繁中讀者評分**；不可轉載短評/書評正文。"
+    evidence_urls:
+      - "https://book.douban.com/series/39990"
+      - "https://www.douban.com/robots.txt"
+    confidence: medium
+    verified_by: research_agent
+    status_2026: active
+    dev_host_reachability: unverified
+    notes: >-
+      已實證 https://book.douban.com/series/39990 = 《終將成為妳》系列，
+      出版社標示「台灣角川」共 8 冊，逐冊有评分與评价人数
+      （(1) 9.0 / 1307人、(8) 9.7 / 721人）。
+      works/1094200 可见「全部版本(3)」→ 可做跨版本对映。
+
+# =============================================================================
+# 字段来源映射（field_source_map）
+# =============================================================================
+# 用于阶段 2 的 schema 设计与阶段 3 的采集编排：
+# 每个字段的「主来源 → 补完来源 → 兜底」优先级。
+# 标 [E] 的是「编辑判断」，没有 source_url，必须用 classification_basis 标记。
+# =============================================================================
+
+field_source_map:
+
+  title_ja:
+    primary: [ja_ndl_search_sru_opensearch, ja_openbd]
+    secondary: [ja_yurihime, ja_kadocomi, ja_galette]
+    fallback: [ja_ndl_japanmarc_bulk]
+  authors:
+    primary: [ja_openbd]
+    secondary: [ja_yurihime, ja_kadocomi, tw_tongli]
+    fallback: [ja_ndl_search_sru_opensearch]
+  illustrators:
+    primary: [ja_openbd]
+    secondary: [ln_hobbyjapan, ln_ichijinsha_data]
+    fallback: [ja_ndl_search_sru_opensearch]
+  media_type:
+    primary: ["[E] 由来源性质判定（ja_serialization=漫画 / ln_label=轻小说 / web_novel=Web小说）"]
+  publisher_ja:
+    primary: [ja_openbd, ja_ndl_search_sru_opensearch]
+    fallback: [ja_ndl_japanmarc_bulk]
+  magazine_or_platform:
+    primary: [ja_yurihime, ja_galette, ja_kadocomi, ja_web_ace_youngaceup]
+    secondary: [wn_narou_api, wn_kakuyomu]
+  serialization_status:
+    primary: [ja_yurihime, ja_kadocomi, ja_web_ace_youngaceup]
+    secondary: [ja_openbd]
+    note: "开放数据里没有统一的「连载状态」字段；openBD 只有 ProductAvailability/zaiko/datezeppan，不等于连载状态。"
+  start_date:
+    primary: [ja_yurihime, ja_kadocomi]
+    fallback: [ja_ndl_search_sru_opensearch]
+    note: "官方常只公布创刊号；NDL 只有出版年月 → 精确到日的完整率低。"
+  end_date:
+    primary: [ja_yurihime, an_official_site]
+    note: "完结作品才有，须人工从官网/新闻取。"
+  chapter_count:
+    primary: [ja_web_ace_youngaceup, ja_galette]
+    secondary: [ja_kadocomi]
+    note: "→ 建议改存 latest_chapter_label（字符串）而非整数。"
+  volume_count_ja:
+    primary: [ln_ichijinsha_data, ln_hobbyjapan, ln_ga_bunko]
+    secondary: [ja_openbd, ja_ndl_search_sru_opensearch]
+  volume_count_zh_tw:
+    primary: [tw_tongli, tw_chingwin]
+    secondary: [tw_ncl_isbn, tw_ncl_bulk]
+  volume_count_zh_cn:
+    primary: [cn_cppinfo]
+    secondary: [cn_tianwen_bilibili]
+  genres:
+    primary: [wn_kakuyomu, ja_ichicomi]
+    secondary: [wn_narou_api]
+    note: "仅部分平台有官方百合标签；なろう 无百合ジャンル（靠 is_gl）。"
+  yuri_type:
+    primary: ["[E] 编辑判断"]
+    note: "无官方来源。必须用 classification_basis=editorial 标记，且不得伪造 source_url。"
+  anime_status:
+    primary: [an_official_site]
+    secondary: [an_shobocal, an_anilist, an_mal]
+    note: "官方动画站为准；第三方库仅作候选检测。"
+  anime_details:
+    broadcast_date: [an_official_site, an_shobocal]
+    studio: [an_official_site, an_anilist]
+    episode_count: [an_shobocal]
+  ja_volumes_isbn:
+    primary: [ja_ndl_search_sru_opensearch, ja_openbd]
+    secondary: [ln_ga_bunko, ln_sqex_novel, ln_hobbyjapan]
+    note: "ISBN 是唯一稳定的跨源连接键。"
+  ja_volumes_cover_url:
+    primary: [ja_openbd]
+    note: "openBD 条款禁止再配布 → 默认只存 URL，不镜像。"
+  zh_tw_volumes:
+    primary: [tw_tongli, tw_chingwin, tw_ncl_isbn]
+    secondary: [tw_kadokawa, tw_egmanga]
+  official_zh_cn:
+    primary: [cn_cppinfo]
+    secondary: [cn_tianwen_bilibili, cn_bilibili_manga, cn_kuaikan]
+    note: "须区分「实体书（有 ISBN）」与「数字授权（无 ISBN）」。"
+  unofficial_zh:
+    primary: []
+    note: "本项目不采集。一律 unknown + 前端说明文案（见可行性报告 §6.4）。"
+  ratings_ja:
+    primary: [rv_ja_rakuten, rv_ja_sugoiweb]
+    secondary: [rv_ja_anilist, rv_ja_mal_official]
+  ratings_zh_tw:
+    primary: [rv_tw_bahamut]
+    secondary: [rv_tw_kingstone, rv_tw_readmoo]
+  ratings_zh_cn:
+    primary: []
+    note: "不可做。改用外链 + 机构榜单。"
+  review_meta:
+    primary: [rv_ja_openbd_shohyo]
+    note: "只有书评刊登元数据（报刊名/评者/日期/链接），无正文。"
+
+# =============================================================================
+# 统计
+# =============================================================================
+# sources        : 75
+# review_sources : 19
+# 合计            : 94
+#
+# 采集方式分布：
+#   official_api 13 / bulk_download 3 / sitemap_crawl 13 / rss 6
+#   html_crawl 10 / manual_curation 8 / do_not_collect 22
+#
+# 待办（阶段 2 前需确认，见可行性报告 §9）：
+#   [ ] unofficial_zh 字段的处理方针
+#   [ ] yuri_type 是否接受为编辑判断
+#   [ ] 采集确定跑 GitHub Actions
+#   [ ] 部署区域（建议新加坡/东京）
+#   [ ] 站点是否公开，及 openBD「删除请求」受理渠道
+#   [ ] 简中评分是否接受替代方案
+# =============================================================================

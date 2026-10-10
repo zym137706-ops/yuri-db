@@ -1,0 +1,52 @@
+[
+  {
+    "source_id": "an_animeanime",
+    "status": "ok",
+    "feed": "https://animeanime.jp/rss20/index.rdf",
+    "robots": "ok (211 bytes)",
+    "matched": 0,
+    "parsed": 50,
+    "http": 200,
+    "error": ""
+  },
+  {
+    "source_id": "an_yahoo_rss",
+    "status": "ok",
+    "feed": "https://news.yahoo.co.jp/rss/topics/entertainment.xml",
+    "robots": "ok (1102 bytes)",
+    "matched": 0,
+    "parsed": 8,
+    "http": 200,
+    "error": ""
+  },
+  {
+    "source_id": "ln_ga_bunko",
+    "status": "ok",
+    "feed": "https://ga.sbcr.jp/sitemap.rss",
+    "robots": "ok (187 bytes)",
+    "matched": 0,
+    "parsed": 49,
+    "http": 200,
+    "error": ""
+  },
+  {
+    "source_id": "ln_web_action",
+    "status": "ok",
+    "feed": "https://comic-action.com/rss",
+    "robots": "ok (147 bytes)",
+    "matched": 0,
+    "parsed": 33,
+    "http": 200,
+    "error": ""
+  },
+  {
+    "source_id": "ja_prtimes",
+    "status": "ok",
+    "feed": "https://prtimes.jp/index.rdf",
+    "robots": "ok (254 bytes)",
+    "matched": 0,
+    "parsed": 200,
+    "http": 200,
+    "error": ""
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "_comment": [
+    "Outbound link templates, in one auditable place.",
+    "Every URL the UI can *construct* (as opposed to the URLs that come straight",
+    "from the dataset) is assembled from these prefixes, so: (a) there is a single",
+    "list to review when a source changes its URL scheme, and (b) no .tsx file",
+    "embeds a literal scheme+host. The dataset-sourced links (source_url,",
+    "cover_source_url, sources[].url, field_sources[].source_url) are never built",
+    "here — they are rendered verbatim from data/anime.json."
+  ],
+  "anilist_anime": "https://anilist.co/anime/",
+  "myanimelist_anime": "https://myanimelist.net/anime/"
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja"
+  data-route="media:sunday_webry:404"
+  data-media="sunday_webry"
+  data-enabled-feature-names="[]"
+  data-cdn-root="https://cdn.www.sunday-webry.com"
+  data-root-uri="https://www.sunday-webry.com"
+  data-revision="6da0dadd24faa53b6a4c76f84a65514e055e0e54"
+  data-env="giga_production2"
+  data-endpoint="/sunday_webry"
+  data-recaptcha-site-key="6LcF5U4sAAAAAEv3gaJRynY1BH9MtKejNrSywmqI"
+  data-requested-at-epoch="1791516974"
+  >
+<head>
+    <meta charset="utf-8">
+    <title>サンデーうぇぶり | ページが見つかりません</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon.png?1791449357">
+    <link rel="apple-touch-icon-precomposed" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon.png?1791449357">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-76.png?1791449357">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-76.png?1791449357">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-114.png?1791449357">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-114.png?1791449357">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-120.png?1791449357">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-120.png?1791449357">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-144.png?1791449357">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-144.png?1791449357">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-152.png?1791449357">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-152.png?1791449357">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-167.png?1791449357">
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-167.png?1791449357">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-180.png?1791449357">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://cdn.www.sunday-webry.com/images/apple-touch-icon-180.png?1791449357">
+      <link rel="icon" type="image/png" sizes="36x36" href="https://cdn.www.sunday-webry.com/images/android-icon-36.png?1791449357">
+      <link rel="icon" type="image/png" sizes="48x48" href="https://cdn.www.sunday-webry.com/images/android-icon-48.png?1791449357">
+      <link rel="icon" type="image/png" sizes="72x72" href="https://cdn.www.sunday-webry.com/images/android-icon-72.png?1791449357">
+      <link rel="icon" type="image/png" sizes="96x96" href="https://cdn.www.sunday-webry.com/images/android-icon-96.png?1791449357">
+      <link rel="icon" type="image/png" sizes="144x144" href="https://cdn.www.sunday-webry.com/images/android-icon-144.png?1791449357">
+      <link rel="icon" type="image/png" sizes="192x192" href="https://cdn.www.sunday-webry.com/images/android-icon-192.png?1791449357">
+      <link rel="icon" sizes="256x256" href="https://cdn.www.sunday-webry.com/images/favicon.ico?1791449357">
+      <link rel="shortcut icon" href="https://cdn.www.sunday-webry.com/images/favicon.ico?1791449357">
+    <meta name="msapplication-TileImage" content="https://cdn.www.sunday-webry.com/images/mstile-144.png?1791449357"/>
+    <meta name="msapplication-TileColor" content=""/>
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="https://www.sunday-webry.com/atom">
+    <link rel="alternate" type="application/rss+xml" title="RSS2.0" href="https://www.sunday-webry.com/rss">
+    <link id='styleSheetCssElement' rel="stylesheet" href="https://cdn.www.sunday-webry.com/css/sunday_webry.css?1791449484">
+<script type="module">!function(e,t,n){!("noModule"in(t=e.createElement("script")))&&"onbeforeload"in t&&(n=!1,e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove())}(document)</script>
+    <script id='jqueryJs' async src="https://cdn.www.sunday-webry.com/js/jquery-slick.js?1791449472" type="module" crossorigin="anonymous"></script>
+    <script async id="bundleJsElement" src="https://cdn.www.sunday-webry.com/js/bundle.js?1791449531" type="module" crossorigin="anonymous"></script>
+  </head>
+  <body
+    id="page-sundayWebry-404"
+    class=""><script>
+  // GTMのdataLayerに値をセットする
+  // GTMのスクリプトが読み込まれる前に実行する必要があるので注意する
+  if (!window.dataLayer) window.dataLayer = [];
+  window.dataLayer.push({
+    giga: JSON.parse(document.documentElement.getAttribute('data-gtm-data-layer') || '{}')
+  });
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBXFLBJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-WBXFLBJ');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3SN6D7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-P3SN6D7');</script>
+<!-- End Google Tag Manager -->
+  <header id="top" class="header js-header">
+  <div class="header-container ">
+    <nav>
+      <h1 class="header-logo"><a href="/"><span>サンデーうぇぶり</span></a></h1>
+      <div class="nav-area">
+        <ul class="header-nav">
+          <li class="series"><a href="/series">連載一覧</a></li>
+          <li class="history">
+            <a href="/history">
+              <span>履歴</span>              <span class="header-history-badge" style="display: none;"></span>
+            </a>
+          </li>
+          <li class="rookie"><a href="/newcomer">新人賞</a></li>
+          <li class="comics"><a href="/comics">コミックス</a></li>
+        </ul>
+        <ul class="header-icon-items">
+          <li class="social"><a href="https://twitter.com/SundayWebry" target="_blank" rel="noopener noreferrer"><span>X</span></a></li>
+          <li class="search"><a href="/search"><span>検索</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="error-content">
+  <h1>ページが見つかりません</h1>
+  <p class="error-content-description">
+    このページは現在ご覧いただけません。<br>
+    移動もしくは削除されている可能性があります。
+  </p>
+  <p class="error-content-link">
+    <a href="/"><span>トップページ</span></a>
+  </p>
+</div>
+<footer class="footer">
+  <ul class="footer-nav">
+    <li><a href="/">TOP</a></li>
+    <li><a href="/series">連載一覧</a></li>
+    <li><a href="/newcomer">新人賞</a></li>
+    <li><a href="https://blog.www.sunday-webry.com/privacy">プライバシーポリシー</a></li>
+    <li><a href="https://blog.www.sunday-webry.com/terms_of_service">利用規約</a></li>
+  </ul>
+  <div class="footer-copyright">
+    <p>&copy; <a href="https://www.shogakukan.co.jp/" target="_blank" rel="noopener noreferrer">Shogakukan Inc.</a> All rights reserved.</p>
+  </div>
+  <div class="app-links">
+    <div class="app-links-container">
+      <img class="app-icon" src="https://cdn.www.sunday-webry.com/images/webry-app-icon.png?1791449357" alt="サンデーうぇぶりアプリ">
+      <ul>
+        <li>
+          <a href="https://app.adjust.com/2estz9t" target="_blank" rel="noopener noreferrer">
+            <img class="app-store-badge" src="https://cdn.www.sunday-webry.com/images/app-store-bage.svg?1791449357" alt="App Storeからダウンロード">
+          </a>
+        </li>
+        <li>
+          <a href="https://app.adjust.com/ookp0ug" target="_blank" rel="noopener noreferrer">
+            <img class="google-play-badge" src="https://cdn.www.sunday-webry.com/images/google-play-badge.png?1791449357" alt="Google Playで手に入れよう">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="abj-mark-wrapper">
+    <div class="abj-mark-container">
+      <img class="abj-mark" src="https://cdn.www.sunday-webry.com/images/abj.svg?1791449357" alt="ABJマーク">
+      <p>ABJマークは、この電子書店・電子書籍配信サービスが、著作権者からコンテンツ使用許諾を得た正規版配信サービスであることを示す登録商標（登録番号 第6091713号）です。<br>詳しくは［ABJマーク］または［電子出版制作・流通協議会］で検索してください。</p>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

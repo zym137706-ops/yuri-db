@@ -1,0 +1,71 @@
+# =============================================================================
+# 每月全量校验
+# =============================================================================
+# 阶段 1 建议频率：全量校验 每月。
+# 内容：
+#   1. 全量重采（含所有已实现源）
+#   2. 对照 schema 逐条校验
+#   3. 计算核心 / 扩展字段完整率，与验收标准（核心 > 80%）比对
+#   4. 合规自检（盗版域名 denylist）
+#   5. 数据源可用性盘点（哪些源本月出现 network_error / blocked_by_robots）
+#
+# 失败即报警：完整率跌破门槛或出现 denylist 命中时 exit 非零。
+# =============================================================================
+name: verify-monthly
+
+on:
+  schedule:
+    # 每月 1 日 03:00 UTC
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests lxml pyyaml jsonschema python-dateutil
+
+      - name: Full re-collect
+        run: python collectors/run.py --delay 2.0 --details 100
+
+      - name: Rebuild dataset
+        run: python scripts/build_dataset.py
+
+      - name: Rebuild anime dataset
+        run: python scripts/build_anime_dataset.py
+
+      - name: Prisma schema validation
+        run: |
+          npm install --no-save prisma@6
+          DATABASE_URL="postgresql://u:p@localhost:5432/db" npx prisma validate --schema prisma/schema.prisma
+
+      - name: Verify schema + acceptance thresholds
+        run: python scripts/verify_acceptance.py
+
+      - name: Compliance self-check (piracy denylist)
+        run: python research/compliance_check.py
+
+      - name: Schema regression tests (D1/D2/D3 rules)
+        run: python scripts/validate_schema.py
+
+      - name: Source health report
+        run: python scripts/source_health.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: monthly-verify-${{ github.run_id }}
+          path: |
+            data/dataset_report.json
+            data/source_health.json
+          retention-days: 365
+          if-no-files-found: warn

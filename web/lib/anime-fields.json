@@ -1,0 +1,85 @@
+{
+  "_comment": [
+    "Field inventory for schemas/anime.schema.json — the SAME guarantee as",
+    "lib/schema-fields.json gives for Work: scripts/verify-anime.mjs proves this",
+    "file is a bijection with the schema's `properties` (and with the nested",
+    "`main_cast.items.properties`, `sources.items.properties` and",
+    "`field_sources.additionalProperties.properties`), so no schema field can",
+    "silently disappear from app/anime/[slug]/page.tsx.",
+    "`kind` is the formatting hint read by lib/anime.ts formatByKind()."
+  ],
+  "groups": [
+    { "id": "identity", "label": "識別資訊" },
+    { "id": "broadcast", "label": "開播與形態" },
+    { "id": "staff", "label": "製作公司與聲優" },
+    { "id": "reception", "label": "評價指標（AniList）" },
+    { "id": "flags", "label": "分級與產地" },
+    { "id": "media", "label": "封面與連結" },
+    { "id": "links", "label": "關聯作品" },
+    { "id": "provenance", "label": "溯源與查核" }
+  ],
+  "animeFields": [
+    { "name": "id", "label": "ID", "group": "identity", "kind": "string" },
+    { "name": "slug", "label": "Slug", "group": "identity", "kind": "slug" },
+    { "name": "anilist_id", "label": "AniList ID", "group": "identity", "kind": "number" },
+    { "name": "mal_id", "label": "MyAnimeList ID", "group": "identity", "kind": "number" },
+    { "name": "title_ja", "label": "日文原名", "group": "identity", "kind": "title" },
+    { "name": "title_romaji", "label": "羅馬字標題", "group": "identity", "kind": "title" },
+    { "name": "title_en", "label": "英文標題", "group": "identity", "kind": "title" },
+    { "name": "title_zh_tw", "label": "繁體中文譯名", "group": "identity", "kind": "title" },
+    { "name": "title_zh_cn", "label": "簡體中文譯名", "group": "identity", "kind": "title" },
+
+    { "name": "format", "label": "形態", "group": "broadcast", "kind": "enum" },
+    { "name": "adaptation_source", "label": "改編類型", "group": "broadcast", "kind": "enum" },
+    { "name": "status", "label": "狀態", "group": "broadcast", "kind": "enum" },
+    { "name": "start_date", "label": "開播時間", "group": "broadcast", "kind": "date" },
+    { "name": "end_date", "label": "結束時間", "group": "broadcast", "kind": "date" },
+    { "name": "season", "label": "季", "group": "broadcast", "kind": "enum" },
+    { "name": "season_year", "label": "季年份", "group": "broadcast", "kind": "number" },
+    { "name": "episode_count", "label": "集數", "group": "broadcast", "kind": "number" },
+    { "name": "episode_duration_min", "label": "單集時長（分鐘）", "group": "broadcast", "kind": "number" },
+
+    { "name": "studios", "label": "製作公司", "group": "staff", "kind": "stringArray" },
+    { "name": "main_cast", "label": "主要聲優（角色＋聲優）", "group": "staff", "kind": "objectArray" },
+
+    { "name": "average_score", "label": "AniList 平均分（0–100）", "group": "reception", "kind": "number" },
+    { "name": "popularity", "label": "AniList 人氣", "group": "reception", "kind": "number" },
+    { "name": "yuri_tag_rank", "label": "AniList「Yuri」標籤相關度", "group": "reception", "kind": "number" },
+
+    { "name": "is_adult", "label": "來源標記為 R18", "group": "flags", "kind": "boolean" },
+    { "name": "country_of_origin", "label": "製作國家／地區", "group": "flags", "kind": "string" },
+
+    { "name": "cover_url", "label": "封面圖 URL（只存連結，不鏡像）", "group": "media", "kind": "url" },
+    { "name": "cover_source_url", "label": "封面出處頁", "group": "media", "kind": "url" },
+    { "name": "source_url", "label": "條目來源頁", "group": "media", "kind": "url" },
+
+    { "name": "related_work_id", "label": "關聯 Work ID", "group": "links", "kind": "string" },
+    { "name": "related_work_slug", "label": "關聯 Work Slug", "group": "links", "kind": "slug" },
+
+    { "name": "sources", "label": "溯源來源清單", "group": "provenance", "kind": "objectArray" },
+    { "name": "field_sources", "label": "欄位級來源", "group": "provenance", "kind": "object" },
+    { "name": "field_confidence", "label": "欄位級把握度", "group": "provenance", "kind": "confidenceMap" },
+    { "name": "last_checked", "label": "最後查核時間", "group": "provenance", "kind": "timestamp" }
+  ],
+  "nested": {
+    "main_cast": [
+      { "name": "character", "label": "角色", "kind": "string" },
+      { "name": "voice_actor", "label": "聲優", "kind": "string" }
+    ],
+    "sources": [
+      { "name": "source_id", "label": "來源 ID", "kind": "string" },
+      { "name": "name", "label": "名稱", "kind": "string" },
+      { "name": "url", "label": "網址", "kind": "url" },
+      { "name": "retrieved_at", "label": "取得時間", "kind": "timestamp" },
+      { "name": "confidence", "label": "來源把握度", "kind": "number" },
+      { "name": "note", "label": "備註", "kind": "string" }
+    ],
+    "field_sources": [
+      { "name": "basis", "label": "依據", "kind": "enum" },
+      { "name": "source_url", "label": "來源網址", "kind": "url" },
+      { "name": "retrieved_at", "label": "取得時間", "kind": "timestamp" },
+      { "name": "confidence", "label": "把握度", "kind": "number" },
+      { "name": "note", "label": "備註", "kind": "string" }
+    ]
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yuri-db.example/schemas/work.schema.json",
+  "title": "YuriWork",
+  "description": "日本百合漫画/轻小说 作品记录（API 交换格式）。阶段 2 交付物。与 prisma/schema.prisma 对应，但为便于导出的扁平结构。约定：无法确认的字段一律为 null 或字符串 \"unknown\"，不得推测填充。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title_ja",
+    "media_type",
+    "serialization_status",
+    "yuri_type",
+    "classification_basis",
+    "anime_status",
+    "official_zh_cn",
+    "unofficial_zh",
+    "sources",
+    "last_checked"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "稳定唯一 ID（数据库内部 cuid，永不变更）"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "URL slug，稳定不变"
+    },
+    "title_ja": { "type": "string", "minLength": 1 },
+    "title_zh_tw": { "type": ["string", "null"] },
+    "title_zh_cn": { "type": ["string", "null"] },
+    "title_en": { "type": ["string", "null"] },
+
+    "title_zh_tw_status": {
+      "enum": ["official", "unchecked", "none_known"],
+      "description": "official = 有官方繁中版譯名；none_known = 已查證目前無官方繁中版；unknown = 尚未查證"
+    },
+    "title_zh_cn_status": {
+      "enum": ["official", "unchecked", "none_known"],
+      "description": "official = 有官方簡中版譯名；none_known = 已查證目前無官方簡中版；unknown = 尚未查證"
+    },
+
+    "cover_url": {
+      "type": ["string", "null"],
+      "description": "封面圖 URL。**只存連結，不鏡像**：圖片著作權屬出版社，本站以促銷/介紹目的引用並標示來源。"
+    },
+    "cover_source_url": {
+      "type": ["string", "null"],
+      "description": "封面所屬的商品頁 URL，用於標示出處"
+    },
+    "cover_region": {
+      "enum": ["ja", "zh_tw", "zh_cn", null],
+      "description": "這張封面是哪個語言版本的（不同版本封面通常不同）"
+    },
+    "cover_display_allowed": {
+      "type": ["boolean", "null"],
+      "description": "來源條款是否允許本站直接嵌入該圖片。false 時只顯示外連連結，不嵌入 img。"
+    },
+    "cover_note": { "type": ["string", "null"] },
+
+    "media_type": { "enum": ["manga", "light_novel", "web_novel"] },
+    "serialization_status": {
+      "enum": ["ongoing", "completed", "hiatus", "unknown"]
+    },
+
+    "publisher_ja": { "type": ["string", "null"] },
+    "publisher_zh_tw": { "type": ["string", "null"] },
+    "publisher_zh_cn": { "type": ["string", "null"] },
+    "magazine_or_platform": { "type": ["string", "null"] },
+    "magazine_or_platform_kind": {
+      "enum": ["magazine", "web_platform", "web_novel_site", "label", "other", null]
+    },
+    "magazine_or_platform_active": {
+      "type": ["boolean", "null"],
+      "description": "该杂志/平台是否现役。已休刊者必须为 false（例：つぼみ、きららミラク）"
+    },
+
+    "authors": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "著者/原作者"
+    },
+    "illustrators": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "start_date": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "YYYY-MM-DD。官方常只公布到月，无法精确到日时填 null 并在 field_confidence 里标明"
+    },
+    "end_date": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+
+    "latest_chapter_label": {
+      "type": ["string", "null"],
+      "description": "连载话数标签，如「第12話」「#5」。官方通常只给标签而非累计话数，故以此为主字段"
+    },
+    "chapter_count": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "仅在来源确实给出整数累计话数时填写，否则为 null（禁止从标签推算）"
+    },
+
+    "volume_count_ja": { "type": ["integer", "null"], "minimum": 0 },
+    "volume_count_zh_tw": { "type": ["integer", "null"], "minimum": 0 },
+    "volume_count_zh_cn": { "type": ["integer", "null"], "minimum": 0 },
+
+    "genres": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "官方标签优先。存在官方百合标签的平台：カクヨム(tags/百合)、一迅プラス(genres/yuri)"
+    },
+    "genres_official": {
+      "type": ["boolean", "null"],
+      "description": "genres 是否全部来自平台官方标签"
+    },
+
+    "yuri_type": {
+      "enum": [
+        "orthodox_yuri",
+        "light_yuri",
+        "s_class",
+        "gl",
+        "micro_yuri",
+        "uncertain"
+      ],
+      "description": "[D2] 百合类型。这是编辑判断，没有官方数据源"
+    },
+    "classification_basis": {
+      "enum": ["official_tag", "editorial"],
+      "description": "[D2] official_tag = 来自平台官方标签（必须能给出 source_url）；editorial = 编辑判断（不计入 source_url 强制项）"
+    },
+
+    "anime_status": {
+      "enum": ["none", "announced", "in_production", "airing", "finished", "movie"]
+    },
+    "anime_details": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "studio": { "type": ["string", "null"] },
+        "broadcast_date": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "broadcast_end": { "type": ["string", "null"] },
+        "episode_count": { "type": ["integer", "null"], "minimum": 0 },
+        "format": { "enum": ["tv", "movie", "ova", "web", null] },
+        "official_url": { "type": ["string", "null"] },
+        "source_url": { "type": ["string", "null"] }
+      }
+    },
+
+    "ja_volumes": { "$ref": "#/$defs/volumeJaList" },
+    "zh_tw_volumes": { "$ref": "#/$defs/volumeZhList" },
+    "zh_cn_volumes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["volume", "isbn", "release_date", "publisher", "source_url"],
+        "properties": {
+          "volume": { "type": "integer", "minimum": 1 },
+          "isbn": { "type": ["string", "null"] },
+          "release_date": { "type": ["string", "null"], "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$" },
+          "publisher": { "type": ["string", "null"] },
+          "translator": { "type": ["string", "null"] },
+          "cover_url": { "type": ["string", "null"] },
+          "source_url": { "type": ["string", "null"] }
+        }
+      }
+    },
+
+    "official_zh_cn": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exists", "publisher", "latest_volume", "source_url", "kind"],
+      "properties": {
+        "exists": { "type": "boolean" },
+        "kind": {
+          "enum": ["print", "digital", "both", "none", "unknown"],
+          "description": "必须区分「实体书（有 ISBN）」与「数字授权（无 ISBN）」。例：citrus 只有简中数字连载，无实体简中版"
+        },
+        "publisher": { "type": ["string", "null"] },
+        "latest_volume": { "type": ["integer", "null"], "minimum": 0 },
+        "isbn": { "type": ["string", "null"] },
+        "source_url": { "type": ["string", "null"] }
+      }
+    },
+
+    "unofficial_zh": {
+      "type": "object",
+      "description": "[D1] 非官方汉化：仅允许人工登记，不提供任何链接。本对象刻意没有 URL/获取方式字段。",
+      "additionalProperties": false,
+      "required": ["status", "note"],
+      "properties": {
+        "status": {
+          "enum": ["unknown", "manually_flagged"],
+          "description": "默认 unknown。manually_flagged 表示人工确认存在，但不含任何获取方式"
+        },
+        "latest_chapter": { "type": ["string", "null"] },
+        "last_seen": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "note": {
+          "type": ["string", "null"],
+          "if": { "type": "string" },
+          "then": {
+            "not": {
+              "pattern": "(?:[hH][tT][tT][pP][sS]?://)|(?:[wW]{3}\\.)|(?:[a-zA-Z0-9-]+\\.[a-zA-Z]{2,})",
+              "description": "同时拦截带协议的 URL、www. 开头，以及裸域名（如 example.com）。"
+            }
+          },
+          "description": "人工备注。禁止包含任何 URL（pattern 用可移植的 ECMA-262 写法，且以 if/then 限定只对字符串生效）。"
+        },
+        "recorded_by": {
+          "type": ["string", "null"],
+          "description": "登记人"
+        },
+        "recorded_at": { "type": ["string", "null"] }
+      }
+    },
+
+    "ratings": {
+      "type": "array",
+      "description": "评价三层模型的 [A] 评分层。只存聚合分数与件数，不含评论正文。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "region",
+          "score_value",
+          "score_scale",
+          "display_allowed",
+          "source_url",
+          "retrieved_at"
+        ],
+        "properties": {
+          "source_id": { "type": "string" },
+          "region": { "enum": ["ja", "zh_tw", "zh_cn"] },
+          "score_value": { "type": "number" },
+          "score_scale": {
+            "enum": [5, 10, 100],
+            "description": "分数口径。不同口径不得合并计算（楽天=5, MAL=10, AniList=100）"
+          },
+          "score_count": { "type": ["integer", "null"], "minimum": 0 },
+          "display_allowed": {
+            "type": "boolean",
+            "description": "该源条款是否允许本站展示数值。false 时只做外链（如 Amazon、豆瓣、Kobo、Pubu）"
+          },
+          "license_note": { "type": ["string", "null"] },
+          "source_url": { "type": "string", "minLength": 1 },
+          "retrieved_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+
+    "review_meta": {
+      "type": "array",
+      "description": "评价三层模型的 [B] 书评/榜单元数据层。只有元数据，【没有正文】。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "outlet", "source_url", "retrieved_at"],
+        "properties": {
+          "source_id": { "type": "string" },
+          "outlet": { "type": "string" },
+          "reviewer": { "type": ["string", "null"] },
+          "published_date": { "type": ["string", "null"] },
+          "rank": { "type": ["integer", "null"] },
+          "points": { "type": ["integer", "null"] },
+          "source_url": { "type": "string", "minLength": 1 },
+          "retrieved_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "description": "溯源列表。每条必须带 url / retrieved_at / confidence。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "url", "retrieved_at", "confidence"],
+        "properties": {
+          "source_id": { "type": ["string", "null"] },
+          "name": { "type": "string", "minLength": 1 },
+          "url": { "type": "string" },
+          "retrieved_at": { "type": "string", "format": "date-time" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+
+    "field_sources": {
+      "type": "object",
+      "description": "字段级溯源。key 为字段名。editorial 类字段 source_url 可为空字符串。",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["basis"],
+        "properties": {
+          "basis": {
+            "enum": ["official", "official_tag", "editorial", "derived", "third_party"],
+            "description": "third_party = 来自第三方数据库（如 AniList），非官方一手来源，confience 应低于官方源"
+          },
+          "source_url": { "type": "string" },
+          "retrieved_at": { "type": ["string", "null"] },
+          "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+          "note": {
+            "type": ["string", "null"],
+            "description": "该字段为什么这样取值 / 为什么是编辑判断"
+          }
+        }
+      }
+    },
+
+    "field_confidence": {
+      "type": "object",
+      "description": "字段级把握度（0..1）。与 source_confidence 分开：源可信不等于该字段填得对。",
+      "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+
+    "last_checked": { "type": "string", "format": "date-time" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" }
+  },
+
+  "$defs": {
+    "volumeJaList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["volume", "isbn", "release_date", "publisher", "source_url"],
+        "properties": {
+          "volume": { "type": "integer", "minimum": 1 },
+          "isbn": {
+            "type": ["string", "null"],
+            "pattern": "^[0-9]{13}$",
+            "description": "ISBN-13，无连字符。跨源唯一稳定的连接键。"
+          },
+          "release_date": {
+            "type": ["string", "null"],
+            "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$",
+            "description": "YYYY / YYYY-MM / YYYY-MM-DD。NDL 等来源常只给到月（例 2019-06），此时保留月精度而不是丢弃。"
+          },
+          "publisher": { "type": ["string", "null"] },
+          "price": { "type": ["string", "null"] },
+          "cover_url": {
+            "type": ["string", "null"],
+            "description": "封面图 URL。默认不镜像（openBD 条款禁止向第三方再配布）。"
+          },
+          "source_url": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "volumeZhList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["volume", "isbn", "release_date", "publisher", "source_url"],
+        "properties": {
+          "volume": { "type": "integer", "minimum": 1 },
+          "isbn": { "type": ["string", "null"] },
+          "release_date": { "type": ["string", "null"], "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$" },
+          "publisher": { "type": ["string", "null"] },
+          "translator": { "type": ["string", "null"] },
+          "cover_url": { "type": ["string", "null"], "description": "只存連結，不鏡像" },
+          "source_url": { "type": ["string", "null"] }
+        }
+      }
+    }
+  },
+
+  "allOf": [
+    {
+      "$comment": "[D2] 若 classification_basis = official_tag，则 genres/yuri_type 必须在 field_sources 中给出非空 source_url",
+      "if": {
+        "properties": { "classification_basis": { "const": "official_tag" } },
+        "required": ["classification_basis"]
+      },
+      "then": {
+        "required": ["field_sources"],
+        "properties": {
+          "field_sources": {
+            "anyOf": [
+              {
+                "properties": {
+                  "genres": {
+                    "properties": { "source_url": { "type": "string", "minLength": 1 } },
+                    "required": ["source_url"]
+                  }
+                },
+                "required": ["genres"]
+              },
+              {
+                "properties": {
+                  "yuri_type": {
+                    "properties": { "source_url": { "type": "string", "minLength": 1 } },
+                    "required": ["source_url"]
+                  }
+                },
+                "required": ["yuri_type"]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$comment": "[D1] unofficial_zh 一律不得包含链接，且 status=unknown 时不得填写章节信息",
+      "properties": {
+        "unofficial_zh": {
+          "if": {
+            "properties": { "status": { "const": "unknown" } },
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "latest_chapter": { "type": "null" },
+              "last_seen": { "type": "null" }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

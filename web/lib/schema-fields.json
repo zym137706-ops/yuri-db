@@ -1,0 +1,695 @@
+{
+  "$comment": "Canonical field inventory for the Work detail page. Single source of truth shared by lib/provenance.ts (rendering) and scripts/assert-data-contract.mjs (completeness proof against schemas/work.schema.json). Every key in that schema's `properties` MUST appear here exactly once, and vice versa — the assertion script enforces both directions.",
+  "groups": [
+    {
+      "id": "identity",
+      "label": "識別資訊"
+    },
+    {
+      "id": "publication",
+      "label": "連載與出版"
+    },
+    {
+      "id": "creators",
+      "label": "創作者"
+    },
+    {
+      "id": "classification",
+      "label": "分類與標籤"
+    },
+    {
+      "id": "anime",
+      "label": "動畫化"
+    },
+    {
+      "id": "editions",
+      "label": "中文版與漢化"
+    },
+    {
+      "id": "evaluation",
+      "label": "評分與書評"
+    },
+    {
+      "id": "provenance",
+      "label": "溯源與查核"
+    }
+  ],
+  "workFields": [
+    {
+      "name": "id",
+      "label": "ID",
+      "group": "identity",
+      "kind": "string"
+    },
+    {
+      "name": "slug",
+      "label": "Slug",
+      "group": "identity",
+      "kind": "slug"
+    },
+    {
+      "name": "title_ja",
+      "label": "日文標題",
+      "group": "identity",
+      "kind": "title"
+    },
+    {
+      "name": "title_zh_tw",
+      "label": "繁中標題",
+      "group": "identity",
+      "kind": "title"
+    },
+    {
+      "name": "title_zh_tw_status",
+      "label": "繁中標題狀態",
+      "group": "identity",
+      "kind": "enum"
+    },
+    {
+      "name": "title_zh_cn",
+      "label": "簡中標題",
+      "group": "identity",
+      "kind": "title"
+    },
+    {
+      "name": "title_zh_cn_status",
+      "label": "簡中標題狀態",
+      "group": "identity",
+      "kind": "enum"
+    },
+    {
+      "name": "title_en",
+      "label": "英文標題",
+      "group": "identity",
+      "kind": "title"
+    },
+    {
+      "name": "cover_url",
+      "label": "封面圖 URL",
+      "group": "identity",
+      "kind": "url"
+    },
+    {
+      "name": "cover_source_url",
+      "label": "封面出處頁",
+      "group": "provenance",
+      "kind": "url"
+    },
+    {
+      "name": "cover_region",
+      "label": "封面版本",
+      "group": "identity",
+      "kind": "enum"
+    },
+    {
+      "name": "cover_display_allowed",
+      "label": "允許嵌入封面",
+      "group": "provenance",
+      "kind": "boolean"
+    },
+    {
+      "name": "cover_note",
+      "label": "封面授權備註",
+      "group": "provenance",
+      "kind": "string"
+    },
+    {
+      "name": "media_type",
+      "label": "媒體類型",
+      "group": "identity",
+      "kind": "enum"
+    },
+    {
+      "name": "serialization_status",
+      "label": "連載狀態",
+      "group": "publication",
+      "kind": "enum"
+    },
+    {
+      "name": "publisher_ja",
+      "label": "日文出版社",
+      "group": "publication",
+      "kind": "string"
+    },
+    {
+      "name": "publisher_zh_tw",
+      "label": "繁中出版社",
+      "group": "publication",
+      "kind": "string"
+    },
+    {
+      "name": "publisher_zh_cn",
+      "label": "簡中出版社",
+      "group": "publication",
+      "kind": "string"
+    },
+    {
+      "name": "magazine_or_platform",
+      "label": "雜誌／平台",
+      "group": "publication",
+      "kind": "string"
+    },
+    {
+      "name": "magazine_or_platform_kind",
+      "label": "雜誌／平台種類",
+      "group": "publication",
+      "kind": "enum"
+    },
+    {
+      "name": "magazine_or_platform_active",
+      "label": "雜誌／平台現役",
+      "group": "publication",
+      "kind": "boolean"
+    },
+    {
+      "name": "start_date",
+      "label": "連載開始日",
+      "group": "publication",
+      "kind": "date"
+    },
+    {
+      "name": "end_date",
+      "label": "連載結束日",
+      "group": "publication",
+      "kind": "date"
+    },
+    {
+      "name": "latest_chapter_label",
+      "label": "最新話標籤",
+      "group": "publication",
+      "kind": "string"
+    },
+    {
+      "name": "chapter_count",
+      "label": "累計話數",
+      "group": "publication",
+      "kind": "number"
+    },
+    {
+      "name": "volume_count_ja",
+      "label": "日文版卷數",
+      "group": "publication",
+      "kind": "number"
+    },
+    {
+      "name": "volume_count_zh_tw",
+      "label": "繁中版卷數",
+      "group": "publication",
+      "kind": "number"
+    },
+    {
+      "name": "volume_count_zh_cn",
+      "label": "簡中版卷數",
+      "group": "publication",
+      "kind": "number"
+    },
+    {
+      "name": "authors",
+      "label": "作者",
+      "group": "creators",
+      "kind": "stringArray"
+    },
+    {
+      "name": "illustrators",
+      "label": "插畫",
+      "group": "creators",
+      "kind": "stringArray"
+    },
+    {
+      "name": "genres",
+      "label": "類型標籤",
+      "group": "classification",
+      "kind": "stringArray"
+    },
+    {
+      "name": "genres_official",
+      "label": "標籤皆為官方",
+      "group": "classification",
+      "kind": "boolean"
+    },
+    {
+      "name": "yuri_type",
+      "label": "百合類型",
+      "group": "classification",
+      "kind": "enum"
+    },
+    {
+      "name": "classification_basis",
+      "label": "分類依據",
+      "group": "classification",
+      "kind": "enum"
+    },
+    {
+      "name": "anime_status",
+      "label": "動畫狀態",
+      "group": "anime",
+      "kind": "enum"
+    },
+    {
+      "name": "anime_details",
+      "label": "動畫詳情",
+      "group": "anime",
+      "kind": "object"
+    },
+    {
+      "name": "ja_volumes",
+      "label": "日文版書目",
+      "group": "editions",
+      "kind": "objectArray"
+    },
+    {
+      "name": "zh_tw_volumes",
+      "label": "繁中版書目",
+      "group": "editions",
+      "kind": "objectArray"
+    },
+    {
+      "name": "zh_cn_volumes",
+      "label": "簡中版書目",
+      "group": "editions",
+      "kind": "objectArray"
+    },
+    {
+      "name": "official_zh_cn",
+      "label": "簡中官方授權",
+      "group": "editions",
+      "kind": "object"
+    },
+    {
+      "name": "unofficial_zh",
+      "label": "非官方漢化",
+      "group": "editions",
+      "kind": "object"
+    },
+    {
+      "name": "ratings",
+      "label": "評分（聚合）",
+      "group": "evaluation",
+      "kind": "objectArray"
+    },
+    {
+      "name": "review_meta",
+      "label": "書評／榜單（僅元資料）",
+      "group": "evaluation",
+      "kind": "objectArray"
+    },
+    {
+      "name": "sources",
+      "label": "溯源來源",
+      "group": "provenance",
+      "kind": "objectArray"
+    },
+    {
+      "name": "field_sources",
+      "label": "欄位級溯源",
+      "group": "provenance",
+      "kind": "object"
+    },
+    {
+      "name": "field_confidence",
+      "label": "欄位級把握度",
+      "group": "provenance",
+      "kind": "confidenceMap"
+    },
+    {
+      "name": "last_checked",
+      "label": "最後查核",
+      "group": "provenance",
+      "kind": "timestamp"
+    },
+    {
+      "name": "created_at",
+      "label": "建立時間",
+      "group": "provenance",
+      "kind": "timestamp"
+    },
+    {
+      "name": "updated_at",
+      "label": "更新時間",
+      "group": "provenance",
+      "kind": "timestamp"
+    }
+  ],
+  "nested": {
+    "anime_details": [
+      {
+        "name": "studio",
+        "label": "製作公司",
+        "kind": "string"
+      },
+      {
+        "name": "broadcast_date",
+        "label": "放送開始",
+        "kind": "date"
+      },
+      {
+        "name": "broadcast_end",
+        "label": "放送結束",
+        "kind": "string"
+      },
+      {
+        "name": "episode_count",
+        "label": "集數",
+        "kind": "number"
+      },
+      {
+        "name": "format",
+        "label": "形式",
+        "kind": "enum"
+      },
+      {
+        "name": "official_url",
+        "label": "官方網站",
+        "kind": "url"
+      },
+      {
+        "name": "source_url",
+        "label": "來源網址",
+        "kind": "url"
+      }
+    ],
+    "ja_volumes": [
+      {
+        "name": "volume",
+        "label": "卷次",
+        "kind": "number"
+      },
+      {
+        "name": "isbn",
+        "label": "ISBN",
+        "kind": "string"
+      },
+      {
+        "name": "release_date",
+        "label": "發售日",
+        "kind": "date"
+      },
+      {
+        "name": "publisher",
+        "label": "出版社",
+        "kind": "string"
+      },
+      {
+        "name": "price",
+        "label": "價格",
+        "kind": "string"
+      },
+      {
+        "name": "cover_url",
+        "label": "封面圖 URL",
+        "kind": "url"
+      },
+      {
+        "name": "source_url",
+        "label": "來源網址",
+        "kind": "url"
+      }
+    ],
+    "zh_tw_volumes": [
+      {
+        "name": "volume",
+        "label": "卷次",
+        "kind": "number"
+      },
+      {
+        "name": "isbn",
+        "label": "ISBN",
+        "kind": "string"
+      },
+      {
+        "name": "release_date",
+        "label": "發售日",
+        "kind": "date"
+      },
+      {
+        "name": "publisher",
+        "label": "出版社",
+        "kind": "string"
+      },
+      {
+        "name": "translator",
+        "label": "譯者",
+        "kind": "string"
+      },
+      {
+        "name": "source_url",
+        "label": "來源網址",
+        "kind": "url"
+      },
+      {
+        "name": "cover_url",
+        "label": "封面 URL",
+        "kind": "url"
+      }
+    ],
+    "zh_cn_volumes": [
+      {
+        "name": "volume",
+        "label": "卷次",
+        "kind": "number"
+      },
+      {
+        "name": "isbn",
+        "label": "ISBN",
+        "kind": "string"
+      },
+      {
+        "name": "release_date",
+        "label": "發售日",
+        "kind": "date"
+      },
+      {
+        "name": "publisher",
+        "label": "出版社",
+        "kind": "string"
+      },
+      {
+        "name": "translator",
+        "label": "譯者",
+        "kind": "string"
+      },
+      {
+        "name": "source_url",
+        "label": "來源網址",
+        "kind": "url"
+      },
+      {
+        "name": "cover_url",
+        "label": "封面 URL",
+        "kind": "url"
+      }
+    ],
+    "official_zh_cn": [
+      {
+        "name": "exists",
+        "label": "是否授權",
+        "kind": "boolean"
+      },
+      {
+        "name": "kind",
+        "label": "授權形式",
+        "kind": "enum"
+      },
+      {
+        "name": "publisher",
+        "label": "出版社",
+        "kind": "string"
+      },
+      {
+        "name": "latest_volume",
+        "label": "最新卷數",
+        "kind": "number"
+      },
+      {
+        "name": "isbn",
+        "label": "ISBN",
+        "kind": "string"
+      },
+      {
+        "name": "source_url",
+        "label": "來源網址",
+        "kind": "url"
+      }
+    ],
+    "unofficial_zh": [
+      {
+        "name": "status",
+        "label": "標註狀態",
+        "kind": "enum"
+      },
+      {
+        "name": "latest_chapter",
+        "label": "最新話",
+        "kind": "string"
+      },
+      {
+        "name": "last_seen",
+        "label": "最後確認日",
+        "kind": "date"
+      },
+      {
+        "name": "note",
+        "label": "人工備註",
+        "kind": "string"
+      },
+      {
+        "name": "recorded_by",
+        "label": "登記人",
+        "kind": "string"
+      },
+      {
+        "name": "recorded_at",
+        "label": "登記時間",
+        "kind": "string"
+      }
+    ],
+    "ratings": [
+      {
+        "name": "source_id",
+        "label": "來源 ID",
+        "kind": "string"
+      },
+      {
+        "name": "region",
+        "label": "地區",
+        "kind": "enum"
+      },
+      {
+        "name": "score_value",
+        "label": "分數",
+        "kind": "number"
+      },
+      {
+        "name": "score_scale",
+        "label": "分數口徑",
+        "kind": "number"
+      },
+      {
+        "name": "score_count",
+        "label": "評分件數",
+        "kind": "number"
+      },
+      {
+        "name": "display_allowed",
+        "label": "允許展示",
+        "kind": "boolean"
+      },
+      {
+        "name": "license_note",
+        "label": "授權備註",
+        "kind": "string"
+      },
+      {
+        "name": "source_url",
+        "label": "來源網址",
+        "kind": "url"
+      },
+      {
+        "name": "retrieved_at",
+        "label": "取得時間",
+        "kind": "timestamp"
+      }
+    ],
+    "review_meta": [
+      {
+        "name": "source_id",
+        "label": "來源 ID",
+        "kind": "string"
+      },
+      {
+        "name": "outlet",
+        "label": "刊載媒體",
+        "kind": "string"
+      },
+      {
+        "name": "reviewer",
+        "label": "書評者",
+        "kind": "string"
+      },
+      {
+        "name": "published_date",
+        "label": "刊載日",
+        "kind": "string"
+      },
+      {
+        "name": "rank",
+        "label": "名次",
+        "kind": "number"
+      },
+      {
+        "name": "points",
+        "label": "點數",
+        "kind": "number"
+      },
+      {
+        "name": "source_url",
+        "label": "來源網址",
+        "kind": "url"
+      },
+      {
+        "name": "retrieved_at",
+        "label": "取得時間",
+        "kind": "timestamp"
+      }
+    ],
+    "sources": [
+      {
+        "name": "source_id",
+        "label": "來源 ID",
+        "kind": "string"
+      },
+      {
+        "name": "name",
+        "label": "名稱",
+        "kind": "string"
+      },
+      {
+        "name": "url",
+        "label": "網址",
+        "kind": "url"
+      },
+      {
+        "name": "retrieved_at",
+        "label": "取得時間",
+        "kind": "timestamp"
+      },
+      {
+        "name": "confidence",
+        "label": "來源把握度",
+        "kind": "number"
+      },
+      {
+        "name": "note",
+        "label": "備註",
+        "kind": "string"
+      }
+    ],
+    "field_sources": [
+      {
+        "name": "basis",
+        "label": "依據",
+        "kind": "enum"
+      },
+      {
+        "name": "source_url",
+        "label": "來源網址",
+        "kind": "url"
+      },
+      {
+        "name": "retrieved_at",
+        "label": "取得時間",
+        "kind": "timestamp"
+      },
+      {
+        "name": "confidence",
+        "label": "把握度",
+        "kind": "number"
+      },
+      {
+        "name": "note",
+        "label": "備註",
+        "kind": "string"
+      }
+    ]
+  }
+}

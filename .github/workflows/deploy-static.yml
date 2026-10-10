@@ -1,0 +1,113 @@
+# =============================================================================
+# 静态站点部署 + 定时更新
+# =============================================================================
+# 设计目标（用户要求）：
+#   1. 站点是**纯静态**的，不依赖任何常驻进程/后台任务；
+#   2. 仍然能**定时更新**。
+#
+# 做法：
+#   - `next build` 用 `output: 'export'` 产出 `web/out/`（纯 HTML/CSS/JS）；
+#   - 本 workflow 负责「取数据 → 构建 → 发布到 GitHub Pages」；
+#   - 数据采集由 collect-*.yml 负责并 commit 回仓库，其 push 会触发本 workflow；
+#   - 另加每日 cron，兜底「数据没变但依赖/代码需要重建」的情况。
+#
+# 因此线上没有任何服务器：GitHub Pages 只发静态文件。
+# 本地预览同样只需一个静态文件服务器（见 README）。
+# =============================================================================
+name: deploy-static
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "web/**"
+      - "sources.yaml"
+      - "schemas/**"
+      - ".github/workflows/deploy-static.yml"
+  workflow_dispatch:
+  schedule:
+    # 每天 04:10 UTC（= 13:10 JST）兜底重建一次
+    - cron: "10 4 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: deploy-static
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # GitHub Pages serves a PROJECT site from https://<owner>.github.io/<repo>/
+      # but a USER site from the domain root. Next's `basePath` is needed for the
+      # former; without it every /_next/... asset and every internal link 404s in
+      # production while working fine locally. Computed here rather than hardcoded
+      # so the workflow stays correct if the repo is renamed or forked.
+      - name: Determine base path
+        id: base
+        run: |
+          repo="${{ github.event.repository.name }}"
+          owner="${{ github.repository_owner }}"
+          if [ "$repo" = "${owner}.github.io" ]; then
+            echo "value=" >> "$GITHUB_OUTPUT"
+            echo "user site -> no basePath"
+          else
+            echo "value=/$repo" >> "$GITHUB_OUTPUT"
+            echo "project site -> basePath=/$repo"
+          fi
+
+      # NOTE: the dataset is NOT rebuilt here on purpose.
+      # `data/*.json` is committed by the collect-*.yml jobs, and the web app reads
+      # those files directly. Rebuilding them in the deploy job would make the
+      # published site depend on CI-generated data that may differ from what was
+      # reviewed and committed — a deploy should publish, not re-derive.
+      - name: Compile the static site
+        working-directory: web
+        env:
+          NEXT_BASE_PATH: ${{ steps.base.outputs.value }}
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+
+      - name: Assert the export is really static
+        working-directory: web
+        run: |
+          test -d out || { echo "out/ missing — output:'export' not effective"; exit 1; }
+          html=$(find out -name '*.html' | wc -l)
+          echo "static HTML pages: $html"
+          test "$html" -gt 100 || { echo "suspiciously few pages"; exit 1; }
+          for f in out/index.html out/anime/index.html; do
+            test -f "$f" || { echo "missing $f"; exit 1; }
+          done
+
+      - name: Add .nojekyll (so _next/ is served)
+        working-directory: web
+        run: touch out/.nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

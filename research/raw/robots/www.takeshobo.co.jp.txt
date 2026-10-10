@@ -1,0 +1,83 @@
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Semrushbot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: bytespider
+Disallow: /
+
+User-agent: ICC-Crawler
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: YisouSpider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: Turnitin
+Disallow: /
+
+User-agent: meta-webindexer
+Disallow: /
+
+User-agent: SERankingBacklinksBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: Amzn-SearchBot
+Disallow: /
+
+User-agent: Thinkbot
+Disallow: /
+
+User-agent: GeedoShopProductFinder
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+User-agent: Sogou web spider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: ShiryologBot
+Disallow: /
+
+User-agent: *
+Disallow: /author/api/

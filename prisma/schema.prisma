@@ -1,0 +1,696 @@
+// =============================================================================
+// 日本百合漫画 / 轻小说 连载与出版信息数据库 —— Prisma Schema
+// =============================================================================
+// 阶段 2 交付物
+// 目标数据库：PostgreSQL 15+（本地 / Supabase / Neon 均可）
+//
+// 设计依据：
+//   - 用户阶段 1 确认的三项决策
+//   - docs/phase1-feasibility-report.md §4.1（4 处模型修改建议）
+//   - docs/phase1-feasibility-report.md §5.2（评价三层模型）
+//
+// 三项已确认决策在 schema 中的落地：
+//   [D1] unofficial_zh —— 纯人工登记、不提供任何链接
+//        落在 Work.unofficialZh* 字段；无 sourceUrl 字段，且带 CHECK 约束禁止写入 URL
+//   [D2] yuri_type —— 编辑判断，不计入 source_url 强制项
+//        落在 Work.yuriType + Work.classificationBasis（official_tag | editorial）
+//        classificationBasis = editorial 时，Citation 允许 sourceUrl 为空
+//   [D3] 采集跑 GitHub Actions —— CrawlRun 表区分「网络失败」与「robots 禁止」
+//
+// 其余关键设计：
+//   - ISBN 是唯一稳定的跨源连接键 → ExternalId / Volume.isbn 建唯一索引
+//   - 原始层与标准化层分离（openBD 条款禁止「任意改変」）→ RawFetch 存原样响应 + sha256
+//   - 每条数据可追溯到具体抓取记录 → Citation（字段级溯源）
+//   - 变更日志是主产物 → ChangeLog
+// =============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// =============================================================================
+// 枚举
+// =============================================================================
+
+enum MediaType {
+  manga
+  light_novel
+  web_novel
+}
+
+enum SerializationStatus {
+  ongoing
+  completed
+  hiatus
+  unknown
+}
+
+/// 百合类型。注意：这不是官方字段，属编辑判断（见 Work.classificationBasis）
+enum YuriType {
+  orthodox_yuri /// 正统百合
+  light_yuri /// 轻百合
+  s_class /// S
+  gl /// GL
+  micro_yuri /// 微百合
+  uncertain /// 不确定
+}
+
+/// 分类依据。official_tag = 平台官方标签（有 source_url）；
+/// editorial = 编辑判断（无 source_url，不计入溯源强制项）
+enum ClassificationBasis {
+  official_tag
+  editorial
+}
+
+enum AnimeStatus {
+  none
+  announced
+  in_production
+  airing
+  finished
+  movie
+}
+
+enum Region {
+  ja
+  zh_tw
+  zh_cn
+}
+
+enum VolumeFormat {
+  print
+  ebook
+}
+
+enum ContributorRole {
+  author /// 著者 / 原作
+  illustrator /// イラスト / 作画
+  original_author /// 原作（漫画化时）
+  translator /// 訳者（繁中/简中版）
+}
+
+enum OutletKind {
+  magazine /// 纸本杂志
+  web_platform /// Web 漫画平台
+  web_novel_site /// Web 小说平台
+  label /// 单行本品牌 / 文库
+  other
+}
+
+enum SourceCategory {
+  ja_bibliography
+  ja_serialization
+  web_novel
+  ln_label
+  zh_tw_edition
+  zh_cn_edition
+  anime_news
+  aggregator
+  retailer
+  library
+  isbn_registry
+  review_ja
+  review_zh_tw
+  review_zh_cn
+}
+
+enum CollectionMethod {
+  official_api
+  bulk_download
+  sitemap_crawl
+  html_crawl
+  rss
+  manual_curation
+  do_not_collect
+}
+
+enum ConfidenceLevel {
+  high
+  medium
+  low
+}
+
+enum CrawlRunStatus {
+  ok
+  partial
+  failed
+  blocked_by_robots /// 站点明确拒绝（robots/条款）
+  network_error /// 网络不可达（≠ 站点拒绝，必须分开记录）
+  skipped_do_not_collect
+}
+
+enum ChangeType {
+  created
+  updated
+  deleted
+}
+
+/// 字段级溯源的依据类型。[D2] editorial 类字段不计入 source_url 强制项。
+enum FieldBasis {
+  official /// 官方一手来源
+  official_tag /// 平台官方标签
+  editorial /// 编辑判断（允许 sourceUrl 为空）
+  derived /// 由其他字段推导（必须写明推导规则）
+  third_party /// 第三方数据库（如 AniList），非官方一手来源
+}
+
+/// 非官方汉化的登记状态。仅允许人工登记，禁止任何链接。
+/// unknown = 未登记（默认）；manually_flagged = 人工确认存在（不含任何获取方式）
+enum UnofficialZhStatus {
+  unknown
+  manually_flagged
+}
+
+// =============================================================================
+// 主数据
+// =============================================================================
+
+/// 作品（连载系列单位，不是单册）
+model Work {
+  id   String @id @default(cuid())
+  /// 人类可读的 URL slug，稳定不变
+  slug String @unique
+
+  titleJa   String
+  titleZhTw String?
+  titleZhCn String?
+  titleEn   String?
+
+  mediaType           MediaType
+  serializationStatus SerializationStatus @default(unknown)
+
+  startDate DateTime? @db.Date
+  endDate   DateTime? @db.Date
+
+  /// 连载话数。官方通常不公布累计话数，只有「第12話」「#5」这类标签，
+  /// 所以以 latestChapterLabel 为主，chapterCount 仅在来源确实给出整数时填写。
+  latestChapterLabel String?
+  chapterCount       Int?
+
+  volumeCountJa   Int?
+  volumeCountZhTw Int?
+  volumeCountZhCn Int?
+
+  /// 百合类型为编辑判断（见 classificationBasis）
+  yuriType           YuriType            @default(uncertain)
+  classificationBasis ClassificationBasis @default(editorial)
+
+  /// 冗余的动画化状态，用于列表页快速筛选；详情见 Anime 表
+  animeStatus AnimeStatus @default(none)
+
+  publisherId        String?
+  publisher          Publisher?         @relation(fields: [publisherId], references: [id])
+  serializationOutletId String?
+  serializationOutlet   SerializationOutlet? @relation(fields: [serializationOutletId], references: [id])
+
+  /// [D1] 非官方汉化：纯人工登记，不提供任何链接 ----
+  // 设计上刻意不提供 sourceUrl / link 字段。
+  // 迁移 SQL 中附 CHECK 约束禁止 note 含 "http"（见 prisma/constraints.sql）
+  unofficialZhStatus       UnofficialZhStatus @default(unknown)
+  unofficialZhLatestChapter String?
+  unofficialZhLastSeen     DateTime?          @db.Date
+  unofficialZhNote         String?
+  unofficialZhRecordedBy   String?
+  unofficialZhRecordedAt   DateTime?
+
+  /// 去重合并后的指向（软删除，支持 unmerge）。见 docs/phase2-dedup-strategy.md §6
+  mergedIntoId String?
+  mergedInto   Work?   @relation("WorkMerge", fields: [mergedIntoId], references: [id])
+  mergedFrom   Work[]  @relation("WorkMerge")
+
+  /// 字段级可信度：{ "titleJa": 0.95, "startDate": 0.4, ... }
+  fieldConfidence Json?
+
+  lastChecked DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  aliases      WorkAlias[]
+  externalIds  ExternalId[]
+  contributors WorkContributor[]
+  genres       WorkGenre[]
+  volumes      Volume[]
+  anime        Anime[]
+  citations    Citation[]
+  ratings      RatingSnapshot[]
+  reviewMetas  ReviewMeta[]
+  changes      ChangeLog[]
+
+  @@index([mediaType, serializationStatus])
+  @@index([animeStatus])
+  @@index([yuriType])
+  @@index([publisherId])
+  @@index([serializationOutletId])
+  @@index([titleJa])
+  @@index([lastChecked])
+}
+
+/// 别名 / 异体标题，用于搜索与去重
+model WorkAlias {
+  id     String @id @default(cuid())
+  workId String
+  work   Work   @relation(fields: [workId], references: [id], onDelete: Cascade)
+
+  title   String
+  region  Region?
+  kind    String? /// ja_original | zh_tw_official | zh_cn_official | romanized | abbreviation
+  sourceId String?
+
+  @@unique([workId, title])
+  @@index([title])
+}
+
+/// 跨源稳定 ID 映射（例：comicwalker=KC_000232_S、narou=N1234AB）
+model ExternalId {
+  id         String @id @default(cuid())
+  workId     String
+  work       Work   @relation(fields: [workId], references: [id], onDelete: Cascade)
+  sourceId   String
+  source     Source @relation(fields: [sourceId], references: [id])
+  externalId String
+
+  createdAt DateTime @default(now())
+
+  @@unique([sourceId, externalId])
+  @@index([workId])
+}
+
+model Person {
+  id        String @id @default(cuid())
+  nameJa    String
+  nameRomaji String?
+  nameZhTw  String?
+  nameZhCn  String?
+  /// 归一化后的键，用于去重（NFKC + 去空白 + 小写）
+  nameKey   String @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  contributions WorkContributor[]
+
+  @@index([nameJa])
+}
+
+model WorkContributor {
+  id       String          @id @default(cuid())
+  workId   String
+  work     Work            @relation(fields: [workId], references: [id], onDelete: Cascade)
+  personId String
+  person   Person          @relation(fields: [personId], references: [id])
+  role     ContributorRole
+  /// 署名顺序
+  position Int             @default(0)
+  sourceId String?
+
+  @@unique([workId, personId, role])
+  @@index([personId])
+}
+
+model Publisher {
+  id       String  @id @default(cuid())
+  nameJa   String
+  nameZhTw String?
+  nameZhCn String?
+  nameEn   String?
+  country  String? /// JP | TW | CN
+  /// 归一化键，用于去重
+  nameKey  String  @unique
+  url      String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  works    Work[]
+  outlets  SerializationOutlet[]
+  volumes  Volume[]
+}
+
+/// 连载杂志 / Web 平台 / 文库品牌
+model SerializationOutlet {
+  id          String     @id @default(cuid())
+  nameJa      String
+  nameZhTw    String?
+  nameZhCn    String?
+  kind        OutletKind
+  publisherId String?
+  publisher   Publisher? @relation(fields: [publisherId], references: [id])
+  url         String?
+  /// 是否现役（已休刊/停服填 false）
+  isActive    Boolean    @default(true)
+  endedAt     DateTime?  @db.Date
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  works Work[]
+
+  @@unique([nameJa, kind])
+}
+
+model Genre {
+  id       String  @id @default(cuid())
+  code     String  @unique /// yuri | gl | light_yuri | s | josei_muke | ippan_muke ...
+  nameJa   String
+  nameZhTw String?
+  nameZhCn String?
+  /// 该标签是否为平台官方提供（决定能否计入 official_tag）
+  isOfficial Boolean @default(false)
+
+  works WorkGenre[]
+}
+
+model WorkGenre {
+  workId  String
+  work    Work   @relation(fields: [workId], references: [id], onDelete: Cascade)
+  genreId String
+  genre   Genre  @relation(fields: [genreId], references: [id])
+  sourceId String?
+
+  @@id([workId, genreId])
+  @@index([genreId])
+}
+
+/// 单册（日版 / 繁中 / 简中，纸本或电子）
+model Volume {
+  id     String @id @default(cuid())
+  workId String
+  work   Work   @relation(fields: [workId], references: [id], onDelete: Cascade)
+
+  region       Region
+  format       VolumeFormat @default(print)
+  volumeNumber Int
+
+  /// ISBN-13（无连字符）。区域版本的主键。
+  isbn String?
+  /// 日本雑誌コード / 商品条码等
+  janCode String?
+
+  releaseDate DateTime? @db.Date
+  publisherId String?
+  publisher   Publisher? @relation(fields: [publisherId], references: [id])
+  translator  String?
+  price       String?
+  /// 封面图 URL。**默认不镜像**（openBD 条款禁止再配布）
+  coverUrl    String?
+  title       String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([workId, region, format, volumeNumber])
+  @@index([isbn])
+  @@index([releaseDate])
+}
+
+/// 动画化（一部作品可能有多个改编：TV / 剧场版 / OVA）
+/// 注意：原创动画与剧场版没有对应的漫画/小说原作，因此 anime 也作为
+/// **独立目录**存在（见 schemas/anime.schema.json 与 data/anime.json），
+/// 不强制挂在 Work 下。workId 可为空。
+model Anime {
+  id     String  @id @default(cuid())
+  workId String?
+  work   Work?   @relation(fields: [workId], references: [id], onDelete: SetNull)
+
+  /// AniList 稳定 ID（跨源关联用）
+  anilistId Int? @unique
+  malId     Int?
+
+  slug String @unique
+
+  titleJa     String
+  titleRomaji String?
+  titleEn     String?
+  titleZhTw   String?
+  titleZhCn   String?
+
+  format           AnimeFormat
+  adaptationSource AdaptationSource @default(unknown)
+  status           AnimeStatus
+
+  startDate DateTime? @db.Date
+  endDate   DateTime? @db.Date
+  season    String?
+  seasonYear Int?
+
+  episodeCount      Int?
+  episodeDurationMin Int?
+
+  /// 制作公司（isMain: true）。用逗号分隔的字符串保存，避免为一个字符串列表开表。
+  studios String?
+
+  averageScore Int?
+  popularity   Int?
+  /// AniList 的 Yuri 標籤相關度，用於說明「為何收錄此條目」
+  yuriTagRank  Int?
+  isAdult      Boolean @default(false)
+  countryOfOrigin String?
+
+  /// 只存連結，不鏡像
+  coverUrl       String?
+  coverSourceUrl String?
+  /// 來源條款是否允許站內嵌入該圖片
+  coverDisplayAllowed Boolean @default(true)
+  coverNote      String?
+
+  /// 原始來源頁（AniList）
+  sourceUrl String
+
+  officialUrl String?
+
+  lastChecked DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  cast AnimeCast[]
+
+  @@index([workId])
+  @@index([status])
+  @@index([format])
+  @@index([adaptationSource])
+  @@index([seasonYear])
+}
+
+/// 主要角色与声优（AniList role: MAIN + 日本語 voice actor）
+model AnimeCast {
+  id      String @id @default(cuid())
+  animeId String
+  anime   Anime  @relation(fields: [animeId], references: [id], onDelete: Cascade)
+
+  character  String
+  voiceActor String?
+  position   Int     @default(0)
+
+  @@unique([animeId, character])
+  @@index([voiceActor])
+}
+
+enum AnimeFormat {
+  tv
+  tv_short
+  movie /// 劇場版
+  ova
+  ona
+  special
+  music
+  other
+}
+
+/// 改编类型。manga = 漫改；light_novel/web_novel = 轻小说改；original = 原创
+enum AdaptationSource {
+  manga
+  light_novel
+  web_novel
+  novel
+  visual_novel
+  game
+  doujinshi
+  anime
+  original
+  other
+  unknown
+}
+
+// =============================================================================
+// 溯源与运行记录
+// =============================================================================
+
+/// 数据源登记表（由 sources.yaml 同步生成）
+model Source {
+  id           String           @id /// sources.yaml 里的 id
+  name         String
+  url          String
+  category     SourceCategory
+  method       CollectionMethod
+  confidence   ConfidenceLevel
+  status2026   String?
+  verifiedBy   String?
+  licenseNote  String?
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+
+  citations   Citation[]
+  ratings     RatingSnapshot[]
+  reviewMetas ReviewMeta[]
+  crawlRuns   CrawlRun[]
+  rawFetches  RawFetch[]
+  externalIds ExternalId[]
+  changeLogs  ChangeLog[]
+}
+
+/// 字段级溯源。每条记录说明「某个作品的某个字段，值来自哪里」。
+model Citation {
+  id     String @id @default(cuid())
+  workId String
+  work   Work   @relation(fields: [workId], references: [id], onDelete: Cascade)
+
+  /// 字段名，如 titleJa / volumeCountZhTw / yuriType
+  fieldName String
+  /// [D2] 溯源依据。basis = editorial 时 sourceUrl 允许为空。
+  basis     FieldBasis @default(official)
+  sourceId  String?
+  source    Source? @relation(fields: [sourceId], references: [id])
+
+  /// [D2] classificationBasis = editorial 的字段允许 sourceUrl 为空
+  sourceUrl   String?
+  retrievedAt DateTime
+  confidence  Float
+  /// 取值快照，便于回溯（openBD 条款要求不得「任意改変」，原始值另存 RawFetch）
+  valueSnapshot String?
+  note          String?
+
+  @@index([workId, fieldName])
+  @@index([sourceId])
+}
+
+/// 原始响应留存（openBD 条款：不得任意改変 → 原始层与标准化层分离）
+model RawFetch {
+  id          String   @id @default(cuid())
+  sourceId    String
+  source      Source   @relation(fields: [sourceId], references: [id])
+  runId       String?
+  run         CrawlRun? @relation(fields: [runId], references: [id])
+
+  url         String
+  httpStatus  Int?
+  contentType String?
+  /// 原样字节的 sha256，用于复现与去重
+  sha256      String
+  byteSize    Int?
+  /// 对象存储 / 仓库内的相对路径（raw/ 目录）
+  storagePath String?
+  fetchedAt   DateTime @default(now())
+
+  @@index([sourceId, fetchedAt])
+  @@index([sha256])
+}
+
+/// 一次采集运行。[D3] 必须区分网络失败与站点拒绝。
+model CrawlRun {
+  id         String         @id @default(cuid())
+  sourceId   String
+  source     Source         @relation(fields: [sourceId], references: [id])
+  status     CrawlRunStatus
+  startedAt  DateTime       @default(now())
+  finishedAt DateTime?
+  /// 运行环境：github_actions | local_dev
+  runner     String?
+  itemsSeen  Int            @default(0)
+  itemsNew   Int            @default(0)
+  itemsChanged Int          @default(0)
+  error      String?
+
+  rawFetches RawFetch[]
+  changes    ChangeLog[]
+
+  @@index([sourceId, startedAt])
+  @@index([status])
+}
+
+/// 变更日志（验收标准要求「每日自动更新并有变更日志」）
+model ChangeLog {
+  id         String     @id @default(cuid())
+  entityType String /// work | volume | anime | rating
+  entityId   String
+  workId     String?
+  work       Work?      @relation(fields: [workId], references: [id], onDelete: SetNull)
+
+  changeType ChangeType
+  fieldName  String?
+  oldValue   String?
+  newValue   String?
+
+  sourceId String?
+  source   Source? @relation(fields: [sourceId], references: [id])
+  runId    String?
+  run      CrawlRun? @relation(fields: [runId], references: [id])
+
+  detectedAt DateTime @default(now())
+
+  @@index([detectedAt])
+  @@index([workId])
+  @@index([entityType, entityId])
+}
+
+// =============================================================================
+// 评价（三层模型，见可行性报告 §5.2）
+// =============================================================================
+// [A] RatingSnapshot —— 评分层，只存聚合分数与件数
+// [B] ReviewMeta     —— 书评/榜单元数据层，无正文
+// [C] 评论正文层     —— 【不存在】。数据库刻意不设正文列。
+// =============================================================================
+
+model RatingSnapshot {
+  id     String @id @default(cuid())
+  workId String
+  work   Work   @relation(fields: [workId], references: [id], onDelete: Cascade)
+
+  sourceId String
+  source   Source @relation(fields: [sourceId], references: [id])
+  region   Region
+
+  scoreValue Float
+  /// 分数口径：必须显式记录，不同口径不得合并计算
+  /// 5 / 10 / 100 / other。乐天=5，MAL=10，AniList=100
+  scoreScale Int
+  scoreCount Int?
+
+  /// 该源条款是否允许本站展示数值（false 时只做外链）
+  displayAllowed Boolean @default(false)
+  licenseNote    String?
+
+  sourceUrl   String
+  retrievedAt DateTime
+
+  @@unique([workId, sourceId, retrievedAt])
+  @@index([workId, region])
+}
+
+model ReviewMeta {
+  id     String @id @default(cuid())
+  workId String
+  work   Work   @relation(fields: [workId], references: [id], onDelete: Cascade)
+
+  sourceId String
+  source   Source @relation(fields: [sourceId], references: [id])
+
+  /// 刊载媒体，如 朝日新聞 / このマンガがすごい！2026
+  outlet        String
+  reviewer      String?
+  publishedDate DateTime? @db.Date
+  /// 榜单名次与得分（宝島社榜单等）
+  rank          Int?
+  points        Int?
+  sourceUrl     String
+  retrievedAt   DateTime
+
+  @@index([workId])
+  @@index([outlet])
+}

@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-10-09T10:07:45.632715+00:00",
+  "source": "ja_ndl_search_sru_opensearch",
+  "endpoint": "https://ndlsearch.ndl.go.jp/api/opensearch",
+  "note": "只保留 category 为图书类的记录；seriesTitle 即文库名。",
+  "queried": 5,
+  "matched": 3,
+  "with_bunko": 3,
+  "with_publisher": 3,
+  "with_isbn": 0,
+  "runs": [
+    {
+      "status": "ok",
+      "pages": 1,
+      "items": 5,
+      "total_results": 21,
+      "page_statuses": [
+        "ok"
+      ],
+      "anilist_id": 122462,
+      "title": "わたしが恋人になれるわけないじゃん、ムリムリ! (※ムリじゃなかった!?)"
+    },
+    {
+      "status": "ok",
+      "pages": 1,
+      "items": 1,
+      "total_results": 1,
+      "page_statuses": [
+        "ok"
+      ],
+      "anilist_id": 159972,
+      "title": "わたしの百合も、営業だと思った？"
+    },
+    {
+      "status": "ok",
+      "pages": 1,
+      "items": 1,
+      "total_results": 2,
+      "page_statuses": [
+        "ok"
+      ],
+      "anilist_id": 192494,
+      "title": "クラスの姫は私のわんこ"
+    },
+    {
+      "status": "ok",
+      "pages": 1,
+      "items": 3,
+      "total_results": 17,
+      "page_statuses": [
+        "ok"
+      ],
+      "anilist_id": 110683,
+      "title": "処刑少女の生きる道（バージンロード）"
+    },
+    {
+      "status": "no_results",
+      "total_results": 0,
+      "page_statuses": [
+        "no_results"
+      ],
+      "anilist_id": 206023,
+      "title": "振り向きなさい、わたくしに！"
+    }
+  ],
+  "records": [
+    {
+      "anilist_id": 159972,
+      "title_ja": "わたしの百合も、営業だと思った？",
+      "ndl_title": "わたしの百合も、営業だと思った?",
+      "publisher_ja": "KADOKAWA",
+      "bunko_label": "電撃文庫 ; 4034",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032663652"
+    },
+    {
+      "anilist_id": 192494,
+      "title_ja": "クラスの姫は私のわんこ",
+      "ndl_title": "クラスの姫は私のわんこ",
+      "publisher_ja": "KADOKAWA",
+      "bunko_label": "角川スニーカー文庫 ; い-10-3-1",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034137377"
+    },
+    {
+      "anilist_id": 110683,
+      "title_ja": "処刑少女の生きる道（バージンロード）",
+      "ndl_title": "処刑少女の生きる道(バージンロード)",
+      "publisher_ja": "SBクリエイティブ",
+      "bunko_label": "GA文庫 ; さ-06-02",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029927256"
+    }
+  ]
+}

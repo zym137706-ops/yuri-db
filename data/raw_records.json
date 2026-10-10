@@ -1,0 +1,1276 @@
+{
+  "generated_at": "2026-10-09T06:11:40.419204+00:00",
+  "runner": "local_dev",
+  "counts": {
+    "yurihime": 36,
+    "galette": 4,
+    "tongli_list": 24,
+    "tongli_details": 24,
+    "total_records": 64
+  },
+  "records": [
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "だって恋は月夜に灯るから",
+      "authors": [
+        "meji"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/meji/%e3%81%a0%e3%81%a3%e3%81%a6%e6%81%8b%e3%81%af%e6%9c%88%e5%a4%9c%e3%81%ab%e7%81%af%e3%82%8b%e3%81%8b%e3%82%89/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "いじめてくれる君がすき",
+      "authors": [
+        "まにお"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%be%e3%81%ab%e3%81%8a/%e3%81%84%e3%81%98%e3%82%81%e3%81%a6%e3%81%8f%e3%82%8c%e3%82%8b%e5%90%9b%e3%81%8c%e3%81%99%e3%81%8d/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "聖なる姫のかくしごと",
+      "authors": [
+        "葵季むつみ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e8%91%b5%e5%ad%a3%e3%82%80%e3%81%a4%e3%81%bf/%e8%81%96%e3%81%aa%e3%82%8b%e5%a7%ab%e3%81%ae%e3%81%8b%e3%81%8f%e3%81%97%e3%81%94%e3%81%a8/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "バリキャリJKモネ先輩",
+      "authors": [
+        "椋木ななつ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e6%a4%8b%e6%9c%a8%e3%81%aa%e3%81%aa%e3%81%a4/%e3%83%90%e3%83%aa%e3%82%ad%e3%83%a3%e3%83%aajk%e3%83%a2%e3%83%8d%e5%85%88%e8%bc%a9/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "神は私を撮りたいって言ってます！",
+      "authors": [
+        "散葉ちんみ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e6%95%a3%e8%91%89%e3%81%a1%e3%82%93%e3%81%bf/%e7%a5%9e%e3%81%af%e7%a7%81%e3%82%92%e6%92%ae%e3%82%8a%e3%81%9f%e3%81%84%e3%81%a3%e3%81%a6%e8%a8%80%e3%81%a3%e3%81%a6%e3%81%be%e3%81%99%ef%bc%81/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "残骸少女、きらきらな世界の底",
+      "authors": [
+        "うさみみき"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%86%e3%81%95%e3%81%bf%e3%81%bf%e3%81%8d/%e6%ae%8b%e9%aa%b8%e5%b0%91%e5%a5%b3%e3%80%81%e3%81%8d%e3%82%89%e3%81%8d%e3%82%89%e3%81%aa%e4%b8%96%e7%95%8c%e3%81%ae%e5%ba%95/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "誰かオオカミさんのしつけ方知りませんか！？",
+      "authors": [
+        "餡実ツキ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e9%a4%a1%e5%ae%9f%e3%83%84%e3%82%ad/%e8%aa%b0%e3%81%8b%e3%82%aa%e3%82%aa%e3%82%ab%e3%83%9f%e3%81%95%e3%82%93%e3%81%ae%e3%81%97%e3%81%a4%e3%81%91%e6%96%b9%e7%9f%a5%e3%82%8a%e3%81%be%e3%81%9b%e3%82%93%e3%81%8b%ef%bc%81%ef%bc%9f/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "骨に願いを、星に呪いを",
+      "authors": [
+        "いくたはな"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%84%e3%81%8f%e3%81%9f%e3%81%af%e3%81%aa/%e9%aa%a8%e3%81%ab%e9%a1%98%e3%81%84%e3%82%92%e3%80%81%e6%98%9f%e3%81%ab%e5%91%aa%e3%81%84%e3%82%92/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "ひなちゃんが生きてるなら",
+      "authors": [
+        "紬めめ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e7%b4%ac%e3%82%81%e3%82%81/%e3%81%b2%e3%81%aa%e3%81%a1%e3%82%83%e3%82%93%e3%81%8c%e7%94%9f%e3%81%8d%e3%81%a6%e3%82%8b%e3%81%aa%e3%82%89/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "君のせいなんだから、責任とってよね。",
+      "authors": [
+        "当麻"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e5%bd%93%e9%ba%bb/%e5%90%9b%e3%81%ae%e3%81%9b%e3%81%84%e3%81%aa%e3%82%93%e3%81%a0%e3%81%8b%e3%82%89%e3%80%81%e8%b2%ac%e4%bb%bb%e3%81%a8%e3%81%a3%e3%81%a6%e3%82%88%e3%81%ad%e3%80%82/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "晴れた日のドレスコード",
+      "authors": [
+        "あげはる"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%82%e3%81%92%e3%81%af%e3%82%8b/%e6%99%b4%e3%82%8c%e3%81%9f%e6%97%a5%e3%81%ae%e3%83%89%e3%83%ac%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "たゆたう恋の散り際に",
+      "authors": [
+        "ゆあま"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%82%86%e3%81%82%e3%81%be/%e3%81%9f%e3%82%86%e3%81%9f%e3%81%86%e6%81%8b%e3%81%ae%e6%95%a3%e3%82%8a%e9%9a%9b%e3%81%ab/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "私だって青春したいですよ、本当は。",
+      "authors": [
+        "尾野凛"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e5%b0%be%e9%87%8e%e5%87%9b/%e7%a7%81%e3%81%a0%e3%81%a3%e3%81%a6%e9%9d%92%e6%98%a5%e3%81%97%e3%81%9f%e3%81%84%e3%81%a7%e3%81%99%e3%82%88%e3%80%81%e6%9c%ac%e5%bd%93%e3%81%af%e3%80%82/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "マユノウタ",
+      "authors": [
+        "シクシク"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%82%b7%e3%82%af%e3%82%b7%e3%82%af/%e3%83%9e%e3%83%a6%e3%83%8e%e3%82%a6%e3%82%bf/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "超深宇宙より愛をこめて",
+      "authors": [
+        "アシダカヲズ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%82%a2%e3%82%b7%e3%83%80%e3%82%ab%e3%83%b2%e3%82%ba/%e8%b6%85%e6%b7%b1%e5%ae%87%e5%ae%99%e3%82%88%e3%82%8a%e6%84%9b%e3%82%92%e3%81%93%e3%82%81%e3%81%a6/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "キミが吠えるための歌を、",
+      "authors": [
+        "樫風"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e6%a8%ab%e9%a2%a8/%e3%82%ad%e3%83%9f%e3%81%8c%e5%90%a0%e3%81%88%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e6%ad%8c%e3%82%92%e3%80%81/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "無力聖女と無能王女～魔力ゼロで召喚された聖女の異世界救国記～",
+      "authors": [
+        "玉崎たま"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e7%8e%89%e5%b4%8e%e3%81%9f%e3%81%be/%e7%84%a1%e5%8a%9b%e8%81%96%e5%a5%b3%e3%81%a8%e7%84%a1%e8%83%bd%e7%8e%8b%e5%a5%b3%ef%bd%9e%e9%ad%94%e5%8a%9b%e3%82%bc%e3%83%ad%e3%81%a7%e5%8f%ac%e5%96%9a%e3%81%95%e3%82%8c%e3%81%9f%e8%81%96%e5%a5%b3/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "現実世界でも幸せにしてくださいね？",
+      "authors": [
+        "しぼりかすこ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%97%e3%81%bc%e3%82%8a%e3%81%8b%e3%81%99%e3%81%93/%e7%8f%be%e5%ae%9f%e4%b8%96%e7%95%8c%e3%81%a7%e3%82%82%e5%b9%b8%e3%81%9b%e3%81%ab%e3%81%97%e3%81%a6%e3%81%8f%e3%81%a0%e3%81%95%e3%81%84%e3%81%ad%ef%bc%9f/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "映しちゃダメな顔",
+      "authors": [
+        "FLOWERCHILD"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/flowerchild/%e6%98%a0%e3%81%97%e3%81%a1%e3%82%83%e3%83%80%e3%83%a1%e3%81%aa%e9%a1%94/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "ぜんぶ壊して地獄で愛して",
+      "authors": [
+        "くわばらたもつ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%8f%e3%82%8f%e3%81%b0%e3%82%89%e3%81%9f%e3%82%82%e3%81%a4/%e3%81%9c%e3%82%93%e3%81%b6%e5%a3%8a%e3%81%97%e3%81%a6%e5%9c%b0%e7%8d%84%e3%81%a7%e6%84%9b%e3%81%97%e3%81%a6/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "陰キャギャルでもイキがりたい！",
+      "authors": [
+        "かしわぎつきこ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%8b%e3%81%97%e3%82%8f%e3%81%8e%e3%81%a4%e3%81%8d%e3%81%93/%e9%99%b0%e3%82%ad%e3%83%a3%e3%82%ae%e3%83%a3%e3%83%ab%e3%81%a7%e3%82%82%e3%82%a4%e3%82%ad%e3%81%8c%e3%82%8a%e3%81%9f%e3%81%84%ef%bc%81/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "小春と湊",
+      "authors": [
+        "ひあるろん＆達磨"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%b2%e3%81%82%e3%82%8b%e3%82%8d%e3%82%93%ef%bc%86%e9%81%94%e7%a3%a8/%e5%b0%8f%e6%98%a5%e3%81%a8%e6%b9%8a/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "スピカをつかまえて",
+      "authors": [
+        "織日ちひろ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e7%b9%94%e6%97%a5%e3%81%a1%e3%81%b2%e3%82%8d/%e3%82%b9%e3%83%94%e3%82%ab%e3%82%92%e3%81%a4%e3%81%8b%e3%81%be%e3%81%88%e3%81%a6/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "今日はカノジョがいないから",
+      "authors": [
+        "岩見樹代子"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e5%b2%a9%e8%a6%8b%e6%a8%b9%e4%bb%a3%e5%ad%90/%e4%bb%8a%e6%97%a5%e3%81%af%e3%82%ab%e3%83%8e%e3%82%b8%e3%83%a7%e3%81%8c%e3%81%84%e3%81%aa%e3%81%84%e3%81%8b%e3%82%89/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.267734+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "彩純ちゃんはレズ風俗に興味があります！",
+      "authors": [
+        "伊月クロ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e4%bc%8a%e6%9c%88%e3%82%af%e3%83%ad/%e5%bd%a9%e7%b4%94%e3%81%a1%e3%82%83%e3%82%93%e3%81%af%e3%83%ac%e3%82%ba%e9%a2%a8%e4%bf%97%e3%81%ab%e8%88%88%e5%91%b3%e3%81%8c%e3%81%82%e3%82%8a%e3%81%be%e3%81%99%ef%bc%81/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.268723+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "私の推しは悪役令嬢。",
+      "authors": [
+        "漫画：青乃下 原作：いのり。 キャラクターデザイン原案：花ヶ田"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e6%bc%ab%e7%94%bb%ef%bc%9a%e9%9d%92%e4%b9%83%e4%b8%8b%e3%80%80%e5%8e%9f%e4%bd%9c%ef%bc%9a%e3%81%84%e3%81%ae%e3%82%8a%e3%80%82%e3%80%80%e3%82%ad%e3%83%a3%e3%83%a9%e3%82%af%e3%82%bf%e3%83%bc%e3%83%87/%e7%a7%81%e3%81%ae%e6%8e%a8%e3%81%97%e3%81%af%e6%82%aa%e5%bd%b9%e4%bb%a4%e5%ac%a2%e3%80%82/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.268723+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "セメルパルス semelparous",
+      "authors": [
+        "荻野純"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e8%8d%bb%e9%87%8e%e7%b4%94/%e3%82%bb%e3%83%a1%e3%83%ab%e3%83%91%e3%83%ab%e3%82%b9%e3%80%80semelparous/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.268723+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "ささやくように恋を唄う",
+      "authors": [
+        "竹嶋えく"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e7%ab%b9%e5%b6%8b%e3%81%88%e3%81%8f/%e3%81%95%e3%81%95%e3%82%84%e3%81%8f%e3%82%88%e3%81%86%e3%81%ab%e6%81%8b%e3%82%92%e5%94%84%e3%81%86/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.268723+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "citrus+",
+      "authors": [
+        "サブロウタ"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%82%b5%e3%83%96%e3%83%ad%e3%82%a6%e3%82%bf/citrus/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.268723+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "きみが死ぬまで恋をしたい",
+      "authors": [
+        "あおのなち"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%82%e3%81%8a%e3%81%ae%e3%81%aa%e3%81%a1/%e3%81%8d%e3%81%bf%e3%81%8c%e6%ad%bb%e3%81%ac%e3%81%be%e3%81%a7%e6%81%8b%e3%82%92%e3%81%97%e3%81%9f%e3%81%84/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.268723+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "ゆるゆり",
+      "authors": [
+        "なもり"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e3%81%aa%e3%82%82%e3%82%8a/%e3%82%86%e3%82%8b%e3%82%86%e3%82%8a/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.268723+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "serialized_work",
+      "title_ja": "私の百合はお仕事です！",
+      "authors": [
+        "未幡"
+      ],
+      "work_url": "https://www.ichijinsha.co.jp/yurihime/title/%e6%9c%aa%e5%b9%a1/%e7%a7%81%e3%81%ae%e7%99%be%e5%90%88%e3%81%af%e3%81%8a%e4%bb%95%e4%ba%8b%e3%81%a7%e3%81%99%ef%bc%81/",
+      "magazine": "コミック百合姫",
+      "publisher_ja": "一迅社",
+      "issue_title": "コミック百合姫2026年11月号",
+      "issue_date": "2026-09-16",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "retrieved_at": "2026-10-09T06:11:02.268723+00:00"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "new_volume",
+      "raw_text": [
+        "無力聖女と無能王女～魔力ゼロで召喚された聖女の異世界救国記～(4)",
+        "玉崎たま",
+        "2026.09.16"
+      ],
+      "publisher_ja": "一迅社",
+      "label": "百合姫コミックス",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/",
+      "release_date": "2026-09-16"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "news",
+      "text": [
+        "2026.09.10",
+        "百合姫コミックス9月刊のお知らせ"
+      ],
+      "url": "https://www.ichijinsha.co.jp/yurihime/news/#9486",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "news",
+      "text": [
+        "2026.08.18",
+        "「コミック百合姫20周年記念特別読切」単話配信のお知らせ"
+      ],
+      "url": "https://www.ichijinsha.co.jp/yurihime/news/#9452",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/"
+    },
+    {
+      "source_id": "ja_yurihime",
+      "kind": "news",
+      "text": [
+        "2026.07.27",
+        "百合姫コミックス7月刊のお知らせ2"
+      ],
+      "url": "https://www.ichijinsha.co.jp/yurihime/news/#9410",
+      "source_url": "https://www.ichijinsha.co.jp/yurihime/"
+    },
+    {
+      "source_id": "ja_galette",
+      "kind": "serialized_work",
+      "title_ja": "「悪役令嬢が転生したら百合作家になってました」",
+      "authors": [
+        "袴田めら"
+      ],
+      "latest_chapter_label": null,
+      "magazine": "ガレット",
+      "publisher_ja": "GALETTE WORKS",
+      "publisher_note": "自主制作（非大型商业出版社）",
+      "new_serial": true,
+      "issue_title": "ガレットNo.37-2026/2 – ガレット-百合コミック誌-公式WEBサイト",
+      "issue_date": "2026-02-22",
+      "issue_spec": "B5判／190ページ",
+      "source_url": "https://galetteweb.com/archives/3190"
+    },
+    {
+      "source_id": "ja_galette",
+      "kind": "serialized_work",
+      "title_ja": "乙女の神殿",
+      "authors": [
+        "仲藤ぬい"
+      ],
+      "latest_chapter_label": "#5",
+      "magazine": "ガレット",
+      "publisher_ja": "GALETTE WORKS",
+      "publisher_note": "自主制作（非大型商业出版社）",
+      "new_serial": false,
+      "issue_title": "ガレットNo.37-2026/2 – ガレット-百合コミック誌-公式WEBサイト",
+      "issue_date": "2026-02-22",
+      "issue_spec": "B5判／190ページ",
+      "source_url": "https://galetteweb.com/archives/3190"
+    },
+    {
+      "source_id": "ja_galette",
+      "kind": "serialized_work",
+      "title_ja": "恋にしたくないな",
+      "authors": [
+        "犬井あゆ"
+      ],
+      "latest_chapter_label": "#4",
+      "magazine": "ガレット",
+      "publisher_ja": "GALETTE WORKS",
+      "publisher_note": "自主制作（非大型商业出版社）",
+      "new_serial": false,
+      "issue_title": "ガレットNo.37-2026/2 – ガレット-百合コミック誌-公式WEBサイト",
+      "issue_date": "2026-02-22",
+      "issue_spec": "B5判／190ページ",
+      "source_url": "https://galetteweb.com/archives/3190"
+    },
+    {
+      "source_id": "ja_galette",
+      "kind": "serialized_work",
+      "title_ja": "とろける部屋のなか",
+      "authors": [
+        "ネコハリコ22"
+      ],
+      "latest_chapter_label": "#5",
+      "magazine": "ガレット",
+      "publisher_ja": "GALETTE WORKS",
+      "publisher_note": "自主制作（非大型商业出版社）",
+      "new_serial": false,
+      "issue_title": "ガレットNo.37-2026/2 – ガレット-百合コミック誌-公式WEBサイト",
+      "issue_date": "2026-02-22",
+      "issue_spec": "B5判／190ページ",
+      "source_url": "https://galetteweb.com/archives/3190"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "澈底馴服嘴硬不服輸美少女的百合情節",
+      "authors_raw": "倉崎茂呂子 (漫畫) ；未幡 (角色原案) ；三上弓怜 (原作)",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1453001",
+      "bd": "JC1453001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/JC1453/JC1453001/JC1453001.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "與妳相戀到生命盡頭",
+      "authors_raw": "あおのなち",
+      "volume": 9,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009",
+      "bd": "BM0317009",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0317/BM0317009/BM0317009.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "與妳相戀到生命盡頭（首刷限定版）",
+      "authors_raw": "あおのなち",
+      "volume": 9,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009A",
+      "bd": "BM0317009A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0317/BM0317009A/BM0317009A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "與妳相戀到生命盡頭（豪華首刷限定版）",
+      "authors_raw": "あおのなち",
+      "volume": 9,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009B",
+      "bd": "BM0317009B",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0317/BM0317009B/BM0317009B.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "與妳相戀到生命盡頭 side stories",
+      "authors_raw": "あおのなち",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0487001",
+      "bd": "BM0487001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0487/BM0487001/BM0487001.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "與妳相戀到生命盡頭 side stories（首刷限定版）",
+      "authors_raw": "あおのなち",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0487001A",
+      "bd": "BM0487001A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0487/BM0487001A/BM0487001A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "鼠尾草花束 下",
+      "authors_raw": "古賀由人 (漫画)／4kaえんぴつ (原作)",
+      "volume": 2,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0477002",
+      "bd": "BM0477002",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0477/BM0477002/BM0477002.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "上伊那牡丹，醉姿如百合（首刷限定版）",
+      "authors_raw": "塀",
+      "volume": 3,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=AF0323003A",
+      "bd": "AF0323003A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/AF0323/AF0323003A/AF0323003A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "共譜泡沫戀曲（首刷限定版）",
+      "authors_raw": "ゆあま",
+      "volume": 4,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0379004A",
+      "bd": "BM0379004A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0379/BM0379004A/BM0379004A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "#辣妹與辣妹的百合",
+      "authors_raw": "INOUE",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=SC1178001",
+      "bd": "SC1178001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/SC1178/SC1178001/SC1178001.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "#辣妹與辣妹的百合（首刷限定版）",
+      "authors_raw": "INOUE",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=SC1178001A",
+      "bd": "SC1178001A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/SC1178/SC1178001A/SC1178001A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "披著狼皮的羊公主",
+      "authors_raw": "ミト",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=VC0358001",
+      "bd": "VC0358001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/VC0358/VC0358001/VC0358001.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "雨夜之月",
+      "authors_raw": "くずしろ",
+      "volume": 4,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=KD1722004",
+      "bd": "KD1722004",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/KD1722/KD1722004/KD1722004.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "寫給妳的吶喊之歌",
+      "authors_raw": "樫風",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0479001",
+      "bd": "BM0479001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0479/BM0479001/BM0479001.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "機器人能算入經驗人數嗎？？",
+      "authors_raw": "焼肉定食",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0483001A",
+      "bd": "BM0483001A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0483/BM0483001A/BM0483001A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "百合大暴走～超心動事件發生中！～",
+      "authors_raw": "中村カンコ",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=FC0301001",
+      "bd": "FC0301001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/FC0301/FC0301001/FC0301001.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "百合大暴走～超心動事件發生中！～（首刷限定版）",
+      "authors_raw": "中村カンコ",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=FC0301001A",
+      "bd": "FC0301001A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/FC0301/FC0301001A/FC0301001A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "上伊那牡丹，醉姿如百合（首刷附錄版）",
+      "authors_raw": "塀",
+      "volume": 2,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=AF0323002A",
+      "bd": "AF0323002A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/AF0323/AF0323002A/AF0323002A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "清田同學想被玷汙？",
+      "authors_raw": "古田朋大 (原作)／おーうち (作画)",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1385001",
+      "bd": "JC1385001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/JC1385/JC1385001/JC1385001.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "Show Me Your Bust（首刷附錄版）",
+      "authors_raw": "Team Gaji",
+      "volume": 2,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=DU0001002A",
+      "bd": "DU0001002A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/DU0001/DU0001002A/DU0001002A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "糖果與鞭子",
+      "authors_raw": "あいそえる",
+      "volume": 1,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BC0453001",
+      "bd": "BC0453001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BC0453/BC0453001/BC0453001.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "我們不可能成為戀人！絕對不行。 (※似乎可行？)",
+      "authors_raw": "musshu (漫畫)／ 三上弓怜 (原作)／角色原案:竹嶋えく",
+      "volume": 8,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1224008",
+      "bd": "JC1224008",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/JC1224/JC1224008/JC1224008.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "我們不可能成為戀人！絕對不行。 (※似乎可行？)",
+      "authors_raw": "musshu (漫畫)／ 三上弓怜 (原作)／角色原案:竹嶋えく",
+      "volume": 8,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1224008A",
+      "bd": "JC1224008A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/JC1224/JC1224008A/JC1224008A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume",
+      "title_zh_tw": "與妳相戀到生命盡頭（首刷限定版）",
+      "authors_raw": "あおのなち",
+      "volume": 8,
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317008A",
+      "bd": "BM0317008A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0317/BM0317008A/BM0317008A.jpg",
+      "publisher_zh_tw": "東立出版社",
+      "series": "百合姬",
+      "source_url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "JC1453001",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1453001",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1453001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/JC1453/JC1453001/JC1453001.jpg",
+      "title_ja": "負けませんからと言い張る顔のいい女の子を、全力で屈服させる百合のお話",
+      "volume_label": "第1集",
+      "translator": "虫。",
+      "release_date": "2026-10-12",
+      "isbn": "9786260280628",
+      "series": "百合姬",
+      "author": "倉崎茂呂子"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0317009",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0317/BM0317009/BM0317009.jpg",
+      "title_ja": "きみが死ぬまで恋をしたい",
+      "volume_label": "第9集",
+      "translator": "蔡夢芳",
+      "release_date": "2026-10-02",
+      "isbn": "9786260284893",
+      "series": "百合姬",
+      "author": "あおのなち"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0317009A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0317/BM0317009A/BM0317009A.jpg",
+      "title_ja": "きみが死ぬまで恋をしたい",
+      "volume_label": "第9集",
+      "translator": "蔡夢芳",
+      "release_date": "2026-10-02",
+      "isbn": "9786260284909",
+      "series": "百合姬",
+      "author": "あおのなち"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0317009B",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009B",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009B",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0317/BM0317009B/BM0317009B.jpg",
+      "title_ja": "きみが死ぬまで恋をしたい",
+      "volume_label": "第9集",
+      "translator": "蔡夢芳",
+      "release_date": "2026-10-02",
+      "isbn": "9786260284916",
+      "series": "百合姬",
+      "author": "あおのなち"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0487001",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0487001",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0487001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0487/BM0487001/BM0487001.jpg",
+      "title_ja": "きみが死ぬまで恋をしたい",
+      "volume_label": "第1集",
+      "translator": "蔡夢芳",
+      "release_date": "2026-10-02",
+      "isbn": "9786260280574",
+      "series": "百合姬",
+      "author": "あおのなち"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0487001A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0487001A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0487001A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0487/BM0487001A/BM0487001A.jpg",
+      "title_ja": "きみが死ぬまで恋をしたい",
+      "volume_label": "第1集",
+      "translator": "蔡夢芳",
+      "release_date": "2026-10-02",
+      "isbn": "9786260281618",
+      "series": "百合姬",
+      "author": "あおのなち"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0477002",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0477002",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0477002",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0477/BM0477002/BM0477002.jpg",
+      "title_ja": "サルビアのブーケ",
+      "volume_label": "第2集",
+      "translator": "羅筱君",
+      "release_date": "2026-09-18",
+      "isbn": "9786260281168",
+      "series": "百合姬",
+      "author": "古賀由人"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "AF0323003A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=AF0323003A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=AF0323003A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/AF0323/AF0323003A/AF0323003A.jpg",
+      "title_ja": "上伊那ぼたん、酔へる姿は百合の花",
+      "volume_label": "第3集",
+      "translator": "杜信彰",
+      "release_date": "2026-09-10",
+      "isbn": "9786260280369",
+      "series": "百合姬",
+      "author": "塀"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0379004A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0379004A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0379004A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0379/BM0379004A/BM0379004A.jpg",
+      "title_ja": "君と綴るうたかた",
+      "volume_label": "第4集",
+      "translator": "方奕勝",
+      "release_date": "2026-08-14",
+      "isbn": "9786260280529",
+      "series": "百合姬",
+      "author": "ゆあま"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "SC1178001",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=SC1178001",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=SC1178001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/SC1178/SC1178001/SC1178001.jpg",
+      "title_ja": "#ギャルとギャルの百合",
+      "volume_label": "第1集",
+      "translator": "叢琳",
+      "release_date": "2026-07-20",
+      "isbn": "9786260274269",
+      "series": "百合姬",
+      "author": "INOUE"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "SC1178001A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=SC1178001A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=SC1178001A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/SC1178/SC1178001A/SC1178001A.jpg",
+      "title_ja": "#ギャルとギャルの百合",
+      "volume_label": "第1集",
+      "translator": "叢琳",
+      "release_date": "2026-07-20",
+      "isbn": "9786260274276",
+      "series": "百合姬",
+      "author": "INOUE"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "VC0358001",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=VC0358001",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=VC0358001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/VC0358/VC0358001/VC0358001.jpg",
+      "title_ja": "狼の皮をかぶった羊姫",
+      "volume_label": "第1集",
+      "translator": "加奈",
+      "release_date": "2026-07-10",
+      "isbn": "9786260259723",
+      "series": "百合姬",
+      "author": "ミト"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "KD1722004",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=KD1722004",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=KD1722004",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/KD1722/KD1722004/KD1722004.jpg",
+      "title_ja": "雨夜の月",
+      "volume_label": "第4集",
+      "translator": "羅筱君",
+      "release_date": "2026-06-29",
+      "isbn": "9786260277932",
+      "series": "百合姬",
+      "author": "くずしろ"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0479001",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0479001",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0479001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0479/BM0479001/BM0479001.jpg",
+      "title_ja": "キミが吠えるための歌を、",
+      "volume_label": "第1集",
+      "translator": "方奕勝",
+      "release_date": "2026-06-26",
+      "isbn": "9786260254995",
+      "series": "百合姬",
+      "author": "樫風"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0483001A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0483001A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0483001A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0483/BM0483001A/BM0483001A.jpg",
+      "title_ja": "アンドロイドは経験人数に入りますか??",
+      "volume_label": "第1集",
+      "translator": "陳瑞璟",
+      "release_date": "2026-06-25",
+      "isbn": "9786260274146",
+      "series": "百合姬",
+      "author": "焼肉定食"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "FC0301001",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=FC0301001",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=FC0301001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/FC0301/FC0301001/FC0301001.jpg",
+      "title_ja": "ゆりゆりぱにっく～尊すぎる事案が発生しています！～",
+      "volume_label": "第1集",
+      "translator": "羅筱君",
+      "release_date": "2026-06-12",
+      "isbn": "9786260271428",
+      "series": "百合姬",
+      "author": "中村カンコ"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "FC0301001A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=FC0301001A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=FC0301001A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/FC0301/FC0301001A/FC0301001A.jpg",
+      "title_ja": "ゆりゆりぱにっく～尊すぎる事案が発生しています！～",
+      "volume_label": "第1集",
+      "translator": "羅筱君",
+      "release_date": "2026-06-05",
+      "isbn": "9786260271435",
+      "series": "百合姬",
+      "author": "中村カンコ"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "AF0323002A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=AF0323002A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=AF0323002A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/AF0323/AF0323002A/AF0323002A.jpg",
+      "title_ja": "上伊那ぼたん、酔へる姿は百合の花",
+      "volume_label": "第2集",
+      "translator": "杜信彰",
+      "release_date": "2026-05-15",
+      "isbn": "9786260273231",
+      "series": "百合姬",
+      "author": "塀"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "JC1385001",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1385001",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1385001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/JC1385/JC1385001/JC1385001.jpg",
+      "title_ja": "清田さんは汚されたい!?",
+      "volume_label": "第1集",
+      "translator": "虫。",
+      "release_date": "2026-04-08",
+      "isbn": "9786260252465",
+      "series": "百合姬",
+      "author": "古田朋大"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "DU0001002A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=DU0001002A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=DU0001002A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/DU0001/DU0001002A/DU0001002A.jpg",
+      "title_ja": "Show",
+      "volume_label": "第2集",
+      "translator": "柳小比",
+      "release_date": "2026-03-31",
+      "isbn": "9786260267261",
+      "series": "百合姬",
+      "author": "Team"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BC0453001",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BC0453001",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BC0453001",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BC0453/BC0453001/BC0453001.jpg",
+      "title_ja": "あめとむち",
+      "volume_label": "第1集",
+      "translator": "方奕勝",
+      "release_date": "2025-12-24",
+      "isbn": "9786260237516",
+      "series": "百合姬",
+      "author": "あいそえる"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "JC1224008",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1224008",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1224008",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/JC1224/JC1224008/JC1224008.jpg",
+      "title_ja": "わたしが恋人になれるわけないじゃん、ムリムリ!",
+      "volume_label": "第8集",
+      "translator": "尤靜慧",
+      "release_date": "2025-12-24",
+      "isbn": "9786260257828",
+      "series": "百合姬",
+      "author": "musshu"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "JC1224008A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1224008A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1224008A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/JC1224/JC1224008A/JC1224008A.jpg",
+      "title_ja": "わたしが恋人になれるわけないじゃん、ムリムリ!",
+      "volume_label": "第8集",
+      "translator": "尤靜慧",
+      "release_date": "2025-12-19",
+      "isbn": "9786260259242",
+      "series": "百合姬",
+      "author": "musshu"
+    },
+    {
+      "source_id": "tw_tongli",
+      "kind": "zh_tw_volume_detail",
+      "bd": "BM0317008A",
+      "detail_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317008A",
+      "source_url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317008A",
+      "cover_url": "https://www.tongli.com.tw/ComicImages/Images/BM0317/BM0317008A/BM0317008A.jpg",
+      "title_ja": "きみが死ぬまで恋をしたい",
+      "volume_label": "第8集",
+      "translator": "蔡夢芳",
+      "release_date": "2025-12-12",
+      "isbn": "9786260262754",
+      "series": "百合姬",
+      "author": "あおのなち"
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+@import 'tailwindcss';
+
+/*
+ * yuri-db web — global styles.
+ *
+ * Tailwind v4 is configured entirely from this file plus postcss.config.mjs:
+ * there is no tailwind.config.js. Only genuinely custom pieces (provenance
+ * badges, table scaffolding) are written as plain CSS so that the visual
+ * language of "where did this value come from" stays consistent everywhere.
+ */
+
+:root {
+  --yuri-accent: #b8447a;
+  --yuri-accent-soft: #fdf2f8;
+
+  /* provenance basis colours — one per schemas/work.schema.json `basis` value */
+  --basis-official: #047857;
+  --basis-official-bg: #ecfdf5;
+  --basis-official-tag: #0f766e;
+  --basis-official-tag-bg: #f0fdfa;
+  --basis-editorial: #b45309;
+  --basis-editorial-bg: #fffbeb;
+  --basis-derived: #0369a1;
+  --basis-derived-bg: #f0f9ff;
+  /* third_party (AniList) — the only basis the anime catalogue uses, and a
+     deliberately NON-official colour: this data is a user-edited third-party
+     database, not a publisher announcement. */
+  --basis-third-party: #7c3aed;
+  --basis-third-party-bg: #f5f3ff;
+  --basis-none: #52525b;
+  --basis-none-bg: #f4f4f5;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Hiragino Sans', 'Noto Sans TC',
+    'Noto Sans JP', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
+  color: #18181b;
+  background: #fafafa;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--yuri-accent);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------ badges */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 9999px;
+  border: 1px solid currentColor;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-official {
+  color: var(--basis-official);
+  background: var(--basis-official-bg);
+}
+
+.badge-official_tag {
+  color: var(--basis-official-tag);
+  background: var(--basis-official-tag-bg);
+}
+
+/* The editorial badge must be visually distinct: it is a human judgement, not a source. */
+.badge-editorial {
+  color: var(--basis-editorial);
+  background: var(--basis-editorial-bg);
+  border-style: dashed;
+}
+
+.badge-derived {
+  color: var(--basis-derived);
+  background: var(--basis-derived-bg);
+}
+
+.badge-third_party {
+  color: var(--basis-third-party);
+  background: var(--basis-third-party-bg);
+  border-style: dotted;
+}
+
+.badge-none {
+  color: var(--basis-none);
+  background: var(--basis-none-bg);
+}
+
+.badge-plain {
+  color: #3f3f46;
+  background: #f4f4f5;
+  border-color: #d4d4d8;
+}
+
+.badge-accent {
+  color: var(--yuri-accent);
+  background: var(--yuri-accent-soft);
+}
+
+/* ------------------------------------------------------------- provenance */
+
+.unknown-value {
+  color: #71717a;
+  font-style: italic;
+  background: #f4f4f5;
+  border-radius: 0.25rem;
+  padding: 0 0.3rem;
+  font-size: 0.85em;
+}
+
+.provenance-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: #52525b;
+}
+
+.provenance-note {
+  color: #71717a;
+  font-size: 0.7rem;
+}
+
+/* -------------------------------------------------------------- scaffolding */
+
+.field-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.field-table th,
+.field-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.7rem;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.field-table thead th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #71717a;
+  background: #fafafa;
+  border-bottom: 1px solid #d4d4d8;
+}
+
+.field-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.field-table tbody tr:hover {
+  background: #fcfcfd;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  word-break: break-all;
+}
+
+.confidence-bar {
+  display: inline-block;
+  height: 0.35rem;
+  border-radius: 9999px;
+  background: #d4d4d8;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 3rem;
+}
+
+.confidence-bar > span {
+  display: block;
+  height: 100%;
+}
+
+.confidence-high > span {
+  background: #059669;
+}
+
+.confidence-medium > span {
+  background: #d97706;
+}
+
+.confidence-low > span {
+  background: #dc2626;
+}
+
+.confidence-unknown > span {
+  background: #a1a1aa;
+}
+
+/* Callouts */
+.callout {
+  border-radius: 0.5rem;
+  border: 1px solid #e4e4e7;
+  background: #fff;
+  padding: 0.9rem 1rem;
+}
+
+.callout-warn {
+  border-color: #fcd34d;
+  background: #fffbeb;
+}
+
+.callout-info {
+  border-color: #bae6fd;
+  background: #f0f9ff;
+}
+
+.callout-editorial {
+  border-color: #fcd34d;
+  background: #fffdf5;
+}
+
+/* Section anchors should not hide under a sticky header */
+[id] {
+  scroll-margin-top: 5rem;
+}

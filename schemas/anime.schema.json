@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yuri-db.example/schemas/anime.schema.json",
+  "title": "YuriAnime",
+  "description": "百合动画目录条目。独立于 Work：原创动画与剧场版没有对应的漫画/小说原作，因此不能只当作 Work 的附属字段。约定同 work.schema.json：无法确认的字段填 null，不臆测。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title_ja",
+    "format",
+    "adaptation_source",
+    "status",
+    "studios",
+    "main_cast",
+    "sources",
+    "last_checked"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+
+    "anilist_id": { "type": ["integer", "null"], "description": "AniList 的稳定 ID" },
+    "mal_id": { "type": ["integer", "null"], "description": "MyAnimeList ID（可为 null）" },
+
+    "title_ja": { "type": "string", "minLength": 1, "description": "日文原名（主键字段）" },
+    "title_romaji": { "type": ["string", "null"] },
+    "title_en": { "type": ["string", "null"] },
+    "title_zh_tw": { "type": ["string", "null"], "description": "繁中官方譯名（目前來源不可達，多為 null）" },
+    "title_zh_cn": { "type": ["string", "null"], "description": "簡中官方譯名（目前來源不可達，多為 null）" },
+
+    "format": {
+      "enum": ["tv", "tv_short", "movie", "ova", "ona", "special", "music", "other"],
+      "description": "movie = 劇場版；tv = TV 動畫；ona = Web 動畫"
+    },
+    "adaptation_source": {
+      "enum": [
+        "manga",
+        "light_novel",
+        "web_novel",
+        "novel",
+        "visual_novel",
+        "game",
+        "doujinshi",
+        "anime",
+        "original",
+        "other",
+        "unknown"
+      ],
+      "description": "manga = 漫改；light_novel/web_novel = 輕小說改；original = 原創；視覺小說/遊戲改另計"
+    },
+    "status": {
+      "enum": ["airing", "finished", "announced", "cancelled", "hiatus", "unknown"],
+      "description": "announced = 已宣布動畫化但尚未播出"
+    },
+
+    "start_date": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$",
+      "description": "開播時間。YYYY / YYYY-MM / YYYY-MM-DD；未定檔時為 null"
+    },
+    "end_date": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+    },
+    "season": { "enum": ["winter", "spring", "summer", "fall", null] },
+    "season_year": { "type": ["integer", "null"] },
+
+    "episode_count": { "type": ["integer", "null"], "minimum": 0 },
+    "episode_duration_min": { "type": ["integer", "null"], "minimum": 0 },
+
+    "studios": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "制作公司（isMain: true）"
+    },
+    "main_cast": {
+      "type": "array",
+      "description": "主要角色与声优（AniList role: MAIN + 日本語 voice actor）",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["character"],
+        "properties": {
+          "character": { "type": "string", "minLength": 1 },
+          "voice_actor": { "type": ["string", "null"] }
+        }
+      }
+    },
+
+    "average_score": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+    "popularity": { "type": ["integer", "null"], "minimum": 0 },
+    "yuri_tag_rank": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "maximum": 100,
+      "description": "AniList 的 Yuri 標籤相關度。用於說明「為何收錄此條目」。"
+    },
+    "is_adult": { "type": "boolean", "description": "本站預設排除 R18；此欄位記錄來源標記" },
+    "country_of_origin": { "type": ["string", "null"] },
+
+    "cover_url": { "type": ["string", "null"], "description": "只存連結，不鏡像" },
+    "cover_source_url": { "type": ["string", "null"] },
+    "source_url": { "type": "string", "minLength": 1 },
+
+    "related_work_id": {
+      "type": ["string", "null"],
+      "description": "若原作就在本站 Work 庫中，指向該 Work"
+    },
+    "related_work_slug": { "type": ["string", "null"] },
+
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "url", "retrieved_at", "confidence"],
+        "properties": {
+          "source_id": { "type": ["string", "null"] },
+          "name": { "type": "string", "minLength": 1 },
+          "url": { "type": "string" },
+          "retrieved_at": { "type": "string", "format": "date-time" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "field_sources": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["basis"],
+        "properties": {
+          "basis": { "enum": ["official", "official_tag", "editorial", "derived", "third_party"] },
+          "source_url": { "type": "string" },
+          "retrieved_at": { "type": ["string", "null"] },
+          "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "field_confidence": {
+      "type": "object",
+      "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "last_checked": { "type": "string", "format": "date-time" }
+  }
+}

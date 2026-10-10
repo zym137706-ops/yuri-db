@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+            </script>
+    <script>
+    window.isMobile = (function (userAgent) {
+      var mobileUA = [
+            'Mobile', 'Android', 'Silk/', 'Kindle', 'BlackBerry', 'Opera Mini', 'Opera Mobi',
+        ];
+        for (var i in mobileUA) {
+            if (userAgent.indexOf(mobileUA[i]) > -1) {
+                return true;
+            }
+        }
+        return false;
+    })(navigator.userAgent);
+
+    window.gtmKey = isMobile ? 'GTM-WTK4TCX' : 'GTM-5LL2J7Z';
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer',gtmKey);</script>
+    <!-- End Google Tag Manager -->
+
+    <script async src="https://yads.c.yimg.jp/js/yads-async.js"></script>
+
+    <script type="text/javascript" src="//js.rtoaster.jp/Rtoaster.js"></script>
+        <script>
+      Rtoaster.init("RTA-5e68-a99135045038");
+    </script>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>404 Not Found | アニメイトタイムズ</title>
+        <meta name="keywords" content="アニメ,ラジオ,ニュース,声優,アニメイトタイムズ,アニメイト">
+    <meta name="description" content="【アニメイトタイムズ】アニメの事ならアニメイトタイムズ！声優/アニメニュース・アニメ動画・声優ラジオ・PV配信などアニメに関する情報が満載です！アニメ情報をどこよりも豊富に早くお届けしています。">
+    <link rel="canonical" href="https://www.animatetimes.com/robots.txt/">
+    <link rel="shortcut icon" href="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/android-chrome-256x256.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/favicon-16x16.png">
+    <meta name="verify-v1" content="yCAUuml+xhTYucSjL4mVDfsFlPFshQywQzQHY6axtHE=">
+    <meta property="og:url" content="https://www.animatetimes.com/robots.txt/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="アニメイトタイムズ">
+    <meta property="og:title" content="アニメニュースや声優の旬な情報を毎日更新 | アニメイトタイムズ">
+    <meta property="og:description" content="【アニメイトタイムズ】アニメの事ならアニメイトタイムズ！声優/アニメニュース・アニメ動画・声優ラジオ・PV配信などアニメに関する情報が満載です！アニメ情報をどこよりも豊富に早くお届けしています。">
+    <meta property="og:image" content="https://www.animatetimes.com/img/ogimage.png">
+    <meta property="fb:app_id" content="519627958200656">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@animatetimes">
+    <meta name="twitter:title" content="アニメニュースや声優の旬な情報を毎日更新 | アニメイトタイムズ">
+    <meta name="twitter:description" content="【アニメイトタイムズ】アニメの事ならアニメイトタイムズ！声優/アニメニュース・アニメ動画・声優ラジオ・PV配信などアニメに関する情報が満載です！アニメ情報をどこよりも豊富に早くお届けしています。">
+    <meta name="twitter:image" content="https://www.animatetimes.com/img/ogimage.png">
+    <meta name="thumbnail" content="https://www.animatetimes.com/img/ogimage.png">
+    <meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//www.animatetimes.com' />
+<script type="text/javascript" id="wpp-js" src="https://www.animatetimes.com/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=7.4.2" data-sampling="1" data-sampling-rate="100" data-api-url="https://www.animatetimes.com/index.php?rest_route=/wordpress-popular-posts" data-post="0" data-token="347e81b8d4" data-lang="0" data-debug="0"></script>
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.animatetimes.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='ligature-symbols-css' href='https://www.animatetimes.com/wp-content/plugins/gianism/assets/css/lsf.css?ver=53e693af21e428b1c1a2e921b07b3a1b' type='text/css' media='screen' />
+<link rel='stylesheet' id='gianism-css' href='https://www.animatetimes.com/wp-content/plugins/gianism/assets/css/gianism-style.css?ver=c2a7210924b7ce94e6558624ef5207a6' type='text/css' media='screen' />
+<link rel='stylesheet' id='style-css' href='https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/css/style.css?ver=1791345532' type='text/css' media='all' />
+<link rel='stylesheet' id='style_comment-css' href='https://www.animatetimes.com/s/css/style_comment.css?ver=6.9.7' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.animatetimes.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+            <style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-block-placeholder,.wpp-shortcode-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
+                <script src="https://www.animatetimes.com/filter-dead-link.js.php"></script>
+  </head>
+  <body class="error404 wp-theme-animatetimes">
+
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LL2J7Z"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <div class="l-wrapper" id="pagetop">
+
+<header class="c-header c-header-pc">
+  <div class="c-header-logo"><a href="https://www.animatetimes.com/" id="times_logo"><img src="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/logo.png" alt="animate Times"></a></div>
+  <div class="c-header-trig nav-toggle">
+    <div class="c-header-trig--label">menu</div>
+  </div>
+
+  <nav class="c-globalnav">
+    <div class="row">
+      <div class="c-globalnav-list--pc" style="margin-top: 80px;">
+    <div class="nav-icons">
+        <ul class="c-globalnav-list c-globalnav-list--category" style="margin-top: 0px;">
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com" name="menu_burger"><i class="fas fa-home"></i>HOME</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/ranking/" name="menu_burger"><i class="fas fa-crown"></i>ランキング</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/anime/" name="menu_burger"><i class="fas fa-tv"></i>アニメ</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/seiyu/" name="menu_burger"><i class="fas fa-microphone-alt"></i>声優</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/radio/" name="menu_burger"><i class="fas fa-broadcast-tower"></i>ラジオ</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/comment/" name="menu_burger"><i class="fas fa-comment"></i>みんなの声</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/goods/" name="menu_burger"><i class="fas fa-gift"></i>グッズ</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/eiga/" name="menu_burger"><i class="fas fa-video"></i>映画</a></li>
+        </ul>
+    </div>
+    <div class="nav-icons">
+        <ul class="c-globalnav-list c-globalnav-list--category" style="margin-top: 0px;">
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/book/" name="menu_burger"><i class="fas fa-book"></i>マンガ・ラノベ</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/game/" name="menu_burger"><i class="fas fa-gamepad"></i>ゲーム・アプリ</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/music/" name="menu_burger"><i class="fas fa-music"></i>音楽</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/cosplay/" name="menu_burger"><i class="fas fa-tshirt"></i>コスプレ</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/25d/" name="menu_burger"><i class="fa-solid fa-people-line"></i>2.5次元</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/webcast/" name="menu_burger"><i class="fa-brands fa-square-youtube"></i>配信・Vtuber</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/trend/" name="menu_burger"><i class="fas fa-arrow-trend-up"></i>トレンド</a></li>
+            <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/ebook/" name="menu_burger"><i class="fas fa-book-open"></i>無料マンガ</a></li>
+        </ul>
+    </div>
+    <div class="nav-menu">
+        <ul class="c-globalnav-list">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1" name="menu_burger_news"><i class="fas fa-newspaper"></i>最新記事一覧</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/anime/?p=1" name="menu_burger_news-anime"><i class="fas fa-newspaper"></i>アニメ記事一覧</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/seiyu/?p=1" name="menu_burger_news-seiyu"><i class="fas fa-newspaper"></i>声優記事一覧</a></li>
+</ul>
+
+<ul class="c-globalnav-list">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=4105" name="menu_burger_eiga-anime"><i class="fas fa-video"></i>アニメ映画一覧</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=6875" name="menu_burger_eiga-live"><i class="fas fa-video"></i>実写化映画一覧</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=1393" name="menu_burger_seiyu-list"><i class="fas fa-microphone-alt"></i>男性声優/女性声優一覧</a></li>
+</ul>
+
+<ul class="c-globalnav-list">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=1392" name="menu_burger_week"><i class="fas fa-tv"></i>今期アニメ曜日別一覧</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=5228" name="menu_burger_spring"><i class="fas fa-tv"></i>春アニメ</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=5806" name="menu_burger_summer"><i class="fas fa-tv"></i>夏アニメ</a></li>
+</ul>
+
+<ul class="c-globalnav-list">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=5947" name="menu_burger_autumn"><i class="fas fa-tv"></i>秋アニメ</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=6212" name="menu_burger_winter"><i class="fas fa-tv"></i>冬アニメ</a></li>
+</ul>
+    </div>
+
+    <div class="c-sns">
+        <div class="c-sns-title">FOLLOW US</div>
+        <ul class="c-sns-list">
+        <li class="c-sns-item"><a class="c-sns-link" href="https://x.com/animatetimes" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li class="c-sns-item"><a class="c-sns-link" href="https://www.youtube.com/channel/UCj-7fExtfepnDR3FrX5K2sg/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        <li class="c-sns-item"><a class="c-sns-link" href="https://www.facebook.com/animatetimes/?fref=ts" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="c-sns-item"><a class="c-sns-link" href="https://www.instagram.com/animatetimes/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+</div><!--// pc -->
+    </div>
+  </nav>
+  <div class="c-header-search">
+    <div class="c-header-search--label">search</div>
+      <form action="https://www.animatetimes.com/search/" method="get" id="searchArea" autocomplete="off">
+        <div class="c-header-search-input">
+          <input type="text" name="q" placeholder="検索キーワードを入力してください。">
+        </div>
+        <div class="c-header-search-icon"><i class="fas fa-search"></i></div>
+        <div class="c-header-search-close"><i class="fas fa-times"></i></div>
+      </form>
+      <script type="text/javascript" src="//www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+  </div>
+  <nav class="c-header-nav">
+    <ul class="c-header-list">
+      <li class="c-header-item">
+        <a class="c-header-link" href="https://www.animatetimes.com/" id="menu_gnavi_home">HOME</a>
+      </li>
+                                      <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/ranking/" id="menu_gnavi_ranking">
+              ランキング            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/trend/" id="menu_gnavi_trend">
+              トレンド            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/anime/" id="menu_gnavi_anime">
+              アニメ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/seiyu/" id="menu_gnavi_seiyu">
+              声優            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/radio/" id="menu_gnavi_radio">
+              ラジオ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/comment/" id="menu_gnavi_comment">
+              みんなの声            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/goods/" id="menu_gnavi_goods">
+              グッズ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/eiga/" id="menu_gnavi_eiga">
+              映画            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/book/" id="menu_gnavi_book">
+              マンガ・ラノベ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/game/" id="menu_gnavi_game">
+              ゲーム・アプリ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/music/" id="menu_gnavi_music">
+              音楽            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/cosplay/" id="menu_gnavi_cosplay">
+              コスプレ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/25d/" id="menu_gnavi_25d">
+              2.5次元            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/webcast/" id="menu_gnavi_webcast">
+              配信・Vtuber            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/ebook/" id="menu_gnavi_ebook">
+              無料マンガ            </a>
+          </li>
+                  </ul>
+    <div class="c-header-border"></div>
+  </nav>
+</header>
+
+<header class="c-header c-header-sp">
+  <div class="c-header-logo"><a href="https://www.animatetimes.com/" id="times_logo"><img src="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/logo.png" alt="animate Times"></a></div>
+  <div class="c-header-trig nav-toggle">
+    <div class="c-header-trig--label">menu</div>
+  </div>
+
+  <nav class="c-globalnav">
+    <div class="row">
+      <div class="c-globalnav-list--sp">
+<ul class="c-globalnav-list c-globalnav-list--category c-globalnav-list--one-fourth">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/" name="menu_burger"><i class="fas fa-home"></i>HOME</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/ranking/" name="menu_burger"><i class="fas fa-crown"></i>ランキング</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/anime/" name="menu_burger"><i class="fas fa-tv"></i>アニメ</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/seiyu/" name="menu_burger"><i class="fas fa-microphone-alt"></i>声優</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/radio/" name="menu_burger"><i class="fas fa-broadcast-tower"></i>ラジオ</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/comment/" name="menu_burger"><i class="fas fa-comment"></i>みんなの声</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/goods/" name="menu_burger"><i class="fas fa-gift"></i>グッズ</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/eiga/" name="menu_burger"><i class="fas fa-video"></i>映画</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/book/" name="menu_burger"><i class="fas fa-book"></i>マンガ・ラノベ</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/game/" name="menu_burger"><i class="fas fa-gamepad"></i>ゲーム・アプリ</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/music/" name="menu_burger"><i class="fas fa-music"></i>音楽</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/cosplay/" name="menu_burger"><i class="fas fa-tshirt"></i>コスプレ</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/25d/" name="menu_burger"><i class="fa-solid fa-people-line"></i>2.5次元</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/webcast/" name="menu_burger"><i class="fa-brands fa-square-youtube"></i>配信・Vtuber</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/trend/" name="menu_burger"><i class="fas fa-arrow-trend-up"></i>トレンド</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="https://www.animatetimes.com/ebook/" name="menu_burger"><i class="fas fa-book-open"></i>無料マンガ</a></li>
+</ul>
+<!-- class に c-globalnav-list--half をつけると、幅が半分になります。 -->
+
+<ul class="c-globalnav-list">
+    <li class="c-globalnav-item"><a name="menu_burger_week" class="c-globalnav-link" href="https://www.animatetimes.com/index.php?p=1"><i class="fas fa-newspaper"></i>最新記事一覧</a></li>
+</ul>
+
+<ul class="c-globalnav-list c-globalnav-list--half">
+    <li class="c-globalnav-item"><a name="menu_burger_winter" class="c-globalnav-link" href="/anime/?p=1"><i class="fas fa-newspaper"></i>アニメ記事一覧</a></li>
+    <li class="c-globalnav-item"><a name="menu_burger_spring" class="c-globalnav-link" href="/seiyu/?p=1"><i class="fas fa-newspaper"></i>声優記事一覧</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=4105" name="menu_burger_eiga-anime"><i class="fas fa-video"></i>アニメ映画一覧</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=6875" name="menu_burger_eiga-live"><i class="fas fa-video"></i>実写化映画一覧</a></li>
+</ul>
+
+
+<ul class="c-globalnav-list">
+    <li class="c-globalnav-item"><a name="menu_burger_week" class="c-globalnav-link" href="/tag/details.php?id=1392"><i class="fas fa-tv"></i>今期アニメ曜日別一覧</a></li>
+</ul>
+
+<ul class="c-globalnav-list c-globalnav-list--half">
+    <li class="c-globalnav-item"><a name="menu_burger_spring" class="c-globalnav-link" href="/tag/details.php?id=5228"><i class="fas fa-tv"></i>春アニメ</a></li>
+    <li class="c-globalnav-item"><a name="menu_burger_summer" class="c-globalnav-link" href="/tag/details.php?id=5806"><i class="fas fa-tv"></i>夏アニメ</a></li>
+    <li class="c-globalnav-item"><a name="menu_burger_autumn" class="c-globalnav-link" href="/tag/details.php?id=5947"><i class="fas fa-tv"></i>秋アニメ</a></li>
+    <li class="c-globalnav-item"><a name="menu_burger_winter" class="c-globalnav-link" href="/tag/details.php?id=6212"><i class="fas fa-tv"></i>冬アニメ</a></li>
+</ul>
+
+<ul class="c-globalnav-list">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/tag/details.php?id=1393" name="menu_burger_seiyu-list"><i class="fas fa-microphone-alt"></i>男性声優/女性声優一覧</a></li>
+</ul>
+
+<!-- c-globalnav-list--half をつけなければ、幅は100%です。
+<ul class="c-globalnav-list">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1"><i class="far fa-newspaper"></i>特集１</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1"><i class="far fa-newspaper"></i>特集2</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1"><i class="far fa-newspaper"></i>特集3</a></li>
+</ul>
+ -->
+
+<!-- アイコン付きで2列のパターンです
+<ul class="c-globalnav-list c-globalnav-list--category">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1"><i class="far fa-newspaper"></i>特集１</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1"><i class="far fa-newspaper"></i>特集2</a></li>
+</ul>
+ -->
+
+<!-- アイコン付きで3列のパターンです
+<ul class="c-globalnav-list c-globalnav-list--category c-globalnav-list--one-third">
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1"><i class="far fa-newspaper"></i>特集１</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1"><i class="far fa-newspaper"></i>特集2</a></li>
+    <li class="c-globalnav-item"><a class="c-globalnav-link" href="/index.php?p=1"><i class="far fa-newspaper"></i>特集3</a></li>
+</ul>
+ --><a class="nav-toggle bottom" href="."><i class="fas fa-times"></i></a>
+<div class="c-sns">
+    <div class="c-sns-title">FOLLOW US</div>
+    <ul class="c-sns-list">
+    <li class="c-sns-item"><a class="c-sns-link" href="https://x.com/animatetimes" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+    <li class="c-sns-item"><a class="c-sns-link" href="https://www.youtube.com/channel/UCj-7fExtfepnDR3FrX5K2sg/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    <li class="c-sns-item"><a class="c-sns-link" href="https://www.facebook.com/animatetimes/?fref=ts" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li class="c-sns-item"><a class="c-sns-link" href="https://www.instagram.com/animatetimes/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+</div>
+</div><!--// sp  -->
+    </div>
+  </nav>
+  <div class="c-header-search">
+    <div class="c-header-search--label">search</div>
+      <form action="https://www.animatetimes.com/search/" method="get" id="searchArea" autocomplete="off">
+        <div class="c-header-search-input">
+          <input type="text" name="q" placeholder="検索キーワードを入力してください。">
+        </div>
+        <div class="c-header-search-icon"><i class="fas fa-search"></i></div>
+        <div class="c-header-search-close"><i class="fas fa-times"></i></div>
+      </form>
+      <script type="text/javascript" src="//www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+  </div>
+  <nav class="c-header-nav">
+    <ul class="c-header-list">
+      <li class="c-header-item">
+        <a class="c-header-link" href="https://www.animatetimes.com/" id="menu_gnavi_home">HOME</a>
+      </li>
+                                      <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/ranking/" id="menu_gnavi_ranking">
+              ランキング            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/trend/" id="menu_gnavi_trend">
+              トレンド            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/anime/" id="menu_gnavi_anime">
+              アニメ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/seiyu/" id="menu_gnavi_seiyu">
+              声優            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/radio/" id="menu_gnavi_radio">
+              ラジオ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/comment/" id="menu_gnavi_comment">
+              みんなの声            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/goods/" id="menu_gnavi_goods">
+              グッズ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/eiga/" id="menu_gnavi_eiga">
+              映画            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/book/" id="menu_gnavi_book">
+              マンガ・ラノベ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/game/" id="menu_gnavi_game">
+              ゲーム・アプリ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/music/" id="menu_gnavi_music">
+              音楽            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/cosplay/" id="menu_gnavi_cosplay">
+              コスプレ            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/25d/" id="menu_gnavi_25d">
+              2.5次元            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/webcast/" id="menu_gnavi_webcast">
+              配信・Vtuber            </a>
+          </li>
+                                <li class="c-header-item">
+            <a class="c-header-link" href="https://www.animatetimes.com/ebook/" id="menu_gnavi_ebook">
+              無料マンガ            </a>
+          </li>
+                  </ul>
+    <div class="c-header-border"></div>
+  </nav>
+</header>
+
+<div class="container">
+          <div class="c-banner-sp c-banner-sp--w320 visible-xs visible-sm">
+        <div style="min-height: 100px;">
+<script type="text/javascript">
+var microadCompass = microadCompass || {};
+microadCompass.queue = microadCompass.queue || [];
+</script>
+<script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js" onload="new microadCompass.AdInitializer().initialize();" async></script>
+<div id="2a42c0ed130d52a7ef441e5a8ecd6b38" >
+        <script type="text/javascript">
+                microadCompass.queue.push({
+                        "spot": "2a42c0ed130d52a7ef441e5a8ecd6b38",
+                        "url": "${COMPASS_EXT_URL}",
+                        "referrer": "${COMPASS_EXT_REF}"
+                });
+        </script>
+</div>
+</div>        </div>
+
+</div>
+<div class="c-banner-lg-area visible-md visible-lg">
+ <div style="top: 135px; position: absolute; width: 100%">
+  <div class="c-banner-lg-site-jack">
+    <div class="c-banner-lg-site-jack-container">
+      <div class='c-banner-lg c-banner-lg--left'>
+    <a href='https://www.dreamland-anime.com/
+ ' target='_blank' class='c-banner-lg-container' id='times_ad_jackleft'>
+        <img src='https://www.animatetimes.com/wp-content/uploads/2026/10/e21f813f5fed1af9ca66b73291b91a9b6ac49b0f525506_55188680_73247d4eaabe8845b1336485ec7c2baf692d0b76.jpg ' alt=' ' width='250 ' height='800 '>
+    </a>
+</div>
+<div class='c-banner-lg c-banner-lg--right'>
+    <a href='https://www.dreamland-anime.com/
+ ' target='_blank' class='c-banner-lg-container' id='times_ad_jackright'>
+        <img src='https://www.animatetimes.com/wp-content/uploads/2026/10/e21f813f5fed1af9ca66b73291b91a9b6ac49b0f525506_55188680_73247d4eaabe8845b1336485ec7c2baf692d0b76.jpg ' alt=' ' width='250 ' height='800 '></a>
+</div>    </div>
+  </div>
+ </div>
+</div>
+      <div class="container">
+      </div>
+      <div class="container">
+        <div class="l-content">
+          <section class="l-content-main">
+            <div class="l-box l-box--article">
+                <div class="l-article">
+                  <h2 class="c-heading-h2">404 Not Found</h2>
+                  <p>ページが存在しません</p>
+                  <p><a class="c-button-sub" href="https://www.animatetimes.com">アニメイトタイムズ&nbsp;TOPへ</a></p>
+                </div>
+            </div>
+          </section>
+<aside class="l-content-aside">
+        <div class="c-banner-aside visible-md visible-lg">
+        
+<div id="1ba23b37ac893daf9d3bb0554b53fbf9" >
+	<script type="text/javascript">
+		microadCompass.queue.push({
+			"spot": "1ba23b37ac893daf9d3bb0554b53fbf9"
+		});
+	</script>
+</div>        </div>
+        <div class="c-banner-aside visible-md visible-lg">
+        <div style="margin:5px 0;">
+   <a name="times_pcside_icpc" href="https://nama-anaru.com/" target="_blank"><img src="https://img2.animatetimes.com/2019/03/fb1a878f23e6a10b11ed73dfa6271c566ac2f2cfc49626_74010355_b21984431242d5536947b1ca2a68b741a3162d5e.jpg" alt="TVアニメ「生徒会にも穴はある！」公式サイト" width="300" height="100"></a>
+</div>
+
+<div style="margin:5px 0;">
+   <a name="times_pcside_icpc" href="https://www.nanoha.com/EXGV/" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/2019/03/4e4acadc300eb49092e83d564a6c50166a6aaf97582311_47284950_6c9b0808066b352dc0e3d498c2f1f310d346ec10.jpg" alt="TVアニメ「魔法少女リリカルなのは EXCEEDS Gun Blaze Vengeance」公式サイト" width="300" height="100"></a>
+</div>
+
+<div style="margin:5px 0;">
+   <a name="times_pcside_icpc" href="https://uchioto-anime.com/" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/2019/03/54df6f72db99e08ee4b35674f91867026a615c0b8271e3_71709747_2150f67b8f264df512e96acacb2327ac66c8af08.jpg" alt="TVアニメ「うちの弟どもがすみません」公式サイト" width="300" height="100"></a>
+</div>
+
+<div style="margin:5px 0;">
+   <a name="times_pcside_icpc" href="https://growupshow.com/" target="_blank"><img src="https://img2.animatetimes.com/2019/03/73fc42f2186fe14ccf180050792837736a4c5a1e9efb80_98385165_df856282434765ade29954a6b2d3f50e9234d36c.jpg" alt="TVアニメ「グロウアップショウ ～ひまわりのサーカス団～」公式サイト" width="300" height="100"></a>
+</div>
+
+<div style="margin:5px 0;">
+   <a name="times_pcside_icpc" href="https://kamiina-botan.com/" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/2019/03/8207cfc809fb4906ab7152a190b968ee69def6440ac3b3_70543981_49e18ddec29b1f0e7eb3a547087121c8673b6b0c.png" alt="TVアニメ「上伊那ぼたん、酔へる姿は百合の花」公式サイト" width="300" height="100"></a>
+</div>
+
+<div style="margin:5px 0;">
+   <a name="times_pcside_icpc" href="https://zakoban.com/" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/2019/03/e2132d394ce6b18564a4c1063d33fac3695b13183106a7_99970074_8f1720dc90b018977a68b92c7c2b10d4aaa7121d.jpg" alt="TVアニメ「北斗の拳 拳王軍ザコたちの挽歌」公式サイト" width="300" height="100"></a>
+</div>
+
+<div style="margin:5px 0;">
+   <a name="times_pcside_icpc" href="https://www.animatetimes.com/news/details.php?id=1790327700" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/9999/12/3735d3b77f17d25dab0f97598c9768c26abf21f47cbcb8_33689367_d22b9d33868759e8b01f6e966ea240bd1153bcb4.jpg" alt="DAM「ダンデヴァイン」" width="300" height="100"></a>
+</div>
+
+
+<div style="margin:5px 0;">
+   <a name="times_pcside_icpc" href="https://toulove-store.jp/" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/2019/03/f38aa461a4d502630de230969bfd33046a7555e0b86231_45762716_0ca5774b4b51851048242c7c63b9ce3dba963d2b.jpg" alt="刀剣乱舞" width="300" height="100"></a>
+</div>
+
+
+<div class="img">
+</div>
+
+<!-- ソレオス -->
+<!-- 
+
+<div style="margin:5px 0;">
+   <a href="https://soreosu.com/?animatebannertimes_migi_" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/2019/03/95b5fd5c632c223143da3f0c6480147967aec6a88cf0d2_70178800_a39385d79b3e5f89b1a5172b5d058f03e7e3dfe4.jpg" alt="ソレオス広告" width="300" height="100"></a>
+</div>
+
+<div style="margin:5px 0;">
+   <a href="https://soreosu.com/feature_pages/hb?utm_source=atimes&utm_medium=banner&utm_campaign=times_sidebanner_idolBD" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/2019/03/b5a331a357a8f45fff04a9f4c2afd6f46a9e18d75d6767_15456275_a0f604188f60e57aca6ad3c5b00b871dd9496bb2.jpg" alt="アイドル生誕祭特集" width="300" height="100"></a>
+</div>
+
+ -->
+
+<div style="margin:5px 0;">
+   <a href="https://soreosu.com/projects/littlere-collector?utm_source=atimes&utm_medium=banner&utm_campaign=times_sidebanner_littlere-collector" target="_blank"><img src="https://www.animatetimes.com/wp-content/uploads/2019/03/8c295ef006aec0d75f9fde5014d432936aac96123ed483_95508737_c952ccf36752f9383b08cf2c7f37cbb60fcf37ca.png" alt="リトル・リコレクター" width="300" height="100"></a>
+</div>
+
+<!-- ソレオス終了 -->
+
+ <div style="margin-top:5px;">
+   <a name="animate_games_online" href="https://animate-go.com/">
+          <img src="https://www.animatetimes.com/wp-content/uploads/2019/03/21b62e2bfdd38fe86d59e2b49d00bc05698145dc2424d1_83591297_fe707f91b2502c4bf52c22878dbd59d26fa4828a.jpg" alt="animate_games_online" width="300" height="100"></a>
+    </div>
+
+ <div style="margin-top:5px;">
+   <a name="times_pcside_animemangaseiyuuanke-to" href="https://www.animate-onlineshop.jp/corner/cc/staff_oshi_comic/cd/3305/?utm_source=atimes&utm_medium=animate&utm_campaign=staff_oshi_comic_times_banner">
+          <img src="https://img2.animatetimes.com/2024/11/e18ccfaeaeaf32a6991d7729d38faee26743e077944ed1_15330395_985850298d6c6da691394fb175734061f7b67414.jpg" alt="「○○すぎる漫画」シリーズ" width="300" height="100"></a>
+    </div>
+
+　 <div style="margin-top:5px;">
+  　　　　 <a name="times_pcside_animemangaseiyuuanke-to" href="https://www.animatetimes.com/tag/details.php?id=997">
+          <img src="https://img2.animatetimes.com/2021/11/61938246d9427_a5a82e17e49a4ab003fc8d4c0121d900.png" alt="アニメマンガ声優アンケート" width="300" height="100"></a>
+    </div>
+
+    <div style="margin-top:5px;">
+          <a name="times_pcside_seiyu-award" href="https://www.animatetimes.com/tag/details.php?id=1605">
+          <img src="https://img2.animatetimes.com/2019/03/6228355eb027d_15e715717aa2440f166ac607570d721a.png" alt="声優アワード 歴代受賞者一覧" width="300" height="100"></a>
+    </div>
+
+    <div style="margin-top:5px;">
+          <a name="times_pcside_seiyu-birthday" href="https://www.animatetimes.com/tag/details.php?id=7936">
+          <img src="https://img2.animatetimes.com/2019/08/5d49085099944_e932c87454a2c1556d42fea6eabb7790.png" alt="声優別代表作まとめ一覧" width="300" height="100"></a>
+    </div>
+
+        </div>
+
+<div class="l-box">
+  <div class="c-heading-box c-heading-box--s">
+    <h2>新着ラジオ番組</h2>
+  </div>
+  <div class="slick_target" id="aside_radio_carousel">
+        
+    <div class="c-item">
+      <a class="c-item-link" href="https://www.animatetimes.com/radio/details.php?id=kirabeat" id="times_radio">
+        <div class="c-item-img"><div class="thumb-placeholder"><img src="https://img2.animatetimes.com/2012/05/c46ceb650f4506dfe247a092e6d562eb6512692bc7a181_01365687_1ef297a66079dd424347842d6ecae21be9218c24.jpg" loading="lazy" alt="Trignalのキラキラ☆ビートＲ" width="900" height="600"></div></div>
+        <div class="c-item-ttl">
+          <div class="c-headline-text no-bg-color mb-10">Trignalのキラキラ☆ビートＲ</div>
+        </div>
+      </a>
+    </div>
+        
+    <div class="c-item">
+      <a class="c-item-link" href="https://www.animatetimes.com/radio/details.php?id=jukebox" id="times_radio">
+        <div class="c-item-img"><div class="thumb-placeholder"><img src="https://img2.animatetimes.com/2015/11/b8a1f9b8b2c32eda89f7630b314b303666a878060a36e5_52383839_b01174c6f8ecb200639e86b28048bfbff1624858.jpg" loading="lazy" alt="川上千尋StoryJukeBox" width="1280" height="864"></div></div>
+        <div class="c-item-ttl">
+          <div class="c-headline-text no-bg-color mb-10">川上千尋StoryJukeBox</div>
+        </div>
+      </a>
+    </div>
+        
+    <div class="c-item">
+      <a class="c-item-link" href="https://www.animatetimes.com/radio/details.php?id=tsumashio" id="times_radio">
+        <div class="c-item-img"><div class="thumb-placeholder"><img src="https://img.animatetimes.com/radio/visual/tsumashio/9ae5eddf41cd3c3daa8f2dee026c0814_main_thumb.jpg" loading="lazy" alt="森久保祥太郎×浪川大輔 つまみは塩だけ" width="180" height="134"></div></div>
+        <div class="c-item-ttl">
+          <div class="c-headline-text no-bg-color mb-10">森久保祥太郎×浪川大輔 つまみは塩だけ</div>
+        </div>
+      </a>
+    </div>
+        
+    <div class="c-item">
+      <a class="c-item-link" href="https://www.animatetimes.com/radio/details.php?id=music_park" id="times_radio">
+        <div class="c-item-img"><div class="thumb-placeholder"><img src="https://img2.animatetimes.com/2017/11/5cde58e7c53d4_2d6cb868894dd4f0bf30b2c5529ae708.png" loading="lazy" alt="Kiramune Presents 僕らのMusic Park" width="1000" height="543"></div></div>
+        <div class="c-item-ttl">
+          <div class="c-headline-text no-bg-color mb-10">Kiramune Presents 僕らのMusic Park</div>
+        </div>
+      </a>
+    </div>
+        
+    <div class="c-item">
+      <a class="c-item-link" href="https://www.animatetimes.com/radio/details.php?id=onkimo-love" id="times_radio">
+        <div class="c-item-img"><div class="thumb-placeholder"><img src="https://img2.animatetimes.com/2011/06/5ce4dd90520a3_cf5521c41a5280fc6e418ab7b1da3f2b.jpg" loading="lazy" alt="高橋美紀のおんぷの気持ち♪　in アニメイトタイムズ" width="642" height="462"></div></div>
+        <div class="c-item-ttl">
+          <div class="c-headline-text no-bg-color mb-10">高橋美紀のおんぷの気持ち♪　in アニメイトタイムズ</div>
+        </div>
+      </a>
+    </div>
+        
+    <div class="c-item">
+      <a class="c-item-link" href="https://www.animatetimes.com/radio/details.php?id=sentai_radio" id="times_radio">
+        <div class="c-item-img"><div class="thumb-placeholder"><img src="https://img2.animatetimes.com/2024/03/1f6535958beb14e39b1a284d2a2567146874787080cf14_43385098_95d681ab505ad787d5ce62aac6c8732f9df81f8c.png" loading="lazy" alt="TVアニメ『戦隊大失格』radio 大直会 2nd season" width="1280" height="720"></div></div>
+        <div class="c-item-ttl">
+          <div class="c-headline-text no-bg-color mb-10">TVアニメ『戦隊大失格』radio 大直会 2nd season</div>
+        </div>
+      </a>
+    </div>
+        
+    <div class="c-item">
+      <a class="c-item-link" href="https://www.animatetimes.com/radio/details.php?id=haikyu_radio" id="times_radio">
+        <div class="c-item-img"><div class="thumb-placeholder"><img src="https://img2.animatetimes.com/2019/07/5ddb2c080ece6_a9f865054813a5cb5670881ab2ea4633.jpg" loading="lazy" alt="ハイキュー!! 烏野高校放送部!" width="315" height="213"></div></div>
+        <div class="c-item-ttl">
+          <div class="c-headline-text no-bg-color mb-10">ハイキュー!! 烏野高校放送部!</div>
+        </div>
+      </a>
+    </div>
+      </div>
+
+  <a class="c-more" href="https://www.animatetimes.com/radio/" id="times_radio">もっと見る</a>
+</div><div class="container">
+          <div class="c-banner-sp c-banner-sp--w300 visible-xs visible-sm">
+        <div style="min-height: 250px;">
+<div class="yads-placeholder"></div>
+</div>        </div>
+
+</div>
+<div class="l-box">
+  <div class="c-heading-box c-heading-box--s">
+    <h2>アニメイト<br>通販ランキング</h2>
+  </div>
+
+  <div class="c-headline c-headline--ranking l-headline">
+      <ul class="c-headline-list">
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3614163&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=4535123853364_2_1791198304.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>1</strong>位
+            </div>
+            <div class="c-headline-text">【トレーディングフィギュア】るかっぷミニチュアコレクション 僕のヒーローアカデミア</div>
+            <div class="c-headline-date">￥880</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3612061&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=10011632_6abe0ca2bb6c8.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>2</strong>位
+            </div>
+            <div class="c-headline-text">【グッズ-その他】ネオ朗読劇「ザ・フェイク」 DVD</div>
+            <div class="c-headline-date">￥5,000</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3614188&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=4535123853876_1_1791198308.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>3</strong>位
+            </div>
+            <div class="c-headline-text">【フィギュア】るかっぷ 刀剣乱舞ONLINE 山姥切長義</div>
+            <div class="c-headline-date">￥4,301</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3614187&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=4535123853869_1_1791198307.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>4</strong>位
+            </div>
+            <div class="c-headline-text">【フィギュア】るかっぷ 刀剣乱舞ONLINE 山姥切国広</div>
+            <div class="c-headline-date">￥4,301</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3612062&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=10011841_6abe2acea5521.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>5</strong>位
+            </div>
+            <div class="c-headline-text">【グッズ-その他】ネオ朗読劇「ザ・フェイク」 上演台本</div>
+            <div class="c-headline-date">￥1,200</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3603462&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=09181352_6aacc3761aa47.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>6</strong>位
+            </div>
+            <div class="c-headline-text">【グッズ(音楽)】ブロマイド センラ ランダムミニフォトカード～Calea～</div>
+            <div class="c-headline-date">￥500</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3603463&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=09181352_6aacc3a47aa18.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>7</strong>位
+            </div>
+            <div class="c-headline-text">【グッズ(音楽)】スタンドポップ センラ 実写アクリルスタンド～しゃがみ～</div>
+            <div class="c-headline-date">￥1,500</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3614181&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=4535123853906_1_1791198312.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>8</strong>位
+            </div>
+            <div class="c-headline-text">【フィギュア】るかっぷ 超かぐや姫！ 月見ヤチヨ</div>
+            <div class="c-headline-date">￥4,207</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3612059&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=10011841_6abe2aad24c84.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>9</strong>位
+            </div>
+            <div class="c-headline-text">【グッズ-パンフレット】ネオ朗読劇「ザ・フェイク」 パンフレット</div>
+            <div class="c-headline-date">￥2,000</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            <li class="c-headline-item ranking"><a name="times_affiliate-ranking" class="c-headline-link" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3612060&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">
+          <div class="c-headline-img"><img alt="" style="height:auto;" width="80" height="80" loading="lazy" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=10011632_6abe0c881b63a.jpg&amp;width=136&amp;height=136&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0&amp;square=1"></div>
+          <div class="c-headline-meta">
+            <div class="c-headline-info">
+              第<strong>10</strong>位
+            </div>
+            <div class="c-headline-text">【グッズ-設定資料集】ネオ朗読劇「ザ・フェイク」 フォトブック</div>
+            <div class="c-headline-date">￥3,000</div>
+            <div class="c-label c-label--aos-reserve">予約受付中</div>          </div></a>
+      </li>
+            </ul>
+  </div>
+  <a class="c-more" target="_blank" name="times_affiliate-ranking" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/ranking/&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_online-ranking">すべて見る</a>
+</div>
+<div class="container">
+          <div class="c-banner-sp c-banner-sp--w320 visible-xs visible-sm">
+        <div style="min-height: 250px;">
+<div id="7a372d254338fb76feb071d8924fccc8" >
+        <script type="text/javascript">
+                microadCompass.queue.push({
+                        "spot": "7a372d254338fb76feb071d8924fccc8"
+                });
+        </script>
+</div>
+</div>        </div>
+</div>
+            <div class="l-box recommend_wrapper">
+              <div class="c-heading-box c-heading-box--s">
+                <h2>あなたへのおすすめ</h2>
+              </div>
+              <div class="c-headline l-headline">
+                <ul class="c-headline-list" id="rt_right_recommend">
+                    <li class="c-headline-item" id="rt_right_recommend_1"></li>
+                    <li class="c-headline-item" id="rt_right_recommend_2"></li>
+                    <li class="c-headline-item" id="rt_right_recommend_3"></li>
+                    <li class="c-headline-item" id="rt_right_recommend_4"></li>
+                    <li class="c-headline-item" id="rt_right_recommend_5"></li>
+                </ul>
+              </div>
+            </div><div class="container">
+          <div class="c-banner-sp c-banner-sp--w320 visible-xs visible-sm">
+        <div style="min-height: 250px;">
+<div style="background-color:#FFFFFF; position: relative; width:300px; height:250px; text-align: center; margin: 0 auto; border:1px solid #C0BFC0;" >
+    <a target="_blank" name="" class="inject-link" style="position:absolute; top:0; left:0; height:100%; width:100%;" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3614163&amp;lstid=AMAUTOTRACK&amp;utm_source=atimes&amp;utm_medium=animate&amp;utm_campaign=times_sales_3614163">
+        <img alt="アニメイト通販おすすめ商品のご紹介" style="width:auto; height:30px; display:block; margin:0 auto; margin-top:10px;" src="https://img2.animatetimes.com/2019/03/5c85c69f02fdf_025dda870061254571083b03385e5137.png">
+        <img alt="" style="width:280px; height:155px; display:block; margin:0 auto; margin-top:5px; object-fit:contain; " class="inject-image-src" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=4535123853364_2_1791198304.jpg&amp;width=&amp;height=&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0" loading="lazy" alt="" >
+        <div class="c-product__title inject-name" style="width:250px; margin: 0 auto; margin-top:5px; font-size: 10px; line-height: 1.2em;">
+            【トレーディングフィギュア】るかっぷミニチュアコレクション 僕のヒーローアカデミア        </div>
+    </a>
+</div>
+            
+</div>        </div>
+
+</div>
+            <div class="l-box recommend_wrapper">
+              <div class="c-heading-box c-heading-box--s">
+                <h2>閲覧履歴</h2>
+              </div>
+              <div class="c-headline l-headline">
+                <ul class="c-headline-list" id="rt_view_history">
+                  <li class="c-headline-item" id="rt_view_history_1"></li>
+                  <li class="c-headline-item" id="rt_view_history_2"></li>
+                  <li class="c-headline-item" id="rt_view_history_3"></li>
+                  <li class="c-headline-item" id="rt_view_history_4"></li>
+                  <li class="c-headline-item" id="rt_view_history_5"></li>
+                </ul>
+              </div>
+            </div><div class="container" style="margin-bottom: 15px;">
+          <div class="c-banner-sp c-banner-sp--w320 visible-xs visible-sm">
+                </div>
+
+</div>
+<div class="common-bnr">
+<!-- リンクはアフィ&amp;utmパラメータ必須、imgのaltはバナー名を入れる -->
+<div class="container">
+    <style>
+        .banner_library img {
+            height: auto !important;
+        }
+
+    </style>
+
+<!-- ソレオス -->
+<!-- 
+<div class="c-banner-aside banner_library">
+   <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5R-_u86yg8groSxMgW25iqHKI_W1LlFJoGahfUlKyFpoWbQ/viewform" target="_blank">
+   <img src="https://www.animatetimes.com/wp-content/uploads/2018/10/c48972982c2fa9e5143096f6fa43867467aea40f98f047_39865318_b6eca35b937310cfcc9aa68dd438ad9ce8b4df3d.jpg" alt="ソレオス_プロジェクトアイディア募集" width="300" height="100">
+   </a>
+</div>
+
+<div class="c-banner-aside banner_library">
+   <a href="https://soreosu.com/feature_pages/hb?utm_source=atimes&utm_medium=banner&utm_campaign=times_anionbanner_idolBD" target="_blank">
+   <img src="https://www.animatetimes.com/wp-content/uploads/2018/10/1f4d2334d46eec53aad957ebf511566a6a9e1a092c5809_62464209_a0f604188f60e57aca6ad3c5b00b871dd9496bb2.jpg" alt="アイドル生誕祭特集" width="300" height="100">
+   </a>
+</div>
+ -->
+
+<div class="c-banner-aside banner_library">
+   <a href="https://soreosu.com/projects/littlere-collector?utm_source=atimes&utm_medium=banner&utm_campaign=times_anionbanner_littlere-collector" target="_blank">
+   <img src="https://www.animatetimes.com/wp-content/uploads/2018/10/d605b773c406e283c47cfbcaa0bce27a6aac96fe4a3346_11118328_c952ccf36752f9383b08cf2c7f37cbb60fcf37ca.png" alt="リトル・リコレクター" width="300" height="100">
+   </a>
+</div>
+
+<!-- ソレオス終了 -->
+
+    <div class="c-banner-aside banner_library">
+        <a name="times_pcside_osusumegoods" href="https://www.animatetimes.com/tag/details.php?id=12009" target="_blank">
+            <img src="https://img2.animatetimes.com/2019/03/61414fde6bd54_1b8fb52418bb56c0627b4261937e1127.png" alt="編集部おすすめグッズ紹介" width="300" height="100">
+        </a>
+    </div>
+
+
+    <div class="c-banner-aside  banner_library">
+        <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/animetitle/?aid=14731&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_nijisanji" target="_blank">
+            <img src="https://img2.animatetimes.com/2018/10/f195494071c2d425d1bccbff824cfbda63ec41666ced26_25133182_d175a167d00c15975c716a25c04d55b8182a495a.jpg" alt="ホロライブ" width="300" height="101">
+        </a>
+    </div>
+
+    <div class="c-banner-aside  banner_library">
+        <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/animetitle/?aid=4839&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_hololive" target="_blank">
+            <img src="https://img2.animatetimes.com/2018/10/00c3e7f4da82edbf1969c401c1bc769463ec4167bf0592_39383416_423fc897c4b2ffb6145999c2d60fb052b8ad377c.jpg" alt="にじさんじ" width="300" height="101">
+        </a>
+    </div>
+
+    <div class="c-banner-aside  banner_library">
+        <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/animetitle/?aid=4548&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_kimetsu"
+            target="_blank">
+            <img src="https://img2.animatetimes.com/2019/04/5cc5456c9926e_868a538ed850e42d8eaf3d73268f8227.jpg" alt="鬼滅の刃" width="300" height="101">
+        </a>
+    </div>
+
+    <div class="c-banner-aside  banner_library">
+        <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/animetitle/?aid=3748&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_ensemble_stars"
+            target="_blank">
+            <img src="https://img2.animatetimes.com/2018/10/627a297281df3_48c5e7c05ae813f7c5ea866ebf2773d5.jpeg" alt="あんさんぶるスターズ!!" width="300" height="101">
+        </a>
+    </div>
+
+    <div class="c-banner-aside  banner_library">
+        <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/animetitle/?aid=3901&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_idolish7"
+            target="_blank">
+            <img src="https://img2.animatetimes.com/2018/10/627a29731ed9d_a6dc2f8555ba1622c887bda311b114bc.jpeg" alt="アイドリッシュセブン" width="300" height="101">
+        </a>
+    </div>
+
+<!-- 
+   <div class="c-banner-aside  banner_library">
+      <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/products/index.php?nf=1&spc=5&scc=47&ss=5&sl=0&nd%5B%5D=7&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_newfigure" target="_blank">
+         <img src="https://img2.animatetimes.com/2019/07/5d367a3ae2a65_0bb1ebd321de48c869336f32e4194318.jpg" alt="新作フィギュア" width="300" height="101">
+      </a>
+   </div>
+
+   <div class="c-banner-aside  banner_library">
+      <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?lstid=AMAUTOTRACK&company_id=101&corner_id=1374&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_otakatsu" target="_blank">
+         <img src="https://img2.animatetimes.com/2024/12/5e81520aed1a724d46c364102324e4cb67580148d89f28_45950827_cb44da9c773ffb6d688e9a27e81f768de1c71149.jpg" alt="オタ活" width="300" height="101">
+      </a>
+   </div>
+
+-->
+
+<!--
+<div class="c-banner-aside banner_library">
+     <a name="times_pcside_ebook" href="https://www.animatetimes.com/ebook/?utm_source=atimes&utm_medium=animate&utm_campaign=attimesside" id="pcsideebook">
+     <img src="https://img2.animatetimes.com/2018/10/8e6b85346a886e096cf475718ae7ae67645de0d75ed985_81274492_2925be3be76260becc1c8bb5f173f4f65f8b18e3.jpg" alt="アニメイトタイムズ「無料マンガ」コーナー" width="300" height="100">
+    </a>
+</div>
+
+    <div class="c-banner-aside  banner_library">
+        <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/animetitle/?aid=12913&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_spyfamily"
+            target="_blank">
+            <img src="https://img2.animatetimes.com/2018/10/627a297447ae1_710d0fa80f90eff32ab8b73e53bf6b62.jpeg" alt="SPY×FAMILY" width="300" height="101">
+        </a>
+    </div>
+
+    <div class="c-banner-aside  banner_library">
+        <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?lstid=AMAUTOTRACK&company_id=101&corner_id=1684&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_jujutsukaisen"
+            target="_blank">
+            <img src="https://img2.animatetimes.com/2018/10/627a2d680eddc_49d89885325d05fd1c2b0950d666851b.jpeg" alt="呪術廻戦" width="300" height="101">
+        </a>
+    </div>
+
+    <div class="c-banner-aside  banner_library">
+        <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/animetitle/?aid=13561&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_whitetales"
+            target="_blank">
+            <img src="https://img2.animatetimes.com/2018/10/627a2971c433a_40c51295c6330b54bab0e897aa06ad0f.jpeg" alt="ワイテルズ" width="300" height="101">
+        </a>
+    </div>
+
+   <div class="c-banner-aside  banner_library">
+      <a href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=https://www.animate-onlineshop.jp/corner/corner.php?corner_id=1254&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_banner_utaite" target="_blank">
+         <img src="https://img2.animatetimes.com/2018/10/5d5b51547e0ef_73f02a56323e1a9a10166a873178e3aa.jpg" alt="歌い手特集" width="300" height="101">
+      </a>
+   </div>
+-->
+
+</div></div>
+<div class="c-banner-aside-follow-top-limit"></div>
+<div class="c-banner-aside c-banner-aside-follow visible-md visible-lg">
+          <script type="text/javascript">
+  var microadCompass = microadCompass || {};
+  microadCompass.queue = microadCompass.queue || [];
+</script>
+<script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js" onload="new microadCompass.AdInitializer().initialize();" async></script>
+<div id="6737244acc6e0434935734f4c3cf4cb2" >
+  <script type="text/javascript">
+    microadCompass.queue.push({
+      "spot": "6737244acc6e0434935734f4c3cf4cb2"
+    });
+  </script>
+</div>
+</div>
+<div class="c-banner-aside-follow-bottom-limit"></div>
+</aside>        </div>
+      </div>
+      <div class="c-footer">
+        <div class="container">
+          <div class="c-footer-logo"><a href="/" style="line-height: 1.4;"><img src="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/logo.png" alt="animate Times"><br><span style="font-weight: bold; font-size: medium">アニメイト</span></a></div>
+          <!--ナビゲーション-->
+          <nav class="row" id="footer_nav">
+            <div class="c-footer-col is-open">
+              <div class="c-footer-heading">
+                <a href="#" onclick="return false;" role="button" data-toggle="collapse" data-parent="#footer_nav" data-target="#footer_nav_1">カテゴリ</a>
+              </div>
+              <ul class="c-footer-list collapse in" id="footer_nav_1">
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/">HOME</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/ranking/">ランキング</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/anime/">アニメ</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/seiyu/">声優</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/radio/">ラジオ</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/comment/">みんなの声</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/goods/">グッズ</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/eiga/">映画</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/book/">マンガ・ラノベ</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/game/">ゲーム・アプリ</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/music/">音楽</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/cosplay/">コスプレ</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/25d/">2.5次元</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/webcast/">配信・Vtuber</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/trend/">トレンド</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/ebook/">無料マンガ</a></li> 
+              </ul>
+            </div>
+            <div class="c-footer-col is-open">
+    <div class="c-footer-heading">
+        <a href="#" onclick="return false;" role="button"  data-toggle="collapse" data-parent="#footer_nav" data-target="#footer_nav_2">特集/一覧まとめ</a>
+    </div>
+    <ul class="c-footer-list collapse in" id="footer_nav_2">
+        <li class="c-footer-item"><a class="c-footer-link" href="/index.php?p=1">最新記事一覧</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/tag/details.php?id=1392">今期アニメ曜日別一覧</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/tag/details.php?id=5228">春アニメ</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/tag/details.php?id=5806">夏アニメ</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/tag/details.php?id=5947">秋アニメ</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/tag/details.php?id=6212">冬アニメ</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/anime/?p=1">アニメ記事一覧</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/seiyu/?p=1">声優記事一覧</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/tag/details.php?id=1393">男性声優/女性声優一覧</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/tag/details.php?id=3&subids=1393">声優×インタビュー</a></li>
+        <li class="c-footer-item"><a class="c-footer-link" href="/tag/details.php?id=1393&subids=2">声優×レポート</a></li>
+     </ul>            </div>
+            <div class="c-footer-col">
+              <div class="c-footer-heading">
+                <a href="#" onclick="return false;" role="button" data-toggle="collapse" data-parent="#footer_nav" data-target="#footer_nav_3">アニメイトタイムズについて</a>
+              </div>
+              <ul class="c-footer-list collapse" id="footer_nav_3">
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="/tos.php">利用規約</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animate.co.jp/privacy/" target="_blank">プライバシーポリシー</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="/cookie_policy/">クッキーポリシー</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="/comment_policy.php">コメントポリシー</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://req.qubo.jp/animatelab/form/ask">お問い合わせ</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="/faq/">よくあるご質問</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="/faq/sns.php">SNSアカウント一覧</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatetimes.com/ad/" target="_blank">広告掲載について</a></li>
+                <li class="c-footer-item"></li>
+              </ul>
+            </div>
+            <div class="c-footer-col">
+              <div class="c-footer-heading">
+                <a href="#" onclick="return false;" role="button" data-toggle="collapse" data-parent="#footer_nav" data-target="#footer_nav_4">アニメイトのWebサービス</a>
+              </div>
+              <ul class="c-footer-list collapse" id="footer_nav_4">
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animatebookstore.com/" target="_blank">アニメイトブックストア</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animategames.jp/" target="_blank">アニメイトゲームス</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://pokedora.com/" target="_blank">ポケットドラマCD</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://soreosu.com/?utm_source=atimes&utm_medium=referral&utm_campaign=atimes_footer" target="_blank">ソレオス</a></li>
+                <li class="c-footer-item"></li>
+              </ul>
+            </div>
+            <div class="c-footer-col">
+              <div class="c-footer-heading">
+                <a href="#" onclick="return false;" role="button" data-toggle="collapse" data-parent="#footer_nav" data-target="#footer_nav_5">会社案内</a>
+              </div>
+              <ul class="c-footer-list collapse" id="footer_nav_5">
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animate.co.jp/" target="_blank">アニメイト</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animate-onlineshop.jp/?utm_source=atimes&utm_medium=animate&utm_campaign=menu_footer" target="_blank">アニメイト通販</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animate.co.jp/shop/" target="_blank">アニメイト店舗</a></li>
+                <li class="c-footer-item"><a class="c-footer-link" name="menu_footer" href="https://www.animate.co.jp/company/" target="_blank">アニメイトグループ</a></li>
+              </ul>
+              <ul class="c-footer-license-list">
+                <li class="c-footer-item"><img src="https://img2.animatetimes.com/img/common/license01.png" width="35" height="35" alt="" style="">許諾番号<br>9005542009Y56084</li>
+                <li class="c-footer-item"><img src="https://img2.animatetimes.com/img/common/license02.png" width="35" height="35" alt="">許諾番号<br>9005542008Y30005</li>
+                <li class="c-footer-item"><img src="https://img2.animatetimes.com/img/common/license03.png" width="35" height="35" alt="">許諾番号<br>005542005Y31018</li>
+                <li class="c-footer-item"><img src="https://img2.animatetimes.com/img/common/license04.png" height="35" alt=""></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="c-sns">
+            <div class="c-sns-title">FOLLOW US</div>
+            <ul class="c-sns-list">
+              <li class="c-sns-item"><a class="c-sns-link" href="https://x.com/animatetimes" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li class="c-sns-item"><a class="c-sns-link" href="https://www.youtube.com/channel/UCj-7fExtfepnDR3FrX5K2sg/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+              <li class="c-sns-item"><a class="c-sns-link" href="https://www.facebook.com/animatetimes/?fref=ts" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="c-sns-item"><a class="c-sns-link" href="https://www.instagram.com/animatetimes/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="c-footer-caption">アニメイトタイムズに掲載されているすべての画像、 <br>文章等の無断転載を禁じます</div>
+          <div class="c-footer-copyright"><small>Copyright(C) animate Corporation.<br>All rights reserved</small></div>
+        </div>
+      </div>
+            <a class="c-pagetop" href="#pagetop" id="btn_pagetop"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <div id="cookie-agreement" style="display: none;">
+      <span class="dismiss">&times;</span>
+      <div class="inner">
+        <div class="text">
+        当サイトでは、サイトの利便性向上のため、クッキー(Cookie)を使用しています。<br>
+        サイトのクッキー(Cookie)の使用に関しては、<a href="/cookie_policy/">「クッキーポリシー」</a>をお読みください。
+        </div>
+        <div class="buttons">
+          <a href="#" class="agree">同意する</a>
+        </div>
+      </div>
+    </div>
+    <div id="rtoaster_popup"></div>
+        <script type="text/javascript" src="//d-cache.microad.jp/js/td_at_access.js"></script>
+    <script type="text/javascript">microadTd.AT.start({});</script>
+    <script>
+    (async function (window) {
+      const yadsId = window.isMobile ? "90908_880233" : "23020_882210";
+
+      const phs = document.querySelectorAll(".yads-placeholder");
+      for (const ph of phs) {
+        if (ph.checkVisibility()) {
+          ph.setAttribute("id", "yads" + yadsId);
+          window.YJ_YADS = window.YJ_YADS || { tasks: [] };
+          let q;
+          window.YJ_YADS.tasks.push(
+            q = {
+              yads_ad_ds: yadsId,
+              yads_parent_element: "yads" + yadsId
+            }
+          );
+          break;
+        }
+      }
+      
+    })(window);
+    </script>
+
+    <script type="text/javascript">
+        data_from_php = [];
+    </script>
+    <script type="text/javascript" src="https://www.animatetimes.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.7" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "contact-form-7", {"translation-revision-date":"2025-11-30 08:12:23+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"This contact form is placed in the wrong place.":["\u3053\u306e\u30b3\u30f3\u30bf\u30af\u30c8\u30d5\u30a9\u30fc\u30e0\u306f\u9593\u9055\u3063\u305f\u4f4d\u7f6e\u306b\u7f6e\u304b\u308c\u3066\u3044\u307e\u3059\u3002"],"Error:":["\u30a8\u30e9\u30fc:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+//# sourceURL=contact-form-7-js-translations
+/* ]]> */
+</script>
+<script type="text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.animatetimes.com\/index.php?rest_route=\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.7" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.3" id="jquery-effects-core-js"></script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-includes/js/jquery/ui/effect-highlight.min.js?ver=1.13.3" id="jquery-effects-highlight-js"></script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-content/plugins/gianism/assets/vendor/js.cookie.min.js?ver=3.0.5" id="js-cookie-js"></script>
+<script type="text/javascript" id="gianism-notice-helper-js-extra">
+/* <![CDATA[ */
+var GianismHelper = {"confirmLabel":"Consent Required","btnConfirm":"Confirm","btnCancel":"Cancel"};
+var Gianism = {"admin":""};
+//# sourceURL=gianism-notice-helper-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-content/plugins/gianism/assets/js/public-notice.js?ver=263ad7fe39fec11c9d2337fe37dceb12" id="gianism-notice-helper-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/js/vendor.js?ver=1765346002" id="vendor-js"></script>
+<script type="text/javascript" src="https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/js/main.js?ver=1791345537" id="main-js"></script>
+                <script type="text/javascript">
+        var microadCompass = microadCompass || {};
+        microadCompass.queue = microadCompass.queue || [];
+        </script>
+        <script type="text/javascript" charset="UTF-8" src="//j.microad.net/js/compass.js" onload="new microadCompass.AdInitializer().initialize();" async=""></script>
+                <div id="rt_tag_history_products">
+            <div id="rt_tag_history_products_1"></div>
+            <div id="rt_tag_history_products_2"></div>
+            <div id="rt_tag_history_products_3"></div>
+            <div id="rt_tag_history_products_4"></div>
+            <div id="rt_tag_history_products_5"></div>
+        </div>
+                <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-75178649-5', 'auto', 'system');
+        </script>
+            <div class="c-banner-common c-banner-common--w300" id="rt-popup-ad-inventory" style="display: none;">
+        <div style="background-color:#FFFFFF; position: relative; width:300px; height:250px; text-align: center; margin: 0 auto; border:1px solid #C0BFC0;" class="inject-recommend-result">
+    <a target="_blank" name="" class="inject-link" style="position:absolute; top:0; left:0; height:100%; width:100%;" href="https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&amp;lsurl=https://www.animate-onlineshop.jp/products/detail.php?product_id=3614163&amp;lstid=AMAUTOTRACK&amp;utm_source=atimes&amp;utm_medium=animate&amp;utm_campaign=times_sales_3614163">
+        <img alt="アニメイト通販おすすめ商品のご紹介" style="width:auto; height:30px; display:block; margin:0 auto; margin-top:10px;" src="https://img2.animatetimes.com/2019/03/5c85c69f02fdf_025dda870061254571083b03385e5137.png">
+        <img alt="" style="width:280px; height:155px; display:block; margin:0 auto; margin-top:5px; object-fit:contain;  visibility: hidden; " class="inject-image-src" src="https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=4535123853364_2_1791198304.jpg&amp;width=&amp;height=&amp;age_limit=&amp;sex_characteristic=&amp;image_display_restriction=0&amp;warning_restriction=0"  >
+        <div class="c-product__title inject-name" style="width:250px; margin: 0 auto; margin-top:5px; font-size: 10px; line-height: 1.2em; visibility: hidden; ">
+            【トレーディングフィギュア】るかっぷミニチュアコレクション 僕のヒーローアカデミア        </div>
+    </a>
+</div>
+                </div>
+        <script defer type="text/javascript" src="//js.rtoaster.jp/Rtoaster.Popup.js"></script>
+        <script defer>
+            $(function(){
+                //見てる記事（一つ）
+                Rtoaster.item('');
+                //購買記事（複数）
+                Rtoaster.track(JSON.parse('[]'));
+
+                //カテゴリ絞り込み
+                Rtoaster.category(JSON.parse('["","",""]'));
+                //こっちは閲覧
+                Rtoaster.item(JSON.parse('[]'));
+
+                                document.Recommend.ids.forEach(function(value,index){
+                    if($('#'+value).length>0){
+                        Rtoaster.listen(value, function(e) {
+                           document.Recommend.callback_function(value);
+                        });
+                    }
+                });
+                var tagRecommendProducts = [];
+                Rtoaster.callback = function (elem) {
+                    if (elem === 'rt_tag_history_products') {
+                        $("#rt_tag_history_products").children().each(function (c) {
+                            var productsInElement = JSON.parse($(this).text() || "[]");
+                            for (var i in productsInElement) {
+                                if (productsInElement[i] && productsInElement[i].id) {
+                                    tagRecommendProducts.push(productsInElement[i]);
+                                }
+                            }
+                        });
+                    }
+                    if (elem === undefined) {
+                        // 最後のコールバック
+                        if (tagRecommendProducts.length) {
+                            $(".inject-recommend-result").each(function () {
+                                var product = tagRecommendProducts[0];
+                                var lsUrl = "https://www.animate-onlineshop.jp/products/detail.php?product_id=" + product.id;
+                                var link = "https://www.animate-onlineshop.jp/affiliate/affland.php?company_id=101&lsurl=" + lsUrl + "&lstid=AMAUTOTRACK&utm_source=atimes&utm_medium=animate&utm_campaign=times_sales-" + product.id;
+                                var name = product.name;
+                                var imageSrc = "https://tc-animate.techorus-cdn.com/resize_image/resize_image.php?image=" + product.image_name + "&width=&height=&age_limit=&sex_characteristic=&image_display_restriction=0&warning_restriction=0";
+                                $(this).find(".inject-link").attr("href", link);
+                                $(this).find(".inject-image-src").attr("src", "").attr("src", imageSrc);
+                                $(this).find(".inject-name").text(name);
+                            });
+                        }
+                        $(".inject-recommend-result").find(".inject-link, .inject-image-src, .inject-name").css("visibility", "visible");
+                    }
+                };
+                Rtoaster.Popup.register("rtoaster_popup");
+                // Rtoaster.Popup.closeIconSrc = "https://www.animatetimes.com/wp-content/themes/animatetimes/frontend/assets/img/common/popup_close.png";
+                document.Recommend.ids.push("rtoaster_popup");
+                window.addEventListener('message', function (evt) {
+                    if (evt.data !== 'rt-popup-load-ad-inventory') {
+                        return;
+                    }
+                    var src = $("#rt-popup-ad-inventory");
+                    var dest = $("#rt-ad-inventory");
+                    dest.append(src);
+                    src.show();
+                }, false);
+                window.addEventListener('message', function (evt) {
+                    if (!("" + evt.data).match(/^rt-popup-load-ad-inventory-/)) {
+                        return;
+                    }
+                    !function (evt) {
+                        ga('system.send', 'event', 'popup', 'beforeload', evt.data);
+                        var loadIfReady = function () {
+                            var iv = $("#rt-ad-inventory");
+                            if (iv.closest("#rtoaster_popup").length) {
+                                iv.load(
+                                    '/popup/' + evt.data.replace(/^rt-popup-load-ad-inventory-/, '') + '/',
+                                    function (data, status) {
+                                        if ("error" === status) {
+                                            ga('system.send', 'event', 'popup', 'loadfailed', evt.data);
+                                            Rtoaster.Popup.close("rtoaster_popup", true);
+                                        } else {
+                                            ga('system.send', 'event', 'popup', 'loaded', evt.data);
+                                            iv.on('click', function () {
+                                                Rtoaster.click('rtoaster_popup');
+                                                ga('system.send', 'event', 'popup', 'click', evt.data);
+                                            });
+                                        }
+                                    }
+                                );
+                            } else {
+                                setTimeout(loadIfReady, 200);
+                            }
+                        };
+                        loadIfReady();
+                    }(evt);
+                }, false);
+                Rtoaster.recommendNow.apply(this, document.Recommend.ids);
+
+                let code = '';
+                if(code){
+                    var target = $('.l-content-main');
+                    scrollInViewElement(target);
+
+                    function scrollInViewElement(target) {
+                      var scrollIn = function(event) {
+                        var targetTop = target[0].getBoundingClientRect().top;
+                        var targetBottom = target[0].getBoundingClientRect().bottom;
+                        if (targetBottom <= window.innerHeight) {
+                            Rtoaster.track({
+                                'subtotal': 1,
+                                'item1_code': '',
+                                'item1_price': 1,
+                                'item1_qty': 1
+                            });
+                          window.removeEventListener('scroll', scrollIn, false);
+                        }
+
+                      };
+                      window.addEventListener('scroll', scrollIn, false);
+                    }
+                }
+            });
+        </script>
+          </body>
+</html>

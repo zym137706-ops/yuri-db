@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /wp_hakusensha/wp-admin/
+Allow: /wp_hakusensha/wp-admin/admin-ajax.php
+
+Sitemap: https://www.hakusensha.co.jp/sitemap.xml

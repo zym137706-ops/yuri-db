@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://galetteweb.com/wp-sitemap.xml
+
+Sitemap: https://galetteweb.com/sitemap.xml
+Sitemap: https://galetteweb.com/sitemap.html

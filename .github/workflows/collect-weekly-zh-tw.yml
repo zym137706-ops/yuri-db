@@ -1,0 +1,66 @@
+# =============================================================================
+# 繁中版出版情报（每周）
+# =============================================================================
+# 阶段 1 建议频率：繁中出版 每周。
+# 東立 BooksDetail 会给出「原文書名 / 集數 / 譯者 / 出版日期 / ISBN」，
+# 是跨语言关联（繁中 ↔ 日文原作）的唯一强锚点，所以单独排一个较低的频率。
+# =============================================================================
+name: collect-weekly-zh-tw
+
+on:
+  schedule:
+    # 周一 02:00 UTC = 11:00 JST / 10:00 台北
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-weekly
+  cancel-in-progress: false
+
+jobs:
+  zh-tw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests lxml pyyaml jsonschema python-dateutil
+
+      # --details 0 表示只取列表页；如需全量关联改成较大的数字
+      - name: Collect (full pass incl. 東立 detail pages)
+        run: python collectors/run.py --delay 2.0 --details 60
+
+      - name: Rebuild + validate
+        run: python scripts/build_dataset.py
+
+      - name: Change log
+        run: python scripts/make_changelog.py
+
+      - name: Compliance check
+        run: python research/compliance_check.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weekly-${{ github.run_id }}
+          path: |
+            data/raw/
+            data/zh_tw_pending_linkage.json
+            data/dataset_report.json
+          retention-days: 90
+          if-no-files-found: warn
+
+      - name: Commit
+        run: |
+          git config user.name  "yuri-db bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "no changes"; else
+            git commit -m "chore(data): weekly zh-TW pass $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -1,0 +1,87 @@
+# =============================================================================
+# CI（push / PR）
+# =============================================================================
+# 不联网、不需要数据库：只做确定性校验，保证任何改动都不会破坏
+#   - Work schema 的 D1/D2/D3 规则
+#   - 数据集能重建且逐条符合 schema
+#   - 仓库内不出现盗版域名
+#   - Web 应用能构建
+# =============================================================================
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: pip install --quiet pyyaml jsonschema
+
+      - name: Prisma schema validation
+        # 之前从未验证过 prisma/schema.prisma；第一次跑就抓到 Source 缺失反向关联。
+        run: |
+          npm install --no-save prisma@6
+          DATABASE_URL="postgresql://u:p@localhost:5432/db" npx prisma validate --schema prisma/schema.prisma
+
+      - name: Work schema regression tests (positive + negative cases)
+        run: python scripts/validate_schema.py
+
+      - name: NDL OpenSearch parser unit test
+        run: python scripts/test_ndl_parser.py
+
+      - name: Rebuild dataset from the committed raw records (offline)
+        run: python scripts/build_dataset.py
+
+      - name: Rebuild anime dataset + validate against its schema (offline)
+        run: python scripts/build_anime_dataset.py
+
+      - name: Acceptance thresholds
+        run: python scripts/verify_acceptance.py
+
+      - name: Privacy / piracy denylist
+        run: python research/compliance_check.py
+
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Install
+        working-directory: web
+        run: pnpm install --frozen-lockfile
+
+      - name: Type check
+        working-directory: web
+        run: pnpm run typecheck
+
+      - name: Build
+        working-directory: web
+        run: pnpm run build
+
+      - name: Data-contract check (fields the UI reads exist in works.json)
+        working-directory: web
+        run: node scripts/check-data-contract.mjs

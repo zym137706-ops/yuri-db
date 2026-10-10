@@ -1,0 +1,747 @@
+workflow "yuri-db-phase1-source-research" completed (6 agents).
+Return value:
+[
+  {
+    "group": "ja_bibliography",
+    "label": "日文书目元数据 API 组",
+    "ok": true,
+    "result": {
+      "group": "A — 日本出版物书目/ISBN/书影元数据源（出版社官网・官方API・书目数据库・正规书店）",
+      "sources": [
+        {
+          "name": "NDLサーチ（国立国会図書館サーチ）検索用API — SRU / OpenSearch / OpenURL",
+          "url": "https://ndlsearch.ndl.go.jp/help/api/specifications",
+          "category": "ja_bibliography",
+          "source_type": "official_api",
+          "api_endpoint": "https://ndlsearch.ndl.go.jp/api/sru?operation=searchRetrieve&query=… / https://ndlsearch.ndl.go.jp/api/opensearch?… / https://ndlsearch.ndl.go.jp/api/openurl?… / https://ndlsearch.ndl.go.jp/api/opensearch_description",
+          "api_docs_url": "https://ndlsearch.ndl.go.jp/help/api/specifications",
+          "auth_requirement": "none",
+          "fields_available": [
+            "ISBN",
+            "title",
+            "titleTranscription",
+            "creator/author",
+            "publisher",
+            "publicationPlace",
+            "date(出版年月)",
+            "NDC/NDLC/LCC/DDC/UDC分类",
+            "subject",
+            "jpno(全国書誌番号)",
+            "ISSN",
+            "price",
+            "extent",
+            "NDLBibID",
+            "mediaType/資料種別",
+            "itemno(書誌トークン)",
+            "dpid(データプロバイダID)",
+            "DC-NDL(RDF) ver.2/ver.3"
+          ],
+          "update_frequency": "准实时。官方2026-09-17公告：2026-09-25～27 因データ全件入替作业API受影响；2026-04-01 上线 DC-NDL(RDF) ver.3.0",
+          "anti_bot_risk": "low",
+          "compliance_risk": "medium",
+          "recommended_method": "API。SRU用于结构化CQL检索（maximumRecords上限500、默认200）；OpenSearch/RSS2.0用于简单关键词与ISBN检索（cnt默认200、上限500，且idx+cnt指定501件以后无法取得）；OpenURL只返回HTML检索结果页，不适合当数据接口。禁止多并发（规格书只写「同时リクエスト数に制限」，未公布具体数值，且明确可能遮断来自特定服务器的大量连续访问）。",
+          "evidence_urls": [
+            "https://ndlsearch.ndl.go.jp/help/api/specifications",
+            "https://ndlsearch.ndl.go.jp/api/sru?operation=searchRetrieve&maximumRecords=1&query=title%3D%22%E6%A1%9C%22%20AND%20from%3D%222018%22",
+            "https://ndlsearch.ndl.go.jp/api/opensearch?cnt=1&title=%E7%99%BE%E5%90%88&dpid=iss-ndl-opac",
+            "https://ndlsearch.ndl.go.jp/api/opensearch_description",
+            "https://ndlsearch.ndl.go.jp/robots.txt",
+            "https://ndlsearch.ndl.go.jp/file/help/api/specifications/ndlsearch_api_20260331.pdf"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "notes": "2026-10-09 实测三个端点全部 HTTP 200：SRU 返回 SRW searchRetrieveResponse（title=\"桜\" AND from=\"2018\" → numberOfRecords 11594；回应中带 facets，含 REPOSITORY_NO / NDC / ISSUED_DATE 分面），OpenSearch 返回 RSS2.0（title=百合 → openSearch:totalResults 5223），OpenSearch Description 返回合法 OSDD。无需 appid/API key：规格书的 searchRetrieve 参数表与 OpenSearch 参数表均无 appid 项，我也用无 key 请求成功。但「利用申請」义务存在且按用途分级——营利目的需提交 NDLサーチAPI利用申請；个人/非营利且不产生收益无需申请；持续访问者无论是否需要申请都「ご協力をお願い」提交联系方式（非强制）。字段级注意：OpenSearch 的 isbn 是「10/13桁互相转换后完全一致；其他位数则前方一致」，SRU 的 isbn 是纯完全一致；NDC 在 SRU/OpenSearch 都是前方一致（=）且不可多值。SRU 不支持 explain / scan；OpenSearch 只到 OpenSearch 1.0。NDL 自行创建的書誌データ（含全国書誌）営利・非営利目的を問わず無償，但要求出典表示与加工标注；第三方数据提供机构的 metadata 必须逐库看条件（API提供対象データプロバイダ一覧）。",
+          "terms_finding": "规格书 PDF 附有改版履历，证明站点在持续维护：第1.4版 2026.3.31（书影API章节被删除、dcndl_v3 正式版）、第1.5版 2026.9.25（官网公示）。",
+          "robots_txt_finding": "https://ndlsearch.ndl.go.jp/robots.txt 为 200，规则：User-agent: * 下 Disallow /account /favorite /search/history 等个人化页面，以及 Disallow: /api 与 Disallow: /statistics；Sitemap: https://ndlsearch.ndl.go.jp/sitemap.xml。注意 /api 虽在 robots 中被 Disallow，但那是给通用爬虫的抓取规则，官方 API 本身以「利用申請」制度管理，两者不冲突——合规做法是按 API 手册调用、不要用爬虫批量扫 /api。"
+        },
+        {
+          "name": "NDLサーチ ハーベスト用API — OAI-PMH",
+          "url": "https://ndlsearch.ndl.go.jp/help/api/specifications",
+          "category": "ja_bibliography",
+          "source_type": "official_api",
+          "api_endpoint": "https://ndlsearch.ndl.go.jp/api/oaipmh?verb=Identify|ListMetadataFormats|ListSets|ListIdentifiers|ListRecords|GetRecord",
+          "api_docs_url": "https://ndlsearch.ndl.go.jp/help/api/specifications",
+          "auth_requirement": "none",
+          "fields_available": [
+            "metadataPrefix=oai_dc（OAI-DC）",
+            "metadataPrefix=dcndl（DC-NDL ver.2）",
+            "metadataPrefix=dcndl_v3（DC-NDL ver.3）",
+            "identifier=oai:ndlsearch.ndl.go.jp:[リポジトリ番号]-[アイテム番号]",
+            "set（dpid / データグループID / コレクションコード / Access Rights，如 ARinternet）",
+            "from/until（JST，datestamp）",
+            "deletedRecord=persistent"
+          ],
+          "update_frequency": "准实时差分。earliestDatestamp=2022-10-01T00:00:00Z（2026-10-09 实测 Identify 返回值）",
+          "anti_bot_risk": "low",
+          "compliance_risk": "medium",
+          "recommended_method": "API 批量 harvest（首选全量采集通道）。硬限制：ListRecords/ListIdentifiers 一次最多返回 200 件，用 resumptionToken 翻页；from 必填且 from–until 期间不得超过 1 年；不指定 until 时按最大 1 年处理。set 指定采集时不会输出「因 set 归属变更而产生的删除记录」，官方要求定期全件或指定 set 洗替。",
+          "evidence_urls": [
+            "https://ndlsearch.ndl.go.jp/api/oaipmh?verb=Identify",
+            "https://ndlsearch.ndl.go.jp/api/oaipmh?verb=ListMetadataFormats",
+            "https://ndlsearch.ndl.go.jp/help/api/specifications"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "notes": "2026-10-09 实测 Identify 与 ListMetadataFormats 均 200，responseDate=2026-10-09T12:33:37Z，三个 metadataPrefix 全部在列。docs 示例：dcndl_v3 + set=ndl-dl + from=2026-01-30（取 NDL 数字馆藏某日更新的元数据）。注意 OAI-PMH 返回的是「同定处理前的各数据提供方原始元数据」，与 SRU/OpenSearch 的「同定后」数据不同——做去重时要意识到这是两个不同的记录口径。Rights 分组（如 ARinternet）变更不会产生删除记录，是采集设计的已知坑。"
+        },
+        {
+          "name": "国立国会図書館 全国書誌 / JAPAN/MARC 一括ダウンロード（書誌データの利用方法）",
+          "url": "https://www.ndl.go.jp/en/data/data_service/quickguide",
+          "category": "ja_bibliography",
+          "source_type": "official_website",
+          "api_endpoint": "无API，为文件下载：JAPAN/MARC 週次更新 ZIP、全国書誌（電子書籍・電子雑誌編）週次 TSV ZIP（火曜更新）、NDLサーチ検索結果一括DL（1回最大5,000件）",
+          "api_docs_url": "https://www.ndl.go.jp/en/data/data_service/quickguide",
+          "auth_requirement": "none",
+          "fields_available": [
+            "MARC21 / JAPAN/MARC（ISO 2709）",
+            "MARCタグ形式",
+            "MARCXML",
+            "TSV",
+            "BibTeX",
+            "DC-NDL(RDF)",
+            "JSON",
+            "全国書誌番号(JPNO)",
+            "ISBN",
+            "NDC/NDLC",
+            "典拠データ(Web NDL Authorities)",
+            "雑誌記事索引データ（MARCXML）"
+          ],
+          "update_frequency": "JAPAN/MARC 週次更新（登録1年分を掲載）；全国書誌（電子・電子雑誌編）週1回火曜更新（2026-10-06 提供分 1,993件 まで実在確認）；JAPAN/MARC 全件は年4回（3/6/9/12月），現行提供分为 2026年9月输出（收录 2026-09-08 前完成的書誌）",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "批量下载（采集主力）。这是唯一能拿到全量、且条款最宽松的路径。JAPAN/MARC(M/S) 全件约 4.27GB（分3个文件提供）、JAPAN/MARC(A) 约 301MB；全件需通过 NDL お問い合わせフォーム 以「JAPAN/MARC全件データの申込」名义申请，之后用週次更新维持最新。",
+          "evidence_urls": [
+            "https://www.ndl.go.jp/en/data/data_service/quickguide",
+            "https://www.ndl.go.jp/data/data_service/ebej_tsv",
+            "https://www.ndl.go.jp/jp/data/data_service/index.html",
+            "https://www.ndl.go.jp/data/data_service/information"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "notes": "条款是本组最优：NDL 自身创作的書誌データ・典拠データ・雑誌記事索引データ「営利・非営利の目的を問わず、どなたでも無償で利用」；只需出典表示（无需逐条标注），加工时另加「加工して作成」标注，并不得使人误认为是 NDL 原作。网页明确点名两种手段：①ダウンロード機能（逐条 / 检索结果批量最大5,000件 / お気に入り批量）②外部提供インタフェース。数据格式差异要注意：TSV/JSON/BibTeX 是簡略数据（会缺字段），做完整書誌要用 MARC 系；DC-NDL(RDF) 与 MARC 内容大致相同但 MARC 含标题罗马字读音（DC-NDL 没有）。2023年10月起「全国書誌（電子書籍・電子雑誌編）ファイル一覧」只列过去1年分，更早数据走「過去のデータ」页。",
+          "robots_txt_finding": "未单独取 www.ndl.go.jp/robots.txt（本次只验证了 ndlsearch 子域）。下载页为普通公开页面，未见访问限制说明。"
+        },
+        {
+          "name": "openBD（版元ドットコム × カーリル）書誌・書影API",
+          "url": "https://openbd.jp/",
+          "category": "ja_bibliography",
+          "source_type": "official_api",
+          "api_endpoint": "https://api.openbd.jp/v1/get?isbn=ISBN[,ISBN…] / https://api.openbd.jp/v1/coverage / https://api.openbd.jp/v1/schema",
+          "api_docs_url": "https://openbd.jp/spec/",
+          "auth_requirement": "none",
+          "fields_available": [
+            "ONIX(JPRO-onix準拠): RecordReference/ProductIdentifier=ISBN",
+            "TitleText/Subtitle/シリーズ・レーベル名",
+            "Contributor(PersonName/BiographicalNote/役割)",
+            "Language/Extent(ページ数)/Measure(判型実寸)",
+            "Subject(Cコード/ジャンルコード/キーワード)/Audience(読者対象・成人指定)",
+            "TextContent(内容紹介/目次)",
+            "SupportingResource/ResourceLink(書影 最大3枚)",
+            "Imprint(発行元)/Publisher(発売元)/PublishingDate(発売予定日)",
+            "Price/ReturnsConditions/ProductAvailability",
+            "summary(isbn/title/volume/series/publisher/pubdate/cover/author)",
+            "hanmoto: lanove(ライトノベルフラグ)・hasshohyo・hastameshiyomi・reviews(書評)",
+            "hanmoto会員社拡張: ndccode・genrecodetrc・jushoujouhou(受賞)・zaiko(在庫)・datezeppan(絶版日)・jyuhan(重版情報)・rubynoumu"
+          ],
+          "update_frequency": "不定/近实时。实测 datemodified 反映近期更新（样本 9784049130942 的 datemodified=2026-06-08 17:43:59）",
+          "anti_bot_risk": "low",
+          "compliance_risk": "medium",
+          "recommended_method": "API（无需 key，可直接 GET）。批量用 isbn 逗号分隔多值；/coverage 返回全量 ISBN 列表（本次实测该端点响应体极大、请求超时，属正常现象，需流式处理或改走批量分片）；/schema 返回 JSON Schema（18KB，实测 200）。建议客户端做本地缓存 + 定期比对 datemodified。",
+          "evidence_urls": [
+            "https://openbd.jp/",
+            "https://openbd.jp/spec/",
+            "https://openbd.jp/terms/",
+            "https://api.openbd.jp/v1/get?isbn=9784049130942",
+            "https://api.openbd.jp/v1/get?isbn=9784094518474",
+            "https://api.openbd.jp/v1/schema",
+            "https://openbd.jp/news/20230725.html"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "notes": "无需 key 成立：2026-10-09 实测 /v1/get 返回 200 且有数据（含 lanove 字段、summary.cover 可能为空串）。服务本体活着，但**数据上游已变**：2023-06-05 起 JPRO 停止向版元ドットコム配信，版元ドットコム会員社以外的 openBD 数据更新停止；2023-08-29 官方公告「代替書誌情報の提供開始」——改为以 NDL 的 CC-BY 書誌为基础继续提供，规格保持不变但収録範囲・内容大幅变化，尤其書影收录范围大幅下降。因此当前 openBD 的覆盖 = 版元ドットコム会員社（官网现称229社）+ NDL 書誌替代数据；我在7个样本上实测 5 HIT / 2 MISS（9784758079280、9784832272939 返回 [null]），与他社/部分出版社的百合漫画命中率需实测验证。注意 /v1/ 路径仍在用，虽然 2023-07-25 公告宣称「バージョン1の提供終了」——实际上 v1 端点被保留为替代 API 的规格载体，不要把它当作已停服。官网自述约 24,747社／約76万タイトル。",
+          "terms_finding": "条款关键限制（一手，2026 现状未变；2017-03-09 制定）：①数据「本の販促・紹介目的に限り」可用，个人/团体/企业均可、无偿；②**不得把取得的信息「第三者に貸与、譲渡、売買」**——即禁止再配布/转售；③不得任意改変；④项目方要求删除时必须迅速响应；⑤缓存时必须尽快反映变更。对数据库产品而言，②是决定性的：不能把 openBD 数据作为自有数据集对外提供。"
+        },
+        {
+          "name": "JPRO（出版情報登録センター／一般社団法人 日本出版インフラセンター JPO）",
+          "url": "https://jpro2.jpo.or.jp/",
+          "category": "ja_bibliography",
+          "source_type": "official_website",
+          "api_endpoint": "无公开查询 API。経由「出版情報登録センター 利用規約」与「出版情報項目利用一覧表」按受信者类别授权，需提交利用申込書、部分类别需締結「出版物の書誌情報利用に関する契約書」",
+          "api_docs_url": "https://jpro2.jpo.or.jp/documents/【利用規約】JPRO利用規約改定_20251001.pdf",
+          "auth_requirement": "application_review",
+          "fields_available": [
+            "出版情報（書誌項目）",
+            "近刊情報（発売予定）",
+            "書影=「画像等」",
+            "発行年月日",
+            "取次搬入情報",
+            "情報解禁日",
+            "出版情報項目利用一覧表（按受信者属性分列可利用率）"
+          ],
+          "update_frequency": "unknown（規約层面为提供者变更后须迅速提供变更信息）",
+          "anti_bot_risk": "unknown",
+          "compliance_risk": "high",
+          "recommended_method": "不要抓。走正规契约：向 JPO 提交「利用申込書」，按其「出版情報項目利用一覧表」取得与自身事业目的相符的字段；「その他事業者」使用「画像等」还需逐提供者书面承諾。JPRO 是 NDL 書影API 终止、openBD 上游断供的共同原因，是日本书影元数据的真正权利源头。",
+          "evidence_urls": [
+            "https://jpro2.jpo.or.jp/documents/%E3%80%90%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84%E3%80%91JPRO%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84%E6%94%B9%E5%AE%9A_20251001.pdf",
+            "https://openbd.jp/news/20230725.html",
+            "https://ndlsearch.ndl.go.jp/news/20260401_thumbnail"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "notes": "已下载并读取《JPRO利用規約改定 20251001》PDF（4页）。第4条（提供情報の目的・用途及び利用の制限）要点（概括，非逐字引用）：提供者以「出版物の周知や流通・販売促進」为目的、非独占地许諾 JPRO 使用并透过 JPRO 让受信者利用；许諾范围包含让第三者「閲覧に供する」及在不损害提供者意图范围内的要约・编辑，但**不包含对第三者的再许諾権**。第5条(4)(1)：对「その他事業者」提供「画像等」时，若提供者要求许諾申请，未获书面承諾则受信者不得使用该提供者的画像等。第5条(4)(2)：受信者不得将提供的画像等用于生成式 AI 开发或机器学习等信息分析（此为 2025 年新增限制）。第4条(5)：取次搬入情報只能在事先申报的业务内使用，含社内亦不得让第三者利用或开示。",
+          "terms_finding": "对「日本百合漫画书影数据库」的直接含义：書影不是可以自由再配布的开放数据，而是按使用者类别逐项授权、且明确排除再许諾。若产物要对外分发书影，必须走 JPO 契約，或退回出版社官网/正规书店 API 的受限使用。"
+        },
+        {
+          "name": "楽天ブックス書籍検索API（Rakuten Books Book Search API）",
+          "url": "https://webservice.rakuten.co.jp/documentation/books-book-search",
+          "category": "retailer",
+          "source_type": "retailer_api",
+          "api_endpoint": "https://openapi.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=…&accessKey=…（旧 host: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404）",
+          "api_docs_url": "https://webservice.rakuten.co.jp/documentation/books-book-search",
+          "auth_requirement": "free_api_key",
+          "fields_available": [
+            "itemName(書名)",
+            "itemPrice",
+            "itemUrl",
+            "itemCaption",
+            "author",
+            "publisherName",
+            "salesDate",
+            "isbn",
+            "jan",
+            "booksGenreId(楽天ブックスジャンルID)",
+            "reviewAverage/reviewCount",
+            "availability",
+            "seriesName",
+            "size(判型)"
+          ],
+          "update_frequency": "楽天ブックス在售商品为准（随上架/改价更新），非书目库式全量",
+          "anti_bot_risk": "medium",
+          "compliance_risk": "medium",
+          "recommended_method": "API（唯一合规通道）。但下游约束很强，建议只做「查证/补完」而非主数据源。",
+          "evidence_urls": [
+            "https://webservice.rakuten.co.uk",
+            "https://webservice.rakuten.co.jp/documentation/books-book-search",
+            "https://webservice.rakuten.co.jp/guide",
+            "https://webservice.rakuten.co.jp/guide/rule",
+            "https://webservice.rakuten.co.jp/robots.txt"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "notes": "2026-10-09 实测认证确为必需：不带凭据请求 openapi.rakuten.co.jp 返回 400，旧 host app.rakuten.co.jp 返回 401。认证要求已经升级——除 App ID(applicationId) 外新增 Access Key(accessKey)，官方文档标注「Required along with app ID」，两者缺一不可（2025 年前仅 App ID 即可的单凭据时代已结束，现存教程普遍过期）。必填/常用参数：applicationId・accessKey・affiliateId・format(json/xml)・callback(JSONP)・elements(字段裁剪)・formatVersion(1/2，2 为扁平化 items[0].itemName)、业务参数 title/author/publisherName/booksGenreId/sort（title・author・publisherName・sort 需 UTF-8 URL 编码）。官方文档首页明确提示：短时间内对同一 URL 大量访问会被临时封禁。免费，但必须注册楽天会員并在 RWS 建 app（每人最多5个 app，App ID 与 access key 按 app separate 签发）。日本站 host 为 openapi.rakuten.co.jp；文档另提供 webservices.rakuten.co.jp/robots.txt（仅 User-agent: * 无 Disallow 规则）。",
+          "terms_finding": "楽天ウェブサービス利用規約（英文参考译文，日文原文为准）要点(概括)：第2条要求开发者必须是已注册的楽天会員；第3条涉及以获取 affiliate 报酬为目的或张贴商品链接时的义务；另有「How to display branding credit and notice」专章，即必须在站点/应用中按要求展示楽天的 attribution。字段级 QPS 上限在此次文档页中未给出具体数值（app 注册时有 expected QPS 项），需在 app 后台确认。",
+          "robots_txt_finding": "webservice.rakuten.co.jp/robots.txt = 200，内容仅 User-agent: * 与注释行，无任何 Disallow；openapi.rakuten.co.jp/robots.txt = 404。robots 层面不阻止，合规约束来自利用規約与 app 认证。"
+        },
+        {
+          "name": "Google Books API（Books API v1）",
+          "url": "https://developers.google.com/books/",
+          "category": "aggregator",
+          "source_type": "official_api",
+          "api_endpoint": "https://www.googleapis.com/books/v1/volumes?q=…（含 q=isbn:9784049130942、q=…&country=JP）",
+          "api_docs_url": "https://developers.google.com/books/terms",
+          "auth_requirement": "unknown",
+          "fields_available": [
+            "volumeInfo(title/subtitle/authors/publisher/publishedDate/description/industryIdentifiers/ISBN_10・ISBN_13)",
+            "pageCount/language/categories/printType",
+            "imageLinks(thumbnail)",
+            "saleInfo(country/listPrice/retailPrice)",
+            "accessInfo(viewability/epub/pdf)",
+            "searchInfo"
+          ],
+          "update_frequency": "unknown（Google 侧索引更新，无官方 SLA）",
+          "anti_bot_risk": "medium",
+          "compliance_risk": "medium",
+          "recommended_method": "不要作为主数据源；仅作补充校验。若要用，必须自备 API key（走 Google Cloud console 配额）并严格节流。",
+          "evidence_urls": [
+            "https://developers.google.com/books/terms",
+            "https://www.googleapis.com/books/v1/volumes?q=isbn:9784049130942",
+            "https://www.googleapis.com/books/v1/volumes?q=%E7%99%BE%E5%90%88&country=JP"
+          ],
+          "confidence": "medium",
+          "status_2026": "unknown",
+          "notes": "**本次未能验证日文书覆盖率**：2026-10-09 多次请求（含 isbn: 精确查询与关键词查询、带与不带 country=JP）均返回 HTTP 429 Too Many Requests，由共享 IP 的匿名配额已耗尽导致。因此「日文书籍覆盖率的实际表现」在本轮只能标 unknown，不做推断。可确认的是：官方 ToS 页 200 且长期有效（Last modified: April 25, 2012），条款要点(概括)：使用本 API 即同时受 Google APIs ToS 约束；未经 Google 另行书面同意不得向使用者收费；接到 Google 请求或法律要求时必须移除被指侵权的第三方内容，并提供权利人可用的联系渠道；须告知使用者其提交的内容可能被公开于 Google 服务。配额数值（匿名 vs key vs 计费项目）未在 ToS 页给出，需要在 Google Cloud 侧确认。"
+        },
+        {
+          "name": "カーリル 図書館API（Calil Library API）",
+          "url": "https://calil.jp/doc/api.html",
+          "category": "library",
+          "source_type": "official_api",
+          "api_endpoint": "https://api.calil.jp/library?appkey=…&pref=|city=|systemid=|geocode= / https://api.calil.jp/check?appkey=…&isbn=…&systemid=…&format=json (再帰: &session=…)",
+          "api_docs_url": "https://calil.jp/doc/api_ref.html",
+          "auth_requirement": "free_api_key",
+          "fields_available": [
+            "図書館データベース: systemid/systemname/libkey/libid/short/formal/url_pc/address/pref/city/post/tel/geocode/category(SMALL・MEDIUM・LARGE・UNIV・SPECIAL・BM)/distance",
+            "蔵書検索: books[isbn][systemid].status(OK・Cache・Running・Error)",
+            "libkey別貸出状況（貸出可・蔵書あり・館内のみ・貸出中・予約中・準備中・休館中・蔵書なし）",
+            "reserveurl(予約ページURL)",
+            "session/continue(ポーリング制御)"
+          ],
+          "update_frequency": "蔵書/貸出=查询时实时（带内部缓存，status=Cache 表示命中缓存）；図書館DB=不定期维护",
+          "anti_bot_risk": "low",
+          "compliance_risk": "medium",
+          "recommended_method": "API，仅用于「馆藏/可得性」维度。必要 attribut ion：使用图书馆名或「蔵書あり」「貸出可」等状态显示时，**必须**链回カーリル页面（https://calil.jp/book/{ISBN10}、https://calil.jp/library/{libid}/{正式名称}、或 https://calil.jp/library/search?s={systemID}&k={libkey}）。",
+          "evidence_urls": [
+            "https://calil.jp/doc/api.html",
+            "https://calil.jp/doc/api_ref.html",
+            "https://calil.jp/robots.txt",
+            "https://api.calil.jp/library",
+            "https://api.calil.jp/check?appkey=YOUR_KEY&isbn=4834000826&systemid=Aomori_Pref&format=json"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "notes": "需要 appkey 已确定：官方规格书写明「APIを利用するには、アプリケーションキーの登録が必要です」（法人・個人を問わず無償，但需申请）。官方限制（规格书原文数值）：①/check 每 appkey 每 IP 1,000書籍リクエスト/時，一次 session 可同时查询最大 100 書籍リクエスト，轮询不消耗额度，轮询间隔必须 ≥2 秒；②/library 每 appkey 每 IP 1,000リクエスト/時；③官方注明限制可能变更。pref/systemid/geocode 三者必填其一；format 默认 xml（/library）或 json（/check）；JSON 输出时 callback 传 no（/check）或空白（/library）。旧非加密 http://api.calil.jp/ 自 2021-02-04 起规格书删除，虽仍可用但不建议新规使用。",
+          "robots_txt_finding": "https://calil.jp/robots.txt = 200。与本次调研相关的规则：Disallow: /library_selector；对 SemrushBot / YandexBot / MJ12bot / Amazonbot 追加 Disallow: /search；对 bingbot / claudebot 设 Crawl-delay: 10，对 SeekportBot / baiduspider / Yeti / MJ12bot / AhrefsBot / ImagesiftBot 设 Crawl-delay: 120。**注意 api.calil.jp 是独立 host 且其 robots.txt 返回 404**（即 API host 无 robots 规则），合规依据应以 API 规格书与 appkey 条款为准。Sitemap: https://calil.jp/sitemap/index.xml。"
+        },
+        {
+          "name": "Amazon Product Advertising API 5.0 → Creators API（现状与准入门槛）",
+          "url": "https://webservices.amazon.com/paapi5/documentation/",
+          "category": "retailer",
+          "source_type": "retailer_api",
+          "api_endpoint": "旧: https://webservices.amazon.com/paapi5/... （已废弃，调用返回 403 AccessDeniedException）／新: https://creatorsapi.amazon/catalog/v1/...",
+          "api_docs_url": "https://affiliate-program.amazon.com/creatorsapi/docs/en-us/onboarding",
+          "auth_requirement": "application_review",
+          "fields_available": [
+            "商品目录数据（catalog）: GetItems（一次最多10个 item id）",
+            "GetBrowseNodes（一次最多10个 BrowseNode Id）",
+            "OffersV2（取代 PA-API 的 Offers.Listings/Offers.Summaries）",
+            "marketplace/locale 通过 x-marketplace 头切换",
+            "Partner Tag（各 marketplace 需分别持有有效 tag 并获该区 Creators API 访问批准）"
+          ],
+          "update_frequency": "实时（Amazon 商品目录）",
+          "anti_bot_risk": "high",
+          "compliance_risk": "high",
+          "recommended_method": "不要抓。若真要使用：①先注册 Amazon Associates（アソシエイト）账号取得资格；②在 Associates Central 的 Tools 里 Create Application 申请 Creators API，获得 Credential ID + Credential Secret（OAuth 2.0 client credentials flow，Bearer token 有效期1小时可缓存）；③注意日本区需要该区的 Partner Tag 并获该区 Creators API 访问批准。",
+          "evidence_urls": [
+            "https://webservices.amazon.com/paapi5/documentation/",
+            "https://affiliate-program.amazon.com/creatorsapi/docs/en-us/onboarding",
+            "https://affiliate-program.amazon.com/creatorsapi/docs/en-us/migrating-to-creatorsapi-from-paapi",
+            "https://affiliate-program.amazon.com/creatorsapi/docs/en-us/frequently-asked-questions"
+          ],
+          "confidence": "high",
+          "status_2026": "discontinued",
+          "notes": "**重大状态变更（2026 现状）**：PA-API 5.0 已被官方废弃，取而代之的是 Creators API。官方页面原文说明：继续调用 PA-API 5 的应用会收到 HTTP 403 Forbidden + com.amazon.paapi5#AccessDeniedException，错误信息为「Product Advertising API is deprecated. Please migrate to Creators API」。关键差异（官方迁移指南）：认证从 AWS Signature V4（Access Key + Secret Key）改为 OAuth 2.0（Credential ID + Credential Secret）；旧 PA-API 凭据无法在 Creators API 使用，必须重新注册；参数命名从 PascalCase 改为 lowerCamelCase；Offers 改用 OffersV2。准入：必须先成为 Amazon Associate（免费注册），再申请 Creators API 取得凭据——门槛在于 Associates 资格与各区批准，而非付费。日本站官方入口 affiliate.amazon.co.jp 存在，但 webservices.amazon.co.jp/paapi5/documentation/ 本次实测返回 403，日本区文档需从 Associates Central 内进入。针对「是否对个人开放」：官方 onboarding 未设个人/法人区分，但需通过 Associates 与地区批准两道审核；坊间提到的「180日内产生合格销售」等 PA-API 旧门槛，本次未在官方页面确认，标 unknown。",
+          "terms_finding": "Creators API 的文档将「Operating agreement」「Program policies」与「License agreement」分列，使用前须接受。具体条款本次未逐条抽取。"
+        }
+      ],
+      "key_findings": [
+        "【2026 最大变化①】NDLサーチ的書影API已于 2026-03-31 服务終了、2026-04-01 公告「外部提供を停止しました」。原因不是 NDL 自身，而是数据提供机构 JPRO 的利用規約改定。NDL 在公告中引导用户向 日本出版インフラセンター（JPO） 直接询问。同时「外部提供インタフェース仕様書」第1.4版（2026.3.31）的改版履历明确写有「7.書影API 削除」。⇒ 任何依赖 NDL 書影的管线在 2026 年已断，书影必须找 openBD / 楽天 / 出版社官网或与 JPO 签约。",
+        "【2026 最大变化②】Amazon PA-API 5.0 已废弃并被 Creators API 取代。官方明文：继续调用 PA-API 5 会收到 HTTP 403 Forbidden + AccessDeniedException「Product Advertising API is deprecated. Please migrate to Creators API」。新 API 改为 OAuth 2.0（Credential ID + Credential Secret），旧 AWS 签名凭据完全失效，参数改为 lowerCamelCase，Offers 改 OffersV2。准入仍需先取得 Amazon Associates 资格并按 marketplace 获批。",
+        "【2026 最大变化③】楽天 Books API 已从「仅 App ID」升级为「App ID + Access Key」双凭据制。官方 BooksBook/Search/20170404 文档把 accessKey 标为「Required along with app ID」。本次实测无凭据请求：新 host openapi.rakuten.co.jp 返回 400、旧 host app.rakuten.co.jp 返回 401，双凭据要求得到实证。网络上大量只写 applicationId 的教程已过期。",
+        "【重要上游事实】openBD 的数据源已发生根本变更：2023-06-05 起 JPRO 停止向版元ドットコム配信，非会員社数据更新停止；2023-08-29 官方启动「代替書誌情報の提供」，改以 NDL 的 CC-BY 書誌为基础继续提供，规格不变但収録範囲・内容大幅变化，尤其書影収録範囲大幅下降。因此当前 openBD ≈ 版元ドットコム会員社 + NDL 替代書誌；我在 7 个样本 ISBN 上实测 5 HIT / 2 MISS（未命中时返回 [null]）。/coverage 返回全量 ISBN 列表，响应体极大（实测请求超时），须流式处理。",
+        "【合规分水岭】本组各源对「再配布」的态度截然不同：NDL 自建書誌データ「営利・非営利を問わず無償」（只要出典表示），JAPAN/MARC 全件可申请取得，条款最宽；openBD 条款禁止「第三者に貸与、譲渡、売買」；JPRO 利用規約明确许諾范围「不包含对第三者的再许諾権」，且 2025 版新增禁止将「画像等」用于生成式 AI 开发或机器学习；楽天要求展示 branding 且 app 注册需申报用途。⇒ 若数据库产品要对外分发元数据/书影，合规路径基本只剩 ①NDL 書誌/JAPAN/MARC ②逐源取得书面授权 ③仅内部使用。",
+        "【日本 ISBN/图书编码体系没有公开的 ISBN→书名查询 API】日本図書コード管理センター（isbn.jpo.or.jp）网站只提供：ISBN チェック数字検算、登録出版者の照会（按出版者记号）、新規取得/追加取得/コードリスト請求/使用規約。其《ISBN 使用規約》第6条规定的是「登録出版者情報」的公开，第7条为使用期限与再使用禁止——即管理的是番号与出版者登记，**不是**可检索的書誌数据库。⇒ 想要「ISBN→書名/著者」必须依赖 NDL 全国書誌、openBD、楽天、Google Books 等下游来源。",
+        "【字段覆盖最优组合（针对百合漫画/轻小说）】NDL 全国書誌提供 ISBN + タイトル + 著者 + 出版者 + 出版年月 + NDC + 全国書誌番号，且 NDC 可用于题材粗筛（SRU/OpenSearch 均为前方一致）；openBD 额外提供 lanove（ライトノベルフラグ）、シリーズ/レーベル名（如「電撃コミックスNEXT」「ガガガ文庫」）、判型実寸、内容紹介、書影URL、重版/絶版/在庫；楽天补充在售价格与销售日；Calil 提供全国 OPAC 级实时蔵書与貸出状态。四者以 ISBN 为键互补，ISBN 是唯一稳定的联结键。",
+        "【采集方式建议】批量全量走 NDL OAI-PMH（一次200件、from 必填、期间 ≤1年、用 resumptionToken）与 JAPAN/MARC 週次 ZIP（年4次全件、4.27GB 分3文件）；精确补完走 openBD /v1/get（无需 key）。NDL 検索結果一括DL 单次上限 5,000件（MARC/TSV/JSON/BibTeX/DC-NDL），SRU/OpenSearch 上限 500件且 OpenSearch 无法取 501件以后。NDL 明确禁止多并发请求，且不公布并发上限、保留遮断权利。",
+        "【robots.txt 实测结果】ndlsearch.ndl.go.jp/robots.txt = 200，Disallow 个人化页面 + /api + /statistics；calil.jp/robots.txt = 200，Disallow /library_selector，对多个 bot 设 Crawl-delay 10–120 并对部分 bot Disallow /search，但 **api.calil.jp/robots.txt = 404**；openbd.jp/robots.txt = 404，api.openbd.jp 无 robots 规则；webservice.rakuten.co.jp/robots.txt = 200 但仅有 User-agent: *，无 Disallow；openapi.rakuten.co.jp/robots.txt = 404。⇒ robots 层面普遍不构成采集禁令，真实约束来自各站利用規約与 appkey 认证。",
+        "【未验证项须标 low/unknown】Google Books API 对日文书籍的实际覆盖率本次**无法评估**：2026-10-09 多次请求（isbn: 精确查询、关键词查询、带/不带 country=JP）全部返回 HTTP 429 Too Many Requests（共享 IP 匿名配额耗尽）。因此该条 confidence 记 medium、覆盖表现记 unknown，不做任何推断。",
+        "【法律/授权溯源关键点】日本书影的权利源头是 JPRO（出版情報登録センター，运营方为 JPO）。已下载《JPRO利用規約改定 20251001》PDF 核实：提供者以「周知や流通・販売促進」为目的非独占许諾，许諾包含让第三方閲覧及在提供者意图范围内的要约・编辑，但**不含再许諾権**；「その他事業者」使用「画像等」在提供者要求时须逐家取得书面承諾；受信者不得将画像等用于生成式 AI 开发或机器学习分析；取次搬入情報不得让社内外第三者利用或开示。"
+      ],
+      "dead_or_deprecated": [
+        "NDLサーチ 書影API（書影画像提供インタフェース）— 2026-03-31 服务終了，2026-04-01 正式公告停止外部提供（原因：JPRO 利用規約改定）。原依赖方需转 openBD/楽天/JPO 契约。",
+        "Amazon Product Advertising API 5.0（PA-API 5）— 官方废弃，调用返回 HTTP 403 Forbidden / com.amazon.paapi5#AccessDeniedException。后继为 Creators API；旧 AWS 签名凭据（Access Key + Secret Key）在 Creators API 不可用。",
+        "NDLサーチ 旧 SRW / Z39.50 接口 — 已于 2020-03-02 服务終了（官方 API 概要页注明），现仅 SRU / OpenSearch / OpenURL / OAI-PMH。",
+        "NDL-OPAC（旧国立国会図書館蔵書検索・申込システム）— 已被 NDLサーチ取代；www.ndl.go.jp/jp/data/bibdata_dl_guide.pdf 与 NDL-OPAC 書誌データダウンロード利用ガイド 均已 404，现行指南为 /en/data/data_service/quickguide，且 WARP 存档中仅存旧版。⇒ 任何指向旧 NDL-OPAC 的批量下载脚本需改写。",
+        "NDLサーチ SRU 的 dpgroupid 检索项 — 2023年12月廃止（规格书表3-2原文标注）。",
+        "カーリル 非暗号化ポート http://api.calil.jp/ — 2021-02-04 起规格书整段删除，官方「引き続きご利用いただけますが、新規の利用は推奨しません」。",
+        "openBD API「バージョン1」的旧架构 — 2023-07-25 官方公告宣称提供終了并改以 NDL CC-BY 書誌为基础的「代替API」延续。注意：URL 路径 /v1/ 至今仍在服务（本次实测 200 且有数据），所以是**数据来源与収録范围变更**而非端点消失；不要因路径名仍为 v1 就认为上游未变。",
+        "JPRO → 版元ドットコム 的書誌配信链路 — 2023-06-05 起停止，是 openBD 非会員社数据停更与書影収録範囲縮小的直接原因。",
+        "楽天ブックスの单凭据（仅 applicationId）调用方式 — 已被「applicationId + accessKey」双凭据取代（2025 年档期后的官方文档口径）。"
+      ],
+      "open_questions": [
+        "Google Books API 对日文百合漫画/轻小说的实际覆盖率究竟如何？本轮因共享 IP 匿名配额耗尽（持续 HTTP 429）完全未能取样，需要换 IP 或自备 API key 后重测，并同时确认匿名/key/计费项目三档配额的真实数值。",
+        "openBD 对「非版元ドットコム会員社」的百合漫画书影収録率具体下降到什么程度？NDL 書影API 停服后，2026 年免费书影的现实可行组合是 openBD + 楽天 itemUrl 封面 + 出版社官网，还是必须与 JPO 签约？需用一批具体百合漫画 ISBN 做覆盖实测。",
+        "JPRO 的「出版情報項目利用一覧表」中，「その他事業者」到底能取得哪些字段、是否包含書影、「画像等」的书面承諾实际操作难度与费用如何？该一覧表本身需要 JPO 交付才能取得，本次未获得。",
+        "「代替書誌情報」（openBD 现行数据）的法律定性：NDL 書誌部分为 CC-BY 可再利用，但经版元ドットコム汇总/加工后，openBD 条款仍禁止再配布——两者叠加后的合规边界（例如能否对 NDL 来源字段做再分发、如何标注）需要法律意见。",
+        "楽天 Books API 每个 app 的具体 QPS/日次上限数值，以及「同一 URL 短时间大量访问导致临时封禁」的触发阈值与冷却时长——文档只给警告不给数值，需在 app 后台或实测确认。",
+        "Amazon Creators API 在日本 marketplace 的开放状态与准入门槛：是否所有 Associates 均可申请、是否需要既往销售成绩（坊间流传的「180日内合格销售」等 PA-API 旧规则是否在 Creators API 保留）。官方 onboarding 未记载销售门槛，本次无法证实也无法证伪。",
+        "カーリル API 的利用規約/隐私条款全文本次未取到：calil.jp/doc/terms.html、/doc/agreement.html、/terms 均 404，api_ref.html 只引用「カーリル株式会社のプライバシーポリシー」。对「把蔵書/貸出状态二次加工并公开发布」是否另有约束，需找到正式条款页或直接向カーリル确认。",
+        "NDLサーチ API 利用申請的实际审查尺度：营利目的需申请且有被拒可能（NDL 可能把申请内容转给数据提供机构并获得否决），对「商业化百合漫画数据库」这类用途的通过率与所需材料未知。",
+        "NDL 全国書誌（電子書籍・電子雑誌編）的 TSV 周次文件对「電子書籍版百合漫画」的收录粒度与字段完整度：TSV 为簡略数据，是否足够支撑连载/刊行信息，需要实际下载 2026-10-06 提供分（1,993件 / ZIP 156KB）验证字段。",
+        "各源对「连载中/刊行中」状态的表达能力：openBD 有 ProductAvailability、zaiko（在庫）、datezeppan（絶版日），NDL 有出版年月与全国書誌番号，但没有统一的「连载状态」字段——连载/刊行情报是否必须回到出版社官网或杂志官方页（如各レーベル官网的刊行目録）另行采集，需在下一阶段评估。"
+      ]
+    }
+  },
+  {
+    "group": "ja_manga_serialization",
+    "label": "漫画连载杂志与 Web 平台组",
+    "ok": true,
+    "result": {
+      "group": "B｜日本百合作向・百合隣接の漫画連載誌／Web漫画プラットフォームの公式情報源（2026年10月時点）",
+      "sources": [
+        {
+          "name": "コミック百合姫 公式サイト（一迅社）",
+          "name_original": "コミック百合姫 | 一迅社",
+          "url": "https://www.ichijinsha.co.jp/yurihime/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "fields_available": [
+            "雑誌名",
+            "号数",
+            "発売日",
+            "最新号書影",
+            "連載作品一覧（作品名・著者・作品ページURL）",
+            "新刊コミックス（巻数・著者・発売日）",
+            "次号予告",
+            "バックナンバー",
+            "投稿・アンケート"
+          ],
+          "robots_txt_finding": "https://www.ichijinsha.co.jp/robots.txt — 「User-agent: * / Disallow: /wp-admin/ / Allow: /wp-admin/admin-ajax.php」＋Sitemap: https://www.ichijinsha.co.jp/wp-sitemap.xml。作品一覧・検索・ニュースページへのDisallowなし（＝原則クロール可）。",
+          "terms_finding": "サイト上に明示のスクレイピング禁止条項は確認できず。ただし記事・画像の著作権は一迅社に帰属（フッターに©ICHIJINSHA）。商用利用・大量転載は別途確認が必要。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "HTML定期取得（作品紹介 /title/・ニュース /news/・バックナンバー /backnumber/）＋wp-sitemap.xml の巡回。1日1回程度の低頻度・UA明示で十分。",
+          "evidence_urls": [
+            "https://www.ichijinsha.co.jp/yurihime/",
+            "https://www.ichijinsha.co.jp/robots.txt",
+            "https://www.ichijinsha.co.jp/yurihime/backnumber/",
+            "https://www.ichijinsha.co.jp/wp-sitemap.xml"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "月刊（毎月16日頃発売）＋ニュースは随時",
+          "coverage_notes": "2026年11月号を2026年9月16日発売として掲載、バックナンバーは2026年11月号〜少なくとも2026年4月号まで確認。連載作品ページ（/yurihime/title/）に作品単位URLがあり、作品名・著者名が取得可能。次号予告ページ /next/ も存在。サイトマップは page と category のみで、ニュース投稿（post）用サイトマップが索引に含まれていない点は注意（記事一覧は /yurihime/news/ のHTML巡回が必要）。",
+          "notes": "百合専門商業月刊誌の中核ソース。実取得でHTTP 200・2026年9月時点のコンテンツを確認。作品数が多いため、タイトルページURLと作品名の対応表を一度作り、以降は差分更新が効率的。"
+        },
+        {
+          "name": "一迅社 公式サイト（ポータル／書誌・レーベル索引）",
+          "name_original": "一迅社",
+          "url": "https://www.ichijinsha.co.jp/",
+          "category": "ja_bibliography",
+          "source_type": "official_website",
+          "api_endpoint": "unknown",
+          "fields_available": [
+            "レーベル別ページURL",
+            "新刊情報",
+            "イベント情報"
+          ],
+          "robots_txt_finding": "https://www.ichijinsha.co.jp/robots.txt（200）。/wp-admin/ のみDisallow。Sitemap: wp-sitemap.xml → wp-sitemap-posts-page-1.xml（レーベル別ページのloc・lastmod入り）と wp-sitemap-taxonomies-category-1.xml。",
+          "terms_finding": "明示のAPI提供・データ再配布ライセンス記載は確認できず。書誌の一括取得は公式には未提供とみられる。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "wp-sitemap-posts-page-1.xml を起点にレーベル別ページ（例 /07-yurihime, /22-lovebites, /21-babydollcomics, /29-…）を巡回し、新刊情報を抽出。",
+          "evidence_urls": [
+            "https://www.ichijinsha.co.jp/robots.txt",
+            "https://www.ichijinsha.co.jp/wp-sitemap.xml",
+            "https://www.ichijinsha.co.jp/wp-sitemap-posts-page-1.xml"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "レーベルページのlastmodが2026年9〜10月に更新されている（週次〜月次）",
+          "coverage_notes": "サイトマップから確認できたレーベル系ページ例：/02-zerosum, /03-rex, /07-yurihime, /11-gateau, /14-iris, /15-book, /17-melissa, /19-colorfulhappiness, /21-babydollcomics, /22-lovebites, /27-novels, /30-pool, /31-howl, /32-lake。各ページのlastmodは2026-09〜2026-10が多数。",
+          "notes": "注意：https://www.ichijinsha.co.jp/book/ はHTTP 404（確認済み）。一迅社に汎用の「書目カタログ」単一URLは存在せず、レーベル別ページ＋各誌サイト（百合姫等）を組み合わせる必要がある。書誌の網羅的取得は次段階で NDLSH／国立国会図書館サーチとの突合を推奨。"
+        },
+        {
+          "name": "一迅プラス（一迅社 公式Webマンガサイト／ichicomi.com）",
+          "name_original": "一迅プラス",
+          "url": "https://ichicomi.com/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "fields_available": [
+            "ジャンル別一覧（/genres/yuri 等）",
+            "作品検索（/search）",
+            "シリーズ一覧（/series）",
+            "レーベル別（/series/babydoll, /series/echo, /series/gateau, /series/howl）",
+            "更新履歴（/history）"
+          ],
+          "robots_txt_finding": "https://ichicomi.com/robots.txt → HTTP 404（robots.txt 未設置＝制限なし）。https://ichicomi.com/sitemap.xml → HTTP 404（サイトマップなし）。",
+          "terms_finding": "公式サイト上にAPI・データ提供の記載は確認できず。作品本文の取得・再配布は不可（閲覧のみ）。",
+          "anti_bot_risk": "medium",
+          "compliance_risk": "medium",
+          "recommended_method": "Next.js 製SPAのため、作品一覧・ジャンル一覧はHTML内の埋め込みJSON（__NEXT_DATA__相当）からの抽出が必要。低頻度でジャンルページ（/genres/yuri）と /history を巡回。",
+          "evidence_urls": [
+            "https://ichicomi.com/",
+            "https://ichicomi.com/genres/yuri",
+            "https://animebox.jp/453384/",
+            "https://hatena.co.jp/press/release/entry/2025/08/08/153000"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "「ほぼ毎日更新中」と公式説明（descriptionに記載）",
+          "coverage_notes": "旧ドメイン https://ichijin-plus.com/ は https://ichicomi.com/ へ301リダイレクトされることを実測で確認。ページタイトルは現在も「一迅プラス」。ジャンルに /genres/yuri が存在し、百合カテゴリの作品一覧が公式に提供されている。",
+          "notes": "【2025-2026年の重要変化】一迅社のWebマンガサイトはドメインが ichijin-plus.com → ichicomi.com に移行。2025年8月8日にはてながマンガビューワ提供開始のプレスリリースあり。URLを旧ドメインで固定していると失敗するため、正規化先を ichicomi.com にする必要がある。"
+        },
+        {
+          "name": "KADOKAWA コミックキューン レーベルサイト",
+          "name_original": "コミックキューン | KADOKAWA",
+          "url": "https://www.kadokawa.co.jp/label/comiccune/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "fields_available": [
+            "雑誌名",
+            "発売日（毎月27日）",
+            "新刊ラインナップ",
+            "連載作品",
+            "試し読み",
+            "号数別商品ページ"
+          ],
+          "robots_txt_finding": "https://www.kadokawa.co.jp/robots.txt（200, 486 bytes）— 一般UAへのDisallowはなく、bingbotにCrawl-delay: 30、AhrefsBot/SemrushBot/MJ12bot/DotBot/PetalBot/MauiBot/FindFiles.net-LinkChecker 等に Disallow: /。作品一覧・検索ページへの一般的なDisallowなし。",
+          "terms_finding": "明示のAPI提供は確認できず。二次利用はKADOKAWAの利用規約（https://web-ace.jp/terms.html 等）に従う必要あり。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "レーベルページHTML＋号別商品ページ（/product/<code>/）を低頻度巡回。Crawl-delay指定があるため、1リクエスト/秒以下・1日1回を厳守。",
+          "evidence_urls": [
+            "https://www.kadokawa.co.jp/label/comiccune/",
+            "https://www.kadokawa.co.jp/product/322512000838/",
+            "https://www.kadokawa.co.jp/robots.txt",
+            "https://booklive.jp/product/index/title_id/357093/vol_no/129"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "月刊（毎月27日発売）",
+          "coverage_notes": "2026年時点でmeta descriptionに「【毎月27日発売！】コミックキューン本誌、新刊ラインナップ、試し読み、連載作品、グッズなどの情報」とあり、本誌は電子版も継続。2026年11月号の商品ページ（/product/322512000838/）が検索結果に実在し、ブックライブの電子版ページも存在。",
+          "notes": "旧独立ドメイン comiccune.jp は現在 www.kadokawa.co.jp/label/comiccune/ を canonical として指定しており、robots.txt を要求するとHTML（ラベルページ）が返る（＝独立したrobots.txtは無い）。「Web移行して休刊」という情報は確認できず、少なくとも2026年11月号まで紙・電子の月刊誌として継続していると判断。"
+        },
+        {
+          "name": "芳文社 公式サイト（書誌・レーベル索引）",
+          "name_original": "漫画の殿堂・芳文社",
+          "url": "https://houbunsha.co.jp/",
+          "category": "ja_bibliography",
+          "source_type": "official_website",
+          "fields_available": [
+            "今週の発刊情報（雑誌・コミックス、発売日）",
+            "新刊マガジン一覧",
+            "新刊コミックス一覧",
+            "作品名／著者名／レーベル別検索",
+            "ニュース"
+          ],
+          "robots_txt_finding": "https://houbunsha.co.jp/robots.txt（200）— 内容は「User-Agent: 360Spider / Disallow: /」のみ。一般UAに対するDisallowなし（＝原則クロール可）。ただし https://www.houbunsha.co.jp/ は houbunsha.co.jp へ301。",
+          "terms_finding": "画像使用・著作権について（/copyright.html）のページあり。記事・書影の転載条件は個別確認が必要。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "トップページの発刊情報＋ /magazine/index.html、/comics/index.html、検索CGI（/search/writing.php 等）を低頻度巡回。",
+          "evidence_urls": [
+            "https://houbunsha.co.jp/robots.txt",
+            "https://houbunsha.co.jp/",
+            "https://houbunsha.co.jp/magazine/index.html"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "週次（毎週の発刊情報）＋ニュース随時",
+          "coverage_notes": "2026年10月9日時点で「まんがタイムきらら 11月号（2026/10/08発売）」等が掲載。雑誌一覧：週刊漫画TIMES、まんがタイム、まんがタイムきらら、花音、ほかコミックス。ニュースは2026年8月まで更新を確認。",
+          "notes": "【重要な実装注意】本サイトは文字コードが Shift_JIS。実測でUTF-8として解釈すると文字化けするため、取得時にエンコーディング指定が必須。検索CGIのパラメータはEUC-JP/Shift_JISのパーセントエンコード形式（例 /comics/detail.php?p=%B5%E5%B1%D3）。"
+        },
+        {
+          "name": "まんがタイムきららWeb（芳文社 きらら系列 公式）",
+          "name_original": "まんがタイムきららWeb - ドキドキ★ビジュアル ドットコム",
+          "url": "https://www.dokidokivisual.com/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "fields_available": [
+            "誌名",
+            "号数",
+            "発売日",
+            "最新号／バックナンバー",
+            "コミックス情報（巻数・発売日・レーベル）",
+            "ニュース",
+            "メディア展開"
+          ],
+          "robots_txt_finding": "https://www.dokidokivisual.com/robots.txt（200）— 「User-agent: * / Disallow: /wp-admin/ / Allow: /wp-admin/admin-ajax.php」＋Sitemap: /sitemap.xml, /sitemap.html。一覧・検索ページへのDisallowなし（＝クロール可）。",
+          "terms_finding": "プライバシーポリシー（/privacy-policy/）・著作権について（/copyright/）のページあり。本文の再配布は不可。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "sitemap.xml（sitemapindex）→ cpt_comics-sitemap.xml（コミックス）／投稿サイトマップを巡回。加えて /magazine/ 配下の号別ページ（/magazine/kirara/2026/11/<id>/）で最新号を取得。",
+          "evidence_urls": [
+            "https://www.dokidokivisual.com/robots.txt",
+            "https://www.dokidokivisual.com/magazine/",
+            "https://www.dokidokivisual.com/sitemap.xml",
+            "https://www.dokidokivisual.com/comics/"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "各誌月次（きらら毎月9日、MAX毎月19日、フォワード毎月24日、キャラット毎月28日発売）",
+          "coverage_notes": "2026年10月時点で現行きらら系列は4誌：まんがタイムきらら、まんがタイムきららMAX、まんがタイムきららフォワード、まんがタイムきららキャラット（すべて2026年11月号を掲載）。サイトマップ索引は2026年10月9日生成。cpt_comics-sitemap.xml にコミックス単位URLがある。",
+          "notes": "【要在確認事項】きららミラクは本サイトの雑誌一覧に存在しない。国立国会図書館サーチの書誌レコードで「出版年 2011-2017／6巻12号 = 70号（2017年12月号）／休廃刊注記：以後休刊／刊行状態：刊行終了」を実測確認（2015年ではなく2017年終了）。百合隣接（日常系・少女同士の関係性）作品の主要供給源。きらら作品の一部は「きららベース」（ニコニコ漫画内）でも配信。"
+        },
+        {
+          "name": "COMIC FUZ（芳文社 公式Webマンガサービス）",
+          "name_original": "COMIC FUZ",
+          "url": "https://comic-fuz.com/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "api_endpoint": "unknown",
+          "fields_available": [
+            "（未検証）作品一覧・更新情報・購読情報"
+          ],
+          "robots_txt_finding": "https://comic-fuz.com/robots.txt → HTTP 404（応答本文は「COMIC FUZ」のSPAシェル）。制限ファイルなし。sitemap.xml / sitemap_index.xml も HTTP 404。",
+          "terms_finding": "利用規約類のURLは未特定（未検証）。",
+          "anti_bot_risk": "unknown",
+          "compliance_risk": "medium",
+          "recommended_method": "公式のRSS/API/サイトマップは未確認。SPAの内部APIは非公開のため、公式情報は芳文社ポータル・きららWeb・X公式アカウント経由で補完するのが安全。内部APIの直接叩きは規約確認が取れるまで非推奨。",
+          "evidence_urls": [
+            "https://comic-fuz.com/robots.txt",
+            "https://comic-fuz.com/sitemap_index.xml",
+            "https://houbunsha.co.jp/",
+            "https://www.dokidokivisual.com/magazine/"
+          ],
+          "confidence": "medium",
+          "status_2026": "active",
+          "update_frequency": "unknown",
+          "coverage_notes": "芳文社トップおよびきららWebから現行サービスとしてリンクされている（きらら最新号が読み放題の案内あり）。ただしcomic-fuz.com 自体に robots.txt・サイトマップ・公開APIが無く、当環境ではHTML本文もSPAシェルのみで作品目録を抽出できなかった。",
+          "notes": "「公式刊行目录页URL」「構造化データの有無」は未検証。comic-fuz.com/sitemap_index.xml は404、/robots.txt は404。次段階ではブラウザ実表示での作品一覧ページ特定、または芳文社への問い合わせが必要。confidence は medium とし、作品目録の存在は断定しない。"
+        },
+        {
+          "name": "コミックトレイル（芳文社 Webマンガサイト）",
+          "name_original": "コミックトレイル",
+          "url": "https://comic-trail.com/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "fields_available": [
+            "（未検証）作品一覧"
+          ],
+          "robots_txt_finding": "https://comic-trail.com/robots.txt → HTTP 404（robots.txt 未設置）。",
+          "terms_finding": "未検証。",
+          "anti_bot_risk": "unknown",
+          "compliance_risk": "medium",
+          "recommended_method": "芳文社ポータルからリンクされるWebマンガサイト。robots.txt不在のため、規約ページの確認を先行させてから低頻度のHTML取得。",
+          "evidence_urls": [
+            "https://comic-trail.com/robots.txt",
+            "https://houbunsha.co.jp/"
+          ],
+          "confidence": "low",
+          "status_2026": "active",
+          "update_frequency": "unknown",
+          "coverage_notes": "芳文社トップページ（2026年10月時点）にバナーリンクが存在し、サービス自体は存続。ただし作品目録・RSS・APIの有無は当環境で確認できていない。",
+          "notes": "本タスク主眼（百合）への寄与は限定的だが、芳文社系Webの網羅のため記録。robots.txt 404 のため「Disallow規則」は存在しないと報告できる。confidence は low（内容未検証のため）。"
+        },
+        {
+          "name": "webエース ヤングエースUP（KADOKAWA）",
+          "name_original": "ヤングエースUP公式サイト",
+          "url": "https://web-ace.jp/youngaceup/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "fields_available": [
+            "作品一覧",
+            "新連載",
+            "最新コミックス（巻数・発売日・ISBN相当の商品コード）",
+            "カドコミ更新情報（話数・タグ）",
+            "お知らせ"
+          ],
+          "robots_txt_finding": "https://web-ace.jp/robots.txt（200, 48 bytes）— 「User-agent: AmazonAdBot / Crawl-Delay: 2 / Disallow:」。一般UAへの禁止なし（＝クロール可）。",
+          "terms_finding": "利用規約 https://web-ace.jp/terms.html が明示されている。データの二次利用は同規約に従う。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "HTML巡回（トップの更新情報・新連載、/youngaceup/lineup/、/youngaceup/comic/）。作品本体はカドコミ（comic-walker.com）側のIDにリンクされるため、comic-walker のIDと突合して正規化するのが効率的。",
+          "evidence_urls": [
+            "https://web-ace.jp/youngaceup/",
+            "https://web-ace.jp/robots.txt",
+            "https://web-ace.jp/comicnewtype/lineup/"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "平日更新（実測：2026年10月9日・10月8日・10月7日の更新情報を確認）",
+          "coverage_notes": "2026年10月9日時点で「カドコミ更新情報」に日付別の話数更新（第12話／第9話-3 等）とタグ（ラブコメ・学園モノ・女子高校生(JK) 等）が掲載。最新コミックスは2026年11月4日発売分まで掲載。作品詳細は comic-walker.com/detail/KC_xxxxxx_S へリンク（例 KC_020016_S）。",
+          "notes": "web-ace.jp は複数レーベル（ヤングエースUP／少年エースplus／TYPE-MOONコミックエース／コミックNewtype／ガンダムエース／ヤングエース／少年エース／コンプエース／コンプティーク）を束ねるKADOKAWAのWebマンガ基盤。百合隣接作品の連載開始情報（例：澄坂さん妄想中！2026年9月開始）を拾える。"
+        },
+        {
+          "name": "コミックNewtype（KADOKAWA／webエース）",
+          "name_original": "コミックNewtype",
+          "url": "https://web-ace.jp/comicnewtype/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "fields_available": [
+            "作品一覧",
+            "コミックス",
+            "お知らせ"
+          ],
+          "robots_txt_finding": "web-ace.jp 共通の robots.txt（Disallow指定なし）。",
+          "terms_finding": "web-ace.jp/terms.html に準拠。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "作品一覧 https://web-ace.jp/comicnewtype/lineup/ をHTML巡回。カドコミ側のラベルページ https://comic-walker.com/label/comicnewtype/ も併用（ranking/serialization/news/one-shot/release のサブページあり）。",
+          "evidence_urls": [
+            "https://web-ace.jp/comicnewtype/",
+            "https://web-ace.jp/comicnewtype/lineup/",
+            "https://comic-walker.com/label/comicnewtype/news/019ff9cc-e431-7977-82d0-0bf4e6c3f169",
+            "https://comic-walker.com/sitemap-label.xml"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "不定期（連載開始・移籍時）",
+          "coverage_notes": "作品一覧ページは /lineup/ およびページネーション（/lineup/page/2/ 等）が存在することを検索結果で確認。カドコミのラベルサイトマップに comicnewtype が含まれる。電撃G'sコミック／@Vitamin からの移籍告知がカドコミのラベルニュースとして配信されている。",
+          "notes": "コミックNewtype は独立ドメイン comic.webnewtype.com ではなく web-ace.jp/comicnewtype/ が現行の正規URL（旧 comic.webnewtype.com は当環境で取得失敗）。旧ドメインでの固定参照は避けるべき。"
+        },
+        {
+          "name": "カドコミ（comic-walker.com、旧コミックウォーカー）",
+          "name_original": "カドコミ（コミックウォーカー）",
+          "url": "https://comic-walker.com/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "api_endpoint": "unknown（/api/ は robots.txt でクロール対象外。公開APIドキュメントは未発見）",
+          "fields_available": [
+            "作品（series）単位ページ",
+            "レーベル別 ranking／serialization／news／one-shot／release",
+            "ジャンル別一覧（21件）",
+            "タグ別一覧（218件）",
+            "ランキング",
+            "特集（topic）",
+            "無料キャンペーン",
+            "話数・更新日（__NEXT_DATA__ 埋め込みJSON）"
+          ],
+          "robots_txt_finding": "https://comic-walker.com/robots.txt（200）— 「User-agent: * / Allow: / / Disallow: /? / Disallow: /api/ / Disallow: /auth/」＋Sitemap: https://comic-walker.com/sitemap.xml。注意点として、クエリ付きトップ（/?daily=… 等）のみ拒否、/api・/auth 配下はクロール対象外。作品一覧・検索・詳細ページ本体へのDisallowはなし（＝クロール可）。",
+          "terms_finding": "robots.txt に日本語コメントで方針が明記されており、運営者がクロール方針を意識して設計している。ただし利用規約上のデータ再配布許諾は別途確認が必要。ABJマーク（正規版配信サービス）を掲載。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "公式サイトマップ索引を第一手段にする：sitemap.xml → sitemap-series.xml（約1.0MB、lastmod付きの作品URL群）／sitemap-label.xml（レーベル別）／sitemap-genre.xml／sitemap-tag.xml／sitemap-ranking.xml／sitemap-topic.xml。詳細ページは Next.js で __NEXT_DATA__ に構造化JSONを埋め込む（JSON-LDは無し）ため、そこから作品メタを抽出する。API（/api/）は規約上叩かない。",
+          "evidence_urls": [
+            "https://comic-walker.com/robots.txt",
+            "https://comic-walker.com/sitemap.xml",
+            "https://comic-walker.com/sitemap-series.xml",
+            "https://comic-walker.com/sitemap-label.xml",
+            "https://comic-walker.com/sitemap-genre.xml",
+            "https://comic-walker.com/sitemap-tag.xml",
+            "https://comic-walker.com/detail/KC_020016_S"
+          ],
+          "confidence": "high",
+          "status_2026": "active",
+          "update_frequency": "毎日〜週次（sitemap-series.xml の lastmod は日単位で更新、実測で 2026-06-09 等のlastmodを確認）",
+          "coverage_notes": "sitemap-series.xml は作品ごとに <loc>https://comic-walker.com/detail/KC_xxxxxx_S</loc> と <lastmod> を持つ大規模な一覧（実測 約1,018,984 bytes）。レーベル別サイトマップは aily, alive-plus, aohane, aokishi, apanta, asuka, bar, comicnewtype, youngaceup 等を網羅。ジャンルは21件、タグは218件（いずれもUUID形式URL）。",
+          "notes": "本調査で見つかった中で最も構造化が整った公式ソース。『カドコミ』はコミックウォーカー（ComicWalker）の後継ブランドで、ドメインは comic-walker.com のまま。作品メタは __NEXT_DATA__ から取得可能だが、ジャンル/タグはUUIDのため slug↔UUID の対応表を初回に構築する必要がある。robots.txt が /? をDisallowしているため、クエリ付きURLでの一覧取得は避け、パスベースのURLを使うこと。"
+        },
+        {
+          "name": "ニコニコ漫画（旧ニコニコ静画／manga.nicovideo.jp）",
+          "name_original": "ニコニコ漫画",
+          "url": "https://manga.nicovideo.jp/",
+          "category": "ja_serialization",
+          "source_type": "official_website",
+          "api_endpoint": "unknown（公開の作品目録APIは未発見。https://manga.nicovideo.jp/api/v1/mangas はHTMLのSPAシェルを返すのみ）",
+          "fields_available": [
+            "（未検証）作品・話数・更新情報",
+            "公式チャンネル（例 /manga/official/kirara きららベース）"
+          ],
+          "robots_txt_finding": "https://manga.nicovideo.jp/robots.txt → HTTP 200 だが本文長 0 バイト（＝Disallow規則なし、全クロール可）。参考：https://www.nicovideo.jp/robots.txt（200, 1089 bytes）は「User-agent: * / Disallow: /api/ / Allow: /api/nicorepo/timeline」および GPTBot に Disallow: /。旧ドメイン https://seiga.nicovideo.jp/robots.txt は HTTP 403。",
+          "terms_finding": "利用規約・API利用条件は未検証（ニコニコ共通規約に従うと推定されるが未確認）。",
+          "anti_bot_risk": "medium",
+          "compliance_risk": "medium",
+          "recommended_method": "robots.txt が空のため技術的にはクロール可能だが、SPAのためHTMLからは作品目録を抽出できない。公式のきららベース（/manga/official/kirara）等チャンネルページ、または ニコニコ for developers の提供範囲（OAuth）を確認したうえで、公開APIが存在する場合のみ利用。スナップショット検索API（api.search.nicovideo.jp）は当環境から 403 で、APIキー必須の可能性が高い。",
+          "evidence_urls": [
+            "https://manga.nicovideo.jp/robots.txt",
+            "https://www.nicovideo.jp/robots.txt",
+            "https://developers.nicovideo.jp/",
+            "https://www.dokidokivisual.com/magazine/"
+          ],
+          "confidence": "medium",
+          "status_2026": "active",
+          "update_frequency": "unknown",
+          "coverage_notes": "manga.nicovideo.jp は robots.txt が空ファイル（200/0バイト）で稼働中。seiga.nicovideo.jp（旧ニコニコ静画）は 403 を返し、実質的に旧ドメインは機能していない。芳文社きららWebから「きららベース」として https://manga.nicovideo.jp/manga/official/kirara にリンクされている。ニコニコ for developers（https://developers.nicovideo.jp/）は「クライアント一覧」ページとして稼働。",
+          "notes": "【構造化データの状況】公式の作品目録ページはJSレンダリング前提で、RSS・サイトマップ・公開APIはいずれも確認できなかった。ニコニコ漫画独自の公開APIは未発見。api.search.nicovideo.jp のスナップショット検索API v2 は当環境（キー未送信）で 403 のため、認証要否は unknown とする。"
+        },
+        {
+          "name": "ニコニコ for developers（ニコニコ公式 開発者ポータル）",
+          "name_original": "niconico for developers",
+          "url": "https://developers.nicovideo.jp/",
+          "category": "ja_serialization",
+          "source_type": "official_api",
+          "api_endpoint": "unknown（ポータルは OAuth クライアント管理画面。具体的なAPIエンドポイント一覧は本調査では未特定）",
+          "api_docs_url": "https://developers.nicovideo.jp/",
+          "auth_requirement": "unknown",
+          "fields_available": [
+            "OAuthクライアント管理"
+          ],
+          "robots_txt_finding": "developers.nicovideo.jp には robots.txt を確認していない（未検証）。親ドメイン nicovideo.jp は /api/ をDisallow。",
+          "terms_finding": "未検証。",
+          "anti_bot_risk": "low",
+          "compliance_risk": "low",
+          "recommended_method": "ニコニコ漫画のデータを公式経路で取る場合の唯一の正規
+… [truncated: 185470 more characters]
+[status: completed, 6 agents]

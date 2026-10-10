@@ -1,0 +1,62 @@
+User-agent: *
+Disallow: /web/account/
+Disallow: /web/accountSetting
+Disallow: /web/activate/
+Disallow: /web/bookshelf/
+Disallow: /web/pwreset
+Disallow: /web/qaAndroid
+Disallow: /web/qaiOS
+Disallow: /web/signin
+Disallow: /web/signin/
+Disallow: /web/signup
+Disallow: /web/signup/
+Disallow: /web/error
+
+# AdsBot 系クローラーはグローバルユーザーエージェント設定を無視するため個別に指定する必要がある
+# https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=ja#adsbot-mobile-web
+User-agent: AdsBot-Google
+Disallow: /web/account/
+Disallow: /web/accountSetting
+Disallow: /web/activate/
+Disallow: /web/bookshelf/
+Disallow: /web/pwreset
+Disallow: /web/qaAndroid
+Disallow: /web/qaiOS
+Disallow: /web/signin
+Disallow: /web/signin/
+Disallow: /web/signup
+Disallow: /web/signup/
+Disallow: /web/error
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /web/account/
+Disallow: /web/accountSetting
+Disallow: /web/activate/
+Disallow: /web/bookshelf/
+Disallow: /web/pwreset
+Disallow: /web/qaAndroid
+Disallow: /web/qaiOS
+Disallow: /web/signin
+Disallow: /web/signin/
+Disallow: /web/signup
+Disallow: /web/signup/
+Disallow: /web/error
+
+# AdSense 系クローラーはグローバルユーザーエージェント設定を無視するため個別に指定する必要がある
+# https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=ja#adsense
+User-agent: Mediapartners-Google
+Disallow: /web/account/
+Disallow: /web/accountSetting
+Disallow: /web/activate/
+Disallow: /web/bookshelf/
+Disallow: /web/pwreset
+Disallow: /web/qaAndroid
+Disallow: /web/qaiOS
+Disallow: /web/signin
+Disallow: /web/signin/
+Disallow: /web/signup
+Disallow: /web/signup/
+Disallow: /web/error
+
+# サイトマップはファイルごとに指定しなければならない
+Sitemap: https://ganma.jp/api/2.0/sitemap.xml

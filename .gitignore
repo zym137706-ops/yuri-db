@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# python
+__pycache__/
+*.pyc
+
+# next.js
+.next/
+out/
+
+# generated client-side projections (rebuilt by web/scripts/build-slim.mjs
+# via the `prebuild` npm script; not source)
+web/lib/works-slim.json
+web/lib/anime-slim.json
+web/lib/.provenance.staged.ts
+
+# 同上：这两个是「给浏览器抓取」的副本，由 npm run build 自动重新生成
+web/public/data/
+
+# env
+.env
+.env.local
+
+# pipeline internals
+data/.works_snapshot.json

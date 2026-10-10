@@ -3,13 +3,14 @@
 import io
 import sys
 from collections import Counter
+from pathlib import Path
 
 import requests
 
-sys.path.insert(0, "../collectors")
+# 相对本文件解析，而不是写死本机路径（写死会在其它机器上直接 ImportError）
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "collectors"))
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-sys.path.insert(0, r"C:\DSH\yuri-db\collectors")
 from ndl import parse_opensearch  # noqa: E402
 
 s = requests.Session()

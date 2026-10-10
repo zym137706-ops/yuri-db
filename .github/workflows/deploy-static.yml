@@ -66,6 +66,11 @@ jobs:
             echo "project site -> basePath=/$repo"
           fi
 
+      # configure-pages 必须在构建**之前**跑。
+      # 它就是在这一步检查「仓库是否已开启 Pages」的；如果它排在构建后面，
+      # Pages 没开时就要先白等 8 分钟构建完才失败（第一次跑就是这样）。
+      - uses: actions/configure-pages@v5
+
       # NOTE: the dataset is NOT rebuilt here on purpose.
       # `data/*.json` is committed by the collect-*.yml jobs, and the web app reads
       # those files directly. Rebuilding them in the deploy job would make the
@@ -93,8 +98,6 @@ jobs:
       - name: Add .nojekyll (so _next/ is served)
         working-directory: web
         run: touch out/.nojekyll
-
-      - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:

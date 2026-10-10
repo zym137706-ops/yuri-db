@@ -10,12 +10,17 @@ import io
 import re
 import sys
 from collections import Counter
+from pathlib import Path
 
 import yaml
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-YAML_PATH = r"C:\DSH\yuri-db\sources.yaml"
+# 相对本文件解析，而不是写死本机路径。
+# 原本是 r"C:\DSH\yuri-db\sources.yaml"，在 Linux CI 上是 FileNotFoundError ——
+# 典型的「在我机器上能跑」，而且它让整个 data 作业红掉。
+ROOT = Path(__file__).resolve().parent.parent
+YAML_PATH = ROOT / "sources.yaml"
 
 # Patterns that must never appear in this project's source list.
 DENY_PATTERNS = [

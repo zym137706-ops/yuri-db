@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-09T12:11:11.746108+00:00",
-  "total": 1200,
-  "latest_run_entries": 315,
+  "generated_at": "2026-10-12T02:05:04.654147+00:00",
+  "total": 1228,
+  "latest_run_entries": 28,
   "entries": [
     {
       "entity_type": "work",
@@ -13202,6 +13202,314 @@
       "new_value": "MFCキューンシリーズ",
       "source_id": "https://ndlsearch.ndl.go.jp/books/R100000002-I033942379",
       "detected_at": "2026-10-09T12:11:11.746108+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c67b2c390d1cbf0ea74518167",
+      "work_id": "c67b2c390d1cbf0ea74518167",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": "#辣妹與辣妹的百合（首刷限定版）",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c67b2c390d1cbf0ea74518167",
+      "work_id": "c67b2c390d1cbf0ea74518167",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": "1",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c67b2c390d1cbf0ea74518167",
+      "work_id": "c67b2c390d1cbf0ea74518167",
+      "change_type": "updated",
+      "field_name": "publisher_ja",
+      "old_value": "一迅社",
+      "new_value": "小学館",
+      "source_id": "https://ndlsearch.ndl.go.jp/books/R100000002-I034477650",
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c216d561d97367a7981287c9e",
+      "work_id": "c216d561d97367a7981287c9e",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": "與妳相戀到生命盡頭（首刷限定版）",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c216d561d97367a7981287c9e",
+      "work_id": "c216d561d97367a7981287c9e",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": "9",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c3bb8938ad4d14ed54d76d646",
+      "work_id": "c3bb8938ad4d14ed54d76d646",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": "寫給妳的吶喊之歌",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c3bb8938ad4d14ed54d76d646",
+      "work_id": "c3bb8938ad4d14ed54d76d646",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": "1",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c803245e0ff2a71825a87b6e4",
+      "work_id": "c803245e0ff2a71825a87b6e4",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": "上伊那牡丹，醉姿如百合（首刷附錄版）",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c803245e0ff2a71825a87b6e4",
+      "work_id": "c803245e0ff2a71825a87b6e4",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": "3",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c803245e0ff2a71825a87b6e4",
+      "work_id": "c803245e0ff2a71825a87b6e4",
+      "change_type": "updated",
+      "field_name": "publisher_ja",
+      "old_value": "一迅社",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c803245e0ff2a71825a87b6e4",
+      "work_id": "c803245e0ff2a71825a87b6e4",
+      "change_type": "updated",
+      "field_name": "magazine_or_platform",
+      "old_value": "百合姫コミックス",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cfb856d7390c49eb7fab527b4",
+      "work_id": "cfb856d7390c49eb7fab527b4",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": "共譜泡沫戀曲（首刷限定版）",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cfb856d7390c49eb7fab527b4",
+      "work_id": "cfb856d7390c49eb7fab527b4",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": "4",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cdaa9e7ed3d485955387be250",
+      "work_id": "cdaa9e7ed3d485955387be250",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": "披著狼皮的羊公主",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cdaa9e7ed3d485955387be250",
+      "work_id": "cdaa9e7ed3d485955387be250",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": "1",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cdaa9e7ed3d485955387be250",
+      "work_id": "cdaa9e7ed3d485955387be250",
+      "change_type": "updated",
+      "field_name": "publisher_ja",
+      "old_value": "一迅社",
+      "new_value": "竹書房",
+      "source_id": "https://ndlsearch.ndl.go.jp/books/R100000002-I031457653",
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c7573b39178e7c44403d0b66d",
+      "work_id": "c7573b39178e7c44403d0b66d",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": "雨夜之月",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c7573b39178e7c44403d0b66d",
+      "work_id": "c7573b39178e7c44403d0b66d",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": "4",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c7573b39178e7c44403d0b66d",
+      "work_id": "c7573b39178e7c44403d0b66d",
+      "change_type": "updated",
+      "field_name": "publisher_ja",
+      "old_value": "一迅社",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c7573b39178e7c44403d0b66d",
+      "work_id": "c7573b39178e7c44403d0b66d",
+      "change_type": "updated",
+      "field_name": "magazine_or_platform",
+      "old_value": "百合姫コミックス",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cacd43eeeb87003da77927363",
+      "work_id": "cacd43eeeb87003da77927363",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "Show",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c195a1235c678fcc4a700982e",
+      "work_id": "c195a1235c678fcc4a700982e",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "あめとむち",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c35b3171f88ae5289e6527132",
+      "work_id": "c35b3171f88ae5289e6527132",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "ゆりゆりぱにっく～尊すぎる事案が発生しています！～",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c0fdbbad4137831cd3973f4c7",
+      "work_id": "c0fdbbad4137831cd3973f4c7",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "わたしが恋人になれるわけないじゃん、ムリムリ!",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c44d1fc95b85e88ddd68542f7",
+      "work_id": "c44d1fc95b85e88ddd68542f7",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "アンドロイドは経験人数に入りますか??",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c7b063bc8321f8242481a627d",
+      "work_id": "c7b063bc8321f8242481a627d",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "サルビアのブーケ",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c81f13f00fffbe89f2425fc35",
+      "work_id": "c81f13f00fffbe89f2425fc35",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "清田さんは汚されたい!?",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c6141d18586e833352643300c",
+      "work_id": "c6141d18586e833352643300c",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "負けませんからと言い張る顔のいい女の子を、全力で屈服させる百合のお話",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-12T02:05:04.654147+00:00"
     }
   ]
 }

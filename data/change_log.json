@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-12T02:05:04.654147+00:00",
-  "total": 1228,
-  "latest_run_entries": 28,
+  "generated_at": "2026-10-19T02:16:43.087182+00:00",
+  "total": 1229,
+  "latest_run_entries": 1,
   "entries": [
     {
       "entity_type": "work",
@@ -13510,6 +13510,17 @@
       "new_value": null,
       "source_id": null,
       "detected_at": "2026-10-12T02:05:04.654147+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c1cd4948518343991e18c852a",
+      "work_id": "c1cd4948518343991e18c852a",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "現実世界でも幸せにしてくださいね？",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-10-19T02:16:43.087182+00:00"
     }
   ]
 }

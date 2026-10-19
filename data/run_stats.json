@@ -2,15 +2,15 @@
   {
     "source_id": "ja_yurihime",
     "status": "ok",
-    "items_seen": 36,
+    "items_seen": 37,
     "fetches": [
       {
         "url": "https://www.ichijinsha.co.jp/yurihime/",
         "status_kind": "ok",
         "http": 200,
-        "bytes": 41905,
-        "sha256": "acc8d13af17724bc",
-        "raw": "data/raw/ja_yurihime/20261012T020502-acc8d13a.html",
+        "bytes": 42718,
+        "sha256": "c009793d57838ee2",
+        "raw": "data/raw/ja_yurihime/20261019T021638-c009793d.html",
         "error": ""
       }
     ],
@@ -29,7 +29,7 @@
         "http": 200,
         "bytes": 51662,
         "sha256": "5eeb38c195274893",
-        "raw": "data/raw/ja_galette/20261012T020503-5eeb38c1.html",
+        "raw": "data/raw/ja_galette/20261019T021641-5eeb38c1.html",
         "error": ""
       }
     ],
@@ -46,8 +46,8 @@
         "url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1",
         "status_kind": "failed",
         "http": 403,
-        "bytes": 5634,
-        "sha256": "d5084f1f79ac6ad7",
+        "bytes": 5623,
+        "sha256": "9dc9fc8702091752",
         "raw": "",
         "error": "HTTP 403"
       }

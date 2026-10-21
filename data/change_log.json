@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-19T02:16:43.087182+00:00",
-  "total": 1229,
-  "latest_run_entries": 1,
+  "generated_at": "2026-10-21T15:24:54.861927+00:00",
+  "total": 1234,
+  "latest_run_entries": 5,
   "entries": [
     {
       "entity_type": "work",
@@ -13521,6 +13521,61 @@
       "new_value": null,
       "source_id": null,
       "detected_at": "2026-10-19T02:16:43.087182+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c216d561d97367a7981287c9e",
+      "work_id": "c216d561d97367a7981287c9e",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-21T15:24:54.861927+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ceb82d175c46b7f8559bc5f10",
+      "work_id": "ceb82d175c46b7f8559bc5f10",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-21T15:24:54.861927+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ca478c82ba3c36ab50129c500",
+      "work_id": "ca478c82ba3c36ab50129c500",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-21T15:24:54.861927+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cdd530d4e9483a0ce7b8b850c",
+      "work_id": "cdd530d4e9483a0ce7b8b850c",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-21T15:24:54.861927+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c009677445f18827d060696ef",
+      "work_id": "c009677445f18827d060696ef",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-21T15:24:54.861927+00:00"
     }
   ]
 }

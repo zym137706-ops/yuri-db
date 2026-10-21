@@ -1,13 +1,13 @@
 [
   {
     "source_id": "an_animeanime",
-    "status": "ok",
+    "status": "partial",
     "feed": "https://animeanime.jp/rss20/index.rdf",
-    "robots": "ok (211 bytes)",
+    "robots": "robots.txt returned an HTML page (503) -> no usable rules",
     "matched": 0,
-    "parsed": 50,
-    "http": 200,
-    "error": ""
+    "parsed": 0,
+    "http": 503,
+    "error": "HTTP 503"
   },
   {
     "source_id": "an_yahoo_rss",
@@ -21,26 +21,26 @@
   },
   {
     "source_id": "ln_ga_bunko",
-    "status": "ok",
+    "status": "partial",
     "feed": "https://ga.sbcr.jp/sitemap.rss",
-    "robots": "ok (187 bytes)",
+    "robots": "robots.txt returned an HTML page (503) -> no usable rules",
     "matched": 0,
-    "parsed": 49,
-    "http": 200,
-    "error": ""
+    "parsed": 0,
+    "http": 503,
+    "error": "HTTP 503"
   },
   {
-    "source_id": "ln_web_action",
+    "source_id": "ln_web_action_prtimes",
     "status": "ok",
     "feed": "https://comic-action.com/rss",
     "robots": "ok (147 bytes)",
     "matched": 0,
-    "parsed": 33,
+    "parsed": 32,
     "http": 200,
     "error": ""
   },
   {
-    "source_id": "ja_prtimes",
+    "source_id": "ln_web_action_prtimes",
     "status": "ok",
     "feed": "https://prtimes.jp/index.rdf",
     "robots": "ok (254 bytes)",

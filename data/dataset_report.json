@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T02:16:41.652576+00:00",
+  "generated_at": "2026-10-21T15:24:53.413895+00:00",
   "source_records": {
     "yurihime": 37,
     "galette": 4,
@@ -173,11 +173,11 @@
   "works_with_cover": 803,
   "works_with_title_zh_tw": 0,
   "works_with_title_zh_cn": 0,
-  "anime_matched": 5,
-  "works_with_anime": 5,
+  "anime_matched": 0,
+  "works_with_anime": 0,
   "ndl_volumes_added": 6,
   "works_with_ja_volumes": 12,
   "merges": [],
   "schema_errors": [],
-  "raw_files": 104
+  "raw_files": 107
 }

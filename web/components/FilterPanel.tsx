@@ -28,6 +28,16 @@ import {
   YURI_TYPE_LABELS,
 } from '@/lib/labels';
 
+/**
+ * `action` is a plain HTML attribute, so Next's `basePath` does NOT rewrite it.
+ * This panel is rendered inside a client component, where
+ * `NEXT_PUBLIC_BASE_PATH` is inlined at build time; without the prefix the form
+ * would submit to the domain root on a GitHub Pages project site (`/yuri-db/`)
+ * and every filter (including the new author box) would be lost.
+ */
+const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? '').replace(/\/+$/, '');
+const FORM_ACTION = `${BASE_PATH}/`;
+
 function CheckboxGroup({
   legend,
   name,
@@ -97,7 +107,7 @@ export function FilterPanel({ filters, resultCount }: { filters: WorkFilters; re
   const shareUrl = buildQueryString(filters);
 
   return (
-    <form method="get" action="/" className="space-y-4 rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
+    <form method="get" action={FORM_ACTION} className="space-y-4 rounded-lg border border-zinc-200 bg-white p-4 shadow-sm">
       <div>
         <label htmlFor="q" className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
           搜尋
@@ -112,6 +122,29 @@ export function FilterPanel({ filters, resultCount }: { filters: WorkFilters; re
         />
         <p className="mt-1 text-xs text-zinc-500">
           以空白分隔多個關鍵字時，需全部命中（AND）。
+        </p>
+      </div>
+
+      <div className="border-t border-zinc-200 pt-3">
+        <label htmlFor="author" className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+          作者／繪者
+        </label>
+        <input
+          id="author"
+          type="text"
+          name="author"
+          defaultValue={filters.author}
+          placeholder="例：入間人間（需完全相符）"
+          className="mt-1 w-full rounded border border-zinc-300 px-2.5 py-1.5 text-sm focus:border-pink-400 focus:outline-none"
+        />
+        <p className="mt-1 text-xs text-zinc-500">
+          精確比對 <code className="mono">authors</code> 或 <code className="mono">illustrators</code>
+          ；資料庫作者眾多，因此用文字輸入而非選單。
+          {filters.author ? (
+            <>
+              {' '}目前只看作者／繪者為<strong>「{filters.author}」</strong>的作品。
+            </>
+          ) : null}
         </p>
       </div>
 

@@ -278,28 +278,49 @@ anilist_created = 0
 anilist_enriched = 0
 anilist_skipped_manga = 0  # kept for report compatibility; no longer used to skip
 _anilist_path = DATA / "anilist_works.json"
+anilist_dropped_dupes = 0
 if _anilist_path.exists():
     _aw = json.loads(_anilist_path.read_text(encoding="utf-8"))
-    _idx: dict[str, dict] = {}
-    for w in works.values():
-        _idx.setdefault(norm_title(w["title_ja"]), w)
 
+    # 索引键必须带上 media_type。
+    #
+    # 曾经只按标题索引，结果把「轻小说原作」和「它的漫画改编版」合并成同一条记录，
+    # 作者栏变成「入間人間、柚原もけ」（轻小说作者 + 漫画绘者混在一起）、
+    # 插画栏变成「逢坂望美、仲谷鳰、柚原もけ」。用户就是从《安達としまむら》
+    # 这一条发现的问题。同一标题在 AniList 里同时存在 NOVEL 与 MANGA 条目是常态
+    # （本目录里有 11 个这样的标题），所以 (标题, 媒介) 才是正确的身份。
+    _idx: dict[tuple, dict] = {}
+    for w in works.values():
+        _idx.setdefault((norm_title(w["title_ja"]), w["media_type"]), w)
+
+    # 同一 (标题, 媒介) 还可能有**多条** AniList 条目 —— 例如《安達としまむら》
+    # 有两个不同的漫画化版本（まに / 柚原もけ）。它们确实是不同作品，但我们的
+    # 数据模型一条记录只有一个 authors 数组，硬合并会把两位漫画家的名字塞进同一条。
+    # 因此只保留 popularity 最高的那条，其余丢弃并在报告里计数（不静默）。
+    _best: dict[tuple, dict] = {}
     for e in _aw.get("entries", []):
+        _k = (norm_title(e["title_ja"]), e.get("media_type") or "manga")
+        _cur = _best.get(_k)
+        if _cur is None or (e.get("popularity") or 0) > (_cur.get("popularity") or 0):
+            _best[_k] = e
+    anilist_dropped_dupes = len(_aw.get("entries", [])) - len(_best)
+
+    for (_key, _media), e in _best.items():
         # 漫画与轻小说**都**并入。
         # 用户明确要求：漫画库不能只限于「台湾出版社已出版繁体中文版」的作品——
         # 很多百合漫画只有民间汉化、没有官方繁中版，那些同样应该收录。
         # 因此这里不做「是否有繁中版」的筛选，只按百合标签相关度收录。
-        key = norm_title(e["title_ja"])
+        key = _key
         if not key:
             continue
-        w = _idx.get(key)
+        w = _idx.get((key, _media))
         created_here = False
         if w is None:
             author = (e.get("authors") or [None])[0]
             w = new_work(e["title_ja"], author)
             w["media_type"] = e.get("media_type") or "manga"
-            works["anilist:" + key] = w
-            _idx[key] = w
+            works[f"anilist:{key}:{w['media_type']}"] = w
+            _idx[(key, w["media_type"])] = w
             created_here = True
             anilist_created += 1
         else:
@@ -311,6 +332,17 @@ if _anilist_path.exists():
             set_field(w, "authors", e["authors"], "third_party", e["source_url"], 0.7)
         if e.get("illustrators"):
             set_field(w, "illustrators", e["illustrators"], "third_party", e["source_url"], 0.7)
+            # 如实说明这是**作品级汇总**，不是逐卷的。
+            # 实测：NDL 的書志对轻小说只著录作者（creator = ['入間, 人間']），
+            # **不著录插画师**；AniList 只给一条作品级的 Illustration 名单。
+            # 所以「安達としまむら 不同卷插画师不同（逢坂望美 / Raemz）」这件事
+            # 用现有数据源无法逐卷还原。这里标注出来，避免读者误以为该数组是逐卷的。
+            w["field_sources"]["illustrators"]["note"] = (
+                "作品級のクレジット（AniList のスタッフ情報）。**巻ごとの插画担当は"
+                "現データ源から取得できない**（NDL はライトノベルのイラストレーターを"
+                "著録しない）。複数名が並ぶ場合、それは同一作品に複数の役割／版がある"
+                "ことを示すもので、巻ごとの対応ではない。"
+            )
         for src, dst in (("start_date", "start_date"), ("end_date", "end_date")):
             if e.get(src):
                 set_field(w, dst, e[src], "third_party", e["source_url"], 0.7)
@@ -365,10 +397,12 @@ TONGLI_URL = "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1"
 details = [r for r in records if r.get("kind") == "zh_tw_volume_detail"]
 detail_by_bd = {d["bd"]: d for d in details}
 
-# index existing works by normalised Japanese title (the dedup anchor)
-by_title_key: dict[str, dict] = {}
+# 索引既有的作品，按 (规范化日文标题, 媒介) 定位 —— 与 AniList 那边同一套身份规则。
+# 東立出的是**漫画**的繁中版，所以它只能链到 manga 记录；曾经只按标题索引，
+# 会把東立的繁中版挂到同名的轻小说记录上（例如把漫画版 ISBN 记进小说的卷列表）。
+by_title_key: dict[tuple, dict] = {}
 for w in works.values():
-    by_title_key.setdefault(norm_title(w["title_ja"]), w)
+    by_title_key.setdefault((norm_title(w["title_ja"]), w["media_type"]), w)
 
 linked = 0
 created_from_tw = 0
@@ -386,13 +420,13 @@ for rec in records:
         unmatched_no_title += 1
         continue
 
-    key = norm_title(title_ja)
+    key = (norm_title(title_ja), "manga")
     target = by_title_key.get(key)
     if target is None:
         # 東立 publishes 原文書名 on its own detail page, so this Japanese title
         # is source-backed — creating a Work from it is grounded, not inferred.
         target = new_work(title_ja, None)
-        works["tw:" + key] = target
+        works["tw:" + key[0]] = target
         by_title_key[key] = target
         created_from_tw += 1
     else:
@@ -549,15 +583,33 @@ if _ndl_path.exists():
         if not ndl_key:
             continue
 
+        # 排除明确不是「本书某一卷」的记录。
+        # NDL 按标题检索会返回分冊版、単話、アンソロジー、漫画版等，它们与单行本
+        # 不是同一个东西；把这些 ISBN 挂上去会让卷列表出现错误的书。
+        # 数据实证：data/ndl_volumes.json 里 249 条中有 138 条的 ndl_title 与所属
+        # 作品标题不一致（citrus+ 甚至被挂上了柑橘类生物学论文）。
+        _NEGATIVE_MARKERS = (
+            "分冊版", "単話", "アンソロジー", "アンソロジ-", "公式コミック",
+            "【", "同人", "画集", "公式ガイド", "ファンブック", "ノベライズ",
+        )
+        if any(m in (rec.get("ndl_title") or "") for m in _NEGATIVE_MARKERS):
+            continue
+
         # NDL catalogue titles usually carry a label parenthetical, e.g.
         #   「ささやくように恋を唄う 12 (百合姫コミックス)」
         # which normalisation does not reduce to the bare work title. So accept a
-        # prefix match too — with a length guard so a short title cannot swallow
-        # unrelated works.
+        # prefix match too — but ONLY when what follows the title is a volume
+        # number or a bracketed label, never an arbitrary continuation of another
+        # work's title ("志乃と恋" must not swallow "志乃と恋Future").
         targets = list(_by_key.get(ndl_key, []))
         if not targets and len(ndl_key) >= 4:
             for key, ws in _by_key.items():
-                if len(key) >= 4 and ndl_key.startswith(key):
+                if len(key) < 4 or not ndl_key.startswith(key):
+                    continue
+                rest = ndl_key[len(key):].lstrip()
+                if not rest:
+                    continue
+                if rest[0].isdigit() or rest[0] in "（(【[":
                     targets.extend(ws)
 
         for w in targets:
@@ -666,9 +718,35 @@ if _ndl_enrich_path.exists():
     for w in works.values():
         _idx3.setdefault(norm_title(w["title_ja"]), w)
 
+    # 媒介与 NDL レーベル必须匹配。
+    #
+    # norm_title 会**剥掉卷号**（安達としまむら（９） -> 安達としまむら），所以
+    # 单靠标题相等挡不住「漫画卷被当成小说本体」这种错配 —— 这正是实际发生过的：
+    #   安達としまむら（轻小说）拿到了 電撃コミックスＮＥＸＴ 的 ISBN/发售日
+    #   志乃と恋（漫画）反而拿到了 富士見ファンタジア文庫 —— 小说标签
+    # 日本的レーベル名本身就是可靠的分界：コミックス 系是漫画，文庫 系是小说。
+    _COMICS_LABEL_HINTS = ("コミックス", "こみっくす", "comics")
+    _NOVEL_LABEL_HINTS = ("文庫", "ぶんこ", "novel")
+
+    def _label_of(rec: dict) -> str:
+        return (rec.get("label") or "").lower()
+
+    def _media_consistent(media_type: str, label: str) -> bool:
+        if not label:
+            return True  # 无标签时无从判断，交由其他校验
+        is_comics = any(h in label for h in _COMICS_LABEL_HINTS)
+        is_novel = any(h in label for h in _NOVEL_LABEL_HINTS)
+        if media_type == "light_novel" and is_comics and not is_novel:
+            return False
+        if media_type == "manga" and is_novel and not is_comics:
+            return False
+        return True
+
     for rec in _enr.get("records", []):
         w = _idx3.get(norm_title(rec.get("title_ja") or ""))
         if w is None:
+            continue
+        if not _media_consistent(w["media_type"], _label_of(rec)):
             continue
         _url = rec.get("source_url") or NDL_URL
         add_source(w, "ja_ndl_search_sru_opensearch",
@@ -704,7 +782,16 @@ if _ndl_enrich_path.exists():
 
 groups: dict[tuple, list[str]] = defaultdict(list)
 for wid, w in works.items():
-    k = (norm_title(w["title_ja"]), norm_name((w["authors"] or [""])[0]))
+    # 键里必须带 media_type。
+    # 只按「标题 + 第一作者」去重的话，同一部作品的轻小说版与漫画版会被合并回去：
+    # 《安達としまむら》小说作者是入間人間，其漫画版的第一作者**也是**入間人間
+    # （原作），于是两者被判定为同一条，作者栏变成「入間人間、柚原もけ」。
+    # 加上媒介后 LN 与漫画各自独立，这正是用户要的。
+    k = (
+        norm_title(w["title_ja"]),
+        norm_name((w["authors"] or [""])[0]),
+        w["media_type"],
+    )
     groups[k].append(wid)
 
 for k, ids in groups.items():
@@ -722,6 +809,39 @@ for k, ids in groups.items():
 
 schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
 validator = Draft202012Validator(schema, format_checker=FormatChecker())
+
+# ---------------------------------------------------------------------------
+# id 唯一性后处理
+# ---------------------------------------------------------------------------
+# new_work() 用 make_id(规范化标题|规范化第一作者) 生成 id，**不含 media_type**。
+# 拆分「轻小说本体」与「它的漫画版」之后，两者标题相同、第一作者往往也都是
+# 原作者（《安達としまむら》：两边都是入間人間），于是算出完全相同的 id。
+# 前端用 id 作 React key、也是记录标识，重复会导致渲染与契约检查失败。
+#
+# 这里只改冲突的那几条，其余 id 保持原样 —— 因此现存的 id 与 slug 都不变，
+# 已发布的网址也不会失效（URL 用的是 slug，slug 由 make_slug 独立派生）。
+_sorted_for_ids = sorted(works.values(), key=lambda x: (x["media_type"], x["slug"]))
+_seen_ids: set[str] = set()
+_id_reassigned = 0
+for _w in _sorted_for_ids:
+    if _w["id"] not in _seen_ids:
+        _seen_ids.add(_w["id"])
+        continue
+    _base = (
+        norm_title(_w["title_ja"])
+        + "|"
+        + norm_name((_w["authors"] or [""])[0])
+        + "|"
+        + _w["media_type"]
+    )
+    _new_id = make_id(_base)
+    _k = 2
+    while _new_id in _seen_ids:
+        _new_id = make_id(_base + "|" + str(_k))
+        _k += 1
+    _w["id"] = _new_id
+    _seen_ids.add(_new_id)
+    _id_reassigned += 1
 
 out = sorted(works.values(), key=lambda w: w["title_ja"])
 
@@ -794,6 +914,9 @@ report = {
     "anilist_created": anilist_created,
     "anilist_enriched": anilist_enriched,
     "anilist_skipped_manga": anilist_skipped_manga,
+    # 同一 (标题, 媒介) 的多条 AniList 条目只保留 popularity 最高的一条，
+    # 其余丢弃（多数是同一作品的两个不同漫画化版本，合并会把两位绘者混进一条记录）
+    "anilist_dropped_duplicate_entries": anilist_dropped_dupes,
     "ndl_enriched_works": ndl_enriched,
     "ndl_label_set": ndl_label_set,
     "by_status": dict(Counter(w["serialization_status"] for w in out)),

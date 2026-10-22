@@ -105,6 +105,12 @@ export function WorksBrowser() {
           {activeCount > 0 ? (
             <p className="text-xs text-zinc-600">
               已套用 {activeCount} 個條件
+              {filters.author ? (
+                <>
+                  ，其中作者／繪者＝<strong>{filters.author}</strong>
+                  （精確比對）
+                </>
+              ) : null}
               {shareQuery ? <code className="mono ml-1">{shareQuery}</code> : null}
             </p>
           ) : (

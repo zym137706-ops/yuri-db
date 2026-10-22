@@ -293,6 +293,13 @@ export type SortOption = (typeof SORT_OPTIONS)[number];
 
 export interface WorkFilters {
   q: string;
+  /**
+   * Single creator name (author OR illustrator), matched by exact equality.
+   * Kept as one string rather than a list because the UI is a text box: the
+   * dataset has hundreds of distinct creators, so a checkbox list would be both
+   * unusable and enormous.
+   */
+  author: string;
   status: string[];
   media: string[];
   yuri: string[];
@@ -363,6 +370,7 @@ export function parseFilters(input: QueryInput | undefined | null): WorkFilters 
   const q = input ?? {};
   return {
     q: (firstValue(q.q) ?? '').trim(),
+    author: (firstValue(q.author) ?? '').trim(),
     status: toList(q.status).filter((v) => (SERIALIZATION_STATUSES as readonly string[]).includes(v)),
     media: toList(q.media).filter((v) => (MEDIA_TYPES as readonly string[]).includes(v)),
     yuri: toList(q.yuri).filter((v) => (YURI_TYPES as readonly string[]).includes(v)),
@@ -381,6 +389,9 @@ export function parseFilters(input: QueryInput | undefined | null): WorkFilters 
 export function buildQueryString(filters: WorkFilters): string {
   const params = new URLSearchParams();
   if (filters.q.trim()) params.set('q', filters.q.trim());
+  // URLSearchParams percent-encodes the value, so CJK creator names (and names
+  // containing &, #, +, …) survive the round-trip through `?author=`.
+  if (filters.author.trim()) params.set('author', filters.author.trim());
   for (const value of [...filters.status].sort()) params.append('status', value);
   for (const value of [...filters.media].sort()) params.append('media', value);
   for (const value of [...filters.yuri].sort()) params.append('yuri', value);
@@ -392,10 +403,24 @@ export function buildQueryString(filters: WorkFilters): string {
   return query ? `?${query}` : '';
 }
 
+/**
+ * Canonical in-app link to "every work by this creator".
+ *
+ * Returns an app-relative URL (`/?author=…`), NOT a site-absolute one: callers
+ * must render it with `next/link`, which prepends `NEXT_BASE_PATH`. Hand-writing
+ * the base path here would double it on GitHub Pages and break local dev.
+ * `encodeURIComponent` handles CJK, spaces, `&`, `#` and `+`.
+ */
+export function authorFilterHref(author: string): string {
+  const name = author.trim();
+  return name ? `/?author=${encodeURIComponent(name)}` : '/';
+}
+
 /** How many filter dimensions are active — drives the "已套用 N 個條件" hint. */
 export function countActiveFilters(filters: WorkFilters): number {
   let n = 0;
   if (filters.q.trim()) n += 1;
+  if (filters.author.trim()) n += 1;
   n += filters.status.length + filters.media.length + filters.yuri.length + filters.anime.length;
   if (filters.zhTw !== 'any') n += 1;
   if (filters.zhCn !== 'any') n += 1;
@@ -460,6 +485,20 @@ export function matchesQuery(work: WorkLike, query: string): boolean {
 
 /* ---- filtering ----------------------------------------------------------- */
 
+/**
+ * Exact creator match across BOTH `authors` and `illustrators`.
+ *
+ * Deliberately uses `Array.prototype.includes` (exact equality) rather than a
+ * substring test: `?author=入間` must not silently return every 入間人間 work,
+ * because the filter is presented to the reader as "this person's works".
+ * A blank name means "no creator filter" and matches everything.
+ */
+export function matchesCreator(work: WorkLike, name: string): boolean {
+  const needle = name.trim();
+  if (!needle) return true;
+  return (work.authors ?? []).includes(needle) || (work.illustrators ?? []).includes(needle);
+}
+
 function matchesEdition(work: WorkLike, filter: EditionFilter, has: (w: WorkLike) => boolean): boolean {
   if (filter === 'any') return true;
   const exists = has(work);
@@ -467,6 +506,7 @@ function matchesEdition(work: WorkLike, filter: EditionFilter, has: (w: WorkLike
 }
 
 export function matchesFilters(work: WorkLike, filters: WorkFilters): boolean {
+  if (!matchesCreator(work, filters.author)) return false;
   if (filters.status.length && !filters.status.includes(work.serialization_status ?? '')) return false;
   if (filters.media.length && !filters.media.includes(work.media_type ?? '')) return false;
   if (filters.yuri.length && !filters.yuri.includes(work.yuri_type ?? '')) return false;

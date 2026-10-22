@@ -27,3 +27,4 @@ data/.works_snapshot.json
 
 # 临时提交信息文件（勿提交）
 .git-msg.tmp
+web/build-output.log

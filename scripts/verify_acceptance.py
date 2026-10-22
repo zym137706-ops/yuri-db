@@ -150,6 +150,23 @@ def main() -> int:
             "数据集疑似塌缩（多半是某个采集器用空结果覆盖了好数据）"
         )
 
+    # ---------------- 媒介分离（LN 与漫画不能合并）----------------
+    # 曾经 dedupe 只按「标题 + 第一作者」去重，而轻小说与其漫画改编版的第一作者
+    # 往往都是原作者（例：《安達としまむら》小说与漫画都是入間人間），
+    # 于是两者被合并成一条，作者栏变成「入間人間、柚原もけ」——
+    # 轻小说作者和漫画绘者混在一起。用户就是从这条记录发现的。
+    # 修完后同一标题会以 light_novel / manga 两条并存；若哪天又合并回去，
+    # 这个数字会掉到接近 0，门禁就会失败。
+    _by_title: dict[str, set] = {}
+    for _w in works:
+        _by_title.setdefault((_w.get("title_ja") or "").strip(), set()).add(_w.get("media_type"))
+    _cross_media = sum(1 for _v in _by_title.values() if len(_v) > 1)
+    if _cross_media < 5:
+        hard.append(
+            f"only {_cross_media} titles exist in more than one media type — "
+            "轻小说与其漫画改编版疑似又被合并成同一条记录（dedupe 键可能漏了 media_type）"
+        )
+
     # ---------------- report ----------------
     print("=" * 68)
     print(f"works                 : {len(works)}  (target {TARGET_WORKS})")

@@ -10,6 +10,7 @@
  */
 import Link from 'next/link';
 
+import { AuthorLinks } from './AuthorLinks';
 import { CoverImage } from './CoverImage';
 import { TitleTriple } from './TitleTriple';
 import { ClassificationBadge, Pill, UnknownValue } from './ui';
@@ -58,9 +59,17 @@ export function WorkCard({ work }: { work: SlimWork }) {
             <div className="flex gap-1">
               <dt className="text-zinc-500">作者：</dt>
               <dd className="min-w-0 truncate">
-                {work.authors.length > 0 ? work.authors.join('、') : <UnknownValue />}
+                <AuthorLinks names={work.authors} />
               </dd>
             </div>
+            {work.illustrators.length > 0 ? (
+              <div className="flex gap-1">
+                <dt className="text-zinc-500">繪者：</dt>
+                <dd className="min-w-0 truncate">
+                  <AuthorLinks names={work.illustrators} />
+                </dd>
+              </div>
+            ) : null}
             <div className="flex gap-1">
               <dt className="text-zinc-500">出版社：</dt>
               <dd className="min-w-0 truncate">{work.publisher_ja ?? <UnknownValue />}</dd>

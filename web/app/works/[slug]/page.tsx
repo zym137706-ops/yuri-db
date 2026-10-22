@@ -13,6 +13,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
+import { AuthorLinks } from '@/components/AuthorLinks';
 import { CoverImage } from '@/components/CoverImage';
 import { ProvenanceLegend, ProvenanceTable } from '@/components/ProvenanceTable';
 import { RatingPanel } from '@/components/RatingPanel';
@@ -22,7 +23,7 @@ import { TitleTriple } from '@/components/TitleTriple';
 import { UnofficialZhPanel } from '@/components/UnofficialZhPanel';
 import { VolumeTable } from '@/components/VolumeTable';
 import { BasisBadge, ConfidenceBar, EmptyState, Pill, SectionCard, UnknownValue } from '@/components/ui';
-import { getWorkBySlug, getWorkSlugs } from '@/lib/data';
+import { getWorkBySlug, getWorkSlugs, getWorks } from '@/lib/data';
 import {
   animeStatusLabel,
   classificationBasisLabel,
@@ -31,7 +32,15 @@ import {
   serializationStatusLabel,
   yuriTypeLabel,
 } from '@/lib/labels';
-import { confidencePercent, formatTimestamp, isBlank, workHasZhCnEdition, workHasZhTwEdition } from '@/lib/policy';
+import {
+  authorFilterHref,
+  confidencePercent,
+  formatTimestamp,
+  isBlank,
+  matchesCreator,
+  workHasZhCnEdition,
+  workHasZhTwEdition,
+} from '@/lib/policy';
 import { buildFieldViews, fieldViewsByGroup, nestedRows, summarizeProvenance } from '@/lib/provenance';
 import type { Work } from '@/lib/types';
 
@@ -121,6 +130,18 @@ function TitleRow({ work }: { work: Work }) {
               <dt className="text-zinc-500">Slug：</dt>
               <dd className="mono">{work.slug}</dd>
             </div>
+            <div className="flex gap-2">
+              <dt className="text-zinc-500">作者：</dt>
+              <dd className="min-w-0">
+                <AuthorLinks names={work.authors} />
+              </dd>
+            </div>
+            <div className="flex gap-2">
+              <dt className="text-zinc-500">繪者：</dt>
+              <dd className="min-w-0">
+                <AuthorLinks names={work.illustrators} />
+              </dd>
+            </div>
           </dl>
         </div>
       </div>
@@ -132,6 +153,71 @@ function TitleRow({ work }: { work: Work }) {
         <TitleTriple work={work} />
       </div>
     </div>
+  );
+}
+
+/**
+ * "Other works by the same author/illustrator", computed at build time from the
+ * FULL records (not the slim projection), because this page already has them.
+ *
+ * Matching is EXACT equality against `authors` ∪ `illustrators` through the same
+ * `matchesCreator` used by the list filter, so the links on this page and the
+ * resulting `/?author=…` view can never disagree about what counts as "by".
+ */
+function RelatedWorks({ work }: { work: Work }) {
+  const creators = Array.from(new Set([...work.authors, ...work.illustrators]));
+  if (creators.length === 0) return null;
+
+  const related = getWorks()
+    .filter((other) => other.slug !== work.slug && creators.some((name) => matchesCreator(other, name)))
+    .map((other) => ({
+      work: other,
+      shared: creators.filter((name) => matchesCreator(other, name)),
+    }));
+
+  return (
+    <SectionCard
+      id="related-works"
+      title="同一作者／繪者的其他作品"
+      subtitle="以完整記錄在建置期精確比對 authors 與 illustrators；不做子字串比對。"
+    >
+      <div className="space-y-3">
+        <div className="flex flex-wrap items-center gap-2 text-sm">
+          <span className="text-zinc-500">查看全部作品：</span>
+          {creators.map((name) => (
+            <Link
+              key={name}
+              href={authorFilterHref(name)}
+              className="badge badge-accent no-underline hover:underline"
+            >
+              {name}
+            </Link>
+          ))}
+        </div>
+
+        {related.length === 0 ? (
+          <p className="text-sm text-zinc-600">
+            本資料庫目前沒有其他作品由 {creators.join('、')} 擔任作者或繪者。
+          </p>
+        ) : (
+          <ul className="divide-y divide-zinc-100">
+            {related.map(({ work: other, shared }) => (
+              <li
+                key={other.slug}
+                className="flex flex-col gap-1 py-2 first:pt-0 last:pb-0 sm:flex-row sm:items-baseline sm:justify-between"
+              >
+                <Link href={`/works/${other.slug}`} className="no-underline hover:underline">
+                  {other.title_ja}
+                </Link>
+                <span className="text-xs text-zinc-500">
+                  共同：<AuthorLinks names={shared} linkClassName="no-underline hover:underline" />
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </SectionCard>
   );
 }
 
@@ -172,6 +258,8 @@ export default async function WorkDetailPage({ params }: { params: Promise<Param
       <section className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
         <TitleRow work={work} />
       </section>
+
+      <RelatedWorks work={work} />
 
       {/* ---------------------------------------------------------------- *
        * Provenance overview

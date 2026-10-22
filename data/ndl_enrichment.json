@@ -3,14 +3,6 @@
   "source": "ja_ndl_search_sru_opensearch",
   "endpoint": "https://ndlsearch.ndl.go.jp/api/opensearch",
   "note": "只保留 category 为图书类的记录。publisher=出版社，label=seriesTitle（轻小说为文库名，漫画为レーベル名）。合并式写入：可分批多次运行逐步补全。",
-  "total": 162,
-  "by_media_type": {
-    "manga": 97,
-    "light_novel": 65
-  },
-  "with_publisher": 161,
-  "with_label": 154,
-  "with_isbn": 6,
   "last_run": {
     "queried": 250,
     "runs": [
@@ -103,17 +95,6 @@
       {
         "status": "ok",
         "pages": 1,
-        "items": 16,
-        "total_results": 21,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "週に一度クラスメイトを買う話 ～ふたりの時間、言い訳の五千円～",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
         "items": 9,
         "total_results": 23,
         "page_statuses": [
@@ -131,17 +112,6 @@
           "ok"
         ],
         "title": "転生王女と天才令嬢の魔法革命",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "少女妄想中",
         "media_type": "light_novel"
       },
       {
@@ -443,17 +413,6 @@
         "status": "ok",
         "pages": 1,
         "items": 1,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "少女の望まぬ英雄譚",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
         "total_results": 1,
         "page_statuses": [
           "ok"
@@ -685,17 +644,6 @@
         "status": "ok",
         "pages": 1,
         "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "私の怪談師はポンコツ可愛い",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
         "total_results": 1,
         "page_statuses": [
           "ok"
@@ -803,17 +751,6 @@
         "media_type": "light_novel"
       },
       {
-        "status": "ok",
-        "pages": 1,
-        "items": 15,
-        "total_results": 45,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "私、能力は平均値でって言ったよね！",
-        "media_type": "light_novel"
-      },
-      {
         "status": "no_results",
         "total_results": 0,
         "page_statuses": [
@@ -853,17 +790,6 @@
           "ok"
         ],
         "title": "どタイプお姉さんの誘惑が止まらないっ！ ちっちゃい頃から私のことがだいすきな年下従妹のお嫁さんになっちゃいました!?",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ガールズキングダム",
         "media_type": "light_novel"
       },
       {
@@ -1444,17 +1370,6 @@
       {
         "status": "ok",
         "pages": 1,
-        "items": 44,
-        "total_results": 81,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "はなにあらし",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
         "items": 5,
         "total_results": 21,
         "page_statuses": [
@@ -1512,17 +1427,6 @@
           "ok"
         ],
         "title": "ささやくように恋を唄う",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 14,
-        "total_results": 28,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "やがて君になる",
         "media_type": "manga"
       },
       {
@@ -1636,17 +1540,6 @@
           "ok"
         ],
         "title": "世界で一番おっぱいが好き！",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 50,
-        "total_results": 146,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "付き合ってあげてもいいかな",
         "media_type": "manga"
       },
       {
@@ -1948,17 +1841,6 @@
         "media_type": "manga"
       },
       {
-        "status": "ok",
-        "pages": 1,
-        "items": 16,
-        "total_results": 21,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "週に一度クラスメイトを買う話 ～ふたりの時間、言い訳の五千円～",
-        "media_type": "manga"
-      },
-      {
         "status": "no_results",
         "total_results": 0,
         "page_statuses": [
@@ -2052,17 +1934,6 @@
       {
         "status": "ok",
         "pages": 1,
-        "items": 49,
-        "total_results": 61,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "志乃と恋",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
         "items": 1,
         "total_results": 5,
         "page_statuses": [
@@ -2086,33 +1957,11 @@
         "status": "ok",
         "pages": 1,
         "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "草薙先生は試されている",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
         "total_results": 1,
         "page_statuses": [
           "ok"
         ],
         "title": "親がうるさいので後輩（♀）と偽装結婚してみた。",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "우리집에 놀러와!",
         "media_type": "manga"
       },
       {
@@ -2168,17 +2017,6 @@
           "ok"
         ],
         "title": "ラブデス。",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 9,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ヴァンピアーズ",
         "media_type": "manga"
       },
       {
@@ -2361,17 +2199,6 @@
       {
         "status": "ok",
         "pages": 1,
-        "items": 32,
-        "total_results": 39,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "作りたい女と食べたい女",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
         "items": 1,
         "total_results": 4,
         "page_statuses": [
@@ -2522,17 +2349,6 @@
           "no_results"
         ],
         "title": "わたしのアンジェラ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 50,
-        "total_results": 63,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ケイヤクシマイ",
         "media_type": "manga"
       },
       {
@@ -2784,22 +2600,6 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030770650"
-    },
-    {
-      "title_ja": "ガールズキングダム",
-      "media_type": "light_novel",
-      "ndl_title": "ガールズキングダム : エッチなゲームしようよ",
-      "publisher_ja": "秋水社",
-      "label": "Daito comics TL(teens love)シリーズ",
-      "label_raw": "Daito comics TL(teens love)シリーズ",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000010966808"
     },
     {
       "title_ja": "クラスの姫は私のわんこ",
@@ -3235,38 +3035,6 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033123980"
     },
     {
-      "title_ja": "少女の望まぬ英雄譚",
-      "media_type": "light_novel",
-      "ndl_title": "少女の望まぬ英雄譚 : The girl's memento mori",
-      "publisher_ja": "TOブックス",
-      "label": null,
-      "label_raw": null,
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033235866"
-    },
-    {
-      "title_ja": "少女妄想中",
-      "media_type": "light_novel",
-      "ndl_title": "少女妄想中。",
-      "publisher_ja": "KADOKAWA",
-      "label": "メディアワークス文庫",
-      "label_raw": "メディアワークス文庫 ; い1-19",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I027976173"
-    },
-    {
       "title_ja": "少女星間漂流記",
       "media_type": "light_novel",
       "ndl_title": "少女星間漂流記",
@@ -3571,22 +3339,6 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031794133"
     },
     {
-      "title_ja": "私、能力は平均値でって言ったよね！",
-      "media_type": "light_novel",
-      "ndl_title": "私、能力は平均値でって言ったよね! : God bless me?",
-      "publisher_ja": "アース・スターエンターテイメント",
-      "label": "EARTH STAR NOVEL",
-      "label_raw": "EARTH STAR NOVEL ; ESN045",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I027266280"
-    },
-    {
       "title_ja": "私の初恋相手がキスしてた",
       "media_type": "light_novel",
       "ndl_title": "私の初恋相手がキスしてた",
@@ -3601,22 +3353,6 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031864801"
-    },
-    {
-      "title_ja": "私の怪談師はポンコツ可愛い",
-      "media_type": "light_novel",
-      "ndl_title": "私の怪談師はポンコツ可愛い : 怪談収集はデートに含まれますか?",
-      "publisher_ja": "スクウェア・エニックス",
-      "label": "ガンガンコミックスup!",
-      "label_raw": "ガンガンコミックスup!",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034858259"
     },
     {
       "title_ja": "紫色のクオリア",
@@ -4004,22 +3740,6 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032096468"
     },
     {
-      "title_ja": "はなにあらし",
-      "media_type": "manga",
-      "ndl_title": "はなにあらし : Nanoha to Chidori",
-      "publisher_ja": "小学館",
-      "label": "サンデーうぇぶり少年サンデーコミックス",
-      "label_raw": "サンデーうぇぶり少年サンデーコミックス",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I028920319"
-    },
-    {
       "title_ja": "ふたりはだいたいこんなかんじ",
       "media_type": "manga",
       "ndl_title": "ふたりはだいたいこんなかんじ",
@@ -4066,22 +3786,6 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030741352"
-    },
-    {
-      "title_ja": "やがて君になる",
-      "media_type": "manga",
-      "ndl_title": "やがて君になる公式コミックアンソロジー",
-      "publisher_ja": "KADOKAWA",
-      "label": "電撃コミックスNEXT",
-      "label_raw": "電撃コミックスNEXT ; N295-01",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029389613"
     },
     {
       "title_ja": "アネモネは熱を帯びる",
@@ -4178,23 +3882,6 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034858217"
-    },
-    {
-      "title_ja": "ケイヤクシマイ",
-      "media_type": "manga",
-      "ndl_title": "ケイヤクシマイ【分冊版】　11",
-      "publisher_ja": "KADOKAWA",
-      "label": "MFC　キューンシリーズ",
-      "label_raw": "MFC　キューンシリーズ",
-      "isbn": null,
-      "release_date": "2023-12-27",
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "電子書籍・電子雑誌",
-        "デジタル"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I04000000A16555000000"
     },
     {
       "title_ja": "ストロベリー・フィールズをもう一度",
@@ -4373,22 +4060,6 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030357766"
     },
     {
-      "title_ja": "ヴァンピアーズ",
-      "media_type": "manga",
-      "ndl_title": "ヴァンピアーズ : VAMPEERZ,MY PEER VAMPIRES",
-      "publisher_ja": "小学館",
-      "label": "サンデーGXコミックス",
-      "label_raw": "サンデーGXコミックス",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029860138"
-    },
-    {
       "title_ja": "一度だけでも、後悔してます。",
       "media_type": "manga",
       "ndl_title": "一度だけでも、後悔してます。",
@@ -4467,40 +4138,6 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031868316"
-    },
-    {
-      "title_ja": "付き合ってあげてもいいかな",
-      "media_type": "manga",
-      "ndl_title": "付き合ってあげてもいいかな【単話】　1",
-      "publisher_ja": "小学館",
-      "label": "裏サンデー女子部",
-      "label_raw": "裏サンデー女子部",
-      "isbn": null,
-      "release_date": "2019-01-11",
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "電子書籍・電子雑誌",
-        "デジタル"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I09D056840000d0000000"
-    },
-    {
-      "title_ja": "作りたい女と食べたい女",
-      "media_type": "manga",
-      "ndl_title": "作りたい女と食べたい女【分冊版】　28",
-      "publisher_ja": "KADOKAWA",
-      "label": "it COMICS",
-      "label_raw": "it COMICS",
-      "isbn": null,
-      "release_date": "2023-06-15",
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "電子書籍・電子雑誌",
-        "デジタル"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I04000000A15200100000"
     },
     {
       "title_ja": "割り切った関係ですから。",
@@ -4773,22 +4410,6 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031671140"
-    },
-    {
-      "title_ja": "志乃と恋",
-      "media_type": "manga",
-      "ndl_title": "志乃と恋Future",
-      "publisher_ja": "KADOKAWA",
-      "label": "富士見ファンタジア文庫",
-      "label_raw": "富士見ファンタジア文庫 ; ち-1-1-1",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033918734"
     },
     {
       "title_ja": "恋より青く",
@@ -5112,22 +4733,6 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029183983"
     },
     {
-      "title_ja": "草薙先生は試されている",
-      "media_type": "manga",
-      "ndl_title": "草薙先生は試されている。",
-      "publisher_ja": "星海社",
-      "label": "星海社COMICS",
-      "label_raw": "星海社COMICS",
-      "isbn": null,
-      "release_date": null,
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029247341"
-    },
-    {
       "title_ja": "行進子犬に恋文を",
       "media_type": "manga",
       "ndl_title": "行進子犬に恋文を",
@@ -5174,23 +4779,6 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031498115"
-    },
-    {
-      "title_ja": "週に一度クラスメイトを買う話 ～ふたりの時間、言い訳の五千円～",
-      "media_type": "manga",
-      "ndl_title": "週に一度クラスメイトを買う話 ～ふたりの時間、言い訳の五千円～(話売り)　#1",
-      "publisher_ja": "秋田書店",
-      "label": "ヤングチャンピオン・コミックス",
-      "label_raw": "ヤングチャンピオン・コミックス",
-      "isbn": null,
-      "release_date": "2024-09-24",
-      "publication_place": "JP",
-      "categories": [
-        "図書",
-        "電子書籍・電子雑誌",
-        "デジタル"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I2530000D0077650010A1"
     },
     {
       "title_ja": "隣の部屋から喘ぎ声がするんですけど…",
@@ -5241,22 +4829,6 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029551207"
     },
     {
-      "title_ja": "우리집에 놀러와!",
-      "media_type": "manga",
-      "ndl_title": "우리 집에 놀러 와",
-      "publisher_ja": "웅진닷컴",
-      "label": "마술피리 그림책",
-      "label_raw": "마술피리 그림책 ; 20",
-      "isbn": "9788901034966",
-      "release_date": null,
-      "publication_place": "KR",
-      "categories": [
-        "図書",
-        "紙"
-      ],
-      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-IaK200400222"
-    },
-    {
       "title_ja": "７日間限定彼女",
       "media_type": "manga",
       "ndl_title": "7日間限定彼女",
@@ -5272,5 +4844,11 @@
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033942379"
     }
-  ]
+  ],
+  "dropped_mismatched": 15,
+  "clean_note": "已移除 ndl_title 与 title_ja 不一致的记录（前缀匹配时代的误配）；对应 runs 也已移除，下次 --only-missing 会重新查询。",
+  "total": 147,
+  "with_publisher": 146,
+  "with_label": 140,
+  "with_isbn": 5
 }

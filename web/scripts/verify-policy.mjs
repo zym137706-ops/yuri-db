@@ -34,6 +34,7 @@ const {
   UNOFFICIAL_ZH_UNKNOWN_SENTENCE,
   buildQueryString,
   confidenceBand,
+  countActiveFilters,
   containsLinkLikeText,
   displayValue,
   filterAndSortWorks,
@@ -258,6 +259,7 @@ eq(
 eq('media drops only the invalid entry', parseFilters({ media: ['manga', 'nope'] }).media, ['manga']);
 eq('empty input yields defaults', parseFilters(undefined), {
   q: '',
+  author: '',
   status: [],
   media: [],
   yuri: [],
@@ -275,6 +277,7 @@ eq('q is trimmed', parseFilters({ q: '  citrus  ' }).q, 'citrus');
 
 const complex = {
   q: 'citrus',
+  author: '入間人間',
   status: ['ongoing'],
   media: ['manga'],
   yuri: ['uncertain'],
@@ -284,12 +287,36 @@ const complex = {
   sort: 'recent',
 };
 const queryString = buildQueryString(complex);
-check('query string mentions every active dimension', ['q=citrus', 'status=ongoing', 'media=manga', 'yuri=uncertain', 'anime=none', 'zh_tw=yes', 'zh_cn=no', 'sort=recent'].every((part) => queryString.includes(part)), queryString);
+check(
+  'query string mentions every active dimension',
+  ['q=citrus', 'status=ongoing', 'media=manga', 'yuri=uncertain', 'anime=none', 'zh_tw=yes', 'zh_cn=no', 'sort=recent'].every((part) => queryString.includes(part)),
+  queryString,
+);
+eq('author is serialised (percent-encoded) and readable back', new URLSearchParams(queryString).get('author'), '入間人間');
 
 const reparsed = parseFilters(Object.fromEntries(new URLSearchParams(queryString)));
 eq('filters survive a URL round-trip', reparsed, complex);
 eq('defaults serialise to an empty query string', buildQueryString(parseFilters(undefined)), '');
 eq('filter order in the URL is stable', buildQueryString({ ...complex, status: ['ongoing'] }), queryString);
+
+/* ---- author dimension: parsing, encoding, exact matching ------------------ */
+eq('author is trimmed on parse', parseFilters({ author: '  入間人間  ' }).author, '入間人間');
+eq('a blank author means "no creator filter"', parseFilters({ author: '   ' }).author, '');
+eq('author counts as exactly one active filter', countActiveFilters(parseFilters({ author: '入間人間' })), 1);
+eq(
+  'author composes with other dimensions in the active count',
+  countActiveFilters(parseFilters({ author: '入間人間', media: 'manga' })),
+  2,
+);
+
+const cjkAuthor = '入間人間';
+const cjkAuthorQuery = buildQueryString(parseFilters({ author: cjkAuthor }));
+check('a CJK author name is percent-encoded, not written raw', !cjkAuthorQuery.includes(cjkAuthor), cjkAuthorQuery);
+eq(
+  'a CJK author name survives the URL round-trip exactly',
+  parseFilters(Object.fromEntries(new URLSearchParams(cjkAuthorQuery))).author,
+  cjkAuthor,
+);
 
 /* ================================================================== *
  * 6. Filtering against the real dataset
@@ -367,6 +394,49 @@ check(
   `searching by author "${author}" finds ${authorWork.slug}`,
   bySlug(byAuthor).includes(authorWork.slug),
   bySlug(byAuthor).join(','),
+);
+
+/* ---- author filter: exact match over authors ∪ illustrators -------------- */
+const creatorName = author;
+const expectedCreatorSlugs = works
+  .filter((w) => (w.authors ?? []).includes(creatorName) || (w.illustrators ?? []).includes(creatorName))
+  .map((w) => w.slug)
+  .sort();
+eq(
+  `author="${creatorName}" returns exactly the works that list it`,
+  bySlug(run({ author: creatorName })),
+  expectedCreatorSlugs,
+);
+check(
+  `every author="${creatorName}" result really lists that name (authors or illustrators)`,
+  run({ author: creatorName }).every(
+    (w) => (w.authors ?? []).includes(creatorName) || (w.illustrators ?? []).includes(creatorName),
+  ),
+);
+
+const illustratorWork = works.find((w) => (w.illustrators ?? []).length > 0);
+const illustratorName = illustratorWork.illustrators[0];
+const illustratorMatches = run({ author: illustratorName });
+check(
+  `author="${illustratorName}" also matches the illustrators array (${illustratorMatches.length} works)`,
+  illustratorMatches.some((w) => w.slug === illustratorWork.slug),
+);
+check(
+  `every author="${illustratorName}" result lists it as author or illustrator`,
+  illustratorMatches.every(
+    (w) => (w.authors ?? []).includes(illustratorName) || (w.illustrators ?? []).includes(illustratorName),
+  ),
+);
+
+const ghostAuthor = '絶対に存在しない作者名';
+eq(`author="${ghostAuthor}" returns 0 works`, run({ author: ghostAuthor }).length, 0);
+const authorPrefix = creatorName.slice(0, Math.max(1, creatorName.length - 1));
+check(
+  `author matching is exact, not a substring ("${authorPrefix}" only returns exact matches)`,
+  run({ author: authorPrefix }).every(
+    (w) => (w.authors ?? []).includes(authorPrefix) || (w.illustrators ?? []).includes(authorPrefix),
+  ),
+  bySlug(run({ author: authorPrefix })).join(','),
 );
 
 const slugWork = works[5];
@@ -531,6 +601,25 @@ check(
   `all ${filterMatrix.length} filter combinations (every dimension × both sorts) return the identical work set and order`,
   filterMismatch === null,
   filterMismatch ? JSON.stringify(filterMismatch) : undefined,
+);
+
+/* ---- every real creator name: full dataset vs slim projection ------------ */
+const allCreatorNames = [
+  ...new Set(works.flatMap((w) => [...(w.authors ?? []), ...(w.illustrators ?? [])])),
+].sort();
+
+const creatorFilterMismatch = allCreatorNames
+  .map((name) => ({
+    name,
+    full: JSON.stringify(filterAndSortWorks(works, parseFilters({ author: name })).map((w) => w.slug)),
+    slim: JSON.stringify(filterAndSortWorks(slimWorks, parseFilters({ author: name })).map((w) => w.slug)),
+  }))
+  .find((entry) => entry.full !== entry.slim);
+
+check(
+  `all ${allCreatorNames.length} real creator names filter identically from the full dataset and the slim projection`,
+  creatorFilterMismatch === undefined,
+  creatorFilterMismatch ? JSON.stringify(creatorFilterMismatch) : undefined,
 );
 
 /** The searchable text must survive the projection too. */

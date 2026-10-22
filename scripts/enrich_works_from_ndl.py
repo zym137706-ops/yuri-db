@@ -70,16 +70,26 @@ def is_book(rec: dict) -> bool:
 
 
 def best_match(title: str, records: list[dict]) -> dict | None:
+    """只接受**精确**标题匹配。
+
+    这里刻意不做前缀匹配。曾经做过，结果 162 条补全里有 15 条是错的，例如：
+
+        やがて君になる   -> やがて君になる公式コミックアンソロジー（レーベル 電撃コミックスNEXT）
+        志乃と恋         -> 志乃と恋Future（不同作品）
+        安達としまむら   -> 安達としまむら（９）（其实是漫画版，レーベル 電撃コミックスNEXT）
+        ケイヤクシマイ   -> ケイヤクシマイ【分冊版】11
+
+    后果是把**漫画的レーベル / ISBN / 发售日**写进了轻小说记录。NDL 的書志里
+    轻小说与漫画是两条不同记录（前者 seriesTitle 通常是ノベルレーベル，
+    后者是コミックスレーベル），所以「标题完全一致」是最可靠的分界。
+    少补几条 publisher 远好过补错一条。
+    """
     key = norm_title(title)
-    books = [r for r in records if is_book(r) and r.get("ndl_title")]
-    for r in books:
+    for r in records:
+        if not is_book(r) or not r.get("ndl_title"):
+            continue
         if norm_title(r["ndl_title"]) == key:
             return r
-    if len(key) >= 4:
-        for r in books:
-            nt = norm_title(r["ndl_title"])
-            if nt.startswith(key) or key.startswith(nt):
-                return r
     return None
 
 

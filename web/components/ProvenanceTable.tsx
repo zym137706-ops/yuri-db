@@ -9,9 +9,38 @@
  * 編輯判斷 / editorial badge and **no source link at all**, even if the record
  * happens to carry a URL (the schema allows `source_url` to be "" for editorial).
  */
+import { AuthorLinks } from './AuthorLinks';
 import { BasisBadge, ConfidenceBar, Pill, UnknownValue } from './ui';
 import { formatTimestamp } from '@/lib/policy';
 import type { FieldView } from '@/lib/types';
+
+/**
+ * Creator fields (`authors` / `illustrators`) are the only array fields whose
+ * individual values are clickable: each name links to `/?author=<name>` so a
+ * reader can jump from one work to every work by the same person. Everything
+ * else keeps the generic "value or unknown" rendering — including the exact
+ * joined-string form, which is still used for other string-array fields.
+ */
+function ValueCell({ view }: { view: FieldView }) {
+  if (view.isUnknown) return <UnknownValue />;
+
+  if ((view.field === 'authors' || view.field === 'illustrators') && Array.isArray(view.raw)) {
+    return <AuthorLinks names={view.raw.map((name) => String(name))} />;
+  }
+
+  if (view.token && view.token !== view.value) {
+    return (
+      <span className="inline-flex flex-wrap items-center gap-1">
+        <span className="font-medium">{view.value}</span>
+        <Pill tone="plain" title="原始 token">
+          {view.token}
+        </Pill>
+      </span>
+    );
+  }
+
+  return <span className="break-words">{view.value}</span>;
+}
 
 function SourceCell({ view }: { view: FieldView }) {
   const source = view.source;
@@ -79,18 +108,7 @@ export function ProvenanceTable({ views }: { views: FieldView[] }) {
                 <div className="mono text-zinc-500">{view.field}</div>
               </td>
               <td>
-                {view.isUnknown ? (
-                  <UnknownValue />
-                ) : view.token && view.token !== view.value ? (
-                  <span className="inline-flex flex-wrap items-center gap-1">
-                    <span className="font-medium">{view.value}</span>
-                    <Pill tone="plain" title="原始 token">
-                      {view.token}
-                    </Pill>
-                  </span>
-                ) : (
-                  <span className="break-words">{view.value}</span>
-                )}
+                <ValueCell view={view} />
               </td>
               <td>
                 <div className="flex flex-col gap-1">

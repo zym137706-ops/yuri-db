@@ -13,6 +13,7 @@
  *      are cross-checked against (3) row by row so a stale report is visible.
  */
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 import { EmptyState, SectionCard, UnknownValue } from '@/components/ui';
 import {
@@ -624,7 +625,7 @@ export default function DataQualityPage() {
                   Object.keys(animeLive.byBasis).join('、')
                 )}
                 ，即「第三方資料庫」，來源為 AniList GraphQL API。沒有任何一個動畫欄位是
-                <code className="mono">official</code>；詳見 <a href="/anime">百合動畫目錄</a>每筆頁面的溯源區塊。
+                <code className="mono">official</code>；詳見 <Link href="/anime">百合動畫目錄</Link>每筆頁面的溯源區塊。
               </p>
               <p className="mt-1">
                 另外，<code className="mono">field_confidence</code> 內有{' '}

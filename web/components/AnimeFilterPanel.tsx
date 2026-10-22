@@ -2,7 +2,7 @@
  * Search + filter controls for /anime.
  *
  * Same design as components/FilterPanel.tsx (the Work version) and for the same
- * reasons: a plain `<form method="get" action="/anime/">` maps every control 1:1
+ * reasons: a plain `<form method="get" action={FORM_ACTION}>` maps every control 1:1
  * onto a query-string parameter, so
  *   - it works with no client-side JavaScript at all (the browser navigates and
  *     the client bundle re-reads the query string),
@@ -33,6 +33,15 @@ import {
   ANIME_STATUS_LABELS,
   labelOf,
 } from '@/lib/anime-labels';
+
+/**
+ * `NEXT_PUBLIC_BASE_PATH` 在构建期内联；不带上这个前缀，表单在 GitHub Pages
+ * **项目站**（从 /<repo>/ 提供）上提交时会跳到 `https://host/anime/` —— 少了
+ * /<repo> 段，直接 404。本地根路径下永远复现不出来，所以必须显式加。
+ * `next/link` 会自动处理前缀，但原生 `<form action>` 不会。
+ */
+const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? '').replace(/\/+$/, '');
+const FORM_ACTION = `${BASE_PATH}/anime/`;
 
 export interface AnimeFilterOptions {
   adaptations: TokenOption[];
@@ -94,7 +103,7 @@ export function AnimeFilterPanel({
   return (
     <form
       method="get"
-      action="/anime/"
+      action={FORM_ACTION}
       className="space-y-4 rounded-lg border border-zinc-200 bg-white p-4 shadow-sm"
     >
       <div>

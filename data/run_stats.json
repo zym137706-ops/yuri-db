@@ -8,9 +8,9 @@
         "url": "https://www.ichijinsha.co.jp/yurihime/",
         "status_kind": "ok",
         "http": 200,
-        "bytes": 42718,
-        "sha256": "c009793d57838ee2",
-        "raw": "data/raw/ja_yurihime/20261019T021638-c009793d.html",
+        "bytes": 52593,
+        "sha256": "a02b62d9ceb390bb",
+        "raw": "data/raw/ja_yurihime/20261022T012953-a02b62d9.html",
         "error": ""
       }
     ],
@@ -29,7 +29,7 @@
         "http": 200,
         "bytes": 51662,
         "sha256": "5eeb38c195274893",
-        "raw": "data/raw/ja_galette/20261019T021641-5eeb38c1.html",
+        "raw": "data/raw/ja_galette/20261022T012956-5eeb38c1.html",
         "error": ""
       }
     ],
@@ -47,7 +47,7 @@
         "status_kind": "failed",
         "http": 403,
         "bytes": 5623,
-        "sha256": "9dc9fc8702091752",
+        "sha256": "dab6a98390f6f489",
         "raw": "",
         "error": "HTTP 403"
       }

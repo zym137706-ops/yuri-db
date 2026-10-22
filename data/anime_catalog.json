@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T09:28:52.533644+00:00",
+  "generated_at": "2026-10-22T06:28:51.600112+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,25 +110,25 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 26,
-      "total": 876
+      "items": 27,
+      "total": 877
     }
   ],
-  "raw_fetched": 876,
+  "raw_fetched": 877,
   "dropped": {
     "adult": 402,
-    "non_jp": 17,
-    "low_rank": 159,
+    "non_jp": 16,
+    "low_rank": 160,
     "no_title": 0
   },
-  "total": 298,
+  "total": 299,
   "distribution": {
     "format": {
       "tv": 178,
-      "movie": 35,
+      "movie": 34,
       "ova": 26,
-      "ona": 23,
-      "special": 19,
+      "ona": 24,
+      "special": 20,
       "music": 8,
       "tv_short": 7,
       "other": 2
@@ -136,16 +136,16 @@
     "adaptation_source": {
       "manga": 113,
       "original": 109,
-      "other": 33,
+      "other": 31,
       "light_novel": 28,
-      "game": 7,
-      "unknown": 5,
+      "game": 9,
+      "unknown": 6,
       "visual_novel": 3
     },
     "status": {
-      "finished": 285,
-      "announced": 11,
-      "airing": 2
+      "finished": 286,
+      "announced": 10,
+      "airing": 3
     }
   },
   "entries": [
@@ -180,7 +180,7 @@
         }
       ],
       "average_score": 54,
-      "popularity": 11635,
+      "popularity": 11673,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -222,8 +222,8 @@
           "voice_actor": null
         }
       ],
-      "average_score": 56,
-      "popularity": 2537,
+      "average_score": 57,
+      "popularity": 2547,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -264,7 +264,7 @@
         }
       ],
       "average_score": 59,
-      "popularity": 4376,
+      "popularity": 4392,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -307,7 +307,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 17592,
+      "popularity": 17641,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -354,7 +354,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 32679,
+      "popularity": 32804,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -391,7 +391,7 @@
         }
       ],
       "average_score": 56,
-      "popularity": 1787,
+      "popularity": 1797,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -423,7 +423,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": 57,
-      "popularity": 704,
+      "popularity": 716,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -486,7 +486,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 23857,
+      "popularity": 23909,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -549,56 +549,13 @@
         }
       ],
       "average_score": 82,
-      "popularity": 19006,
+      "popularity": 19051,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21673-ZXlqf3DGJph9.png",
       "cover_source_url": "https://anilist.co/anime/21673",
       "source_url": "https://anilist.co/anime/21673",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a7b40f2e4b89ce24eee657536",
-      "slug": "ki-ni-natteru-hito-ga-otoko-ja-nakatta",
-      "anilist_id": 186822,
-      "mal_id": 61035,
-      "title_ja": "気になってる人が男じゃなかった",
-      "title_romaji": "Ki ni Natteru Hito ga Otoko ja Nakatta",
-      "title_en": "The Guy She Was Interested In Wasn't a Guy At All",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "announced",
-      "start_date": "2027-01-08",
-      "end_date": null,
-      "season": "winter",
-      "season_year": 2027,
-      "episode_count": null,
-      "episode_duration_min": null,
-      "studios": [
-        "CloverWorks"
-      ],
-      "main_cast": [
-        {
-          "character": "大沢綾",
-          "voice_actor": "鬼頭明里"
-        },
-        {
-          "character": "古賀美月",
-          "voice_actor": "伊瀬茉莉也"
-        }
-      ],
-      "average_score": null,
-      "popularity": 23591,
-      "yuri_tag_rank": 100,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186822-9zsR5NtOP0yJ.jpg",
-      "cover_source_url": "https://anilist.co/anime/186822",
-      "source_url": "https://anilist.co/anime/186822",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -635,7 +592,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 56750,
+      "popularity": 56949,
       "yuri_tag_rank": 99,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -679,7 +636,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 46880,
+      "popularity": 47105,
       "yuri_tag_rank": 98,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -722,15 +679,15 @@
         }
       ],
       "average_score": 78,
-      "popularity": 138850,
+      "popularity": 139377,
       "yuri_tag_rank": 98,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx101573-Gql3Q3UX1jcu.jpg",
       "cover_source_url": "https://anilist.co/anime/101573",
       "source_url": "https://anilist.co/anime/101573",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cf7b03b90dbcdf0ad11afc0c5",
+      "related_work_slug": "w-f7b03b90db"
     },
     {
       "id": "a8c755743ac4e9331d43f9443",
@@ -773,15 +730,15 @@
         }
       ],
       "average_score": 76,
-      "popularity": 56495,
+      "popularity": 56980,
       "yuri_tag_rank": 98,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184591-jRXZ29bN61Zc.jpg",
       "cover_source_url": "https://anilist.co/anime/184591",
       "source_url": "https://anilist.co/anime/184591",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cb2d4c38565764429a60a2e9f",
+      "related_work_slug": "w-dbbfeb4672"
     },
     {
       "id": "a3d8abb0390ba7d63ebb593ed",
@@ -816,15 +773,15 @@
         }
       ],
       "average_score": 66,
-      "popularity": 71740,
+      "popularity": 71926,
       "yuri_tag_rank": 98,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20047-QcFqHoZNuCIH.png",
       "cover_source_url": "https://anilist.co/anime/20047",
       "source_url": "https://anilist.co/anime/20047",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "ce0a118c44e1a134bb52e3af4",
+      "related_work_slug": "trick"
     },
     {
       "id": "a8a139b1743f16ea14a4e1d15",
@@ -859,15 +816,15 @@
         }
       ],
       "average_score": 61,
-      "popularity": 145012,
+      "popularity": 145487,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97832-uMSoHPCn5BnJ.png",
       "cover_source_url": "https://anilist.co/anime/97832",
       "source_url": "https://anilist.co/anime/97832",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c16b913d6d1ad0c5a17ed503e",
+      "related_work_slug": "citrus"
     },
     {
       "id": "a07948cc4037e71efc2873e84",
@@ -914,7 +871,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 23474,
+      "popularity": 23731,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -961,15 +918,15 @@
         }
       ],
       "average_score": 61,
-      "popularity": 20628,
+      "popularity": 20660,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20604-dBMA1S5sNRxy.jpg",
       "cover_source_url": "https://anilist.co/anime/20604",
       "source_url": "https://anilist.co/anime/20604",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c1aff2edbd0ad70348fee7699",
+      "related_work_slug": "w-7652541622"
     },
     {
       "id": "a36747727b6e6d05554dfc9cd",
@@ -1004,7 +961,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 68416,
+      "popularity": 68925,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1047,7 +1004,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 57912,
+      "popularity": 58955,
       "yuri_tag_rank": 96,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1056,6 +1013,49 @@
       "source_url": "https://anilist.co/anime/187260",
       "related_work_id": "c216d561d97367a7981287c9e",
       "related_work_slug": "w-216d561d97"
+    },
+    {
+      "id": "a7b40f2e4b89ce24eee657536",
+      "slug": "ki-ni-natteru-hito-ga-otoko-ja-nakatta",
+      "anilist_id": 186822,
+      "mal_id": 61035,
+      "title_ja": "気になってる人が男じゃなかった",
+      "title_romaji": "Ki ni Natteru Hito ga Otoko ja Nakatta",
+      "title_en": "The Guy She Was Interested In Wasn't a Guy At All",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "announced",
+      "start_date": "2027-01-08",
+      "end_date": null,
+      "season": "winter",
+      "season_year": 2027,
+      "episode_count": null,
+      "episode_duration_min": null,
+      "studios": [
+        "CloverWorks"
+      ],
+      "main_cast": [
+        {
+          "character": "大沢綾",
+          "voice_actor": "鬼頭明里"
+        },
+        {
+          "character": "古賀美月",
+          "voice_actor": "伊瀬茉莉也"
+        }
+      ],
+      "average_score": null,
+      "popularity": 31210,
+      "yuri_tag_rank": 96,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186822-9zsR5NtOP0yJ.jpg",
+      "cover_source_url": "https://anilist.co/anime/186822",
+      "source_url": "https://anilist.co/anime/186822",
+      "related_work_id": "c5c3ce4734bde4ea0f2c05fdf",
+      "related_work_slug": "w-5c3ce4734b"
     },
     {
       "id": "adcf050d5a904052d96d72a02",
@@ -1097,8 +1097,8 @@
           "voice_actor": "花井美春"
         }
       ],
-      "average_score": 72,
-      "popularity": 20563,
+      "average_score": 71,
+      "popularity": 20720,
       "yuri_tag_rank": 95,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1153,15 +1153,15 @@
         }
       ],
       "average_score": 74,
-      "popularity": 79036,
+      "popularity": 79583,
       "yuri_tag_rank": 95,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx162780-brAdNEROhZdG.jpg",
       "cover_source_url": "https://anilist.co/anime/162780",
       "source_url": "https://anilist.co/anime/162780",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "ca6cc05bca02e0092bdfcda7f",
+      "related_work_slug": "w-a6cc05bca0"
     },
     {
       "id": "a9ffb8689d96e88e7531f796e",
@@ -1200,7 +1200,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 17238,
+      "popularity": 17281,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1247,15 +1247,15 @@
         }
       ],
       "average_score": 68,
-      "popularity": 34028,
+      "popularity": 34088,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20827-PiIRENAxPuf6.png",
       "cover_source_url": "https://anilist.co/anime/20827",
       "source_url": "https://anilist.co/anime/20827",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c7cdca30e8b9eb17aca80921d",
+      "related_work_slug": "w-7cdca30e8b"
     },
     {
       "id": "a62740ea5706a37275dd00116",
@@ -1290,7 +1290,7 @@
         }
       ],
       "average_score": 55,
-      "popularity": 40315,
+      "popularity": 40486,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1337,7 +1337,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 16414,
+      "popularity": 16475,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1380,15 +1380,15 @@
         }
       ],
       "average_score": null,
-      "popularity": 7296,
+      "popularity": 7928,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184321-NMRDVG3iNXxh.jpg",
       "cover_source_url": "https://anilist.co/anime/184321",
       "source_url": "https://anilist.co/anime/184321",
-      "related_work_id": "c18c9028c75633faa0f57d545",
-      "related_work_slug": "w-18c9028c75"
+      "related_work_id": "c7573b39178e7c44403d0b66d",
+      "related_work_slug": "w-cdf24065f7"
     },
     {
       "id": "a3480edbe10a337bc49508c21",
@@ -1431,15 +1431,15 @@
         }
       ],
       "average_score": 68,
-      "popularity": 28047,
+      "popularity": 28116,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx6164-xbfgW90cKuxo.jpg",
       "cover_source_url": "https://anilist.co/anime/6164",
       "source_url": "https://anilist.co/anime/6164",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cdf865a9868259588cc2e78f8",
+      "related_work_slug": "w-df865a9868"
     },
     {
       "id": "a8ddda5ded06293b6cee6cd3e",
@@ -1465,7 +1465,7 @@
       ],
       "main_cast": [],
       "average_score": 73,
-      "popularity": 6187,
+      "popularity": 6213,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1508,15 +1508,15 @@
         }
       ],
       "average_score": 67,
-      "popularity": 20325,
+      "popularity": 20391,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx6203-9eEIo87h3B5Z.png",
       "cover_source_url": "https://anilist.co/anime/6203",
       "source_url": "https://anilist.co/anime/6203",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c405c782a379988b194c22c29",
+      "related_work_slug": "w-405c782a37"
     },
     {
       "id": "ac95867cf5c8bfd19b8da5521",
@@ -1576,7 +1576,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 1102,
+      "popularity": 1110,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1618,16 +1618,16 @@
           "voice_actor": "宮本侑芽"
         }
       ],
-      "average_score": 64,
-      "popularity": 24186,
+      "average_score": 65,
+      "popularity": 24270,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108487-wflHu4wpG0Nd.jpg",
       "cover_source_url": "https://anilist.co/anime/108487",
       "source_url": "https://anilist.co/anime/108487",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c39fa8f308485238d6ed2323f",
+      "related_work_slug": "w-a54514c0be"
     },
     {
       "id": "ae32c171f7c47b8ce92f8f74f",
@@ -1662,15 +1662,15 @@
         }
       ],
       "average_score": 82,
-      "popularity": 37579,
+      "popularity": 38174,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187869-LUn3dyTzuKUq.jpg",
       "cover_source_url": "https://anilist.co/anime/187869",
       "source_url": "https://anilist.co/anime/187869",
-      "related_work_id": "c5df306e26bcfe29857a24fec",
-      "related_work_slug": "w-5df306e26b"
+      "related_work_id": "c803245e0ff2a71825a87b6e4",
+      "related_work_slug": "w-803245e0ff"
     },
     {
       "id": "af2718e82f639c18071e11839",
@@ -1705,15 +1705,15 @@
         }
       ],
       "average_score": 70,
-      "popularity": 78156,
+      "popularity": 78377,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx109287-yHDlERSIEjsL.jpg",
       "cover_source_url": "https://anilist.co/anime/109287",
       "source_url": "https://anilist.co/anime/109287",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c3c34a1ef9cf58477b46bc114",
+      "related_work_slug": "w-3c34a1ef9c"
     },
     {
       "id": "a9f5e9cf1389977fb186ad934",
@@ -1749,7 +1749,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 27415,
+      "popularity": 27537,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1796,15 +1796,15 @@
         }
       ],
       "average_score": 52,
-      "popularity": 21296,
+      "popularity": 21352,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100762-erCb6yxKQ6Qc.jpg",
       "cover_source_url": "https://anilist.co/anime/100762",
       "source_url": "https://anilist.co/anime/100762",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "ca06ff95b41e9161a0d45944f",
+      "related_work_slug": "to-lie"
     },
     {
       "id": "aaabe055c9b8eac8ae485b840",
@@ -1837,7 +1837,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 6791,
+      "popularity": 6813,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1884,7 +1884,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 14699,
+      "popularity": 14736,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1931,7 +1931,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 13841,
+      "popularity": 13876,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1977,8 +1977,8 @@
           "voice_actor": "小林沙苗"
         }
       ],
-      "average_score": 59,
-      "popularity": 7281,
+      "average_score": 60,
+      "popularity": 7307,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2026,7 +2026,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 4921,
+      "popularity": 4948,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2069,7 +2069,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 22387,
+      "popularity": 22485,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2101,7 +2101,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": null,
-      "popularity": 13991,
+      "popularity": 14104,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2152,15 +2152,15 @@
         }
       ],
       "average_score": 76,
-      "popularity": 91016,
+      "popularity": 91518,
       "yuri_tag_rank": 91,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153629-LNRlLFrbDTi8.jpg",
       "cover_source_url": "https://anilist.co/anime/153629",
       "source_url": "https://anilist.co/anime/153629",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c001687ba848cade32a439974",
+      "related_work_slug": "w-001687ba84"
     },
     {
       "id": "ac34b412f44647003253d5b3d",
@@ -2203,7 +2203,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 34494,
+      "popularity": 34552,
       "yuri_tag_rank": 90,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2258,7 +2258,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 13342,
+      "popularity": 13390,
       "yuri_tag_rank": 90,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2318,15 +2318,15 @@
         }
       ],
       "average_score": 72,
-      "popularity": 25871,
+      "popularity": 25914,
       "yuri_tag_rank": 89,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5671-XVYut4FxhrLQ.png",
       "cover_source_url": "https://anilist.co/anime/5671",
       "source_url": "https://anilist.co/anime/5671",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c16aa1742daefabd396a1f58f",
+      "related_work_slug": "saki"
     },
     {
       "id": "a1b5c456267a382bacc1f2b93",
@@ -2361,15 +2361,15 @@
         }
       ],
       "average_score": 48,
-      "popularity": 45753,
+      "popularity": 45900,
       "yuri_tag_rank": 89,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97833-R2FRkUNvngIf.jpg",
       "cover_source_url": "https://anilist.co/anime/97833",
       "source_url": "https://anilist.co/anime/97833",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c7edfb4d28e01245b48350717",
+      "related_work_slug": "ntr"
     },
     {
       "id": "a793c1a4957a6721cac1c59ef",
@@ -2408,15 +2408,15 @@
         }
       ],
       "average_score": 70,
-      "popularity": 54563,
+      "popularity": 54924,
       "yuri_tag_rank": 88,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159808-svpzcGb6ig4X.jpg",
       "cover_source_url": "https://anilist.co/anime/159808",
       "source_url": "https://anilist.co/anime/159808",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c506959c2949ba96b18dabc25",
+      "related_work_slug": "w-506959c294"
     },
     {
       "id": "ad40e306a8b192fa4db8f396e",
@@ -2475,7 +2475,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12304,
+      "popularity": 12354,
       "yuri_tag_rank": 88,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2518,7 +2518,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 39966,
+      "popularity": 40098,
       "yuri_tag_rank": 88,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2565,15 +2565,15 @@
         }
       ],
       "average_score": 69,
-      "popularity": 74587,
+      "popularity": 75060,
       "yuri_tag_rank": 88,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx129193-pT3W5PpiMAUB.png",
       "cover_source_url": "https://anilist.co/anime/129193",
       "source_url": "https://anilist.co/anime/129193",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c4d7b145f648dcd3a6e58757b",
+      "related_work_slug": "w-b1e3e3e078"
     },
     {
       "id": "a3a5ac942fd3ac59ac3077524",
@@ -2597,7 +2597,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": 77,
-      "popularity": 1484,
+      "popularity": 1491,
       "yuri_tag_rank": 88,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2646,7 +2646,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 47363,
+      "popularity": 47494,
       "yuri_tag_rank": 87,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2694,15 +2694,15 @@
         }
       ],
       "average_score": 84,
-      "popularity": 63322,
+      "popularity": 64287,
       "yuri_tag_rank": 87,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx201903-v43gxQKw8Tc8.jpg",
       "cover_source_url": "https://anilist.co/anime/201903",
       "source_url": "https://anilist.co/anime/201903",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c52d04735b5afd56466458db8",
+      "related_work_slug": "w-fa5768cf0d"
     },
     {
       "id": "ab55f86e18e0b038b8a5930f5",
@@ -2742,7 +2742,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 2326,
+      "popularity": 2365,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2789,7 +2789,7 @@
         }
       ],
       "average_score": 52,
-      "popularity": 44300,
+      "popularity": 44483,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2832,56 +2832,72 @@
         }
       ],
       "average_score": 65,
-      "popularity": 28869,
+      "popularity": 29170,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191718-FeR6bnlkqF0J.png",
       "cover_source_url": "https://anilist.co/anime/191718",
       "source_url": "https://anilist.co/anime/191718",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cdcfc4563e7fe6a757d27ff0d",
+      "related_work_slug": "w-dcfc4563e7"
     },
     {
-      "id": "a192181da0bf11f43e4ae6486",
-      "slug": "shoujo-kakumei-utena",
-      "anilist_id": 440,
-      "mal_id": 440,
-      "title_ja": "少女革命ウテナ",
-      "title_romaji": "Shoujo Kakumei Utena",
-      "title_en": "Revolutionary Girl Utena",
+      "id": "a9990a2c8800adc1ef8abbaf7",
+      "slug": "mahou-shoujo-madokamagica-walpurgis-no-kaiten",
+      "anilist_id": 133007,
+      "mal_id": 48820,
+      "title_ja": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+      "title_romaji": "Mahou Shoujo Madoka☆Magica: Walpurgis no Kaiten",
+      "title_en": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
       "title_zh_tw": null,
       "title_zh_cn": null,
-      "format": "tv",
+      "format": "movie",
       "adaptation_source": "original",
       "status": "finished",
-      "start_date": "1997-04-02",
-      "end_date": "1997-12-24",
-      "season": "spring",
-      "season_year": 1997,
-      "episode_count": 39,
-      "episode_duration_min": 23,
+      "start_date": "2026-08-28",
+      "end_date": "2026-08-28",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 1,
+      "episode_duration_min": 120,
       "studios": [
-        "J.C.STAFF"
+        "Shaft"
       ],
       "main_cast": [
         {
-          "character": "天上ウテナ",
-          "voice_actor": "川上とも子"
+          "character": "鹿目まどか",
+          "voice_actor": "悠木碧"
         },
         {
-          "character": "姫宮アンシー",
-          "voice_actor": "渕崎ゆり子"
+          "character": "暁美ほむら",
+          "voice_actor": "斎藤千和"
+        },
+        {
+          "character": "巴マミ",
+          "voice_actor": "水橋かおり"
+        },
+        {
+          "character": "美樹さやか",
+          "voice_actor": "喜多村英梨"
+        },
+        {
+          "character": "佐倉杏子",
+          "voice_actor": "野中藍"
+        },
+        {
+          "character": "キュゥべぇ",
+          "voice_actor": "加藤英美里"
         }
       ],
-      "average_score": 83,
-      "popularity": 81691,
+      "average_score": 82,
+      "popularity": 50480,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b440-r4l3N5WGgUOZ.jpg",
-      "cover_source_url": "https://anilist.co/anime/440",
-      "source_url": "https://anilist.co/anime/440",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133007-5gOUXDvzxy9S.jpg",
+      "cover_source_url": "https://anilist.co/anime/133007",
+      "source_url": "https://anilist.co/anime/133007",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -2918,7 +2934,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 19701,
+      "popularity": 19740,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2959,7 +2975,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 581,
+      "popularity": 585,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2994,7 +3010,7 @@
       ],
       "main_cast": [],
       "average_score": 67,
-      "popularity": 1016,
+      "popularity": 1018,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3041,7 +3057,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 9971,
+      "popularity": 9999,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3100,7 +3116,7 @@
         }
       ],
       "average_score": 57,
-      "popularity": 8119,
+      "popularity": 8140,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3167,72 +3183,13 @@
         }
       ],
       "average_score": 57,
-      "popularity": 7176,
+      "popularity": 7206,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/21413-fPvW8uD5XIfM.jpg",
       "cover_source_url": "https://anilist.co/anime/21413",
       "source_url": "https://anilist.co/anime/21413",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a9990a2c8800adc1ef8abbaf7",
-      "slug": "mahou-shoujo-madokamagica-walpurgis-no-kaiten",
-      "anilist_id": 133007,
-      "mal_id": 48820,
-      "title_ja": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-      "title_romaji": "Mahou Shoujo Madoka☆Magica: Walpurgis no Kaiten",
-      "title_en": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "movie",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2026-08-28",
-      "end_date": "2026-08-28",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 1,
-      "episode_duration_min": 120,
-      "studios": [
-        "Shaft"
-      ],
-      "main_cast": [
-        {
-          "character": "鹿目まどか",
-          "voice_actor": "悠木碧"
-        },
-        {
-          "character": "暁美ほむら",
-          "voice_actor": "斎藤千和"
-        },
-        {
-          "character": "巴マミ",
-          "voice_actor": "水橋かおり"
-        },
-        {
-          "character": "美樹さやか",
-          "voice_actor": "喜多村英梨"
-        },
-        {
-          "character": "佐倉杏子",
-          "voice_actor": "野中藍"
-        },
-        {
-          "character": "キュゥべぇ",
-          "voice_actor": "加藤英美里"
-        }
-      ],
-      "average_score": 82,
-      "popularity": 50016,
-      "yuri_tag_rank": 85,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133007-5gOUXDvzxy9S.jpg",
-      "cover_source_url": "https://anilist.co/anime/133007",
-      "source_url": "https://anilist.co/anime/133007",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -3274,7 +3231,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 9053,
+      "popularity": 9093,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3283,6 +3240,49 @@
       "source_url": "https://anilist.co/anime/167984",
       "related_work_id": null,
       "related_work_slug": null
+    },
+    {
+      "id": "a192181da0bf11f43e4ae6486",
+      "slug": "shoujo-kakumei-utena",
+      "anilist_id": 440,
+      "mal_id": 440,
+      "title_ja": "少女革命ウテナ",
+      "title_romaji": "Shoujo Kakumei Utena",
+      "title_en": "Revolutionary Girl Utena",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "1997-04-02",
+      "end_date": "1997-12-24",
+      "season": "spring",
+      "season_year": 1997,
+      "episode_count": 39,
+      "episode_duration_min": 23,
+      "studios": [
+        "J.C.STAFF"
+      ],
+      "main_cast": [
+        {
+          "character": "天上ウテナ",
+          "voice_actor": "川上とも子"
+        },
+        {
+          "character": "姫宮アンシー",
+          "voice_actor": "渕崎ゆり子"
+        }
+      ],
+      "average_score": 83,
+      "popularity": 82036,
+      "yuri_tag_rank": 85,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b440-r4l3N5WGgUOZ.jpg",
+      "cover_source_url": "https://anilist.co/anime/440",
+      "source_url": "https://anilist.co/anime/440",
+      "related_work_id": "ce0ecf0e59329737e6b174a26",
+      "related_work_slug": "w-e733448458"
     },
     {
       "id": "a832dc0ec30731e0b3910f642",
@@ -3329,7 +3329,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 29290,
+      "popularity": 29449,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3396,7 +3396,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 47190,
+      "popularity": 47277,
       "yuri_tag_rank": 84,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3428,7 +3428,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": 62,
-      "popularity": 6177,
+      "popularity": 6185,
       "yuri_tag_rank": 84,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3471,7 +3471,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 1748,
+      "popularity": 1753,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3518,7 +3518,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 34861,
+      "popularity": 34959,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3569,7 +3569,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 89233,
+      "popularity": 89453,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3612,7 +3612,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 35763,
+      "popularity": 35853,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3679,7 +3679,7 @@
         }
       ],
       "average_score": 87,
-      "popularity": 21324,
+      "popularity": 21440,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3738,7 +3738,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 10886,
+      "popularity": 10902,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3781,7 +3781,7 @@
         }
       ],
       "average_score": 59,
-      "popularity": 5145,
+      "popularity": 5160,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3832,7 +3832,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 18754,
+      "popularity": 18795,
       "yuri_tag_rank": 82,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3900,7 +3900,7 @@
         }
       ],
       "average_score": 51,
-      "popularity": 6350,
+      "popularity": 6375,
       "yuri_tag_rank": 82,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3951,7 +3951,7 @@
         }
       ],
       "average_score": 49,
-      "popularity": 6713,
+      "popularity": 6737,
       "yuri_tag_rank": 82,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4018,7 +4018,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 51859,
+      "popularity": 52039,
       "yuri_tag_rank": 82,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4081,7 +4081,7 @@
         }
       ],
       "average_score": 65,
-      "popularity": 9611,
+      "popularity": 9631,
       "yuri_tag_rank": 81,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4136,7 +4136,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 20962,
+      "popularity": 21195,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4173,7 +4173,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 1052,
+      "popularity": 1049,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4224,7 +4224,7 @@
         }
       ],
       "average_score": 48,
-      "popularity": 2810,
+      "popularity": 2826,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4263,7 +4263,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 33097,
+      "popularity": 33226,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4300,13 +4300,64 @@
         }
       ],
       "average_score": 52,
-      "popularity": 1309,
+      "popularity": 1320,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b169746-wyxr9LLbmiGQ.jpg",
       "cover_source_url": "https://anilist.co/anime/169746",
       "source_url": "https://anilist.co/anime/169746",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a04570a6f21015f8164879cd1",
+      "slug": "comic-girls",
+      "anilist_id": 99131,
+      "mal_id": 35756,
+      "title_ja": "こみっくがーるず",
+      "title_romaji": "Comic Girls",
+      "title_en": "Comic Girls",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2018-04-05",
+      "end_date": "2018-06-21",
+      "season": "spring",
+      "season_year": 2018,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Nexus"
+      ],
+      "main_cast": [
+        {
+          "character": "色川琉姫",
+          "voice_actor": "大西沙織"
+        },
+        {
+          "character": "勝木翼",
+          "voice_actor": "高橋李依"
+        },
+        {
+          "character": "恋塚小夢",
+          "voice_actor": "本渡楓"
+        },
+        {
+          "character": "萌田薫子",
+          "voice_actor": "赤尾ひかる"
+        }
+      ],
+      "average_score": 72,
+      "popularity": 49831,
+      "yuri_tag_rank": 80,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99131-Lnr99AnA1ncY.jpg",
+      "cover_source_url": "https://anilist.co/anime/99131",
+      "source_url": "https://anilist.co/anime/99131",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -4352,15 +4403,15 @@
         }
       ],
       "average_score": 69,
-      "popularity": 36390,
+      "popularity": 36492,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx101371-36M9Eu65MKlU.jpg",
       "cover_source_url": "https://anilist.co/anime/101371",
       "source_url": "https://anilist.co/anime/101371",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cc0a9280da90de49e9ed25418",
+      "related_work_slug": "w-c0a9280da9"
     },
     {
       "id": "a375b843f01524733822a2a14",
@@ -4407,13 +4458,56 @@
         }
       ],
       "average_score": 74,
-      "popularity": 7498,
+      "popularity": 7523,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx157883-ib9fXLLjUy5m.png",
       "cover_source_url": "https://anilist.co/anime/157883",
       "source_url": "https://anilist.co/anime/157883",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a83105aa8eb62e366df3fdfd9",
+      "slug": "zero-talking",
+      "anilist_id": 170534,
+      "mal_id": 57000,
+      "title_ja": "ゼロトーキング",
+      "title_romaji": "Zero Talking",
+      "title_en": "Zero Talking",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "music",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2023-10-25",
+      "end_date": "2023-10-25",
+      "season": null,
+      "season_year": null,
+      "episode_count": 1,
+      "episode_duration_min": 4,
+      "studios": [
+        "Studio Gohan"
+      ],
+      "main_cast": [
+        {
+          "character": "大令嬢",
+          "voice_actor": null
+        },
+        {
+          "character": "ドロシィ",
+          "voice_actor": null
+        }
+      ],
+      "average_score": 59,
+      "popularity": 261,
+      "yuri_tag_rank": 80,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx170534-UlINQsVxuhmn.png",
+      "cover_source_url": "https://anilist.co/anime/170534",
+      "source_url": "https://anilist.co/anime/170534",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -4450,7 +4544,7 @@
         }
       ],
       "average_score": 65,
-      "popularity": 17983,
+      "popularity": 18026,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4517,7 +4611,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 5192,
+      "popularity": 5207,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4560,7 +4654,7 @@
         }
       ],
       "average_score": 83,
-      "popularity": 73069,
+      "popularity": 73306,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4603,7 +4697,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 44259,
+      "popularity": 44444,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4650,15 +4744,15 @@
         }
       ],
       "average_score": 74,
-      "popularity": 43925,
+      "popularity": 44318,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx183385-f1TgnttLckBT.jpg",
       "cover_source_url": "https://anilist.co/anime/183385",
       "source_url": "https://anilist.co/anime/183385",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c503324c539115244e3ac59ec",
+      "related_work_slug": "w-503324c539"
     },
     {
       "id": "a0951c753bdcb33cfed24dff0",
@@ -4710,7 +4804,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 3199,
+      "popularity": 3221,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4751,7 +4845,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 6618,
+      "popularity": 6624,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4792,7 +4886,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 6004,
+      "popularity": 6012,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4833,7 +4927,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 7682,
+      "popularity": 7694,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4880,7 +4974,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 37453,
+      "popularity": 37548,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4927,7 +5021,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 14049,
+      "popularity": 14089,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4982,7 +5076,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 19725,
+      "popularity": 19777,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5025,7 +5119,7 @@
         }
       ],
       "average_score": 57,
-      "popularity": 5589,
+      "popularity": 5600,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5068,7 +5162,7 @@
         }
       ],
       "average_score": 60,
-      "popularity": 1590,
+      "popularity": 1594,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5111,13 +5205,64 @@
         }
       ],
       "average_score": 65,
-      "popularity": 37363,
+      "popularity": 37455,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx101506-uY2udopqvdYp.jpg",
       "cover_source_url": "https://anilist.co/anime/101506",
       "source_url": "https://anilist.co/anime/101506",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a2de42401915abe524130fe59",
+      "slug": "umayuru",
+      "anilist_id": 148401,
+      "mal_id": 51772,
+      "title_ja": "うまゆる",
+      "title_romaji": "Umayuru",
+      "title_en": "Umayuru",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "ona",
+      "adaptation_source": "game",
+      "status": "finished",
+      "start_date": "2022-10-16",
+      "end_date": "2023-03-26",
+      "season": "fall",
+      "season_year": 2022,
+      "episode_count": 24,
+      "episode_duration_min": 3,
+      "studios": [
+        "SCOOTER FILMS"
+      ],
+      "main_cast": [
+        {
+          "character": "シンボリクリスエス",
+          "voice_actor": "春川芽生"
+        },
+        {
+          "character": "タニノギムレット",
+          "voice_actor": "松岡美里"
+        },
+        {
+          "character": "ウオッカ",
+          "voice_actor": "大橋彩香"
+        },
+        {
+          "character": "ダイワスカーレット",
+          "voice_actor": "木村千咲"
+        }
+      ],
+      "average_score": 71,
+      "popularity": 5045,
+      "yuri_tag_rank": 79,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx148401-dbl2BbTWTump.png",
+      "cover_source_url": "https://anilist.co/anime/148401",
+      "source_url": "https://anilist.co/anime/148401",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -5166,13 +5311,68 @@
         }
       ],
       "average_score": 79,
-      "popularity": 21939,
+      "popularity": 22005,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx795-HJhtGq0Hql2r.jpg",
       "cover_source_url": "https://anilist.co/anime/795",
       "source_url": "https://anilist.co/anime/795",
+      "related_work_id": "c0956ee23ae7e256de6c88b79",
+      "related_work_slug": "w-2d24747f5f"
+    },
+    {
+      "id": "a9e6bc77fc3342477fca50980",
+      "slug": "sabagebu",
+      "anilist_id": 20475,
+      "mal_id": 20709,
+      "title_ja": "さばげぶっ!",
+      "title_romaji": "Sabagebu!",
+      "title_en": "Sabagebu! - Survival Game Club!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2014-07-06",
+      "end_date": "2014-09-21",
+      "season": "summer",
+      "season_year": 2014,
+      "episode_count": 12,
+      "episode_duration_min": 23,
+      "studios": [
+        "Studio Signpost"
+      ],
+      "main_cast": [
+        {
+          "character": "園川モモカ",
+          "voice_actor": "大橋彩香"
+        },
+        {
+          "character": "鳳 美煌",
+          "voice_actor": "内山夕実"
+        },
+        {
+          "character": "春日野 うらら",
+          "voice_actor": "大久保瑠美"
+        },
+        {
+          "character": "経堂 麻耶",
+          "voice_actor": "Lynn"
+        },
+        {
+          "character": "豪徳寺 かよ",
+          "voice_actor": "東山奈央"
+        }
+      ],
+      "average_score": 71,
+      "popularity": 41269,
+      "yuri_tag_rank": 79,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20475-c4JrCtSDXrtM.png",
+      "cover_source_url": "https://anilist.co/anime/20475",
+      "source_url": "https://anilist.co/anime/20475",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -5200,7 +5400,7 @@
       ],
       "main_cast": [],
       "average_score": null,
-      "popularity": 86,
+      "popularity": 90,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5247,7 +5447,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 39612,
+      "popularity": 39731,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5298,7 +5498,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 4790,
+      "popularity": 4803,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5337,7 +5537,7 @@
         }
       ],
       "average_score": 61,
-      "popularity": 8528,
+      "popularity": 8548,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5388,7 +5588,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 5494,
+      "popularity": 5503,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5439,7 +5639,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 2951,
+      "popularity": 2956,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5501,14 +5701,81 @@
           "voice_actor": "岩坪理江"
         }
       ],
-      "average_score": 56,
-      "popularity": 1612,
+      "average_score": 57,
+      "popularity": 1620,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/2072.jpg",
       "cover_source_url": "https://anilist.co/anime/2072",
       "source_url": "https://anilist.co/anime/2072",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a5114d5e1af3a3fc50600c764",
+      "slug": "azur-lane",
+      "anilist_id": 104159,
+      "mal_id": 38328,
+      "title_ja": "アズールレーン",
+      "title_romaji": "Azur Lane",
+      "title_en": "AZUR LANE",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "game",
+      "status": "finished",
+      "start_date": "2019-10-03",
+      "end_date": "2020-03-20",
+      "season": "fall",
+      "season_year": 2019,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Bibury Animation Studios"
+      ],
+      "main_cast": [
+        {
+          "character": "ベルファスト",
+          "voice_actor": "堀江由衣"
+        },
+        {
+          "character": "エンタープライズ",
+          "voice_actor": "石川由依"
+        },
+        {
+          "character": "赤城",
+          "voice_actor": "中原麻衣"
+        },
+        {
+          "character": "加賀",
+          "voice_actor": "茅野愛衣"
+        },
+        {
+          "character": "ラフィー",
+          "voice_actor": "長縄まりあ"
+        },
+        {
+          "character": "綾波",
+          "voice_actor": "大地葉"
+        },
+        {
+          "character": "ジャベリン",
+          "voice_actor": "山根希美"
+        },
+        {
+          "character": "翔鶴",
+          "voice_actor": "種田梨沙"
+        }
+      ],
+      "average_score": 58,
+      "popularity": 56811,
+      "yuri_tag_rank": 79,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104159-xJoXzhEmtohE.jpg",
+      "cover_source_url": "https://anilist.co/anime/104159",
+      "source_url": "https://anilist.co/anime/104159",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -5537,7 +5804,7 @@
       ],
       "main_cast": [],
       "average_score": 59,
-      "popularity": 767,
+      "popularity": 771,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5584,7 +5851,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 3658,
+      "popularity": 3674,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5650,8 +5917,8 @@
           "voice_actor": "大原さやか"
         }
       ],
-      "average_score": 59,
-      "popularity": 6368,
+      "average_score": 60,
+      "popularity": 6395,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5706,7 +5973,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 781,
+      "popularity": 785,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5765,7 +6032,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 7961,
+      "popularity": 7989,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5832,7 +6099,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 10828,
+      "popularity": 10883,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5900,7 +6167,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 2450,
+      "popularity": 2459,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5963,7 +6230,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 2783,
+      "popularity": 2793,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6026,7 +6293,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 2182,
+      "popularity": 2188,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6085,7 +6352,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 2745,
+      "popularity": 2790,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6136,7 +6403,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 2690,
+      "popularity": 2702,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6191,56 +6458,13 @@
         }
       ],
       "average_score": 53,
-      "popularity": 1147,
+      "popularity": 1157,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127465-xIDQyk51nZ1h.png",
       "cover_source_url": "https://anilist.co/anime/127465",
       "source_url": "https://anilist.co/anime/127465",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "aa13814083ae6183592ca5979",
-      "slug": "ninja-to-koroshiya-no-futarigurashi",
-      "anilist_id": 177120,
-      "mal_id": 58725,
-      "title_ja": "忍者と殺し屋のふたりぐらし",
-      "title_romaji": "Ninja to Koroshiya no Futarigurashi",
-      "title_en": "A Ninja and an Assassin Under One Roof",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2025-04-10",
-      "end_date": "2025-06-26",
-      "season": "spring",
-      "season_year": 2025,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Shaft"
-      ],
-      "main_cast": [
-        {
-          "character": "草隠さとこ",
-          "voice_actor": "三川華月"
-        },
-        {
-          "character": "古賀このは",
-          "voice_actor": "花澤香菜"
-        }
-      ],
-      "average_score": 75,
-      "popularity": 30167,
-      "yuri_tag_rank": 79,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177120-xRucIg2WDr77.png",
-      "cover_source_url": "https://anilist.co/anime/177120",
-      "source_url": "https://anilist.co/anime/177120",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -6277,7 +6501,7 @@
         }
       ],
       "average_score": 61,
-      "popularity": 10384,
+      "popularity": 10399,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6311,7 +6535,7 @@
       ],
       "main_cast": [],
       "average_score": null,
-      "popularity": 120,
+      "popularity": 126,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6371,7 +6595,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 7648,
+      "popularity": 7684,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6439,7 +6663,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 4021,
+      "popularity": 4039,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6506,7 +6730,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 17236,
+      "popularity": 17275,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6569,7 +6793,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 3653,
+      "popularity": 3663,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6628,7 +6852,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 5569,
+      "popularity": 5581,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6695,7 +6919,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 20028,
+      "popularity": 20071,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6754,7 +6978,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 4296,
+      "popularity": 4306,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6815,7 +7039,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 3137,
+      "popularity": 3146,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6858,7 +7082,7 @@
         }
       ],
       "average_score": 49,
-      "popularity": 1919,
+      "popularity": 1922,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6905,7 +7129,7 @@
         }
       ],
       "average_score": 60,
-      "popularity": 5107,
+      "popularity": 5115,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6960,7 +7184,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 49924,
+      "popularity": 50046,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7005,7 +7229,7 @@
         }
       ],
       "average_score": 48,
-      "popularity": 1274,
+      "popularity": 1283,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7048,7 +7272,7 @@
         }
       ],
       "average_score": 59,
-      "popularity": 2513,
+      "popularity": 2520,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7099,7 +7323,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 9558,
+      "popularity": 9589,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7166,7 +7390,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 13120,
+      "popularity": 13149,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7209,7 +7433,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 68548,
+      "popularity": 68718,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7248,15 +7472,15 @@
         }
       ],
       "average_score": 52,
-      "popularity": 4215,
+      "popularity": 4231,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1496-w5WyFAa0VuO2.png",
       "cover_source_url": "https://anilist.co/anime/1496",
       "source_url": "https://anilist.co/anime/1496",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c31671ad23e46644e9c5263b9",
+      "related_work_slug": "w-56b569b9c6"
     },
     {
       "id": "a4b5b20e5df6083e2b5bc43eb",
@@ -7311,7 +7535,7 @@
         }
       ],
       "average_score": 84,
-      "popularity": 120476,
+      "popularity": 121054,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7358,7 +7582,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 77653,
+      "popularity": 77910,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7409,7 +7633,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 11011,
+      "popularity": 11058,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7452,64 +7676,13 @@
         }
       ],
       "average_score": 62,
-      "popularity": 13574,
+      "popularity": 13607,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21511-D0tPX9spNPQW.png",
       "cover_source_url": "https://anilist.co/anime/21511",
       "source_url": "https://anilist.co/anime/21511",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a04570a6f21015f8164879cd1",
-      "slug": "comic-girls",
-      "anilist_id": 99131,
-      "mal_id": 35756,
-      "title_ja": "こみっくがーるず",
-      "title_romaji": "Comic Girls",
-      "title_en": "Comic Girls",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2018-04-05",
-      "end_date": "2018-06-21",
-      "season": "spring",
-      "season_year": 2018,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Nexus"
-      ],
-      "main_cast": [
-        {
-          "character": "色川琉姫",
-          "voice_actor": "大西沙織"
-        },
-        {
-          "character": "勝木翼",
-          "voice_actor": "高橋李依"
-        },
-        {
-          "character": "恋塚小夢",
-          "voice_actor": "本渡楓"
-        },
-        {
-          "character": "萌田薫子",
-          "voice_actor": "赤尾ひかる"
-        }
-      ],
-      "average_score": 72,
-      "popularity": 49750,
-      "yuri_tag_rank": 77,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99131-Lnr99AnA1ncY.jpg",
-      "cover_source_url": "https://anilist.co/anime/99131",
-      "source_url": "https://anilist.co/anime/99131",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -7554,7 +7727,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 23027,
+      "popularity": 23080,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7621,15 +7794,15 @@
         }
       ],
       "average_score": 69,
-      "popularity": 19559,
+      "popularity": 19628,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx158-8bOVtlzJmq1r.jpg",
       "cover_source_url": "https://anilist.co/anime/158",
       "source_url": "https://anilist.co/anime/158",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c3db785f2afaacc3bc08d8e00",
+      "related_work_slug": "w-3db785f2af"
     },
     {
       "id": "a9b329f31145e7a909ff40f0f",
@@ -7688,7 +7861,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 6668,
+      "popularity": 6694,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7697,6 +7870,49 @@
       "source_url": "https://anilist.co/anime/444",
       "related_work_id": null,
       "related_work_slug": null
+    },
+    {
+      "id": "aa13814083ae6183592ca5979",
+      "slug": "ninja-to-koroshiya-no-futarigurashi",
+      "anilist_id": 177120,
+      "mal_id": 58725,
+      "title_ja": "忍者と殺し屋のふたりぐらし",
+      "title_romaji": "Ninja to Koroshiya no Futarigurashi",
+      "title_en": "A Ninja and an Assassin Under One Roof",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2025-04-10",
+      "end_date": "2025-06-26",
+      "season": "spring",
+      "season_year": 2025,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Shaft"
+      ],
+      "main_cast": [
+        {
+          "character": "草隠さとこ",
+          "voice_actor": "三川華月"
+        },
+        {
+          "character": "古賀このは",
+          "voice_actor": "花澤香菜"
+        }
+      ],
+      "average_score": 75,
+      "popularity": 30356,
+      "yuri_tag_rank": 77,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177120-xRucIg2WDr77.png",
+      "cover_source_url": "https://anilist.co/anime/177120",
+      "source_url": "https://anilist.co/anime/177120",
+      "related_work_id": "c6dd58deff72d724d1fcce8a8",
+      "related_work_slug": "w-6dd58deff7"
     },
     {
       "id": "af364e4743ccd231d159d3a08",
@@ -7747,7 +7963,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 16924,
+      "popularity": 16988,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7790,7 +8006,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 74123,
+      "popularity": 74426,
       "yuri_tag_rank": 76,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7840,16 +8056,16 @@
           "voice_actor": "鬼頭明里"
         }
       ],
-      "average_score": 70,
-      "popularity": 65206,
+      "average_score": 69,
+      "popularity": 65375,
       "yuri_tag_rank": 76,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx102680-75Mgrnn65PAg.png",
       "cover_source_url": "https://anilist.co/anime/102680",
       "source_url": "https://anilist.co/anime/102680",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c3b021dd6ab14a6ce8fa13136",
+      "related_work_slug": "w-e6575916a8"
     },
     {
       "id": "a1bf45bf33afb0fbae45744e4",
@@ -7892,7 +8108,7 @@
         }
       ],
       "average_score": 65,
-      "popularity": 9101,
+      "popularity": 9128,
       "yuri_tag_rank": 76,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7935,7 +8151,7 @@
         }
       ],
       "average_score": 44,
-      "popularity": 3808,
+      "popularity": 3816,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7986,7 +8202,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 13666,
+      "popularity": 13708,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8053,7 +8269,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 5198,
+      "popularity": 5212,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8112,7 +8328,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 53666,
+      "popularity": 53883,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8167,7 +8383,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 11066,
+      "popularity": 11081,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8218,7 +8434,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 29516,
+      "popularity": 29611,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8229,45 +8445,57 @@
       "related_work_slug": null
     },
     {
-      "id": "a8fc914d1a0de50f42e2d27dd",
-      "slug": "machikado-mazoku",
-      "anilist_id": 107490,
-      "mal_id": 39071,
-      "title_ja": "まちカドまぞく",
-      "title_romaji": "Machikado Mazoku",
-      "title_en": "The Demon Girl Next Door",
+      "id": "a3c5642668316c4b8e9ad1cac",
+      "slug": "bang-dream-ave-mujica-prima-aurora",
+      "anilist_id": 197543,
+      "mal_id": 62270,
+      "title_ja": "BanG Dream! Ave Mujica prima aurora",
+      "title_romaji": "BanG Dream! Ave Mujica: prima aurora",
+      "title_en": null,
       "title_zh_tw": null,
       "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
+      "format": "movie",
+      "adaptation_source": "other",
       "status": "finished",
-      "start_date": "2019-07-12",
-      "end_date": "2019-09-27",
-      "season": "summer",
-      "season_year": 2019,
-      "episode_count": 12,
-      "episode_duration_min": 24,
+      "start_date": "2026-10-16",
+      "end_date": "2026-10-16",
+      "season": "fall",
+      "season_year": 2026,
+      "episode_count": 1,
+      "episode_duration_min": 56,
       "studios": [
-        "J.C.STAFF"
+        "NICHICALINE"
       ],
       "main_cast": [
         {
-          "character": "千代田桃",
-          "voice_actor": "鬼頭明里"
+          "character": "豊川祥子",
+          "voice_actor": "高尾奏音"
         },
         {
-          "character": "吉田優子",
-          "voice_actor": "小原好美"
+          "character": "三角初華",
+          "voice_actor": "佐々木李子"
+        },
+        {
+          "character": "若葉睦",
+          "voice_actor": "渡瀬結月"
+        },
+        {
+          "character": "八幡海鈴",
+          "voice_actor": "岡田夢以"
+        },
+        {
+          "character": "祐天寺にゃむ",
+          "voice_actor": "米澤茜"
         }
       ],
-      "average_score": 75,
-      "popularity": 65631,
+      "average_score": null,
+      "popularity": 3684,
       "yuri_tag_rank": 74,
       "is_adult": false,
       "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx107490-OaUP9KSAJQt9.png",
-      "cover_source_url": "https://anilist.co/anime/107490",
-      "source_url": "https://anilist.co/anime/107490",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx197543-UhIhht4Gku8z.png",
+      "cover_source_url": "https://anilist.co/anime/197543",
+      "source_url": "https://anilist.co/anime/197543",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -8328,7 +8556,7 @@
         }
       ],
       "average_score": 61,
-      "popularity": 2456,
+      "popularity": 2466,
       "yuri_tag_rank": 74,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8360,7 +8588,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": null,
-      "popularity": 19319,
+      "popularity": 19381,
       "yuri_tag_rank": 74,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8369,6 +8597,57 @@
       "source_url": "https://anilist.co/anime/161410",
       "related_work_id": null,
       "related_work_slug": null
+    },
+    {
+      "id": "a4a4d8fbe32fc2fa2e2583dd5",
+      "slug": "tai-ari-deshita-ojou-sama-wa-kakutou-game-nante-shinai",
+      "anilist_id": 128757,
+      "mal_id": 46488,
+      "title_ja": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～",
+      "title_romaji": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
+      "title_en": "Young Ladies Don't Play Fighting Games",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2026-07-07",
+      "end_date": "2026-09-22",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "diomedéa"
+      ],
+      "main_cast": [
+        {
+          "character": "深月綾",
+          "voice_actor": "長谷川育美"
+        },
+        {
+          "character": "夜絵美緒",
+          "voice_actor": "市ノ瀬加那"
+        },
+        {
+          "character": "犬井夕",
+          "voice_actor": "千本木彩花"
+        },
+        {
+          "character": "一ノ瀬珠樹",
+          "voice_actor": "下地紫野"
+        }
+      ],
+      "average_score": 75,
+      "popularity": 30304,
+      "yuri_tag_rank": 74,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128757-Iqc6hTjEYIz4.png",
+      "cover_source_url": "https://anilist.co/anime/128757",
+      "source_url": "https://anilist.co/anime/128757",
+      "related_work_id": "cb9d62c086be0384d40da2423",
+      "related_work_slug": "w-536a4b0a29"
     },
     {
       "id": "ac45b883a70e136d06e177822",
@@ -8411,15 +8690,15 @@
         }
       ],
       "average_score": 70,
-      "popularity": 26182,
+      "popularity": 26277,
       "yuri_tag_rank": 74,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx155419-tPkRvXYb9ffC.png",
       "cover_source_url": "https://anilist.co/anime/155419",
       "source_url": "https://anilist.co/anime/155419",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cd51f5d991e269dcb4330d4d4",
+      "related_work_slug": "w-e5c3d06d11"
     },
     {
       "id": "ab30cb4799432c0b32c1c880a",
@@ -8454,68 +8733,13 @@
         }
       ],
       "average_score": 53,
-      "popularity": 16432,
+      "popularity": 16474,
       "yuri_tag_rank": 74,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110810-dJEpyDWfzbfX.jpg",
       "cover_source_url": "https://anilist.co/anime/110810",
       "source_url": "https://anilist.co/anime/110810",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a3c5642668316c4b8e9ad1cac",
-      "slug": "bang-dream-ave-mujica-prima-aurora",
-      "anilist_id": 197543,
-      "mal_id": 62270,
-      "title_ja": "BanG Dream! Ave Mujica prima aurora",
-      "title_romaji": "BanG Dream! Ave Mujica: prima aurora",
-      "title_en": null,
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "movie",
-      "adaptation_source": "other",
-      "status": "announced",
-      "start_date": "2026-10-16",
-      "end_date": "2026-10-16",
-      "season": "fall",
-      "season_year": 2026,
-      "episode_count": 1,
-      "episode_duration_min": null,
-      "studios": [
-        "NICHICALINE"
-      ],
-      "main_cast": [
-        {
-          "character": "豊川祥子",
-          "voice_actor": "高尾奏音"
-        },
-        {
-          "character": "三角初華",
-          "voice_actor": "佐々木李子"
-        },
-        {
-          "character": "若葉睦",
-          "voice_actor": "渡瀬結月"
-        },
-        {
-          "character": "八幡海鈴",
-          "voice_actor": "岡田夢以"
-        },
-        {
-          "character": "祐天寺にゃむ",
-          "voice_actor": "米澤茜"
-        }
-      ],
-      "average_score": null,
-      "popularity": 3437,
-      "yuri_tag_rank": 73,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx197543-UhIhht4Gku8z.png",
-      "cover_source_url": "https://anilist.co/anime/197543",
-      "source_url": "https://anilist.co/anime/197543",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -8572,7 +8796,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 45745,
+      "popularity": 45853,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8619,7 +8843,7 @@
         }
       ],
       "average_score": 55,
-      "popularity": 6081,
+      "popularity": 6121,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8655,19 +8879,19 @@
       "main_cast": [
         {
           "character": "紅守黒湖",
-          "voice_actor": null
+          "voice_actor": "上田瞳"
         },
         {
           "character": "屠桜ひな子",
-          "voice_actor": null
+          "voice_actor": "鈴木みのり"
         }
       ],
       "average_score": null,
-      "popularity": 3158,
+      "popularity": 3559,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213877-14DmXYOv4m8W.jpg",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213877-NK48aPaVO29y.jpg",
       "cover_source_url": "https://anilist.co/anime/213877",
       "source_url": "https://anilist.co/anime/213877",
       "related_work_id": null,
@@ -8730,7 +8954,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 32962,
+      "popularity": 33047,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8793,7 +9017,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 5077,
+      "popularity": 5115,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8836,15 +9060,15 @@
         }
       ],
       "average_score": 64,
-      "popularity": 62006,
+      "popularity": 62272,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx19429-DqVIQgPV0STD.jpg",
       "cover_source_url": "https://anilist.co/anime/19429",
       "source_url": "https://anilist.co/anime/19429",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cad4adcf77cdad0372a31af36",
+      "related_work_slug": "w-ad4adcf77c"
     },
     {
       "id": "ab15a7ca2d07e41065f7213e6",
@@ -8899,7 +9123,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 7691,
+      "popularity": 7718,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8931,7 +9155,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": 53,
-      "popularity": 407,
+      "popularity": 408,
       "yuri_tag_rank": 72,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8974,11 +9198,11 @@
         }
       ],
       "average_score": 76,
-      "popularity": 35521,
+      "popularity": 36289,
       "yuri_tag_rank": 72,
       "is_adult": false,
       "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-8onaQWqKW1C3.jpg",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-dZ8hF93HzstV.jpg",
       "cover_source_url": "https://anilist.co/anime/177637",
       "source_url": "https://anilist.co/anime/177637",
       "related_work_id": null,
@@ -9037,7 +9261,7 @@
         }
       ],
       "average_score": 51,
-      "popularity": 10210,
+      "popularity": 10238,
       "yuri_tag_rank": 72,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9080,13 +9304,68 @@
         }
       ],
       "average_score": 69,
-      "popularity": 14164,
+      "popularity": 14207,
       "yuri_tag_rank": 72,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx2030-ZzuSiixHIRRg.png",
       "cover_source_url": "https://anilist.co/anime/2030",
       "source_url": "https://anilist.co/anime/2030",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a694baa422c684aace8189f37",
+      "slug": "needy-girl-overdose",
+      "anilist_id": 202102,
+      "mal_id": 62913,
+      "title_ja": "NEEDY GIRL OVERDOSE",
+      "title_romaji": "NEEDY GIRL OVERDOSE",
+      "title_en": "NEEDY GIRL OVERDOSE",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "game",
+      "status": "finished",
+      "start_date": "2026-04-05",
+      "end_date": "2026-06-28",
+      "season": "spring",
+      "season_year": 2026,
+      "episode_count": 13,
+      "episode_duration_min": 25,
+      "studios": [
+        "Yostar Pictures"
+      ],
+      "main_cast": [
+        {
+          "character": "あめちゃん",
+          "voice_actor": "天城サリー"
+        },
+        {
+          "character": "猛毒電波少女☆パープル・ロリポップ",
+          "voice_actor": "川口莉奈"
+        },
+        {
+          "character": "獄薔薇美血華",
+          "voice_actor": "椎名桜月"
+        },
+        {
+          "character": "禰智禍さま",
+          "voice_actor": "星希成奏"
+        },
+        {
+          "character": "かちぇ",
+          "voice_actor": "永瀬アンナ"
+        }
+      ],
+      "average_score": 68,
+      "popularity": 41078,
+      "yuri_tag_rank": 71,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202102-7qDmTI7eT5xF.png",
+      "cover_source_url": "https://anilist.co/anime/202102",
+      "source_url": "https://anilist.co/anime/202102",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -9131,7 +9410,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 71497,
+      "popularity": 71697,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9186,15 +9465,15 @@
         }
       ],
       "average_score": 69,
-      "popularity": 45086,
+      "popularity": 45206,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx20467-GwWFUCzsiUF7.png",
       "cover_source_url": "https://anilist.co/anime/20467",
       "source_url": "https://anilist.co/anime/20467",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "ccf486b05bdf37a29a7514020",
+      "related_work_slug": "fate-kaleid-liner-star"
     },
     {
       "id": "a1a652fd048989eee322a41b9",
@@ -9233,7 +9512,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 13951,
+      "popularity": 13983,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9288,56 +9567,13 @@
         }
       ],
       "average_score": 65,
-      "popularity": 17901,
+      "popularity": 17943,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108713-6rHQTEA9ptyb.jpg",
       "cover_source_url": "https://anilist.co/anime/108713",
       "source_url": "https://anilist.co/anime/108713",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a91dc3e7cec8dff23416f401e",
-      "slug": "machikado-mazoku-2-choume",
-      "anilist_id": 123330,
-      "mal_id": 42745,
-      "title_ja": "まちカドまぞく 2丁目",
-      "title_romaji": "Machikado Mazoku: 2-Choume",
-      "title_en": "The Demon Girl Next Door Season 2",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2022-04-08",
-      "end_date": "2022-07-01",
-      "season": "spring",
-      "season_year": 2022,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "J.C.STAFF"
-      ],
-      "main_cast": [
-        {
-          "character": "千代田桃",
-          "voice_actor": "鬼頭明里"
-        },
-        {
-          "character": "吉田優子",
-          "voice_actor": "小原好美"
-        }
-      ],
-      "average_score": 78,
-      "popularity": 28735,
-      "yuri_tag_rank": 70,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx123330-AU2jllC75uSE.png",
-      "cover_source_url": "https://anilist.co/anime/123330",
-      "source_url": "https://anilist.co/anime/123330",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -9386,7 +9622,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 16807,
+      "popularity": 16830,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9441,7 +9677,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 4889,
+      "popularity": 4920,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9484,107 +9720,13 @@
         }
       ],
       "average_score": 67,
-      "popularity": 9240,
+      "popularity": 9280,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx274-pFKbRi3Tg6PH.png",
       "cover_source_url": "https://anilist.co/anime/274",
       "source_url": "https://anilist.co/anime/274",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a83105aa8eb62e366df3fdfd9",
-      "slug": "zero-talking",
-      "anilist_id": 170534,
-      "mal_id": 57000,
-      "title_ja": "ゼロトーキング",
-      "title_romaji": "Zero Talking",
-      "title_en": "Zero Talking",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "music",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2023-10-25",
-      "end_date": "2023-10-25",
-      "season": null,
-      "season_year": null,
-      "episode_count": 1,
-      "episode_duration_min": 4,
-      "studios": [
-        "Studio Gohan"
-      ],
-      "main_cast": [
-        {
-          "character": "大令嬢",
-          "voice_actor": null
-        },
-        {
-          "character": "ドロシィ",
-          "voice_actor": null
-        }
-      ],
-      "average_score": 58,
-      "popularity": 256,
-      "yuri_tag_rank": 70,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx170534-UlINQsVxuhmn.png",
-      "cover_source_url": "https://anilist.co/anime/170534",
-      "source_url": "https://anilist.co/anime/170534",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a4a4d8fbe32fc2fa2e2583dd5",
-      "slug": "tai-ari-deshita-ojou-sama-wa-kakutou-game-nante-shinai",
-      "anilist_id": 128757,
-      "mal_id": 46488,
-      "title_ja": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～",
-      "title_romaji": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
-      "title_en": "Young Ladies Don't Play Fighting Games",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2026-07-07",
-      "end_date": "2026-09-22",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "diomedéa"
-      ],
-      "main_cast": [
-        {
-          "character": "深月綾",
-          "voice_actor": "長谷川育美"
-        },
-        {
-          "character": "夜絵美緒",
-          "voice_actor": "市ノ瀬加那"
-        },
-        {
-          "character": "犬井夕",
-          "voice_actor": "千本木彩花"
-        },
-        {
-          "character": "一ノ瀬珠樹",
-          "voice_actor": "下地紫野"
-        }
-      ],
-      "average_score": 75,
-      "popularity": 29747,
-      "yuri_tag_rank": 70,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128757-Iqc6hTjEYIz4.png",
-      "cover_source_url": "https://anilist.co/anime/128757",
-      "source_url": "https://anilist.co/anime/128757",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -9625,15 +9767,15 @@
         }
       ],
       "average_score": 77,
-      "popularity": 331858,
+      "popularity": 332866,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21776-bwPaYKhnKfUs.png",
       "cover_source_url": "https://anilist.co/anime/21776",
       "source_url": "https://anilist.co/anime/21776",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cefa18bd5a0238eaf39e15b85",
+      "related_work_slug": "w-efa18bd5a0"
     },
     {
       "id": "accc1cd97d0cca453f2f73d66",
@@ -9672,7 +9814,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 27753,
+      "popularity": 27856,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9715,7 +9857,7 @@
         }
       ],
       "average_score": 59,
-      "popularity": 23667,
+      "popularity": 23719,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9758,59 +9900,15 @@
         }
       ],
       "average_score": 78,
-      "popularity": 123445,
+      "popularity": 123754,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20593-ri6S0Qt3mFkv.jpg",
       "cover_source_url": "https://anilist.co/anime/20593",
       "source_url": "https://anilist.co/anime/20593",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a66ec6ce8833e1715c601b557",
-      "slug": "ura-sekai-picnic",
-      "anilist_id": 116287,
-      "mal_id": 41392,
-      "title_ja": "裏世界ピクニック",
-      "title_romaji": "Ura Sekai Picnic",
-      "title_en": "Otherside Picnic",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "finished",
-      "start_date": "2021-01-04",
-      "end_date": "2021-03-22",
-      "season": "winter",
-      "season_year": 2021,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "LIDENFILMS",
-        "Felix Film"
-      ],
-      "main_cast": [
-        {
-          "character": "紙越空魚",
-          "voice_actor": "花守ゆみり"
-        },
-        {
-          "character": "仁科鳥子",
-          "voice_actor": "茅野愛衣"
-        }
-      ],
-      "average_score": 64,
-      "popularity": 48837,
-      "yuri_tag_rank": 70,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx116287-LCcICfn2FhwL.jpg",
-      "cover_source_url": "https://anilist.co/anime/116287",
-      "source_url": "https://anilist.co/anime/116287",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cbf8837f3ce52407bead6870c",
+      "related_work_slug": "w-bf8837f3ce"
     },
     {
       "id": "ab359d7b72321684da7de6e8f",
@@ -9849,56 +9947,13 @@
         }
       ],
       "average_score": 63,
-      "popularity": 22084,
+      "popularity": 22129,
       "yuri_tag_rank": 69,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20983-azC9eGcifwRL.png",
       "cover_source_url": "https://anilist.co/anime/20983",
       "source_url": "https://anilist.co/anime/20983",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "adaf9b83117d138cdeedaac8a",
-      "slug": "lycoris-recoil",
-      "anilist_id": 143270,
-      "mal_id": 50709,
-      "title_ja": "リコリス・リコイル",
-      "title_romaji": "Lycoris Recoil",
-      "title_en": "Lycoris Recoil",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2022-07-02",
-      "end_date": "2022-09-24",
-      "season": "summer",
-      "season_year": 2022,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "A-1 Pictures"
-      ],
-      "main_cast": [
-        {
-          "character": "錦木千束",
-          "voice_actor": "安済知佳"
-        },
-        {
-          "character": "井ノ上たきな",
-          "voice_actor": "若山詩音"
-        }
-      ],
-      "average_score": 81,
-      "popularity": 212971,
-      "yuri_tag_rank": 69,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143270-rfkyiYXhek5w.jpg",
-      "cover_source_url": "https://anilist.co/anime/143270",
-      "source_url": "https://anilist.co/anime/143270",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -9943,7 +9998,7 @@
         }
       ],
       "average_score": 81,
-      "popularity": 166893,
+      "popularity": 167368,
       "yuri_tag_rank": 69,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9952,6 +10007,49 @@
       "source_url": "https://anilist.co/anime/107717",
       "related_work_id": null,
       "related_work_slug": null
+    },
+    {
+      "id": "a8fc914d1a0de50f42e2d27dd",
+      "slug": "machikado-mazoku",
+      "anilist_id": 107490,
+      "mal_id": 39071,
+      "title_ja": "まちカドまぞく",
+      "title_romaji": "Machikado Mazoku",
+      "title_en": "The Demon Girl Next Door",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2019-07-12",
+      "end_date": "2019-09-27",
+      "season": "summer",
+      "season_year": 2019,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "J.C.STAFF"
+      ],
+      "main_cast": [
+        {
+          "character": "千代田桃",
+          "voice_actor": "鬼頭明里"
+        },
+        {
+          "character": "吉田優子",
+          "voice_actor": "小原好美"
+        }
+      ],
+      "average_score": 75,
+      "popularity": 65792,
+      "yuri_tag_rank": 68,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx107490-OaUP9KSAJQt9.png",
+      "cover_source_url": "https://anilist.co/anime/107490",
+      "source_url": "https://anilist.co/anime/107490",
+      "related_work_id": "c4a1fc3c24b21d6ef397db188",
+      "related_work_slug": "w-4a1fc3c24b"
     },
     {
       "id": "a0abf2ce5209f61e2ea94387f",
@@ -9998,7 +10096,7 @@
         }
       ],
       "average_score": 55,
-      "popularity": 15544,
+      "popularity": 15578,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10057,7 +10155,7 @@
         }
       ],
       "average_score": 56,
-      "popularity": 24212,
+      "popularity": 24322,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10066,6 +10164,104 @@
       "source_url": "https://anilist.co/anime/4719",
       "related_work_id": null,
       "related_work_slug": null
+    },
+    {
+      "id": "a35f98bf3ec70e2353ca0e2c0",
+      "slug": "bang-dream-yumemita",
+      "anilist_id": 198376,
+      "mal_id": 62430,
+      "title_ja": "バンドリ！ ゆめ∞みた",
+      "title_romaji": "BanG Dream! Yume∞Mita",
+      "title_en": "BanG Dream! YUME∞MITA",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "other",
+      "status": "finished",
+      "start_date": "2026-07-02",
+      "end_date": "2026-09-10",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 13,
+      "episode_duration_min": 24,
+      "studios": [
+        "NICHICALINE"
+      ],
+      "main_cast": [
+        {
+          "character": "仲町あられ",
+          "voice_actor": "仲町あられ"
+        },
+        {
+          "character": "千石ユノ",
+          "voice_actor": "千石ユノ"
+        },
+        {
+          "character": "宮永ののか",
+          "voice_actor": "宮永ののか"
+        },
+        {
+          "character": "藤都子",
+          "voice_actor": "藤都子"
+        },
+        {
+          "character": "峰月律",
+          "voice_actor": "峰月律"
+        }
+      ],
+      "average_score": 75,
+      "popularity": 8394,
+      "yuri_tag_rank": 68,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198376-sc5qcFv0RSH9.jpg",
+      "cover_source_url": "https://anilist.co/anime/198376",
+      "source_url": "https://anilist.co/anime/198376",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "adaf9b83117d138cdeedaac8a",
+      "slug": "lycoris-recoil",
+      "anilist_id": 143270,
+      "mal_id": 50709,
+      "title_ja": "リコリス・リコイル",
+      "title_romaji": "Lycoris Recoil",
+      "title_en": "Lycoris Recoil",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2022-07-02",
+      "end_date": "2022-09-24",
+      "season": "summer",
+      "season_year": 2022,
+      "episode_count": 13,
+      "episode_duration_min": 24,
+      "studios": [
+        "A-1 Pictures"
+      ],
+      "main_cast": [
+        {
+          "character": "錦木千束",
+          "voice_actor": "安済知佳"
+        },
+        {
+          "character": "井ノ上たきな",
+          "voice_actor": "若山詩音"
+        }
+      ],
+      "average_score": 81,
+      "popularity": 214006,
+      "yuri_tag_rank": 68,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143270-rfkyiYXhek5w.jpg",
+      "cover_source_url": "https://anilist.co/anime/143270",
+      "source_url": "https://anilist.co/anime/143270",
+      "related_work_id": "c45b607036d36a511d592e03c",
+      "related_work_slug": "w-45b607036d"
     },
     {
       "id": "ac6b3368584a5fff384df372c",
@@ -10100,123 +10296,13 @@
         }
       ],
       "average_score": 62,
-      "popularity": 5636,
+      "popularity": 5652,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx12437-WrUm5ugd7K8a.png",
       "cover_source_url": "https://anilist.co/anime/12437",
       "source_url": "https://anilist.co/anime/12437",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "ae9858e4281daa47f63b11b19",
-      "slug": "bang-dream-it-s-mygo",
-      "anilist_id": 163571,
-      "mal_id": 54959,
-      "title_ja": "BanG Dream! It's MyGO!!!!!",
-      "title_romaji": "BanG Dream! It's MyGO!!!!!",
-      "title_en": "BanG Dream! It's MyGO!!!!!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "finished",
-      "start_date": "2023-06-29",
-      "end_date": "2023-09-14",
-      "season": "summer",
-      "season_year": 2023,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "SANZIGEN"
-      ],
-      "main_cast": [
-        {
-          "character": "千早愛音",
-          "voice_actor": "立石凛"
-        },
-        {
-          "character": "高松燈",
-          "voice_actor": "羊宮妃那"
-        },
-        {
-          "character": "椎名立希",
-          "voice_actor": "林鼓子"
-        },
-        {
-          "character": "長崎そよ",
-          "voice_actor": "小日向美香"
-        },
-        {
-          "character": "要楽奈",
-          "voice_actor": "青木陽菜"
-        }
-      ],
-      "average_score": 82,
-      "popularity": 22603,
-      "yuri_tag_rank": 67,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163571-Atkvuzh1A1Ip.png",
-      "cover_source_url": "https://anilist.co/anime/163571",
-      "source_url": "https://anilist.co/anime/163571",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a694baa422c684aace8189f37",
-      "slug": "needy-girl-overdose",
-      "anilist_id": 202102,
-      "mal_id": 62913,
-      "title_ja": "NEEDY GIRL OVERDOSE",
-      "title_romaji": "NEEDY GIRL OVERDOSE",
-      "title_en": "NEEDY GIRL OVERDOSE",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "game",
-      "status": "finished",
-      "start_date": "2026-04-05",
-      "end_date": "2026-06-28",
-      "season": "spring",
-      "season_year": 2026,
-      "episode_count": 13,
-      "episode_duration_min": 25,
-      "studios": [
-        "Yostar Pictures"
-      ],
-      "main_cast": [
-        {
-          "character": "あめちゃん",
-          "voice_actor": "天城サリー"
-        },
-        {
-          "character": "猛毒電波少女☆パープル・ロリポップ",
-          "voice_actor": "川口莉奈"
-        },
-        {
-          "character": "獄薔薇美血華",
-          "voice_actor": "椎名桜月"
-        },
-        {
-          "character": "禰智禍さま",
-          "voice_actor": "星希成奏"
-        },
-        {
-          "character": "かちぇ",
-          "voice_actor": "永瀬アンナ"
-        }
-      ],
-      "average_score": 68,
-      "popularity": 40668,
-      "yuri_tag_rank": 67,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202102-7qDmTI7eT5xF.png",
-      "cover_source_url": "https://anilist.co/anime/202102",
-      "source_url": "https://anilist.co/anime/202102",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -10277,68 +10363,13 @@
         }
       ],
       "average_score": 66,
-      "popularity": 40669,
+      "popularity": 40800,
       "yuri_tag_rank": 67,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx3667-9ftVhhCHTRLs.jpg",
       "cover_source_url": "https://anilist.co/anime/3667",
       "source_url": "https://anilist.co/anime/3667",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a35f98bf3ec70e2353ca0e2c0",
-      "slug": "bang-dream-yumemita",
-      "anilist_id": 198376,
-      "mal_id": 62430,
-      "title_ja": "バンドリ！ ゆめ∞みた",
-      "title_romaji": "BanG Dream! Yume∞Mita",
-      "title_en": "BanG Dream! YUME∞MITA",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "finished",
-      "start_date": "2026-07-02",
-      "end_date": "2026-09-10",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "NICHICALINE"
-      ],
-      "main_cast": [
-        {
-          "character": "仲町あられ",
-          "voice_actor": "仲町あられ"
-        },
-        {
-          "character": "千石ユノ",
-          "voice_actor": "千石ユノ"
-        },
-        {
-          "character": "宮永ののか",
-          "voice_actor": "宮永ののか"
-        },
-        {
-          "character": "藤都子",
-          "voice_actor": "藤都子"
-        },
-        {
-          "character": "峰月律",
-          "voice_actor": "峰月律"
-        }
-      ],
-      "average_score": 75,
-      "popularity": 8177,
-      "yuri_tag_rank": 67,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198376-sc5qcFv0RSH9.jpg",
-      "cover_source_url": "https://anilist.co/anime/198376",
-      "source_url": "https://anilist.co/anime/198376",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -10391,7 +10422,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 17131,
+      "popularity": 17157,
       "yuri_tag_rank": 67,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10442,7 +10473,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 29341,
+      "popularity": 29404,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10505,7 +10536,7 @@
         }
       ],
       "average_score": 61,
-      "popularity": 11228,
+      "popularity": 11274,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10548,15 +10579,15 @@
         }
       ],
       "average_score": 65,
-      "popularity": 102394,
+      "popularity": 102726,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101351-TWLbnRdE1tBI.jpg",
       "cover_source_url": "https://anilist.co/anime/101351",
       "source_url": "https://anilist.co/anime/101351",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c10b01b62b63b316e0e403703",
+      "related_work_slug": "w-10b01b62b6"
     },
     {
       "id": "a43d7adde3f956501e571238a",
@@ -10603,7 +10634,7 @@
         }
       ],
       "average_score": 60,
-      "popularity": 16982,
+      "popularity": 17055,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10654,58 +10685,15 @@
         }
       ],
       "average_score": 77,
-      "popularity": 39859,
+      "popularity": 40127,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx179694-7zhc0T6IImor.jpg",
       "cover_source_url": "https://anilist.co/anime/179694",
       "source_url": "https://anilist.co/anime/179694",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "ab79943789e72c1824e99ece8",
-      "slug": "seiyuu-radio-no-uraomote",
-      "anilist_id": 159039,
-      "mal_id": 53912,
-      "title_ja": "声優ラジオのウラオモテ",
-      "title_romaji": "Seiyuu Radio no Uraomote",
-      "title_en": "The Many Sides of Voice Actor Radio",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "light_novel",
-      "status": "finished",
-      "start_date": "2024-04-10",
-      "end_date": "2024-06-26",
-      "season": "spring",
-      "season_year": 2024,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "CONNECT"
-      ],
-      "main_cast": [
-        {
-          "character": "佐藤由美子",
-          "voice_actor": "伊藤美来"
-        },
-        {
-          "character": "渡辺千佳",
-          "voice_actor": "豊田萌絵"
-        }
-      ],
-      "average_score": 69,
-      "popularity": 28067,
-      "yuri_tag_rank": 66,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159039-88kPltmhTzqU.jpg",
-      "cover_source_url": "https://anilist.co/anime/159039",
-      "source_url": "https://anilist.co/anime/159039",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c4668b49519efd37364181236",
+      "related_work_slug": "w-4668b49519"
     },
     {
       "id": "a1aebe710fbadd4196e1cefa5",
@@ -10752,15 +10740,15 @@
         }
       ],
       "average_score": 80,
-      "popularity": 179448,
+      "popularity": 180071,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx13125-2EDZb8ahshQc.png",
       "cover_source_url": "https://anilist.co/anime/13125",
       "source_url": "https://anilist.co/anime/13125",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "cb184ec5bf20f20efe076278e",
+      "related_work_slug": "w-b184ec5bf2"
     },
     {
       "id": "a41de3a7db8fae60f92c137cf",
@@ -10791,15 +10779,15 @@
         }
       ],
       "average_score": 75,
-      "popularity": 74340,
+      "popularity": 74596,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131548-4OXik3SWOaee.jpg",
       "cover_source_url": "https://anilist.co/anime/131548",
       "source_url": "https://anilist.co/anime/131548",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "ce2dfc809f16bf8b851797569",
+      "related_work_slug": "w-e2dfc809f1"
     },
     {
       "id": "adf9f6352ad97e6663d393522",
@@ -10825,7 +10813,7 @@
       ],
       "main_cast": [],
       "average_score": 55,
-      "popularity": 1114,
+      "popularity": 1122,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10892,13 +10880,107 @@
         }
       ],
       "average_score": 74,
-      "popularity": 5052,
+      "popularity": 5074,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99614-vINlftW9M3Xl.jpg",
       "cover_source_url": "https://anilist.co/anime/99614",
       "source_url": "https://anilist.co/anime/99614",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "add003b1e8d237a4b0ec4a07e",
+      "slug": "nana",
+      "anilist_id": 877,
+      "mal_id": 877,
+      "title_ja": "NANA-ナナ-",
+      "title_romaji": "NANA",
+      "title_en": "NANA",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2006-04-05",
+      "end_date": "2007-03-28",
+      "season": "spring",
+      "season_year": 2006,
+      "episode_count": 47,
+      "episode_duration_min": 23,
+      "studios": [
+        "MADHOUSE"
+      ],
+      "main_cast": [
+        {
+          "character": "小松奈々",
+          "voice_actor": "KAORI."
+        },
+        {
+          "character": "大崎ナナ",
+          "voice_actor": "朴璐美"
+        }
+      ],
+      "average_score": 85,
+      "popularity": 210828,
+      "yuri_tag_rank": 65,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx877-6BUYEWp8By8j.png",
+      "cover_source_url": "https://anilist.co/anime/877",
+      "source_url": "https://anilist.co/anime/877",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "afb9c7a0229ba25fa40a1e023",
+      "slug": "bocchi-the-rock",
+      "anilist_id": 130003,
+      "mal_id": 47917,
+      "title_ja": "ぼっち・ざ・ろっく！",
+      "title_romaji": "Bocchi the Rock!",
+      "title_en": "BOCCHI THE ROCK!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2022-10-09",
+      "end_date": "2022-12-25",
+      "season": "fall",
+      "season_year": 2022,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "CloverWorks"
+      ],
+      "main_cast": [
+        {
+          "character": "後藤ひとり",
+          "voice_actor": "青山吉能"
+        },
+        {
+          "character": "伊地知虹夏",
+          "voice_actor": "鈴代紗弓"
+        },
+        {
+          "character": "山田リョウ",
+          "voice_actor": "水野朔"
+        },
+        {
+          "character": "喜多郁代",
+          "voice_actor": "長谷川育美"
+        }
+      ],
+      "average_score": 87,
+      "popularity": 270757,
+      "yuri_tag_rank": 65,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130003-HTDmeL4RGeJ4.png",
+      "cover_source_url": "https://anilist.co/anime/130003",
+      "source_url": "https://anilist.co/anime/130003",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -10943,119 +11025,13 @@
         }
       ],
       "average_score": 83,
-      "popularity": 26051,
+      "popularity": 26152,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx165253-nAwyrMZm4jBA.jpg",
       "cover_source_url": "https://anilist.co/anime/165253",
       "source_url": "https://anilist.co/anime/165253",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "af235453f7bb18a1b89da9f41",
-      "slug": "koisuru-asteroid",
-      "anilist_id": 108092,
-      "mal_id": 39388,
-      "title_ja": "恋する小惑星〈アステロイド〉",
-      "title_romaji": "Koisuru Asteroid",
-      "title_en": "Asteroid in Love",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2020-01-03",
-      "end_date": "2020-03-27",
-      "season": "winter",
-      "season_year": 2020,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Doga Kobo"
-      ],
-      "main_cast": [
-        {
-          "character": "真中あお",
-          "voice_actor": "山口愛"
-        },
-        {
-          "character": "木ノ幡みら",
-          "voice_actor": "高柳知葉"
-        },
-        {
-          "character": "猪瀬舞",
-          "voice_actor": "指出毬亜"
-        },
-        {
-          "character": "桜井美景",
-          "voice_actor": "東山奈央"
-        },
-        {
-          "character": "森野真理",
-          "voice_actor": "上坂すみれ"
-        }
-      ],
-      "average_score": 67,
-      "popularity": 37518,
-      "yuri_tag_rank": 65,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108092-vbL3rf0b23sp.jpg",
-      "cover_source_url": "https://anilist.co/anime/108092",
-      "source_url": "https://anilist.co/anime/108092",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a647afefbffbc7ca7407bbedd",
-      "slug": "mahoutsukai-precure",
-      "anilist_id": 21506,
-      "mal_id": 31884,
-      "title_ja": "魔法つかいプリキュア！",
-      "title_romaji": "Mahoutsukai Precure!",
-      "title_en": "Witchy Precure!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2016-02-07",
-      "end_date": "2017-01-29",
-      "season": "winter",
-      "season_year": 2016,
-      "episode_count": 50,
-      "episode_duration_min": 24,
-      "studios": [
-        "Toei Animation"
-      ],
-      "main_cast": [
-        {
-          "character": "朝日奈みらい",
-          "voice_actor": "高橋李依"
-        },
-        {
-          "character": "十六夜リコ",
-          "voice_actor": "堀江由衣"
-        },
-        {
-          "character": "はーちゃん",
-          "voice_actor": "早見沙織"
-        },
-        {
-          "character": "モフルン",
-          "voice_actor": "齋藤彩夏"
-        }
-      ],
-      "average_score": 73,
-      "popularity": 7841,
-      "yuri_tag_rank": 65,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21506-hcLdwWKY4uyt.jpg",
-      "cover_source_url": "https://anilist.co/anime/21506",
-      "source_url": "https://anilist.co/anime/21506",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11088,64 +11064,13 @@
         }
       ],
       "average_score": 51,
-      "popularity": 7416,
+      "popularity": 7434,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100814-Np7VQLyDRjor.jpg",
       "cover_source_url": "https://anilist.co/anime/100814",
       "source_url": "https://anilist.co/anime/100814",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a679e0d5cdadb21c691c16002",
-      "slug": "ibitte-konai-gibo-to-gishi",
-      "anilist_id": 196356,
-      "mal_id": 62102,
-      "title_ja": "いびってこない義母と義姉",
-      "title_romaji": "Ibitte Konai Gibo to Gishi",
-      "title_en": "My Stepmother and Stepsisters Aren’t Wicked",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2026-07-08",
-      "end_date": "2026-09-26",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "NEWON"
-      ],
-      "main_cast": [
-        {
-          "character": "鴻蔵美冶",
-          "voice_actor": "鈴木日菜"
-        },
-        {
-          "character": "鴻蔵てる",
-          "voice_actor": "くじら"
-        },
-        {
-          "character": "鴻蔵まりか",
-          "voice_actor": "芹澤優"
-        },
-        {
-          "character": "鴻蔵ありさ",
-          "voice_actor": "貫井柚佳"
-        }
-      ],
-      "average_score": 69,
-      "popularity": 13285,
-      "yuri_tag_rank": 64,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196356-2TNt2b9tu0jm.jpg",
-      "cover_source_url": "https://anilist.co/anime/196356",
-      "source_url": "https://anilist.co/anime/196356",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11182,7 +11107,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 30390,
+      "popularity": 30624,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11219,7 +11144,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 5402,
+      "popularity": 5528,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11230,45 +11155,137 @@
       "related_work_slug": null
     },
     {
-      "id": "add003b1e8d237a4b0ec4a07e",
-      "slug": "nana",
-      "anilist_id": 877,
-      "mal_id": 877,
-      "title_ja": "NANA-ナナ-",
-      "title_romaji": "NANA",
-      "title_en": "NANA",
+      "id": "a41e1f074fea4d2e95e070f09",
+      "slug": "bang-dream-mygo-ave-mujica",
+      "anilist_id": 189121,
+      "mal_id": 61324,
+      "title_ja": "BanG Dream! MyGO!!!!! // Ave Mujica",
+      "title_romaji": "BanG Dream! MyGO!!!!! // Ave Mujica",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "other",
+      "status": "announced",
+      "start_date": "2027-01-01",
+      "end_date": null,
+      "season": "winter",
+      "season_year": 2027,
+      "episode_count": null,
+      "episode_duration_min": null,
+      "studios": [],
+      "main_cast": [
+        {
+          "character": "高松燈",
+          "voice_actor": null
+        },
+        {
+          "character": "三角初華",
+          "voice_actor": null
+        }
+      ],
+      "average_score": null,
+      "popularity": 4960,
+      "yuri_tag_rank": 62,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189121-m3EHJ33Y8jgT.png",
+      "cover_source_url": "https://anilist.co/anime/189121",
+      "source_url": "https://anilist.co/anime/189121",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "ad228ee54e236e4778542e0df",
+      "slug": "vivid-strike",
+      "anilist_id": 21871,
+      "mal_id": 33589,
+      "title_ja": "ViVid Strike!",
+      "title_romaji": "ViVid Strike!",
+      "title_en": "ViVid Strike!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2016-10-02",
+      "end_date": "2016-12-18",
+      "season": "fall",
+      "season_year": 2016,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Seven Arcs Pictures"
+      ],
+      "main_cast": [
+        {
+          "character": "リンネ・ベルリネッタ",
+          "voice_actor": "小倉唯"
+        },
+        {
+          "character": "フーカ・レヴェントン",
+          "voice_actor": "水瀬いのり"
+        }
+      ],
+      "average_score": 67,
+      "popularity": 24804,
+      "yuri_tag_rank": 62,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21871-HHE1QjwHA6Op.png",
+      "cover_source_url": "https://anilist.co/anime/21871",
+      "source_url": "https://anilist.co/anime/21871",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a81da1b314728ff69ac032481",
+      "slug": "bocchi-the-rock-2nd-season",
+      "anilist_id": 186712,
+      "mal_id": 61006,
+      "title_ja": "ぼっち・ざ・ろっく！ 2期",
+      "title_romaji": "Bocchi the Rock! 2nd Season",
+      "title_en": null,
       "title_zh_tw": null,
       "title_zh_cn": null,
       "format": "tv",
       "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2006-04-05",
-      "end_date": "2007-03-28",
-      "season": "spring",
-      "season_year": 2006,
-      "episode_count": 47,
-      "episode_duration_min": 23,
+      "status": "announced",
+      "start_date": null,
+      "end_date": null,
+      "season": null,
+      "season_year": null,
+      "episode_count": null,
+      "episode_duration_min": null,
       "studios": [
-        "MADHOUSE"
+        "CloverWorks"
       ],
       "main_cast": [
         {
-          "character": "小松奈々",
-          "voice_actor": "KAORI."
+          "character": "後藤ひとり",
+          "voice_actor": null
         },
         {
-          "character": "大崎ナナ",
-          "voice_actor": "朴璐美"
+          "character": "伊地知虹夏",
+          "voice_actor": null
+        },
+        {
+          "character": "山田リョウ",
+          "voice_actor": null
+        },
+        {
+          "character": "喜多郁代",
+          "voice_actor": null
         }
       ],
-      "average_score": 85,
-      "popularity": 209773,
-      "yuri_tag_rank": 63,
+      "average_score": null,
+      "popularity": 41559,
+      "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx877-6BUYEWp8By8j.png",
-      "cover_source_url": "https://anilist.co/anime/877",
-      "source_url": "https://anilist.co/anime/877",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186712-d5I2TjUQcHuI.jpg",
+      "cover_source_url": "https://anilist.co/anime/186712",
+      "source_url": "https://anilist.co/anime/186712",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11317,190 +11334,13 @@
         }
       ],
       "average_score": 83,
-      "popularity": 67676,
-      "yuri_tag_rank": 63,
+      "popularity": 68028,
+      "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx164212-eKh15LQxkTEx.jpg",
       "cover_source_url": "https://anilist.co/anime/164212",
       "source_url": "https://anilist.co/anime/164212",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a41e1f074fea4d2e95e070f09",
-      "slug": "bang-dream-it-s-mygo-ave-mujica-zoku-hen",
-      "anilist_id": 189121,
-      "mal_id": 61324,
-      "title_ja": "BanG Dream! It's MyGO!!!!! / Ave Mujica (続編)",
-      "title_romaji": "BanG Dream! It's MyGO!!!!! / Ave Mujica (Zoku-hen)",
-      "title_en": null,
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "announced",
-      "start_date": "2027-01-01",
-      "end_date": null,
-      "season": "winter",
-      "season_year": 2027,
-      "episode_count": null,
-      "episode_duration_min": null,
-      "studios": [],
-      "main_cast": [],
-      "average_score": null,
-      "popularity": 4816,
-      "yuri_tag_rank": 62,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189121-m3EHJ33Y8jgT.png",
-      "cover_source_url": "https://anilist.co/anime/189121",
-      "source_url": "https://anilist.co/anime/189121",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "ad228ee54e236e4778542e0df",
-      "slug": "vivid-strike",
-      "anilist_id": 21871,
-      "mal_id": 33589,
-      "title_ja": "ViVid Strike!",
-      "title_romaji": "ViVid Strike!",
-      "title_en": "ViVid Strike!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2016-10-02",
-      "end_date": "2016-12-18",
-      "season": "fall",
-      "season_year": 2016,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Seven Arcs Pictures"
-      ],
-      "main_cast": [
-        {
-          "character": "リンネ・ベルリネッタ",
-          "voice_actor": "小倉唯"
-        },
-        {
-          "character": "フーカ・レヴェントン",
-          "voice_actor": "水瀬いのり"
-        }
-      ],
-      "average_score": 67,
-      "popularity": 24761,
-      "yuri_tag_rank": 62,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21871-HHE1QjwHA6Op.png",
-      "cover_source_url": "https://anilist.co/anime/21871",
-      "source_url": "https://anilist.co/anime/21871",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "afb9c7a0229ba25fa40a1e023",
-      "slug": "bocchi-the-rock",
-      "anilist_id": 130003,
-      "mal_id": 47917,
-      "title_ja": "ぼっち・ざ・ろっく！",
-      "title_romaji": "Bocchi the Rock!",
-      "title_en": "BOCCHI THE ROCK!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2022-10-09",
-      "end_date": "2022-12-25",
-      "season": "fall",
-      "season_year": 2022,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "CloverWorks"
-      ],
-      "main_cast": [
-        {
-          "character": "後藤ひとり",
-          "voice_actor": "青山吉能"
-        },
-        {
-          "character": "伊地知虹夏",
-          "voice_actor": "鈴代紗弓"
-        },
-        {
-          "character": "山田リョウ",
-          "voice_actor": "水野朔"
-        },
-        {
-          "character": "喜多郁代",
-          "voice_actor": "長谷川育美"
-        }
-      ],
-      "average_score": 87,
-      "popularity": 268924,
-      "yuri_tag_rank": 62,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130003-HTDmeL4RGeJ4.png",
-      "cover_source_url": "https://anilist.co/anime/130003",
-      "source_url": "https://anilist.co/anime/130003",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a81da1b314728ff69ac032481",
-      "slug": "bocchi-the-rock-2nd-season",
-      "anilist_id": 186712,
-      "mal_id": 61006,
-      "title_ja": "ぼっち・ざ・ろっく！ 2期",
-      "title_romaji": "Bocchi the Rock! 2nd Season",
-      "title_en": null,
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "announced",
-      "start_date": null,
-      "end_date": null,
-      "season": null,
-      "season_year": null,
-      "episode_count": null,
-      "episode_duration_min": null,
-      "studios": [
-        "CloverWorks"
-      ],
-      "main_cast": [
-        {
-          "character": "後藤ひとり",
-          "voice_actor": null
-        },
-        {
-          "character": "伊地知虹夏",
-          "voice_actor": null
-        },
-        {
-          "character": "山田リョウ",
-          "voice_actor": null
-        },
-        {
-          "character": "喜多郁代",
-          "voice_actor": null
-        }
-      ],
-      "average_score": null,
-      "popularity": 41042,
-      "yuri_tag_rank": 62,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186712-d5I2TjUQcHuI.jpg",
-      "cover_source_url": "https://anilist.co/anime/186712",
-      "source_url": "https://anilist.co/anime/186712",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11560,8 +11400,8 @@
           "voice_actor": "市道真央"
         }
       ],
-      "average_score": 51,
-      "popularity": 7607,
+      "average_score": 52,
+      "popularity": 7622,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11595,7 +11435,7 @@
       ],
       "main_cast": [],
       "average_score": null,
-      "popularity": 2989,
+      "popularity": 3007,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11662,7 +11502,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 2545,
+      "popularity": 2596,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11709,7 +11549,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 21587,
+      "popularity": 21654,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11720,45 +11560,120 @@
       "related_work_slug": null
     },
     {
-      "id": "ae83da6d3b58c678d61d4bd45",
-      "slug": "uma-musume-cinderella-gray-part-2",
-      "anilist_id": 195240,
-      "mal_id": 61930,
-      "title_ja": "ウマ娘 シンデレラグレイ 第2クール",
-      "title_romaji": "Uma Musume: Cinderella Gray Part 2",
-      "title_en": "Umamusume: Cinderella Gray 2nd Cour",
+      "id": "a487340b1605bba78cb9e1bad",
+      "slug": "mahou-shoujo-lyrical-nanoha-a-s",
+      "anilist_id": 77,
+      "mal_id": 77,
+      "title_ja": "魔法少女リリカルなのはＡ’ｓ",
+      "title_romaji": "Mahou Shoujo Lyrical Nanoha A's",
+      "title_en": "Magical Girl Lyrical Nanoha A's",
       "title_zh_tw": null,
       "title_zh_cn": null,
       "format": "tv",
-      "adaptation_source": "manga",
+      "adaptation_source": "original",
       "status": "finished",
-      "start_date": "2025-10-05",
-      "end_date": "2025-12-21",
+      "start_date": "2005-10-02",
+      "end_date": "2005-12-25",
       "season": "fall",
-      "season_year": 2025,
-      "episode_count": 10,
-      "episode_duration_min": 24,
+      "season_year": 2005,
+      "episode_count": 13,
+      "episode_duration_min": 25,
       "studios": [
-        "CygamesPictures"
+        "Seven Arcs"
       ],
       "main_cast": [
         {
-          "character": "オグリキャップ",
-          "voice_actor": "高柳知葉"
+          "character": "フェイト・テスタロッサ",
+          "voice_actor": "水樹奈々"
         },
         {
-          "character": "タマモクロス",
-          "voice_actor": "大空直美"
+          "character": "高町なのは",
+          "voice_actor": "田村ゆかり"
+        },
+        {
+          "character": "シグナム",
+          "voice_actor": "清水香里"
+        },
+        {
+          "character": "ヴィーター",
+          "voice_actor": "真田アサミ"
+        },
+        {
+          "character": "八神はやて",
+          "voice_actor": "植田佳奈"
+        },
+        {
+          "character": "シャマル",
+          "voice_actor": "柚木涼香"
+        },
+        {
+          "character": "ザフィーラ",
+          "voice_actor": "一条和矢"
         }
       ],
-      "average_score": 86,
-      "popularity": 30272,
+      "average_score": 78,
+      "popularity": 16213,
+      "yuri_tag_rank": 62,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx77-SwBCj7R1enWi.png",
+      "cover_source_url": "https://anilist.co/anime/77",
+      "source_url": "https://anilist.co/anime/77",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "ae9858e4281daa47f63b11b19",
+      "slug": "bang-dream-it-s-mygo",
+      "anilist_id": 163571,
+      "mal_id": 54959,
+      "title_ja": "BanG Dream! It's MyGO!!!!!",
+      "title_romaji": "BanG Dream! It's MyGO!!!!!",
+      "title_en": "BanG Dream! It's MyGO!!!!!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "other",
+      "status": "finished",
+      "start_date": "2023-06-29",
+      "end_date": "2023-09-14",
+      "season": "summer",
+      "season_year": 2023,
+      "episode_count": 13,
+      "episode_duration_min": 24,
+      "studios": [
+        "SANZIGEN"
+      ],
+      "main_cast": [
+        {
+          "character": "千早愛音",
+          "voice_actor": "立石凛"
+        },
+        {
+          "character": "高松燈",
+          "voice_actor": "羊宮妃那"
+        },
+        {
+          "character": "椎名立希",
+          "voice_actor": "林鼓子"
+        },
+        {
+          "character": "長崎そよ",
+          "voice_actor": "小日向美香"
+        },
+        {
+          "character": "要楽奈",
+          "voice_actor": "青木陽菜"
+        }
+      ],
+      "average_score": 82,
+      "popularity": 22804,
       "yuri_tag_rank": 61,
       "is_adult": false,
       "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195240-hKcmllV6YHQT.jpg",
-      "cover_source_url": "https://anilist.co/anime/195240",
-      "source_url": "https://anilist.co/anime/195240",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163571-Atkvuzh1A1Ip.png",
+      "cover_source_url": "https://anilist.co/anime/163571",
+      "source_url": "https://anilist.co/anime/163571",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11794,8 +11709,8 @@
           "voice_actor": "若山詩音"
         }
       ],
-      "average_score": 67,
-      "popularity": 10364,
+      "average_score": 68,
+      "popularity": 10462,
       "yuri_tag_rank": 61,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11846,191 +11761,13 @@
         }
       ],
       "average_score": 66,
-      "popularity": 22937,
+      "popularity": 22973,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9776-1JMnQWJhpKVr.png",
       "cover_source_url": "https://anilist.co/anime/9776",
       "source_url": "https://anilist.co/anime/9776",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a2f5ad20ef3703dc4381f7794",
-      "slug": "bang-dream-3rd-season",
-      "anilist_id": 101634,
-      "mal_id": 37870,
-      "title_ja": "BanG Dream! 3rd Season",
-      "title_romaji": "BanG Dream! 3rd Season",
-      "title_en": "BanG Dream! 3rd Season",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "finished",
-      "start_date": "2020-01-23",
-      "end_date": "2020-04-23",
-      "season": "winter",
-      "season_year": 2020,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "SANZIGEN"
-      ],
-      "main_cast": [
-        {
-          "character": "戸山香澄",
-          "voice_actor": "愛美"
-        },
-        {
-          "character": "市ヶ谷有咲",
-          "voice_actor": "伊藤彩沙"
-        },
-        {
-          "character": "牛込りみ",
-          "voice_actor": "西本りみ"
-        },
-        {
-          "character": "花園たえ",
-          "voice_actor": "大塚紗英"
-        },
-        {
-          "character": "山吹沙綾",
-          "voice_actor": "大橋彩香"
-        },
-        {
-          "character": "朝日六花",
-          "voice_actor": "小原莉子"
-        },
-        {
-          "character": "和奏レイ",
-          "voice_actor": "レイチェル"
-        },
-        {
-          "character": "佐藤ますき",
-          "voice_actor": "夏芽"
-        }
-      ],
-      "average_score": 78,
-      "popularity": 16751,
-      "yuri_tag_rank": 60,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101634-4PSQAU2bw7s3.png",
-      "cover_source_url": "https://anilist.co/anime/101634",
-      "source_url": "https://anilist.co/anime/101634",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "ad59f9d9f3d0ffee560c176dd",
-      "slug": "bang-dream",
-      "anilist_id": 87435,
-      "mal_id": 33573,
-      "title_ja": "BanG Dream!（バンドリ！）",
-      "title_romaji": "BanG Dream!",
-      "title_en": "BanG Dream!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "finished",
-      "start_date": "2017-01-21",
-      "end_date": "2017-04-22",
-      "season": "winter",
-      "season_year": 2017,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "Xebec",
-        "Issen"
-      ],
-      "main_cast": [
-        {
-          "character": "戸山香澄",
-          "voice_actor": "愛美"
-        },
-        {
-          "character": "市ヶ谷有咲",
-          "voice_actor": "伊藤彩沙"
-        },
-        {
-          "character": "牛込りみ",
-          "voice_actor": "西本りみ"
-        },
-        {
-          "character": "花園たえ",
-          "voice_actor": "大塚紗英"
-        },
-        {
-          "character": "山吹沙綾",
-          "voice_actor": "大橋彩香"
-        }
-      ],
-      "average_score": 68,
-      "popularity": 40525,
-      "yuri_tag_rank": 60,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx87435-yHlVTP1HFiXH.png",
-      "cover_source_url": "https://anilist.co/anime/87435",
-      "source_url": "https://anilist.co/anime/87435",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "ab42062161a86a0be96d473a9",
-      "slug": "mono",
-      "anilist_id": 176246,
-      "mal_id": 58492,
-      "title_ja": "mono",
-      "title_romaji": "mono",
-      "title_en": "mono",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2025-04-13",
-      "end_date": "2025-06-29",
-      "season": "spring",
-      "season_year": 2025,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Soigne"
-      ],
-      "main_cast": [
-        {
-          "character": "雨宮さつき",
-          "voice_actor": "三川華月"
-        },
-        {
-          "character": "霧山アン",
-          "voice_actor": "古賀葵"
-        },
-        {
-          "character": "敷島桜子",
-          "voice_actor": "遠野ひかる"
-        },
-        {
-          "character": "秋山春乃",
-          "voice_actor": "上田麗奈"
-        },
-        {
-          "character": "駒田華子",
-          "voice_actor": "河瀬茉希"
-        }
-      ],
-      "average_score": 76,
-      "popularity": 27409,
-      "yuri_tag_rank": 60,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176246-ndH8bKh7cmzf.jpg",
-      "cover_source_url": "https://anilist.co/anime/176246",
-      "source_url": "https://anilist.co/anime/176246",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -12067,7 +11804,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 75041,
+      "popularity": 75523,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12110,7 +11847,7 @@
         }
       ],
       "average_score": 60,
-      "popularity": 641,
+      "popularity": 644,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12157,52 +11894,13 @@
         }
       ],
       "average_score": 72,
-      "popularity": 26698,
+      "popularity": 26743,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx87496-pB2CXbFGucn0.png",
       "cover_source_url": "https://anilist.co/anime/87496",
       "source_url": "https://anilist.co/anime/87496",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "af1c3fa883e3067e469528379",
-      "slug": "zatsu-tabi-that-s-journey",
-      "anilist_id": 165445,
-      "mal_id": 55514,
-      "title_ja": "ざつ旅-That's Journey-",
-      "title_romaji": "Zatsu Tabi: That's Journey",
-      "title_en": "ZatsuTabi -That's Journey-",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2025-04-07",
-      "end_date": "2025-06-23",
-      "season": "spring",
-      "season_year": 2025,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Makaria"
-      ],
-      "main_cast": [
-        {
-          "character": "鈴ヶ森ちか",
-          "voice_actor": "月城日花"
-        }
-      ],
-      "average_score": 67,
-      "popularity": 18810,
-      "yuri_tag_rank": 60,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx165445-qwVP0w5NIaBW.jpg",
-      "cover_source_url": "https://anilist.co/anime/165445",
-      "source_url": "https://anilist.co/anime/165445",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -12255,7 +11953,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 38930,
+      "popularity": 39088,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12314,13 +12012,56 @@
         }
       ],
       "average_score": 64,
-      "popularity": 12408,
+      "popularity": 12440,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101610-8vfcvNlYD84F.jpg",
       "cover_source_url": "https://anilist.co/anime/101610",
       "source_url": "https://anilist.co/anime/101610",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "ae83da6d3b58c678d61d4bd45",
+      "slug": "uma-musume-cinderella-gray-part-2",
+      "anilist_id": 195240,
+      "mal_id": 61930,
+      "title_ja": "ウマ娘 シンデレラグレイ 第2クール",
+      "title_romaji": "Uma Musume: Cinderella Gray Part 2",
+      "title_en": "Umamusume: Cinderella Gray 2nd Cour",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2025-10-05",
+      "end_date": "2025-12-21",
+      "season": "fall",
+      "season_year": 2025,
+      "episode_count": 10,
+      "episode_duration_min": 24,
+      "studios": [
+        "CygamesPictures"
+      ],
+      "main_cast": [
+        {
+          "character": "オグリキャップ",
+          "voice_actor": "高柳知葉"
+        },
+        {
+          "character": "タマモクロス",
+          "voice_actor": "大空直美"
+        }
+      ],
+      "average_score": 86,
+      "popularity": 30641,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195240-hKcmllV6YHQT.jpg",
+      "cover_source_url": "https://anilist.co/anime/195240",
+      "source_url": "https://anilist.co/anime/195240",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -12365,13 +12106,69 @@
         }
       ],
       "average_score": 71,
-      "popularity": 8512,
+      "popularity": 8544,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx311-dSSdyz5d3hWb.jpg",
       "cover_source_url": "https://anilist.co/anime/311",
       "source_url": "https://anilist.co/anime/311",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a80f0e10241b9d555bf1c38cb",
+      "slug": "girls-und-panzer-motto-love-love-sakusen-desu",
+      "anilist_id": 188034,
+      "mal_id": 61227,
+      "title_ja": "ガールズ＆パンツァー もっとらぶらぶ作戦です！",
+      "title_romaji": "Girls und Panzer: Motto Love Love Sakusen desu!",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "airing",
+      "start_date": "2026-10-08",
+      "end_date": "2026-12-24",
+      "season": "fall",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "P.A.WORKS",
+        "Actas"
+      ],
+      "main_cast": [
+        {
+          "character": "西住みほ",
+          "voice_actor": "渕上舞"
+        },
+        {
+          "character": "武部沙織",
+          "voice_actor": "茅野愛衣"
+        },
+        {
+          "character": "五十鈴華",
+          "voice_actor": "尾崎真実"
+        },
+        {
+          "character": "秋山優花里",
+          "voice_actor": "中上育実"
+        },
+        {
+          "character": "冷泉麻子",
+          "voice_actor": "井口裕香"
+        }
+      ],
+      "average_score": 73,
+      "popularity": 3992,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188034-oRwVKBMezOOk.jpg",
+      "cover_source_url": "https://anilist.co/anime/188034",
+      "source_url": "https://anilist.co/anime/188034",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -12397,7 +12194,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": 38,
-      "popularity": 632,
+      "popularity": 638,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12440,7 +12237,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 35894,
+      "popularity": 35970,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12470,7 +12267,7 @@
       "episode_count": 13,
       "episode_duration_min": 24,
       "studios": [
-        "Gainax"
+        "GAINAX"
       ],
       "main_cast": [
         {
@@ -12499,7 +12296,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 14182,
+      "popularity": 14208,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12566,7 +12363,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 18886,
+      "popularity": 18932,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12633,7 +12430,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 49775,
+      "popularity": 50104,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12667,7 +12464,7 @@
       ],
       "main_cast": [],
       "average_score": 71,
-      "popularity": 1636,
+      "popularity": 1648,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12697,7 +12494,7 @@
       "episode_count": 6,
       "episode_duration_min": 30,
       "studios": [
-        "Gainax"
+        "GAINAX"
       ],
       "main_cast": [
         {
@@ -12714,7 +12511,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 26258,
+      "popularity": 26354,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12777,7 +12574,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 31977,
+      "popularity": 32040,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12808,8 +12605,8 @@
       "episode_duration_min": 24,
       "studios": [],
       "main_cast": [],
-      "average_score": 50,
-      "popularity": 550,
+      "average_score": 49,
+      "popularity": 551,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12867,8 +12664,8 @@
           "voice_actor": "桑島法子"
         }
       ],
-      "average_score": 69,
-      "popularity": 12010,
+      "average_score": 70,
+      "popularity": 12189,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12933,7 +12730,7 @@
         }
       ],
       "average_score": 65,
-      "popularity": 1704,
+      "popularity": 1708,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12998,7 +12795,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 1932,
+      "popularity": 1939,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13045,7 +12842,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 17633,
+      "popularity": 17671,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13112,7 +12909,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 17465,
+      "popularity": 17514,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13155,7 +12952,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 29245,
+      "popularity": 29447,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13214,7 +13011,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 80119,
+      "popularity": 80386,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13273,7 +13070,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 54477,
+      "popularity": 54709,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13324,7 +13121,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 6668,
+      "popularity": 6786,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13391,7 +13188,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 42705,
+      "popularity": 43645,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13450,13 +13247,107 @@
         }
       ],
       "average_score": 74,
-      "popularity": 5000,
+      "popularity": 5013,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx15989-RHAaDyzOL5mf.png",
       "cover_source_url": "https://anilist.co/anime/15989",
       "source_url": "https://anilist.co/anime/15989",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "ab79943789e72c1824e99ece8",
+      "slug": "seiyuu-radio-no-uraomote",
+      "anilist_id": 159039,
+      "mal_id": 53912,
+      "title_ja": "声優ラジオのウラオモテ",
+      "title_romaji": "Seiyuu Radio no Uraomote",
+      "title_en": "The Many Sides of Voice Actor Radio",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "light_novel",
+      "status": "finished",
+      "start_date": "2024-04-10",
+      "end_date": "2024-06-26",
+      "season": "spring",
+      "season_year": 2024,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "CONNECT"
+      ],
+      "main_cast": [
+        {
+          "character": "佐藤由美子",
+          "voice_actor": "伊藤美来"
+        },
+        {
+          "character": "渡辺千佳",
+          "voice_actor": "豊田萌絵"
+        }
+      ],
+      "average_score": 69,
+      "popularity": 28314,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159039-88kPltmhTzqU.jpg",
+      "cover_source_url": "https://anilist.co/anime/159039",
+      "source_url": "https://anilist.co/anime/159039",
+      "related_work_id": "c1c45fd312e4b20e72fadc39a",
+      "related_work_slug": "w-149b406edb"
+    },
+    {
+      "id": "ad1db70719a674d4f3741563b",
+      "slug": "yoru-no-kurage-wa-oyogenai",
+      "anilist_id": 163078,
+      "mal_id": 54839,
+      "title_ja": "夜のクラゲは泳げない",
+      "title_romaji": "Yoru no Kurage wa Oyogenai",
+      "title_en": "Jellyfish Can’t Swim in the Night",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2024-04-07",
+      "end_date": "2024-06-23",
+      "season": "spring",
+      "season_year": 2024,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Doga Kobo"
+      ],
+      "main_cast": [
+        {
+          "character": "光月まひる",
+          "voice_actor": "伊藤美来"
+        },
+        {
+          "character": "山ノ内花音",
+          "voice_actor": "高橋李依"
+        },
+        {
+          "character": "渡瀬キウイ",
+          "voice_actor": "富田美憂"
+        },
+        {
+          "character": "高梨・キム・アヌーク・めい",
+          "voice_actor": "島袋美由利"
+        }
+      ],
+      "average_score": 76,
+      "popularity": 63221,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163078-akhThKoWpWOb.jpg",
+      "cover_source_url": "https://anilist.co/anime/163078",
+      "source_url": "https://anilist.co/anime/163078",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -13509,7 +13400,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 33179,
+      "popularity": 33334,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13576,7 +13467,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 5882,
+      "popularity": 5903,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13608,13 +13499,56 @@
       "studios": [],
       "main_cast": [],
       "average_score": null,
-      "popularity": 212,
+      "popularity": 217,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx194707-MaXs1GmaIzmP.png",
       "cover_source_url": "https://anilist.co/anime/194707",
       "source_url": "https://anilist.co/anime/194707",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "afe6449f8a12f2d617f9fda09",
+      "slug": "nekogami-yaoyorozu",
+      "anilist_id": 9934,
+      "mal_id": 9934,
+      "title_ja": "猫神やおよろず",
+      "title_romaji": "Nekogami Yaoyorozu",
+      "title_en": "The Everyday Tales of a Cat God",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2011-07-09",
+      "end_date": "2011-09-24",
+      "season": "summer",
+      "season_year": 2011,
+      "episode_count": 12,
+      "episode_duration_min": 23,
+      "studios": [
+        "AIC Plus+"
+      ],
+      "main_cast": [
+        {
+          "character": "繭",
+          "voice_actor": "戸松遥"
+        },
+        {
+          "character": "古宮 柚子",
+          "voice_actor": "堀江由衣"
+        }
+      ],
+      "average_score": 63,
+      "popularity": 6910,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/9934.jpg",
+      "cover_source_url": "https://anilist.co/anime/9934",
+      "source_url": "https://anilist.co/anime/9934",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -13649,7 +13583,7 @@
         }
       ],
       "average_score": 56,
-      "popularity": 5954,
+      "popularity": 5964,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13692,7 +13626,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 48604,
+      "popularity": 48863,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13759,7 +13693,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 10657,
+      "popularity": 10698,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13811,8 +13745,8 @@
           "voice_actor": "長妻樹里"
         }
       ],
-      "average_score": 61,
-      "popularity": 2308,
+      "average_score": 62,
+      "popularity": 2317,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13879,7 +13813,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 32746,
+      "popularity": 32825,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13938,13 +13872,110 @@
         }
       ],
       "average_score": 55,
-      "popularity": 63748,
+      "popularity": 63938,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx6500-RQxUgnApAqqn.png",
       "cover_source_url": "https://anilist.co/anime/6500",
       "source_url": "https://anilist.co/anime/6500",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a66ec6ce8833e1715c601b557",
+      "slug": "ura-sekai-picnic",
+      "anilist_id": 116287,
+      "mal_id": 41392,
+      "title_ja": "裏世界ピクニック",
+      "title_romaji": "Ura Sekai Picnic",
+      "title_en": "Otherside Picnic",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "other",
+      "status": "finished",
+      "start_date": "2021-01-04",
+      "end_date": "2021-03-22",
+      "season": "winter",
+      "season_year": 2021,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "LIDENFILMS",
+        "Felix Film"
+      ],
+      "main_cast": [
+        {
+          "character": "紙越空魚",
+          "voice_actor": "花守ゆみり"
+        },
+        {
+          "character": "仁科鳥子",
+          "voice_actor": "茅野愛衣"
+        }
+      ],
+      "average_score": 64,
+      "popularity": 48978,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx116287-LCcICfn2FhwL.jpg",
+      "cover_source_url": "https://anilist.co/anime/116287",
+      "source_url": "https://anilist.co/anime/116287",
+      "related_work_id": "c94f4b14057dc29ead4b14a4d",
+      "related_work_slug": "w-90d6a720cf"
+    },
+    {
+      "id": "a8b3cfc2d24867b504cc4e637",
+      "slug": "senran-kagura-specials",
+      "anilist_id": 17345,
+      "mal_id": 17345,
+      "title_ja": "閃乱カグラ",
+      "title_romaji": "Senran Kagura Specials",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "special",
+      "adaptation_source": "unknown",
+      "status": "finished",
+      "start_date": "2013-03-27",
+      "end_date": "2013-08-28",
+      "season": "spring",
+      "season_year": 2013,
+      "episode_count": 6,
+      "episode_duration_min": 4,
+      "studios": [],
+      "main_cast": [
+        {
+          "character": "斑鳩",
+          "voice_actor": "今井麻美"
+        },
+        {
+          "character": "葛城",
+          "voice_actor": "小林ゆう"
+        },
+        {
+          "character": "飛鳥",
+          "voice_actor": "原田ひとみ"
+        },
+        {
+          "character": "柳生",
+          "voice_actor": "水橋かおり"
+        },
+        {
+          "character": "雲雀",
+          "voice_actor": "井口裕香"
+        }
+      ],
+      "average_score": 59,
+      "popularity": 5523,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/17345.jpg",
+      "cover_source_url": "https://anilist.co/anime/17345",
+      "source_url": "https://anilist.co/anime/17345",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -13985,7 +14016,7 @@
         }
       ],
       "average_score": 83,
-      "popularity": 78200,
+      "popularity": 78426,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14051,8 +14082,8 @@
           "voice_actor": "雨宮天"
         }
       ],
-      "average_score": 70,
-      "popularity": 4267,
+      "average_score": 71,
+      "popularity": 4305,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14107,7 +14138,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 10365,
+      "popularity": 10511,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14166,76 +14197,13 @@
         }
       ],
       "average_score": 73,
-      "popularity": 6201,
+      "popularity": 6228,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b17947-TACbDdG8uJcq.jpg",
       "cover_source_url": "https://anilist.co/anime/17947",
       "source_url": "https://anilist.co/anime/17947",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a487340b1605bba78cb9e1bad",
-      "slug": "mahou-shoujo-lyrical-nanoha-a-s",
-      "anilist_id": 77,
-      "mal_id": 77,
-      "title_ja": "魔法少女リリカルなのはＡ’ｓ",
-      "title_romaji": "Mahou Shoujo Lyrical Nanoha A's",
-      "title_en": "Magical Girl Lyrical Nanoha A's",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2005-10-02",
-      "end_date": "2005-12-25",
-      "season": "fall",
-      "season_year": 2005,
-      "episode_count": 13,
-      "episode_duration_min": 25,
-      "studios": [
-        "Seven Arcs"
-      ],
-      "main_cast": [
-        {
-          "character": "フェイト・テスタロッサ",
-          "voice_actor": "水樹奈々"
-        },
-        {
-          "character": "高町なのは",
-          "voice_actor": "田村ゆかり"
-        },
-        {
-          "character": "シグナム",
-          "voice_actor": "清水香里"
-        },
-        {
-          "character": "ヴィーター",
-          "voice_actor": "真田アサミ"
-        },
-        {
-          "character": "八神はやて",
-          "voice_actor": "植田佳奈"
-        },
-        {
-          "character": "シャマル",
-          "voice_actor": "柚木涼香"
-        },
-        {
-          "character": "ザフィーラ",
-          "voice_actor": "一条和矢"
-        }
-      ],
-      "average_score": 78,
-      "popularity": 16171,
-      "yuri_tag_rank": 60,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx77-SwBCj7R1enWi.png",
-      "cover_source_url": "https://anilist.co/anime/77",
-      "source_url": "https://anilist.co/anime/77",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -14276,7 +14244,7 @@
         }
       ],
       "average_score": 61,
-      "popularity": 49620,
+      "popularity": 49752,
       "yuri_tag_rank": 58,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14327,7 +14295,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 417440,
+      "popularity": 418822,
       "yuri_tag_rank": 58,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14378,13 +14346,64 @@
         }
       ],
       "average_score": 67,
-      "popularity": 109894,
+      "popularity": 110319,
       "yuri_tag_rank": 58,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21639-tdDGBK68CQk0.jpg",
       "cover_source_url": "https://anilist.co/anime/21639",
       "source_url": "https://anilist.co/anime/21639",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a40e00a083e16c0c2e0860d93",
+      "slug": "wonderful-precure",
+      "anilist_id": 171030,
+      "mal_id": 57390,
+      "title_ja": "わんだふるぷりきゅあ！",
+      "title_romaji": "Wonderful Precure!",
+      "title_en": "Wonderful Precure!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2024-02-04",
+      "end_date": "2025-01-26",
+      "season": "winter",
+      "season_year": 2024,
+      "episode_count": 50,
+      "episode_duration_min": 24,
+      "studios": [
+        "Toei Animation"
+      ],
+      "main_cast": [
+        {
+          "character": "犬飼こむぎ",
+          "voice_actor": "長縄まりあ"
+        },
+        {
+          "character": "犬飼いろは",
+          "voice_actor": "種﨑敦美"
+        },
+        {
+          "character": "猫屋敷ユキ",
+          "voice_actor": "松田颯水"
+        },
+        {
+          "character": "猫屋敷まゆ",
+          "voice_actor": "上田麗奈"
+        }
+      ],
+      "average_score": 76,
+      "popularity": 5850,
+      "yuri_tag_rank": 57,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171030-U7zjkqv8pQFq.jpg",
+      "cover_source_url": "https://anilist.co/anime/171030",
+      "source_url": "https://anilist.co/anime/171030",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -14445,13 +14464,52 @@
         }
       ],
       "average_score": 60,
-      "popularity": 14090,
+      "popularity": 14119,
       "yuri_tag_rank": 57,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx109562-IA0G6Hce2VGM.jpg",
       "cover_source_url": "https://anilist.co/anime/109562",
       "source_url": "https://anilist.co/anime/109562",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a18ead1fe616a6e3a8eb9946b",
+      "slug": "shibou-yuugi-de-meshi-wo-kuu",
+      "anilist_id": 180746,
+      "mal_id": 59711,
+      "title_ja": "死亡遊戯で飯を食う。",
+      "title_romaji": "Shibou Yuugi de Meshi wo Kuu.",
+      "title_en": "SHIBOYUGI: Playing Death Games to Put Food on the Table",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "light_novel",
+      "status": "finished",
+      "start_date": "2026-01-07",
+      "end_date": "2026-03-18",
+      "season": "winter",
+      "season_year": 2026,
+      "episode_count": 11,
+      "episode_duration_min": 24,
+      "studios": [
+        "Studio DEEN"
+      ],
+      "main_cast": [
+        {
+          "character": "反町友樹",
+          "voice_actor": "三浦千幸"
+        }
+      ],
+      "average_score": 71,
+      "popularity": 52549,
+      "yuri_tag_rank": 57,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180746-eqDiHbzoHMFh.jpg",
+      "cover_source_url": "https://anilist.co/anime/180746",
+      "source_url": "https://anilist.co/anime/180746",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -14488,7 +14546,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 64032,
+      "popularity": 64148,
       "yuri_tag_rank": 57,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14539,7 +14597,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 152919,
+      "popularity": 153395,
       "yuri_tag_rank": 57,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14594,7 +14652,7 @@
         }
       ],
       "average_score": 61,
-      "popularity": 76052,
+      "popularity": 76262,
       "yuri_tag_rank": 57,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14637,13 +14695,64 @@
         }
       ],
       "average_score": 74,
-      "popularity": 50288,
+      "popularity": 50624,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx179302-gWWAh5BfQyl4.jpg",
       "cover_source_url": "https://anilist.co/anime/179302",
       "source_url": "https://anilist.co/anime/179302",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a679e0d5cdadb21c691c16002",
+      "slug": "ibitte-konai-gibo-to-gishi",
+      "anilist_id": 196356,
+      "mal_id": 62102,
+      "title_ja": "いびってこない義母と義姉",
+      "title_romaji": "Ibitte Konai Gibo to Gishi",
+      "title_en": "My Stepmother and Stepsisters Aren’t Wicked",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2026-07-08",
+      "end_date": "2026-09-26",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "NEWON"
+      ],
+      "main_cast": [
+        {
+          "character": "鴻蔵美冶",
+          "voice_actor": "鈴木日菜"
+        },
+        {
+          "character": "鴻蔵てる",
+          "voice_actor": "くじら"
+        },
+        {
+          "character": "鴻蔵まりか",
+          "voice_actor": "芹澤優"
+        },
+        {
+          "character": "鴻蔵ありさ",
+          "voice_actor": "貫井柚佳"
+        }
+      ],
+      "average_score": 69,
+      "popularity": 13609,
+      "yuri_tag_rank": 56,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196356-2TNt2b9tu0jm.jpg",
+      "cover_source_url": "https://anilist.co/anime/196356",
+      "source_url": "https://anilist.co/anime/196356",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -14688,13 +14797,56 @@
         }
       ],
       "average_score": 83,
-      "popularity": 13856,
+      "popularity": 13922,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171099-JexoHylkSZ6r.jpg",
       "cover_source_url": "https://anilist.co/anime/171099",
       "source_url": "https://anilist.co/anime/171099",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a91dc3e7cec8dff23416f401e",
+      "slug": "machikado-mazoku-2-choume",
+      "anilist_id": 123330,
+      "mal_id": 42745,
+      "title_ja": "まちカドまぞく 2丁目",
+      "title_romaji": "Machikado Mazoku: 2-Choume",
+      "title_en": "The Demon Girl Next Door Season 2",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2022-04-08",
+      "end_date": "2022-07-01",
+      "season": "spring",
+      "season_year": 2022,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "J.C.STAFF"
+      ],
+      "main_cast": [
+        {
+          "character": "千代田桃",
+          "voice_actor": "鬼頭明里"
+        },
+        {
+          "character": "吉田優子",
+          "voice_actor": "小原好美"
+        }
+      ],
+      "average_score": 78,
+      "popularity": 28818,
+      "yuri_tag_rank": 56,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx123330-AU2jllC75uSE.png",
+      "cover_source_url": "https://anilist.co/anime/123330",
+      "source_url": "https://anilist.co/anime/123330",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -14743,7 +14895,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 4968,
+      "popularity": 5002,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14781,104 +14933,14 @@
           "voice_actor": "水樹奈々"
         }
       ],
-      "average_score": 70,
-      "popularity": 54006,
+      "average_score": 69,
+      "popularity": 54222,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20806-TFTl8bavYzvc.jpg",
       "cover_source_url": "https://anilist.co/anime/20806",
       "source_url": "https://anilist.co/anime/20806",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "ad1db70719a674d4f3741563b",
-      "slug": "yoru-no-kurage-wa-oyogenai",
-      "anilist_id": 163078,
-      "mal_id": 54839,
-      "title_ja": "夜のクラゲは泳げない",
-      "title_romaji": "Yoru no Kurage wa Oyogenai",
-      "title_en": "Jellyfish Can’t Swim in the Night",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2024-04-07",
-      "end_date": "2024-06-23",
-      "season": "spring",
-      "season_year": 2024,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Doga Kobo"
-      ],
-      "main_cast": [
-        {
-          "character": "光月まひる",
-          "voice_actor": "伊藤美来"
-        },
-        {
-          "character": "山ノ内花音",
-          "voice_actor": "高橋李依"
-        },
-        {
-          "character": "渡瀬キウイ",
-          "voice_actor": "富田美憂"
-        },
-        {
-          "character": "高梨・キム・アヌーク・めい",
-          "voice_actor": "島袋美由利"
-        }
-      ],
-      "average_score": 76,
-      "popularity": 62981,
-      "yuri_tag_rank": 56,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163078-akhThKoWpWOb.jpg",
-      "cover_source_url": "https://anilist.co/anime/163078",
-      "source_url": "https://anilist.co/anime/163078",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a18ead1fe616a6e3a8eb9946b",
-      "slug": "shibou-yuugi-de-meshi-wo-kuu",
-      "anilist_id": 180746,
-      "mal_id": 59711,
-      "title_ja": "死亡遊戯で飯を食う。",
-      "title_romaji": "Shibou Yuugi de Meshi wo Kuu.",
-      "title_en": "SHIBOYUGI: Playing Death Games to Put Food on the Table",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "light_novel",
-      "status": "finished",
-      "start_date": "2026-01-07",
-      "end_date": "2026-03-18",
-      "season": "winter",
-      "season_year": 2026,
-      "episode_count": 11,
-      "episode_duration_min": 24,
-      "studios": [
-        "Studio DEEN"
-      ],
-      "main_cast": [
-        {
-          "character": "反町友樹",
-          "voice_actor": "三浦千幸"
-        }
-      ],
-      "average_score": 71,
-      "popularity": 52050,
-      "yuri_tag_rank": 56,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180746-eqDiHbzoHMFh.jpg",
-      "cover_source_url": "https://anilist.co/anime/180746",
-      "source_url": "https://anilist.co/anime/180746",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -14939,7 +15001,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 13375,
+      "popularity": 13472,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14994,7 +15056,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 13292,
+      "popularity": 13341,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15033,7 +15095,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 154312,
+      "popularity": 155008,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15075,8 +15137,8 @@
           "voice_actor": "千菅春香"
         }
       ],
-      "average_score": 53,
-      "popularity": 12296,
+      "average_score": 54,
+      "popularity": 12327,
       "yuri_tag_rank": 55,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15087,58 +15149,49 @@
       "related_work_slug": null
     },
     {
-      "id": "a80f0e10241b9d555bf1c38cb",
-      "slug": "girls-und-panzer-motto-love-love-sakusen-desu",
-      "anilist_id": 188034,
-      "mal_id": 61227,
-      "title_ja": "ガールズ＆パンツァー もっとらぶらぶ作戦です！",
-      "title_romaji": "Girls und Panzer: Motto Love Love Sakusen desu!",
-      "title_en": null,
+      "id": "a7b13a951ccb621f4ef66720c",
+      "slug": "kashimashi-girl-meets-girl",
+      "anilist_id": 667,
+      "mal_id": 667,
+      "title_ja": "かしまし〜ガール・ミーツ・ガール〜",
+      "title_romaji": "Kashimashi: Girl Meets Girl",
+      "title_en": "Girl Meets Girl",
       "title_zh_tw": null,
       "title_zh_cn": null,
-      "format": "movie",
+      "format": "tv",
       "adaptation_source": "manga",
       "status": "finished",
-      "start_date": "2025-12-26",
-      "end_date": "2026-04-10",
+      "start_date": "2006-01-12",
+      "end_date": "2006-03-30",
       "season": "winter",
-      "season_year": 2026,
-      "episode_count": 4,
-      "episode_duration_min": 72,
+      "season_year": 2006,
+      "episode_count": 12,
+      "episode_duration_min": 24,
       "studios": [
-        "P.A.WORKS",
-        "Actas"
+        "Studio Hibari"
       ],
       "main_cast": [
         {
-          "character": "西住みほ",
-          "voice_actor": "渕上舞"
+          "character": "大佛はずむ",
+          "voice_actor": "植田佳奈"
         },
         {
-          "character": "武部沙織",
-          "voice_actor": "茅野愛衣"
+          "character": "神泉やす菜",
+          "voice_actor": "堀江由衣"
         },
         {
-          "character": "五十鈴華",
-          "voice_actor": "尾崎真実"
-        },
-        {
-          "character": "秋山優花里",
-          "voice_actor": "中上育実"
-        },
-        {
-          "character": "冷泉麻子",
-          "voice_actor": "井口裕香"
+          "character": "来栖とまり",
+          "voice_actor": "田村ゆかり"
         }
       ],
-      "average_score": 73,
-      "popularity": 3819,
+      "average_score": 62,
+      "popularity": 11481,
       "yuri_tag_rank": 55,
       "is_adult": false,
       "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188034-oRwVKBMezOOk.jpg",
-      "cover_source_url": "https://anilist.co/anime/188034",
-      "source_url": "https://anilist.co/anime/188034",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/667.jpg",
+      "cover_source_url": "https://anilist.co/anime/667",
+      "source_url": "https://anilist.co/anime/667",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -15171,7 +15224,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 10417,
+      "popularity": 10447,
       "yuri_tag_rank": 55,
       "is_adult": false,
       "country_of_origin": "JP",

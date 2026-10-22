@@ -21,7 +21,22 @@ export type YuriType = 'orthodox_yuri' | 'light_yuri' | 's_class' | 'gl' | 'micr
 export type ClassificationBasis = 'official_tag' | 'editorial';
 export type AnimeStatus = 'none' | 'announced' | 'in_production' | 'airing' | 'finished' | 'movie';
 export type PlatformKind = 'magazine' | 'web_platform' | 'web_novel_site' | 'label' | 'other' | null;
-export type AnimeFormat = 'tv' | 'movie' | 'ova' | 'web' | null;
+/**
+ * anime_details.format —— 必须与 collectors/anime.py 能产出的取值一致。
+ * 曾经只有 'tv'|'movie'|'ova'|'web'，而动画目录还会产出 ona/tv_short/special/
+ * music/other；一旦某部作品匹配到这些形态，build_dataset.py 就会写出非法枚举值、
+ * schema 校验失败、collect-news 作业整条变红（间歇性，取决于当次匹配结果）。
+ */
+export type AnimeFormat =
+  | 'tv'
+  | 'movie'
+  | 'ova'
+  | 'ona'
+  | 'tv_short'
+  | 'special'
+  | 'music'
+  | 'other'
+  | null;
 export type OfficialZhCnKind = 'print' | 'digital' | 'both' | 'none' | 'unknown';
 export type UnofficialZhStatus = 'unknown' | 'manually_flagged';
 /** A language/edition region. Used for volumes, ratings and covers alike. */

@@ -265,6 +265,36 @@ def main() -> int:
             print(f"        expected rejection because: {why}")
 
     print(f"\nnegative cases: {len(negative_cases(good)) - failures}/{len(negative_cases(good))} correctly rejected")
+
+    # ------------------------------------------------------------------
+    # 跨文件一致性：anime_details.format 的枚举必须覆盖动画目录里真实存在的
+    # 所有 format 取值。
+    #
+    # 这条检查存在的原因是一次真实事故：schema 只允许 tv/movie/ova/web，
+    # 而 collectors/anime.py 还会产出 ona/tv_short/special/music/other。
+    # 只要某次运行把某部作品匹配到一部 ONA，build_dataset.py 就会写出非法枚举值，
+    # schema 校验失败，collect-news 整条变红 —— 而且它是间歇性的，取决于当次
+    # 匹配到了什么。单看 schema 自己永远发现不了这种不一致。
+    # ------------------------------------------------------------------
+    anime_path = ROOT / "data" / "anime.json"
+    enum = schema["properties"]["anime_details"]["properties"]["format"]["enum"]
+    allowed = {v for v in enum if v is not None}
+    if anime_path.exists():
+        import json as _json
+        anime_doc = _json.loads(anime_path.read_text(encoding="utf-8"))
+        present = {(e.get("format")) for e in (anime_doc.get("anime") or [])}
+        present.discard(None)
+        missing = sorted(present - allowed)
+        print("\nformat enum covers the anime catalogue:")
+        if missing:
+            failures += 1
+            print(f"  FAIL  schema rejects format values that the catalogue contains: {missing}")
+            print(f"        allowed={sorted(allowed)}")
+        else:
+            print(f"  PASS  all {len(present)} catalogue formats are in the schema enum")
+    else:
+        print("\nformat enum check: skipped (data/anime.json not present)")
+
     return 1 if failures else 0
 
 

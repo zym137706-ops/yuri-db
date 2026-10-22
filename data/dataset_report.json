@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-10-22T05:52:56.267645+00:00",
+  "generated_at": "2026-10-22T06:06:55.643690+00:00",
   "source_records": {
-    "yurihime": 36,
+    "yurihime": 71,
     "galette": 4,
     "tongli_list": 24,
     "tongli_details": 24,
-    "total_records": 64
+    "total_records": 99
   },
   "works_total": 835,
+  "created_at_preserved": 835,
   "by_media_type": {
     "manga": 747,
     "light_novel": 88

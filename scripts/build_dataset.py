@@ -724,6 +724,32 @@ schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
 validator = Draft202012Validator(schema, format_checker=FormatChecker())
 
 out = sorted(works.values(), key=lambda w: w["title_ja"])
+
+# ---------------------------------------------------------------------------
+# 保留已有的 created_at。
+# ---------------------------------------------------------------------------
+# new_work() 把 created_at 设成 NOW，但 created_at 的语义是「这条记录**首次**
+# 建立的时间」，不是「这份数据集上次重建的时间」。不修的话每跑一次
+# build_dataset，835 条作品的 created_at/updated_at 全部变化，产生约 2 万行
+# 纯时间戳 diff —— 真正需要审查的改动会被完全淹没。
+# work id 是确定性哈希（w-<hash>），所以按 id 回填是安全的。
+_prev_created: dict[str, str] = {}
+_prev_works_path = DATA / "works.json"
+if _prev_works_path.exists():
+    try:
+        _prev_doc = json.loads(_prev_works_path.read_text(encoding="utf-8"))
+        for _w in _prev_doc.get("works", []):
+            if _w.get("id") and _w.get("created_at"):
+                _prev_created[_w["id"]] = _w["created_at"]
+    except (json.JSONDecodeError, OSError):
+        _prev_created = {}
+
+_created_preserved = 0
+for _w in out:
+    if _w["id"] in _prev_created:
+        _w["created_at"] = _prev_created[_w["id"]]
+        _created_preserved += 1
+
 errors: list[str] = []
 for w in out:
     for e in validator.iter_errors(w):
@@ -763,6 +789,7 @@ report = {
     "generated_at": NOW,
     "source_records": raw["counts"],
     "works_total": len(out),
+    "created_at_preserved": _created_preserved,
     "by_media_type": dict(Counter(w["media_type"] for w in out)),
     "anilist_created": anilist_created,
     "anilist_enriched": anilist_enriched,

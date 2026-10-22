@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T01:54:40.637931+00:00",
+  "generated_at": "2026-10-22T03:23:15.974274+00:00",
   "count": 35,
   "works": [
     {
@@ -69,7 +69,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -78,42 +78,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -134,9 +134,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c161124df318fd62fab4153d4",
@@ -205,7 +205,7 @@
           "source_id": "ja_galette",
           "name": "ガレット 公式サイト（自主制作百合コミック誌）",
           "url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -214,42 +214,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "serialization_status": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": null
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『ガレット』が百合専門誌であることによる。"
         },
@@ -270,9 +270,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c311900b7004953fc724c3146",
@@ -341,7 +341,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -350,42 +350,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -406,9 +406,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c216d561d97367a7981287c9e",
@@ -477,7 +477,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -485,7 +485,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -494,42 +494,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029431639",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": "NDL 書誌の seriesTitle「IDコミックス. Yurihime comics」から抽出したレーベル。単行本ブランドであり掲載誌ではないため kind=label。"
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029431639",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -550,9 +550,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "ceb82d175c46b7f8559bc5f10",
@@ -631,7 +631,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -639,7 +639,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -648,42 +648,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033609760",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": "NDL 書誌の seriesTitle「IDコミックス. Yurihime comics」から抽出したレーベル。単行本ブランドであり掲載誌ではないため kind=label。"
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033609760",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -697,7 +697,7 @@
         "volume_count_ja": {
           "basis": "derived",
           "source_url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": "NDL 書誌から得た既知の巻の最大値。欠けている巻があると実際の刊行数より小さくなるため、下限値として扱うこと。"
         }
@@ -712,9 +712,9 @@
         "yuri_type": 0.2,
         "volume_count_ja": 0.7
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "cf16ba5933705e80c34ce6ca7",
@@ -783,7 +783,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -791,7 +791,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -800,42 +800,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032983429",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": "NDL 書誌の seriesTitle「IDコミックス. Yurihime comics」から抽出したレーベル。単行本ブランドであり掲載誌ではないため kind=label。"
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032983429",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -856,9 +856,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "cde8900da28ed972d34eab1bb",
@@ -927,7 +927,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -936,42 +936,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -992,9 +992,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "cf00dddfcbaeec2ffc9c83dfd",
@@ -1063,7 +1063,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -1072,42 +1072,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -1128,9 +1128,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c4aae493e51f2b9f6eece6928",
@@ -1199,7 +1199,7 @@
           "source_id": "ja_galette",
           "name": "ガレット 公式サイト（自主制作百合コミック誌）",
           "url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -1208,49 +1208,49 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "serialization_status": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": null
         },
         "latest_chapter_label": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": null
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『ガレット』が百合専門誌であることによる。"
         },
@@ -1272,9 +1272,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c2002d1c9920b37b9d7def17c",
@@ -1353,7 +1353,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -1361,7 +1361,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -1370,42 +1370,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -1419,7 +1419,7 @@
         "volume_count_ja": {
           "basis": "derived",
           "source_url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": "NDL 書誌から得た既知の巻の最大値。欠けている巻があると実際の刊行数より小さくなるため、下限値として扱うこと。"
         }
@@ -1434,9 +1434,9 @@
         "yuri_type": 0.2,
         "volume_count_ja": 0.7
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "ca478c82ba3c36ab50129c500",
@@ -1505,7 +1505,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -1514,42 +1514,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -1570,9 +1570,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c3bb8938ad4d14ed54d76d646",
@@ -1641,7 +1641,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -1650,42 +1650,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -1706,9 +1706,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c4ad6eac3d53a72b973e07787",
@@ -1777,7 +1777,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -1786,42 +1786,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -1842,9 +1842,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c82fa29cb053303dc9f5f0c72",
@@ -1913,7 +1913,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -1922,42 +1922,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -1978,9 +1978,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c46f4a2d630be554ddc11fbe6",
@@ -2049,7 +2049,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -2058,42 +2058,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -2114,9 +2114,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c07899b98306985e42a9ffe5e",
@@ -2185,7 +2185,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -2194,42 +2194,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -2250,9 +2250,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c50afdbcba6911ebcf9d23e06",
@@ -2321,7 +2321,7 @@
           "source_id": "ja_galette",
           "name": "ガレット 公式サイト（自主制作百合コミック誌）",
           "url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -2330,49 +2330,49 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "serialization_status": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": null
         },
         "latest_chapter_label": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": null
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『ガレット』が百合専門誌であることによる。"
         },
@@ -2394,9 +2394,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c8625b61a55d11826a89de007",
@@ -2465,7 +2465,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -2473,7 +2473,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -2482,42 +2482,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031868316",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": "NDL 書誌の seriesTitle「IDコミックス. Yurihime comics」から抽出したレーベル。単行本ブランドであり掲載誌ではないため kind=label。"
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031868316",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -2538,9 +2538,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c993ac72eabd525a03a6b16de",
@@ -2619,7 +2619,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -2627,7 +2627,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -2636,42 +2636,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -2685,7 +2685,7 @@
         "volume_count_ja": {
           "basis": "derived",
           "source_url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": "NDL 書誌から得た既知の巻の最大値。欠けている巻があると実際の刊行数より小さくなるため、下限値として扱うこと。"
         }
@@ -2700,9 +2700,9 @@
         "yuri_type": 0.2,
         "volume_count_ja": 0.7
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c50b6e6d004df2e1197dcf1f1",
@@ -2771,7 +2771,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -2780,42 +2780,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -2836,9 +2836,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c52b3e997cb24dcd02b2f0c89",
@@ -2907,7 +2907,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -2916,42 +2916,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -2972,9 +2972,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c84d58a9af69f3e6a10bdfd3a",
@@ -3043,7 +3043,7 @@
           "source_id": "ja_galette",
           "name": "ガレット 公式サイト（自主制作百合コミック誌）",
           "url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -3052,49 +3052,49 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         },
         "serialization_status": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": null
         },
         "latest_chapter_label": {
           "basis": "official",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": null
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://galetteweb.com/archives/3190",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『ガレット』が百合専門誌であることによる。"
         },
@@ -3116,9 +3116,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c00aac396faeab666cbaba063",
@@ -3187,7 +3187,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -3196,42 +3196,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -3252,9 +3252,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c6b9ec70f31ecb08ad1441f6a",
@@ -3323,7 +3323,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -3332,42 +3332,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -3388,9 +3388,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c0019d09c6c52aa0db120c499",
@@ -3469,7 +3469,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -3477,7 +3477,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -3486,42 +3486,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -3535,7 +3535,7 @@
         "volume_count_ja": {
           "basis": "derived",
           "source_url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": "NDL 書誌から得た既知の巻の最大値。欠けている巻があると実際の刊行数より小さくなるため、下限値として扱うこと。"
         }
@@ -3550,9 +3550,9 @@
         "yuri_type": 0.2,
         "volume_count_ja": 0.7
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c0579c40366d7bbf31a258722",
@@ -3621,7 +3621,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -3630,42 +3630,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -3686,9 +3686,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c24bcdad6103d24de6ed9b8fd",
@@ -3757,7 +3757,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -3766,42 +3766,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -3822,9 +3822,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c706ec52b0f1009f6bccdd0c6",
@@ -3893,7 +3893,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -3902,42 +3902,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -3958,9 +3958,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "cdd530d4e9483a0ce7b8b850c",
@@ -4039,7 +4039,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -4047,7 +4047,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -4056,42 +4056,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034041075",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": "NDL 書誌の seriesTitle「IDコミックス. Yurihime comics」から抽出したレーベル。単行本ブランドであり掲載誌ではないため kind=label。"
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034041075",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.85,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -4105,7 +4105,7 @@
         "volume_count_ja": {
           "basis": "derived",
           "source_url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": "NDL 書誌から得た既知の巻の最大値。欠けている巻があると実際の刊行数より小さくなるため、下限値として扱うこと。"
         }
@@ -4120,9 +4120,9 @@
         "yuri_type": 0.2,
         "volume_count_ja": 0.7
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "c009677445f18827d060696ef",
@@ -4201,7 +4201,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
@@ -4209,7 +4209,7 @@
           "source_id": "ja_ndl_search_sru_opensearch",
           "name": "国立国会図書館サーチ（NDL Search）",
           "url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": null
         }
@@ -4218,42 +4218,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -4267,7 +4267,7 @@
         "volume_count_ja": {
           "basis": "derived",
           "source_url": "https://ndlsearch.ndl.go.jp/api/opensearch",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.7,
           "note": "NDL 書誌から得た既知の巻の最大値。欠けている巻があると実際の刊行数より小さくなるため、下限値として扱うこと。"
         }
@@ -4282,9 +4282,9 @@
         "yuri_type": 0.2,
         "volume_count_ja": 0.7
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "cc5ec9141bc12c9aea3cf098c",
@@ -4353,7 +4353,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -4362,42 +4362,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -4418,9 +4418,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "cf2db52beef2cb926bb5de91f",
@@ -4489,7 +4489,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -4498,42 +4498,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -4554,9 +4554,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "ce4f2e216fa0cda0210fd9f1c",
@@ -4625,7 +4625,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -4634,42 +4634,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -4690,9 +4690,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "cad58c1ab3b975dc311c62a7d",
@@ -4761,7 +4761,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -4770,42 +4770,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -4826,9 +4826,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     },
     {
       "id": "cf57e25133bea670b019ba230",
@@ -4897,7 +4897,7 @@
           "source_id": "ja_yurihime",
           "name": "コミック百合姫 公式サイト（一迅社）",
           "url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         }
@@ -4906,42 +4906,42 @@
         "publisher_ja": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_kind": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "magazine_or_platform_active": {
           "basis": "official",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.95,
           "note": null
         },
         "serialization_status": {
           "basis": "derived",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.6,
           "note": "掲載誌の作品紹介ページに載っていることからの推定。終了済み作品が一覧に残る可能性があるため確度は0.6。正確な連載状況は各号の目次での確認が必要。"
         },
         "genres": {
           "basis": "editorial",
           "source_url": "https://www.ichijinsha.co.jp/yurihime/",
-          "retrieved_at": "2026-10-22T01:54:40.637931+00:00",
+          "retrieved_at": "2026-10-22T03:23:15.974274+00:00",
           "confidence": 0.9,
           "note": "掲載誌『コミック百合姫』が百合専門誌であることによる。下位分類は未判定。"
         },
@@ -4962,9 +4962,9 @@
         "genres": 0.9,
         "yuri_type": 0.2
       },
-      "last_checked": "2026-10-22T01:54:40.637931+00:00",
-      "created_at": "2026-10-22T01:54:40.637931+00:00",
-      "updated_at": "2026-10-22T01:54:40.637931+00:00"
+      "last_checked": "2026-10-22T03:23:15.974274+00:00",
+      "created_at": "2026-10-22T03:23:15.974274+00:00",
+      "updated_at": "2026-10-22T03:23:15.974274+00:00"
     }
   ]
 }

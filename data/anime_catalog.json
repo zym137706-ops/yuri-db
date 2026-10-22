@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T15:28:12.122385+00:00",
+  "generated_at": "2026-10-22T18:23:55.836447+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -11075,6 +11075,62 @@
       "related_work_slug": null
     },
     {
+      "id": "a80f0e10241b9d555bf1c38cb",
+      "slug": "girls-und-panzer-motto-love-love-sakusen-desu",
+      "anilist_id": 188034,
+      "mal_id": 61227,
+      "title_ja": "ガールズ＆パンツァー もっとらぶらぶ作戦です！",
+      "title_romaji": "Girls und Panzer: Motto Love Love Sakusen desu!",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "airing",
+      "start_date": "2026-10-08",
+      "end_date": "2026-12-24",
+      "season": "fall",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "P.A.WORKS",
+        "Actas"
+      ],
+      "main_cast": [
+        {
+          "character": "西住みほ",
+          "voice_actor": "渕上舞"
+        },
+        {
+          "character": "武部沙織",
+          "voice_actor": "茅野愛衣"
+        },
+        {
+          "character": "五十鈴華",
+          "voice_actor": "尾崎真実"
+        },
+        {
+          "character": "秋山優花里",
+          "voice_actor": "中上育実"
+        },
+        {
+          "character": "冷泉麻子",
+          "voice_actor": "井口裕香"
+        }
+      ],
+      "average_score": 73,
+      "popularity": 3993,
+      "yuri_tag_rank": 64,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188034-oRwVKBMezOOk.jpg",
+      "cover_source_url": "https://anilist.co/anime/188034",
+      "source_url": "https://anilist.co/anime/188034",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "ab8bb453f3a425798d9577d71",
       "slug": "noir",
       "anilist_id": 272,
@@ -12113,62 +12169,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx311-dSSdyz5d3hWb.jpg",
       "cover_source_url": "https://anilist.co/anime/311",
       "source_url": "https://anilist.co/anime/311",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a80f0e10241b9d555bf1c38cb",
-      "slug": "girls-und-panzer-motto-love-love-sakusen-desu",
-      "anilist_id": 188034,
-      "mal_id": 61227,
-      "title_ja": "ガールズ＆パンツァー もっとらぶらぶ作戦です！",
-      "title_romaji": "Girls und Panzer: Motto Love Love Sakusen desu!",
-      "title_en": null,
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "airing",
-      "start_date": "2026-10-08",
-      "end_date": "2026-12-24",
-      "season": "fall",
-      "season_year": 2026,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "P.A.WORKS",
-        "Actas"
-      ],
-      "main_cast": [
-        {
-          "character": "西住みほ",
-          "voice_actor": "渕上舞"
-        },
-        {
-          "character": "武部沙織",
-          "voice_actor": "茅野愛衣"
-        },
-        {
-          "character": "五十鈴華",
-          "voice_actor": "尾崎真実"
-        },
-        {
-          "character": "秋山優花里",
-          "voice_actor": "中上育実"
-        },
-        {
-          "character": "冷泉麻子",
-          "voice_actor": "井口裕香"
-        }
-      ],
-      "average_score": 73,
-      "popularity": 3993,
-      "yuri_tag_rank": 60,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188034-oRwVKBMezOOk.jpg",
-      "cover_source_url": "https://anilist.co/anime/188034",
-      "source_url": "https://anilist.co/anime/188034",
       "related_work_id": null,
       "related_work_slug": null
     },

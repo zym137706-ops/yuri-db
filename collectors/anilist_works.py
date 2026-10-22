@@ -129,6 +129,8 @@ def main() -> int:
     ap.add_argument("--sleep", type=float, default=3.0)
     ap.add_argument("--min-yuri-rank", type=int, default=60)
     ap.add_argument("--include-adult", action="store_true")
+    ap.add_argument("--allow-shrink", action="store_true",
+                    help="允许把结果写小（默认拒绝：一轮失败的抓取会把好数据清空）")
     args = ap.parse_args()
 
     s = requests.Session()
@@ -136,41 +138,70 @@ def main() -> int:
 
     raw: list[dict] = []
     fetches: list[dict] = []
+    MAX_ATTEMPTS = 4
+    TRANSIENT = (429, 500, 502, 503, 504)
+
     for fmt in ("MANGA", "NOVEL", "ONE_SHOT"):
-        for page in range(1, args.pages + 1):
+        page = 1
+        while page <= args.pages:
             body = {"query": QUERY, "variables": {"page": page, "perPage": 50, "format": fmt}}
-            try:
-                r = s.post(ENDPOINT, json=body, timeout=45)
-            except requests.RequestException as exc:
-                fetches.append({"format": fmt, "page": page, "status": "network_error",
-                                "error": f"{type(exc).__name__}: {exc}"})
-                print(f"[works] {fmt} p{page}: network_error")
+            payload = None
+            status: dict | None = None
+
+            # 429/5xx/网络错误必须**重试同一页**。
+            # 原来的写法在 429 时 `continue`，那会直接把这一页跳过、永不重试，
+            # 于是整轮抓取可能一条都拿不到 —— 2026-10-12 的线上事故就是这样：
+            # 全部请求失败 -> entries=[] -> 覆盖掉 820 条好数据 -> 作品从 835 塌到 35。
+            for attempt in range(1, MAX_ATTEMPTS + 1):
+                try:
+                    r = s.post(ENDPOINT, json=body, timeout=45)
+                except requests.RequestException as exc:
+                    status = {"status": "network_error",
+                              "error": f"{type(exc).__name__}: {exc}"}
+                else:
+                    if r.status_code in TRANSIENT:
+                        status = {"status": "rate_limited" if r.status_code == 429
+                                  else "http_error", "http": r.status_code}
+                    elif r.status_code != 200:
+                        status = {"status": "failed", "http": r.status_code}
+                        break  # 非暂时性错误，重试无意义
+                    else:
+                        try:
+                            candidate = r.json()
+                        except ValueError:
+                            status = {"status": "bad_json"}
+                        else:
+                            if candidate.get("errors"):
+                                status = {"status": "graphql_error",
+                                          "errors": candidate["errors"]}
+                                break
+                            payload = candidate
+                            status = None
+                            break
+                wait = min(90, 5 * (2 ** (attempt - 1)))
+                print(f"[works] {fmt} p{page}: {status['status']} "
+                      f"(attempt {attempt}/{MAX_ATTEMPTS}) -> retry in {wait}s")
+                time.sleep(wait)
+
+            record = {"format": fmt, "page": page, **(status or {"status": "ok"})}
+            fetches.append(record)
+
+            if payload is None:
+                # 这一页彻底失败：停止该 format，但保留已抓到的部分
+                print(f"[works] {fmt} p{page}: giving up ({record['status']})")
                 break
-            if r.status_code == 429:
-                fetches.append({"format": fmt, "page": page, "status": "rate_limited"})
-                print(f"[works] {fmt} p{page}: 429 backoff")
-                time.sleep(30)
-                continue
-            if r.status_code != 200:
-                fetches.append({"format": fmt, "page": page, "status": "failed",
-                                "http": r.status_code})
-                print(f"[works] {fmt} p{page}: HTTP {r.status_code}")
-                break
-            payload = r.json()
-            if payload.get("errors"):
-                fetches.append({"format": fmt, "page": page, "status": "graphql_error",
-                                "errors": payload["errors"]})
-                print(f"[works] {fmt} p{page}: GraphQL {payload['errors'][0].get('message')}")
-                break
+
             block = (payload.get("data") or {}).get("Page") or {}
             media = block.get("media") or []
             for m in media:
                 m["_requested_format"] = fmt
             raw.extend(media)
-            fetches.append({"format": fmt, "page": page, "status": "ok", "items": len(media)})
+            record["status"] = "ok"
+            record["items"] = len(media)
             print(f"[works] {fmt:7} p{page:2}: {len(media):3} (cumulative {len(raw)})")
             if not (block.get("pageInfo") or {}).get("hasNextPage"):
                 break
+            page += 1
             time.sleep(args.sleep)
 
     # ------------------------------------------------------------- filter
@@ -240,7 +271,41 @@ def main() -> int:
     for e in entries:
         by_media[e["media_type"]] = by_media.get(e["media_type"], 0) + 1
 
-    (DATA / "anilist_works.json").write_text(
+    # ------------------------------------------------- 不许用坏结果覆盖好数据
+    # 这不是防御性编程的洁癖，是线上事故的直接教训（2026-10-12）：
+    # 一轮全部失败的抓取把 820 条写成 0 条，build_dataset 于是只生成了 35 部作品，
+    # 而 workflow 是 `continue-on-error: true`、且随后还 commit 了 —— 整个过程静默。
+    out_path = DATA / "anilist_works.json"
+    previous_entries = 0
+    if out_path.exists():
+        try:
+            prev = json.loads(out_path.read_text(encoding="utf-8"))
+            previous_entries = len(prev.get("entries") or [])
+        except (json.JSONDecodeError, OSError):
+            previous_entries = 0
+
+    if previous_entries > 0 and not args.allow_shrink:
+        if not entries:
+            print(
+                f"\nREFUSING TO WRITE: this run produced 0 entries, but the existing "
+                f"{out_path.name} holds {previous_entries}.\n"
+                f"A failed run must never destroy good data — that is exactly how the "
+                f"catalogue collapsed from 835 works to 35 on 2026-10-12.\n"
+                f"Re-run later, or pass --allow-shrink if the empty result is genuine.",
+                file=sys.stderr,
+            )
+            return 2
+        if len(entries) < previous_entries * 0.5:
+            print(
+                f"\nREFUSING TO WRITE: this run produced {len(entries)} entries, less "
+                f"than half of the existing {previous_entries}. That pattern means a "
+                f"partial failure, not a real shrink.\n"
+                f"Pass --allow-shrink if it is intentional.",
+                file=sys.stderr,
+            )
+            return 2
+
+    out_path.write_text(
         json.dumps({
             "generated_at": now_iso(),
             "source": "an_anilist",

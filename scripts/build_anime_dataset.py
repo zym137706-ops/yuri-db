@@ -133,7 +133,30 @@ def main() -> int:
         "raw_fetched": doc.get("raw_fetched"),
         "dropped": doc.get("dropped"),
     }
-    (DATA / "anime.json").write_text(
+    # ------------------------------------------------- 不许用空结果覆盖好数据
+    # 与 collectors/anilist_works.py 同一个教训（2026-10-12）：一轮失败的采集把
+    # anime_catalog.json 写成空，这个构建器就忠实地生成了 0 条 anime.json，
+    # 站点上的 298 部动画整体消失，而流水线是绿的。
+    anime_out = DATA / "anime.json"
+    previous_anime = 0
+    if anime_out.exists():
+        try:
+            previous_anime = len(
+                json.loads(anime_out.read_text(encoding="utf-8")).get("anime") or []
+            )
+        except (json.JSONDecodeError, OSError):
+            previous_anime = 0
+    if previous_anime > 0 and not out:
+        print(
+            f"\nREFUSING TO WRITE: the catalogue produced 0 anime entries, but the "
+            f"existing anime.json holds {previous_anime}.\n"
+            f"Check data/anime_catalog.json — an empty catalogue means the collector "
+            f"failed, not that the catalogue is empty.",
+            file=sys.stderr,
+        )
+        return 2
+
+    anime_out.write_text(
         json.dumps({"generated_at": NOW, "count": len(out), "anime": out},
                    ensure_ascii=False, indent=2),
         encoding="utf-8",

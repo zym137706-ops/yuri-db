@@ -1,0 +1,39 @@
+﻿Restore the clobbered dataset and stop collectors from overwriting good data
+
+The scheduled jobs destroyed most of the published dataset. Between 2026-10-12
+and 2026-10-22 it collapsed:
+
+  works.json          835 -> 35     (all 800 AniList-derived works gone)
+  anime.json          298 -> 0
+  works with zh_tw     15 -> 0
+
+Root cause, one failure mode repeated in three places:
+
+  1. collectors/anilist_works.py fetched 0 records (the runner could not reach
+     AniList; every request failed), then wrote an EMPTY anilist_works.json over
+     the good 820-entry file.
+  2. build_dataset.py faithfully rebuilt from that empty input, leaving only the
+     35 works from the direct publisher collectors.
+  3. the news job likewise left anime_catalog.json empty, so
+     build_anime_dataset.py wrote 0 anime entries.
+
+Nothing failed: the collectors are continue-on-error, the builders succeeded, and
+the acceptance script only *warned* about the low count. So the broken data was
+committed and deployed, and the live site has been serving 35 works.
+
+Fixes:
+
+* anilist_works.py: retry the SAME page on 429/5xx/network errors (the old code
+  did `continue`, which silently skipped the page and never retried), and refuse
+  to write a result that is empty or less than half the existing file unless
+  --allow-shrink is passed. Verified: a partial run fetched 97 entries, exited 2,
+  and left the 820-entry file byte-identical.
+* build_anime_dataset.py: refuse to write 0 anime entries when the existing file
+  has some. Verified against an emptied catalog: exit 2, anime.json untouched.
+* verify_acceptance.py: the works count is now a HARD gate instead of a warning.
+* collect-daily.yml / collect-news.yml: run the acceptance gates before the
+  commit step, so a collapsed dataset fails the job instead of being published.
+
+Data recovery: data/ restored from 3a2716b (the last state verified end to end),
+then rebuilt. Verified after: 835 works (747 manga + 88 light novels), 298 anime,
+15 zh_tw titles, 0 schema errors, all acceptance gates pass.

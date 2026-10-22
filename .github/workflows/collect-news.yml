@@ -57,6 +57,11 @@ jobs:
           python scripts/build_anime_dataset.py
           python scripts/build_dataset.py
 
+      # 提交前必须校验：2026-10-12 的塌缩事故里，这条链路（采集失败 -> 空结果
+      # -> 构建器派生 0 条 -> commit -> 部署）全程没有一处报错。
+      - name: Acceptance gates (refuse to commit a collapsed dataset)
+        run: python scripts/verify_acceptance.py
+
       - name: Change log
         run: python scripts/make_changelog.py
 

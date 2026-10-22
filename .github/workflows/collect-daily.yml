@@ -76,6 +76,13 @@ jobs:
       - name: Build normalised dataset + validate against schema
         run: python scripts/build_dataset.py
 
+      # 提交前必须校验。2026-10-12 的事故正是这样发生的：anilist_works.py 一轮
+      # 全部失败把 820 条写成 0 条 -> build_dataset 只生成 35 部作品 ->
+      # 这步缺失，于是坏数据被 commit 并部署上线，而整条流水线是绿的。
+      # 现在只要验收硬门禁不过，作业就失败，坏数据不会被提交。
+      - name: Acceptance gates (refuse to commit a collapsed dataset)
+        run: python scripts/verify_acceptance.py
+
       - name: Generate change log (diff vs previous commit)
         run: python scripts/make_changelog.py
 

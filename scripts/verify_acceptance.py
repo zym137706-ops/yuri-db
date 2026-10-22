@@ -140,10 +140,14 @@ def main() -> int:
             "< 80% (待 NDL 补全任务逐步提升)"
         )
 
+    # 作品数现在是**硬门禁**，不再是 warning。
+    # 曾经它只是 warning，于是 2026-10-12 数据集从 835 部塌到 35 部时，
+    # 整条流水线依然是绿的、坏数据照常提交并上线。
+    # 现在缩到目标以下会让 collect-daily 在提交前就失败。
     if len(works) < TARGET_WORKS:
-        warn.append(
-            f"works {len(works)} < target {TARGET_WORKS} "
-            "(expected during MVP; becomes a hard gate once collector coverage is complete)"
+        hard.append(
+            f"works {len(works)} < target {TARGET_WORKS} — "
+            "数据集疑似塌缩（多半是某个采集器用空结果覆盖了好数据）"
         )
 
     # ---------------- report ----------------

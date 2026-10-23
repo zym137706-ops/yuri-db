@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T21:24:22.122984+00:00",
+  "generated_at": "2026-10-23T00:25:34.187875+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -118,13 +118,13 @@
   "dropped": {
     "adult": 402,
     "non_jp": 16,
-    "low_rank": 160,
+    "low_rank": 159,
     "no_title": 0
   },
-  "total": 299,
+  "total": 300,
   "distribution": {
     "format": {
-      "tv": 178,
+      "tv": 179,
       "movie": 34,
       "ova": 26,
       "ona": 24,
@@ -137,13 +137,13 @@
       "manga": 113,
       "original": 109,
       "other": 31,
-      "light_novel": 28,
+      "light_novel": 29,
       "game": 9,
       "unknown": 6,
       "visual_novel": 3
     },
     "status": {
-      "finished": 286,
+      "finished": 287,
       "announced": 10,
       "airing": 3
     }
@@ -11036,6 +11036,57 @@
       "related_work_slug": null
     },
     {
+      "id": "a32cafdc2c66cd1cf57fc26b3",
+      "slug": "meitantei-precure",
+      "anilist_id": 202957,
+      "mal_id": 63042,
+      "title_ja": "名探偵プリキュア！",
+      "title_romaji": "Meitantei Precure!",
+      "title_en": "Star Detective Precure!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "airing",
+      "start_date": "2026-02-01",
+      "end_date": null,
+      "season": "winter",
+      "season_year": 2026,
+      "episode_count": 51,
+      "episode_duration_min": 24,
+      "studios": [
+        "Toei Animation"
+      ],
+      "main_cast": [
+        {
+          "character": "明智あんな",
+          "voice_actor": "千賀光莉"
+        },
+        {
+          "character": "小林みくる",
+          "voice_actor": "本渡楓"
+        },
+        {
+          "character": "帆羽くれあ",
+          "voice_actor": "長谷川育美"
+        },
+        {
+          "character": "森亜るるか",
+          "voice_actor": "東山奈央"
+        }
+      ],
+      "average_score": 76,
+      "popularity": 6789,
+      "yuri_tag_rank": 65,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202957-fxZGgJTvwXzP.jpg",
+      "cover_source_url": "https://anilist.co/anime/202957",
+      "source_url": "https://anilist.co/anime/202957",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "ab73796111b9203a479cc6789",
       "slug": "cutie-honey-universe",
       "anilist_id": 100814,
@@ -11957,6 +12008,61 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx87496-pB2CXbFGucn0.png",
       "cover_source_url": "https://anilist.co/anime/87496",
       "source_url": "https://anilist.co/anime/87496",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "ab8583066f4fde76e1e111466",
+      "slug": "kampfer",
+      "anilist_id": 6205,
+      "mal_id": 6205,
+      "title_ja": "けんぷファー",
+      "title_romaji": "Kämpfer",
+      "title_en": "Kämpfer",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "light_novel",
+      "status": "finished",
+      "start_date": "2009-10-02",
+      "end_date": "2009-12-18",
+      "season": "fall",
+      "season_year": 2009,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Nomad"
+      ],
+      "main_cast": [
+        {
+          "character": "沙倉楓",
+          "voice_actor": "中島愛"
+        },
+        {
+          "character": "瀬能ナツル",
+          "voice_actor": "井上麻里奈"
+        },
+        {
+          "character": "美嶋紅音",
+          "voice_actor": "堀江由衣"
+        },
+        {
+          "character": "三郷雫",
+          "voice_actor": "名塚佳織"
+        },
+        {
+          "character": "近堂水琴",
+          "voice_actor": "阿澄佳奈"
+        }
+      ],
+      "average_score": 58,
+      "popularity": 54742,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx6205-3waXg2FNaAFL.png",
+      "cover_source_url": "https://anilist.co/anime/6205",
+      "source_url": "https://anilist.co/anime/6205",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -13077,57 +13183,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11977-HxMeU4kjzSnE.png",
       "cover_source_url": "https://anilist.co/anime/11977",
       "source_url": "https://anilist.co/anime/11977",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a32cafdc2c66cd1cf57fc26b3",
-      "slug": "meitantei-precure",
-      "anilist_id": 202957,
-      "mal_id": 63042,
-      "title_ja": "名探偵プリキュア！",
-      "title_romaji": "Meitantei Precure!",
-      "title_en": "Star Detective Precure!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "airing",
-      "start_date": "2026-02-01",
-      "end_date": null,
-      "season": "winter",
-      "season_year": 2026,
-      "episode_count": 51,
-      "episode_duration_min": 24,
-      "studios": [
-        "Toei Animation"
-      ],
-      "main_cast": [
-        {
-          "character": "明智あんな",
-          "voice_actor": "千賀光莉"
-        },
-        {
-          "character": "小林みくる",
-          "voice_actor": "本渡楓"
-        },
-        {
-          "character": "帆羽くれあ",
-          "voice_actor": "長谷川育美"
-        },
-        {
-          "character": "森亜るるか",
-          "voice_actor": "東山奈央"
-        }
-      ],
-      "average_score": 76,
-      "popularity": 6789,
-      "yuri_tag_rank": 60,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202957-fxZGgJTvwXzP.jpg",
-      "cover_source_url": "https://anilist.co/anime/202957",
-      "source_url": "https://anilist.co/anime/202957",
       "related_work_id": null,
       "related_work_slug": null
     },

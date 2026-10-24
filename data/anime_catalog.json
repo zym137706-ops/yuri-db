@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T15:19:15.648468+00:00",
+  "generated_at": "2026-10-24T18:18:04.486275+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -187,49 +187,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9014-UXVMlqhBqjSs.jpg",
       "cover_source_url": "https://anilist.co/anime/9014",
       "source_url": "https://anilist.co/anime/9014",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a750a0ce0eac78a846038ee10",
-      "slug": "sayonara-lara",
-      "anilist_id": 177637,
-      "mal_id": 58878,
-      "title_ja": "さよならララ",
-      "title_romaji": "Sayonara Lara",
-      "title_en": "Goodbye, Lara",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2026-07-06",
-      "end_date": "2026-09-21",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Kinema Citrus"
-      ],
-      "main_cast": [
-        {
-          "character": "ララ",
-          "voice_actor": "菱川花菜"
-        },
-        {
-          "character": "大津茉里",
-          "voice_actor": "川石奈奈"
-        }
-      ],
-      "average_score": 76,
-      "popularity": 36389,
-      "yuri_tag_rank": 100,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-dZ8hF93HzstV.jpg",
-      "cover_source_url": "https://anilist.co/anime/177637",
-      "source_url": "https://anilist.co/anime/177637",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -3379,6 +3336,49 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx174044-HBvsyKjDVPyO.jpg",
       "cover_source_url": "https://anilist.co/anime/174044",
       "source_url": "https://anilist.co/anime/174044",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a750a0ce0eac78a846038ee10",
+      "slug": "sayonara-lara",
+      "anilist_id": 177637,
+      "mal_id": 58878,
+      "title_ja": "さよならララ",
+      "title_romaji": "Sayonara Lara",
+      "title_en": "Goodbye, Lara",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2026-07-06",
+      "end_date": "2026-09-21",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Kinema Citrus"
+      ],
+      "main_cast": [
+        {
+          "character": "ララ",
+          "voice_actor": "菱川花菜"
+        },
+        {
+          "character": "大津茉里",
+          "voice_actor": "川石奈奈"
+        }
+      ],
+      "average_score": 76,
+      "popularity": 36389,
+      "yuri_tag_rank": 84,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-dZ8hF93HzstV.jpg",
+      "cover_source_url": "https://anilist.co/anime/177637",
+      "source_url": "https://anilist.co/anime/177637",
       "related_work_id": null,
       "related_work_slug": null
     },

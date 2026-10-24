@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-24T00:27:14.134553+00:00",
-  "total": 301,
+  "generated_at": "2026-10-24T03:22:34.567936+00:00",
+  "total": 300,
   "by_format": {
-    "tv": 179,
+    "tv": 178,
     "movie": 34,
     "ova": 27,
     "ona": 24,
@@ -13,7 +13,7 @@
   },
   "by_adaptation_source": {
     "manga": 113,
-    "original": 109,
+    "original": 108,
     "other": 31,
     "light_novel": 30,
     "game": 9,
@@ -21,14 +21,14 @@
     "visual_novel": 3
   },
   "by_status": {
-    "finished": 288,
+    "finished": 287,
     "announced": 10,
     "airing": 3
   },
   "by_year": {
     "unknown": 5,
     "2027": 5,
-    "2026": 20,
+    "2026": 19,
     "2025": 19,
     "2024": 17,
     "2023": 14,
@@ -66,16 +66,16 @@
     "1973": 1,
     "1940": 1
   },
-  "with_studio": 273,
-  "with_cast": 284,
-  "with_start_date": 296,
-  "with_cover": 301,
+  "with_studio": 272,
+  "with_cast": 283,
+  "with_start_date": 295,
+  "with_cover": 300,
   "announced_not_aired": 10,
   "movies": 34,
   "linked_works": 49,
   "schema_errors": [],
   "collection_note": "media(type: ANIME, tag: \"Yuri\")，按 POPULARITY_DESC；Yuri 标签相关度 >= 55；排除 R18；仅 日本制作。",
-  "raw_fetched": 879,
+  "raw_fetched": 878,
   "dropped": {
     "adult": 402,
     "non_jp": 16,

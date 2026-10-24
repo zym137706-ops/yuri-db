@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T21:22:54.547615+00:00",
+  "generated_at": "2026-10-24T00:27:13.985807+00:00",
   "source": "an_anilist",
   "matched_works": 49,
   "matches": [
@@ -184,21 +184,6 @@
       "adaptation_source": "manga"
     },
     {
-      "work_id": "cdf865a9868259588cc2e78f8",
-      "work_slug": "w-df865a9868",
-      "anilist_id": 6164,
-      "title_native": "青い花",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "tv",
-      "episodes": 11,
-      "broadcast_start": "2009-07-02",
-      "broadcast_end": "2009-09-10",
-      "studio": "J.C.STAFF",
-      "source_url": "https://anilist.co/anime/6164",
-      "adaptation_source": "manga"
-    },
-    {
       "work_id": "c405c782a379988b194c22c29",
       "work_slug": "w-405c782a37",
       "anilist_id": 6203,
@@ -286,6 +271,21 @@
       "broadcast_end": "2018-06-20",
       "studio": "Creators in Pack",
       "source_url": "https://anilist.co/anime/100762",
+      "adaptation_source": "manga"
+    },
+    {
+      "work_id": "cdf865a9868259588cc2e78f8",
+      "work_slug": "w-df865a9868",
+      "anilist_id": 6164,
+      "title_native": "青い花",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 11,
+      "broadcast_start": "2009-07-02",
+      "broadcast_end": "2009-09-10",
+      "studio": "J.C.STAFF",
+      "source_url": "https://anilist.co/anime/6164",
       "adaptation_source": "manga"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T06:23:11.004262+00:00",
+  "generated_at": "2026-10-25T09:19:44.372996+00:00",
   "since_days": 7,
   "keywords": [
     "百合",
@@ -10,7 +10,19 @@
     "yuri",
     "gl"
   ],
-  "count": 0,
+  "count": 1,
   "anime_announcement_candidates": 0,
-  "items": []
+  "items": [
+    {
+      "source_id": "ln_web_action_prtimes",
+      "source_label": "PR TIMES",
+      "feed_kind": "press_release",
+      "title": "メイクアップアーティスト兵藤小百合がミシャと初の共同開発。ミシャM プロ ブレンディング コンシーラー パレット開発秘話。",
+      "url": "https://prtimes.jp/main/html/rd/p/000000322.000023609.html",
+      "published_at": null,
+      "is_anime_announcement": false,
+      "retrieved_at": "2026-10-25T09:19:44.371795+00:00",
+      "feed_url": "https://prtimes.jp/index.rdf"
+    }
+  ]
 }

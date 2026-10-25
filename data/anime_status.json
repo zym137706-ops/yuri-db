@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T21:18:05.539899+00:00",
+  "generated_at": "2026-10-25T00:19:29.584030+00:00",
   "source": "an_anilist",
   "matched_works": 49,
   "matches": [
@@ -604,6 +604,21 @@
       "adaptation_source": "manga"
     },
     {
+      "work_id": "ce2dfc809f16bf8b851797569",
+      "work_slug": "w-e2dfc809f1",
+      "anilist_id": 131548,
+      "title_native": "明日ちゃんのセーラー服",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 12,
+      "broadcast_start": "2022-01-09",
+      "broadcast_end": "2022-03-27",
+      "studio": "CloverWorks",
+      "source_url": "https://anilist.co/anime/131548",
+      "adaptation_source": "manga"
+    },
+    {
       "work_id": "cbf8837f3ce52407bead6870c",
       "work_slug": "w-bf8837f3ce",
       "anilist_id": 20593,
@@ -692,21 +707,6 @@
       "studio": "A-1 Pictures",
       "source_url": "https://anilist.co/anime/13125",
       "adaptation_source": "other"
-    },
-    {
-      "work_id": "ce2dfc809f16bf8b851797569",
-      "work_slug": "w-e2dfc809f1",
-      "anilist_id": 131548,
-      "title_native": "明日ちゃんのセーラー服",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "tv",
-      "episodes": 12,
-      "broadcast_start": "2022-01-09",
-      "broadcast_end": "2022-03-27",
-      "studio": "CloverWorks",
-      "source_url": "https://anilist.co/anime/131548",
-      "adaptation_source": "manga"
     },
     {
       "work_id": "c1c45fd312e4b20e72fadc39a",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T21:18:05.533171+00:00",
+  "generated_at": "2026-10-25T00:19:29.572284+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -9825,6 +9825,45 @@
       "related_work_slug": null
     },
     {
+      "id": "a41de3a7db8fae60f92c137cf",
+      "slug": "akebi-chan-no-sailor-fuku",
+      "anilist_id": 131548,
+      "mal_id": 48553,
+      "title_ja": "明日ちゃんのセーラー服",
+      "title_romaji": "Akebi-chan no Sailor Fuku",
+      "title_en": "Akebi’s Sailor Uniform",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2022-01-09",
+      "end_date": "2022-03-27",
+      "season": "winter",
+      "season_year": 2022,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "CloverWorks"
+      ],
+      "main_cast": [
+        {
+          "character": "明日小路",
+          "voice_actor": "村上まなつ"
+        }
+      ],
+      "average_score": 75,
+      "popularity": 74648,
+      "yuri_tag_rank": 70,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131548-4OXik3SWOaee.jpg",
+      "cover_source_url": "https://anilist.co/anime/131548",
+      "source_url": "https://anilist.co/anime/131548",
+      "related_work_id": "ce2dfc809f16bf8b851797569",
+      "related_work_slug": "w-e2dfc809f1"
+    },
+    {
       "id": "a7421066cf3817165ed911c88",
       "slug": "hidan-no-aria-aa",
       "anilist_id": 20991,
@@ -10749,45 +10788,6 @@
       "source_url": "https://anilist.co/anime/13125",
       "related_work_id": "cb184ec5bf20f20efe076278e",
       "related_work_slug": "w-b184ec5bf2"
-    },
-    {
-      "id": "a41de3a7db8fae60f92c137cf",
-      "slug": "akebi-chan-no-sailor-fuku",
-      "anilist_id": 131548,
-      "mal_id": 48553,
-      "title_ja": "明日ちゃんのセーラー服",
-      "title_romaji": "Akebi-chan no Sailor Fuku",
-      "title_en": "Akebi’s Sailor Uniform",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2022-01-09",
-      "end_date": "2022-03-27",
-      "season": "winter",
-      "season_year": 2022,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "CloverWorks"
-      ],
-      "main_cast": [
-        {
-          "character": "明日小路",
-          "voice_actor": "村上まなつ"
-        }
-      ],
-      "average_score": 75,
-      "popularity": 74648,
-      "yuri_tag_rank": 66,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131548-4OXik3SWOaee.jpg",
-      "cover_source_url": "https://anilist.co/anime/131548",
-      "source_url": "https://anilist.co/anime/131548",
-      "related_work_id": "ce2dfc809f16bf8b851797569",
-      "related_work_slug": "w-e2dfc809f1"
     },
     {
       "id": "adf9f6352ad97e6663d393522",

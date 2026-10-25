@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T15:19:32.650777+00:00",
+  "generated_at": "2026-10-25T18:19:27.193932+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -180,7 +180,7 @@
         }
       ],
       "average_score": 54,
-      "popularity": 11682,
+      "popularity": 11687,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -263,8 +263,8 @@
           "voice_actor": null
         }
       ],
-      "average_score": 59,
-      "popularity": 4397,
+      "average_score": 60,
+      "popularity": 4399,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -354,7 +354,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 32824,
+      "popularity": 32837,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -486,7 +486,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 23927,
+      "popularity": 23932,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1200,7 +1200,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 17289,
+      "popularity": 17292,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1337,7 +1337,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 16489,
+      "popularity": 16494,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1456,8 +1456,8 @@
           "voice_actor": "高本めぐみ"
         }
       ],
-      "average_score": 67,
-      "popularity": 20401,
+      "average_score": 68,
+      "popularity": 20409,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1786,7 +1786,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 6818,
+      "popularity": 6820,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1832,8 +1832,8 @@
           "voice_actor": "井上麻里奈"
         }
       ],
-      "average_score": 67,
-      "popularity": 14740,
+      "average_score": 68,
+      "popularity": 14743,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1926,8 +1926,8 @@
           "voice_actor": "小林沙苗"
         }
       ],
-      "average_score": 59,
-      "popularity": 7309,
+      "average_score": 60,
+      "popularity": 7313,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2018,7 +2018,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 22506,
+      "popularity": 22518,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2069,7 +2069,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 28129,
+      "popularity": 28131,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2318,7 +2318,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 25927,
+      "popularity": 25936,
       "yuri_tag_rank": 89,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2475,7 +2475,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12362,
+      "popularity": 12361,
       "yuri_tag_rank": 88,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2646,7 +2646,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 47538,
+      "popularity": 47549,
       "yuri_tag_rank": 87,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3215,7 +3215,7 @@
         }
       ],
       "average_score": 83,
-      "popularity": 82117,
+      "popularity": 82149,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3380,7 +3380,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 47294,
+      "popularity": 47306,
       "yuri_tag_rank": 84,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3502,7 +3502,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 34974,
+      "popularity": 34980,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3553,7 +3553,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 89497,
+      "popularity": 89517,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3722,7 +3722,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 10909,
+      "popularity": 10912,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3765,7 +3765,7 @@
         }
       ],
       "average_score": 59,
-      "popularity": 5162,
+      "popularity": 5164,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4065,7 +4065,7 @@
         }
       ],
       "average_score": 65,
-      "popularity": 9634,
+      "popularity": 9639,
       "yuri_tag_rank": 81,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4208,7 +4208,7 @@
         }
       ],
       "average_score": 48,
-      "popularity": 2827,
+      "popularity": 2828,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4595,7 +4595,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 5211,
+      "popularity": 5214,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5145,8 +5145,8 @@
           "voice_actor": "浅野真澄"
         }
       ],
-      "average_score": 60,
-      "popularity": 1596,
+      "average_score": 61,
+      "popularity": 1597,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5295,7 +5295,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 22015,
+      "popularity": 22019,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5431,7 +5431,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 39752,
+      "popularity": 39764,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5521,7 +5521,7 @@
         }
       ],
       "average_score": 61,
-      "popularity": 8548,
+      "popularity": 8552,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5685,7 +5685,7 @@
           "voice_actor": "岩坪理江"
         }
       ],
-      "average_score": 57,
+      "average_score": 58,
       "popularity": 1622,
       "yuri_tag_rank": 79,
       "is_adult": false,
@@ -5834,8 +5834,8 @@
           "voice_actor": "幸田夢波"
         }
       ],
-      "average_score": 63,
-      "popularity": 3674,
+      "average_score": 64,
+      "popularity": 3677,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5902,7 +5902,7 @@
         }
       ],
       "average_score": 60,
-      "popularity": 6402,
+      "popularity": 6405,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6083,7 +6083,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 10888,
+      "popularity": 10895,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6213,8 +6213,8 @@
           "voice_actor": "能登麻美子"
         }
       ],
-      "average_score": 67,
-      "popularity": 2794,
+      "average_score": 68,
+      "popularity": 2796,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6276,8 +6276,8 @@
           "voice_actor": "能登麻美子"
         }
       ],
-      "average_score": 66,
-      "popularity": 2189,
+      "average_score": 67,
+      "popularity": 2190,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7212,8 +7212,8 @@
           "voice_actor": "宮村優子"
         }
       ],
-      "average_score": 48,
-      "popularity": 1282,
+      "average_score": 49,
+      "popularity": 1284,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7255,8 +7255,8 @@
           "voice_actor": "園崎未恵"
         }
       ],
-      "average_score": 59,
-      "popularity": 2521,
+      "average_score": 60,
+      "popularity": 2523,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7307,7 +7307,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 9592,
+      "popularity": 9595,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7374,7 +7374,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 13154,
+      "popularity": 13157,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7455,8 +7455,8 @@
           "voice_actor": "國府田マリ子"
         }
       ],
-      "average_score": 52,
-      "popularity": 4233,
+      "average_score": 53,
+      "popularity": 4236,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7519,7 +7519,7 @@
         }
       ],
       "average_score": 84,
-      "popularity": 121182,
+      "popularity": 121230,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7837,7 +7837,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 19640,
+      "popularity": 19643,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7903,8 +7903,8 @@
           "voice_actor": "池澤春菜"
         }
       ],
-      "average_score": 73,
-      "popularity": 6698,
+      "average_score": 74,
+      "popularity": 6700,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8194,7 +8194,7 @@
         }
       ],
       "average_score": 44,
-      "popularity": 3820,
+      "popularity": 3821,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8312,7 +8312,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 5216,
+      "popularity": 5217,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8371,7 +8371,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 53936,
+      "popularity": 53960,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8426,7 +8426,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 11087,
+      "popularity": 11091,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8477,7 +8477,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 29633,
+      "popularity": 29640,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9103,7 +9103,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 62334,
+      "popularity": 62362,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9166,7 +9166,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 7718,
+      "popularity": 7721,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9304,7 +9304,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 14216,
+      "popularity": 14220,
       "yuri_tag_rank": 72,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9410,7 +9410,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 71750,
+      "popularity": 71767,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9512,7 +9512,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 13992,
+      "popularity": 13997,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9719,8 +9719,8 @@
           "voice_actor": "平野綾"
         }
       ],
-      "average_score": 67,
-      "popularity": 9288,
+      "average_score": 68,
+      "popularity": 9293,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10194,7 +10194,7 @@
         }
       ],
       "average_score": 56,
-      "popularity": 24354,
+      "popularity": 24369,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10335,7 +10335,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 5654,
+      "popularity": 5659,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10402,7 +10402,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 40853,
+      "popularity": 40864,
       "yuri_tag_rank": 67,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10575,7 +10575,7 @@
         }
       ],
       "average_score": 61,
-      "popularity": 11285,
+      "popularity": 11289,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10673,7 +10673,7 @@
         }
       ],
       "average_score": 60,
-      "popularity": 17066,
+      "popularity": 17072,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10779,7 +10779,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 180219,
+      "popularity": 180270,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10812,7 +10812,7 @@
         "Studio Pierrot"
       ],
       "main_cast": [],
-      "average_score": 55,
+      "average_score": 57,
       "popularity": 1124,
       "yuri_tag_rank": 66,
       "is_adult": false,
@@ -10923,7 +10923,7 @@
         }
       ],
       "average_score": 85,
-      "popularity": 211071,
+      "popularity": 211178,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11214,7 +11214,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 30671,
+      "popularity": 30690,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11656,7 +11656,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 21673,
+      "popularity": 21677,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11719,7 +11719,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 16222,
+      "popularity": 16227,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11868,7 +11868,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 22982,
+      "popularity": 22993,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11918,8 +11918,8 @@
           "voice_actor": "岩崎征実"
         }
       ],
-      "average_score": 72,
-      "popularity": 21057,
+      "average_score": 73,
+      "popularity": 21065,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12107,7 +12107,7 @@
         }
       ],
       "average_score": 58,
-      "popularity": 54770,
+      "popularity": 54794,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12319,7 +12319,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 8550,
+      "popularity": 8558,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12350,7 +12350,7 @@
       "episode_duration_min": 9,
       "studios": [],
       "main_cast": [],
-      "average_score": 38,
+      "average_score": 37,
       "popularity": 639,
       "yuri_tag_rank": 60,
       "is_adult": false,
@@ -12393,8 +12393,8 @@
           "voice_actor": "杉田智和"
         }
       ],
-      "average_score": 67,
-      "popularity": 35981,
+      "average_score": 68,
+      "popularity": 35994,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12453,7 +12453,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 14214,
+      "popularity": 14219,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12520,7 +12520,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 18944,
+      "popularity": 18948,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12668,7 +12668,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 26385,
+      "popularity": 26397,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12822,7 +12822,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12233,
+      "popularity": 12255,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12886,8 +12886,8 @@
           "voice_actor": "能登麻美子"
         }
       ],
-      "average_score": 65,
-      "popularity": 1710,
+      "average_score": 66,
+      "popularity": 1712,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12951,8 +12951,8 @@
           "voice_actor": "生天目仁美"
         }
       ],
-      "average_score": 66,
-      "popularity": 1941,
+      "average_score": 67,
+      "popularity": 1943,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13167,8 +13167,8 @@
           "voice_actor": "保志総一朗"
         }
       ],
-      "average_score": 73,
-      "popularity": 80448,
+      "average_score": 74,
+      "popularity": 80482,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13227,7 +13227,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 54763,
+      "popularity": 54788,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13353,7 +13353,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 5016,
+      "popularity": 5018,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13645,8 +13645,8 @@
           "voice_actor": "原嶋あかり"
         }
       ],
-      "average_score": 56,
-      "popularity": 5965,
+      "average_score": 57,
+      "popularity": 5968,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13876,7 +13876,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 32853,
+      "popularity": 32868,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13935,7 +13935,7 @@
         }
       ],
       "average_score": 55,
-      "popularity": 63991,
+      "popularity": 64014,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14032,7 +14032,7 @@
         }
       ],
       "average_score": 59,
-      "popularity": 5527,
+      "popularity": 5531,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14260,7 +14260,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 6229,
+      "popularity": 6232,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14358,7 +14358,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 419189,
+      "popularity": 419333,
       "yuri_tag_rank": 58,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15118,8 +15118,8 @@
           "voice_actor": "うえだゆうじ"
         }
       ],
-      "average_score": 63,
-      "popularity": 13353,
+      "average_score": 64,
+      "popularity": 13363,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15287,7 +15287,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 10460,
+      "popularity": 10464,
       "yuri_tag_rank": 55,
       "is_adult": false,
       "country_of_origin": "JP",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T18:19:27.193932+00:00",
+  "generated_at": "2026-10-25T21:18:15.697798+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -9997,6 +9997,49 @@
       "related_work_slug": null
     },
     {
+      "id": "adaf9b83117d138cdeedaac8a",
+      "slug": "lycoris-recoil",
+      "anilist_id": 143270,
+      "mal_id": 50709,
+      "title_ja": "リコリス・リコイル",
+      "title_romaji": "Lycoris Recoil",
+      "title_en": "Lycoris Recoil",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2022-07-02",
+      "end_date": "2022-09-24",
+      "season": "summer",
+      "season_year": 2022,
+      "episode_count": 13,
+      "episode_duration_min": 24,
+      "studios": [
+        "A-1 Pictures"
+      ],
+      "main_cast": [
+        {
+          "character": "錦木千束",
+          "voice_actor": "安済知佳"
+        },
+        {
+          "character": "井ノ上たきな",
+          "voice_actor": "若山詩音"
+        }
+      ],
+      "average_score": 81,
+      "popularity": 214255,
+      "yuri_tag_rank": 69,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143270-rfkyiYXhek5w.jpg",
+      "cover_source_url": "https://anilist.co/anime/143270",
+      "source_url": "https://anilist.co/anime/143270",
+      "related_work_id": "c45b607036d36a511d592e03c",
+      "related_work_slug": "w-45b607036d"
+    },
+    {
       "id": "a7998863e31219b6b8fd64fe0",
       "slug": "kobayashi-san-chi-no-maidragon-s",
       "anilist_id": 107717,
@@ -10258,49 +10301,6 @@
       "source_url": "https://anilist.co/anime/198376",
       "related_work_id": null,
       "related_work_slug": null
-    },
-    {
-      "id": "adaf9b83117d138cdeedaac8a",
-      "slug": "lycoris-recoil",
-      "anilist_id": 143270,
-      "mal_id": 50709,
-      "title_ja": "リコリス・リコイル",
-      "title_romaji": "Lycoris Recoil",
-      "title_en": "Lycoris Recoil",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2022-07-02",
-      "end_date": "2022-09-24",
-      "season": "summer",
-      "season_year": 2022,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "A-1 Pictures"
-      ],
-      "main_cast": [
-        {
-          "character": "錦木千束",
-          "voice_actor": "安済知佳"
-        },
-        {
-          "character": "井ノ上たきな",
-          "voice_actor": "若山詩音"
-        }
-      ],
-      "average_score": 81,
-      "popularity": 214255,
-      "yuri_tag_rank": 68,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143270-rfkyiYXhek5w.jpg",
-      "cover_source_url": "https://anilist.co/anime/143270",
-      "source_url": "https://anilist.co/anime/143270",
-      "related_work_id": "c45b607036d36a511d592e03c",
-      "related_work_slug": "w-45b607036d"
     },
     {
       "id": "ac6b3368584a5fff384df372c",

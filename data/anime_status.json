@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T18:19:27.204423+00:00",
+  "generated_at": "2026-10-25T21:18:15.709713+00:00",
   "source": "an_anilist",
   "matched_works": 49,
   "matches": [
@@ -634,21 +634,6 @@
       "adaptation_source": "light_novel"
     },
     {
-      "work_id": "c4a1fc3c24b21d6ef397db188",
-      "work_slug": "w-4a1fc3c24b",
-      "anilist_id": 107490,
-      "title_native": "まちカドまぞく",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "tv",
-      "episodes": 12,
-      "broadcast_start": "2019-07-12",
-      "broadcast_end": "2019-09-27",
-      "studio": "J.C.STAFF",
-      "source_url": "https://anilist.co/anime/107490",
-      "adaptation_source": "manga"
-    },
-    {
       "work_id": "c45b607036d36a511d592e03c",
       "work_slug": "w-45b607036d",
       "anilist_id": 143270,
@@ -662,6 +647,21 @@
       "studio": "A-1 Pictures",
       "source_url": "https://anilist.co/anime/143270",
       "adaptation_source": "original"
+    },
+    {
+      "work_id": "c4a1fc3c24b21d6ef397db188",
+      "work_slug": "w-4a1fc3c24b",
+      "anilist_id": 107490,
+      "title_native": "まちカドまぞく",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 12,
+      "broadcast_start": "2019-07-12",
+      "broadcast_end": "2019-09-27",
+      "studio": "J.C.STAFF",
+      "source_url": "https://anilist.co/anime/107490",
+      "adaptation_source": "manga"
     },
     {
       "work_id": "c10b01b62b63b316e0e403703",

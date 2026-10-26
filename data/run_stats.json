@@ -2,15 +2,15 @@
   {
     "source_id": "ja_yurihime",
     "status": "ok",
-    "items_seen": 36,
+    "items_seen": 37,
     "fetches": [
       {
         "url": "https://www.ichijinsha.co.jp/yurihime/",
         "status_kind": "ok",
         "http": 200,
-        "bytes": 41905,
-        "sha256": "acc8d13af17724bc",
-        "raw": "data/raw/ja_yurihime/20261009T061102-acc8d13a.html",
+        "bytes": 52593,
+        "sha256": "a02b62d9ceb390bb",
+        "raw": "data/raw/ja_yurihime/20261026T022305-a02b62d9.html",
         "error": ""
       }
     ],
@@ -29,7 +29,7 @@
         "http": 200,
         "bytes": 51662,
         "sha256": "5eeb38c195274893",
-        "raw": "data/raw/ja_galette/20261009T061105-5eeb38c1.html",
+        "raw": "data/raw/ja_galette/20261026T022307-5eeb38c1.html",
         "error": ""
       }
     ],
@@ -39,328 +39,21 @@
   },
   {
     "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 24,
+    "status": "partial",
+    "items_seen": 0,
     "fetches": [
       {
         "url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1",
-        "status_kind": "ok",
-        "http": 200,
-        "bytes": 35541,
-        "sha256": "8288a6fa9d19fdef",
-        "raw": "data/raw/tw_tongli/20261009T061107-8288a6fa.html",
-        "error": ""
+        "status_kind": "failed",
+        "http": 403,
+        "bytes": 5623,
+        "sha256": "603cf38fdd97776d",
+        "raw": "",
+        "error": "HTTP 403"
       }
     ],
     "robots": [
       "ok (75 bytes)"
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1453001",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317009B",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0487001",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0487001A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0477002",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=AF0323003A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0379004A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=SC1178001",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=SC1178001A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=VC0358001",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=KD1722004",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0479001",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0483001A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=FC0301001",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=FC0301001A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=AF0323002A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1385001",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=DU0001002A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BC0453001",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1224008",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=JC1224008A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0317008A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
-    "source_id": "ja_openbd",
-    "status": "ok",
-    "items_seen": 0,
-    "fetches": [
-      {
-        "url": "https://api.openbd.jp/v1/get?isbn=9786260237516,9786260252465,9786260254995,9786260257828,9786260259242,9786260259723,9786260262754,9786260267261,9786260271428,9786260271435",
-        "status_kind": "ok"
-      },
-      {
-        "url": "https://api.openbd.jp/v1/get?isbn=9786260273231,9786260274146,9786260274269,9786260274276,9786260277932,9786260280369,9786260280529,9786260280574,9786260280628,9786260281168",
-        "status_kind": "ok"
-      },
-      {
-        "url": "https://api.openbd.jp/v1/get?isbn=9786260281618,9786260284893,9786260284909,9786260284916",
-        "status_kind": "ok"
-      }
     ]
   }
 ]

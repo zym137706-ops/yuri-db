@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T00:26:55.058420+00:00",
+  "generated_at": "2026-10-26T03:26:16.648893+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,15 +110,15 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 29,
-      "total": 879
+      "items": 28,
+      "total": 878
     }
   ],
-  "raw_fetched": 879,
+  "raw_fetched": 878,
   "dropped": {
     "adult": 402,
     "non_jp": 16,
-    "low_rank": 161,
+    "low_rank": 160,
     "no_title": 0
   },
   "total": 300,
@@ -9578,61 +9578,6 @@
       "related_work_slug": null
     },
     {
-      "id": "aec4e4e7c9f6ab93652304205",
-      "slug": "anima-yell",
-      "anilist_id": 101013,
-      "mal_id": 37206,
-      "title_ja": "アニマエール！",
-      "title_romaji": "Anima Yell!",
-      "title_en": null,
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2018-10-07",
-      "end_date": "2018-12-23",
-      "season": "fall",
-      "season_year": 2018,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Doga Kobo"
-      ],
-      "main_cast": [
-        {
-          "character": "牛久 花和",
-          "voice_actor": "白石晴香"
-        },
-        {
-          "character": "舘島虎徹",
-          "voice_actor": "楠木ともり"
-        },
-        {
-          "character": "猿渡宇希",
-          "voice_actor": "井澤美香子"
-        },
-        {
-          "character": "鳩谷こはね",
-          "voice_actor": "尾崎由香"
-        },
-        {
-          "character": "有馬ひづめ",
-          "voice_actor": "山田唯菜"
-        }
-      ],
-      "average_score": 66,
-      "popularity": 16849,
-      "yuri_tag_rank": 70,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx101013-hFT0b0mqC1oY.jpg",
-      "cover_source_url": "https://anilist.co/anime/101013",
-      "source_url": "https://anilist.co/anime/101013",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
       "id": "a006994c9ee6f7cc529889b2c",
       "slug": "girls-band-cry-seishun-kyousoukyoku",
       "anilist_id": 186714,
@@ -10519,6 +10464,61 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx103301-cSSHgCgUQVrR.jpg",
       "cover_source_url": "https://anilist.co/anime/103301",
       "source_url": "https://anilist.co/anime/103301",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "aec4e4e7c9f6ab93652304205",
+      "slug": "anima-yell",
+      "anilist_id": 101013,
+      "mal_id": 37206,
+      "title_ja": "アニマエール！",
+      "title_romaji": "Anima Yell!",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2018-10-07",
+      "end_date": "2018-12-23",
+      "season": "fall",
+      "season_year": 2018,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Doga Kobo"
+      ],
+      "main_cast": [
+        {
+          "character": "牛久 花和",
+          "voice_actor": "白石晴香"
+        },
+        {
+          "character": "舘島虎徹",
+          "voice_actor": "楠木ともり"
+        },
+        {
+          "character": "猿渡宇希",
+          "voice_actor": "井澤美香子"
+        },
+        {
+          "character": "鳩谷こはね",
+          "voice_actor": "尾崎由香"
+        },
+        {
+          "character": "有馬ひづめ",
+          "voice_actor": "山田唯菜"
+        }
+      ],
+      "average_score": 66,
+      "popularity": 16849,
+      "yuri_tag_rank": 66,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx101013-hFT0b0mqC1oY.jpg",
+      "cover_source_url": "https://anilist.co/anime/101013",
+      "source_url": "https://anilist.co/anime/101013",
       "related_work_id": null,
       "related_work_slug": null
     },

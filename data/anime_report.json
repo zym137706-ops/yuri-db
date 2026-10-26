@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T00:26:55.233788+00:00",
+  "generated_at": "2026-10-26T03:26:16.774788+00:00",
   "total": 300,
   "by_format": {
     "tv": 178,
@@ -75,11 +75,11 @@
   "linked_works": 49,
   "schema_errors": [],
   "collection_note": "media(type: ANIME, tag: \"Yuri\")，按 POPULARITY_DESC；Yuri 标签相关度 >= 55；排除 R18；仅 日本制作。",
-  "raw_fetched": 879,
+  "raw_fetched": 878,
   "dropped": {
     "adult": 402,
     "non_jp": 16,
-    "low_rank": 161,
+    "low_rank": 160,
     "no_title": 0
   }
 }

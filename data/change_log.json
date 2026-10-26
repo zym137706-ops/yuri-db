@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T09:33:46.901382+00:00",
-  "total": 1273,
-  "latest_run_entries": 0,
+  "generated_at": "2026-10-26T14:32:35.792340+00:00",
+  "total": 1274,
+  "latest_run_entries": 1,
   "entries": [
     {
       "entity_type": "work",
@@ -14005,6 +14005,17 @@
       "new_value": null,
       "source_id": null,
       "detected_at": "2026-10-26T02:23:08.331800+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ceabb5e50c4b504fbf9f9afc1",
+      "work_id": "ceabb5e50c4b504fbf9f9afc1",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "none",
+      "new_value": "finished",
+      "source_id": "https://anilist.co/anime/9756",
+      "detected_at": "2026-10-26T14:32:35.792340+00:00"
     }
   ]
 }

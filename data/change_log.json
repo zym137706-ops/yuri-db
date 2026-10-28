@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-27T21:26:32.595715+00:00",
-  "total": 1274,
-  "latest_run_entries": 0,
+  "generated_at": "2026-10-28T00:32:43.022561+00:00",
+  "total": 1292,
+  "latest_run_entries": 18,
   "entries": [
     {
       "entity_type": "work",
@@ -14016,6 +14016,204 @@
       "new_value": "finished",
       "source_id": "https://anilist.co/anime/9756",
       "detected_at": "2026-10-26T14:32:35.792340+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cdcfc4563e7fe6a757d27ff0d",
+      "work_id": "cdcfc4563e7fe6a757d27ff0d",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c0956ee23ae7e256de6c88b79",
+      "work_id": "c0956ee23ae7e256de6c88b79",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c405c782a379988b194c22c29",
+      "work_id": "c405c782a379988b194c22c29",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c39fa8f308485238d6ed2323f",
+      "work_id": "c39fa8f308485238d6ed2323f",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c3db785f2afaacc3bc08d8e00",
+      "work_id": "c3db785f2afaacc3bc08d8e00",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c7cdca30e8b9eb17aca80921d",
+      "work_id": "c7cdca30e8b9eb17aca80921d",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c31671ad23e46644e9c5263b9",
+      "work_id": "c31671ad23e46644e9c5263b9",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c16aa1742daefabd396a1f58f",
+      "work_id": "c16aa1742daefabd396a1f58f",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c1c45fd312e4b20e72fadc39a",
+      "work_id": "c1c45fd312e4b20e72fadc39a",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cb9d62c086be0384d40da2423",
+      "work_id": "cb9d62c086be0384d40da2423",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c6dd58deff72d724d1fcce8a8",
+      "work_id": "c6dd58deff72d724d1fcce8a8",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cd51f5d991e269dcb4330d4d4",
+      "work_id": "cd51f5d991e269dcb4330d4d4",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c5c3ce4734bde4ea0f2c05fdf",
+      "work_id": "c5c3ce4734bde4ea0f2c05fdf",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "announced",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c1aff2edbd0ad70348fee7699",
+      "work_id": "c1aff2edbd0ad70348fee7699",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c009677445f18827d060696ef",
+      "work_id": "c009677445f18827d060696ef",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ca06ff95b41e9161a0d45944f",
+      "work_id": "ca06ff95b41e9161a0d45944f",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c7573b39178e7c44403d0b66d",
+      "work_id": "c7573b39178e7c44403d0b66d",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "announced",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cdf865a9868259588cc2e78f8",
+      "work_id": "cdf865a9868259588cc2e78f8",
+      "change_type": "updated",
+      "field_name": "anime_status",
+      "old_value": "finished",
+      "new_value": "none",
+      "source_id": null,
+      "detected_at": "2026-10-28T00:32:43.022561+00:00"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T06:34:47.783196+00:00",
+  "generated_at": "2026-10-28T09:38:22.446784+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -423,7 +423,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": 60,
-      "popularity": 718,
+      "popularity": 720,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -871,7 +871,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 23834,
+      "popularity": 23855,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1611,7 +1611,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 38476,
+      "popularity": 38535,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2694,7 +2694,7 @@
         }
       ],
       "average_score": 84,
-      "popularity": 64742,
+      "popularity": 64815,
       "yuri_tag_rank": 87,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2742,7 +2742,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 2376,
+      "popularity": 2381,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2832,7 +2832,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 29287,
+      "popularity": 29308,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3277,49 +3277,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx174044-HBvsyKjDVPyO.jpg",
       "cover_source_url": "https://anilist.co/anime/174044",
       "source_url": "https://anilist.co/anime/174044",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a750a0ce0eac78a846038ee10",
-      "slug": "sayonara-lara",
-      "anilist_id": 177637,
-      "mal_id": 58878,
-      "title_ja": "さよならララ",
-      "title_romaji": "Sayonara Lara",
-      "title_en": "Goodbye, Lara",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2026-07-06",
-      "end_date": "2026-09-21",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Kinema Citrus"
-      ],
-      "main_cast": [
-        {
-          "character": "ララ",
-          "voice_actor": "菱川花菜"
-        },
-        {
-          "character": "大津茉里",
-          "voice_actor": "川石奈奈"
-        }
-      ],
-      "average_score": 76,
-      "popularity": 36550,
-      "yuri_tag_rank": 84,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-dZ8hF93HzstV.jpg",
-      "cover_source_url": "https://anilist.co/anime/177637",
-      "source_url": "https://anilist.co/anime/177637",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -8477,7 +8434,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 3753,
+      "popularity": 3766,
       "yuri_tag_rank": 74,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8795,6 +8752,49 @@
       "related_work_slug": null
     },
     {
+      "id": "a750a0ce0eac78a846038ee10",
+      "slug": "sayonara-lara",
+      "anilist_id": 177637,
+      "mal_id": 58878,
+      "title_ja": "さよならララ",
+      "title_romaji": "Sayonara Lara",
+      "title_en": "Goodbye, Lara",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2026-07-06",
+      "end_date": "2026-09-21",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Kinema Citrus"
+      ],
+      "main_cast": [
+        {
+          "character": "ララ",
+          "voice_actor": "菱川花菜"
+        },
+        {
+          "character": "大津茉里",
+          "voice_actor": "川石奈奈"
+        }
+      ],
+      "average_score": 76,
+      "popularity": 36550,
+      "yuri_tag_rank": 73,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-dZ8hF93HzstV.jpg",
+      "cover_source_url": "https://anilist.co/anime/177637",
+      "source_url": "https://anilist.co/anime/177637",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a7b6a44e593bc03b594122f4d",
       "slug": "necronomico-no-cosmic-horror-show",
       "anilist_id": 185505,
@@ -8875,7 +8875,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 3980,
+      "popularity": 4016,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9304,7 +9304,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 41256,
+      "popularity": 41289,
       "yuri_tag_rank": 71,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10182,7 +10182,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 8488,
+      "popularity": 8501,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11021,7 +11021,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 6843,
+      "popularity": 6855,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11116,7 +11116,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 4043,
+      "popularity": 4058,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11196,7 +11196,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 5572,
+      "popularity": 5576,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11292,7 +11292,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 5027,
+      "popularity": 5037,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11542,7 +11542,7 @@
       ],
       "main_cast": [],
       "average_score": null,
-      "popularity": 3011,
+      "popularity": 3014,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11609,7 +11609,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 2611,
+      "popularity": 2614,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12213,7 +12213,7 @@
         }
       ],
       "average_score": 86,
-      "popularity": 30798,
+      "popularity": 30821,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13105,7 +13105,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 9976,
+      "popularity": 9987,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13290,7 +13290,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 44078,
+      "popularity": 44137,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13601,7 +13601,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": null,
-      "popularity": 219,
+      "popularity": 220,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13640,7 +13640,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12369,
+      "popularity": 12386,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14844,7 +14844,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 13727,
+      "popularity": 13746,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",

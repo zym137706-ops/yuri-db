@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T00:32:29.893815+00:00",
+  "generated_at": "2026-10-29T03:36:29.654982+00:00",
   "since_days": 7,
   "keywords": [
     "百合",
@@ -10,19 +10,7 @@
     "yuri",
     "gl"
   ],
-  "count": 1,
+  "count": 0,
   "anime_announcement_candidates": 0,
-  "items": [
-    {
-      "source_id": "ln_web_action_prtimes",
-      "source_label": "PR TIMES",
-      "feed_kind": "press_release",
-      "title": "『カードファイト!! ヴァンガード』イラスト担当の卒業生・月戸さんから学ぶ！キャラクターデザイン講座【11/15（日）開催】",
-      "url": "https://prtimes.jp/main/html/rd/p/000000790.000025577.html",
-      "published_at": null,
-      "is_anime_announcement": false,
-      "retrieved_at": "2026-10-29T00:32:29.892140+00:00",
-      "feed_url": "https://prtimes.jp/index.rdf"
-    }
-  ]
+  "items": []
 }

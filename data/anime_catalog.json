@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T15:43:33.011499+00:00",
+  "generated_at": "2026-10-29T18:37:12.048386+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -109,32 +109,33 @@
     },
     {
       "page": 18,
-      "status": "network_error",
-      "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+      "status": "ok",
+      "items": 29,
+      "total": 879
     }
   ],
-  "raw_fetched": 850,
+  "raw_fetched": 879,
   "dropped": {
-    "adult": 384,
-    "non_jp": 13,
-    "low_rank": 155,
+    "adult": 402,
+    "non_jp": 16,
+    "low_rank": 159,
     "no_title": 0
   },
-  "total": 298,
+  "total": 302,
   "distribution": {
     "format": {
       "tv": 179,
-      "movie": 34,
+      "movie": 35,
       "ova": 27,
-      "ona": 22,
+      "ona": 24,
       "special": 20,
+      "music": 8,
       "tv_short": 7,
-      "music": 7,
       "other": 2
     },
     "adaptation_source": {
       "manga": 113,
-      "original": 105,
+      "original": 109,
       "other": 31,
       "light_novel": 31,
       "game": 9,
@@ -142,9 +143,9 @@
       "visual_novel": 3
     },
     "status": {
-      "finished": 287,
-      "announced": 9,
-      "airing": 2
+      "finished": 289,
+      "announced": 10,
+      "airing": 3
     }
   },
   "entries": [
@@ -4409,6 +4410,49 @@
       "related_work_slug": null
     },
     {
+      "id": "a83105aa8eb62e366df3fdfd9",
+      "slug": "zero-talking",
+      "anilist_id": 170534,
+      "mal_id": 57000,
+      "title_ja": "ゼロトーキング",
+      "title_romaji": "Zero Talking",
+      "title_en": "Zero Talking",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "music",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2023-10-25",
+      "end_date": "2023-10-25",
+      "season": null,
+      "season_year": null,
+      "episode_count": 1,
+      "episode_duration_min": 4,
+      "studios": [
+        "Studio Gohan"
+      ],
+      "main_cast": [
+        {
+          "character": "大令嬢",
+          "voice_actor": null
+        },
+        {
+          "character": "ドロシィ",
+          "voice_actor": null
+        }
+      ],
+      "average_score": 61,
+      "popularity": 260,
+      "yuri_tag_rank": 80,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx170534-UlINQsVxuhmn.png",
+      "cover_source_url": "https://anilist.co/anime/170534",
+      "source_url": "https://anilist.co/anime/170534",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "afbe5064cc7d109bb45fbf524",
       "slug": "harmony",
       "anilist_id": 20932,
@@ -5270,6 +5314,40 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20475-c4JrCtSDXrtM.png",
       "cover_source_url": "https://anilist.co/anime/20475",
       "source_url": "https://anilist.co/anime/20475",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a1efcb5f05e189cad41c133da",
+      "slug": "himitsu-doushi",
+      "anilist_id": 213429,
+      "mal_id": 64422,
+      "title_ja": "ひみつどうし",
+      "title_romaji": "Himitsu Doushi",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "ona",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2024-09-20",
+      "end_date": "2024-09-20",
+      "season": "fall",
+      "season_year": 2024,
+      "episode_count": 1,
+      "episode_duration_min": 2,
+      "studios": [
+        "Ishikawa Pro"
+      ],
+      "main_cast": [],
+      "average_score": null,
+      "popularity": 91,
+      "yuri_tag_rank": 79,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213429-U4vAUBWrIKrQ.png",
+      "cover_source_url": "https://anilist.co/anime/213429",
+      "source_url": "https://anilist.co/anime/213429",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -6316,6 +6394,40 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20926.jpg",
       "cover_source_url": "https://anilist.co/anime/20926",
       "source_url": "https://anilist.co/anime/20926",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a44be92523fe4051d2dc9eabd",
+      "slug": "itoshi-no-zako-haishinsha-chan",
+      "anilist_id": 213428,
+      "mal_id": 64433,
+      "title_ja": "愛しのザコ配信者ちゃん",
+      "title_romaji": "Itoshi no Zako Haishinsha-chan",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "ona",
+      "adaptation_source": "original",
+      "status": "airing",
+      "start_date": "2021-12-12",
+      "end_date": null,
+      "season": "fall",
+      "season_year": 2021,
+      "episode_count": null,
+      "episode_duration_min": 4,
+      "studios": [
+        "Ishikawa Pro"
+      ],
+      "main_cast": [],
+      "average_score": null,
+      "popularity": 126,
+      "yuri_tag_rank": 79,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b213428-DJwbdLhDhoFJ.png",
+      "cover_source_url": "https://anilist.co/anime/213428",
+      "source_url": "https://anilist.co/anime/213428",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -13464,6 +13576,38 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx113023-ppUSdBgb9pzc.jpg",
       "cover_source_url": "https://anilist.co/anime/113023",
       "source_url": "https://anilist.co/anime/113023",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a3bc4bd6dd3407b1c47b3eb06",
+      "slug": "bousei-no-volicia-dai-shuushou-saihate-provisional-title",
+      "anilist_id": 194707,
+      "mal_id": null,
+      "title_ja": "忘星のヴァリシア 第終章：最果（仮）",
+      "title_romaji": "Bousei no Volicia Dai Shuushou: Saihate (Provisional Title)",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "movie",
+      "adaptation_source": "original",
+      "status": "announced",
+      "start_date": "2027-01-01",
+      "end_date": null,
+      "season": null,
+      "season_year": null,
+      "episode_count": 1,
+      "episode_duration_min": null,
+      "studios": [],
+      "main_cast": [],
+      "average_score": null,
+      "popularity": 220,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx194707-MaXs1GmaIzmP.png",
+      "cover_source_url": "https://anilist.co/anime/194707",
+      "source_url": "https://anilist.co/anime/194707",
       "related_work_id": null,
       "related_work_slug": null
     },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T03:38:02.487190+00:00",
+  "generated_at": "2026-10-30T06:37:58.753384+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -9523,57 +9523,6 @@
       "related_work_slug": null
     },
     {
-      "id": "afb9c7a0229ba25fa40a1e023",
-      "slug": "bocchi-the-rock",
-      "anilist_id": 130003,
-      "mal_id": 47917,
-      "title_ja": "ぼっち・ざ・ろっく！",
-      "title_romaji": "Bocchi the Rock!",
-      "title_en": "BOCCHI THE ROCK!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2022-10-09",
-      "end_date": "2022-12-25",
-      "season": "fall",
-      "season_year": 2022,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "CloverWorks"
-      ],
-      "main_cast": [
-        {
-          "character": "後藤ひとり",
-          "voice_actor": "青山吉能"
-        },
-        {
-          "character": "伊地知虹夏",
-          "voice_actor": "鈴代紗弓"
-        },
-        {
-          "character": "山田リョウ",
-          "voice_actor": "水野朔"
-        },
-        {
-          "character": "喜多郁代",
-          "voice_actor": "長谷川育美"
-        }
-      ],
-      "average_score": 87,
-      "popularity": 271833,
-      "yuri_tag_rank": 70,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130003-HTDmeL4RGeJ4.png",
-      "cover_source_url": "https://anilist.co/anime/130003",
-      "source_url": "https://anilist.co/anime/130003",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
       "id": "a006994c9ee6f7cc529889b2c",
       "slug": "girls-band-cry-seishun-kyousoukyoku",
       "anilist_id": 186714,
@@ -11177,6 +11126,57 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100814-Np7VQLyDRjor.jpg",
       "cover_source_url": "https://anilist.co/anime/100814",
       "source_url": "https://anilist.co/anime/100814",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "afb9c7a0229ba25fa40a1e023",
+      "slug": "bocchi-the-rock",
+      "anilist_id": 130003,
+      "mal_id": 47917,
+      "title_ja": "ぼっち・ざ・ろっく！",
+      "title_romaji": "Bocchi the Rock!",
+      "title_en": "BOCCHI THE ROCK!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2022-10-09",
+      "end_date": "2022-12-25",
+      "season": "fall",
+      "season_year": 2022,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "CloverWorks"
+      ],
+      "main_cast": [
+        {
+          "character": "後藤ひとり",
+          "voice_actor": "青山吉能"
+        },
+        {
+          "character": "伊地知虹夏",
+          "voice_actor": "鈴代紗弓"
+        },
+        {
+          "character": "山田リョウ",
+          "voice_actor": "水野朔"
+        },
+        {
+          "character": "喜多郁代",
+          "voice_actor": "長谷川育美"
+        }
+      ],
+      "average_score": 87,
+      "popularity": 271833,
+      "yuri_tag_rank": 64,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130003-HTDmeL4RGeJ4.png",
+      "cover_source_url": "https://anilist.co/anime/130003",
+      "source_url": "https://anilist.co/anime/130003",
       "related_work_id": null,
       "related_work_slug": null
     },

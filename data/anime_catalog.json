@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T00:34:27.105640+00:00",
+  "generated_at": "2026-10-30T03:38:02.487190+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -15204,6 +15204,65 @@
       "related_work_slug": null
     },
     {
+      "id": "ab20080327649d30d76d4e5c9",
+      "slug": "mahou-shoujo-madokamagica",
+      "anilist_id": 9756,
+      "mal_id": 9756,
+      "title_ja": "魔法少女まどか☆マギカ",
+      "title_romaji": "Mahou Shoujo Madoka☆Magica",
+      "title_en": "Puella Magi Madoka Magica",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2011-01-07",
+      "end_date": "2011-04-22",
+      "season": "winter",
+      "season_year": 2011,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Shaft"
+      ],
+      "main_cast": [
+        {
+          "character": "鹿目まどか",
+          "voice_actor": "悠木碧"
+        },
+        {
+          "character": "暁美ほむら",
+          "voice_actor": "斎藤千和"
+        },
+        {
+          "character": "巴マミ",
+          "voice_actor": "水橋かおり"
+        },
+        {
+          "character": "美樹さやか",
+          "voice_actor": "喜多村英梨"
+        },
+        {
+          "character": "キュゥべぇ",
+          "voice_actor": "加藤英美里"
+        },
+        {
+          "character": "佐倉杏子",
+          "voice_actor": "野中藍"
+        }
+      ],
+      "average_score": 83,
+      "popularity": 331969,
+      "yuri_tag_rank": 56,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9756-QnUGwlwwnsuN.jpg",
+      "cover_source_url": "https://anilist.co/anime/9756",
+      "source_url": "https://anilist.co/anime/9756",
+      "related_work_id": "ceabb5e50c4b504fbf9f9afc1",
+      "related_work_slug": "star-3"
+    },
+    {
       "id": "a35af0620e878e63cb8fa8b31",
       "slug": "blue-reflection-ray",
       "anilist_id": 129814,
@@ -15331,65 +15390,6 @@
       "source_url": "https://anilist.co/anime/976",
       "related_work_id": null,
       "related_work_slug": null
-    },
-    {
-      "id": "ab20080327649d30d76d4e5c9",
-      "slug": "mahou-shoujo-madokamagica",
-      "anilist_id": 9756,
-      "mal_id": 9756,
-      "title_ja": "魔法少女まどか☆マギカ",
-      "title_romaji": "Mahou Shoujo Madoka☆Magica",
-      "title_en": "Puella Magi Madoka Magica",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2011-01-07",
-      "end_date": "2011-04-22",
-      "season": "winter",
-      "season_year": 2011,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Shaft"
-      ],
-      "main_cast": [
-        {
-          "character": "鹿目まどか",
-          "voice_actor": "悠木碧"
-        },
-        {
-          "character": "暁美ほむら",
-          "voice_actor": "斎藤千和"
-        },
-        {
-          "character": "巴マミ",
-          "voice_actor": "水橋かおり"
-        },
-        {
-          "character": "美樹さやか",
-          "voice_actor": "喜多村英梨"
-        },
-        {
-          "character": "キュゥべぇ",
-          "voice_actor": "加藤英美里"
-        },
-        {
-          "character": "佐倉杏子",
-          "voice_actor": "野中藍"
-        }
-      ],
-      "average_score": 83,
-      "popularity": 331969,
-      "yuri_tag_rank": 55,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9756-QnUGwlwwnsuN.jpg",
-      "cover_source_url": "https://anilist.co/anime/9756",
-      "source_url": "https://anilist.co/anime/9756",
-      "related_work_id": "ceabb5e50c4b504fbf9f9afc1",
-      "related_work_slug": "star-3"
     }
   ]
 }

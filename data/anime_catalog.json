@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T21:30:47.353411+00:00",
+  "generated_at": "2026-10-30T00:34:27.105640+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -9523,6 +9523,57 @@
       "related_work_slug": null
     },
     {
+      "id": "afb9c7a0229ba25fa40a1e023",
+      "slug": "bocchi-the-rock",
+      "anilist_id": 130003,
+      "mal_id": 47917,
+      "title_ja": "ぼっち・ざ・ろっく！",
+      "title_romaji": "Bocchi the Rock!",
+      "title_en": "BOCCHI THE ROCK!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2022-10-09",
+      "end_date": "2022-12-25",
+      "season": "fall",
+      "season_year": 2022,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "CloverWorks"
+      ],
+      "main_cast": [
+        {
+          "character": "後藤ひとり",
+          "voice_actor": "青山吉能"
+        },
+        {
+          "character": "伊地知虹夏",
+          "voice_actor": "鈴代紗弓"
+        },
+        {
+          "character": "山田リョウ",
+          "voice_actor": "水野朔"
+        },
+        {
+          "character": "喜多郁代",
+          "voice_actor": "長谷川育美"
+        }
+      ],
+      "average_score": 87,
+      "popularity": 271833,
+      "yuri_tag_rank": 70,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130003-HTDmeL4RGeJ4.png",
+      "cover_source_url": "https://anilist.co/anime/130003",
+      "source_url": "https://anilist.co/anime/130003",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a006994c9ee6f7cc529889b2c",
       "slug": "girls-band-cry-seishun-kyousoukyoku",
       "anilist_id": 186714,
@@ -10836,6 +10887,61 @@
       "related_work_slug": null
     },
     {
+      "id": "ae9858e4281daa47f63b11b19",
+      "slug": "bang-dream-it-s-mygo",
+      "anilist_id": 163571,
+      "mal_id": 54959,
+      "title_ja": "BanG Dream! It's MyGO!!!!!",
+      "title_romaji": "BanG Dream! It's MyGO!!!!!",
+      "title_en": "BanG Dream! It's MyGO!!!!!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "other",
+      "status": "finished",
+      "start_date": "2023-06-29",
+      "end_date": "2023-09-14",
+      "season": "summer",
+      "season_year": 2023,
+      "episode_count": 13,
+      "episode_duration_min": 24,
+      "studios": [
+        "SANZIGEN"
+      ],
+      "main_cast": [
+        {
+          "character": "千早愛音",
+          "voice_actor": "立石凛"
+        },
+        {
+          "character": "高松燈",
+          "voice_actor": "羊宮妃那"
+        },
+        {
+          "character": "椎名立希",
+          "voice_actor": "林鼓子"
+        },
+        {
+          "character": "長崎そよ",
+          "voice_actor": "小日向美香"
+        },
+        {
+          "character": "要楽奈",
+          "voice_actor": "青木陽菜"
+        }
+      ],
+      "average_score": 82,
+      "popularity": 22914,
+      "yuri_tag_rank": 65,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163571-Atkvuzh1A1Ip.png",
+      "cover_source_url": "https://anilist.co/anime/163571",
+      "source_url": "https://anilist.co/anime/163571",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "add003b1e8d237a4b0ec4a07e",
       "slug": "nana",
       "anilist_id": 877,
@@ -10875,57 +10981,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx877-6BUYEWp8By8j.png",
       "cover_source_url": "https://anilist.co/anime/877",
       "source_url": "https://anilist.co/anime/877",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "afb9c7a0229ba25fa40a1e023",
-      "slug": "bocchi-the-rock",
-      "anilist_id": 130003,
-      "mal_id": 47917,
-      "title_ja": "ぼっち・ざ・ろっく！",
-      "title_romaji": "Bocchi the Rock!",
-      "title_en": "BOCCHI THE ROCK!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2022-10-09",
-      "end_date": "2022-12-25",
-      "season": "fall",
-      "season_year": 2022,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "CloverWorks"
-      ],
-      "main_cast": [
-        {
-          "character": "後藤ひとり",
-          "voice_actor": "青山吉能"
-        },
-        {
-          "character": "伊地知虹夏",
-          "voice_actor": "鈴代紗弓"
-        },
-        {
-          "character": "山田リョウ",
-          "voice_actor": "水野朔"
-        },
-        {
-          "character": "喜多郁代",
-          "voice_actor": "長谷川育美"
-        }
-      ],
-      "average_score": 87,
-      "popularity": 271833,
-      "yuri_tag_rank": 65,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130003-HTDmeL4RGeJ4.png",
-      "cover_source_url": "https://anilist.co/anime/130003",
-      "source_url": "https://anilist.co/anime/130003",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -10977,6 +11032,61 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx165253-nAwyrMZm4jBA.jpg",
       "cover_source_url": "https://anilist.co/anime/165253",
       "source_url": "https://anilist.co/anime/165253",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a40862fa054ffa15bbfb63aef",
+      "slug": "girls-band-cry",
+      "anilist_id": 164212,
+      "mal_id": 55102,
+      "title_ja": "ガールズバンドクライ",
+      "title_romaji": "GIRLS BAND CRY",
+      "title_en": "Girls Band Cry",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2024-04-06",
+      "end_date": "2024-06-29",
+      "season": "spring",
+      "season_year": 2024,
+      "episode_count": 13,
+      "episode_duration_min": 24,
+      "studios": [
+        "Toei Animation"
+      ],
+      "main_cast": [
+        {
+          "character": "井芹仁菜",
+          "voice_actor": "理名"
+        },
+        {
+          "character": "河原木桃香",
+          "voice_actor": "夕莉"
+        },
+        {
+          "character": "安和すばる",
+          "voice_actor": "美怜"
+        },
+        {
+          "character": "海老塚智",
+          "voice_actor": "凪都"
+        },
+        {
+          "character": "ルパ",
+          "voice_actor": "朱李"
+        }
+      ],
+      "average_score": 83,
+      "popularity": 68271,
+      "yuri_tag_rank": 65,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx164212-eKh15LQxkTEx.jpg",
+      "cover_source_url": "https://anilist.co/anime/164212",
+      "source_url": "https://anilist.co/anime/164212",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11067,61 +11177,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100814-Np7VQLyDRjor.jpg",
       "cover_source_url": "https://anilist.co/anime/100814",
       "source_url": "https://anilist.co/anime/100814",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a40862fa054ffa15bbfb63aef",
-      "slug": "girls-band-cry",
-      "anilist_id": 164212,
-      "mal_id": 55102,
-      "title_ja": "ガールズバンドクライ",
-      "title_romaji": "GIRLS BAND CRY",
-      "title_en": "Girls Band Cry",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2024-04-06",
-      "end_date": "2024-06-29",
-      "season": "spring",
-      "season_year": 2024,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "Toei Animation"
-      ],
-      "main_cast": [
-        {
-          "character": "井芹仁菜",
-          "voice_actor": "理名"
-        },
-        {
-          "character": "河原木桃香",
-          "voice_actor": "夕莉"
-        },
-        {
-          "character": "安和すばる",
-          "voice_actor": "美怜"
-        },
-        {
-          "character": "海老塚智",
-          "voice_actor": "凪都"
-        },
-        {
-          "character": "ルパ",
-          "voice_actor": "朱李"
-        }
-      ],
-      "average_score": 83,
-      "popularity": 68271,
-      "yuri_tag_rank": 64,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx164212-eKh15LQxkTEx.jpg",
-      "cover_source_url": "https://anilist.co/anime/164212",
-      "source_url": "https://anilist.co/anime/164212",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11258,61 +11313,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205444-dhVRPyVQaHrr.png",
       "cover_source_url": "https://anilist.co/anime/205444",
       "source_url": "https://anilist.co/anime/205444",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "ae9858e4281daa47f63b11b19",
-      "slug": "bang-dream-it-s-mygo",
-      "anilist_id": 163571,
-      "mal_id": 54959,
-      "title_ja": "BanG Dream! It's MyGO!!!!!",
-      "title_romaji": "BanG Dream! It's MyGO!!!!!",
-      "title_en": "BanG Dream! It's MyGO!!!!!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "finished",
-      "start_date": "2023-06-29",
-      "end_date": "2023-09-14",
-      "season": "summer",
-      "season_year": 2023,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "SANZIGEN"
-      ],
-      "main_cast": [
-        {
-          "character": "千早愛音",
-          "voice_actor": "立石凛"
-        },
-        {
-          "character": "高松燈",
-          "voice_actor": "羊宮妃那"
-        },
-        {
-          "character": "椎名立希",
-          "voice_actor": "林鼓子"
-        },
-        {
-          "character": "長崎そよ",
-          "voice_actor": "小日向美香"
-        },
-        {
-          "character": "要楽奈",
-          "voice_actor": "青木陽菜"
-        }
-      ],
-      "average_score": 82,
-      "popularity": 22914,
-      "yuri_tag_rank": 62,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163571-Atkvuzh1A1Ip.png",
-      "cover_source_url": "https://anilist.co/anime/163571",
-      "source_url": "https://anilist.co/anime/163571",
       "related_work_id": null,
       "related_work_slug": null
     },

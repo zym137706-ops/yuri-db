@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T12:36:37.337276+00:00",
+  "generated_at": "2026-10-30T15:41:16.671500+00:00",
   "source": "an_anilist",
   "matched_works": 50,
   "matches": [
@@ -169,6 +169,21 @@
       "adaptation_source": "original"
     },
     {
+      "work_id": "c009677445f18827d060696ef",
+      "work_slug": "w-3c76df09f6",
+      "anilist_id": 149028,
+      "title_native": "私の百合はお仕事です！",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 12,
+      "broadcast_start": "2023-04-06",
+      "broadcast_end": "2023-06-22",
+      "studio": "Passione",
+      "source_url": "https://anilist.co/anime/149028",
+      "adaptation_source": "manga"
+    },
+    {
       "work_id": "c7573b39178e7c44403d0b66d",
       "work_slug": "w-cdf24065f7",
       "anilist_id": 184321,
@@ -242,21 +257,6 @@
       "studio": "Tezuka Productions",
       "source_url": "https://anilist.co/anime/109287",
       "adaptation_source": "light_novel"
-    },
-    {
-      "work_id": "c009677445f18827d060696ef",
-      "work_slug": "w-3c76df09f6",
-      "anilist_id": 149028,
-      "title_native": "私の百合はお仕事です！",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "tv",
-      "episodes": 12,
-      "broadcast_start": "2023-04-06",
-      "broadcast_end": "2023-06-22",
-      "studio": "Passione",
-      "source_url": "https://anilist.co/anime/149028",
-      "adaptation_source": "manga"
     },
     {
       "work_id": "ca06ff95b41e9161a0d45944f",

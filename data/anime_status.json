@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T00:38:41.120780+00:00",
+  "generated_at": "2026-11-01T03:42:02.674467+00:00",
   "source": "an_anilist",
   "matched_works": 50,
   "matches": [
@@ -589,6 +589,21 @@
       "adaptation_source": "manga"
     },
     {
+      "work_id": "c45b607036d36a511d592e03c",
+      "work_slug": "w-45b607036d",
+      "anilist_id": 143270,
+      "title_native": "リコリス・リコイル",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 13,
+      "broadcast_start": "2022-07-02",
+      "broadcast_end": "2022-09-24",
+      "studio": "A-1 Pictures",
+      "source_url": "https://anilist.co/anime/143270",
+      "adaptation_source": "original"
+    },
+    {
       "work_id": "cefa18bd5a0238eaf39e15b85",
       "work_slug": "w-efa18bd5a0",
       "anilist_id": 21776,
@@ -632,21 +647,6 @@
       "studio": "Shaft",
       "source_url": "https://anilist.co/anime/20593",
       "adaptation_source": "light_novel"
-    },
-    {
-      "work_id": "c45b607036d36a511d592e03c",
-      "work_slug": "w-45b607036d",
-      "anilist_id": 143270,
-      "title_native": "リコリス・リコイル",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "tv",
-      "episodes": 13,
-      "broadcast_start": "2022-07-02",
-      "broadcast_end": "2022-09-24",
-      "studio": "A-1 Pictures",
-      "source_url": "https://anilist.co/anime/143270",
-      "adaptation_source": "original"
     },
     {
       "work_id": "c4a1fc3c24b21d6ef397db188",

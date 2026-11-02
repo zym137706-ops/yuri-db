@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T02:38:05.637078+00:00",
+  "generated_at": "2026-11-02T03:45:58.674194+00:00",
   "source_records": {
     "yurihime": 38,
     "galette": 4,
@@ -8,7 +8,7 @@
     "total_records": 66
   },
   "works_total": 846,
-  "created_at_preserved": 837,
+  "created_at_preserved": 846,
   "by_media_type": {
     "manga": 754,
     "light_novel": 92
@@ -169,5 +169,5 @@
   "works_with_ja_volumes": 11,
   "merges": [],
   "schema_errors": [],
-  "raw_files": 499
+  "raw_files": 503
 }

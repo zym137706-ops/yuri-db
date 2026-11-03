@@ -10,7 +10,7 @@
         "http": 200,
         "bytes": 51424,
         "sha256": "e71c76adf56401c6",
-        "raw": "data/raw/ja_yurihime/20261102T023707-e71c76ad.html",
+        "raw": "data/raw/ja_yurihime/20261103T015231-e71c76ad.html",
         "error": ""
       }
     ],
@@ -29,7 +29,7 @@
         "http": 200,
         "bytes": 51662,
         "sha256": "5eeb38c195274893",
-        "raw": "data/raw/ja_galette/20261102T023710-5eeb38c1.html",
+        "raw": "data/raw/ja_galette/20261103T015232-5eeb38c1.html",
         "error": ""
       }
     ],
@@ -47,8 +47,8 @@
         "status_kind": "ok",
         "http": 200,
         "bytes": 34767,
-        "sha256": "17a6da4092937fe2",
-        "raw": "data/raw/tw_tongli/20261102T023712-17a6da40.html",
+        "sha256": "084afbaaf1e1ce4b",
+        "raw": "data/raw/tw_tongli/20261103T015233-084afbaa.html",
         "error": ""
       }
     ],

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T00:41:18.306375+00:00",
+  "generated_at": "2026-11-03T01:53:44.859257+00:00",
   "source": "an_anilist",
-  "matched_works": 49,
+  "matched_works": 47,
   "matches": [
     {
       "work_id": "ceb82d175c46b7f8559bc5f10",
@@ -181,21 +181,6 @@
       "broadcast_end": "2023-06-22",
       "studio": "Passione",
       "source_url": "https://anilist.co/anime/149028",
-      "adaptation_source": "manga"
-    },
-    {
-      "work_id": "c7573b39178e7c44403d0b66d",
-      "work_slug": "w-cdf24065f7",
-      "anilist_id": 184321,
-      "title_native": "雨夜の月",
-      "status": "announced",
-      "our_status": "announced",
-      "format": "tv",
-      "episodes": null,
-      "broadcast_start": "2027-01-01",
-      "broadcast_end": null,
-      "studio": "CompTown",
-      "source_url": "https://anilist.co/anime/184321",
       "adaptation_source": "manga"
     },
     {
@@ -466,21 +451,6 @@
       "broadcast_end": "1992-05-31",
       "studio": "Tezuka Productions",
       "source_url": "https://anilist.co/anime/795",
-      "adaptation_source": "manga"
-    },
-    {
-      "work_id": "c31671ad23e46644e9c5263b9",
-      "work_slug": "w-56b569b9c6",
-      "anilist_id": 1496,
-      "title_native": "不思議の国の美幸ちゃん",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "ova",
-      "episodes": 2,
-      "broadcast_start": "1995-06-21",
-      "broadcast_end": "1995-06-21",
-      "studio": "Animate Film",
-      "source_url": "https://anilist.co/anime/1496",
       "adaptation_source": "manga"
     },
     {

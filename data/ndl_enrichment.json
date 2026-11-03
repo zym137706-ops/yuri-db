@@ -1,31 +1,39 @@
 {
-  "generated_at": "2026-10-09T11:32:34.863167+00:00",
+  "generated_at": "2026-11-03T02:20:19.572407+00:00",
   "source": "ja_ndl_search_sru_opensearch",
   "endpoint": "https://ndlsearch.ndl.go.jp/api/opensearch",
   "note": "只保留 category 为图书类的记录。publisher=出版社，label=seriesTitle（轻小说为文库名，漫画为レーベル名）。合并式写入：可分批多次运行逐步补全。",
+  "total": 237,
+  "by_media_type": {
+    "manga": 172,
+    "light_novel": 65
+  },
+  "with_publisher": 234,
+  "with_label": 223,
+  "with_isbn": 9,
   "last_run": {
-    "queried": 250,
+    "queried": 200,
     "runs": [
       {
         "status": "ok",
         "pages": 1,
-        "items": 5,
+        "items": 16,
         "total_results": 21,
         "page_statuses": [
           "ok"
         ],
-        "title": "わたしが恋人になれるわけないじゃん、ムリムリ! (※ムリじゃなかった!?)",
+        "title": "週に一度クラスメイトを買う話 ～ふたりの時間、言い訳の五千円～",
         "media_type": "light_novel"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 1,
-        "total_results": 1,
+        "items": 2,
+        "total_results": 2,
         "page_statuses": [
           "ok"
         ],
-        "title": "わたしの百合も、営業だと思った？",
+        "title": "少女妄想中。",
         "media_type": "light_novel"
       },
       {
@@ -36,27 +44,18 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "クラスの姫は私のわんこ",
+        "title": "少女の望まぬ英雄譚",
         "media_type": "light_novel"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 3,
-        "total_results": 17,
+        "items": 1,
+        "total_results": 1,
         "page_statuses": [
           "ok"
         ],
-        "title": "処刑少女の生きる道（バージンロード）",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "振り向きなさい、わたくしに！",
+        "title": "転生王女と天才令嬢の魔法革命 王宮秘話",
         "media_type": "light_novel"
       },
       {
@@ -67,247 +66,7 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "私の初恋相手がキスしてた",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 24,
-        "total_results": 25,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "超かぐや姫！",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 13,
-        "total_results": 42,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "安達としまむら",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 9,
-        "total_results": 23,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "私の推しは悪役令嬢。",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 28,
-        "total_results": 63,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "転生王女と天才令嬢の魔法革命",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 4,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "やがて君になる 佐伯沙弥香について",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "百合の間に挟まれたわたしが、勢いで二股してしまった話",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 4,
-        "total_results": 14,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "「お前ごときが魔王に勝てると思うな」と勇者パーティを追放されたので、王都で気ままに暮らしたい",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "異世界に咲くは百合の花",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "安達としまむら99.9",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "平民のくせに生意気な！",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "勇者になりたい少女と、勇者になるべき彼女",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "忘れえぬ魔女の物語",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 40,
-        "total_results": 46,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "性悪天才幼馴染との勝負に負けて初体験を全部奪われる話",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "わたしが恋人になれるわけないじゃん、ムリムリ!(※ムリじゃなかった!?) 短編集",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 41,
-        "total_results": 49,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ユリ熊嵐",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 14,
-        "total_results": 17,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "人妻教師が教え子の女子高生にドはまりする話",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "勇者殺しの花嫁",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "好きな子のいもうと",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "彼女のカノジョと不純な初恋",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "えびてん 綺譚奇譚",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "すぐケンカする都会ギャルと京美人を仲直りさせたいだけなのに! (※わたしを取り合うのはやめなさい!)",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "わたしが恋人になれるわけないじゃん、ムリムリ！（※ムリじゃなかった!?） SS集",
+        "title": "私の怪談師はポンコツ可愛い",
         "media_type": "light_novel"
       },
       {
@@ -318,348 +77,18 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "アフタヌーンティーはいかがですか？ 私と先輩の、不純で一途なふたり暮らし",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 3,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "コールミー・バイ・ノーネーム",
+        "title": "だれがわたしの百合なのか!?",
         "media_type": "light_novel"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 16,
-        "total_results": 20,
+        "total_results": 46,
         "page_statuses": [
           "ok"
         ],
-        "title": "ストロベリー・パニック！",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ハウリング・ブレイズ 葬焔の剣士と不死の魔女",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ヴァンパイアハンターに優しいギャル",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 47,
-        "total_results": 152,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "人形遣い",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "人間ちゃんの警戒心が薄すぎる!",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "優等生がアダルトグッズを買いに来た",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "嫌い同士のわたしたちは一夜の過ちで",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "幽霊列車とこんぺい糖: メモリー・オブ・リガヤ",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "志乃と恋 Future",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "担当アイドルの熱愛がバレたけど、ノーダメだよね!(※お相手は男装したマネージャーの私だし)",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "溺れるベッドで、天使の寝顔を見たいだけ。 #ふたりで犯した秘密の校則違反",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "白いドレスと紅い月がとけあう夜に",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 4,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "秘蜜 黒の誓い",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 7,
-        "total_results": 2691,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "花物語",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 22,
-        "total_results": 24,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "顔だけ良いクラスメイトが、やたらとグイグイ来る百合の話。",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 3,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "魔法少女ノ魔女裁判",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 30,
-        "total_results": 122,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "マリア様がみてる",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "紫色のクオリア",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "〆切前には百合が捗る",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 6,
-        "total_results": 10,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "エンドブルー",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "働く私と彼女の同棲",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "安達としまむらSS",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 32,
-        "total_results": 35,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "幼馴染は、にゃあと鳴いてスカートのなか",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 12,
-        "total_results": 13,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "彼なんかより、私のほうがいいでしょ？",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "憧れのお姉様が「妹になりたい」って甘えてくるんだけど!?",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "新しくできたお姉さんは、百合というのが好きみたい",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "猫ノ山寧々子はネコになる",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "百合に挟まれてる女って、罪ですか？",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "見かけは超清楚な腹黒女子にもてあそばれる話",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "OBSTACLEシリーズ 激突のヘクセンナハト",
+        "title": "私、能力は平均値でって言ったよね！",
         "media_type": "light_novel"
       },
       {
@@ -670,104 +99,7 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "ラブライブ！ School idol diary ～高坂穂乃果～",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 43,
-        "total_results": 97,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "君が僕を",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 9,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "女だから、とパーティを追放されたので伝説の魔女と最強タッグを組みました",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 6,
-        "total_results": 27,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ひきこまり吸血姫の悶々",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 3,
-        "total_results": 20,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "乙女ゲームのヒロインで最強サバイバル",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 17,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "獄門撫子此処ニ在リ",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 25,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "剣士を目指して入学したのに魔法適性9999なんですけど！？",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 4,
-        "total_results": 25,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "声優ラジオのウラオモテ",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "FLOWERS ―Le volume sur printemps- フラワーズ〈春篇〉",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "『人斬り』少女、公爵令嬢の護衛になる",
+        "title": "ガールズキングダム",
         "media_type": "light_novel"
       },
       {
@@ -778,1097 +110,84 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "このぬくもりを君と呼ぶんだ",
+        "title": "姉妹傭兵",
         "media_type": "light_novel"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 1,
-        "total_results": 1,
+        "items": 44,
+        "total_results": 81,
         "page_statuses": [
           "ok"
         ],
-        "title": "どタイプお姉さんの誘惑が止まらないっ！ ちっちゃい頃から私のことがだいすきな年下従妹のお嫁さんになっちゃいました!?",
-        "media_type": "light_novel"
+        "title": "はなにあらし",
+        "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ステラ・ステップ",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "メイドに力負けするなんて恥ずかしくないんですか?",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "ワイルドブーケ想いを綴る花の名は",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "世界の終わりの庭で",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "人生全部賭けても、銀の魔女に勝ちたい",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "人魚を助ける。クラスメイトを好きになる。",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "network_error",
-        "total_results": null,
-        "page_statuses": [
-          "network_error"
-        ],
-        "title": "付喪堂骨董店―“不思議”取り扱います",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 35,
-        "total_results": 45,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "十歳の最強魔導師",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 20,
-        "total_results": 24,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "少女星間漂流記",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 21,
+        "items": 14,
         "total_results": 28,
         "page_statuses": [
           "ok"
         ],
-        "title": "悪ノ娘",
-        "media_type": "light_novel"
+        "title": "やがて君になる",
+        "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 1,
-        "total_results": 1,
+        "items": 50,
+        "total_results": 146,
         "page_statuses": [
           "ok"
         ],
-        "title": "放課後の教室に、恋はつもる。",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "明日の世界で星は煌めく",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "白百合さんかく語りき。",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "邪悪なモンスター『人間』を殺してレベルアップ！〜虐げられ全てを奪われた私は、ダンジョンになった学園で化物と戦う力を手に入れました。復讐も人助けもやりたい放題です〜",
-        "media_type": "light_novel"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "GIRL FRIENDS-ガールフレンズ",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "blue-ブルー",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "あの海の見える場所で。",
+        "title": "付き合ってあげてもいいかな",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "お姫様のひみつ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 3,
-        "total_results": 11,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ささめきこと",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 45,
-        "total_results": 16038,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ふ~ふ",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "ぼっち怪物と盲目少女",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ゆりでなる♥えすぽわーる",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ゆりキャン～ゆりかのキャンパスライフ～",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 35,
-        "total_results": 112,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "オクターヴ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "センチメンタル ビーチサイド",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ハナとヒナは放課後",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ブルーフレンド",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "プアプアLIPS",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "ボイギャル",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "メジロバナの咲く",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "三角形の壊し方",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "半熟女子",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "合格のための！やさしい三角関係入門",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "合法百合夫婦本",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 8,
-        "total_results": 10,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "夢の端々",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "姉妹を卒業して恋人になりました",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "嫌われ魔女令嬢と男装皇子の婚約",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "小春と湊 わたしのパートナーは女の子",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 10,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "悪いが私は百合じゃない",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "愛羅武勇より愛してる",
-        "media_type": "manga"
-      },
-      {
-        "status": "network_error",
-        "total_results": null,
-        "page_statuses": [
-          "network_error"
-        ],
-        "title": "憎らしいほど愛してる",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "明るい記憶喪失",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "春綴る、桜咲くこの部屋で",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 11,
-        "total_results": 23,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "桜Trick",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "死に戻り王女は生き延びるために百合ハーレムを作ることにした",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 6,
-        "total_results": 10,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "田所さん",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "異種族女子に○○する話",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "私、エリート天使ですが難攻不落なJKに困ってます！",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "私の可愛い子猫ちゃん",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 2,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "私以外人類全員百合",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "繭、纏う",
-        "media_type": "manga"
-      },
-      {
-        "status": "network_error",
-        "total_results": null,
-        "page_statuses": [
-          "network_error"
-        ],
-        "title": "魔女が恋する5秒前",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "관계지침",
-        "media_type": "manga"
-      },
-      {
-        "status": "network_error",
-        "total_results": null,
-        "page_statuses": [
-          "network_error"
-        ],
-        "title": "citrus",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 10,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "あの娘にキスと白百合を",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 5,
+        "items": 16,
         "total_results": 21,
         "page_statuses": [
           "ok"
         ],
-        "title": "わたしが恋人になれるわけないじゃん、ムリムリ！（※ムリじゃなかった!?）",
+        "title": "週に一度クラスメイトを買う話 ～ふたりの時間、言い訳の五千円～",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 6,
-        "total_results": 24,
+        "items": 49,
+        "total_results": 61,
         "page_statuses": [
           "ok"
         ],
-        "title": "オトメの帝国",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "加瀬さんシリーズ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 6,
-        "total_results": 10,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "田所さん",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "あの頃の青い星",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 7,
-        "total_results": 22,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ささやくように恋を唄う",
+        "title": "志乃と恋",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 1,
-        "total_results": 7,
+        "total_results": 3,
         "page_statuses": [
           "ok"
         ],
-        "title": "ロンリーガールに逆らえない",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 5,
-        "total_results": 7,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "彩香ちゃんは弘子先輩に恋してる",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "捏造トラップ―NTR―",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "请欺负我吧，恶役小姐！",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 21,
-        "total_results": 23,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "かけおちガール",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "できそこないの姫君たち",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 6,
-        "total_results": 15,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ふたりべや",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "サーク・アラクニ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 43,
-        "total_results": 270,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ピエタ",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "フラグタイム",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 10,
-        "total_results": 17,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "世界で一番おっぱいが好き！",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "她们的故事",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 13,
-        "total_results": 42,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "安達としまむら",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "少女漫画主人公×ライバルさん",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "我比你危险",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 9,
-        "total_results": 23,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "私の推しは悪役令嬢。",
-        "media_type": "manga"
-      },
-      {
-        "status": "network_error",
-        "total_results": null,
-        "page_statuses": [
-          "network_error"
-        ],
-        "title": "雨夜の月",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 10,
-        "total_results": 645,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "青い花",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "飛野さんのバカ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 38,
-        "total_results": 3667,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "Lily",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "Moonlight flowers: 月下美人",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "Soulmate",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 31,
-        "total_results": 33,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "Still Sick",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 45,
-        "total_results": 12877,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "citrus+",
+        "title": "草薙先生は試されている",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 2,
-        "total_results": 7,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "きたない君がいちばんかわいい",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "さよならローズガーデン",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "どうしたら幼馴染の彼女になれますか！？",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 7,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "どれが恋かがわからない",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ふたりはだいたいこんなかんじ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
         "total_results": 2,
         "page_statuses": [
           "ok"
         ],
-        "title": "イケメン女と箱入り娘",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 5,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "エクレア あなたに響く百合アンソロジー",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ストロベリー・フィールズをもう一度",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 21,
-        "total_results": 25,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "レンアイマンガ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "一度だけでも、後悔してます。",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 7,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "君と綴るうたかた",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 13,
-        "total_results": 42,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "安達としまむら",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "少女たちの痕にくちづけを",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "恋より青く",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "踊り場にスカートが鳴る",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "나는 에이미를 사랑해",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ただのいちにち",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 7,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "たとえとどかぬ糸だとしても",
+        "title": "우리집에 놀러와!",
         "media_type": "manga"
       },
       {
@@ -1879,18 +198,62 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "アネモネは熱を帯びる",
+        "title": "ヴァンピアーズ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 33,
+        "total_results": 40,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "作りたい女と食べたい女",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 50,
+        "total_results": 63,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ケイヤクシマイ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 40,
+        "total_results": 114,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "おとなになっても",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 1,
-        "total_results": 1,
+        "total_results": 11,
         "page_statuses": [
           "ok"
         ],
-        "title": "ロンリーウルフ・ロンリーシープ",
+        "title": "お姉さんは女子小学生に興味があります。",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "やがて君になる 公式コミックアンソロジー",
         "media_type": "manga"
       },
       {
@@ -1899,16 +262,40 @@
         "page_statuses": [
           "no_results"
         ],
-        "title": "人间百里锦",
+        "title": "听星",
         "media_type": "manga"
       },
       {
-        "status": "no_results",
-        "total_results": 0,
+        "status": "ok",
+        "pages": 1,
+        "items": 21,
+        "total_results": 24,
         "page_statuses": [
-          "no_results"
+          "ok"
         ],
-        "title": "关于被班上绿茶威胁那件事",
+        "title": "定時にあがれたら",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "崖っぷち令嬢は黒騎士様を惚れさせたい！",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "拝啓、在りし日に咲く花たちへ",
         "media_type": "manga"
       },
       {
@@ -1919,38 +306,175 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "割り切った関係ですから。",
+        "title": "無力聖女と無能王女～魔力ゼロで召喚された聖女の異世界救国記～",
         "media_type": "manga"
       },
       {
-        "status": "rate_limited",
-        "total_results": null,
+        "status": "ok",
+        "pages": 1,
+        "items": 4,
+        "total_results": 5,
         "page_statuses": [
-          "rate_limited"
+          "ok"
         ],
-        "title": "天国の箱庭",
+        "title": "白い部屋のふたり",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 43,
+        "total_results": 48,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "限界OLさんは悪役令嬢さまに仕えたい",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "麻杆和大奶",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "하얀천사에게 날개는 없다",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "시선의 끝",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 1,
-        "total_results": 5,
+        "total_results": 2,
         "page_statuses": [
           "ok"
         ],
-        "title": "柚子森さん",
+        "title": "「触れたい」は恋の始まり",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 7,
-        "total_results": 10,
+        "items": 1,
+        "total_results": 2,
         "page_statuses": [
           "ok"
         ],
-        "title": "気になってる人が男じゃなかった",
+        "title": "いえない秘密の愛し方",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "おっぱい百合アンソロジー",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 43,
+        "total_results": 47,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "この恋を星には願わない",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 6,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ななしのアステリズム",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "イケメンすぎです紫葵先パイ！",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 10,
+        "total_results": 11,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ウィキッドスポット",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 46,
+        "total_results": 126,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "キリング・ミー！",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ギャルメイドと悪役令嬢 ～おじょーさまのハッピーエンドしか勝たん！～",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "クズ浪人生、人生が辛いので夜のお姉さんを呼んでみた",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "シスコンお姉ちゃんと気にしない妹",
         "media_type": "manga"
       },
       {
@@ -1961,7 +485,47 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "親がうるさいので後輩（♀）と偽装結婚してみた。",
+        "title": "シロップ 社会人百合アンソロジー",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ルミナス＝ブルー",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "レンズ越しに鬼はいない",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 10,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "不揃いの連理",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "今天的她也是如此可爱",
         "media_type": "manga"
       },
       {
@@ -1972,29 +536,18 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "７日間限定彼女",
+        "title": "偽りのマリィゴールド",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 2,
-        "total_results": 2,
+        "items": 1,
+        "total_results": 4,
         "page_statuses": [
           "ok"
         ],
-        "title": "#ギャルとギャルの百合",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 29,
-        "total_results": 74,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "アフターアワーズ",
+        "title": "吸血鬼ちゃん×後輩ちゃん",
         "media_type": "manga"
       },
       {
@@ -2005,91 +558,18 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "ベラドンナの恋人",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 31,
-        "total_results": 36,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ラブデス。",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 8,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "今日はカノジョがいないから",
+        "title": "夢と恋ではつり合わない",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 1,
-        "total_results": 11,
+        "total_results": 1,
         "page_statuses": [
           "ok"
         ],
-        "title": "女同士とかありえないでしょと言い張る女の子を、百日間で徹底的に落とす百合のお話",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "山田と加瀬さん。",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 5,
-        "total_results": 9,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "狼の皮をかぶった羊姫",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "百合オタに百合はご法度です!?",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "行進子犬に恋文を",
-        "media_type": "manga"
-      },
-      {
-        "status": "network_error",
-        "total_results": null,
-        "page_statuses": [
-          "network_error"
-        ],
-        "title": "그레이스 길들이기",
+        "title": "意地悪な神様",
         "media_type": "manga"
       },
       {
@@ -2098,60 +578,18 @@
         "page_statuses": [
           "no_results"
         ],
-        "title": "위장여친",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 50,
-        "total_results": 2039,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "Love My Life",
-        "media_type": "manga"
-      },
-      {
-        "status": "rate_limited",
-        "total_results": null,
-        "page_statuses": [
-          "rate_limited"
-        ],
-        "title": "prism",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 6,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "〆切前には百合が捗る",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 5,
-        "total_results": 14,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "きみが死ぬまで恋をしたい",
+        "title": "我的食物看起来很可爱",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 3,
-        "total_results": 8,
+        "total_results": 24,
         "page_statuses": [
           "ok"
         ],
-        "title": "ぜんぶ壊して地獄で愛して",
+        "title": "明日ちゃんのセーラー服",
         "media_type": "manga"
       },
       {
@@ -2160,237 +598,182 @@
         "page_statuses": [
           "no_results"
         ],
-        "title": "まことのももか",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "もし、恋が見えたなら",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 25,
-        "total_results": 25,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ガールズ×ヴァンパイア",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 12,
-        "total_results": 12,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ダメ犬彼女",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "夢でフラれてはじまる百合",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "女ともだちと結婚してみた。",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "好都合セミフレンド",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 41,
-        "total_results": 44,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "姉の親友、私の恋人。",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "恋より青く",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 22,
-        "total_results": 28,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "月が綺麗ですね",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 2,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "欠けた月とドーナッツ",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "直女陷阱",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "鎧塚さんをバブらせたい",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "이성연애박사",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 1,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "JKとともだちのオカン",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "LIBERTA-リベルタ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 4,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "あくまであまい私の彼女",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 3,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "お菊さんはいちゃ憑きたい",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "わたしのアンジェラ",
-        "media_type": "manga"
-      },
-      {
-        "status": "ok",
-        "pages": 1,
-        "items": 1,
-        "total_results": 5,
-        "page_statuses": [
-          "ok"
-        ],
-        "title": "ヒーローさんと元女幹部さん",
+        "title": "白月光女主总想独占我",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 6,
-        "total_results": 7,
+        "total_results": 23,
         "page_statuses": [
           "ok"
         ],
-        "title": "フレンドガールフレンド",
+        "title": "私の百合はお仕事です！",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
         "items": 1,
-        "total_results": 1,
+        "total_results": 4,
         "page_statuses": [
           "ok"
         ],
-        "title": "両片想いな双子姉妹",
+        "title": "羽山先生と寺野先生は付き合っている",
         "media_type": "manga"
       },
       {
-        "status": "network_error",
-        "total_results": null,
+        "status": "ok",
+        "pages": 1,
+        "items": 4,
+        "total_results": 6,
         "page_statuses": [
-          "network_error"
+          "ok"
         ],
-        "title": "君としらない夏になる",
+        "title": "雨でも晴れでも",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 50,
+        "total_results": 66,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "雪解けとアガパンサス",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "달래야",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "리빙 윌",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "백합은 일상",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "소라해나!",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 7,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "冷たくて 柔らか",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "君に贈る永遠",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "私の拳をうけとめて!",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 6,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "見えてますよ! 愛沢さん",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 4,
+        "total_results": 19,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "魔法少女にあこがれて",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "그녀의 심청",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 8,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "2DK、Gペン、目覚まし時計。",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 5,
+        "total_results": 5,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "あなたみたいに",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 3,
+        "total_results": 732,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "はなものがたり",
         "media_type": "manga"
       },
       {
@@ -2401,38 +784,51 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "君に紡ぐ傍白",
-        "media_type": "manga"
-      },
-      {
-        "status": "no_results",
-        "total_results": 0,
-        "page_statuses": [
-          "no_results"
-        ],
-        "title": "小姑孃",
+        "title": "シュガーガール・ドリップ",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 48,
-        "total_results": 1076,
+        "items": 1,
+        "total_results": 3,
         "page_statuses": [
           "ok"
         ],
-        "title": "帰り道",
+        "title": "ハロー、メランコリック！",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 50,
-        "total_results": 6707,
+        "items": 1,
+        "total_results": 3,
         "page_statuses": [
           "ok"
         ],
-        "title": "放課後",
+        "title": "僕らのアイは気持ち悪い",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 4,
+        "total_results": 5,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "悪役令嬢のお嫁さま",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 15,
+        "total_results": 16,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "月とすっぴん",
         "media_type": "manga"
       },
       {
@@ -2443,18 +839,18 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "星川銀座四丁目",
+        "title": "神絵師JKとOL腐女子",
         "media_type": "manga"
       },
       {
         "status": "ok",
         "pages": 1,
-        "items": 1,
-        "total_results": 5,
+        "items": 38,
+        "total_results": 139,
         "page_statuses": [
           "ok"
         ],
-        "title": "毎月庭つき大家つき",
+        "title": "私を喰べたい、ひとでなし",
         "media_type": "manga"
       },
       {
@@ -2463,7 +859,71 @@
         "page_statuses": [
           "no_results"
         ],
-        "title": "結局そんなきみが好き",
+        "title": "애프터 커튼콜",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 23,
+        "total_results": 25,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "シルフの花姫",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 28,
+        "total_results": 35,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "スクールゾーン",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "亲爱的死对头",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "先輩、美味しいですか？",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "王子さまなんていらない",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "白ギャルと黒ギャルの誘惑",
         "media_type": "manga"
       },
       {
@@ -2474,7 +934,62 @@
         "page_statuses": [
           "ok"
         ],
-        "title": "隣の部屋から喘ぎ声がするんですけど…",
+        "title": "シャイなあの子に懐かれたい",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 42,
+        "total_results": 906,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "スカーレット",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "スケバンと転校生",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 44,
+        "total_results": 108,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ナツコイ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 6,
+        "total_results": 22,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ハッピーシュガーライフ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ファタールゲーム",
         "media_type": "manga"
       },
       {
@@ -2483,7 +998,1108 @@
         "page_statuses": [
           "no_results"
         ],
-        "title": "블루밍 시퀀스",
+        "title": "互いのガーディアン",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "今日、小柴葵に会えたら。",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "出会い系サイトで妹と出会う話",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "寂しすぎる女社長がレズビアン風俗嬢に秒で落ちる話",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "愛したぶんだけ愛してほしいっ！",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "水野と茶山",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "白妙様、秘密ですよ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 12,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "立花館To Lieあんぐる",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "魔女と恋する5秒前",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "킬 스위치",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 3,
+        "total_results": 7,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "すわっぷ⇔すわっぷ",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "ペンライトより光って-アンコール-",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "世界の終わりと魔女の恋",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "甘えさせて雛森さん！",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 9,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "篠崎さん気をオタしかに!",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "陰キャギャルでもイキがりたい！",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "MURCIÉLAGO-ムルシエラゴ-",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "かいじゅう色の島",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "きみのために世界はある",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "みゆりのしろちゃん",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ゆりぐらし",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "キミが吠えるための歌を、",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "フライデー・ナイトシネマ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "君に好きっていわせたい",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "家庭教師と妹ちゃん",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "幼馴染BIG LOVE",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "御羊ちゃんは触りたい",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 24,
+        "total_results": 26,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "百合のはじまりは奴隷から",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ご主人様と獣耳の少女メル",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "さよならカストール",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ガンバレッド×シスターズ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ラブ・バレット",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "吸血鬼と呼ばれたい",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 35,
+        "total_results": 37,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "推しとの百合はありえない！",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 5,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "総合タワーリシチ",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "野村ナオと京極ヒナは",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 29,
+        "total_results": 36,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "魔女ノ結婚",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "オッドマン11",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "コンカフェ嬢は恋を着る",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "制服のヴァンピレスロード",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 5,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "犬神さんと猫山さん",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 42,
+        "total_results": 1327,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "羣青",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 25,
+        "total_results": 67,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "花と星",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "네가 없었으면 좋겠어",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 11,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "上伊那ぼたん、酔へる姿は百合の花",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 5,
+        "total_results": 11,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "星屑テレパス",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 15,
+        "total_results": 40,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "裏世界ピクニック",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 17,
+        "total_results": 20,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Lit a Light",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 4,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "No marriage, No magic",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "citrus Wedding Invitation",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 40,
+        "total_results": 3350,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "philosophia",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 25,
+        "total_results": 300,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "あした天気になぁれ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 2,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "あしのあじ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 44,
+        "total_results": 493,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "おんなのからだ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "くちびるためいきさくらいろ",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "こわくのこわいの",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "たゆたうはないろ",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "つがい巫女の虹結び",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "ふわもみ",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "まひろちゃんの隠し事",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 6,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "オハナホロホロ",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "ジュリア・イン・ザ・ボックス！",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 49,
+        "total_results": 565,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "センチメンタル・ジャーニー",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "デモンズハーレム",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "ヒロインとかよくわかんないから、悪役令嬢と逃げます。",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "メッセージのあと",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 23,
+        "total_results": 27,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "ロケット☆ガール",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "一夜で堕ちる恋なんて",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 4,
+        "total_results": 4,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "人魚の声",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "俺の気持ちは…〜幼馴染トライアングル〜",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "包帯少女期間",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "唇に秘密を",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 49,
+        "total_results": 814,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "失楽園",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 2,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "姉の友人",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "強気なわたしの攻めた一日",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 42,
+        "total_results": 50,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "忍者と殺し屋のふたりぐらし",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "恋にミスリード",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "恋愛ウォーズ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 3,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "殺人ごっこ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 48,
+        "total_results": 1637,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "泡沫",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 3,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "海猫荘days",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 48,
+        "total_results": 208,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "渚にて。",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "無酸素恋愛",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "玉緒乃恋",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 20,
+        "total_results": 22,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "男子高校生だけどギャルにTSしました",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "私のみだらな傀儡",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "篠突く雨に青葉雨",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "葬られたきみへ",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 68,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "酒と鬼は二合まで",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "마왕의 고백",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 46,
+        "total_results": 2780,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": ".925",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "16歳の身体地図",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "4時半、コインランドリーにて。",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 6,
+        "total_results": 6,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Cherry Lip",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 10,
+        "total_results": 15,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Fate/kaleid liner プリズマ☆イリヤ ツヴァイ!",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 47,
+        "total_results": 535,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "LOVE FOOL",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 48,
+        "total_results": 420,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Like a Flower",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 49,
+        "total_results": 181819,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Memories",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 6,
+        "total_results": 9,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Nightmare After School",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 47,
+        "total_results": 90,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "P=NP?",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "Sweet♡Spicy LoveLipTint",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 48,
+        "total_results": 175,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Under the Rose",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 3,
+        "total_results": 7,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Vampire girl ヴァンパイアガール",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 1,
+        "total_results": 1,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "Vハンター",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 44,
+        "total_results": 560,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "cherish",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "urbaneー雪女ー",
+        "media_type": "manga"
+      },
+      {
+        "status": "ok",
+        "pages": 1,
+        "items": 30,
+        "total_results": 107804687,
+        "page_statuses": [
+          "ok"
+        ],
+        "title": "♀×♀=♥",
+        "media_type": "manga"
+      },
+      {
+        "status": "no_results",
+        "total_results": 0,
+        "page_statuses": [
+          "no_results"
+        ],
+        "title": "あこがレディをもみタイム",
         "media_type": "manga"
       }
     ]
@@ -2536,6 +2152,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030484632"
+    },
+    {
+      "title_ja": "だれがわたしの百合なのか!?",
+      "media_type": "light_novel",
+      "ndl_title": "だれがわたしの百合なのか!?",
+      "publisher_ja": "小学館",
+      "label": "ガガガ文庫",
+      "label_raw": "ガガガ文庫 ; ガゆ2-6",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034072152"
     },
     {
       "title_ja": "ひきこまり吸血姫の悶々",
@@ -2987,6 +2619,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033634793"
     },
     {
+      "title_ja": "姉妹傭兵",
+      "media_type": "light_novel",
+      "ndl_title": "姉妹傭兵",
+      "publisher_ja": "KADOKAWA",
+      "label": "MF文庫J",
+      "label_raw": "MF文庫J ; み-10-33",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034186696"
+    },
+    {
       "title_ja": "嫌い同士のわたしたちは一夜の過ちで",
       "media_type": "light_novel",
       "ndl_title": "嫌い同士のわたしたちは一夜の過ちで",
@@ -3033,6 +2681,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033123980"
+    },
+    {
+      "title_ja": "少女妄想中。",
+      "media_type": "light_novel",
+      "ndl_title": "少女妄想中。",
+      "publisher_ja": "KADOKAWA",
+      "label": "メディアワークス文庫",
+      "label_raw": "メディアワークス文庫 ; い1-19",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I027976173"
     },
     {
       "title_ja": "少女星間漂流記",
@@ -3339,6 +3003,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031794133"
     },
     {
+      "title_ja": "私、能力は平均値でって言ったよね！",
+      "media_type": "light_novel",
+      "ndl_title": "私、能力は平均値でって言ったよね！(22)",
+      "publisher_ja": "スクウェア・エニックス",
+      "label": "SQEXﾉﾍﾞﾙ",
+      "label_raw": "SQEXﾉﾍﾞﾙ",
+      "isbn": "9784301009450",
+      "release_date": "2026-12-07",
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784301009450"
+    },
+    {
       "title_ja": "私の初恋相手がキスしてた",
       "media_type": "light_novel",
       "ndl_title": "私の初恋相手がキスしてた",
@@ -3419,6 +3099,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030156390"
     },
     {
+      "title_ja": "転生王女と天才令嬢の魔法革命 王宮秘話",
+      "media_type": "light_novel",
+      "ndl_title": "転生王女と天才令嬢の魔法革命王宮秘話",
+      "publisher_ja": "KADOKAWA",
+      "label": "富士見ファンタジア文庫",
+      "label_raw": "富士見ファンタジア文庫 ; か-24-4-1",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033616910"
+    },
+    {
       "title_ja": "顔だけ良いクラスメイトが、やたらとグイグイ来る百合の話。",
       "media_type": "light_novel",
       "ndl_title": "顔だけ良いクラスメイトが、やたらとグイグイ来る百合の話。",
@@ -3467,6 +3163,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034477650"
     },
     {
+      "title_ja": "2DK、Gペン、目覚まし時計。",
+      "media_type": "manga",
+      "ndl_title": "2DK、Gペン、目覚まし時計。",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I026745040"
+    },
+    {
       "title_ja": "JKとともだちのオカン",
       "media_type": "manga",
       "ndl_title": "JKとともだちのオカン",
@@ -3481,6 +3193,38 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031275998"
+    },
+    {
+      "title_ja": "Like a Flower",
+      "media_type": "manga",
+      "ndl_title": "LIKE A FLOWER",
+      "publisher_ja": "ジーオーティー",
+      "label": "キャノプリCOMICS",
+      "label_raw": "キャノプリCOMICS",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I025508533"
+    },
+    {
+      "title_ja": "MURCIÉLAGO-ムルシエラゴ-",
+      "media_type": "manga",
+      "ndl_title": "MURCIÉLAGO -ムルシエラゴ-(30)",
+      "publisher_ja": "スクウェア・エニックス",
+      "label": "ﾔﾝｸﾞｶﾞﾝｶﾞﾝｺﾐｯｸｽ",
+      "label_raw": "ﾔﾝｸﾞｶﾞﾝｶﾞﾝｺﾐｯｸｽ",
+      "isbn": "9784301009795",
+      "release_date": "2026-12-25",
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784301009795"
     },
     {
       "title_ja": "Still Sick",
@@ -3515,6 +3259,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030787510"
     },
     {
+      "title_ja": "「触れたい」は恋の始まり",
+      "media_type": "manga",
+      "ndl_title": "「触れたい」は恋の始まり",
+      "publisher_ja": "竹書房",
+      "label": "Bamboo comics",
+      "label_raw": "Bamboo comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034037536"
+    },
+    {
       "title_ja": "あくまであまい私の彼女",
       "media_type": "manga",
       "ndl_title": "あくまであまい私の彼女",
@@ -3531,6 +3291,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033570145"
     },
     {
+      "title_ja": "あした天気になぁれ",
+      "media_type": "manga",
+      "ndl_title": "あした天気になぁれ",
+      "publisher_ja": "大日本図書",
+      "label": null,
+      "label_raw": null,
+      "isbn": null,
+      "release_date": null,
+      "publication_place": null,
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000001-I142346387"
+    },
+    {
+      "title_ja": "あなたみたいに",
+      "media_type": "manga",
+      "ndl_title": "あなたみたいに",
+      "publisher_ja": "ナンバーナイン",
+      "label": "No.9 COMICS",
+      "label_raw": "No.9 COMICS",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034773890"
+    },
+    {
       "title_ja": "あの娘にキスと白百合を",
       "media_type": "manga",
       "ndl_title": "あの娘にキスと白百合を",
@@ -3545,6 +3337,86 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029575363"
+    },
+    {
+      "title_ja": "いえない秘密の愛し方",
+      "media_type": "manga",
+      "ndl_title": "いえない秘密の愛し方",
+      "publisher_ja": "竹書房",
+      "label": "Bamboo comics",
+      "label_raw": "Bamboo comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031414259"
+    },
+    {
+      "title_ja": "おっぱい百合アンソロジー",
+      "media_type": "manga",
+      "ndl_title": "おっぱい百合アンソロジー",
+      "publisher_ja": "KADOKAWA",
+      "label": "MFC",
+      "label_raw": "MFC",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033987588"
+    },
+    {
+      "title_ja": "おとなになっても",
+      "media_type": "manga",
+      "ndl_title": "おとなになっても",
+      "publisher_ja": "講談社",
+      "label": "KC Kiss",
+      "label_raw": "KC Kiss",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033151189"
+    },
+    {
+      "title_ja": "おんなのからだ",
+      "media_type": "manga",
+      "ndl_title": "おんなのからだ",
+      "publisher_ja": "高橋書店",
+      "label": null,
+      "label_raw": null,
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000001303946"
+    },
+    {
+      "title_ja": "お姉さんは女子小学生に興味があります。",
+      "media_type": "manga",
+      "ndl_title": "お姉さんは女子小学生に興味があります。",
+      "publisher_ja": "竹書房",
+      "label": "Bamboo comics",
+      "label_raw": "Bamboo comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I028777768"
     },
     {
       "title_ja": "お姫様のひみつ",
@@ -3577,6 +3449,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032019621"
+    },
+    {
+      "title_ja": "かいじゅう色の島",
+      "media_type": "manga",
+      "ndl_title": "かいじゅう色の島",
+      "publisher_ja": "KADOKAWA",
+      "label": "ドラゴンコミックスエイジ",
+      "label_raw": "ドラゴンコミックスエイジ",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031294321"
     },
     {
       "title_ja": "かけおちガール",
@@ -3626,6 +3514,70 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029431639"
+    },
+    {
+      "title_ja": "きみのために世界はある",
+      "media_type": "manga",
+      "ndl_title": "きみのために世界はある",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. YH comics",
+      "label_raw": "IDコミックス. YH comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030125646"
+    },
+    {
+      "title_ja": "くちびるためいきさくらいろ",
+      "media_type": "manga",
+      "ndl_title": "くちびるためいきさくらいろ",
+      "publisher_ja": "双葉社",
+      "label": "Action comics : comic high's brand",
+      "label_raw": "Action comics : comic high's brand",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I023558321"
+    },
+    {
+      "title_ja": "この恋を星には願わない",
+      "media_type": "manga",
+      "ndl_title": "この恋を星には願わない",
+      "publisher_ja": "KADOKAWA",
+      "label": "it COMICS",
+      "label_raw": "it COMICS",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032849095"
+    },
+    {
+      "title_ja": "ご主人様と獣耳の少女メル",
+      "media_type": "manga",
+      "ndl_title": "ご主人様と獣耳の少女メル",
+      "publisher_ja": "KADOKAWA",
+      "label": "電撃コミックスNEXT",
+      "label_raw": "電撃コミックスNEXT ; N187-01",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I027843220"
     },
     {
       "title_ja": "ささめきこと",
@@ -3740,6 +3692,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032096468"
     },
     {
+      "title_ja": "ななしのアステリズム",
+      "media_type": "manga",
+      "ndl_title": "ななしのアステリズム",
+      "publisher_ja": "スクウェア・エニックス",
+      "label": "ガンガンコミックスONLINE",
+      "label_raw": "ガンガンコミックスONLINE",
+      "isbn": null,
+      "release_date": "2016-11",
+      "publication_place": null,
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000001-I07111001103389926"
+    },
+    {
       "title_ja": "ふたりはだいたいこんなかんじ",
       "media_type": "manga",
       "ndl_title": "ふたりはだいたいこんなかんじ",
@@ -3788,6 +3756,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030741352"
     },
     {
+      "title_ja": "やがて君になる 公式コミックアンソロジー",
+      "media_type": "manga",
+      "ndl_title": "やがて君になる公式コミックアンソロジー",
+      "publisher_ja": "KADOKAWA",
+      "label": "電撃コミックスNEXT",
+      "label_raw": "電撃コミックスNEXT ; N295-01",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029389613"
+    },
+    {
       "title_ja": "アネモネは熱を帯びる",
       "media_type": "manga",
       "ndl_title": "アネモネは熱を帯びる",
@@ -3820,6 +3804,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I026765918"
     },
     {
+      "title_ja": "イケメンすぎです紫葵先パイ！",
+      "media_type": "manga",
+      "ndl_title": "イケメンすぎです紫葵先パイ!",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029566670"
+    },
+    {
       "title_ja": "イケメン女と箱入り娘",
       "media_type": "manga",
       "ndl_title": "イケメン女と箱入り娘",
@@ -3834,6 +3834,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031187093"
+    },
+    {
+      "title_ja": "ウィキッドスポット",
+      "media_type": "manga",
+      "ndl_title": "ウィキッドスポット",
+      "publisher_ja": "KADOKAWA",
+      "label": "カドコミ",
+      "label_raw": "カドコミ",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033909891"
     },
     {
       "title_ja": "オクターヴ",
@@ -3852,6 +3868,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000001-I22213001301441497"
     },
     {
+      "title_ja": "オッドマン11",
+      "media_type": "manga",
+      "ndl_title": "オッドマン11",
+      "publisher_ja": "コアマガジン",
+      "label": "メガストアコミックスシリーズ",
+      "label_raw": "メガストアコミックスシリーズ ; No.495",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I027981272"
+    },
+    {
       "title_ja": "オトメの帝国",
       "media_type": "manga",
       "ndl_title": "オトメの帝国",
@@ -3868,6 +3900,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I027481362"
     },
     {
+      "title_ja": "オハナホロホロ",
+      "media_type": "manga",
+      "ndl_title": "オハナホロホロ",
+      "publisher_ja": "祥伝社",
+      "label": "FC",
+      "label_raw": "FC",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000011088191"
+    },
+    {
+      "title_ja": "ガンバレッド×シスターズ",
+      "media_type": "manga",
+      "ndl_title": "ガンバレッド×シスターズ",
+      "publisher_ja": "小学館",
+      "label": "サンデーGXコミックス",
+      "label_raw": "サンデーGXコミックス",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030307376"
+    },
+    {
       "title_ja": "ガールズ×ヴァンパイア",
       "media_type": "manga",
       "ndl_title": "ガールズ×ヴァンパイア",
@@ -3882,6 +3946,150 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034858217"
+    },
+    {
+      "title_ja": "キミが吠えるための歌を、",
+      "media_type": "manga",
+      "ndl_title": "キミが吠えるための歌を、",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033845163"
+    },
+    {
+      "title_ja": "キリング・ミー！",
+      "media_type": "manga",
+      "ndl_title": "キリング・ミー!",
+      "publisher_ja": "KADOKAWA",
+      "label": "MFCキューンシリーズ",
+      "label_raw": "MFCキューンシリーズ",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I028984348"
+    },
+    {
+      "title_ja": "コンカフェ嬢は恋を着る",
+      "media_type": "manga",
+      "ndl_title": "コンカフェ嬢は恋を着る",
+      "publisher_ja": "芳文社",
+      "label": "FUZ comics",
+      "label_raw": "FUZ comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033769174"
+    },
+    {
+      "title_ja": "シスコンお姉ちゃんと気にしない妹",
+      "media_type": "manga",
+      "ndl_title": "シスコンお姉ちゃんと気にしない妹",
+      "publisher_ja": "KADOKAWA",
+      "label": "MFCキューンシリーズ",
+      "label_raw": "MFCキューンシリーズ",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029516142"
+    },
+    {
+      "title_ja": "シャイなあの子に懐かれたい",
+      "media_type": "manga",
+      "ndl_title": "シャイなあの子に懐かれたい",
+      "publisher_ja": "KADOKAWA",
+      "label": "電撃コミックスNEXT",
+      "label_raw": "電撃コミックスNEXT ; N617-01",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033748117"
+    },
+    {
+      "title_ja": "シュガーガール・ドリップ",
+      "media_type": "manga",
+      "ndl_title": "シュガーガール・ドリップ",
+      "publisher_ja": "講談社",
+      "label": "シリウスKC",
+      "label_raw": "シリウスKC",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033625903"
+    },
+    {
+      "title_ja": "シルフの花姫",
+      "media_type": "manga",
+      "ndl_title": "シルフの花姫",
+      "publisher_ja": "KADOKAWA",
+      "label": "電撃コミックスNEXT",
+      "label_raw": "電撃コミックスNEXT ; N532-01",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032876210"
+    },
+    {
+      "title_ja": "スクールゾーン",
+      "media_type": "manga",
+      "ndl_title": "スクールゾーン",
+      "publisher_ja": "らくだ出版",
+      "label": null,
+      "label_raw": null,
+      "isbn": "9784897774282",
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000136-I1970023484845291821"
+    },
+    {
+      "title_ja": "スケバンと転校生",
+      "media_type": "manga",
+      "ndl_title": "スケバンと転校生",
+      "publisher_ja": "双葉社",
+      "label": "web ACTION",
+      "label_raw": "web ACTION",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032249197"
     },
     {
       "title_ja": "ストロベリー・フィールズをもう一度",
@@ -3916,6 +4124,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034380826"
     },
     {
+      "title_ja": "ナツコイ",
+      "media_type": "manga",
+      "ndl_title": "ナツコイ",
+      "publisher_ja": "ゴマブックス",
+      "label": null,
+      "label_raw": null,
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000009396757"
+    },
+    {
+      "title_ja": "ハッピーシュガーライフ",
+      "media_type": "manga",
+      "ndl_title": "ハッピーシュガーライフ",
+      "publisher_ja": "スクウェア・エニックス",
+      "label": "ガンガンコミックスjoker",
+      "label_raw": "ガンガンコミックスjoker",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I026950224"
+    },
+    {
       "title_ja": "ハナとヒナは放課後",
       "media_type": "manga",
       "ndl_title": "ハナとヒナは放課後",
@@ -3932,6 +4172,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I027015081"
     },
     {
+      "title_ja": "ハロー、メランコリック！",
+      "media_type": "manga",
+      "ndl_title": "ハロー、メランコリック!",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030003867"
+    },
+    {
       "title_ja": "ヒーローさんと元女幹部さん",
       "media_type": "manga",
       "ndl_title": "ヒーローさんと元女幹部さん",
@@ -3946,6 +4202,23 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029566668"
+    },
+    {
+      "title_ja": "ファタールゲーム",
+      "media_type": "manga",
+      "ndl_title": "ファタールゲーム(004)",
+      "publisher_ja": null,
+      "label": null,
+      "label_raw": null,
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "電子書籍・電子雑誌",
+        "デジタル"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I06A0000000001057483S"
     },
     {
       "title_ja": "フレンドガールフレンド",
@@ -4010,6 +4283,38 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034005869"
+    },
+    {
+      "title_ja": "ラブ・バレット",
+      "media_type": "manga",
+      "ndl_title": "ラブ・バレット",
+      "publisher_ja": "KADOKAWA",
+      "label": "MFC",
+      "label_raw": "MFC",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033583648"
+    },
+    {
+      "title_ja": "ルミナス＝ブルー",
+      "media_type": "manga",
+      "ndl_title": "ルミナス = ブルー",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029566671"
     },
     {
       "title_ja": "レンアイマンガ",
@@ -4092,6 +4397,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033718088"
     },
     {
+      "title_ja": "上伊那ぼたん、酔へる姿は百合の花",
+      "media_type": "manga",
+      "ndl_title": "上伊那ぼたん、酔へる姿は百合の花",
+      "publisher_ja": "秋田書店",
+      "label": "ヤングチャンピオン・コミックス",
+      "label_raw": "ヤングチャンピオン・コミックス",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030179672"
+    },
+    {
+      "title_ja": "不揃いの連理",
+      "media_type": "manga",
+      "ndl_title": "不揃いの連理",
+      "publisher_ja": "KADOKAWA",
+      "label": "Kadokawa Comics. 単行本コミックス",
+      "label_raw": "Kadokawa Comics. 単行本コミックス",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029547592"
+    },
+    {
       "title_ja": "世界で一番おっぱいが好き！",
       "media_type": "manga",
       "ndl_title": "世界で一番おっぱいが好き!",
@@ -4106,6 +4443,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I028824185"
+    },
+    {
+      "title_ja": "世界の終わりと魔女の恋",
+      "media_type": "manga",
+      "ndl_title": "世界の終わりと魔女の恋",
+      "publisher_ja": "KADOKAWA",
+      "label": "it COMICS",
+      "label_raw": "it COMICS",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029611886"
     },
     {
       "title_ja": "両片想いな双子姉妹",
@@ -4124,6 +4477,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031438264"
     },
     {
+      "title_ja": "今日、小柴葵に会えたら。",
+      "media_type": "manga",
+      "ndl_title": "今日、小柴葵に会えたら。",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Rex comics",
+      "label_raw": "IDコミックス. Rex comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029808114"
+    },
+    {
       "title_ja": "今日はカノジョがいないから",
       "media_type": "manga",
       "ndl_title": "今日はカノジョがいないから",
@@ -4140,6 +4509,86 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031868316"
     },
     {
+      "title_ja": "偽りのマリィゴールド",
+      "media_type": "manga",
+      "ndl_title": "偽りのマリィゴールド",
+      "publisher_ja": "KADOKAWA",
+      "label": "MFCキューンシリーズ",
+      "label_raw": "MFCキューンシリーズ",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032987561"
+    },
+    {
+      "title_ja": "僕らのアイは気持ち悪い",
+      "media_type": "manga",
+      "ndl_title": "僕らのアイは気持ち悪い",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033885994"
+    },
+    {
+      "title_ja": "先輩、美味しいですか？",
+      "media_type": "manga",
+      "ndl_title": "先輩、美味しいですか?",
+      "publisher_ja": "KADOKAWA",
+      "label": "角川コミックス・エース",
+      "label_raw": "角川コミックス・エース",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032057962"
+    },
+    {
+      "title_ja": "出会い系サイトで妹と出会う話",
+      "media_type": "manga",
+      "ndl_title": "出会い系サイトで妹と出会う話",
+      "publisher_ja": "KADOKAWA",
+      "label": "電撃コミックスNEXT",
+      "label_raw": "電撃コミックスNEXT ; N215-01",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I028347530"
+    },
+    {
+      "title_ja": "制服のヴァンピレスロード",
+      "media_type": "manga",
+      "ndl_title": "制服のヴァンピレスロード",
+      "publisher_ja": "スクウェア・エニックス",
+      "label": "ガンガンコミックスjoker",
+      "label_raw": "ガンガンコミックスjoker",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I026950290"
+    },
+    {
       "title_ja": "割り切った関係ですから。",
       "media_type": "manga",
       "ndl_title": "割り切った関係ですから。",
@@ -4154,6 +4603,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029788520"
+    },
+    {
+      "title_ja": "包帯少女期間",
+      "media_type": "manga",
+      "ndl_title": "包帯少女期間",
+      "publisher_ja": "ジーオーティー",
+      "label": "girls×garden",
+      "label_raw": "girls×garden",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029878436"
     },
     {
       "title_ja": "半熟女子",
@@ -4220,6 +4685,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031209670"
     },
     {
+      "title_ja": "君に好きっていわせたい",
+      "media_type": "manga",
+      "ndl_title": "君に好きっていわせたい",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029088813"
+    },
+    {
       "title_ja": "君に紡ぐ傍白",
       "media_type": "manga",
       "ndl_title": "君に紡ぐ傍白",
@@ -4236,6 +4717,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030707279"
     },
     {
+      "title_ja": "吸血鬼ちゃん×後輩ちゃん",
+      "media_type": "manga",
+      "ndl_title": "吸血鬼ちゃん×後輩ちゃん",
+      "publisher_ja": "KADOKAWA",
+      "label": "電撃コミックスNEXT",
+      "label_raw": "電撃コミックスNEXT ; N219-01",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I028504405"
+    },
+    {
       "title_ja": "夢でフラれてはじまる百合",
       "media_type": "manga",
       "ndl_title": "夢でフラれてはじまる百合",
@@ -4250,6 +4747,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032536676"
+    },
+    {
+      "title_ja": "夢と恋ではつり合わない",
+      "media_type": "manga",
+      "ndl_title": "夢と恋ではつり合わない",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. コミック百合姫",
+      "label_raw": "IDコミックス. コミック百合姫",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034193965"
     },
     {
       "title_ja": "夢の端々",
@@ -4316,6 +4829,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033226548"
     },
     {
+      "title_ja": "姉の友人",
+      "media_type": "manga",
+      "ndl_title": "姉の友人",
+      "publisher_ja": "リイド社",
+      "label": "torch comics",
+      "label_raw": "torch comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030426829"
+    },
+    {
       "title_ja": "姉の親友、私の恋人。",
       "media_type": "manga",
       "ndl_title": "姉の親友、私の恋人。",
@@ -4364,6 +4893,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784049525045"
     },
     {
+      "title_ja": "定時にあがれたら",
+      "media_type": "manga",
+      "ndl_title": "定時にあがれたら",
+      "publisher_ja": "祥伝社",
+      "label": "FC jam",
+      "label_raw": "FC jam",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029606661"
+    },
+    {
       "title_ja": "少女漫画主人公×ライバルさん",
       "media_type": "manga",
       "ndl_title": "少女漫画主人公×ライバルさん",
@@ -4396,6 +4941,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029796662"
     },
     {
+      "title_ja": "崖っぷち令嬢は黒騎士様を惚れさせたい！",
+      "media_type": "manga",
+      "ndl_title": "崖っぷち令嬢は黒騎士様を惚れさせたい!",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033632738"
+    },
+    {
+      "title_ja": "幼馴染BIG LOVE",
+      "media_type": "manga",
+      "ndl_title": "幼馴染BIG LOVE",
+      "publisher_ja": "KADOKAWA",
+      "label": "KITORA",
+      "label_raw": "KITORA",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033696830"
+    },
+    {
       "title_ja": "彩香ちゃんは弘子先輩に恋してる",
       "media_type": "manga",
       "ndl_title": "彩香ちゃんは弘子先輩に恋してる",
@@ -4410,6 +4987,23 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031671140"
+    },
+    {
+      "title_ja": "忍者と殺し屋のふたりぐらし",
+      "media_type": "manga",
+      "ndl_title": "忍者と殺し屋のふたりぐらし（５）",
+      "publisher_ja": null,
+      "label": null,
+      "label_raw": null,
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "電子書籍・電子雑誌",
+        "デジタル"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I04916358A21209500000"
     },
     {
       "title_ja": "恋より青く",
@@ -4445,6 +5039,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I04952347A25759100000"
     },
     {
+      "title_ja": "悪役令嬢のお嫁さま",
+      "media_type": "manga",
+      "ndl_title": "悪役令嬢のお嫁さま",
+      "publisher_ja": "文藝春秋",
+      "label": "Seasons Fantasy",
+      "label_raw": "Seasons Fantasy",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034288141"
+    },
+    {
+      "title_ja": "愛したぶんだけ愛してほしいっ！",
+      "media_type": "manga",
+      "ndl_title": "愛したぶんだけ愛してほしいっ!",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033256459"
+    },
+    {
       "title_ja": "愛羅武勇より愛してる",
       "media_type": "manga",
       "ndl_title": "愛羅武勇より愛してる",
@@ -4461,6 +5087,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I026745280"
     },
     {
+      "title_ja": "拝啓、在りし日に咲く花たちへ",
+      "media_type": "manga",
+      "ndl_title": "拝啓、在りし日に咲く花たちへ",
+      "publisher_ja": "KADOKAWA",
+      "label": "MFC",
+      "label_raw": "MFC",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033983192"
+    },
+    {
+      "title_ja": "推しとの百合はありえない！",
+      "media_type": "manga",
+      "ndl_title": "推しとの百合はありえない!",
+      "publisher_ja": "KADOKAWA",
+      "label": "角川コミックス・エース",
+      "label_raw": "角川コミックス・エース",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033398914"
+    },
+    {
       "title_ja": "明るい記憶喪失",
       "media_type": "manga",
       "ndl_title": "明るい記憶喪失",
@@ -4475,6 +5133,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I027984825"
+    },
+    {
+      "title_ja": "星屑テレパス",
+      "media_type": "manga",
+      "ndl_title": "星屑テレパス",
+      "publisher_ja": "芳文社",
+      "label": "Manga time KR comics. Kirara menu",
+      "label_raw": "Manga time KR comics. Kirara menu ; 1655",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030523323"
     },
     {
       "title_ja": "星川銀座四丁目",
@@ -4523,6 +5197,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029365763"
+    },
+    {
+      "title_ja": "月とすっぴん",
+      "media_type": "manga",
+      "ndl_title": "月とすっぴん",
+      "publisher_ja": "祥伝社",
+      "label": "FC jam",
+      "label_raw": "FC jam",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030104448"
     },
     {
       "title_ja": "柚子森さん",
@@ -4621,6 +5311,54 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032751174"
     },
     {
+      "title_ja": "水野と茶山",
+      "media_type": "manga",
+      "ndl_title": "水野と茶山",
+      "publisher_ja": "KADOKAWA",
+      "label": "BEAM COMIX",
+      "label_raw": "BEAM COMIX",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030154057"
+    },
+    {
+      "title_ja": "海猫荘days",
+      "media_type": "manga",
+      "ndl_title": "海猫荘days",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029662036"
+    },
+    {
+      "title_ja": "犬神さんと猫山さん",
+      "media_type": "manga",
+      "ndl_title": "犬神さんと猫山さん",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yuri-hime comics",
+      "label_raw": "IDコミックス. Yuri-hime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I026731239"
+    },
+    {
       "title_ja": "狼の皮をかぶった羊姫",
       "media_type": "manga",
       "ndl_title": "狼の皮をかぶった羊姫",
@@ -4635,6 +5373,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031457653"
+    },
+    {
+      "title_ja": "甘えさせて雛森さん！",
+      "media_type": "manga",
+      "ndl_title": "甘えさせて雛森さん!",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032029186"
     },
     {
       "title_ja": "田所さん",
@@ -4653,6 +5407,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030368166"
     },
     {
+      "title_ja": "男子高校生だけどギャルにTSしました",
+      "media_type": "manga",
+      "ndl_title": "男子高校生だけどギャルにTSしました",
+      "publisher_ja": "KADOKAWA",
+      "label": "ドラゴンコミックスエイジ",
+      "label_raw": "ドラゴンコミックスエイジ",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033814236"
+    },
+    {
       "title_ja": "異種族女子に○○する話",
       "media_type": "manga",
       "ndl_title": "異種族女子に○○する話",
@@ -4667,6 +5437,86 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029939830"
+    },
+    {
+      "title_ja": "白い部屋のふたり",
+      "media_type": "manga",
+      "ndl_title": "白い部屋のふたり",
+      "publisher_ja": "白泉社",
+      "label": null,
+      "label_raw": null,
+      "isbn": null,
+      "release_date": null,
+      "publication_place": null,
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000001-I13131100575809"
+    },
+    {
+      "title_ja": "白ギャルと黒ギャルの誘惑",
+      "media_type": "manga",
+      "ndl_title": "白ギャルと黒ギャルの誘惑",
+      "publisher_ja": "KADOKAWA",
+      "label": "BEAM COMIX",
+      "label_raw": "BEAM COMIX",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032293725"
+    },
+    {
+      "title_ja": "白妙様、秘密ですよ",
+      "media_type": "manga",
+      "ndl_title": "白妙様、秘密ですよ",
+      "publisher_ja": "幻冬舎コミックス",
+      "label": "バーズコミックス",
+      "label_raw": "バーズコミックス",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034514186"
+    },
+    {
+      "title_ja": "百合のはじまりは奴隷から",
+      "media_type": "manga",
+      "ndl_title": "百合のはじまりは奴隷から",
+      "publisher_ja": "KADOKAWA",
+      "label": "カドコミ",
+      "label_raw": "カドコミ",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033909895"
+    },
+    {
+      "title_ja": "神絵師JKとOL腐女子",
+      "media_type": "manga",
+      "ndl_title": "神絵師JKとOL腐女子",
+      "publisher_ja": "ヒーローズ",
+      "label": "ヒーローズコミックスふらっと",
+      "label_raw": "ヒーローズコミックスふらっと",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029715777"
     },
     {
       "title_ja": "私、エリート天使ですが難攻不落なJKに困ってます！",
@@ -4685,6 +5535,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030760089"
     },
     {
+      "title_ja": "私の拳をうけとめて!",
+      "media_type": "manga",
+      "ndl_title": "私の拳をうけとめて!",
+      "publisher_ja": "KADOKAWA",
+      "label": "角川コミックス・エース",
+      "label_raw": "角川コミックス・エース",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029169127"
+    },
+    {
       "title_ja": "私の推しは悪役令嬢。",
       "media_type": "manga",
       "ndl_title": "私の推しは悪役令嬢。",
@@ -4699,6 +5565,38 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I034041075"
+    },
+    {
+      "title_ja": "私の百合はお仕事です！",
+      "media_type": "manga",
+      "ndl_title": "私の百合はお仕事です!",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032137704"
+    },
+    {
+      "title_ja": "私を喰べたい、ひとでなし",
+      "media_type": "manga",
+      "ndl_title": "私を喰べたい、ひとでなし",
+      "publisher_ja": "KADOKAWA",
+      "label": "電撃コミックスNEXT",
+      "label_raw": "電撃コミックスNEXT ; N426-01",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031281407"
     },
     {
       "title_ja": "私以外人類全員百合",
@@ -4717,6 +5615,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029725535"
     },
     {
+      "title_ja": "篠崎さん気をオタしかに!",
+      "media_type": "manga",
+      "ndl_title": "篠崎さん気をオタしかに!",
+      "publisher_ja": "フレックスコミックス",
+      "label": "METEOR COMICS",
+      "label_raw": "METEOR COMICS",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I024642141"
+    },
+    {
+      "title_ja": "総合タワーリシチ",
+      "media_type": "manga",
+      "ndl_title": "総合タワーリシチ",
+      "publisher_ja": "芳文社",
+      "label": "Manga time KR comics. Tsubomi series",
+      "label_raw": "Manga time KR comics. Tsubomi series",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I023562527"
+    },
+    {
       "title_ja": "繭、纏う",
       "media_type": "manga",
       "ndl_title": "繭、纏う",
@@ -4733,6 +5663,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029183983"
     },
     {
+      "title_ja": "羽山先生と寺野先生は付き合っている",
+      "media_type": "manga",
+      "ndl_title": "羽山先生と寺野先生は付き合っている",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029387446"
+    },
+    {
+      "title_ja": "花と星",
+      "media_type": "manga",
+      "ndl_title": "花と星",
+      "publisher_ja": "内灘町教育委員会生涯学習課",
+      "label": "内灘砂丘文芸スクール修了作品集",
+      "label_raw": "内灘砂丘文芸スクール修了作品集 ; 第1集",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": null,
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000001-I17111009910434368"
+    },
+    {
       "title_ja": "行進子犬に恋文を",
       "media_type": "manga",
       "ndl_title": "行進子犬に恋文を",
@@ -4747,6 +5709,38 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029028884"
+    },
+    {
+      "title_ja": "裏世界ピクニック",
+      "media_type": "manga",
+      "ndl_title": "裏世界ピクニック（17）",
+      "publisher_ja": "スクウェア・エニックス",
+      "label": "ｶﾞﾝｶﾞﾝｺﾐｯｸｽ",
+      "label_raw": "ｶﾞﾝｶﾞﾝｺﾐｯｸｽ",
+      "isbn": "9784301008729",
+      "release_date": "2026-11-12",
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000137-I9784301008729"
+    },
+    {
+      "title_ja": "見えてますよ! 愛沢さん",
+      "media_type": "manga",
+      "ndl_title": "見えてますよ!愛沢さん",
+      "publisher_ja": "キルタイムコミュニケーション",
+      "label": "ヴァルキリーコミックス",
+      "label_raw": "ヴァルキリーコミックス",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032670599"
     },
     {
       "title_ja": "親がうるさいので後輩（♀）と偽装結婚してみた。",
@@ -4781,6 +5775,38 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031498115"
     },
     {
+      "title_ja": "限界OLさんは悪役令嬢さまに仕えたい",
+      "media_type": "manga",
+      "ndl_title": "限界OLさんは悪役令嬢さまに仕えたい",
+      "publisher_ja": "秋田書店",
+      "label": "ヤングチャンピオン・コミックス",
+      "label_raw": "ヤングチャンピオン・コミックス",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032653366"
+    },
+    {
+      "title_ja": "陰キャギャルでもイキがりたい！",
+      "media_type": "manga",
+      "ndl_title": "陰キャギャルでもイキがりたい!",
+      "publisher_ja": "一迅社",
+      "label": "IDコミックス. Yurihime comics",
+      "label_raw": "IDコミックス. Yurihime comics",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033106029"
+    },
+    {
       "title_ja": "隣の部屋から喘ぎ声がするんですけど…",
       "media_type": "manga",
       "ndl_title": "隣の部屋から喘ぎ声がするんですけど…",
@@ -4795,6 +5821,22 @@
         "紙"
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029917179"
+    },
+    {
+      "title_ja": "雨でも晴れでも",
+      "media_type": "manga",
+      "ndl_title": "雨でも晴れでも",
+      "publisher_ja": "KADOKAWA",
+      "label": "電撃コミックスNEXT",
+      "label_raw": "電撃コミックスNEXT ; N392-01",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I030460980"
     },
     {
       "title_ja": "青い花",
@@ -4829,6 +5871,22 @@
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I029551207"
     },
     {
+      "title_ja": "魔女ノ結婚",
+      "media_type": "manga",
+      "ndl_title": "魔女ノ結婚",
+      "publisher_ja": "KADOKAWA",
+      "label": "角川コミックス・エース",
+      "label_raw": "角川コミックス・エース",
+      "isbn": null,
+      "release_date": null,
+      "publication_place": "JP",
+      "categories": [
+        "図書",
+        "紙"
+      ],
+      "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I031765109"
+    },
+    {
       "title_ja": "７日間限定彼女",
       "media_type": "manga",
       "ndl_title": "7日間限定彼女",
@@ -4844,11 +5902,5 @@
       ],
       "source_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I033942379"
     }
-  ],
-  "dropped_mismatched": 15,
-  "clean_note": "已移除 ndl_title 与 title_ja 不一致的记录（前缀匹配时代的误配）；对应 runs 也已移除，下次 --only-missing 会重新查询。",
-  "total": 147,
-  "with_publisher": 146,
-  "with_label": 140,
-  "with_isbn": 5
+  ]
 }

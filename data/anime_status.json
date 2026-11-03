@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T12:49:06.661219+00:00",
+  "generated_at": "2026-11-03T15:41:05.865018+00:00",
   "source": "an_anilist",
   "matched_works": 49,
   "matches": [
@@ -709,21 +709,6 @@
       "adaptation_source": "other"
     },
     {
-      "work_id": "ceabb5e50c4b504fbf9f9afc1",
-      "work_slug": "star-3",
-      "anilist_id": 9756,
-      "title_native": "魔法少女まどか☆マギカ",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "tv",
-      "episodes": 12,
-      "broadcast_start": "2011-01-07",
-      "broadcast_end": "2011-04-22",
-      "studio": "Shaft",
-      "source_url": "https://anilist.co/anime/9756",
-      "adaptation_source": "original"
-    },
-    {
       "work_id": "c1131ca58863ea1f56d6a6e73",
       "work_slug": "w-7be6c5a251",
       "anilist_id": 130003,
@@ -737,6 +722,21 @@
       "studio": "CloverWorks",
       "source_url": "https://anilist.co/anime/130003",
       "adaptation_source": "manga"
+    },
+    {
+      "work_id": "ceabb5e50c4b504fbf9f9afc1",
+      "work_slug": "star-3",
+      "anilist_id": 9756,
+      "title_native": "魔法少女まどか☆マギカ",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 12,
+      "broadcast_start": "2011-01-07",
+      "broadcast_end": "2011-04-22",
+      "studio": "Shaft",
+      "source_url": "https://anilist.co/anime/9756",
+      "adaptation_source": "original"
     }
   ]
 }

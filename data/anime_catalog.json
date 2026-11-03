@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T00:41:18.293912+00:00",
+  "generated_at": "2026-11-03T03:42:43.067840+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,21 +110,21 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 29,
-      "total": 879
+      "items": 30,
+      "total": 880
     }
   ],
-  "raw_fetched": 879,
+  "raw_fetched": 880,
   "dropped": {
     "adult": 402,
     "non_jp": 16,
     "low_rank": 160,
     "no_title": 0
   },
-  "total": 301,
+  "total": 302,
   "distribution": {
     "format": {
-      "tv": 178,
+      "tv": 179,
       "movie": 35,
       "ova": 27,
       "ona": 24,
@@ -140,10 +140,10 @@
       "light_novel": 31,
       "game": 9,
       "unknown": 6,
-      "visual_novel": 3
+      "visual_novel": 4
     },
     "status": {
-      "finished": 288,
+      "finished": 289,
       "announced": 10,
       "airing": 3
     }
@@ -7365,8 +7365,8 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1496-w5WyFAa0VuO2.png",
       "cover_source_url": "https://anilist.co/anime/1496",
       "source_url": "https://anilist.co/anime/1496",
-      "related_work_id": "c31671ad23e46644e9c5263b9",
-      "related_work_slug": "w-56b569b9c6"
+      "related_work_id": null,
+      "related_work_slug": null
     },
     {
       "id": "a9990a2c8800adc1ef8abbaf7",
@@ -13602,6 +13602,69 @@
       "related_work_slug": null
     },
     {
+      "id": "afe318ab975a85f404b1cf2ec",
+      "slug": "shin-koihimemusou-otome-tairan",
+      "anilist_id": 8057,
+      "mal_id": 8057,
+      "title_ja": "真恋姫†無双 ~乙女大乱~",
+      "title_romaji": "Shin Koihime†Musou: Otome Tairan",
+      "title_en": "Shin Koihime Musou: Otome Tairan",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "visual_novel",
+      "status": "finished",
+      "start_date": "2010-03-26",
+      "end_date": "2010-06-17",
+      "season": "spring",
+      "season_year": 2010,
+      "episode_count": 12,
+      "episode_duration_min": 25,
+      "studios": [
+        "Doga Kobo"
+      ],
+      "main_cast": [
+        {
+          "character": "関羽雲長",
+          "voice_actor": "黒河奈美 "
+        },
+        {
+          "character": "張飛翼徳",
+          "voice_actor": "西沢広香"
+        },
+        {
+          "character": "趙雲子龍",
+          "voice_actor": "本井えみ"
+        },
+        {
+          "character": "馬超孟起",
+          "voice_actor": "小林眞紀"
+        },
+        {
+          "character": "諸葛亮孔明",
+          "voice_actor": "エリカ鳴海"
+        },
+        {
+          "character": "黄忠漢升",
+          "voice_actor": "雨宮侑布"
+        },
+        {
+          "character": "劉備玄德",
+          "voice_actor": "後藤麻衣"
+        }
+      ],
+      "average_score": 65,
+      "popularity": 4682,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx8057-C3YcDrZMJFfz.jpg",
+      "cover_source_url": "https://anilist.co/anime/8057",
+      "source_url": "https://anilist.co/anime/8057",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a31066f86dea88c98d34f94a4",
       "slug": "shuumatsu-no-izetta",
       "anilist_id": 21838,
@@ -15310,8 +15373,8 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130003-HTDmeL4RGeJ4.png",
       "cover_source_url": "https://anilist.co/anime/130003",
       "source_url": "https://anilist.co/anime/130003",
-      "related_work_id": null,
-      "related_work_slug": null
+      "related_work_id": "c1131ca58863ea1f56d6a6e73",
+      "related_work_slug": "w-7be6c5a251"
     },
     {
       "id": "a8122f917538035eba35e30e3",

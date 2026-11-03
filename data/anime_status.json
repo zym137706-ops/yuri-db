@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T01:53:44.859257+00:00",
+  "generated_at": "2026-11-03T03:42:43.074510+00:00",
   "source": "an_anilist",
-  "matched_works": 47,
+  "matched_works": 49,
   "matches": [
     {
       "work_id": "ceb82d175c46b7f8559bc5f10",
@@ -181,6 +181,21 @@
       "broadcast_end": "2023-06-22",
       "studio": "Passione",
       "source_url": "https://anilist.co/anime/149028",
+      "adaptation_source": "manga"
+    },
+    {
+      "work_id": "c7573b39178e7c44403d0b66d",
+      "work_slug": "w-cdf24065f7",
+      "anilist_id": 184321,
+      "title_native": "雨夜の月",
+      "status": "announced",
+      "our_status": "announced",
+      "format": "tv",
+      "episodes": null,
+      "broadcast_start": "2027-01-01",
+      "broadcast_end": null,
+      "studio": "CompTown",
+      "source_url": "https://anilist.co/anime/184321",
       "adaptation_source": "manga"
     },
     {
@@ -707,6 +722,21 @@
       "studio": "Shaft",
       "source_url": "https://anilist.co/anime/9756",
       "adaptation_source": "original"
+    },
+    {
+      "work_id": "c1131ca58863ea1f56d6a6e73",
+      "work_slug": "w-7be6c5a251",
+      "anilist_id": 130003,
+      "title_native": "ぼっち・ざ・ろっく！",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 12,
+      "broadcast_start": "2022-10-09",
+      "broadcast_end": "2022-12-25",
+      "studio": "CloverWorks",
+      "source_url": "https://anilist.co/anime/130003",
+      "adaptation_source": "manga"
     }
   ]
 }

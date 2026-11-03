@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T02:34:10.524565+00:00",
+  "generated_at": "2026-11-03T03:42:43.443725+00:00",
   "source_records": {
     "yurihime": 38,
     "galette": 4,
@@ -8,7 +8,7 @@
     "total_records": 66
   },
   "works_total": 847,
-  "created_at_preserved": 835,
+  "created_at_preserved": 847,
   "by_media_type": {
     "manga": 752,
     "light_novel": 95
@@ -188,11 +188,11 @@
   "works_with_cover": 825,
   "works_with_title_zh_tw": 17,
   "works_with_title_zh_cn": 0,
-  "anime_matched": 47,
-  "works_with_anime": 47,
+  "anime_matched": 49,
+  "works_with_anime": 49,
   "ndl_volumes_added": 8,
   "works_with_ja_volumes": 15,
   "merges": [],
   "schema_errors": [],
-  "raw_files": 561
+  "raw_files": 535
 }

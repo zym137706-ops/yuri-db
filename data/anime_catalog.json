@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T18:43:07.367846+00:00",
+  "generated_at": "2026-11-05T21:38:12.124616+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -11667,6 +11667,73 @@
       "related_work_slug": null
     },
     {
+      "id": "a9d145bc0d03c23f0c86b3b83",
+      "slug": "grotesqqque",
+      "anilist_id": 178972,
+      "mal_id": 59217,
+      "title_ja": "GROTESQQQUE-グロテスク-",
+      "title_romaji": "GROTESQQQUE",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "movie",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-06",
+      "season": "fall",
+      "season_year": 2026,
+      "episode_count": 3,
+      "episode_duration_min": null,
+      "studios": [
+        "CloverWorks"
+      ],
+      "main_cast": [
+        {
+          "character": "星戯英理杏",
+          "voice_actor": "市ノ瀬加那"
+        },
+        {
+          "character": "國蔵謙人",
+          "voice_actor": "星野源"
+        },
+        {
+          "character": "名無し",
+          "voice_actor": "長谷川育美"
+        },
+        {
+          "character": "ステラ",
+          "voice_actor": "南沙良"
+        },
+        {
+          "character": "アヤメ",
+          "voice_actor": "井上和"
+        },
+        {
+          "character": "シオン",
+          "voice_actor": "中西アルノ"
+        },
+        {
+          "character": "カンナ",
+          "voice_actor": "冨里奈央"
+        },
+        {
+          "character": "モモ",
+          "voice_actor": "一ノ瀬美空"
+        }
+      ],
+      "average_score": null,
+      "popularity": 15111,
+      "yuri_tag_rank": 61,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178972-THp4trZ9uR9b.jpg",
+      "cover_source_url": "https://anilist.co/anime/178972",
+      "source_url": "https://anilist.co/anime/178972",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "ad1db70719a674d4f3741563b",
       "slug": "yoru-no-kurage-wa-oyogenai",
       "anilist_id": 163078,
@@ -14282,73 +14349,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b17947-TACbDdG8uJcq.jpg",
       "cover_source_url": "https://anilist.co/anime/17947",
       "source_url": "https://anilist.co/anime/17947",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a9d145bc0d03c23f0c86b3b83",
-      "slug": "grotesqqque",
-      "anilist_id": 178972,
-      "mal_id": 59217,
-      "title_ja": "GROTESQQQUE-グロテスク-",
-      "title_romaji": "GROTESQQQUE",
-      "title_en": null,
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "movie",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2026-11-06",
-      "end_date": "2026-11-06",
-      "season": "fall",
-      "season_year": 2026,
-      "episode_count": 3,
-      "episode_duration_min": null,
-      "studios": [
-        "CloverWorks"
-      ],
-      "main_cast": [
-        {
-          "character": "星戯英理杏",
-          "voice_actor": "市ノ瀬加那"
-        },
-        {
-          "character": "國蔵謙人",
-          "voice_actor": "星野源"
-        },
-        {
-          "character": "名無し",
-          "voice_actor": "長谷川育美"
-        },
-        {
-          "character": "ステラ",
-          "voice_actor": "南沙良"
-        },
-        {
-          "character": "アヤメ",
-          "voice_actor": "井上和"
-        },
-        {
-          "character": "シオン",
-          "voice_actor": "中西アルノ"
-        },
-        {
-          "character": "カンナ",
-          "voice_actor": "冨里奈央"
-        },
-        {
-          "character": "モモ",
-          "voice_actor": "一ノ瀬美空"
-        }
-      ],
-      "average_score": null,
-      "popularity": 15111,
-      "yuri_tag_rank": 58,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178972-THp4trZ9uR9b.jpg",
-      "cover_source_url": "https://anilist.co/anime/178972",
-      "source_url": "https://anilist.co/anime/178972",
       "related_work_id": null,
       "related_work_slug": null
     },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T21:38:12.124616+00:00",
+  "generated_at": "2026-11-06T00:44:25.830664+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -2929,6 +2929,61 @@
       "related_work_slug": null
     },
     {
+      "id": "a832dc0ec30731e0b3910f642",
+      "slug": "mayonaka-punch",
+      "anilist_id": 174044,
+      "mal_id": 57947,
+      "title_ja": "真夜中ぱんチ",
+      "title_romaji": "Mayonaka Punch",
+      "title_en": "MAYONAKA PUNCH",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2024-07-08",
+      "end_date": "2024-09-23",
+      "season": "summer",
+      "season_year": 2024,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "P.A.WORKS"
+      ],
+      "main_cast": [
+        {
+          "character": "園上真咲",
+          "voice_actor": "長谷川育美"
+        },
+        {
+          "character": "りぶ",
+          "voice_actor": "ファイルーズあい"
+        },
+        {
+          "character": "苺子",
+          "voice_actor": "伊藤ゆいな"
+        },
+        {
+          "character": "譜風",
+          "voice_actor": "羊宮妃那"
+        },
+        {
+          "character": "十景",
+          "voice_actor": "上田瞳"
+        }
+      ],
+      "average_score": 72,
+      "popularity": 29640,
+      "yuri_tag_rank": 86,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx174044-HBvsyKjDVPyO.jpg",
+      "cover_source_url": "https://anilist.co/anime/174044",
+      "source_url": "https://anilist.co/anime/174044",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a6ebd93268841ec8faab4bfa4",
       "slug": "imprisoned-xii",
       "anilist_id": 192650,
@@ -3222,61 +3277,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx167984-vZELUFDNk0Ax.jpg",
       "cover_source_url": "https://anilist.co/anime/167984",
       "source_url": "https://anilist.co/anime/167984",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a832dc0ec30731e0b3910f642",
-      "slug": "mayonaka-punch",
-      "anilist_id": 174044,
-      "mal_id": 57947,
-      "title_ja": "真夜中ぱんチ",
-      "title_romaji": "Mayonaka Punch",
-      "title_en": "MAYONAKA PUNCH",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2024-07-08",
-      "end_date": "2024-09-23",
-      "season": "summer",
-      "season_year": 2024,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "P.A.WORKS"
-      ],
-      "main_cast": [
-        {
-          "character": "園上真咲",
-          "voice_actor": "長谷川育美"
-        },
-        {
-          "character": "りぶ",
-          "voice_actor": "ファイルーズあい"
-        },
-        {
-          "character": "苺子",
-          "voice_actor": "伊藤ゆいな"
-        },
-        {
-          "character": "譜風",
-          "voice_actor": "羊宮妃那"
-        },
-        {
-          "character": "十景",
-          "voice_actor": "上田瞳"
-        }
-      ],
-      "average_score": 72,
-      "popularity": 29640,
-      "yuri_tag_rank": 85,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx174044-HBvsyKjDVPyO.jpg",
-      "cover_source_url": "https://anilist.co/anime/174044",
-      "source_url": "https://anilist.co/anime/174044",
       "related_work_id": null,
       "related_work_slug": null
     },

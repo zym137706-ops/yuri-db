@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T03:40:53.132840+00:00",
+  "generated_at": "2026-11-07T06:43:11.058035+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,15 +110,15 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 31,
-      "total": 881
+      "items": 30,
+      "total": 880
     }
   ],
-  "raw_fetched": 881,
+  "raw_fetched": 880,
   "dropped": {
     "adult": 402,
     "non_jp": 16,
-    "low_rank": 160,
+    "low_rank": 159,
     "no_title": 0
   },
   "total": 303,
@@ -1709,6 +1709,49 @@
       "related_work_slug": "w-3c34a1ef9c"
     },
     {
+      "id": "a0fbce480a65151007f16be73",
+      "slug": "shoujo-kakumei-utena-adolescence-mokushiroku",
+      "anilist_id": 441,
+      "mal_id": 441,
+      "title_ja": "少女革命ウテナ アドゥレセンス黙示録",
+      "title_romaji": "Shoujo Kakumei Utena: Adolescence Mokushiroku",
+      "title_en": "Revolutionary Girl Utena: The Adolescence of Utena",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "movie",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "1999-08-14",
+      "end_date": "1999-08-14",
+      "season": "summer",
+      "season_year": 1999,
+      "episode_count": 1,
+      "episode_duration_min": 90,
+      "studios": [
+        "J.C.STAFF"
+      ],
+      "main_cast": [
+        {
+          "character": "天上ウテナ",
+          "voice_actor": "川上とも子"
+        },
+        {
+          "character": "姫宮アンシー",
+          "voice_actor": "渕崎ゆり子"
+        }
+      ],
+      "average_score": 79,
+      "popularity": 22603,
+      "yuri_tag_rank": 93,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx441-JbPY7EiWIeaL.jpg",
+      "cover_source_url": "https://anilist.co/anime/441",
+      "source_url": "https://anilist.co/anime/441",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "aaee4bba4d1a14e96ed0dc437",
       "slug": "tachibanakan-to-lie-angle",
       "anilist_id": 100762,
@@ -1982,49 +2025,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx174383-WIAKPEGRV4b8.jpg",
       "cover_source_url": "https://anilist.co/anime/174383",
       "source_url": "https://anilist.co/anime/174383",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a0fbce480a65151007f16be73",
-      "slug": "shoujo-kakumei-utena-adolescence-mokushiroku",
-      "anilist_id": 441,
-      "mal_id": 441,
-      "title_ja": "少女革命ウテナ アドゥレセンス黙示録",
-      "title_romaji": "Shoujo Kakumei Utena: Adolescence Mokushiroku",
-      "title_en": "Revolutionary Girl Utena: The Adolescence of Utena",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "movie",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "1999-08-14",
-      "end_date": "1999-08-14",
-      "season": "summer",
-      "season_year": 1999,
-      "episode_count": 1,
-      "episode_duration_min": 90,
-      "studios": [
-        "J.C.STAFF"
-      ],
-      "main_cast": [
-        {
-          "character": "天上ウテナ",
-          "voice_actor": "川上とも子"
-        },
-        {
-          "character": "姫宮アンシー",
-          "voice_actor": "渕崎ゆり子"
-        }
-      ],
-      "average_score": 79,
-      "popularity": 22603,
-      "yuri_tag_rank": 92,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx441-JbPY7EiWIeaL.jpg",
-      "cover_source_url": "https://anilist.co/anime/441",
-      "source_url": "https://anilist.co/anime/441",
       "related_work_id": null,
       "related_work_slug": null
     },

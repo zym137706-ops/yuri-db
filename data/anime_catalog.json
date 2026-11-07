@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T06:43:11.058035+00:00",
+  "generated_at": "2026-11-07T09:38:40.117870+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -423,7 +423,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": 60,
-      "popularity": 728,
+      "popularity": 732,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -871,7 +871,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 24024,
+      "popularity": 24042,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2694,7 +2694,7 @@
         }
       ],
       "average_score": 84,
-      "popularity": 65474,
+      "popularity": 65542,
       "yuri_tag_rank": 87,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2742,7 +2742,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 2407,
+      "popularity": 2408,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2832,7 +2832,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 29507,
+      "popularity": 29537,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7943,7 +7943,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 3834,
+      "popularity": 3839,
       "yuri_tag_rank": 76,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8863,7 +8863,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 4270,
+      "popularity": 4291,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9292,7 +9292,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 41590,
+      "popularity": 41618,
       "yuri_tag_rank": 71,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10080,7 +10080,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 8622,
+      "popularity": 8627,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10935,7 +10935,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 6918,
+      "popularity": 6925,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11029,8 +11029,8 @@
           "voice_actor": "井口裕香"
         }
       ],
-      "average_score": 74,
-      "popularity": 4138,
+      "average_score": 75,
+      "popularity": 4145,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11110,7 +11110,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 5631,
+      "popularity": 5634,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11202,7 +11202,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 5106,
+      "popularity": 5113,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12268,7 +12268,7 @@
         }
       ],
       "average_score": 86,
-      "popularity": 31006,
+      "popularity": 31023,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13207,7 +13207,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 10049,
+      "popularity": 10054,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13392,7 +13392,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 44679,
+      "popularity": 44729,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13691,7 +13691,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12513,
+      "popularity": 12523,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14918,8 +14918,8 @@
           "voice_actor": "貫井柚佳"
         }
       ],
-      "average_score": 69,
-      "popularity": 13869,
+      "average_score": 70,
+      "popularity": 13876,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",

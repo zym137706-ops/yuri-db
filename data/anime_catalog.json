@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T21:27:38.151935+00:00",
+  "generated_at": "2026-11-08T00:40:11.060942+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,13 +110,13 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 30,
-      "total": 880
+      "items": 28,
+      "total": 878
     }
   ],
-  "raw_fetched": 880,
+  "raw_fetched": 878,
   "dropped": {
-    "adult": 402,
+    "adult": 400,
     "non_jp": 16,
     "low_rank": 159,
     "no_title": 0

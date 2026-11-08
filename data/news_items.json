@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T03:42:39.033047+00:00",
+  "generated_at": "2026-11-08T06:43:24.300576+00:00",
   "since_days": 7,
   "keywords": [
     "百合",
@@ -10,19 +10,7 @@
     "yuri",
     "gl"
   ],
-  "count": 1,
+  "count": 0,
   "anime_announcement_candidates": 0,
-  "items": [
-    {
-      "source_id": "ln_web_action_prtimes",
-      "source_label": "PR TIMES",
-      "feed_kind": "press_release",
-      "title": "新百合トウェンティワンホールで０歳から楽しめる参加体験型コンサート開催！　『「０歳からの・はじめてのオーケストラ」～冬のコンサート～』チケット好評販売中",
-      "url": "https://prtimes.jp/main/html/rd/p/000004014.000013972.html",
-      "published_at": null,
-      "is_anime_announcement": false,
-      "retrieved_at": "2026-11-08T03:42:39.032057+00:00",
-      "feed_url": "https://prtimes.jp/index.rdf"
-    }
-  ]
+  "items": []
 }

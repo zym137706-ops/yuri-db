@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T00:42:54.753761+00:00",
-  "total": 1548,
-  "latest_run_entries": 0,
+  "generated_at": "2026-11-09T02:41:41.140311+00:00",
+  "total": 1556,
+  "latest_run_entries": 8,
   "entries": [
     {
       "entity_type": "work",
@@ -17030,6 +17030,94 @@
       "new_value": "announced",
       "source_id": "https://anilist.co/anime/184321",
       "detected_at": "2026-11-03T03:42:44.300170+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c8724d556669c94f3432d8e3a",
+      "work_id": "c8724d556669c94f3432d8e3a",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": null,
+      "new_value": "無法拒絕孤單女孩",
+      "source_id": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1",
+      "detected_at": "2026-11-09T02:41:41.140311+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c8724d556669c94f3432d8e3a",
+      "work_id": "c8724d556669c94f3432d8e3a",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": null,
+      "new_value": "4",
+      "source_id": null,
+      "detected_at": "2026-11-09T02:41:41.140311+00:00"
+    },
+    {
+      "entity_type": "volume",
+      "entity_id": "c8724d556669c94f3432d8e3a:zh_tw:4",
+      "work_id": "c8724d556669c94f3432d8e3a",
+      "change_type": "created",
+      "field_name": "zh_tw_volume",
+      "old_value": null,
+      "new_value": "v4 ISBN=9786260268763",
+      "source_id": null,
+      "detected_at": "2026-11-09T02:41:41.140311+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ca188b1c86612fd6c50b15057",
+      "work_id": "ca188b1c86612fd6c50b15057",
+      "change_type": "created",
+      "field_name": null,
+      "old_value": null,
+      "new_value": "ワンナイト百合アンソロジー",
+      "source_id": "東立出版社 ThemeGL（百合姬系列）",
+      "detected_at": "2026-11-09T02:41:41.140311+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c850109c8af71bdbe50d73097",
+      "work_id": "c850109c8af71bdbe50d73097",
+      "change_type": "created",
+      "field_name": null,
+      "old_value": null,
+      "new_value": "昨日シたのに覚えてないの？",
+      "source_id": "東立出版社 ThemeGL（百合姬系列）",
+      "detected_at": "2026-11-09T02:41:41.140311+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cacd43eeeb87003da77927363",
+      "work_id": "cacd43eeeb87003da77927363",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "Show",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-11-09T02:41:41.140311+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c195a1235c678fcc4a700982e",
+      "work_id": "c195a1235c678fcc4a700982e",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "あめとむち",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-11-09T02:41:41.140311+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c81f13f00fffbe89f2425fc35",
+      "work_id": "c81f13f00fffbe89f2425fc35",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "清田さんは汚されたい!?",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-11-09T02:41:41.140311+00:00"
     }
   ]
 }

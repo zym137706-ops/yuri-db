@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T15:08:08.735232+00:00",
+  "generated_at": "2026-11-10T01:10:09.207443+00:00",
   "since_days": 7,
   "keywords": [
     "百合",
@@ -10,7 +10,19 @@
     "yuri",
     "gl"
   ],
-  "count": 0,
+  "count": 1,
   "anime_announcement_candidates": 0,
-  "items": []
+  "items": [
+    {
+      "source_id": "ln_web_action_prtimes",
+      "source_label": "PR TIMES",
+      "feed_kind": "press_release",
+      "title": "人気の新感覚ホラー百合ラブコメが、なんと今なら3巻分無料で読める！『見えてますよ！ 愛沢さん』「次にくるマンガ大賞2026」Webマンガ部門にもノミネートされ最新6巻が発売されたばかりの人気作品！",
+      "url": "https://prtimes.jp/main/html/rd/p/000001053.000049835.html",
+      "published_at": null,
+      "is_anime_announcement": false,
+      "retrieved_at": "2026-11-10T01:10:09.205870+00:00",
+      "feed_url": "https://prtimes.jp/index.rdf"
+    }
+  ]
 }

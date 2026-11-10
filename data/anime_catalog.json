@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T15:09:08.993024+00:00",
+  "generated_at": "2026-11-10T01:11:09.182600+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,15 +110,15 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 29,
-      "total": 879
+      "items": 31,
+      "total": 881
     }
   ],
-  "raw_fetched": 879,
+  "raw_fetched": 881,
   "dropped": {
     "adult": 400,
     "non_jp": 16,
-    "low_rank": 160,
+    "low_rank": 162,
     "no_title": 0
   },
   "total": 303,
@@ -4033,61 +4033,6 @@
       "related_work_slug": null
     },
     {
-      "id": "aec44a52638ccc555a45539d1",
-      "slug": "bang-dream-ave-mujica",
-      "anilist_id": 169295,
-      "mal_id": 56653,
-      "title_ja": "BanG Dream! Ave Mujica",
-      "title_romaji": "BanG Dream! Ave Mujica",
-      "title_en": "Ave Mujica - The Die is Cast -",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "finished",
-      "start_date": "2025-01-02",
-      "end_date": "2025-03-27",
-      "season": "winter",
-      "season_year": 2025,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "SANZIGEN"
-      ],
-      "main_cast": [
-        {
-          "character": "豊川祥子",
-          "voice_actor": "高尾奏音"
-        },
-        {
-          "character": "三角初華",
-          "voice_actor": "佐々木李子"
-        },
-        {
-          "character": "若葉睦",
-          "voice_actor": "渡瀬結月"
-        },
-        {
-          "character": "八幡海鈴",
-          "voice_actor": "岡田夢以"
-        },
-        {
-          "character": "祐天寺にゃむ",
-          "voice_actor": "米澤茜"
-        }
-      ],
-      "average_score": 82,
-      "popularity": 21449,
-      "yuri_tag_rank": 80,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169295-WxoGTeMbje4T.jpg",
-      "cover_source_url": "https://anilist.co/anime/169295",
-      "source_url": "https://anilist.co/anime/169295",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
       "id": "a6816d3658a29172acea22f12",
       "slug": "heart-challenger",
       "anilist_id": 130040,
@@ -7287,6 +7232,61 @@
       "related_work_slug": null
     },
     {
+      "id": "aec44a52638ccc555a45539d1",
+      "slug": "bang-dream-ave-mujica",
+      "anilist_id": 169295,
+      "mal_id": 56653,
+      "title_ja": "BanG Dream! Ave Mujica",
+      "title_romaji": "BanG Dream! Ave Mujica",
+      "title_en": "Ave Mujica - The Die is Cast -",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "other",
+      "status": "finished",
+      "start_date": "2025-01-02",
+      "end_date": "2025-03-27",
+      "season": "winter",
+      "season_year": 2025,
+      "episode_count": 13,
+      "episode_duration_min": 24,
+      "studios": [
+        "SANZIGEN"
+      ],
+      "main_cast": [
+        {
+          "character": "豊川祥子",
+          "voice_actor": "高尾奏音"
+        },
+        {
+          "character": "三角初華",
+          "voice_actor": "佐々木李子"
+        },
+        {
+          "character": "若葉睦",
+          "voice_actor": "渡瀬結月"
+        },
+        {
+          "character": "八幡海鈴",
+          "voice_actor": "岡田夢以"
+        },
+        {
+          "character": "祐天寺にゃむ",
+          "voice_actor": "米澤茜"
+        }
+      ],
+      "average_score": 82,
+      "popularity": 21449,
+      "yuri_tag_rank": 78,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169295-WxoGTeMbje4T.jpg",
+      "cover_source_url": "https://anilist.co/anime/169295",
+      "source_url": "https://anilist.co/anime/169295",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a44c82ffcb409246c5e5551e2",
       "slug": "flip-flappers",
       "anilist_id": 21714,
@@ -7365,65 +7365,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1496-w5WyFAa0VuO2.png",
       "cover_source_url": "https://anilist.co/anime/1496",
       "source_url": "https://anilist.co/anime/1496",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a9990a2c8800adc1ef8abbaf7",
-      "slug": "mahou-shoujo-madokamagica-walpurgis-no-kaiten",
-      "anilist_id": 133007,
-      "mal_id": 48820,
-      "title_ja": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-      "title_romaji": "Mahou Shoujo Madoka☆Magica: Walpurgis no Kaiten",
-      "title_en": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "movie",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2026-08-28",
-      "end_date": "2026-08-28",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 1,
-      "episode_duration_min": 120,
-      "studios": [
-        "Shaft"
-      ],
-      "main_cast": [
-        {
-          "character": "鹿目まどか",
-          "voice_actor": "悠木碧"
-        },
-        {
-          "character": "暁美ほむら",
-          "voice_actor": "斎藤千和"
-        },
-        {
-          "character": "巴マミ",
-          "voice_actor": "水橋かおり"
-        },
-        {
-          "character": "美樹さやか",
-          "voice_actor": "喜多村英梨"
-        },
-        {
-          "character": "佐倉杏子",
-          "voice_actor": "野中藍"
-        },
-        {
-          "character": "キュゥべぇ",
-          "voice_actor": "加藤英美里"
-        }
-      ],
-      "average_score": 82,
-      "popularity": 51003,
-      "yuri_tag_rank": 78,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133007-5gOUXDvzxy9S.jpg",
-      "cover_source_url": "https://anilist.co/anime/133007",
-      "source_url": "https://anilist.co/anime/133007",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -7907,6 +7848,50 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx197543-UhIhht4Gku8z.png",
       "cover_source_url": "https://anilist.co/anime/197543",
       "source_url": "https://anilist.co/anime/197543",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "ad55c9f0495648bd6bc723bdd",
+      "slug": "murcielago",
+      "anilist_id": 213877,
+      "mal_id": 64555,
+      "title_ja": "ムルシエラゴ",
+      "title_romaji": "MURCIÉLAGO",
+      "title_en": null,
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "announced",
+      "start_date": "2027-01-01",
+      "end_date": null,
+      "season": "winter",
+      "season_year": 2027,
+      "episode_count": null,
+      "episode_duration_min": null,
+      "studios": [
+        "Satelight",
+        "Staple Entertainment"
+      ],
+      "main_cast": [
+        {
+          "character": "紅守黒湖",
+          "voice_actor": "上田瞳"
+        },
+        {
+          "character": "屠桜ひな子",
+          "voice_actor": "鈴木みのり"
+        }
+      ],
+      "average_score": null,
+      "popularity": 4346,
+      "yuri_tag_rank": 76,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213877-NK48aPaVO29y.jpg",
+      "cover_source_url": "https://anilist.co/anime/213877",
+      "source_url": "https://anilist.co/anime/213877",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -8787,50 +8772,6 @@
       "related_work_slug": null
     },
     {
-      "id": "ad55c9f0495648bd6bc723bdd",
-      "slug": "murcielago",
-      "anilist_id": 213877,
-      "mal_id": 64555,
-      "title_ja": "ムルシエラゴ",
-      "title_romaji": "MURCIÉLAGO",
-      "title_en": null,
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "announced",
-      "start_date": "2027-01-01",
-      "end_date": null,
-      "season": "winter",
-      "season_year": 2027,
-      "episode_count": null,
-      "episode_duration_min": null,
-      "studios": [
-        "Satelight",
-        "Staple Entertainment"
-      ],
-      "main_cast": [
-        {
-          "character": "紅守黒湖",
-          "voice_actor": "上田瞳"
-        },
-        {
-          "character": "屠桜ひな子",
-          "voice_actor": "鈴木みのり"
-        }
-      ],
-      "average_score": null,
-      "popularity": 4346,
-      "yuri_tag_rank": 73,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213877-NK48aPaVO29y.jpg",
-      "cover_source_url": "https://anilist.co/anime/213877",
-      "source_url": "https://anilist.co/anime/213877",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
       "id": "a8905ce0e0eecc8f938ecb4b0",
       "slug": "love-live-nijigasaki-gakuen-school-idol-doukoukai",
       "anilist_id": 113970,
@@ -9556,6 +9497,65 @@
       "source_url": "https://anilist.co/anime/143270",
       "related_work_id": "c45b607036d36a511d592e03c",
       "related_work_slug": "w-45b607036d"
+    },
+    {
+      "id": "a9990a2c8800adc1ef8abbaf7",
+      "slug": "mahou-shoujo-madokamagica-walpurgis-no-kaiten",
+      "anilist_id": 133007,
+      "mal_id": 48820,
+      "title_ja": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+      "title_romaji": "Mahou Shoujo Madoka☆Magica: Walpurgis no Kaiten",
+      "title_en": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "movie",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2026-08-28",
+      "end_date": "2026-08-28",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 1,
+      "episode_duration_min": 120,
+      "studios": [
+        "Shaft"
+      ],
+      "main_cast": [
+        {
+          "character": "鹿目まどか",
+          "voice_actor": "悠木碧"
+        },
+        {
+          "character": "暁美ほむら",
+          "voice_actor": "斎藤千和"
+        },
+        {
+          "character": "巴マミ",
+          "voice_actor": "水橋かおり"
+        },
+        {
+          "character": "美樹さやか",
+          "voice_actor": "喜多村英梨"
+        },
+        {
+          "character": "佐倉杏子",
+          "voice_actor": "野中藍"
+        },
+        {
+          "character": "キュゥべぇ",
+          "voice_actor": "加藤英美里"
+        }
+      ],
+      "average_score": 82,
+      "popularity": 51003,
+      "yuri_tag_rank": 70,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133007-5gOUXDvzxy9S.jpg",
+      "cover_source_url": "https://anilist.co/anime/133007",
+      "source_url": "https://anilist.co/anime/133007",
+      "related_work_id": null,
+      "related_work_slug": null
     },
     {
       "id": "ae33f6e885444561aaf336b94",
@@ -11196,65 +11196,6 @@
       "related_work_slug": null
     },
     {
-      "id": "ab20080327649d30d76d4e5c9",
-      "slug": "mahou-shoujo-madokamagica",
-      "anilist_id": 9756,
-      "mal_id": 9756,
-      "title_ja": "魔法少女まどか☆マギカ",
-      "title_romaji": "Mahou Shoujo Madoka☆Magica",
-      "title_en": "Puella Magi Madoka Magica",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2011-01-07",
-      "end_date": "2011-04-22",
-      "season": "winter",
-      "season_year": 2011,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Shaft"
-      ],
-      "main_cast": [
-        {
-          "character": "鹿目まどか",
-          "voice_actor": "悠木碧"
-        },
-        {
-          "character": "暁美ほむら",
-          "voice_actor": "斎藤千和"
-        },
-        {
-          "character": "巴マミ",
-          "voice_actor": "水橋かおり"
-        },
-        {
-          "character": "美樹さやか",
-          "voice_actor": "喜多村英梨"
-        },
-        {
-          "character": "キュゥべぇ",
-          "voice_actor": "加藤英美里"
-        },
-        {
-          "character": "佐倉杏子",
-          "voice_actor": "野中藍"
-        }
-      ],
-      "average_score": 83,
-      "popularity": 333268,
-      "yuri_tag_rank": 63,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9756-QnUGwlwwnsuN.jpg",
-      "cover_source_url": "https://anilist.co/anime/9756",
-      "source_url": "https://anilist.co/anime/9756",
-      "related_work_id": "ceabb5e50c4b504fbf9f9afc1",
-      "related_work_slug": "star-3"
-    },
-    {
       "id": "a41e1f074fea4d2e95e070f09",
       "slug": "bang-dream-mygo-ave-mujica",
       "anilist_id": 189121,
@@ -11685,6 +11626,65 @@
       "source_url": "https://anilist.co/anime/20912",
       "related_work_id": null,
       "related_work_slug": null
+    },
+    {
+      "id": "ab20080327649d30d76d4e5c9",
+      "slug": "mahou-shoujo-madokamagica",
+      "anilist_id": 9756,
+      "mal_id": 9756,
+      "title_ja": "魔法少女まどか☆マギカ",
+      "title_romaji": "Mahou Shoujo Madoka☆Magica",
+      "title_en": "Puella Magi Madoka Magica",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2011-01-07",
+      "end_date": "2011-04-22",
+      "season": "winter",
+      "season_year": 2011,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Shaft"
+      ],
+      "main_cast": [
+        {
+          "character": "鹿目まどか",
+          "voice_actor": "悠木碧"
+        },
+        {
+          "character": "暁美ほむら",
+          "voice_actor": "斎藤千和"
+        },
+        {
+          "character": "巴マミ",
+          "voice_actor": "水橋かおり"
+        },
+        {
+          "character": "美樹さやか",
+          "voice_actor": "喜多村英梨"
+        },
+        {
+          "character": "キュゥべぇ",
+          "voice_actor": "加藤英美里"
+        },
+        {
+          "character": "佐倉杏子",
+          "voice_actor": "野中藍"
+        }
+      ],
+      "average_score": 83,
+      "popularity": 333268,
+      "yuri_tag_rank": 62,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9756-QnUGwlwwnsuN.jpg",
+      "cover_source_url": "https://anilist.co/anime/9756",
+      "source_url": "https://anilist.co/anime/9756",
+      "related_work_id": "ceabb5e50c4b504fbf9f9afc1",
+      "related_work_slug": "star-3"
     },
     {
       "id": "a487340b1605bba78cb9e1bad",

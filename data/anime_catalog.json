@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T02:07:34.223098+00:00",
+  "generated_at": "2026-11-12T10:39:26.378746+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -438,7 +438,7 @@
         }
       ],
       "average_score": 57,
-      "popularity": 1828,
+      "popularity": 1829,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -683,7 +683,7 @@
         }
       ],
       "average_score": 65,
-      "popularity": 47468,
+      "popularity": 47480,
       "yuri_tag_rank": 98,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -777,7 +777,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 57762,
+      "popularity": 57808,
       "yuri_tag_rank": 98,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -918,7 +918,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 24124,
+      "popularity": 24143,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1008,7 +1008,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 69665,
+      "popularity": 69696,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1051,7 +1051,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 60151,
+      "popularity": 60190,
       "yuri_tag_rank": 96,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1094,7 +1094,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 35116,
+      "popularity": 35281,
       "yuri_tag_rank": 96,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1145,7 +1145,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 20967,
+      "popularity": 20974,
       "yuri_tag_rank": 95,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1200,7 +1200,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 80336,
+      "popularity": 80352,
       "yuri_tag_rank": 95,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1428,7 +1428,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 27735,
+      "popularity": 27748,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1471,7 +1471,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 8225,
+      "popularity": 8236,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1505,7 +1505,7 @@
       ],
       "main_cast": [],
       "average_score": 74,
-      "popularity": 6253,
+      "popularity": 6254,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1616,7 +1616,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 1120,
+      "popularity": 1121,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1702,7 +1702,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 39081,
+      "popularity": 39122,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2066,7 +2066,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 4994,
+      "popularity": 4995,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2149,7 +2149,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": null,
-      "popularity": 14254,
+      "popularity": 14258,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2200,7 +2200,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 92278,
+      "popularity": 92306,
       "yuri_tag_rank": 91,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2456,7 +2456,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 55464,
+      "popularity": 55489,
       "yuri_tag_rank": 88,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2742,7 +2742,7 @@
         }
       ],
       "average_score": 84,
-      "popularity": 65855,
+      "popularity": 65904,
       "yuri_tag_rank": 87,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2790,7 +2790,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 2423,
+      "popularity": 2426,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2880,7 +2880,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 29625,
+      "popularity": 29641,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3021,7 +3021,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 29707,
+      "popularity": 29715,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3318,7 +3318,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 9145,
+      "popularity": 9146,
       "yuri_tag_rank": 85,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4197,7 +4197,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 33422,
+      "popularity": 33436,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4234,7 +4234,7 @@
         }
       ],
       "average_score": 54,
-      "popularity": 1344,
+      "popularity": 1345,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4392,7 +4392,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 7570,
+      "popularity": 7571,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4631,7 +4631,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 44703,
+      "popularity": 44711,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4678,7 +4678,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 44871,
+      "popularity": 44885,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5190,7 +5190,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 5159,
+      "popularity": 5164,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5691,7 +5691,7 @@
       ],
       "main_cast": [],
       "average_score": 61,
-      "popularity": 783,
+      "popularity": 786,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6184,7 +6184,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 2834,
+      "popularity": 2835,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6367,7 +6367,7 @@
       ],
       "main_cast": [],
       "average_score": null,
-      "popularity": 127,
+      "popularity": 128,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7089,7 +7089,7 @@
       "season": "spring",
       "season_year": 2001,
       "episode_count": 12,
-      "episode_duration_min": 15,
+      "episode_duration_min": 14,
       "studios": [
         "OLM"
       ],
@@ -7277,7 +7277,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 21475,
+      "popularity": 21489,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7728,7 +7728,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 30701,
+      "popularity": 30713,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7842,7 +7842,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 3866,
+      "popularity": 3868,
       "yuri_tag_rank": 76,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7886,7 +7886,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 4396,
+      "popularity": 4423,
       "yuri_tag_rank": 76,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8456,7 +8456,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": null,
-      "popularity": 19481,
+      "popularity": 19485,
       "yuri_tag_rank": 74,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8558,7 +8558,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 26421,
+      "popularity": 26428,
       "yuri_tag_rank": 74,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8762,7 +8762,7 @@
         }
       ],
       "average_score": 56,
-      "popularity": 6171,
+      "popularity": 6174,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8892,7 +8892,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 5163,
+      "popularity": 5165,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9191,7 +9191,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 41766,
+      "popularity": 41796,
       "yuri_tag_rank": 71,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9403,7 +9403,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 4988,
+      "popularity": 4991,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9489,7 +9489,7 @@
         }
       ],
       "average_score": 81,
-      "popularity": 215508,
+      "popularity": 215567,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10038,7 +10038,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 8658,
+      "popularity": 8666,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10147,8 +10147,8 @@
           "voice_actor": "一ノ瀬美空"
         }
       ],
-      "average_score": 66,
-      "popularity": 16039,
+      "average_score": 65,
+      "popularity": 16083,
       "yuri_tag_rank": 67,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10592,7 +10592,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 40479,
+      "popularity": 40497,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10803,7 +10803,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 23072,
+      "popularity": 23079,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10854,7 +10854,7 @@
         }
       ],
       "average_score": 83,
-      "popularity": 26436,
+      "popularity": 26446,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10909,7 +10909,7 @@
         }
       ],
       "average_score": 83,
-      "popularity": 68765,
+      "popularity": 68786,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10960,7 +10960,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 6950,
+      "popularity": 6954,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11055,7 +11055,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 4174,
+      "popularity": 4180,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11135,7 +11135,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 5658,
+      "popularity": 5666,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11186,7 +11186,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 43111,
+      "popularity": 43151,
       "yuri_tag_rank": 63,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11227,7 +11227,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 5151,
+      "popularity": 5156,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11414,7 +11414,7 @@
       ],
       "main_cast": [],
       "average_score": null,
-      "popularity": 3033,
+      "popularity": 3034,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11481,7 +11481,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 2636,
+      "popularity": 2639,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11520,7 +11520,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 53312,
+      "popularity": 53342,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11627,65 +11627,6 @@
       "source_url": "https://anilist.co/anime/20912",
       "related_work_id": null,
       "related_work_slug": null
-    },
-    {
-      "id": "ab20080327649d30d76d4e5c9",
-      "slug": "mahou-shoujo-madokamagica",
-      "anilist_id": 9756,
-      "mal_id": 9756,
-      "title_ja": "魔法少女まどか☆マギカ",
-      "title_romaji": "Mahou Shoujo Madoka☆Magica",
-      "title_en": "Puella Magi Madoka Magica",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2011-01-07",
-      "end_date": "2011-04-22",
-      "season": "winter",
-      "season_year": 2011,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Shaft"
-      ],
-      "main_cast": [
-        {
-          "character": "鹿目まどか",
-          "voice_actor": "悠木碧"
-        },
-        {
-          "character": "暁美ほむら",
-          "voice_actor": "斎藤千和"
-        },
-        {
-          "character": "巴マミ",
-          "voice_actor": "水橋かおり"
-        },
-        {
-          "character": "美樹さやか",
-          "voice_actor": "喜多村英梨"
-        },
-        {
-          "character": "キュゥべぇ",
-          "voice_actor": "加藤英美里"
-        },
-        {
-          "character": "佐倉杏子",
-          "voice_actor": "野中藍"
-        }
-      ],
-      "average_score": 83,
-      "popularity": 333476,
-      "yuri_tag_rank": 62,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9756-QnUGwlwwnsuN.jpg",
-      "cover_source_url": "https://anilist.co/anime/9756",
-      "source_url": "https://anilist.co/anime/9756",
-      "related_work_id": "ceabb5e50c4b504fbf9f9afc1",
-      "related_work_slug": "star-3"
     },
     {
       "id": "a487340b1605bba78cb9e1bad",
@@ -11842,7 +11783,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 63591,
+      "popularity": 63601,
       "yuri_tag_rank": 61,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11885,7 +11826,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 10604,
+      "popularity": 10605,
       "yuri_tag_rank": 61,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12030,7 +11971,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 76411,
+      "popularity": 76444,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12612,7 +12553,7 @@
         }
       ],
       "average_score": 67,
-      "popularity": 50570,
+      "popularity": 50588,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12803,7 +12744,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 5477,
+      "popularity": 5480,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13181,7 +13122,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 29669,
+      "popularity": 29682,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13232,7 +13173,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 10084,
+      "popularity": 10088,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13417,7 +13358,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 44944,
+      "popularity": 44993,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13518,8 +13459,8 @@
           "voice_actor": "豊田萌絵"
         }
       ],
-      "average_score": 69,
-      "popularity": 28697,
+      "average_score": 70,
+      "popularity": 28716,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13677,7 +13618,7 @@
       "studios": [],
       "main_cast": [],
       "average_score": null,
-      "popularity": 224,
+      "popularity": 225,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13716,7 +13657,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12575,
+      "popularity": 12579,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14264,6 +14205,65 @@
       "related_work_slug": null
     },
     {
+      "id": "ab20080327649d30d76d4e5c9",
+      "slug": "mahou-shoujo-madokamagica",
+      "anilist_id": 9756,
+      "mal_id": 9756,
+      "title_ja": "魔法少女まどか☆マギカ",
+      "title_romaji": "Mahou Shoujo Madoka☆Magica",
+      "title_en": "Puella Magi Madoka Magica",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2011-01-07",
+      "end_date": "2011-04-22",
+      "season": "winter",
+      "season_year": 2011,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Shaft"
+      ],
+      "main_cast": [
+        {
+          "character": "鹿目まどか",
+          "voice_actor": "悠木碧"
+        },
+        {
+          "character": "暁美ほむら",
+          "voice_actor": "斎藤千和"
+        },
+        {
+          "character": "巴マミ",
+          "voice_actor": "水橋かおり"
+        },
+        {
+          "character": "美樹さやか",
+          "voice_actor": "喜多村英梨"
+        },
+        {
+          "character": "キュゥべぇ",
+          "voice_actor": "加藤英美里"
+        },
+        {
+          "character": "佐倉杏子",
+          "voice_actor": "野中藍"
+        }
+      ],
+      "average_score": 83,
+      "popularity": 333476,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9756-QnUGwlwwnsuN.jpg",
+      "cover_source_url": "https://anilist.co/anime/9756",
+      "source_url": "https://anilist.co/anime/9756",
+      "related_work_id": "ceabb5e50c4b504fbf9f9afc1",
+      "related_work_slug": "star-3"
+    },
+    {
       "id": "ac6b5c61e7130dfd1fdf4e5bf",
       "slug": "mahou-shoujo-lyrical-nanoha-exceeds-gun-blaze-vengeance",
       "anilist_id": 185875,
@@ -14308,7 +14308,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 10674,
+      "popularity": 10683,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14559,7 +14559,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 37199,
+      "popularity": 37239,
       "yuri_tag_rank": 57,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14610,7 +14610,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 5900,
+      "popularity": 5902,
       "yuri_tag_rank": 57,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14885,7 +14885,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 51111,
+      "popularity": 51125,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14936,7 +14936,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 13929,
+      "popularity": 13941,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14987,7 +14987,7 @@
         }
       ],
       "average_score": 84,
-      "popularity": 14101,
+      "popularity": 14108,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15073,7 +15073,7 @@
         }
       ],
       "average_score": 86,
-      "popularity": 31118,
+      "popularity": 31140,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15128,7 +15128,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 5040,
+      "popularity": 5042,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15234,7 +15234,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 13645,
+      "popularity": 13659,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",

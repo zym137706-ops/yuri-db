@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T10:30:52.040822+00:00",
+  "generated_at": "2026-11-13T19:12:30.397673+00:00",
   "source": "an_anilist",
   "matched_works": 49,
   "matches": [
@@ -559,21 +559,6 @@
       "adaptation_source": "manga"
     },
     {
-      "work_id": "ccf486b05bdf37a29a7514020",
-      "work_slug": "fate-kaleid-liner-star",
-      "anilist_id": 20467,
-      "title_native": "Fate/kaleid linerプリズマ☆イリヤ ツヴァイ！",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "tv",
-      "episodes": 10,
-      "broadcast_start": "2014-07-10",
-      "broadcast_end": "2014-09-11",
-      "studio": "SILVER LINK.",
-      "source_url": "https://anilist.co/anime/20467",
-      "adaptation_source": "manga"
-    },
-    {
       "work_id": "c45b607036d36a511d592e03c",
       "work_slug": "w-45b607036d",
       "anilist_id": 143270,
@@ -587,6 +572,21 @@
       "studio": "A-1 Pictures",
       "source_url": "https://anilist.co/anime/143270",
       "adaptation_source": "original"
+    },
+    {
+      "work_id": "ccf486b05bdf37a29a7514020",
+      "work_slug": "fate-kaleid-liner-star",
+      "anilist_id": 20467,
+      "title_native": "Fate/kaleid linerプリズマ☆イリヤ ツヴァイ！",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 10,
+      "broadcast_start": "2014-07-10",
+      "broadcast_end": "2014-09-11",
+      "studio": "SILVER LINK.",
+      "source_url": "https://anilist.co/anime/20467",
+      "adaptation_source": "manga"
     },
     {
       "work_id": "cefa18bd5a0238eaf39e15b85",

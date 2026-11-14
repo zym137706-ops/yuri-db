@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T19:11:26.316222+00:00",
+  "generated_at": "2026-11-14T01:16:06.709395+00:00",
   "since_days": 7,
   "keywords": [
     "百合",
@@ -10,7 +10,19 @@
     "yuri",
     "gl"
   ],
-  "count": 0,
+  "count": 1,
   "anime_announcement_candidates": 0,
-  "items": []
+  "items": [
+    {
+      "source_id": "ln_web_action_prtimes",
+      "source_label": "PR TIMES",
+      "feed_kind": "press_release",
+      "title": "新百合丘オーパ、神奈川県「かながわＳＤＧｓパートナー」に登録",
+      "url": "https://prtimes.jp/main/html/rd/p/000000067.000159495.html",
+      "published_at": null,
+      "is_anime_announcement": false,
+      "retrieved_at": "2026-11-14T01:16:06.707886+00:00",
+      "feed_url": "https://prtimes.jp/index.rdf"
+    }
+  ]
 }

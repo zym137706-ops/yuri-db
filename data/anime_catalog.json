@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T19:12:30.388436+00:00",
+  "generated_at": "2026-11-14T01:17:06.827601+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -10285,6 +10285,61 @@
       "related_work_slug": null
     },
     {
+      "id": "ae9858e4281daa47f63b11b19",
+      "slug": "bang-dream-it-s-mygo",
+      "anilist_id": 163571,
+      "mal_id": 54959,
+      "title_ja": "BanG Dream! It's MyGO!!!!!",
+      "title_romaji": "BanG Dream! It's MyGO!!!!!",
+      "title_en": "BanG Dream! It's MyGO!!!!!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "other",
+      "status": "finished",
+      "start_date": "2023-06-29",
+      "end_date": "2023-09-14",
+      "season": "summer",
+      "season_year": 2023,
+      "episode_count": 13,
+      "episode_duration_min": 24,
+      "studios": [
+        "SANZIGEN"
+      ],
+      "main_cast": [
+        {
+          "character": "千早愛音",
+          "voice_actor": "立石凛"
+        },
+        {
+          "character": "高松燈",
+          "voice_actor": "羊宮妃那"
+        },
+        {
+          "character": "椎名立希",
+          "voice_actor": "林鼓子"
+        },
+        {
+          "character": "長崎そよ",
+          "voice_actor": "小日向美香"
+        },
+        {
+          "character": "要楽奈",
+          "voice_actor": "青木陽菜"
+        }
+      ],
+      "average_score": 82,
+      "popularity": 23088,
+      "yuri_tag_rank": 66,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163571-Atkvuzh1A1Ip.png",
+      "cover_source_url": "https://anilist.co/anime/163571",
+      "source_url": "https://anilist.co/anime/163571",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "afed70ce599e926de03ef12cf",
       "slug": "endro",
       "anilist_id": 103301,
@@ -10755,61 +10810,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99614-vINlftW9M3Xl.jpg",
       "cover_source_url": "https://anilist.co/anime/99614",
       "source_url": "https://anilist.co/anime/99614",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "ae9858e4281daa47f63b11b19",
-      "slug": "bang-dream-it-s-mygo",
-      "anilist_id": 163571,
-      "mal_id": 54959,
-      "title_ja": "BanG Dream! It's MyGO!!!!!",
-      "title_romaji": "BanG Dream! It's MyGO!!!!!",
-      "title_en": "BanG Dream! It's MyGO!!!!!",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "other",
-      "status": "finished",
-      "start_date": "2023-06-29",
-      "end_date": "2023-09-14",
-      "season": "summer",
-      "season_year": 2023,
-      "episode_count": 13,
-      "episode_duration_min": 24,
-      "studios": [
-        "SANZIGEN"
-      ],
-      "main_cast": [
-        {
-          "character": "千早愛音",
-          "voice_actor": "立石凛"
-        },
-        {
-          "character": "高松燈",
-          "voice_actor": "羊宮妃那"
-        },
-        {
-          "character": "椎名立希",
-          "voice_actor": "林鼓子"
-        },
-        {
-          "character": "長崎そよ",
-          "voice_actor": "小日向美香"
-        },
-        {
-          "character": "要楽奈",
-          "voice_actor": "青木陽菜"
-        }
-      ],
-      "average_score": 82,
-      "popularity": 23088,
-      "yuri_tag_rank": 65,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163571-Atkvuzh1A1Ip.png",
-      "cover_source_url": "https://anilist.co/anime/163571",
-      "source_url": "https://anilist.co/anime/163571",
       "related_work_id": null,
       "related_work_slug": null
     },

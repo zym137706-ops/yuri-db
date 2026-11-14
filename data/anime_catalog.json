@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T01:17:06.827601+00:00",
+  "generated_at": "2026-11-14T09:49:06.149417+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -777,7 +777,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 57846,
+      "popularity": 57877,
       "yuri_tag_rank": 98,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -918,7 +918,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 24157,
+      "popularity": 24172,
       "yuri_tag_rank": 97,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1051,7 +1051,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 60222,
+      "popularity": 60260,
       "yuri_tag_rank": 96,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1094,7 +1094,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 35441,
+      "popularity": 35597,
       "yuri_tag_rank": 96,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1471,7 +1471,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 8244,
+      "popularity": 8256,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1616,7 +1616,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 1121,
+      "popularity": 1122,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1702,7 +1702,7 @@
         }
       ],
       "average_score": 82,
-      "popularity": 39164,
+      "popularity": 39210,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2140,20 +2140,43 @@
       "format": "tv",
       "adaptation_source": "manga",
       "status": "announced",
-      "start_date": null,
+      "start_date": "2027-01-01",
       "end_date": null,
       "season": null,
       "season_year": null,
       "episode_count": null,
       "episode_duration_min": null,
-      "studios": [],
-      "main_cast": [],
+      "studios": [
+        "Asahi Production"
+      ],
+      "main_cast": [
+        {
+          "character": "柊うてな",
+          "voice_actor": "和泉風花"
+        },
+        {
+          "character": "阿良河キウィ",
+          "voice_actor": "古賀葵"
+        },
+        {
+          "character": "杜乃こりす",
+          "voice_actor": "杉浦しおり"
+        },
+        {
+          "character": "姉母ネモ",
+          "voice_actor": "津田美波"
+        },
+        {
+          "character": "阿古屋真珠",
+          "voice_actor": "相坂優歌"
+        }
+      ],
       "average_score": null,
-      "popularity": 14263,
+      "popularity": 14267,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx182544-fbx8pqKrYSaL.jpg",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx182544-F8C9VLtD7Mtq.png",
       "cover_source_url": "https://anilist.co/anime/182544",
       "source_url": "https://anilist.co/anime/182544",
       "related_work_id": null,
@@ -2742,7 +2765,7 @@
         }
       ],
       "average_score": 84,
-      "popularity": 65971,
+      "popularity": 66033,
       "yuri_tag_rank": 87,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2880,7 +2903,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 29665,
+      "popularity": 29688,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4678,7 +4701,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 44916,
+      "popularity": 44936,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5691,7 +5714,7 @@
       ],
       "main_cast": [],
       "average_score": 61,
-      "popularity": 786,
+      "popularity": 787,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -6184,7 +6207,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 2836,
+      "popularity": 2839,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7842,7 +7865,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 3874,
+      "popularity": 3880,
       "yuri_tag_rank": 76,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7886,7 +7909,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 4448,
+      "popularity": 4468,
       "yuri_tag_rank": 76,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8762,7 +8785,7 @@
         }
       ],
       "average_score": 56,
-      "popularity": 6175,
+      "popularity": 6177,
       "yuri_tag_rank": 73,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9191,7 +9214,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 41819,
+      "popularity": 41846,
       "yuri_tag_rank": 71,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9446,7 +9469,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 4994,
+      "popularity": 5001,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10038,7 +10061,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 8671,
+      "popularity": 8675,
       "yuri_tag_rank": 68,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10147,8 +10170,8 @@
           "voice_actor": "一ノ瀬美空"
         }
       ],
-      "average_score": 65,
-      "popularity": 16130,
+      "average_score": 66,
+      "popularity": 16187,
       "yuri_tag_rank": 67,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10647,7 +10670,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 40518,
+      "popularity": 40528,
       "yuri_tag_rank": 66,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -10960,7 +10983,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 6961,
+      "popularity": 6967,
       "yuri_tag_rank": 65,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11055,7 +11078,7 @@
         }
       ],
       "average_score": 75,
-      "popularity": 4187,
+      "popularity": 4194,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11186,7 +11209,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 43181,
+      "popularity": 43216,
       "yuri_tag_rank": 63,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11227,7 +11250,7 @@
         }
       ],
       "average_score": null,
-      "popularity": 5164,
+      "popularity": 5171,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11532,7 +11555,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 2640,
+      "popularity": 2644,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11571,7 +11594,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 53378,
+      "popularity": 53417,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11625,6 +11648,49 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx98-rGddbbtcCuYP.jpg",
       "cover_source_url": "https://anilist.co/anime/98",
       "source_url": "https://anilist.co/anime/98",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a0250923797ed499cb238c3cb",
+      "slug": "kirio-fanclub",
+      "anilist_id": 181284,
+      "mal_id": 59835,
+      "title_ja": "霧尾ファンクラブ",
+      "title_romaji": "Kirio Fanclub",
+      "title_en": "Kirio Fan Club",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2026-04-03",
+      "end_date": "2026-06-19",
+      "season": "spring",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Satelight"
+      ],
+      "main_cast": [
+        {
+          "character": "三好藍美",
+          "voice_actor": "稗田寧々"
+        },
+        {
+          "character": "染谷波",
+          "voice_actor": "若山詩音"
+        }
+      ],
+      "average_score": 68,
+      "popularity": 10615,
+      "yuri_tag_rank": 62,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181284-JJafhd5gDT53.jpg",
+      "cover_source_url": "https://anilist.co/anime/181284",
+      "source_url": "https://anilist.co/anime/181284",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11790,49 +11856,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163078-akhThKoWpWOb.jpg",
       "cover_source_url": "https://anilist.co/anime/163078",
       "source_url": "https://anilist.co/anime/163078",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a0250923797ed499cb238c3cb",
-      "slug": "kirio-fanclub",
-      "anilist_id": 181284,
-      "mal_id": 59835,
-      "title_ja": "霧尾ファンクラブ",
-      "title_romaji": "Kirio Fanclub",
-      "title_en": "Kirio Fan Club",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2026-04-03",
-      "end_date": "2026-06-19",
-      "season": "spring",
-      "season_year": 2026,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Satelight"
-      ],
-      "main_cast": [
-        {
-          "character": "三好藍美",
-          "voice_actor": "稗田寧々"
-        },
-        {
-          "character": "染谷波",
-          "voice_actor": "若山詩音"
-        }
-      ],
-      "average_score": 68,
-      "popularity": 10609,
-      "yuri_tag_rank": 61,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181284-JJafhd5gDT53.jpg",
-      "cover_source_url": "https://anilist.co/anime/181284",
-      "source_url": "https://anilist.co/anime/181284",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -12123,6 +12146,49 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx6205-3waXg2FNaAFL.png",
       "cover_source_url": "https://anilist.co/anime/6205",
       "source_url": "https://anilist.co/anime/6205",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a750a0ce0eac78a846038ee10",
+      "slug": "sayonara-lara",
+      "anilist_id": 177637,
+      "mal_id": 58878,
+      "title_ja": "さよならララ",
+      "title_romaji": "Sayonara Lara",
+      "title_en": "Goodbye, Lara",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2026-07-06",
+      "end_date": "2026-09-21",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "Kinema Citrus"
+      ],
+      "main_cast": [
+        {
+          "character": "ララ",
+          "voice_actor": "菱川花菜"
+        },
+        {
+          "character": "大津茉里",
+          "voice_actor": "川石奈奈"
+        }
+      ],
+      "average_score": 76,
+      "popularity": 37273,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-dZ8hF93HzstV.jpg",
+      "cover_source_url": "https://anilist.co/anime/177637",
+      "source_url": "https://anilist.co/anime/177637",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -13122,7 +13188,7 @@
         }
       ],
       "average_score": 77,
-      "popularity": 29696,
+      "popularity": 29701,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13173,7 +13239,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 10088,
+      "popularity": 10096,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13358,7 +13424,7 @@
         }
       ],
       "average_score": 80,
-      "popularity": 45049,
+      "popularity": 45096,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13657,7 +13723,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12589,
+      "popularity": 12600,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14308,7 +14374,7 @@
         }
       ],
       "average_score": 64,
-      "popularity": 10693,
+      "popularity": 10699,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14523,49 +14589,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21639-tdDGBK68CQk0.jpg",
       "cover_source_url": "https://anilist.co/anime/21639",
       "source_url": "https://anilist.co/anime/21639",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a750a0ce0eac78a846038ee10",
-      "slug": "sayonara-lara",
-      "anilist_id": 177637,
-      "mal_id": 58878,
-      "title_ja": "さよならララ",
-      "title_romaji": "Sayonara Lara",
-      "title_en": "Goodbye, Lara",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2026-07-06",
-      "end_date": "2026-09-21",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "Kinema Citrus"
-      ],
-      "main_cast": [
-        {
-          "character": "ララ",
-          "voice_actor": "菱川花菜"
-        },
-        {
-          "character": "大津茉里",
-          "voice_actor": "川石奈奈"
-        }
-      ],
-      "average_score": 76,
-      "popularity": 37273,
-      "yuri_tag_rank": 57,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-dZ8hF93HzstV.jpg",
-      "cover_source_url": "https://anilist.co/anime/177637",
-      "source_url": "https://anilist.co/anime/177637",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -14885,7 +14908,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 51152,
+      "popularity": 51165,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14936,7 +14959,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 13951,
+      "popularity": 13964,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15073,7 +15096,7 @@
         }
       ],
       "average_score": 86,
-      "popularity": 31171,
+      "popularity": 31193,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15128,7 +15151,7 @@
         }
       ],
       "average_score": 66,
-      "popularity": 5043,
+      "popularity": 5045,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",

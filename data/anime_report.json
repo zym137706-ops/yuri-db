@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T01:17:06.993060+00:00",
+  "generated_at": "2026-11-14T09:49:06.330181+00:00",
   "total": 303,
   "by_format": {
     "tv": 180,
@@ -26,8 +26,8 @@
     "airing": 3
   },
   "by_year": {
-    "unknown": 5,
-    "2027": 5,
+    "unknown": 4,
+    "2027": 6,
     "2026": 23,
     "2025": 20,
     "2024": 17,
@@ -65,9 +65,9 @@
     "1973": 1,
     "1940": 1
   },
-  "with_studio": 275,
-  "with_cast": 286,
-  "with_start_date": 298,
+  "with_studio": 276,
+  "with_cast": 287,
+  "with_start_date": 299,
   "with_cover": 303,
   "announced_not_aired": 10,
   "movies": 35,

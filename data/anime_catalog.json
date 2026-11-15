@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:26:20.658177+00:00",
+  "generated_at": "2026-11-15T20:09:12.641588+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,15 +110,15 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 33,
-      "total": 883
+      "items": 35,
+      "total": 885
     }
   ],
-  "raw_fetched": 883,
+  "raw_fetched": 885,
   "dropped": {
     "adult": 400,
     "non_jp": 17,
-    "low_rank": 163,
+    "low_rank": 165,
     "no_title": 0
   },
   "total": 303,
@@ -401,7 +401,7 @@
         }
       ],
       "average_score": 68,
-      "popularity": 33029,
+      "popularity": 33041,
       "yuri_tag_rank": 100,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1384,7 +1384,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 16594,
+      "popularity": 16614,
       "yuri_tag_rank": 94,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -1788,7 +1788,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 22669,
+      "popularity": 22675,
       "yuri_tag_rank": 93,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2018,7 +2018,7 @@
         }
       ],
       "average_score": 59,
-      "popularity": 7354,
+      "popularity": 7356,
       "yuri_tag_rank": 92,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2546,7 +2546,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12435,
+      "popularity": 12440,
       "yuri_tag_rank": 88,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -2946,7 +2946,7 @@
         }
       ],
       "average_score": 83,
-      "popularity": 82696,
+      "popularity": 82734,
       "yuri_tag_rank": 86,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -3793,7 +3793,7 @@
         }
       ],
       "average_score": 59,
-      "popularity": 5192,
+      "popularity": 5193,
       "yuri_tag_rank": 83,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4181,7 +4181,7 @@
         }
       ],
       "average_score": 49,
-      "popularity": 2845,
+      "popularity": 2847,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -4568,7 +4568,7 @@
         }
       ],
       "average_score": 76,
-      "popularity": 5232,
+      "popularity": 5235,
       "yuri_tag_rank": 80,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5076,7 +5076,7 @@
         }
       ],
       "average_score": 57,
-      "popularity": 5632,
+      "popularity": 5635,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5268,7 +5268,7 @@
         }
       ],
       "average_score": 79,
-      "popularity": 22153,
+      "popularity": 22159,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -5612,7 +5612,7 @@
         }
       ],
       "average_score": 58,
-      "popularity": 1634,
+      "popularity": 1637,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7245,7 +7245,7 @@
         }
       ],
       "average_score": 73,
-      "popularity": 13209,
+      "popularity": 13213,
       "yuri_tag_rank": 79,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7382,7 +7382,7 @@
         }
       ],
       "average_score": 52,
-      "popularity": 4273,
+      "popularity": 4279,
       "yuri_tag_rank": 78,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7641,7 +7641,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 19743,
+      "popularity": 19747,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -7708,7 +7708,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 6719,
+      "popularity": 6722,
       "yuri_tag_rank": 77,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8380,7 +8380,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 29787,
+      "popularity": 29802,
       "yuri_tag_rank": 75,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -8926,6 +8926,65 @@
       "related_work_slug": null
     },
     {
+      "id": "a9990a2c8800adc1ef8abbaf7",
+      "slug": "mahou-shoujo-madokamagica-walpurgis-no-kaiten",
+      "anilist_id": 133007,
+      "mal_id": 48820,
+      "title_ja": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+      "title_romaji": "Mahou Shoujo Madoka☆Magica: Walpurgis no Kaiten",
+      "title_en": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "movie",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2026-08-28",
+      "end_date": "2026-08-28",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 1,
+      "episode_duration_min": 120,
+      "studios": [
+        "Shaft"
+      ],
+      "main_cast": [
+        {
+          "character": "鹿目まどか",
+          "voice_actor": "悠木碧"
+        },
+        {
+          "character": "暁美ほむら",
+          "voice_actor": "斎藤千和"
+        },
+        {
+          "character": "巴マミ",
+          "voice_actor": "水橋かおり"
+        },
+        {
+          "character": "美樹さやか",
+          "voice_actor": "喜多村英梨"
+        },
+        {
+          "character": "佐倉杏子",
+          "voice_actor": "野中藍"
+        },
+        {
+          "character": "キュゥべぇ",
+          "voice_actor": "加藤英美里"
+        }
+      ],
+      "average_score": 82,
+      "popularity": 51140,
+      "yuri_tag_rank": 73,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133007-5gOUXDvzxy9S.jpg",
+      "cover_source_url": "https://anilist.co/anime/133007",
+      "source_url": "https://anilist.co/anime/133007",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a8c32d7b75217be74032870a0",
       "slug": "akuma-no-riddle",
       "anilist_id": 19429,
@@ -9159,7 +9218,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 14286,
+      "popularity": 14289,
       "yuri_tag_rank": 72,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9359,7 +9418,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 14083,
+      "popularity": 14089,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -9512,72 +9571,13 @@
         }
       ],
       "average_score": 67,
-      "popularity": 9348,
+      "popularity": 9351,
       "yuri_tag_rank": 70,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx274-pFKbRi3Tg6PH.png",
       "cover_source_url": "https://anilist.co/anime/274",
       "source_url": "https://anilist.co/anime/274",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a9990a2c8800adc1ef8abbaf7",
-      "slug": "mahou-shoujo-madokamagica-walpurgis-no-kaiten",
-      "anilist_id": 133007,
-      "mal_id": 48820,
-      "title_ja": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-      "title_romaji": "Mahou Shoujo Madoka☆Magica: Walpurgis no Kaiten",
-      "title_en": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "movie",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2026-08-28",
-      "end_date": "2026-08-28",
-      "season": "summer",
-      "season_year": 2026,
-      "episode_count": 1,
-      "episode_duration_min": 120,
-      "studios": [
-        "Shaft"
-      ],
-      "main_cast": [
-        {
-          "character": "鹿目まどか",
-          "voice_actor": "悠木碧"
-        },
-        {
-          "character": "暁美ほむら",
-          "voice_actor": "斎藤千和"
-        },
-        {
-          "character": "巴マミ",
-          "voice_actor": "水橋かおり"
-        },
-        {
-          "character": "美樹さやか",
-          "voice_actor": "喜多村英梨"
-        },
-        {
-          "character": "佐倉杏子",
-          "voice_actor": "野中藍"
-        },
-        {
-          "character": "キュゥべぇ",
-          "voice_actor": "加藤英美里"
-        }
-      ],
-      "average_score": 82,
-      "popularity": 51140,
-      "yuri_tag_rank": 70,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133007-5gOUXDvzxy9S.jpg",
-      "cover_source_url": "https://anilist.co/anime/133007",
-      "source_url": "https://anilist.co/anime/133007",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11162,7 +11162,7 @@
         }
       ],
       "average_score": 71,
-      "popularity": 31038,
+      "popularity": 31048,
       "yuri_tag_rank": 64,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11293,7 +11293,7 @@
         }
       ],
       "average_score": 85,
-      "popularity": 212931,
+      "popularity": 213036,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11343,57 +11343,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21871-HHE1QjwHA6Op.png",
       "cover_source_url": "https://anilist.co/anime/21871",
       "source_url": "https://anilist.co/anime/21871",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "aa1e8646fb4fd389fd459f757",
-      "slug": "kill-la-kill",
-      "anilist_id": 18679,
-      "mal_id": 18679,
-      "title_ja": "キルラキル",
-      "title_romaji": "Kill la Kill",
-      "title_en": "Kill la Kill",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2013-10-04",
-      "end_date": "2014-03-28",
-      "season": "fall",
-      "season_year": 2013,
-      "episode_count": 24,
-      "episode_duration_min": 24,
-      "studios": [
-        "TRIGGER"
-      ],
-      "main_cast": [
-        {
-          "character": "纏流子",
-          "voice_actor": "小清水亜美"
-        },
-        {
-          "character": "鬼龍院皐月",
-          "voice_actor": "柚木涼香"
-        },
-        {
-          "character": "鮮血",
-          "voice_actor": "関俊彦"
-        },
-        {
-          "character": "満艦飾マコ",
-          "voice_actor": "洲崎綾"
-        }
-      ],
-      "average_score": 79,
-      "popularity": 421654,
-      "yuri_tag_rank": 62,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b18679-lbkq7iYESoFW.png",
-      "cover_source_url": "https://anilist.co/anime/18679",
-      "source_url": "https://anilist.co/anime/18679",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -11641,7 +11590,7 @@
         }
       ],
       "average_score": 69,
-      "popularity": 21778,
+      "popularity": 21781,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -11798,7 +11747,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 16307,
+      "popularity": 16318,
       "yuri_tag_rank": 62,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12002,7 +11951,7 @@
         }
       ],
       "average_score": 72,
-      "popularity": 21216,
+      "popularity": 21218,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -12453,13 +12402,64 @@
         }
       ],
       "average_score": 70,
-      "popularity": 8613,
+      "popularity": 8615,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx311-dSSdyz5d3hWb.jpg",
       "cover_source_url": "https://anilist.co/anime/311",
       "source_url": "https://anilist.co/anime/311",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "aa1e8646fb4fd389fd459f757",
+      "slug": "kill-la-kill",
+      "anilist_id": 18679,
+      "mal_id": 18679,
+      "title_ja": "キルラキル",
+      "title_romaji": "Kill la Kill",
+      "title_en": "Kill la Kill",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2013-10-04",
+      "end_date": "2014-03-28",
+      "season": "fall",
+      "season_year": 2013,
+      "episode_count": 24,
+      "episode_duration_min": 24,
+      "studios": [
+        "TRIGGER"
+      ],
+      "main_cast": [
+        {
+          "character": "纏流子",
+          "voice_actor": "小清水亜美"
+        },
+        {
+          "character": "鬼龍院皐月",
+          "voice_actor": "柚木涼香"
+        },
+        {
+          "character": "鮮血",
+          "voice_actor": "関俊彦"
+        },
+        {
+          "character": "満艦飾マコ",
+          "voice_actor": "洲崎綾"
+        }
+      ],
+      "average_score": 79,
+      "popularity": 421654,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b18679-lbkq7iYESoFW.png",
+      "cover_source_url": "https://anilist.co/anime/18679",
+      "source_url": "https://anilist.co/anime/18679",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -12802,7 +12802,7 @@
         }
       ],
       "average_score": 74,
-      "popularity": 26520,
+      "popularity": 26524,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -13003,7 +13003,7 @@
         }
       ],
       "average_score": 70,
-      "popularity": 12545,
+      "popularity": 12556,
       "yuri_tag_rank": 60,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -14810,7 +14810,7 @@
         }
       ],
       "average_score": 78,
-      "popularity": 33001,
+      "popularity": 33009,
       "yuri_tag_rank": 57,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15312,7 +15312,7 @@
         }
       ],
       "average_score": 63,
-      "popularity": 13451,
+      "popularity": 13454,
       "yuri_tag_rank": 56,
       "is_adult": false,
       "country_of_origin": "JP",
@@ -15441,7 +15441,7 @@
         }
       ],
       "average_score": 62,
-      "popularity": 11559,
+      "popularity": 11561,
       "yuri_tag_rank": 55,
       "is_adult": false,
       "country_of_origin": "JP",

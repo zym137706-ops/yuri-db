@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T00:45:20.549793+00:00",
-  "total": 1556,
-  "latest_run_entries": 0,
+  "generated_at": "2026-11-16T02:44:08.467215+00:00",
+  "total": 1564,
+  "latest_run_entries": 8,
   "entries": [
     {
       "entity_type": "work",
@@ -17118,6 +17118,94 @@
       "new_value": null,
       "source_id": null,
       "detected_at": "2026-11-09T02:41:41.140311+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cacd43eeeb87003da77927363",
+      "work_id": "cacd43eeeb87003da77927363",
+      "change_type": "created",
+      "field_name": null,
+      "old_value": null,
+      "new_value": "Show",
+      "source_id": "東立出版社 ThemeGL（百合姬系列）",
+      "detected_at": "2026-11-16T02:44:08.467215+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c803245e0ff2a71825a87b6e4",
+      "work_id": "c803245e0ff2a71825a87b6e4",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": "上伊那牡丹，醉姿如百合（首刷附錄版）",
+      "new_value": "上伊那牡丹，醉姿如百合（首刷限定版）",
+      "source_id": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1",
+      "detected_at": "2026-11-16T02:44:08.467215+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ceb935e35cf32a82ba1194443",
+      "work_id": "ceb935e35cf32a82ba1194443",
+      "change_type": "updated",
+      "field_name": "title_zh_tw",
+      "old_value": null,
+      "new_value": "比戀情更蔚藍",
+      "source_id": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1",
+      "detected_at": "2026-11-16T02:44:08.467215+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ceb935e35cf32a82ba1194443",
+      "work_id": "ceb935e35cf32a82ba1194443",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": null,
+      "new_value": "2",
+      "source_id": null,
+      "detected_at": "2026-11-16T02:44:08.467215+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ceb935e35cf32a82ba1194443",
+      "work_id": "ceb935e35cf32a82ba1194443",
+      "change_type": "updated",
+      "field_name": "publisher_ja",
+      "old_value": "ホーム社",
+      "new_value": "一迅社",
+      "source_id": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1",
+      "detected_at": "2026-11-16T02:44:08.467215+00:00"
+    },
+    {
+      "entity_type": "volume",
+      "entity_id": "ceb935e35cf32a82ba1194443:zh_tw:2",
+      "work_id": "ceb935e35cf32a82ba1194443",
+      "change_type": "created",
+      "field_name": "zh_tw_volume",
+      "old_value": null,
+      "new_value": "v2 ISBN=9786260253745",
+      "source_id": null,
+      "detected_at": "2026-11-16T02:44:08.467215+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "ca299a6f82d5f01721a53b5b1",
+      "work_id": "ca299a6f82d5f01721a53b5b1",
+      "change_type": "created",
+      "field_name": null,
+      "old_value": null,
+      "new_value": "江口さんちの純情サキュバス",
+      "source_id": "東立出版社 ThemeGL（百合姬系列）",
+      "detected_at": "2026-11-16T02:44:08.467215+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c35b3171f88ae5289e6527132",
+      "work_id": "c35b3171f88ae5289e6527132",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "ゆりゆりぱにっく～尊すぎる事案が発生しています！～",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-11-16T02:44:08.467215+00:00"
     }
   ]
 }

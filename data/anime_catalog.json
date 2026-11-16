@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T20:09:12.641588+00:00",
+  "generated_at": "2026-11-16T00:45:19.241455+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -2340,6 +2340,73 @@
       "related_work_slug": null
     },
     {
+      "id": "ad40e306a8b192fa4db8f396e",
+      "slug": "simoun",
+      "anilist_id": 879,
+      "mal_id": 879,
+      "title_ja": "シムーン",
+      "title_romaji": "Simoun",
+      "title_en": "Simoun",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2006-04-03",
+      "end_date": "2006-09-25",
+      "season": "spring",
+      "season_year": 2006,
+      "episode_count": 26,
+      "episode_duration_min": 23,
+      "studios": [
+        "Studio DEEN"
+      ],
+      "main_cast": [
+        {
+          "character": "アーエル",
+          "voice_actor": "新野美知"
+        },
+        {
+          "character": "ネヴィリル",
+          "voice_actor": "高橋理恵子"
+        },
+        {
+          "character": "モリナス",
+          "voice_actor": "水樹奈々"
+        },
+        {
+          "character": "パライエッタ",
+          "voice_actor": "小清水亜美"
+        },
+        {
+          "character": "カイム",
+          "voice_actor": "細越 細越"
+        },
+        {
+          "character": "アルティ",
+          "voice_actor": "豊口めぐみ"
+        },
+        {
+          "character": "フロエ",
+          "voice_actor": "相澤みちる"
+        },
+        {
+          "character": "ロードレアモン",
+          "voice_actor": "高橋美佳子"
+        }
+      ],
+      "average_score": 70,
+      "popularity": 12440,
+      "yuri_tag_rank": 89,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx879-Y1AMwyonCMQf.jpg",
+      "cover_source_url": "https://anilist.co/anime/879",
+      "source_url": "https://anilist.co/anime/879",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a08baa78df720e72270b8ef72",
       "slug": "saki",
       "anilist_id": 5671,
@@ -2488,73 +2555,6 @@
       "source_url": "https://anilist.co/anime/159808",
       "related_work_id": "c506959c2949ba96b18dabc25",
       "related_work_slug": "w-506959c294"
-    },
-    {
-      "id": "ad40e306a8b192fa4db8f396e",
-      "slug": "simoun",
-      "anilist_id": 879,
-      "mal_id": 879,
-      "title_ja": "シムーン",
-      "title_romaji": "Simoun",
-      "title_en": "Simoun",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2006-04-03",
-      "end_date": "2006-09-25",
-      "season": "spring",
-      "season_year": 2006,
-      "episode_count": 26,
-      "episode_duration_min": 23,
-      "studios": [
-        "Studio DEEN"
-      ],
-      "main_cast": [
-        {
-          "character": "アーエル",
-          "voice_actor": "新野美知"
-        },
-        {
-          "character": "ネヴィリル",
-          "voice_actor": "高橋理恵子"
-        },
-        {
-          "character": "モリナス",
-          "voice_actor": "水樹奈々"
-        },
-        {
-          "character": "パライエッタ",
-          "voice_actor": "小清水亜美"
-        },
-        {
-          "character": "カイム",
-          "voice_actor": "細越 細越"
-        },
-        {
-          "character": "アルティ",
-          "voice_actor": "豊口めぐみ"
-        },
-        {
-          "character": "フロエ",
-          "voice_actor": "相澤みちる"
-        },
-        {
-          "character": "ロードレアモン",
-          "voice_actor": "高橋美佳子"
-        }
-      ],
-      "average_score": 70,
-      "popularity": 12440,
-      "yuri_tag_rank": 88,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx879-Y1AMwyonCMQf.jpg",
-      "cover_source_url": "https://anilist.co/anime/879",
-      "source_url": "https://anilist.co/anime/879",
-      "related_work_id": null,
-      "related_work_slug": null
     },
     {
       "id": "aeb697a7023642997f1ff6d3a",
@@ -10984,6 +10984,49 @@
       "related_work_slug": null
     },
     {
+      "id": "a2953faef3056c4da1739a91d",
+      "slug": "lycoris-recoil-friends-are-thieves-of-time",
+      "anilist_id": 179706,
+      "mal_id": 59369,
+      "title_ja": "リコリス・リコイル Friends are thieves of time.",
+      "title_romaji": "Lycoris Recoil: Friends are thieves of time.",
+      "title_en": "Lycoris Recoil -Friends are thieves of time.-",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "ona",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2025-04-16",
+      "end_date": "2025-05-21",
+      "season": "spring",
+      "season_year": 2025,
+      "episode_count": 6,
+      "episode_duration_min": 4,
+      "studios": [
+        "A-1 Pictures"
+      ],
+      "main_cast": [
+        {
+          "character": "錦木千束",
+          "voice_actor": "安済知佳"
+        },
+        {
+          "character": "井ノ上たきな",
+          "voice_actor": "若山詩音"
+        }
+      ],
+      "average_score": 77,
+      "popularity": 29713,
+      "yuri_tag_rank": 65,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx179706-NvVrmMxnDatB.jpg",
+      "cover_source_url": "https://anilist.co/anime/179706",
+      "source_url": "https://anilist.co/anime/179706",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a32cafdc2c66cd1cf57fc26b3",
       "slug": "meitantei-precure",
       "anilist_id": 202957,
@@ -13254,49 +13297,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx133891-VzjX5rquZqd0.png",
       "cover_source_url": "https://anilist.co/anime/133891",
       "source_url": "https://anilist.co/anime/133891",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a2953faef3056c4da1739a91d",
-      "slug": "lycoris-recoil-friends-are-thieves-of-time",
-      "anilist_id": 179706,
-      "mal_id": 59369,
-      "title_ja": "リコリス・リコイル Friends are thieves of time.",
-      "title_romaji": "Lycoris Recoil: Friends are thieves of time.",
-      "title_en": "Lycoris Recoil -Friends are thieves of time.-",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "ona",
-      "adaptation_source": "original",
-      "status": "finished",
-      "start_date": "2025-04-16",
-      "end_date": "2025-05-21",
-      "season": "spring",
-      "season_year": 2025,
-      "episode_count": 6,
-      "episode_duration_min": 4,
-      "studios": [
-        "A-1 Pictures"
-      ],
-      "main_cast": [
-        {
-          "character": "錦木千束",
-          "voice_actor": "安済知佳"
-        },
-        {
-          "character": "井ノ上たきな",
-          "voice_actor": "若山詩音"
-        }
-      ],
-      "average_score": 77,
-      "popularity": 29713,
-      "yuri_tag_rank": 60,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx179706-NvVrmMxnDatB.jpg",
-      "cover_source_url": "https://anilist.co/anime/179706",
-      "source_url": "https://anilist.co/anime/179706",
       "related_work_id": null,
       "related_work_slug": null
     },

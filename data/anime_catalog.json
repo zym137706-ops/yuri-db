@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T21:38:36.045084+00:00",
+  "generated_at": "2026-11-17T06:29:44.601169+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -10384,11 +10384,35 @@
       "studios": [],
       "main_cast": [
         {
+          "character": "椎名立希",
+          "voice_actor": null
+        },
+        {
+          "character": "要楽奈",
+          "voice_actor": null
+        },
+        {
+          "character": "長崎そよ",
+          "voice_actor": null
+        },
+        {
+          "character": "千早愛音",
+          "voice_actor": null
+        },
+        {
           "character": "高松燈",
           "voice_actor": null
         },
         {
+          "character": "豊川祥子",
+          "voice_actor": null
+        },
+        {
           "character": "三角初華",
+          "voice_actor": null
+        },
+        {
+          "character": "若葉睦",
           "voice_actor": null
         }
       ],

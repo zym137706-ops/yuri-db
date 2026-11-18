@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T18:09:20.708391+00:00",
+  "generated_at": "2026-11-18T02:44:50.480555+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,22 +110,22 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 35,
-      "total": 885
+      "items": 36,
+      "total": 886
     }
   ],
-  "raw_fetched": 885,
+  "raw_fetched": 886,
   "dropped": {
     "adult": 400,
     "non_jp": 17,
-    "low_rank": 167,
+    "low_rank": 166,
     "no_title": 0
   },
-  "total": 301,
+  "total": 303,
   "distribution": {
     "format": {
-      "tv": 178,
-      "movie": 35,
+      "tv": 179,
+      "movie": 36,
       "ova": 27,
       "ona": 24,
       "special": 20,
@@ -134,8 +134,8 @@
       "other": 2
     },
     "adaptation_source": {
-      "manga": 112,
-      "original": 108,
+      "manga": 113,
+      "original": 109,
       "other": 31,
       "light_novel": 31,
       "game": 9,
@@ -143,7 +143,7 @@
       "visual_novel": 4
     },
     "status": {
-      "finished": 288,
+      "finished": 290,
       "announced": 10,
       "airing": 3
     }
@@ -6265,6 +6265,69 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21697-BKgWaeZjrWZq.jpg",
       "cover_source_url": "https://anilist.co/anime/21697",
       "source_url": "https://anilist.co/anime/21697",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a4b5b20e5df6083e2b5bc43eb",
+      "slug": "mahou-shoujo-madokamagica-hangyaku-no-monogatari",
+      "anilist_id": 11981,
+      "mal_id": 11981,
+      "title_ja": "劇場版 魔法少女まどか☆マギカ 叛逆の物語",
+      "title_romaji": "Mahou Shoujo Madoka☆Magica: Hangyaku no Monogatari",
+      "title_en": "Puella Magi Madoka Magica the Movie -Rebellion-",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "movie",
+      "adaptation_source": "original",
+      "status": "finished",
+      "start_date": "2013-10-26",
+      "end_date": "2013-10-26",
+      "season": "fall",
+      "season_year": 2013,
+      "episode_count": 1,
+      "episode_duration_min": 118,
+      "studios": [
+        "Shaft"
+      ],
+      "main_cast": [
+        {
+          "character": "鹿目まどか",
+          "voice_actor": "悠木碧"
+        },
+        {
+          "character": "暁美ほむら",
+          "voice_actor": "斎藤千和"
+        },
+        {
+          "character": "巴マミ",
+          "voice_actor": "水橋かおり"
+        },
+        {
+          "character": "美樹さやか",
+          "voice_actor": "喜多村英梨"
+        },
+        {
+          "character": "キュゥべぇ",
+          "voice_actor": "加藤英美里"
+        },
+        {
+          "character": "佐倉杏子",
+          "voice_actor": "野中藍"
+        },
+        {
+          "character": "百江なぎさ",
+          "voice_actor": "阿澄佳奈"
+        }
+      ],
+      "average_score": 84,
+      "popularity": 122270,
+      "yuri_tag_rank": 79,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b11981-koz1IoISs3eU.jpg",
+      "cover_source_url": "https://anilist.co/anime/11981",
+      "source_url": "https://anilist.co/anime/11981",
       "related_work_id": null,
       "related_work_slug": null
     },
@@ -14888,6 +14951,49 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196356-2TNt2b9tu0jm.jpg",
       "cover_source_url": "https://anilist.co/anime/196356",
       "source_url": "https://anilist.co/anime/196356",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
+      "id": "a34ab7d44f6a311314ab0dadf",
+      "slug": "kore-kaite-shine",
+      "anilist_id": 188525,
+      "mal_id": 61280,
+      "title_ja": "これ描いて死ね",
+      "title_romaji": "Kore Kaite Shine",
+      "title_en": "Draw This, Then Die!",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2026-07-03",
+      "end_date": "2026-09-25",
+      "season": "summer",
+      "season_year": 2026,
+      "episode_count": 12,
+      "episode_duration_min": 23,
+      "studios": [
+        "Shin-Ei Animation"
+      ],
+      "main_cast": [
+        {
+          "character": "安海相",
+          "voice_actor": "関根明良"
+        },
+        {
+          "character": "手島零",
+          "voice_actor": "早見沙織"
+        }
+      ],
+      "average_score": 81,
+      "popularity": 14195,
+      "yuri_tag_rank": 56,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188525-uWhw4rQcqOyF.jpg",
+      "cover_source_url": "https://anilist.co/anime/188525",
+      "source_url": "https://anilist.co/anime/188525",
       "related_work_id": null,
       "related_work_slug": null
     },

@@ -1,0 +1,2745 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF xml:language="ja" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/"><channel rdf:about="https://prtimes.jp/index.rdf">
+<title>PR TIMES</title>
+<link>https://prtimes.jp</link>
+<dc:create>info@prtimes.jp</dc:create>
+<dc:rights>Copyright (c) PR TIMES Inc. All Rights Reserved.</dc:rights>
+<dc:date>2026-11-20T19:45:22+09:00</dc:date>
+<dc:language>ja-JP</dc:language><description>PR TIMES - RSS Release Feed.</description><items>
+<rdf:Seq>
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000122.000028096.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000393.000132788.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000392.000132788.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000018.000177153.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000020.000170226.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000243.000121822.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000680.000036256.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000079.000074177.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000373.000008638.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000026.000170226.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000045.000050277.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000080.000159968.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000912.000058495.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000037.000050277.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000734.000052709.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000046.000050277.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000165.000024818.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000009.000175620.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000582.000012767.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000047.000050277.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000019.000170100.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000055.000118467.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000173.000054957.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000087.000104020.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000143.000077879.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000002079.000042328.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000009.000183164.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000004.000138678.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000418.000094539.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000047.000095869.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000134.000078795.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000012.000101094.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000363.000068315.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000001.000195091.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000054.000116037.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000168.000175846.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000007.000193143.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000105.000056572.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000013.000170679.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000042.000050277.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000027.000160865.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000293.000145928.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000658.000032702.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000001017.000030942.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000015.000177189.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000817.000034873.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000008.000183796.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000010.000114670.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000004.000187768.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000027.000159800.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000019.000153999.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000034.000159022.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000038.000050277.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000332.000030850.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000224.000131068.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000001.000194723.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000306.000039659.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000888.000014333.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000096.000086476.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000094.000036921.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000071.000012366.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000131.000163436.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000376.000039188.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000290.000014551.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000071.000079152.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000092.000072250.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000197.000051859.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000019.000152742.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000037.000141967.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000167.000175846.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000913.000058495.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000104.000022340.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000825.000035169.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000146.000060549.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000183.000066773.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000001015.000030942.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000041.000163417.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000245.000033579.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000084.000181531.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000001808.000073913.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000061.000144908.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000057.000169819.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000017.000173448.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000008.000168131.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000429.000091052.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000300.000005296.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000368.000021661.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000011.000155771.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000551.000055543.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000513.000045277.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000070.000185093.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000005607.000000136.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000001815.000017808.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000147.000011879.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000045.000056060.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000013.000193084.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000010.000119684.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000103.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000060.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000066.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000073.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000074.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000076.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000077.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000081.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000083.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000031.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000034.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000035.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000037.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000042.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000043.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000046.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000048.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000049.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000051.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000052.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000012.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000014.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000016.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000019.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000021.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000025.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000010.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000022.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000027.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000028.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000029.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000023.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000017.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000009.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000008.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000007.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000005.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000003.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000030.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000026.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000020.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000018.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000015.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000013.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000011.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000020.000122609.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000045.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000044.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000041.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000038.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000036.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000033.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000084.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000082.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000072.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000070.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000069.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000068.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000067.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000059.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000058.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000056.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000055.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000054.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000209.000018154.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000101.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000102.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000104.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000105.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000106.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000107.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000108.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000028.000156783.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000090.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000092.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000093.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000094.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000096.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000097.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000098.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000295.000018086.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000085.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000086.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000087.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000088.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000089.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000130.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000131.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000120.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000122.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000123.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000124.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000125.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000126.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000127.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000129.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000194.000087924.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000111.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000109.000025378.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000333.000027522.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000001061.000017692.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000109.000160429.html" />
+<rdf:li rdf:resource="https://prtimes.jp/main/html/rd/p/000000249.000041771.html" />
+</rdf:Seq>
+</items>
+</channel>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000122.000028096.html">
+<title>総務省後援「ASPIC AI・クラウドアワード2026」で、ミライAIがAI支援業務系ASP・SaaS部門「AX貢献賞」を受賞</title>
+<link>https://prtimes.jp/main/html/rd/p/000000122.000028096.html</link>
+<description>[株式会社ソフツー]
+[画像1: https://prcdn.freetls.fastly.net/release_image/28096/122/28096-122-16f40c59788624d8c27858def0c6bac8-2730x1536.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社ソフツー</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T19:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000393.000132788.html">
+<title>【TRYFIRE】3段階の周波数切替に対応した超音波式害虫・害獣対策器が新登場！ブラックフライデー期間限定39％OFFで販売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000393.000132788.html</link>
+<description>[九洋洲 Joychou 株式会社]
+本製品は、蚊やハエなどの飛行害虫、ゴキブリやアリなどの這う害虫、ネズミなどの害獣に合わせて、3種類の周波数モードを切り替えられる室内用対策アイテムです。
+薬剤を使用しない超音波方式を採用し、コンセン...</description>
+<dc:corp>九洋洲 Joychou 株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T19:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000392.000132788.html">
+<title>【Perano】ペット専用モード搭載の新型空気清浄機が新登場！ブラックフライデー期間限定で35％OFFの特別価格に</title>
+<link>https://prtimes.jp/main/html/rd/p/000000392.000132788.html</link>
+<description>[九洋洲 Joychou 株式会社]
+本製品は、PM2.5センサーによる空気の状態の検知と自動風量調整、両面吸気設計、H13 HEPAフィルターを含む5層構造フィルターなどを採用。ペットの毛や生活臭、花粉、ハウスダストなどが気になるご家庭の空気環境...</description>
+<dc:corp>九洋洲 Joychou 株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:42:20+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000018.000177153.html">
+<title>株式会社Co-Labo AI、生成AIに会社の言葉を教える「オントロジー」の製造業向け解説を公開</title>
+<link>https://prtimes.jp/main/html/rd/p/000000018.000177153.html</link>
+<description>[株式会社Co-Labo AI]
+株式会社Co-Labo AI（本社：東京都中央区、代表取締役CEO：大塚空来）は、2026年11月20日（金）、生成AIに会社ならではの言葉と文脈を正しく伝えるための考え方「オントロジー」について、製造業の経営者・管理職...</description>
+<dc:corp>株式会社Co-Labo AI</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:42:20+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000020.000170226.html">
+<title>株式会社Rabbitly、株式会社Smile IP Consultingが2026年11月16日に公開した、AI時代の知財基盤『SINGULON』のシステム開発を担当！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000020.000170226.html</link>
+<description>[株式会社Rabbitly]
+[画像: https://prcdn.freetls.fastly.net/release_image/170226/20/170226-20-71bab0dbee23b5840c8c7b173bb9eb4f-1440x960.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>株式会社Rabbitly</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:42:20+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000243.000121822.html">
+<title>「final福袋2027」いよいよ明日11/21（土）正午より販売開始！ 発売に先がけ本日11/20 18時より福袋ごとの個別ページを公開！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000243.000121822.html</link>
+<description>[株式会社final]
+[画像1: https://prcdn.freetls.fastly.net/release_image/121822/243/121822-243-b8bda70b043ab5266da9355c33257e6e-2712x2000.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bound...</description>
+<dc:corp>株式会社final</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:42:20+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000680.000036256.html">
+<title>会話の内容の文字起こしやAIエージェントでのタスク割り当てができる、Mac版とWindows版の「Vocciデスクトップアプリ」を公開</title>
+<link>https://prtimes.jp/main/html/rd/p/000000680.000036256.html</link>
+<description>[フォーカルポイント株式会社]
+[画像1: https://prcdn.freetls.fastly.net/release_image/36256/680/36256-680-04eb59f1c41424de4be3cdb63924ef5b-800x450.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>フォーカルポイント株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:42:20+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000079.000074177.html">
+<title>物価高で注目の「食事補助」。福利厚生は“毎日使う”時代へ</title>
+<link>https://prtimes.jp/main/html/rd/p/000000079.000074177.html</link>
+<description>[株式会社miive]
+株式会社miive（所在地：東京都渋谷区、代表取締役：栗田 廉）は、食事補助を切り口に、これからの福利厚生のあり方を考える動画「福利厚生は“毎日使う”時代へ」を、TBS CROSS DIG with Bloombergにて公開しまし...</description>
+<dc:corp>株式会社miive</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:15:45+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000373.000008638.html">
+<title>【ブラックフライデー 2026開催】ヘアアイロンやヘルスケア炊飯器など人気家電が勢揃い</title>
+<link>https://prtimes.jp/main/html/rd/p/000000373.000008638.html</link>
+<description>[Areti株式会社]
+[画像1: https://prcdn.freetls.fastly.net/release_image/8638/373/8638-373-f41523d2d8fdf9395a38302995718e3b-1000x600.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;amp...</description>
+<dc:corp>Areti株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:15:45+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000026.000170226.html">
+<title>【株式会社Rabbitly】2027年1月13日～15日に有明GYM-EXにて開催される『TOKYO DIGICONX』にて、３D型メタバースオフィスやAI SaaSツールなどを展示予定！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000026.000170226.html</link>
+<description>[株式会社Rabbitly]
+[画像1: https://prcdn.freetls.fastly.net/release_image/170226/26/170226-26-ef93dd8e5f961160254fe1273d107500-2810x2070.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社Rabbitly</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:15:45+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000045.000050277.html">
+<title>【11月22日はいい夫婦の日】手作りドリンクで夫婦の時間をもっと豊かに。ミキサー「MM-20」新登場。</title>
+<link>https://prtimes.jp/main/html/rd/p/000000045.000050277.html</link>
+<description>[株式会社太知ホールディングス]
+[画像1: https://prcdn.freetls.fastly.net/release_image/50277/45/50277-45-dcc1d890120097a23bb451dd7b37aa33-3900x2600.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>株式会社太知ホールディングス</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:15:45+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000080.000159968.html">
+<title>プリペアード　評判が高いAI通話録音・自動要約サービス「RecACE plus」、カスハラ対応にも活用できるモデルケース企業を兵庫県で初募集</title>
+<link>https://prtimes.jp/main/html/rd/p/000000080.000159968.html</link>
+<description>[株式会社プリペアード]
+[画像1: https://prcdn.freetls.fastly.net/release_image/159968/80/159968-80-065eb29cc6e636a4bea47c954bd2ad95-1672x941.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>株式会社プリペアード</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:15:45+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000912.000058495.html">
+<title>【スマホアクセサリー業界】対応機種数/コラボ数/デザイン数でNo1を誇るcaseplayにて「はなえぴこ」さんが描くLittle Ghost Friendsのデザイン×170機種以上で販売中！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000912.000058495.html</link>
+<description>[株式会社FOX]
+[画像1: https://prcdn.freetls.fastly.net/release_image/58495/912/58495-912-326cdde810feb66a37e72a0666544df9-1600x880.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>株式会社FOX</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:15:45+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000037.000050277.html">
+<title>11月23日は勤労感謝の日！「cafe anabas」から待望のコーヒーメーカー【COF-50】が登場！毎日の一杯をもっと手軽に</title>
+<link>https://prtimes.jp/main/html/rd/p/000000037.000050277.html</link>
+<description>[株式会社太知ホールディングス]
+
+株式会社太知ホールディングスが展開する調理家電ブランド「cafe anabas（カフェ アナバス）」から、シンプルで使いやすいドリップ式コーヒーメーカーが登場しました。
+これまでさまざまな調理家電を展開してき...</description>
+<dc:corp>株式会社太知ホールディングス</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:15:45+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000734.000052709.html">
+<title>声を荒々しく歪ませる拡張ソフト『Voice Drive』新発売！　12月4日まで30%OFF！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000734.000052709.html</link>
+<description>[クリプトン・フューチャー・メディア株式会社]
+[動画: https://www.youtube.com/watch?v=z_W-z2NC_wI ]
+クリプトン・フューチャー・メディア株式会社（本社：北海道札幌市、代表取締役：伊藤博之）は、2026年11月20日（金）より、声を荒々しく歪ませるプラグイ...</description>
+<dc:corp>クリプトン・フューチャー・メディア株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:15:45+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000046.000050277.html">
+<title>【11月22日はいい夫婦の日】料理はこれ一台で完結！ブレンダーセット「MM-BD3」新登場。</title>
+<link>https://prtimes.jp/main/html/rd/p/000000046.000050277.html</link>
+<description>[株式会社太知ホールディングス]
+[画像1: https://prcdn.freetls.fastly.net/release_image/50277/46/50277-46-99c3504f9449e3701a1b3b7b3f6255ba-3900x3213.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>株式会社太知ホールディングス</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000165.000024818.html">
+<title>第13回 Live2D Creative Awards ファイナリスト24名を公開！表彰式は12月11日(金)開催の『alive 2026』にて実施！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000165.000024818.html</link>
+<description>[Live2D]
+2Dイラストに立体的なアニメーションを加える表現技術「Live2D」の開発を行う株式会社Live2D（本社：東京都新宿区、代表取締役：中城哲也、以下、Live2D社）は、Live2Dを使ったオリジナル作品のクオリティを競い...</description>
+<dc:corp>Live2D</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000009.000175620.html">
+<title>PMの市場価値が毎月わかるサービス「ツメトギ」をリリース。登録した経歴をもとに、経験を求める求人の年収相場と変化を毎月可視化</title>
+<link>https://prtimes.jp/main/html/rd/p/000000009.000175620.html</link>
+<description>[株式会社スナネコ]
+株式会社スナネコ（本社：東京都江東区）は、プロジェクトマネジメント・プロダクトマネジメント関連職（以下、PM）の市場価値が毎月わかるサービス「ツメトギ」（https://tsumetogi.com ）を、2026年11月20日に...</description>
+<dc:corp>株式会社スナネコ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T18:45:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000582.000012767.html">
+<title>圧巻のホームシアター体験を叶えるJBL完全ワイヤレスサラウンドシステム フラッグシップモデル「JBL BAR 1300MK2」が「マイベストアワード2026」を受賞</title>
+<link>https://prtimes.jp/main/html/rd/p/000000582.000012767.html</link>
+<description>[ハーマンインターナショナル株式会社]
+　ハーマンインターナショナル株式会社（本社：東京都千代田区、代表取締役：桑原拓磨）は、米国カリフォルニア発祥の世界最大級オーディオブランド「JBL」が展開する完全ワイヤレスサラウンドシステムのフラッグ...</description>
+<dc:corp>ハーマンインターナショナル株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:42:18+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000047.000050277.html">
+<title>【11月22日はいい夫婦の日】毎日のお掃除をもっと手軽に。スティッククリーナー「SSC-120」で快適な暮らしをサポート。</title>
+<link>https://prtimes.jp/main/html/rd/p/000000047.000050277.html</link>
+<description>[株式会社太知ホールディングス]
+[画像1: https://prcdn.freetls.fastly.net/release_image/50277/47/50277-47-e0852f10af4b7905b60ba24edf8c0917-3900x2600.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>株式会社太知ホールディングス</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:42:18+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000019.000170100.html">
+<title>Nyx Foundation、ビットバンクとAIエージェントによる暗号資産取引の信頼性向上に向けた共同研究契約を締結</title>
+<link>https://prtimes.jp/main/html/rd/p/000000019.000170100.html</link>
+<description>[Nyx Foundation]
+[画像1: https://prcdn.freetls.fastly.net/release_image/170100/19/170100-19-15f63310fc654eab8a19f930aa044427-1672x941.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>Nyx Foundation</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000055.000118467.html">
+<title>株式会社フィッシュパス、福井大学と共同でAIと複数の無線通信技術を活用した河川環境保全システムの実証実験を日野川で実施</title>
+<link>https://prtimes.jp/main/html/rd/p/000000055.000118467.html</link>
+<description>[株式会社フィッシュパス]
+[画像1: https://prcdn.freetls.fastly.net/release_image/118467/55/118467-55-3a1fd17ed3cce94400dadf23dfd527da-1728x1196.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社フィッシュパス</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000173.000054957.html">
+<title>CRANKSPEAKERが「JIDAデザインミュージアムセレクション」に選定</title>
+<link>https://prtimes.jp/main/html/rd/p/000000173.000054957.html</link>
+<description>[リズム]
+[画像1: https://prcdn.freetls.fastly.net/release_image/54957/173/54957-173-8c58f7e292d863859b364fa3ccb17fcc-1000x1000.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>リズム</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000087.000104020.html">
+<title>ThinkingAI、AI利用のセキュリティ統制を強める「AIモニター」の提供を開始--Agentic Engineのセキュリティ対策もあわせて公開</title>
+<link>https://prtimes.jp/main/html/rd/p/000000087.000104020.html</link>
+<description>[Thinkingdata Co., Ltd.]
+[画像1: https://prcdn.freetls.fastly.net/release_image/104020/87/104020-87-2bdf1d94f4ecdc6cd5d75475b602eb22-2400x1260.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>Thinkingdata Co., Ltd.</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000143.000077879.html">
+<title>Stripe インサイト：人間がコーディングしない開発を可能にする Stripe の自律型コーディングエージェント「Minions」</title>
+<link>https://prtimes.jp/main/html/rd/p/000000143.000077879.html</link>
+<description>[ストライプジャパン株式会社]
+- Stripe の自律型コーディングエージェント「Minions」で毎週自動生成した 1,300 件以上のコード変更を採用&lt;br/&gt;- エンジニアが Slack から指示するだけで、調査や修正、テスト、プルリクエスト作成までを自動で...</description>
+<dc:corp>ストライプジャパン株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000002079.000042328.html">
+<title>【JPIセミナー】「宇宙ビジネスの最新動向と企業の新規参入のポイント ～参入領域の見極めと国内外ルールへの対応～」12月10日(木)開催</title>
+<link>https://prtimes.jp/main/html/rd/p/000002079.000042328.html</link>
+<description>[株式会社日本計画研究所]
+JPI（日本計画研究所）は、中村・角田・松本法律事務所　弁護士　大島  日向 氏を招聘し、宇宙ビジネスの最新動向と企業の新規参入のポイントについて詳説いただくセミナーを開催します。
+
+[画像1: https://prcdn...</description>
+<dc:corp>株式会社日本計画研究所</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000009.000183164.html">
+<title>ホテル・旅館のフロント業務（予約確認・アライバルチェック）を“承認するだけ”に。フロント業務AI「Cotel AI」が第1回ホスピタリティテックEXPOに出展</title>
+<link>https://prtimes.jp/main/html/rd/p/000000009.000183164.html</link>
+<description>[Cotel AI株式会社]
+[画像1: https://prcdn.freetls.fastly.net/release_image/183164/9/183164-9-95f09d0361183889d35ec32667226986-1672x760.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;amp...</description>
+<dc:corp>Cotel AI株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000004.000138678.html">
+<title>情報漏えいの公表企業が過去最多の158社に。今こそ「預けない」相続準備を</title>
+<link>https://prtimes.jp/main/html/rd/p/000000004.000138678.html</link>
+<description>[株式会社PROTECT　ASSETS]
+[画像: https://prcdn.freetls.fastly.net/release_image/138678/4/138678-4-442299798167070df07530bcaed58a10-2960x1408.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;amp...</description>
+<dc:corp>株式会社PROTECT　ASSETS</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000418.000094539.html">
+<title>Meta Heroes、SEO・AI検索対策サービス「HERO AIVO」のローンチイベントを開催しました</title>
+<link>https://prtimes.jp/main/html/rd/p/000000418.000094539.html</link>
+<description>[株式会社Meta Heroes]
+[画像1: https://prcdn.freetls.fastly.net/release_image/94539/418/94539-418-380f1cfb2858338e0c9d380a7cb74ce6-3520x1980.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社Meta Heroes</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000047.000095869.html">
+<title>トレノケート、Cisco Partner Summit 2026においてLearning Partner of the Year (グローバル部門) を受賞</title>
+<link>https://prtimes.jp/main/html/rd/p/000000047.000095869.html</link>
+<description>[トレノケートホールディングス株式会社]
+トレノケートホールディングスは、Cisco Partner Summit 2026において、グローバル部門の Learning Partner of the Year に選出されました。Cisco Partner Awardsは、お客様の成功を支援するソリューションの提供...</description>
+<dc:corp>トレノケートホールディングス株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000134.000078795.html">
+<title>【12月イベント情報】お得な再生パソコン販売会を大阪府高槻市、大阪府池田市で開催　＜会場限定の購入特典あり＞</title>
+<link>https://prtimes.jp/main/html/rd/p/000000134.000078795.html</link>
+<description>[株式会社ポンデテック（関西電力グループ）]
+[画像1: https://prcdn.freetls.fastly.net/release_image/78795/134/78795-134-ba5b55a2c440efb97b1c8d787cf3179b-1200x550.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>株式会社ポンデテック（関西電力グループ）</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000012.000101094.html">
+<title>第三者割当増資及びセカンダリーを実施し、経営基盤を強化</title>
+<link>https://prtimes.jp/main/html/rd/p/000000012.000101094.html</link>
+<description>[株式会社アワバリュー]
+高級動産の2次流通事業を展開する株式会社アワバリュー(本社:東京都中央区、代表取締役:荒津友生、以下「当社」)は、i-nest1号投資事業有限責任組合(運営会社:i-nest capital株式会社、以下「i-nest capital」)を...</description>
+<dc:corp>株式会社アワバリュー</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000363.000068315.html">
+<title>上位5％の「エース社員」の習慣を、自分の仕事へ。１か月の実践を支える無料サイト「自分の力を伸ばす」を公開</title>
+<link>https://prtimes.jp/main/html/rd/p/000000363.000068315.html</link>
+<description>[組織行動科学(R)︎]
+[画像1: https://prcdn.freetls.fastly.net/release_image/68315/363/68315-363-323cdd21344a874fd2d3b2c4aecf1ad1-1920x1280.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>組織行動科学(R)︎</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000001.000195091.html">
+<title>軽量フルカラーAIスマートグラス向け「Ultralite Color」OEMプラットフォームを発表</title>
+<link>https://prtimes.jp/main/html/rd/p/000000001.000195091.html</link>
+<description>[ビュージックスジャパン株式会社]
+ビュージックスジャパン株式会社（本社：岡山県岡山市、代表取締役：藤井 慶一郎）は、Vuzix(R) Corporation（NASDAQ: VUZI）が、アイウェアブランドやテクノロジーパートナーが独自のフルカラーAIスマートグラス...</description>
+<dc:corp>ビュージックスジャパン株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000054.000116037.html">
+<title>ミナトホールディングスグループのブレイン「第9回［名古屋］スマート工場 EXPO」に出展</title>
+<link>https://prtimes.jp/main/html/rd/p/000000054.000116037.html</link>
+<description>[ミナトホールディングス株式会社]
+
+
+　ミナトホールディングス株式会社（本社：東京都港区、代表取締役会長兼グループCEO：若山健彦、証券コード：6862）のグループ会社である株式会社ブレイン（本社：宮城県仙台市、代表取締役社長：関克彦、以下...</description>
+<dc:corp>ミナトホールディングス株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000168.000175846.html">
+<title>初デートのあと「また会いたい」と思ったら。ヨイトキが紹介する、2回目のデートの誘い方</title>
+<link>https://prtimes.jp/main/html/rd/p/000000168.000175846.html</link>
+<description>[OLA PARTY JAPAN株式会社]
+[画像: https://prcdn.freetls.fastly.net/release_image/175846/168/175846-168-78ea676997ecebea10f574ae4bf1394f-1732x908.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>OLA PARTY JAPAN株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000007.000193143.html">
+<title>蓄電池の開発用地はデータセンターに向くか。BLUEHOUR が「データセンター転用の見立て」を開始</title>
+<link>https://prtimes.jp/main/html/rd/p/000000007.000193143.html</link>
+<description>[RIA PARTNERS株式会社]
+RIA PARTNERS株式会社（本社：東京都港区、代表取締役：高橋俊秀）は、系統用蓄電池（BESS）の案件の取引プラットフォーム「BLUEHOUR（ブルーアワー）」で、系統用蓄電池の開発用地をデータセンターの用地として...</description>
+<dc:corp>RIA PARTNERS株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000105.000056572.html">
+<title>Cloudbase、ファインディ主催「アーキテクチャConference 2026」にゴールドスポンサーとして協賛。エンジニア2名が登壇</title>
+<link>https://prtimes.jp/main/html/rd/p/000000105.000056572.html</link>
+<description>[Cloudbase]
+Cloudbase株式会社（本社：東京都港区、代表取締役CEO：岩佐 晃也、以下：Cloudbase）は、2026年11月26日（木）・27日（金）に開催される「アーキテクチャConference 2026」に、ゴールドスポンサーとして協賛する...</description>
+<dc:corp>Cloudbase</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000013.000170679.html">
+<title>配線不要で手軽に設置・取り外しできる「ソーラー充電式ドライブレコーダー SDR-01」を先行販売 ～太陽光充電と準固体バッテリー採用で、駐車監視ニーズにも対応～</title>
+<link>https://prtimes.jp/main/html/rd/p/000000013.000170679.html</link>
+<description>[株式会社サンコネクション]
+株式会社サンコネクション（本社：東京都千代田区 代表取締役: 永田 浩信）は、このたび「ソーラー充電式ドライブレコーダー SDR-01」を開発いたしました。本製品は、より高い安全性を目指した準固体バッテリーを...</description>
+<dc:corp>株式会社サンコネクション</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000042.000050277.html">
+<title>【11月22日はいい夫婦の日】料理の時間をもっと楽しく、もっと手軽に！ミニチョッパー「MM-C1」新登場。</title>
+<link>https://prtimes.jp/main/html/rd/p/000000042.000050277.html</link>
+<description>[株式会社太知ホールディングス]
+[画像1: https://prcdn.freetls.fastly.net/release_image/50277/42/50277-42-e055890ec833a345ee1004518a7f8946-3900x2600.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>株式会社太知ホールディングス</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000027.000160865.html">
+<title>福島県双葉町の分散型AIデータセンターが2026年12月16日竣工（予定）</title>
+<link>https://prtimes.jp/main/html/rd/p/000000027.000160865.html</link>
+<description>[デジタルダイナミック株式会社]
+AIデータセンターおよびGPUインフラ事業を展開するデジタルダイナミック株式会社（本社：東京都港区、代表取締役：根来 実、以下「当社」）は、日本アジア投資株式会社との合弁会社であるJAICデータダイナミクス...</description>
+<dc:corp>デジタルダイナミック株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000293.000145928.html">
+<title>ORICO、GaN搭載8-in-1マルチタップを発表--AC×4＋USB-C×2＋USB-A×2・PD25W・1500W対応・薄型コンパクト・PSE認証・多重保護でデスク電源を整理</title>
+<link>https://prtimes.jp/main/html/rd/p/000000293.000145928.html</link>
+<description>[深圳市奥睿科电子商务有限公司]
+ORICOは、GaN技術を採用した8-in-1マルチタップ(https://www.amazon.co.jp/dp/B0FWB4P7YB)を発表しました。
+「デスク周りのコンセントが足りない」「USB充電器が多くてコードがごちゃごちゃする」--そんな悩みを1...</description>
+<dc:corp>深圳市奥睿科电子商务有限公司</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000658.000032702.html">
+<title>従業員の「アンコンシャス・バイアス（無意識の思い込み）」を可視化し、企業のDE&amp;Iを推進する、共創パートナーの採択決定</title>
+<link>https://prtimes.jp/main/html/rd/p/000000658.000032702.html</link>
+<description>[NTT西日本]
+NTT西日本株式会社（代表取締役社長：北村亮太、以下、NTT西日本）は、生成AIによる対話トレーニングを活用し、日常のコミュニケーションに潜む「アンコンシャス・バイアス（無意識の偏見、思い込み）」の可視化...</description>
+<dc:corp>NTT西日本</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:45:28+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000001017.000030942.html">
+<title>「Samsung Galaxy S26 Ultra」スポーツシーンでの撮影・観戦体験レポート</title>
+<link>https://prtimes.jp/main/html/rd/p/000001017.000030942.html</link>
+<description>[Samsung]
+　サムスン電子ジャパン株式会社は、2026年3月に発売したハイクオリティな撮影性能と先進のAI技術を融合したフラッグシップスマートフォン「Samsung Galaxy S26 Ultra」の撮影体験会を、2026年11月14日(土)に東京...</description>
+<dc:corp>Samsung</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000015.000177189.html">
+<title>インディゴソリューションズ、ランサムウェア被害からの早期復旧を支える「NeuShield」の取り扱いを開始</title>
+<link>https://prtimes.jp/main/html/rd/p/000000015.000177189.html</link>
+<description>[インディゴソリューションズ株式会社]
+インディゴソリューションズ株式会社（本社：東京都港区、代表取締役CEO：井澤 智也、以下「インディゴソリューションズ」）は、ランサムウェア対策製品「NeuShield Data Sentinel」（以下「NeuShield」）の日本...</description>
+<dc:corp>インディゴソリューションズ株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000817.000034873.html">
+<title>単なるOS史ではない40年の記録。新刊『Windows ～熱狂と失敗と決断の40年史～』11/20発売 ＆ 本田雅一氏登壇イベント11/25開催</title>
+<link>https://prtimes.jp/main/html/rd/p/000000817.000034873.html</link>
+<description>[翔泳社]
+株式会社翔泳社（本社：東京都新宿区舟町5、代表取締役社長：臼井かおる）は、新刊『Windows ～熱狂と失敗と決断の40年史～』を2026年11月20日に発売しました。本書は、Windowsを追い続けてきた著者による、単な...</description>
+<dc:corp>翔泳社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000008.000183796.html">
+<title>文化祭・学園祭のキャッシュレス会計にLINEを活用｜明聖高等学校の校内通貨「MeiPay」3日間で支払い7,989件・残高の照合でずれ0件</title>
+<link>https://prtimes.jp/main/html/rd/p/000000008.000183796.html</link>
+<description>[TeaBreak]
+[画像1: https://prcdn.freetls.fastly.net/release_image/183796/8/183796-8-f2b648c2df9dd85ce017099b46d5b202-1920x1005.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>TeaBreak</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000010.000114670.html">
+<title>株式会社RIM、新製品「H3C」を含むBambu Lab製品の取扱ラインアップを拡充</title>
+<link>https://prtimes.jp/main/html/rd/p/000000010.000114670.html</link>
+<description>[株式会社RIM]
+[画像1: https://prcdn.freetls.fastly.net/release_image/114670/10/114670-10-1c87f1a986ae948fda92b7ef4c4f15c4-1200x630.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>株式会社RIM</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000004.000187768.html">
+<title>サイト・メール・VPN機器のセキュリティ担当を代行。実際の攻撃と同じ手順で穴を探し、見つけた穴は当社が直す「ホワイトハック」提供開始</title>
+<link>https://prtimes.jp/main/html/rd/p/000000004.000187768.html</link>
+<description>[株式会社AIdollargame]
+[画像1: https://prcdn.freetls.fastly.net/release_image/187768/4/187768-4-0a5cb917ccdcd8cbfb8aa6b95be97c23-2400x1260.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>株式会社AIdollargame</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:45:28+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000027.000159800.html">
+<title>CDエナジーダイレクトのコンタクトセンターにRecho AI Voice Agent を導入</title>
+<link>https://prtimes.jp/main/html/rd/p/000000027.000159800.html</link>
+<description>[株式会社Recho]
+株式会社CDエナジーダイレクト(本社:東京都中央区、代表取締役社長:岩井 博幸、以下「CDエナジーダイレクト」)、関西ビジネスインフォメーション株式会社(本社:大阪市北区、代表取締役社長:造座 克之、以下「KBI...</description>
+<dc:corp>株式会社Recho</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:45:28+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000019.000153999.html">
+<title>アカツキAIテクノロジーズ代表・大國領剣が、サニーサイドアップの「AI Dialogue &amp; Relations Team」に参画</title>
+<link>https://prtimes.jp/main/html/rd/p/000000019.000153999.html</link>
+<description>[株式会社アカツキAIテクノロジーズ]
+[画像: https://prcdn.freetls.fastly.net/release_image/153999/19/153999-19-40fc70417a098c42960d8578aa5d91b2-1348x985.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>株式会社アカツキAIテクノロジーズ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:45:28+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000034.000159022.html">
+<title>ハイクリ、アパレル専属のAIエージェント「vestory for AIスタッフ」を提供開始</title>
+<link>https://prtimes.jp/main/html/rd/p/000000034.000159022.html</link>
+<description>[株式会社ハイクリ]
+[画像1: https://prcdn.freetls.fastly.net/release_image/159022/34/159022-34-05b4c6cdb1ae0b495fcff1df4e1d342b-2400x1260.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社ハイクリ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000038.000050277.html">
+<title>【11月22日はいい夫婦の日】夫婦の快適な眠りをサポート！ANABASから軽量1.2kgのふとんクリーナー【FP-200】が登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000038.000050277.html</link>
+<description>[株式会社太知ホールディングス]
+
+株式会社太知ホールディングスは、家電ブランド「ANABAS（アナバス）」より、軽量・コンパクトで、たたきパッドとUVランプを搭載した「ふとんクリーナー　FP-200」を発表いたします。
+11月22日の「いい夫婦の日...</description>
+<dc:corp>株式会社太知ホールディングス</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000332.000030850.html">
+<title>イオレ、ソフトバンク株式会社とAIデータセンター・GPU計算資源の相互販売に向けた業務連携を開始</title>
+<link>https://prtimes.jp/main/html/rd/p/000000332.000030850.html</link>
+<description>[株式会社イオレ]
+　株式会社イオレ（本社：東京都港区、代表取締役社長 兼 CEO：瀧野 諭吾、以下イオレ）は、ソフトバンク株式会社（本社：東京都港区、代表取締役 社長執行役員 兼 CEO：宮川潤一、以下「ソフトバンク」）と、両...</description>
+<dc:corp>株式会社イオレ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000224.000131068.html">
+<title>【最大50％OFF】SUNEAST、Amazonブラックフライデーに先行セールから参加。過去最多の20製品以上をSUNEAST史上最大級の割引価格で販売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000224.000131068.html</link>
+<description>[SUNEAST]
+[画像1: https://prcdn.freetls.fastly.net/release_image/131068/224/131068-224-7e615e68f707a181ecfefb55850759ea-1920x1080.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bound...</description>
+<dc:corp>SUNEAST</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000001.000194723.html">
+<title>月額5万円から、大規模3DGSをWebブラウザで軽快に閲覧・共有。建築実務から生まれた「VDC Viewer」がJAPAN BUILD 2026に出展</title>
+<link>https://prtimes.jp/main/html/rd/p/000000001.000194723.html</link>
+<description>[株式会社VDC]
+株式会社VDC（本社：東京都千代田区、代表者：林 和弘）は、大規模な3Dガウシアンスプラッティング（3DGS）データをWebブラウザ上で軽快に閲覧・共有できるクラウド型サービス「VDC Viewer（VDCビューア）」を202...</description>
+<dc:corp>株式会社VDC</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000306.000039659.html">
+<title>【2026年最後のQoo10メガ割】テレビでも話題の自撮りモニター「Camee」シリーズがお得に！クリスマスや年末年始の撮影にもおすすめ！11月20日（金）10時スタート</title>
+<link>https://prtimes.jp/main/html/rd/p/000000306.000039659.html</link>
+<description>[KEIYO]
+[画像1: https://prcdn.freetls.fastly.net/release_image/39659/306/39659-306-2cc83ebc57f549292b70f2d05ad9de99-1670x942.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>KEIYO</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000888.000014333.html">
+<title>住友生命・パナソニックの二社の担当者が登壇する「ファミワンコネクト」リリース記念 事例セミナーを12月9日の13時に開催します</title>
+<link>https://prtimes.jp/main/html/rd/p/000000888.000014333.html</link>
+<description>[株式会社ファミワン]
+[画像1: https://prcdn.freetls.fastly.net/release_image/14333/888/14333-888-380582655ad634eb43cc2d18504b9c23-1920x1080.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社ファミワン</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000096.000086476.html">
+<title>Amazfit、HYROXアスリートのパフォーマンス分析を更に進化させる「Amazfit Helio Strap Pro」を２０２６年１１月２０日(金)に国内発売決定！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000096.000086476.html</link>
+<description>[Zepp Health Corporation]
+[画像1: https://prcdn.freetls.fastly.net/release_image/86476/96/86476-96-9ff6cd1a58b6a2df54c17d1d0676835b-2560x1024.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>Zepp Health Corporation</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000094.000036921.html">
+<title>データセクション、CyberGym創業者兼CEOのOfir Hasonが参画</title>
+<link>https://prtimes.jp/main/html/rd/p/000000094.000036921.html</link>
+<description>[データセクション株式会社]
+データセクション株式会社（本社：東京都品川区、代表取締役社長執行役員CEO：石原紀彦、東証グロース：3905、以下「当社」）は、グローバルに展開するAIインフラ事業の安全性・信頼性の向上とセキュリティ体制の...</description>
+<dc:corp>データセクション株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000071.000012366.html">
+<title>AIで電力の見える化に取り組むインフォメティス、家電ごとの電気の使われ方が分かる家庭向け電力マネジメントサービス「うちのデンキ番」を発表</title>
+<link>https://prtimes.jp/main/html/rd/p/000000071.000012366.html</link>
+<description>[インフォメティス株式会社]
+[画像1: https://prcdn.freetls.fastly.net/release_image/12366/71/12366-71-9d891d4113e72b45f8a587848d7a0e2a-1200x630.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;amp...</description>
+<dc:corp>インフォメティス株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000131.000163436.html">
+<title>ノジマ×Hisense 横浜DeNAベイスターズ選手トークショーをららぽーと横浜で開催！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000131.000163436.html</link>
+<description>[株式会社ノジマ]
+株式会社ノジマ（東京都港区、代表執行役社長・野島廣司、以下「ノジマ」）はハイセンスジャパン株式会社（所在地：神奈川県川崎市、代表取締役社長：杜 貴軒）との共催により、2026年12月5日（土）、ららぽーと...</description>
+<dc:corp>株式会社ノジマ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000376.000039188.html">
+<title>【最大52％OFF】ポータブル電源のJackery、年内最大級にお得な「ブラックフライデーセール」を開催！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000376.000039188.html</link>
+<description>[Jackery Japan]
+ポータブル電源およびソーラーパネルを展開するJackery（ジャクリ）の日本法人、株式会社Jackery Japan（所在地：東京都中央区）は、年に一度の大型セール「ブラックフライデー」に合わせ、Jackery公式Amazon店に...</description>
+<dc:corp>Jackery Japan</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000290.000014551.html">
+<title>【大阪大学QIQBとの特別連携企画】国産量子コンピュータの第一人者・根来誠教授から直接学ぶ！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000290.000014551.html</link>
+<description>[ナレッジキャピタル]
+[画像1: https://prcdn.freetls.fastly.net/release_image/14551/290/14551-290-13ee858fa3b234a79b5a61eb57eec638-1600x900.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>ナレッジキャピタル</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000071.000079152.html">
+<title>経営と人事をつなぐ仕組みを構想から実装まで支援するVARIETAS、「VARIETAS総合研究所」を設立</title>
+<link>https://prtimes.jp/main/html/rd/p/000000071.000079152.html</link>
+<description>[VARIETAS]
+人とAIの分業で日本らしい経営をつくる株式会社VARIETAS（読み方：バリエタス）は、経営と人事をつなぐ理論と実践を科学する研究機関「VARIETAS総合研究所（以下、VARIETAS総研）」を設立しました。
+VARIETASは、...</description>
+<dc:corp>VARIETAS</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000092.000072250.html">
+<title>Cohesity、サイバーレジリエンスに関するグローバル調査における日本市場の結果を発表</title>
+<link>https://prtimes.jp/main/html/rd/p/000000092.000072250.html</link>
+<description>[コヒシティジャパン合同会社]
+[画像: https://prcdn.freetls.fastly.net/release_image/72250/92/72250-92-9913bc7c252c16ff4ea935a28324930d-3900x575.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;amp;...</description>
+<dc:corp>コヒシティジャパン合同会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000197.000051859.html">
+<title>オーラルたばこ「VELO」、「THE MOMENT - in 福岡 -」が開幕！12月5日の「RECEPTION EVENT」にお笑いトリオ・ぱーてぃーちゃんがスペシャルゲストとして出演決定！！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000197.000051859.html</link>
+<description>[BATジャパン]
+BAT ジャパン（正式名称：ブリティッシュ・アメリカン・タバコ・ジャパン合同会社、本社：東京都港区、代表：マウリシオ・ララ）は、オーラルたばこ「VELO」のブランドコンセプト「その瞬間をREMIX」を体現する回...</description>
+<dc:corp>BATジャパン</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:15:41+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000019.000152742.html">
+<title>サイバーセキュリティ総研、事業会社・セキュリティベンダーとの事業提携パートナーの募集を2027年1月に開始</title>
+<link>https://prtimes.jp/main/html/rd/p/000000019.000152742.html</link>
+<description>[株式会社サイバーセキュリティ総研]
+株式会社サイバーセキュリティ総研（本社：福岡県福岡市、代表取締役：山口 啓、以下「当社」）は、事業会社およびセキュリティベンダーを対象とした事業提携パートナーの募集を、2027年1月より開始する予定であ...</description>
+<dc:corp>株式会社サイバーセキュリティ総研</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:15:41+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000037.000141967.html">
+<title>「集客ラクダ」にAI透かし対策を導入。公開前に別のAIで記事の文章を言い換え</title>
+<link>https://prtimes.jp/main/html/rd/p/000000037.000141967.html</link>
+<description>[株式会社Arstruct]
+[画像1: https://prcdn.freetls.fastly.net/release_image/141967/37/141967-37-765d6fe3402d3535b9c8ceb7d442e656-1200x675.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>株式会社Arstruct</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:15:41+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000167.000175846.html">
+<title>東京・大阪で外国人が長期的なパートナーを探すとき、会いやすさをどう考える？</title>
+<link>https://prtimes.jp/main/html/rd/p/000000167.000175846.html</link>
+<description>[OLA PARTY JAPAN株式会社]
+[画像: https://prcdn.freetls.fastly.net/release_image/175846/167/175846-167-1e59704087317d404f73f7c734a9240d-1733x908.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>OLA PARTY JAPAN株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:42:18+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000913.000058495.html">
+<title>【スマホアクセサリー業界】対応機種数/コラボ数/デザイン数でNo1を誇るcaseplayから「徳島ガンバロウズ」のスマートフォンアクセサリーが24デザイン×180機種以上のラインナップで登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000913.000058495.html</link>
+<description>[株式会社FOX]
+[画像1: https://prcdn.freetls.fastly.net/release_image/58495/913/58495-913-2913f76957e3765fe836f3aa02e6062b-1600x880.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>株式会社FOX</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:15:41+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000104.000022340.html">
+<title>Warranty technology、Xiaomi Care加入対象を拡大</title>
+<link>https://prtimes.jp/main/html/rd/p/000000104.000022340.html</link>
+<description>[株式会社Warranty technology]
+延長保証サービスの構築・運営を行う株式会社Warranty technology（本社：東京都千代田区、代表取締役CEO：宮原 年明、以下「ワランティテクノロジー」）は、世界的スマートデバイスメーカー小米技術日本株式会社...</description>
+<dc:corp>株式会社Warranty technology</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000825.000035169.html">
+<title>オフラインでAI処理ができるAI字幕生成・ナレーション読み上げ機能を新搭載「Movie Studio 2027」シリーズ 11月20日（金）新発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000825.000035169.html</link>
+<description>[ソースネクスト株式会社]
+　ソースネクスト株式会社（本社：東京都千代田区三番町3-8 泉館三番町3階 代表取締役社長：松田 憲幸）は、11月20日（金）、弊社サイト上で、動画編集ソフト「Movie Studio 2027 Platinum」（9,900円）、「Movie...</description>
+<dc:corp>ソースネクスト株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:15:41+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000146.000060549.html">
+<title>中目黒で、森のセカンドホームを体験する。SANU初の常設ギャラリー「SANU NOWHERE GALLERY」、11月21日（土）オープン</title>
+<link>https://prtimes.jp/main/html/rd/p/000000146.000060549.html</link>
+<description>[SANU]
+国内最大級のセカンドホームサービス「SANU 2nd Home」を展開する株式会社SANU（本社：東京都新宿区、Co-CEO：福島弦・本間貴裕）は、2026年11月21日（土）、東京・中目黒にブランド初となる常設の建築ギャラリー...</description>
+<dc:corp>SANU</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T16:42:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000183.000066773.html">
+<title>ダイドーフォワード、基幹ブランド「NEWYORKER」の顧客エンゲージメント基盤として「Braze」を導入</title>
+<link>https://prtimes.jp/main/html/rd/p/000000183.000066773.html</link>
+<description>[Braze株式会社]
+顧客エンゲージメントプラットフォームのリーダーであるBraze株式会社（本社：東京都港区、以下「Braze」）は、アパレルブランド「NEWYORKER（ニューヨーカー）」をはじめとする衣料品の企画・製造・販売を手掛け...</description>
+<dc:corp>Braze株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:42:21+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000001015.000030942.html">
+<title>Samsung Galaxy Ringの進化した睡眠時無呼吸検知機能　米国FDAおよび韓国MFDSの承認を受け提供開始</title>
+<link>https://prtimes.jp/main/html/rd/p/000001015.000030942.html</link>
+<description>[Samsung]
+　サムスン電子株式会社（韓国本社、以下Samsung）は、「Samsung Galaxy Watch」および「Samsung Galaxy Ring」※1で利用できる「睡眠時無呼吸検知機能」※2をアップデートし、提供を開始しました。本機能は、2026...</description>
+<dc:corp>Samsung</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:15:24+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000041.000163417.html">
+<title>約30秒で野菜摂取量をチェック！Panasonic Beauty OMOTESANDOでカゴメ「ベジチェック(R)」測定会を11月28日11時～17時に開催</title>
+<link>https://prtimes.jp/main/html/rd/p/000000041.000163417.html</link>
+<description>[パナソニック株式会社]
+パナソニック株式会社（以下、パナソニック）は、2026年10月10日（土）、美容アイテムを体感できる拠点「Panasonic Beauty OMOTESANDO」にて、2026年11月28日（土）、カゴメ株式会社（以下、カゴメ）とのコラボレ...</description>
+<dc:corp>パナソニック株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:15:24+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000245.000033579.html">
+<title>HTC、AIパートナー「VIVEE」の 国内予約受付を11月20日より開始</title>
+<link>https://prtimes.jp/main/html/rd/p/000000245.000033579.html</link>
+<description>[HTC NIPPON株式会社]
+12月3日発売予定。VIVEE本体とVIVEE SUITの単品価格合計22,800円（税込）に対し、
+予約特別セットを19,000円（税込）で提供 
+
+HTC NIPPON株式会社は、会話やふれあいを通じてさまざまな表情や反応を楽しめるAIパ...</description>
+<dc:corp>HTC NIPPON株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:15:24+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000084.000181531.html">
+<title>安定した宇宙光通信を支えるグローバルな光地上局ネットワークの実現へ</title>
+<link>https://prtimes.jp/main/html/rd/p/000000084.000181531.html</link>
+<description>[NTT株式会社]
+[画像1: https://prcdn.freetls.fastly.net/release_image/181531/84/181531-84-702727b626fb493b953db697655c9ec8-740x702.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>NTT株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:42:21+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000001808.000073913.html">
+<title>棚が、机が、テーブルが鳴りだす！置いた場所そのものがスピーカーになる「振動スピーカー」が新登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000001808.000073913.html</link>
+<description>[株式会社ニトリホールディングス]
+株式会社ニトリ（本社：札幌市北区 代表取締役会長兼社長：似鳥 昭雄 以下：ニトリ）は、オーディオブランド「life+audio（ライフプラスオーディオ）」より「置いたものがスピーカーになる振動スピーカー」2サイ...</description>
+<dc:corp>株式会社ニトリホールディングス</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:15:24+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000061.000144908.html">
+<title>Renxa、通信・生活インフラをまとめて相談できる直営１号店を町田市にオープン</title>
+<link>https://prtimes.jp/main/html/rd/p/000000061.000144908.html</link>
+<description>[Renxa株式会社]
+Renxa株式会社（読み方：レンサ、代表取締役：坂本 幸司、本社：東京都豊島区、以下「当社」）は、当社初となる直営店舗を、2026年11月20日に東京都町田市の「MrMax町田多摩境ショッピングセンター」内にオープン...</description>
+<dc:corp>Renxa株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:42:21+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000057.000169819.html">
+<title>不動産管理会社向け｜Copilot導入後の定着の進め方レポート【2026年11月版】</title>
+<link>https://prtimes.jp/main/html/rd/p/000000057.000169819.html</link>
+<description>[株式会社AIworker]
+[画像1: https://prcdn.freetls.fastly.net/release_image/169819/57/169819-57-c871a7db4a5924cfb200d790ce1df78b-1600x900.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>株式会社AIworker</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:15:24+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000017.000173448.html">
+<title>【新プラン・キャンペーン】Wordpress Contact Form 7専用プラグイン『AIS FormGuard』有償版、複数サイト利用、Web制作会社向けボリュームパック提供開始！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000017.000173448.html</link>
+<description>[株式会社アイ・ストリーム]
+[画像1: https://prcdn.freetls.fastly.net/release_image/173448/17/173448-17-eeaaff404e427c31a447fdd6d51f8cf8-1544x500.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>株式会社アイ・ストリーム</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:15:24+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000008.000168131.html">
+<title>NLPeanuts、共同通信社に生成AIによる英文記事執筆支援システムを導入　海外へのニュース発信を加速</title>
+<link>https://prtimes.jp/main/html/rd/p/000000008.000168131.html</link>
+<description>[NLPeanuts株式会社]
+NLPeanuts株式会社（読み：エヌエルピーナッツ、本社：東京都港区、代表取締役：叶内 晨、以下、NLPeanuts）は、一般社団法人共同通信社（以下、共同通信社）と連携し、同社国際局において、生成AIを活用した英文...</description>
+<dc:corp>NLPeanuts株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T14:45:37+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000429.000091052.html">
+<title>デスク派も、寝ながら派も、ベッド派も。バウヒュッテのゲーミング家具が、イオンのブラックフライデーで「一式セット」になって登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000429.000091052.html</link>
+<description>[ビーズ株式会社]
+ビーズ株式会社（本社：大阪府東大阪市、代表取締役社長：大上響）が展開するゲーミング家具ブランド「Bauhutte(R)（バウヒュッテ）」は、2026年11月20日(金)～開催のイオンリテール株式会社の「イオン 超！ブラ...</description>
+<dc:corp>ビーズ株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T14:45:37+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000300.000005296.html">
+<title>『マツケンアニメ～コレ成敗してもいいですか？～』のオンラインくじがFaveConnectストアより販売開始！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000300.000005296.html</link>
+<description>[株式会社日テレWands]
+株式会社日テレWands（本社：東京都港区、代表取締役社長執行役員：角田 洋子、以下、日テレWands）は、「FaveConnectストア」にて、YouTubeアニメプロジェクト『マツケンアニメ～コレ成敗してもいいですか？～』...</description>
+<dc:corp>株式会社日テレWands</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:45:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000368.000021661.html">
+<title>トレルナ公式Xでプレゼントキャンペーンを11月20日より開催！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000368.000021661.html</link>
+<description>[株式会社ネクイノ]
+　株式会社ネクイノ（大阪市北区、代表取締役：石井 健一）が展開する、トイレの個室で生理用ナプキンを常備し無料で提供するサービス「toreluna(https://toreluna.com)（トレルナ）」（以下 トレルナ）では、現...</description>
+<dc:corp>株式会社ネクイノ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T14:15:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000011.000155771.html">
+<title>エイベックス所属タレントが小紅書（Red Note）でライブコマースを実施3日間で延べ約6.3万回の視聴、1,200件以上の注文を記録</title>
+<link>https://prtimes.jp/main/html/rd/p/000000011.000155771.html</link>
+<description>[株式会社THRUSTER]
+株式会社THRUSTER（本社：東京都千代田区、代表取締役 嶋野 智紀、以下THRUSTER）は、「Tokyo A-Star Select」のプロジェクトの一環として中国のライフスタイルプラットフォーム「小紅書（Red Note）」で実施され...</description>
+<dc:corp>株式会社THRUSTER</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:45:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000551.000055543.html">
+<title>『LOVOT』専用のチェア「LOVOT CHAIR」に『LOVOT』の「しろ」をイメージした新色「ブナしろ」が登場！既存の4色もあわせて2026年11月20日（金）より受注再開</title>
+<link>https://prtimes.jp/main/html/rd/p/000000551.000055543.html</link>
+<description>[GROOVE X 株式会社]
+[画像1: https://prcdn.freetls.fastly.net/release_image/55543/551/55543-551-6ff793b85964dc3ddc7c969b798f4fef-1200x675.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>GROOVE X 株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:45:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000513.000045277.html">
+<title>受賞者から審査員へ！株式会社スペースワン代表が「CES Innovation Awards 2027」の審査員に選出</title>
+<link>https://prtimes.jp/main/html/rd/p/000000513.000045277.html</link>
+<description>[株式会社スペースワン]
+[画像1: https://prcdn.freetls.fastly.net/release_image/45277/513/45277-513-4841c0e52f9ae3d4804ae1fce136396d-2200x1700.png?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社スペースワン</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T14:15:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000070.000185093.html">
+<title>Notion の構築代行の公開料金を調査、Notion の導入や構築を請ける21社のうち、公式サイトに料金を載せていたのは11社</title>
+<link>https://prtimes.jp/main/html/rd/p/000000070.000185093.html</link>
+<description>[ゴムマリ]
+ゴムマリ株式会社（本社：東京都、代表取締役：村山悠太）は、Notion の導入や構築を請ける会社が、料金を公式サイトでどれだけ公表しているかを調べました。検索と比較記事、Notion 社の公式の一覧で集めた会社...</description>
+<dc:corp>ゴムマリ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:45:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000005607.000000136.html">
+<title>GMOインターネットグループ・GMO AI&amp;ロボティクス商事、「第1回GMOロボットハンドコンテスト」審査員が決定</title>
+<link>https://prtimes.jp/main/html/rd/p/000005607.000000136.html</link>
+<description>[GMOインターネットグループ]
+　GMOインターネットグループ（グループ代表：熊谷 正寿）と、GMOインターネットグループのGMO AI&amp;amp;ロボティクス商事株式会社（代表取締役社長：内田 朋宏、以下　GMO AIR）は、一般社団法人シンギュラリティ...</description>
+<dc:corp>GMOインターネットグループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T14:15:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000001815.000017808.html">
+<title>ASUS/ROG対象製品の購入で『空の軌跡 the 2nd』Steamコードがもらえる！「軌跡の旅を、最高のスペックで。」キャンペーン開催</title>
+<link>https://prtimes.jp/main/html/rd/p/000001815.000017808.html</link>
+<description>[ASUS JAPAN株式会社]
+　ASUS JAPAN株式会社は、ASUS/ROG製のゲーミングギア（ヘッドセット、キーボード、マウス）、モニター、マザーボード、ビデオカード、電源、PCケース、ルーター、ミニPCを購入すると、日本ファルコム株式会社が...</description>
+<dc:corp>ASUS JAPAN株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:15:24+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000147.000011879.html">
+<title>「ノクティルックス」レンズシリーズの書籍を発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000147.000011879.html</link>
+<description>[ライカカメラジャパン]
+[画像1: https://prcdn.freetls.fastly.net/release_image/11879/147/11879-147-19caca78a8946275befc622d0ea095e9-3840x2560.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>ライカカメラジャパン</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T14:15:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000045.000056060.html">
+<title>STELLA BEAUTE、「シャインプロテクトヘアアイロン ジュエル」に新色「カイヤナイト」が登場。</title>
+<link>https://prtimes.jp/main/html/rd/p/000000045.000056060.html</link>
+<description>[株式会社Kirala]
+[画像1: https://prcdn.freetls.fastly.net/release_image/56060/45/56060-45-3e2c3da2da8aafb8ca52bb286a5e5a9a-3900x2192.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;am...</description>
+<dc:corp>株式会社Kirala</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T14:42:35+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000013.000193084.html">
+<title>「ケミカルマテリアルJapan 2026」に出展～半導体製造工程向けなどへの展開を目指すテトラゾール化合物を紹介～</title>
+<link>https://prtimes.jp/main/html/rd/p/000000013.000193084.html</link>
+<description>[東洋紡エムシー株式会社]
+東洋紡エムシー株式会社（本社：大阪市北区、代表取締役社長執行役員 CEO：藤井 尚毅、以下「当社」）は、2026年11月26日から27日に東京ビッグサイトで開催される「ケミカルマテリアルJapan 2026」に、ファインケ...</description>
+<dc:corp>東洋紡エムシー株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T15:45:30+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000010.000119684.html">
+<title>InnovMetric、PolyWorks(R)ユーザー向け新サービスプログラム「MasterKey by PolyWorks」を発表</title>
+<link>https://prtimes.jp/main/html/rd/p/000000010.000119684.html</link>
+<description>[ポリワークスジャパン]
+3D計測ソフトウェア「PolyWorks(R)」を開発・提供する InnovMetric は、お客様の継続的な成功を支援する新しいサービスプログラム 「MasterKey by PolyWorks」 を発表しました。
+MasterKey by PolyWorksは、技術...</description>
+<dc:corp>ポリワークスジャパン</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:45:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000103.000025378.html">
+<title>11月1日（木）、紅茶の日に限定バッグや紅茶が香るスイーツ、手軽に楽しめるインスタントミルクティーが登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000103.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/103/resize/d25378-103-690662-3.jpg ]
+
+【内容紹介】
+
+[画像2: https://prtimes.jp/i/25378/103/resize/d25378-103-304313-0.jpg ]
+
+１.ジャンナッツ プロヴァンスキャラメ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-10-18T12:40:20+09:00</dc:date>
+<date>2018-10-18</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000060.000025378.html">
+<title>「ウォータードリップコーヒー＆オリジナル フリーボトルセット」で水出しアイスコーヒーを手軽に飲もう！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000060.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■冷蔵庫で一晩置くだけ！簡単に本格水出しアイスコーヒーができる限定セット
+
+[画像1: https://prtimes.jp/i/25378/60/resize/d25378-60-570477-4.jpg ]
+
+
+
+[画像2: https://prtimes.jp/i/25378/60/resize/d25378...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-04-17T13:01:12+09:00</dc:date>
+<date>2018-04-17</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000066.000025378.html">
+<title>「ドリップコーヒー＆オリジナル カフェエプロンセット」を発売！母の日に贈りたい華やかなデザインの新商品も登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000066.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「ドリップコーヒー＆オリジナル カフェエプロンセット」
+
+[画像1: https://prtimes.jp/i/25378/66/resize/d25378-66-151774-3.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/66/resize/d25378-66-818626-...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-04-09T13:01:11+09:00</dc:date>
+<date>2018-04-09</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000073.000025378.html">
+<title>「ドリップコーヒー＆オリジナル陶器タンブラーセット」と「水出しコーヒーセット」を発売！季節限定コーヒーや、新商品のビールなど父の日にオススメのアイテムが登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000073.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「ドリップコーヒー＆オリジナル陶器タンブラーセット」
+
+[画像1: https://prtimes.jp/i/25378/73/resize/d25378-73-554321-1.jpg ]
+
+【内容紹介】
+
+[画像2: https://prtimes.jp/i/25378/73/resize/d253...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-05-18T12:01:06+09:00</dc:date>
+<date>2018-05-18</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000074.000025378.html">
+<title>夏にぴったりな味わい！スペシャルティコーヒー「コンゴ　ペイザンヌ組合」を数量限定発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000074.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/74/resize/d25378-74-168371-3.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/74/resize/d25378-74-330928-4.jpg ]
+
+商品名：コンゴ ペイザンヌ組合
+規格：200ｇ　 価格：本体...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-06-08T12:01:24+09:00</dc:date>
+<date>2018-06-08</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000076.000025378.html">
+<title>ベトナムの食材が入ったハンドメイドの「サイゴンバスケット」を発売！ベトナム気分を味わえる新商品も続々と登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000076.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「オリジナル サイゴンバスケット」
+
+[画像1: https://prtimes.jp/i/25378/76/resize/d25378-76-948665-9.jpg ]
+
+
+
+【内容紹介】
+
+[画像2: https://prtimes.jp/i/25378/76/resize/d25378-76-581711-16.j...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-06-01T12:01:12+09:00</dc:date>
+<date>2018-06-01</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000077.000025378.html">
+<title>爽やかな酸味が夏にピッタリ！レモンのお酒を楽しむ限定バッグが登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000077.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「レモンバッグ」
+
+[画像1: https://prtimes.jp/i/25378/77/resize/d25378-77-483131-8.jpg ]
+
+【内容紹介】
+
+[画像2: https://prtimes.jp/i/25378/77/resize/d25378-77-913011-0.jpg ]
+
+
+
+レモンバッグ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-06-07T12:01:08+09:00</dc:date>
+<date>2018-06-07</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000081.000025378.html">
+<title>夏におすすめの限定コーヒーが入った「夏のコーヒーバッグ」発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000081.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定！夏のコーヒーバッグ
+
+[画像1: https://prtimes.jp/i/25378/81/resize/d25378-81-568267-6.jpg ]
+
+
+
+【内容紹介】
+
+[画像2: https://prtimes.jp/i/25378/81/resize/d25378-81-724213-0.jpg ]
+
+
+１.アフ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-06-22T12:01:09+09:00</dc:date>
+<date>2018-06-22</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000083.000025378.html">
+<title>フランスの紅茶ブランド“ジャンナッツ”のピーチティーやオリジナルの焼き菓子を詰め込んだ「ネコバッグ」を数量限定で発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000083.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「ネコバック 保冷」  
+[画像1: https://prtimes.jp/i/25378/83/resize/d25378-83-146499-7.jpg ]
+
+【内容紹介】  
+[画像2: https://prtimes.jp/i/25378/83/resize/d25378-83-452009-1.jpg ]
+
+１.ネコバ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-07-11T12:01:06+09:00</dc:date>
+<date>2018-07-11</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000031.000025378.html">
+<title>クリスマスマーケットの雰囲気をお届け♪11月6日（月）数量限定『グリューワイン&amp;グリューワインカップセット』発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000031.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「グリューワイン&amp;グリューワインカップセット」
+
+[画像1: https://prtimes.jp/i/25378/31/resize/d25378-31-417838-2.jpg ]
+
+1.ラプンツェル グリューワイン ベビー
+ドイツ伝統のオリジナルレシピに従...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-10-23T12:01:06+09:00</dc:date>
+<date>2017-10-23</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000034.000025378.html">
+<title>【速報】カルディコーヒーファームが自信をもっておすすめする“プレ・ペール・エ・フィス ボージョレ・ヴィラージュ・ヌーヴォー”が「トロフィー リヨン ボージョレ・ヌーヴォー 2017」で金賞受賞！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000034.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/34/resize/d25378-34-903465-3.jpg ]
+
+
+【2017年金賞受賞&amp;ldquo;プレ・ペール・エ・フィス ボージョレ・ヴィラージュ・ヌーヴォー&amp;rdquo;！これまでも受賞歴多数の実力派ワイ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-11-16T12:01:06+09:00</dc:date>
+<date>2017-11-16</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000035.000025378.html">
+<title>冬ギフトに最適！あったか素材のキルティングバッグにドリップコーヒーとお菓子を詰めた“冬のお楽しみバッグ”数量限定発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000035.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/35/resize/d25378-35-680306-0.jpg ]
+
+
+オリジナルデザイン キルティングバッグ
+カルディコーヒーファームの限定バッグとしては、初のキルティング素材を使用しています。パ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-11-17T12:01:07+09:00</dc:date>
+<date>2017-11-17</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000037.000025378.html">
+<title>一年の始まりに、厳選した美味しさをお届け！カルディコーヒーファーム 2018年「福袋」</title>
+<link>https://prtimes.jp/main/html/rd/p/000000037.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/37/resize/d25378-37-237574-0.jpg ]
+
+
+■2018「福袋」ラインナップ
+
+豆の違いを味わう、2018年の『コーヒー福袋』
+
+[画像2: https://prtimes.jp/i/25378/37/resize/d25378-37...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-12-01T13:01:06+09:00</dc:date>
+<date>2017-12-01</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000042.000025378.html">
+<title>大切な人を笑顔に！とっておきをセレクトした カルディコーヒーファーム バレンタイン2018</title>
+<link>https://prtimes.jp/main/html/rd/p/000000042.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■&amp;ldquo;SNS映え&amp;rdquo;抜群！レトロからエレガントまで、パケ買いアイテムが充実！
+バレンタインデーの人気NO.1チョコレート『Gavarny（ガヴァルニー）』がエレガントなパッケージに一新して登場。また、カセッ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-12-27T12:01:06+09:00</dc:date>
+<date>2017-12-27</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000043.000025378.html">
+<title>バレンタインのギフトにも！「リンツチョコレート＆ドリップコーヒーセット」1月18日数量限定発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000043.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/43/resize/d25378-43-772919-0.jpg ]
+
+■カフェカルディドリップ KALDIエンジェル
+
+ラオスと東ティモールの深煎り豆を中心にブレンドしたバレンタイン限定のコーヒーが便利な...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-01-05T12:01:09+09:00</dc:date>
+<date>2018-01-05</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000046.000025378.html">
+<title>フランスのお菓子を贈ろう！カルディコーヒーファーム ホワイトデー2018</title>
+<link>https://prtimes.jp/main/html/rd/p/000000046.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■フランス産の素材にこだわったクッキー
+
+[画像1: https://prtimes.jp/i/25378/46/resize/d25378-46-271720-9.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/46/resize/d25378-46-323867-0.jpg ]
+
+[画像3: https://...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-01-24T14:02:06+09:00</dc:date>
+<date>2018-01-24</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000048.000025378.html">
+<title>2月22日は「猫の日」！ 限定バッグや猫アイテムが数量限定で続々登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000048.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■二匹のネコがトレードマーク♪ジャンナッツの紅茶を楽しむ限定バッグ
+
+[画像1: https://prtimes.jp/i/25378/48/resize/d25378-48-651016-14.jpg ]
+【内容紹介】
+[画像2: https://prtimes.jp/i/25378/48/resize/d2...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-02-08T12:01:07+09:00</dc:date>
+<date>2018-02-08</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000049.000025378.html">
+<title>春を先取り！さくらの新商品が続々入荷！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000049.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定発売「さくらバッグ」
+
+
+[画像1: https://prtimes.jp/i/25378/49/resize/d25378-49-396093-0.jpg ]
+【さくらバッグ内容】
+[画像2: https://prtimes.jp/i/25378/49/resize/d25378-49-345299-3.jpg ]
+
+１....</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-02-15T12:01:06+09:00</dc:date>
+<date>2018-02-15</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000051.000025378.html">
+<title>【カルディコーヒーファーム】新生活を応援する「スプリングマーケット」を開催！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000051.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■毎週金曜日のお楽しみ！「ハッピーフライデー」概要
+[画像1: https://prtimes.jp/i/25378/51/resize/d25378-51-396371-0.jpg ]
+
+
+第1弾「オリジナル 文具セット」
+価格：本体1,000円（税込1,080円）
+内容：オリ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-02-22T12:01:06+09:00</dc:date>
+<date>2018-02-22</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000052.000025378.html">
+<title>新しい季節に新しい味わいを。限定コーヒーが入った「春のコーヒーバッグ」発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000052.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定！春のコーヒーバッグ
+
+[画像1: https://prtimes.jp/i/25378/52/resize/d25378-52-827912-5.jpg ]
+
+【内容紹介】
+
+[画像2: https://prtimes.jp/i/25378/52/resize/d25378-52-427650-1.jpg ]
+
+１.エチオ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-03-19T12:01:08+09:00</dc:date>
+<date>2018-03-19</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000012.000025378.html">
+<title>7月13日（木）数量限定！！カルディコーヒーファーム2017年『夏のコーヒーバッグ』発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000012.000025378.html</link>
+<description>[キャメル珈琲グループ]
+
+[画像1: https://prtimes.jp/i/25378/12/resize/d25378-12-144022-5.jpg ]
+
+
+【2017年『夏のコーヒーバッグ』内容紹介】
+
+■アイスブレンド 200ｇ
+アイスでもホットでもしっかりとした飲みごたえを楽しめ、濃厚な...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-06-29T12:47:11+09:00</dc:date>
+<date>2017-06-29</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000014.000025378.html">
+<title>8月1日（火）数量限定『グラスマグ＆ドリップコーヒーセット』発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000014.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/14/resize/d25378-14-607841-3.jpg ]
+
+
+【グラスマグ＆ドリップコーヒーセット　内容紹介】
+
+■オリジナル グラスマグ
+『ＫＩＮＴＯ』の&amp;ldquo;ＵＮＩＴＥＡ&amp;rdquo;シリーズに...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-07-20T10:42:21+09:00</dc:date>
+<date>2017-07-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000016.000025378.html">
+<title>8月8日（火）『ネコバッグ（保冷）』をカルディコーヒーファームで数量限定発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000016.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/16/resize/d25378-16-942010-0.jpg ]
+
+
+【ネコバッグ(保冷)内容紹介】
+
+
+１.ネコバッグ（保冷）
+オリジナルデザインの保冷バッグです。
+[画像2: https://prtimes.jp/i/25378/...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-07-20T13:20:40+09:00</dc:date>
+<date>2017-07-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000019.000025378.html">
+<title>9月1日（金）カルディコーヒーファームが数量限定で「りんごバッグ」発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000019.000025378.html</link>
+<description>[キャメル珈琲グループ]
+【りんごバッグ 内容紹介】
+
+１.りんごバッグ
+オリジナルデザインのトートバッグ。
+サイズ：たて26cm&amp;times;よこ33cm&amp;times;マチ9cm　持ち手45cm
+
+
+[画像1: https://prtimes.jp/i/25378/19/resize/d25378-19-3468...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-08-18T11:28:30+09:00</dc:date>
+<date>2017-08-18</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000021.000025378.html">
+<title>【数量限定】“こわかわいい”モンスタースイーツをつくろう！ ハロウィン手作り製菓キットを発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000021.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■2017年ハロウィン製菓キット
+
+【商品概要】
+[画像1: https://prtimes.jp/i/25378/21/resize/d25378-21-250485-0.jpg ]
+
+
+
+[画像2: https://prtimes.jp/i/25378/21/resize/d25378-21-427732-5.jpg ]
+
+
+
+商品名：...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-08-30T11:37:22+09:00</dc:date>
+<date>2017-08-30</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000025.000025378.html">
+<title>10月1日は「コーヒーの日」！コーヒーの飲み比べが出来る『コーヒーの日バッグ』を数量限定で発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000025.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「コーヒーの日バッグ」
+[画像1: https://prtimes.jp/i/25378/25/resize/d25378-25-727787-1.jpg ]
+
+
+1.コーヒーの日バッグ
+オリジナルデザインのトートバッグ。
+サイズ：たて24ｃｍ&amp;times;よこ34ｃｍ&amp;t...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-09-18T13:12:05+09:00</dc:date>
+<date>2017-09-18</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000010.000025378.html">
+<title>2017年の夏は“シークヮーサー”がアツい！！1ヶ月10万本販売する夏のヒット商品「もへじ 沖縄県産シークヮーサー果汁100％」を使用した新商品が登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000010.000025378.html</link>
+<description>[キャメル珈琲グループ]
+【「もへじ 沖縄県産シークヮーサー果汁100％」商品概要】
+
+[画像1: https://prtimes.jp/i/25378/10/resize/d25378-10-374020-1.jpg ]
+
+
+１ケ月間で約10万本を販売する夏の大人気商品！！
+【商品名】もへじ　沖縄...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-06-15T11:42:48+09:00</dc:date>
+<date>2017-06-15</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000022.000025378.html">
+<title>数量限定「ランチョンマット＆ドリップコーヒーセット」10月6日（金）発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000022.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/22/resize/d25378-22-559066-4.jpg ]
+
+
+【ランチョンマット＆ドリップコーヒーセット　内容紹介】
+
+１.カフェカルディドリップ オータムブレンド
+
+季節限定コーヒー「オータ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-09-22T11:18:44+09:00</dc:date>
+<date>2017-09-22</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000027.000025378.html">
+<title>待ち遠しいクリスマスを、美味しく楽しくカウントダウン！カルディコーヒーファーム「クリスマス」</title>
+<link>https://prtimes.jp/main/html/rd/p/000000027.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■トラディショナルなクリスマスを体験しよう（約50種類）
+クリスマスに纏わる伝統的なお菓子が充実。クリスマスまでのカウントダウンを楽しめるアドベントカレンダーやパーティにもオススメな焼き菓子を揃えます...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-10-05T15:20:34+09:00</dc:date>
+<date>2017-10-05</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000028.000025378.html">
+<title>11月1日 の「紅茶の日」に、とっておきの茶葉をセレクトした『紅茶の日バッグ』を数量限定で発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000028.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「紅茶の日バッグ」
+
+[画像1: https://prtimes.jp/i/25378/28/resize/d25378-28-142915-4.jpg ]
+
+1.紅茶の日バッグ
+オリジナルデザインのトートバッグ
+サイズ：幅25ｃｍ&amp;times;高さ23ｃｍ&amp;times;マチ8.5...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-10-18T12:01:06+09:00</dc:date>
+<date>2017-10-18</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000029.000025378.html">
+<title>11月16日（木）解禁！カルディコーヒーファーム限定ヌーヴォー　受賞歴多数“プレ・ペール・エ・フィス　ボージョレ・ヴィラージュ・ヌーヴォー”</title>
+<link>https://prtimes.jp/main/html/rd/p/000000029.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/29/resize/d25378-29-484805-9.jpg ]
+
+
+【受賞歴多数の実力派ワイナリー &amp;ldquo;プレ・ペール・エ・フィス&amp;rdquo;とは】
+
+ワインの銘醸地として知られる、ボージョレ地区を含...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-11-01T12:01:06+09:00</dc:date>
+<date>2017-11-01</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000023.000025378.html">
+<title>キャメル珈琲グループのワイナリー“キャメルファーム”が完成しました</title>
+<link>https://prtimes.jp/main/html/rd/p/000000023.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/23/resize/d25378-23-981793-2.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/23/resize/d25378-23-628734-1.jpg ]
+
+
+■北海道余市町
+
+[画像3: https://prtimes.jp/i/25378/23/r...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-09-11T12:21:38+09:00</dc:date>
+<date>2017-09-11</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000017.000025378.html">
+<title>ハロウィン限定商品が約200種類！カルディコーヒーファーム 『ハロウィン』</title>
+<link>https://prtimes.jp/main/html/rd/p/000000017.000025378.html</link>
+<description>[キャメル珈琲グループ]
+【商品概要】
+
+■ハロウィン本番に用意しておきたいシェアスナック（約50種類）
+ハロウィンのイベントといえば『Trick or treat （トリックオアトリート）！』大人数で楽しむホームパーティーでも大活躍するチョコ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-08-02T11:20:17+09:00</dc:date>
+<date>2017-08-02</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000009.000025378.html">
+<title>昨年大好評の『レモンバッグ』を今年も全国のカルディコーヒーファームで数量限定販売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000009.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/9/resize/d25378-9-881568-1.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/9/resize/d25378-9-264120-5.jpg ]
+
+
+
+【2017年「レモンバッグ」商品内容】
+
+
+■レモンスパークリン...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-06-07T14:03:49+09:00</dc:date>
+<date>2017-06-07</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000008.000025378.html">
+<title>カルディコーヒーファーム阪急西宮ガーデンズ店　6月16日（金）オープンのお知らせ</title>
+<link>https://prtimes.jp/main/html/rd/p/000000008.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/8/resize/d25378-8-587329-0.jpg ]
+
+■グランドオープンセール開催予定
+カルディコーヒーファーム阪急西宮ガーデンズ店では、2017年6月16（金）～6月19日（月）の4日間グラン...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-06-01T13:47:13+09:00</dc:date>
+<date>2017-06-01</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000007.000025378.html">
+<title>スパイスが食欲を刺激する！タイの食材が充実！カルディコーヒーファーム2017年6月の新商品</title>
+<link>https://prtimes.jp/main/html/rd/p/000000007.000025378.html</link>
+<description>[キャメル珈琲グループ]
+
+[画像1: https://prtimes.jp/i/25378/7/resize/d25378-7-591657-0.jpg ]
+
+【商品概要】
+商品名：ロイタイ トムヤムスープ
+規格：250ｍｌ
+価格：本体￥184(税込￥198)
+発売時期：発売中
+数多くのレトルトカレーの...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-05-31T14:21:47+09:00</dc:date>
+<date>2017-05-31</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000005.000025378.html">
+<title>昨年の大ヒットアイテム“濃縮紅茶”をオリジナル開発のレモンティーで新発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000005.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/5/resize/d25378-5-638100-0.jpg ]
+
+
+
+[画像2: https://prtimes.jp/i/25378/5/resize/d25378-5-554892-4.jpg ]
+
+
+【商品概要】
+商品名:オリジナル ブラックティーレモン
+容量...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-05-18T16:22:58+09:00</dc:date>
+<date>2017-05-18</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000003.000025378.html">
+<title>【夏季限定】不動の人気スイーツに『レモン味』が続々、新登場！2017年5月1日（月）からカルディコーヒーファームで順次発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000003.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/3/resize/d25378-3-528352-6.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/3/resize/d25378-3-867263-14.jpg ]
+
+
+【商品概要】
+商品名：オリジナル パンダレモンミルクプリン
+...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-05-01T12:58:15+09:00</dc:date>
+<date>2017-05-01</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000030.000025378.html">
+<title>具材を更に美味しくする、爽やかな柑橘系の香り♪人気のオリジナル鍋つゆが今年も入荷！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000030.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■売り上げを伸ばし続ける、ヒット「鍋つゆ」
+[画像1: https://prtimes.jp/i/25378/30/resize/d25378-30-106446-0.jpg ]
+
+
+
+[画像2: https://prtimes.jp/i/25378/30/resize/d25378-30-548743-6.jpg ]
+
+商品名：も...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-10-19T12:01:06+09:00</dc:date>
+<date>2017-10-19</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000026.000025378.html">
+<title>濃厚でクリーミーな味わいが秋にピッタリ！「エビ」を使った新商品をご紹介！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000026.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■10年以上続くロングセラー「パスタソース」
+
+[画像1: https://prtimes.jp/i/25378/26/resize/d25378-26-402228-2.jpg ]
+
+商品名:オリジナル パスタソース エビクリーム
+規格:130g　　　　
+価格:本体￥267（税込...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-09-20T12:26:15+09:00</dc:date>
+<date>2017-09-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000020.000025378.html">
+<title>人気シリーズに秋の味わいが登場！カルディコーヒーファーム　2017年9月秋の新商品</title>
+<link>https://prtimes.jp/main/html/rd/p/000000020.000025378.html</link>
+<description>[キャメル珈琲グループ]
+きのこの旨味たっぷりのパスタソース！
+[画像1: https://prtimes.jp/i/25378/20/resize/d25378-20-676537-1.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/20/resize/d25378-20-572260-0.jpg ]
+
+
+商品名：オリジナ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-08-23T12:39:36+09:00</dc:date>
+<date>2017-08-23</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000018.000025378.html">
+<title>一品で満腹！カルディコーヒーファームの新商品“パールクスクス”をこの夏取り入れてみませんか？</title>
+<link>https://prtimes.jp/main/html/rd/p/000000018.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/18/resize/d25378-18-623378-2.jpg ]
+
+【商品概要】
+商品名： ジンダ ホールウィートパールクスクス
+規格：225ｇ
+価格： ￥324（税込）
+販売店舗：全国のカルディコーヒーフ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-08-03T11:33:15+09:00</dc:date>
+<date>2017-08-03</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000015.000025378.html">
+<title>真夏に辛～いスパイスの刺激！！カルディコーヒーファーム2017年8月の旨辛新商品</title>
+<link>https://prtimes.jp/main/html/rd/p/000000015.000025378.html</link>
+<description>[キャメル珈琲グループ]
+刺激的な旨さを堪能できる新商品！！
+
+【商品概要】
+
+[画像1: https://prtimes.jp/i/25378/15/resize/d25378-15-572928-0.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/15/resize/d25378-15-371562-1.jpg ]
+
+【商...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-07-12T14:55:00+09:00</dc:date>
+<date>2017-07-12</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000013.000025378.html">
+<title>中東発、話題上昇中の『フムス』が再登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000013.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/13/resize/d25378-13-634466-2.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/13/resize/d25378-13-937558-0.jpg ]
+
+
+【商品概要】
+商品名： オリジナル わいんdeディップ フム...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-07-03T11:50:45+09:00</dc:date>
+<date>2017-07-03</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000011.000025378.html">
+<title>ジューシーな世界の肉料理でパワーチャージ！！ 2017年夏、カルディコーヒーファームの『肉』商品をご紹介 </title>
+<link>https://prtimes.jp/main/html/rd/p/000000011.000025378.html</link>
+<description>[キャメル珈琲グループ]
+【商品概要】※商品は一部ラインナップとなります。
+
+イタリアのローストポーク「ポルケッタ」
+[画像1: https://prtimes.jp/i/25378/11/resize/d25378-11-533467-0.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/11/...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-06-22T14:09:13+09:00</dc:date>
+<date>2017-06-22</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000020.000122609.html">
+<title>VITURE、最大30％OFFのブラックフライデーセールを11月27日から開催</title>
+<link>https://prtimes.jp/main/html/rd/p/000000020.000122609.html</link>
+<description>[VITURE Inc.]
+[画像1: https://prcdn.freetls.fastly.net/release_image/122609/20/122609-20-1254ab214091df1aaf38effb64252cd4-1920x1080.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>VITURE Inc.</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T11:41:47+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000045.000025378.html">
+<title> カルディコーヒーファームが手掛けるコーヒーのお菓子が新発売！！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000045.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■人気NO.1ブレンド「マイルドカルディ」を使用！コーヒーの豊かな香りが広がるチョコレートが新登場！
+
+[画像1: https://prtimes.jp/i/25378/45/resize/d25378-45-607874-1.jpg ]
+
+[画像2: https://prtimes.jp/i/...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-01-12T12:01:07+09:00</dc:date>
+<date>2018-01-12</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000044.000025378.html">
+<title>寒い冬の必需品！バッグやデスクに忍ばせたい！からだ思いなスパイスティー&amp;キャンディ</title>
+<link>https://prtimes.jp/main/html/rd/p/000000044.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■スパイシーな香りとエキゾチックな味わいがクセになる「スパイスティー」
+
+[画像1: https://prtimes.jp/i/25378/44/resize/d25378-44-973203-8.jpg ]
+
+
+
+[画像2: https://prtimes.jp/i/25378/44/resize/d25378-4...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-01-10T12:01:07+09:00</dc:date>
+<date>2018-01-10</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000041.000025378.html">
+<title>体の芯から温まる、エキゾチックなアジアの味！カルディコーヒーファーム冬のあったか新商品！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000041.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■本場タイでも人気のメーカー&amp;ldquo;ロイタイ&amp;rdquo;のトムカースープが再登場！
+
+[画像1: https://prtimes.jp/i/25378/41/resize/d25378-41-318534-6.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/41/resize/d253...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-12-21T12:01:08+09:00</dc:date>
+<date>2017-12-21</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000038.000025378.html">
+<title>【12/11発売】個性が光る、こだわりのブラジルコーヒーを厳選！カルディコーヒーファーム「ブラジルセレクション」</title>
+<link>https://prtimes.jp/main/html/rd/p/000000038.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■4世代にわたって受け継がれてきたパッセイオ農園の&amp;ldquo;スペシャルティコーヒー&amp;rdquo;
+[画像1: https://prtimes.jp/i/25378/38/resize/d25378-38-620810-5.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/38/res...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-12-07T12:01:07+09:00</dc:date>
+<date>2017-12-07</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000036.000025378.html">
+<title>忙しい年末年始に役立つ!カルディコーヒーファームの「楽しむ」「楽する」新商品！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000036.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■日本のお正月を「楽しむ」団欒にオススメな商品
+
+用途に合わせて使い分け！4つの味を楽しむお餅
+
+[画像1: https://prtimes.jp/i/25378/36/resize/d25378-36-703923-0.jpg ]
+
+[画像2: https://prtimes.jp/i/25378...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-11-23T12:01:22+09:00</dc:date>
+<date>2017-11-23</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000033.000025378.html">
+<title>クリスマス、年末年始の準備をはじめよう！パーティシーンを彩るカルディコーヒーファームの簡単“おもてなし”アイテム</title>
+<link>https://prtimes.jp/main/html/rd/p/000000033.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/33/resize/d25378-33-679010-0.jpg ]
+
+
+≪前菜・パスタ・肉料理・デザートも手軽に作れる！コレがあれば、「○○するだけで」ワンランクアップ≫
+
+■イタリア直輸入、旨味たっぷり...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2017-11-10T13:01:08+09:00</dc:date>
+<date>2017-11-10</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000084.000025378.html">
+<title>この夏、国内外の辛み食材に注目した“旨辛”新商品が続々登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000084.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■チョイ足しで普段の料理が刺激的な味わいに！
+
+[画像1: https://prtimes.jp/i/25378/84/resize/d25378-84-869108-0.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/84/resize/d25378-84-999383-1.jpg ]
+
+商品名：オ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-07-04T12:01:06+09:00</dc:date>
+<date>2018-07-04</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000082.000025378.html">
+<title>メキシカンの調味料や食べ応え抜群なソーセージなどBBQシーズンに役立つ新商品が続々登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000082.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■手軽で美味しいメキシカン食材
+
+[画像1: https://prtimes.jp/i/25378/82/resize/d25378-82-118788-9.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/82/resize/d25378-82-290935-0.jpg ]
+
+商品名：オリジナル タコ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-06-28T12:01:10+09:00</dc:date>
+<date>2018-06-28</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000072.000025378.html">
+<title>夏気分を盛り上げる！シークヮーサーをふんだんに使った新商品が多数登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000072.000025378.html</link>
+<description>[キャメル珈琲グループ]
+こだわりの和材ブランド「もへじ」から、沖縄県産シークヮーサー果汁を使ったオリジナル商品が発売
+
+
+[画像1: https://prtimes.jp/i/25378/72/resize/d25378-72-407217-20.jpg ]
+
+[画像2: https://prtimes.jp/i/2...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-06-20T12:01:09+09:00</dc:date>
+<date>2018-06-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000070.000025378.html">
+<title>爽やかな香りと酸味を感じる、こだわりのレモン商品が集合！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000070.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■冷やして美味しいレモンスイーツ
+
+[画像1: https://prtimes.jp/i/25378/70/resize/d25378-70-642419-8.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/70/resize/d25378-70-154360-9.jpg ]
+
+商品名：オリジナル し...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-05-09T12:01:15+09:00</dc:date>
+<date>2018-05-09</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000069.000025378.html">
+<title>ピリッと刺激的な辛さと、ハーブの爽やかな味わいを楽しむ「もっと、おうちでタイ料理」を開催</title>
+<link>https://prtimes.jp/main/html/rd/p/000000069.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■味付けはコレひとつ！便利なキットや合わせ調味料
+
+[画像1: https://prtimes.jp/i/25378/69/resize/d25378-69-313458-2.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/69/resize/d25378-69-823996-10.jpg ]
+
+商品...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-04-25T12:01:07+09:00</dc:date>
+<date>2018-04-25</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000068.000025378.html">
+<title>果実味たっぷりのひんやりデザートが続々登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000068.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■カルディコーヒーファーム限定フレーバー！「ミレービスケットアイス いちご」
+
+[画像1: https://prtimes.jp/i/25378/68/resize/d25378-68-776147-1.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/68/resize/d2537...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-05-01T12:01:09+09:00</dc:date>
+<date>2018-05-01</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000067.000025378.html">
+<title>カルディコーヒーファームの和材ブランド『もへじ』より、数量限定「和のこだわりバッグ」と、おいしい北海道の商品が新発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000067.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「もへじ 和のこだわりバッグ」
+日本全国のおいしい食品を取り扱う「もへじ」が、和の基本調味料&amp;ldquo;さ・し・す・せ・そ&amp;rdquo;をテーマに開発したこだわり商品を、モダン和柄のオリジナルバッグに入...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-04-19T12:01:10+09:00</dc:date>
+<date>2018-04-19</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000059.000025378.html">
+<title>コーヒーの奥深さを楽しむ限定アイテムが登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000059.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■春を感じる限定カラーのキャニスター缶＆コーヒー豆セットが登場！
+4月16日（月）より、数量限定で「スペシャルブレンド＆キャニスター缶セット」を発売いたします。
+[画像1: https://prtimes.jp/i/25378/59/res...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-04-02T12:01:08+09:00</dc:date>
+<date>2018-04-02</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000058.000025378.html">
+<title>台湾フードを食べよう！春にぴったりなひんやり台湾スイーツも登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000058.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■やさしい味わいの台湾スイーツ
+
+[画像1: https://prtimes.jp/i/25378/58/resize/d25378-58-358994-6.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/58/resize/d25378-58-903314-3.jpg ]
+
+商品名：オリジナル オー...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-03-28T12:01:10+09:00</dc:date>
+<date>2018-03-28</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000056.000025378.html">
+<title>5月の新茶シーズンに先駆け “抹茶”商品を多数発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000056.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■お菓子の人気シリーズに&amp;ldquo;抹茶&amp;rdquo;が登場！
+
+[画像1: https://prtimes.jp/i/25378/56/resize/d25378-56-923898-6.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/56/resize/d25378-56-796420-1.jpg ]
+
+商品...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-03-14T13:01:08+09:00</dc:date>
+<date>2018-03-14</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000055.000025378.html">
+<title>【カルディコーヒーファーム】新生活にもオススメ！オシャレなカフェ風メニューを自宅で楽しもう！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000055.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■&amp;ldquo;カフェごはん&amp;rdquo;が簡単に！
+
+[画像1: https://prtimes.jp/i/25378/55/resize/d25378-55-463743-8.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/55/resize/d25378-55-190675-0.jpg ]
+
+商品名：オリジナ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-03-07T13:01:14+09:00</dc:date>
+<date>2018-03-07</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000054.000025378.html">
+<title>【カルディコーヒーファーム】スペイン料理が手軽に楽しめる商品が続々登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000054.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■スペイン伝統のスープを楽しむ新商品
+たっぷりのニンニクが入ったスペインを代表するスープ&amp;ldquo;ソパ・デ・アホ&amp;rdquo;を、手軽に味わえるオリジナル商品が登場します。
+
+温めるだけで簡単&amp;rdquo;ソパ・デ・ア...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-03-02T11:01:06+09:00</dc:date>
+<date>2018-03-02</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000209.000018154.html">
+<title>アンドパッド、優れた建築製品を表彰し未来の建築を創る「みらいのたね賞」を受賞</title>
+<link>https://prtimes.jp/main/html/rd/p/000000209.000018154.html</link>
+<description>[株式会社アンドパッド]
+建設バーティカルAI「ANDPAD」を運営する株式会社アンドパッド（本社：東京都港区、代表取締役：稲田武夫、以下アンドパッド）は、一般社団法人日本能率協会（東京都港区）が主催する建築業界における日本最大級...</description>
+<dc:corp>株式会社アンドパッド</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T13:15:36+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000101.000025378.html">
+<title>北海道の自然の恵みを味わう、北海道産の野菜や海の幸を使った商品が登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000101.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/101/resize/d25378-101-852808-0.jpg ]
+
+
+
+もへじ「北海道から」は、もへじのオリジナル商品です。北海道の素材や生産者にこだわった、一定の基準をクリアした商品にのみ、 ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-10-02T13:40:10+09:00</dc:date>
+<date>2018-10-02</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000102.000025378.html">
+<title>食欲の秋到来、季節の素材を活かした新商品が多数登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000102.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■秋の味覚を楽しめるスイーツが大集合
+
+[画像1: https://prtimes.jp/i/25378/102/resize/d25378-102-443624-0.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/102/resize/d25378-102-587112-1.jpg ]
+
+商品名：オリジ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-09-28T14:40:10+09:00</dc:date>
+<date>2018-09-28</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000104.000025378.html">
+<title>今年の注目はしびれ系？！酸味系？！コク旨系？！味わいを選んで鍋のバリエーションを楽しもう</title>
+<link>https://prtimes.jp/main/html/rd/p/000000104.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■山椒のしびれと鶏白湯のコク、鍋つゆ2種で鍋をより楽しく
+
+[画像1: https://prtimes.jp/i/25378/104/resize/d25378-104-941149-0.jpg ]
+
+
+
+[画像2: https://prtimes.jp/i/25378/104/resize/d25378-104-307497-1....</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-10-10T12:40:15+09:00</dc:date>
+<date>2018-10-10</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000105.000025378.html">
+<title>世界各国のコーヒー生産地をめぐるように、様々なコーヒーを飲んでスタンプを集めよう！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000105.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/105/resize/d25378-105-201392-0.jpg ]
+
+2018年10月16日（火）より、1回のお会計につきコーヒー豆2種類お買い上げで「コーヒージャーニーパスポート」を発行致します。種類の...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-10-15T12:40:15+09:00</dc:date>
+<date>2018-10-15</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000106.000025378.html">
+<title>ティムタムにカルディコーヒーファーム限定フレーバー「ハニーコム」と「アイスコーヒー」が新登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000106.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■カルディコーヒーファーム限定フレーバー
+[画像1: https://prtimes.jp/i/25378/106/resize/d25378-106-360137-0.jpg ]
+
+（写真上より）
+商品名： アーノッツ ティムタム ハニーコム
+規格：9枚　価格：本体￥369(...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-10-19T15:40:10+09:00</dc:date>
+<date>2018-10-19</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000107.000025378.html">
+<title>「おいしい食のひろがり」を　カルディコーヒーファーム 江別 蔦屋書店　11月21日オープン</title>
+<link>https://prtimes.jp/main/html/rd/p/000000107.000025378.html</link>
+<description>[キャメル珈琲グループ]
+キャメル珈琲グループは、自然や環境を大切に、生産者とお客さまを相互につなぎ、食を通して、みんなの笑顔を繋いでいきたという想いで事業を展開しております。
+カルディコーヒーファームでは、ひとつひとつに込...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-11-02T04:40:28+09:00</dc:date>
+<date>2018-11-02</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000108.000025378.html">
+<title>ラクして華やか！手軽に美味しいパーティーメニューができるアイテムが勢ぞろい</title>
+<link>https://prtimes.jp/main/html/rd/p/000000108.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■味も見た目も大満足のシャルキュトリーを自宅でも
+[画像1: https://prtimes.jp/i/25378/108/resize/d25378-108-834049-2.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/108/resize/d25378-108-247835-4.jpg ]
+
+商...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-11-10T12:40:30+09:00</dc:date>
+<date>2018-11-10</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000028.000156783.html">
+<title>海外で暮らす子どもたちの日本語教育を守る。NSJAPAN、バリ日本人会へ売上の一部を寄付</title>
+<link>https://prtimes.jp/main/html/rd/p/000000028.000156783.html</link>
+<description>[株式会社NSJAPAN]
+株式会社NSJAPAN（本社：東京都中央区、代表取締役：内藤 脩平）は、インドネシア・バリ島で日本語教育を支えるバリ日本人会に対し、売上の一部を寄付することを決定しました。
+本取り組みは、バリ日本人会が主宰...</description>
+<dc:corp>株式会社NSJAPAN</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:42:18+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000090.000025378.html">
+<title>コーヒータイムもハロウィン仕様に！季節限定のコーヒー豆や数量限定セットを発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000090.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■ハロウィン限定！こだわりの焙煎コーヒー豆
+[画像1: https://prtimes.jp/i/25378/90/resize/d25378-90-474166-2.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/90/resize/d25378-90-826493-0.jpg ]
+
+商品名：ブラ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-08-31T12:01:06+09:00</dc:date>
+<date>2018-08-31</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000092.000025378.html">
+<title>カルディコーヒーファームの和材ブランド『もへじ』より、「粋な豆皿セット」が数量限定で発売！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000092.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■もへじ 粋な豆皿セット
+
+[画像1: https://prtimes.jp/i/25378/92/resize/d25378-92-546669-0.jpg ]
+
+【内容紹介】
+[画像2: https://prtimes.jp/i/25378/92/resize/d25378-92-700632-1.jpg ]
+
+１.ちりめん巾着
+和...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-09-01T12:01:25+09:00</dc:date>
+<date>2018-09-01</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000093.000025378.html">
+<title>濃厚な海老だしのラーメンやスープで海老の旨みを手軽に味わえる商品が登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000093.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■海老だしラーメン4種の味わい、味噌、塩、ミルク、ガーリック
+
+[画像1: https://prtimes.jp/i/25378/93/resize/d25378-93-377575-0.jpg ]
+
+
+（左上より時計回り）
+商品名：もへじ 北海道海老みそらぁめん
+規格：...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-08-29T19:01:07+09:00</dc:date>
+<date>2018-08-29</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000094.000025378.html">
+<title>海外初出店「カルディ COFFEE FARM」を台湾にオープン</title>
+<link>https://prtimes.jp/main/html/rd/p/000000094.000025378.html</link>
+<description>[キャメル珈琲グループ]
+海外初出店となる台湾の「カルディ COFFEE FARM」では、お客様に宝探し感覚でお買物を楽しんでいただけるよう、店舗の設計や商品陳列、おもてなしの気持ちでの店頭のコーヒーサービスなど日本と同様に展開いたし...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-09-03T16:01:06+09:00</dc:date>
+<date>2018-09-03</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000096.000025378.html">
+<title>数量限定！毎年人気の「コーヒーの日バッグ」に限定ブレンドが入って登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000096.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/96/resize/d25378-96-635313-0.jpg ]
+
+【内容紹介】
+[画像2: https://prtimes.jp/i/25378/96/resize/d25378-96-277730-1.jpg ]
+
+１.炭焼珈琲モカブレンド
+「コーヒーの日バッ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-09-17T12:01:10+09:00</dc:date>
+<date>2018-09-17</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000097.000025378.html">
+<title>テーマは「クリスマスマーケット」　2018年の限定商品が続々登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000097.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■本場のクリスマス気分をご自宅で！数量限定『グリューワインセット』
+ヨーロッパのクリスマスマーケットで楽しまれている、フルーツやスパイスを加えた温かくてほんのり甘いワイン、グリューワインとオリジナル...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-10-03T11:40:12+09:00</dc:date>
+<date>2018-10-03</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000098.000025378.html">
+<title>【11月26日（月）発売】コーヒー＆キャニスター缶、スパークリングワイン＆オリーブ皿、2種類のクリスマス限定セットが登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000098.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■ノエル＆キャニスター缶セット 内容紹介
+[画像1: https://prtimes.jp/i/25378/98/resize/d25378-98-789128-0.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/98/resize/d25378-98-576769-4.jpg ]
+
+クリスマス限定コ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-11-12T11:40:13+09:00</dc:date>
+<date>2018-11-12</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000295.000018086.html">
+<title>東京ミッドタウン日比谷にCreemaのクリスマスマーケットが今年も登場！60組のクリエイターが集う「HIBIYA CHRISTMAS MARKET 2026 Supported by Creema」</title>
+<link>https://prtimes.jp/main/html/rd/p/000000295.000018086.html</link>
+<description>[株式会社クリーマ]
+[画像1: https://prcdn.freetls.fastly.net/release_image/18086/295/18086-295-53398750fab3127ed55a2bb820992137-2400x1050.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社クリーマ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T19:42:03+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000085.000025378.html">
+<title>8月1日（水）数量限定でアイスコーヒーが手軽に楽しめる 『ドリップコーヒー＆オリジナルグラスセット』を発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000085.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■ドリップコーヒー＆オリジナルグラスセット内容紹介
+
+[画像1: https://prtimes.jp/i/25378/85/resize/d25378-85-895541-0.jpg ]
+
+
+■カフェカルディ ドリップ アイスブレンド
+夏の人気No.1、濃厚な苦味とブラジル...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-07-19T07:01:06+09:00</dc:date>
+<date>2018-07-19</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000086.000025378.html">
+<title>夏においしい！猛暑を乗りきる“酸っぱい”アイテムが集合</title>
+<link>https://prtimes.jp/main/html/rd/p/000000086.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■旨みたっぷり！黒酢を手軽に味わえる商品
+
+[画像1: https://prtimes.jp/i/25378/86/resize/d25378-86-284870-5.jpg ]
+
+[画像2: https://prtimes.jp/i/25378/86/resize/d25378-86-515401-3.jpg ]
+
+商品名：オリジ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-07-17T12:01:11+09:00</dc:date>
+<date>2018-07-17</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000087.000025378.html">
+<title>食べて！飾って！パーティーに華を添えるハロウィン限定商品が200種登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000087.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■ハロウィンパーティーを彩る、みんなで楽しめる&amp;ldquo;インパクト大&amp;rdquo;なアイテム
+
+[画像1: https://prtimes.jp/i/25378/87/resize/d25378-87-724200-26.jpg ]
+
+
+
+（写真左から時計回りに）
+オリジナル ハラ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-08-01T12:01:06+09:00</dc:date>
+<date>2018-08-01</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000088.000025378.html">
+<title>【8月10日から開催】カルディコーヒーファームの「決算セール」ではお得な企画が目白押し！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000088.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■第1弾 8/10（金）～8/16（木） 7日間
+[画像1: https://prtimes.jp/i/25378/88/resize/d25378-88-599711-0.jpg ]
+
+
+■第2弾 8/17（金）～8/23（木） 7日間
+[画像2: https://prtimes.jp/i/25378/88/resize/d25378-8...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-08-09T12:01:06+09:00</dc:date>
+<date>2018-08-09</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000089.000025378.html">
+<title>【9月1日（土）発売】毎年人気のりんごバッグが数量限定で登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000089.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■数量限定「りんごバッグ」
+[画像1: https://prtimes.jp/i/25378/89/resize/d25378-89-631812-0.jpg ]
+
+【内容紹介】
+[画像2: https://prtimes.jp/i/25378/89/resize/d25378-89-978471-1.jpg ]
+
+１.りんごバッグ
+...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-08-18T12:01:10+09:00</dc:date>
+<date>2018-08-18</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000130.000025378.html">
+<title>「ありがとう」の気持ちをのせて。この春贈りたいアイテムが多数登場</title>
+<link>https://prtimes.jp/main/html/rd/p/000000130.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■「ありがとう」の気持ちを一杯のコーヒーにのせて
+[画像1: https://prtimes.jp/i/25378/130/resize/d25378-130-961058-0.jpg ]
+
+商品名：カフェカルディ ドリップ ありがとうコーヒー
+規格：1個　価格：本体￥11...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-02-12T11:40:13+09:00</dc:date>
+<date>2019-02-12</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000131.000025378.html">
+<title>さくら商品が満開！春の訪れをさくらスイーツでいち早くお届け</title>
+<link>https://prtimes.jp/main/html/rd/p/000000131.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■パンダシリーズにさくらが咲いた♪季節限定のさくらミルクプリンが仲間入り
+
+[画像1: https://prtimes.jp/i/25378/131/resize/d25378-131-395405-0.jpg ]
+
+商品名：オリジナル　パンダさくらミルクプリン
+規格：5...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-02-06T13:40:13+09:00</dc:date>
+<date>2019-02-06</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000120.000025378.html">
+<title>甘いチョコを溶かしてあたたまる　寒い季節にぴったりの限定ドリップコーヒーセット</title>
+<link>https://prtimes.jp/main/html/rd/p/000000120.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/120/resize/d25378-120-899001-3.jpg ]
+
+ベルギー発のチョコメルトはコーヒーで溶かしてカフェショコラ風にしたり、手軽にアレンジコーヒーをお楽しみいただけます。冬本番、...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-12-26T11:40:13+09:00</dc:date>
+<date>2018-12-26</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000122.000025378.html">
+<title>人気のコーヒーがチョコレートになって新登場！バレンタイン限定「カカオの森」シリーズと『もへじ』から和のチョコレートが新発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000122.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■カルディコーヒーファームのオリジナルコーヒー豆をブレンドしたビタータイプの板チョコ
+
+[画像1: https://prtimes.jp/i/25378/122/resize/d25378-122-737392-0.jpg ]
+
+オリジナル コーヒーチョコレート 3種_イ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-01-08T14:40:10+09:00</dc:date>
+<date>2019-01-08</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000123.000025378.html">
+<title>「カルディ COFFEE FARM」台湾3店舗目を、台北・信義地区に1/10（木）オープン</title>
+<link>https://prtimes.jp/main/html/rd/p/000000123.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/123/resize/d25378-123-784716-0.jpg ]
+
+1月10日オープン、カルディ COFFEE FARM 微風南山アトレ店 店頭
+
+
+[画像2: https://prtimes.jp/i/25378/123/resize/d25378-123-51150...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-01-10T14:40:10+09:00</dc:date>
+<date>2019-01-10</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000124.000025378.html">
+<title>笑顔をつなぐカルディコーヒーファームのバレンタイン。キュートなパッケージやこだわりのチョコレートが世界中から続々登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000124.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■ライスミルクを使用したスティックチョコレート
+カカオ42%のライスミルクを使用したスティックチョコレート、ヨーロッパベジタリアン連合のヴィーガン認証を取得しています。ブランドのロゴ入り缶は再利用も楽し...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-01-10T16:40:11+09:00</dc:date>
+<date>2019-01-10</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000125.000025378.html">
+<title>期間限定！選りすぐりの欧州ワイン10アイテムが特別価格に</title>
+<link>https://prtimes.jp/main/html/rd/p/000000125.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/125/resize/d25378-125-208510-0.jpg ]
+
+
+対象商品一覧
+[画像2: https://prtimes.jp/i/25378/125/resize/d25378-125-520566-1.jpg ]
+
+
+
+※一部店舗では酒類の取り扱いがござい...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-01-24T12:40:11+09:00</dc:date>
+<date>2019-01-24</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000126.000025378.html">
+<title>2月22日“にゃんにゃんにゃんの日”にちなんだ商品が数量限定で登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000126.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■お気に入りはどの子？愛猫家の心をくすぐるデザイン
+
+[画像1: https://prtimes.jp/i/25378/126/resize/d25378-126-706382-0.jpg ]
+
+ブラジルとルワンダの豆を中心にブレンドした、希少性の高いピーベリー使用の...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-02-02T04:40:10+09:00</dc:date>
+<date>2019-02-02</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000127.000025378.html">
+<title>にゃんにゃんにゃん！2月22日 （金）猫の日に限定バッグを発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000127.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■愛らしい猫のイラストが随所に、ネコの日バッグ
+
+[画像1: https://prtimes.jp/i/25378/127/resize/d25378-127-860333-0.jpg ]
+
+【内容紹介】
+
+[画像2: https://prtimes.jp/i/25378/127/resize/d25378-127-662489...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-01-29T11:40:13+09:00</dc:date>
+<date>2019-01-29</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000129.000025378.html">
+<title>“スコデッロ”でパルマ風にワインを楽しむ、ランブルスコボウルセットを数量限定で発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000129.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/129/resize/d25378-129-540797-0.jpg ]
+
+ 【内容紹介】
+[画像2: https://prtimes.jp/i/25378/129/resize/d25378-129-436599-1.jpg ]
+
+
+１. ランブルスコ・ロッソ・ドルチェ
+...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2019-02-04T11:40:13+09:00</dc:date>
+<date>2019-02-04</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000194.000087924.html">
+<title>冬の夜空に大藤が咲く！レッドクリフ、あしかがフラワーパークで600機のドローンショーを開催</title>
+<link>https://prtimes.jp/main/html/rd/p/000000194.000087924.html</link>
+<description>[株式会社レッドクリフ]
+[画像1: https://prcdn.freetls.fastly.net/release_image/87924/194/87924-194-7e48aba3c59135139dd874f523e93181-3900x2194.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>株式会社レッドクリフ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T11:45:22+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000111.000025378.html">
+<title>年末年始にこだわりの美味しいものを。厳選素材の新商品が多数登場！</title>
+<link>https://prtimes.jp/main/html/rd/p/000000111.000025378.html</link>
+<description>[キャメル珈琲グループ]
+■だしの美味しさで素材を味わう
+[画像1: https://prtimes.jp/i/25378/111/resize/d25378-111-994011-0.jpg ]
+
+
+[画像2: https://prtimes.jp/i/25378/111/resize/d25378-111-791988-2.jpg ]
+
+商品名： もへじ 鯛だ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-11-21T12:40:28+09:00</dc:date>
+<date>2018-11-21</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000109.000025378.html">
+<title>数量限定！12月14日（金）手土産にもぴったりなハーフボトルとカッティングボードのセットを発売</title>
+<link>https://prtimes.jp/main/html/rd/p/000000109.000025378.html</link>
+<description>[キャメル珈琲グループ]
+[画像1: https://prtimes.jp/i/25378/109/resize/d25378-109-686663-0.jpg ]
+
+
+
+【内容紹介】
+
+[画像2: https://prtimes.jp/i/25378/109/resize/d25378-109-448606-1.jpg ]
+
+１.キャンティ・クラッシコ ハーフ
+フ...</description>
+<dc:corp>キャメル珈琲グループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2018-11-30T11:40:22+09:00</dc:date>
+<date>2018-11-30</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000333.000027522.html">
+<title>ベラ・ハディッド、コーチを着用</title>
+<link>https://prtimes.jp/main/html/rd/p/000000333.000027522.html</link>
+<description>[コーチ]
+[画像: https://prcdn.freetls.fastly.net/release_image/27522/333/27522-333-5ce59723669830d654acc0c227194103-2176x2700.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;a...</description>
+<dc:corp>コーチ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000001061.000017692.html">
+<title>西日本鉄道THE RAIL KITCHEN CHIKUGO　クリスマスディナー特別運行2026を開催します！</title>
+<link>https://prtimes.jp/main/html/rd/p/000001061.000017692.html</link>
+<description>[にしてつグループ]
+[画像1: https://prcdn.freetls.fastly.net/release_image/17692/1061/17692-1061-06d7e622387a2178d67bb36f5e1a695b-961x401.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>にしてつグループ</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000109.000160429.html">
+<title>【JR東海×LIXIL】ＪＲ東海グループとLIXILとの連携による 『東海道新幹線再生アルミ』を活用した資源循環の仕組みの構築</title>
+<link>https://prtimes.jp/main/html/rd/p/000000109.000160429.html</link>
+<description>[東海旅客鉄道株式会社]
+[画像1: https://prcdn.freetls.fastly.net/release_image/160429/109/160429-109-446647db9c8a6c3bf3b0705070be15bc-960x540.jpg?width=536&amp;amp;quality=85%2C75&amp;amp;format=jpeg&amp;amp;auto=webp&amp;amp;fit=bounds&amp;...</description>
+<dc:corp>東海旅客鉄道株式会社</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T17:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+<item rdf:about="https://prtimes.jp/main/html/rd/p/000000249.000041771.html">
+<title>OfferBoxPLUS、オンライン就活セミナー「28卒体育会学生向け 部活での当たり前を就活の武器にする！」を12月に開催</title>
+<link>https://prtimes.jp/main/html/rd/p/000000249.000041771.html</link>
+<description>[株式会社i-plug]
+株式会社i-plug（本社：大阪市北区、代表取締役社長 CEO：山田 雅人）が運営する、新卒オファー型人材紹介サービス「OfferBoxPLUS（オファーボックス プラス）」は、2028年卒業予定の学生を対象とした就活セミナ...</description>
+<dc:corp>株式会社i-plug</dc:corp>
+<business_form>企業・官公庁・団体</business_form>
+<dc:date>2026-11-20T19:15:26+09:00</dc:date>
+<date>2026-11-20</date>
+</item>
+</rdf:RDF>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T19:57:13.547922+00:00",
+  "generated_at": "2026-11-20T02:01:16.461945+00:00",
   "source": "an_anilist",
   "endpoint": "https://graphql.anilist.co",
   "license_note": "AniList ToS: 非商用；禁止当数据存储/备份；禁止 hoarding。仅保留作品介绍所需字段。",
@@ -110,15 +110,15 @@
     {
       "page": 18,
       "status": "ok",
-      "items": 39,
-      "total": 889
+      "items": 40,
+      "total": 890
     }
   ],
-  "raw_fetched": 889,
+  "raw_fetched": 890,
   "dropped": {
     "adult": 401,
     "non_jp": 17,
-    "low_rank": 167,
+    "low_rank": 168,
     "no_title": 0
   },
   "total": 304,
@@ -12441,6 +12441,49 @@
       "related_work_slug": null
     },
     {
+      "id": "a91dc3e7cec8dff23416f401e",
+      "slug": "machikado-mazoku-2-choume",
+      "anilist_id": 123330,
+      "mal_id": 42745,
+      "title_ja": "まちカドまぞく 2丁目",
+      "title_romaji": "Machikado Mazoku: 2-Choume",
+      "title_en": "The Demon Girl Next Door Season 2",
+      "title_zh_tw": null,
+      "title_zh_cn": null,
+      "format": "tv",
+      "adaptation_source": "manga",
+      "status": "finished",
+      "start_date": "2022-04-08",
+      "end_date": "2022-07-01",
+      "season": "spring",
+      "season_year": 2022,
+      "episode_count": 12,
+      "episode_duration_min": 24,
+      "studios": [
+        "J.C.STAFF"
+      ],
+      "main_cast": [
+        {
+          "character": "千代田桃",
+          "voice_actor": "鬼頭明里"
+        },
+        {
+          "character": "吉田優子",
+          "voice_actor": "小原好美"
+        }
+      ],
+      "average_score": 78,
+      "popularity": 29005,
+      "yuri_tag_rank": 60,
+      "is_adult": false,
+      "country_of_origin": "JP",
+      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx123330-AU2jllC75uSE.png",
+      "cover_source_url": "https://anilist.co/anime/123330",
+      "source_url": "https://anilist.co/anime/123330",
+      "related_work_id": null,
+      "related_work_slug": null
+    },
+    {
       "id": "a40e00a083e16c0c2e0860d93",
       "slug": "wonderful-precure",
       "anilist_id": 171030,
@@ -15088,49 +15131,6 @@
       "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171099-JexoHylkSZ6r.jpg",
       "cover_source_url": "https://anilist.co/anime/171099",
       "source_url": "https://anilist.co/anime/171099",
-      "related_work_id": null,
-      "related_work_slug": null
-    },
-    {
-      "id": "a91dc3e7cec8dff23416f401e",
-      "slug": "machikado-mazoku-2-choume",
-      "anilist_id": 123330,
-      "mal_id": 42745,
-      "title_ja": "まちカドまぞく 2丁目",
-      "title_romaji": "Machikado Mazoku: 2-Choume",
-      "title_en": "The Demon Girl Next Door Season 2",
-      "title_zh_tw": null,
-      "title_zh_cn": null,
-      "format": "tv",
-      "adaptation_source": "manga",
-      "status": "finished",
-      "start_date": "2022-04-08",
-      "end_date": "2022-07-01",
-      "season": "spring",
-      "season_year": 2022,
-      "episode_count": 12,
-      "episode_duration_min": 24,
-      "studios": [
-        "J.C.STAFF"
-      ],
-      "main_cast": [
-        {
-          "character": "千代田桃",
-          "voice_actor": "鬼頭明里"
-        },
-        {
-          "character": "吉田優子",
-          "voice_actor": "小原好美"
-        }
-      ],
-      "average_score": 78,
-      "popularity": 29005,
-      "yuri_tag_rank": 56,
-      "is_adult": false,
-      "country_of_origin": "JP",
-      "cover_url": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx123330-AU2jllC75uSE.png",
-      "cover_source_url": "https://anilist.co/anime/123330",
-      "source_url": "https://anilist.co/anime/123330",
       "related_work_id": null,
       "related_work_slug": null
     },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T10:42:21.030633+00:00",
+  "generated_at": "2026-11-22T19:01:41.224404+00:00",
   "source": "an_anilist",
   "matched_works": 48,
   "matches": [
@@ -469,6 +469,21 @@
       "adaptation_source": "manga"
     },
     {
+      "work_id": "c3b021dd6ab14a6ce8fa13136",
+      "work_slug": "w-e6575916a8",
+      "anilist_id": 102680,
+      "title_native": "私に天使が舞い降りた！",
+      "status": "finished",
+      "our_status": "finished",
+      "format": "tv",
+      "episodes": 12,
+      "broadcast_start": "2019-01-08",
+      "broadcast_end": "2019-03-26",
+      "studio": "Doga Kobo",
+      "source_url": "https://anilist.co/anime/102680",
+      "adaptation_source": "manga"
+    },
+    {
       "work_id": "c3db785f2afaacc3bc08d8e00",
       "work_slug": "w-3db785f2af",
       "anilist_id": 158,
@@ -496,21 +511,6 @@
       "broadcast_end": "2025-06-26",
       "studio": "Shaft",
       "source_url": "https://anilist.co/anime/177120",
-      "adaptation_source": "manga"
-    },
-    {
-      "work_id": "c3b021dd6ab14a6ce8fa13136",
-      "work_slug": "w-e6575916a8",
-      "anilist_id": 102680,
-      "title_native": "私に天使が舞い降りた！",
-      "status": "finished",
-      "our_status": "finished",
-      "format": "tv",
-      "episodes": 12,
-      "broadcast_start": "2019-01-08",
-      "broadcast_end": "2019-03-26",
-      "studio": "Doga Kobo",
-      "source_url": "https://anilist.co/anime/102680",
       "adaptation_source": "manga"
     },
     {

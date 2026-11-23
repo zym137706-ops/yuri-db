@@ -2,15 +2,15 @@
   {
     "source_id": "ja_yurihime",
     "status": "ok",
-    "items_seen": 38,
+    "items_seen": 40,
     "fetches": [
       {
         "url": "https://www.ichijinsha.co.jp/yurihime/",
         "status_kind": "ok",
         "http": 200,
-        "bytes": 51424,
-        "sha256": "e71c76adf56401c6",
-        "raw": "data/raw/ja_yurihime/20261116T024311-e71c76ad.html",
+        "bytes": 53362,
+        "sha256": "f2fa4cedd62a219c",
+        "raw": "data/raw/ja_yurihime/20261123T095539-f2fa4ced.html",
         "error": ""
       }
     ],
@@ -29,7 +29,7 @@
         "http": 200,
         "bytes": 51662,
         "sha256": "5eeb38c195274893",
-        "raw": "data/raw/ja_galette/20261116T024314-5eeb38c1.html",
+        "raw": "data/raw/ja_galette/20261123T095540-5eeb38c1.html",
         "error": ""
       }
     ],
@@ -46,14 +46,26 @@
         "url": "https://www.tongli.com.tw/ThemeGL.aspx?page=1&s=1",
         "status_kind": "ok",
         "http": 200,
-        "bytes": 34353,
-        "sha256": "b5110581053a7de9",
-        "raw": "data/raw/tw_tongli/20261116T024315-b5110581.html",
+        "bytes": 34346,
+        "sha256": "dc5753d0092ab421",
+        "raw": "data/raw/tw_tongli/20261123T095541-dc5753d0.html",
         "error": ""
       }
     ],
     "robots": [
       "ok (75 bytes)"
+    ]
+  },
+  {
+    "source_id": "tw_tongli",
+    "status": "ok",
+    "items_seen": 1,
+    "fetches": [
+      {
+        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0379005A",
+        "status_kind": "ok",
+        "http": 200
+      }
     ]
   },
   {
@@ -333,32 +345,20 @@
     ]
   },
   {
-    "source_id": "tw_tongli",
-    "status": "ok",
-    "items_seen": 1,
-    "fetches": [
-      {
-        "url": "https://www.tongli.com.tw/BooksDetail.aspx?Bd=BM0483001A",
-        "status_kind": "ok",
-        "http": 200
-      }
-    ]
-  },
-  {
     "source_id": "ja_openbd",
     "status": "ok",
     "items_seen": 0,
     "fetches": [
       {
-        "url": "https://api.openbd.jp/v1/get?isbn=9786260228774,9786260253745,9786260254995,9786260258993,9786260259723,9786260268763,9786260269630,9786260274146,9786260274269,9786260274276",
+        "url": "https://api.openbd.jp/v1/get?isbn=9786260228774,9786260253745,9786260254995,9786260258993,9786260259723,9786260268763,9786260269630,9786260274269,9786260274276,9786260277932",
         "status_kind": "ok"
       },
       {
-        "url": "https://api.openbd.jp/v1/get?isbn=9786260277932,9786260280369,9786260280529,9786260280574,9786260280628,9786260281021,9786260281168,9786260281618,9786260283926,9786260284893",
+        "url": "https://api.openbd.jp/v1/get?isbn=9786260280369,9786260280529,9786260280574,9786260280628,9786260281021,9786260281168,9786260281618,9786260283926,9786260284893,9786260284909",
         "status_kind": "ok"
       },
       {
-        "url": "https://api.openbd.jp/v1/get?isbn=9786260284909,9786260284916,9786260287351,9786260287436",
+        "url": "https://api.openbd.jp/v1/get?isbn=9786260284916,9786260286378,9786260287351,9786260287436",
         "status_kind": "ok"
       }
     ]

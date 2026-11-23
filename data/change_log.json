@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T01:24:25.344211+00:00",
-  "total": 1565,
-  "latest_run_entries": 0,
+  "generated_at": "2026-11-23T09:56:35.383068+00:00",
+  "total": 1569,
+  "latest_run_entries": 4,
   "entries": [
     {
       "entity_type": "work",
@@ -17217,6 +17217,50 @@
       "new_value": "none",
       "source_id": null,
       "detected_at": "2026-11-16T10:38:11.127361+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c82fe48d9e482f29bf19cfc07",
+      "work_id": "c82fe48d9e482f29bf19cfc07",
+      "change_type": "created",
+      "field_name": null,
+      "old_value": null,
+      "new_value": "ドール喫茶のメイドたち",
+      "source_id": "コミック百合姫 公式サイト（一迅社）",
+      "detected_at": "2026-11-23T09:56:35.383068+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "cfb856d7390c49eb7fab527b4",
+      "work_id": "cfb856d7390c49eb7fab527b4",
+      "change_type": "updated",
+      "field_name": "volume_count_zh_tw",
+      "old_value": "4",
+      "new_value": "5",
+      "source_id": null,
+      "detected_at": "2026-11-23T09:56:35.383068+00:00"
+    },
+    {
+      "entity_type": "volume",
+      "entity_id": "cfb856d7390c49eb7fab527b4:zh_tw:5",
+      "work_id": "cfb856d7390c49eb7fab527b4",
+      "change_type": "created",
+      "field_name": "zh_tw_volume",
+      "old_value": null,
+      "new_value": "v5 ISBN=9786260286378",
+      "source_id": null,
+      "detected_at": "2026-11-23T09:56:35.383068+00:00"
+    },
+    {
+      "entity_type": "work",
+      "entity_id": "c44d1fc95b85e88ddd68542f7",
+      "work_id": "c44d1fc95b85e88ddd68542f7",
+      "change_type": "deleted",
+      "field_name": null,
+      "old_value": "アンドロイドは経験人数に入りますか??",
+      "new_value": null,
+      "source_id": null,
+      "detected_at": "2026-11-23T09:56:35.383068+00:00"
     }
   ]
 }

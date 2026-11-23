@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-23T01:24:23.879714+00:00",
+  "generated_at": "2026-11-23T09:56:33.825569+00:00",
   "source_records": {
-    "yurihime": 38,
+    "yurihime": 40,
     "galette": 4,
     "tongli_list": 24,
     "tongli_details": 24,
-    "total_records": 66
+    "total_records": 68
   },
   "works_total": 847,
-  "created_at_preserved": 847,
+  "created_at_preserved": 846,
   "by_media_type": {
     "manga": 752,
     "light_novel": 95
@@ -20,9 +20,9 @@
   "ndl_enriched_works": 224,
   "ndl_label_set": 212,
   "by_status": {
-    "ongoing": 142,
+    "ongoing": 143,
     "completed": 696,
-    "unknown": 9
+    "unknown": 8
   },
   "by_magazine": {
     "サンデーうぇぶり少年サンデーコミックス": 1,
@@ -30,9 +30,9 @@
     "IDコミックス. Yurihime comics": 31,
     "キャノプリCOMICS": 1,
     "ﾔﾝｸﾞｶﾞﾝｶﾞﾝｺﾐｯｸｽ": 1,
-    "百合姫コミックス": 10,
+    "百合姫コミックス": 9,
     "Blade comics. Pixiv": 2,
-    "コミック百合姫": 23,
+    "コミック百合姫": 24,
     "GC NOVELS": 1,
     "ガレット": 4,
     "Bamboo comics": 8,
@@ -115,7 +115,7 @@
     "authors": 0.9929,
     "media_type": 1.0,
     "publisher_ja": 0.3093,
-    "serialization_status": 0.9894,
+    "serialization_status": 0.9906,
     "magazine_or_platform": 0.294,
     "sources": 1.0,
     "last_checked": 1.0
@@ -127,7 +127,7 @@
       "authors": 0.992,
       "media_type": 1.0,
       "publisher_ja": 0.2686,
-      "serialization_status": 0.988,
+      "serialization_status": 0.9894,
       "magazine_or_platform": 0.258,
       "sources": 1.0,
       "last_checked": 1.0
@@ -155,7 +155,7 @@
       "authors": 1.0,
       "media_type": 1.0,
       "publisher_ja": 0.9924,
-      "serialization_status": 0.9659,
+      "serialization_status": 0.9697,
       "magazine_or_platform": 0.9432,
       "sources": 1.0,
       "last_checked": 1.0
@@ -174,19 +174,19 @@
   },
   "extended_field_completeness": {
     "volume_count_ja": 0.3625,
-    "volume_count_zh_tw": 0.0224,
+    "volume_count_zh_tw": 0.0213,
     "start_date": 0.9622,
     "latest_chapter_label": 0.0035,
     "chapter_count": 0.8005,
-    "title_zh_tw": 0.0224,
-    "magazine_or_platform_active": 0.0413
+    "title_zh_tw": 0.0213,
+    "magazine_or_platform_active": 0.0425
   },
-  "works_with_zh_tw_volumes": 19,
-  "cross_language_linked": 15,
-  "works_created_from_tw_catalogue": 9,
+  "works_with_zh_tw_volumes": 18,
+  "cross_language_linked": 16,
+  "works_created_from_tw_catalogue": 8,
   "tw_records_without_original_title": 0,
-  "works_with_cover": 825,
-  "works_with_title_zh_tw": 19,
+  "works_with_cover": 824,
+  "works_with_title_zh_tw": 18,
   "works_with_title_zh_cn": 0,
   "anime_matched": 48,
   "works_with_anime": 48,
@@ -194,5 +194,5 @@
   "works_with_ja_volumes": 15,
   "merges": [],
   "schema_errors": [],
-  "raw_files": 947
+  "raw_files": 977
 }

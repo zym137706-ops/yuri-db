@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-23T01:24:23.427796+00:00",
-  "total": 303,
+  "generated_at": "2026-11-23T11:47:34.945370+00:00",
+  "total": 302,
   "by_format": {
-    "tv": 180,
+    "tv": 179,
     "movie": 35,
     "ova": 27,
     "ona": 24,
@@ -15,13 +15,13 @@
     "manga": 114,
     "original": 110,
     "other": 31,
-    "light_novel": 29,
+    "light_novel": 28,
     "game": 9,
     "unknown": 6,
     "visual_novel": 4
   },
   "by_status": {
-    "finished": 290,
+    "finished": 289,
     "announced": 10,
     "airing": 3
   },
@@ -45,7 +45,7 @@
     "2012": 11,
     "2011": 4,
     "2010": 8,
-    "2009": 13,
+    "2009": 12,
     "2008": 3,
     "2007": 6,
     "2006": 6,
@@ -65,10 +65,10 @@
     "1973": 1,
     "1940": 1
   },
-  "with_studio": 276,
-  "with_cast": 287,
-  "with_start_date": 299,
-  "with_cover": 303,
+  "with_studio": 275,
+  "with_cast": 286,
+  "with_start_date": 298,
+  "with_cover": 302,
   "announced_not_aired": 10,
   "movies": 35,
   "linked_works": 48,
@@ -78,7 +78,7 @@
   "dropped": {
     "adult": 401,
     "non_jp": 17,
-    "low_rank": 167,
+    "low_rank": 168,
     "no_title": 0
   }
 }

@@ -35,7 +35,7 @@
     "feed": "https://comic-action.com/rss",
     "robots": "ok (147 bytes)",
     "matched": 0,
-    "parsed": 20,
+    "parsed": 34,
     "http": 200,
     "error": ""
   },
@@ -44,7 +44,7 @@
     "status": "ok",
     "feed": "https://prtimes.jp/index.rdf",
     "robots": "ok (254 bytes)",
-    "matched": 0,
+    "matched": 1,
     "parsed": 200,
     "http": 200,
     "error": ""

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:05:00.184088+00:00",
+  "generated_at": "2026-11-28T11:21:23.528148+00:00",
   "source": "an_anilist",
   "matched_works": 48,
   "matches": [
@@ -79,6 +79,21 @@
       "adaptation_source": "manga"
     },
     {
+      "work_id": "c5c3ce4734bde4ea0f2c05fdf",
+      "work_slug": "w-5c3ce4734b",
+      "anilist_id": 186822,
+      "title_native": "気になってる人が男じゃなかった",
+      "status": "announced",
+      "our_status": "announced",
+      "format": "tv",
+      "episodes": null,
+      "broadcast_start": "2027-01-08",
+      "broadcast_end": null,
+      "studio": "CloverWorks",
+      "source_url": "https://anilist.co/anime/186822",
+      "adaptation_source": "manga"
+    },
+    {
       "work_id": "c1aff2edbd0ad70348fee7699",
       "work_slug": "w-7652541622",
       "anilist_id": 20604,
@@ -121,21 +136,6 @@
       "broadcast_end": "2026-09-29",
       "studio": "ROLL2",
       "source_url": "https://anilist.co/anime/187260",
-      "adaptation_source": "manga"
-    },
-    {
-      "work_id": "c5c3ce4734bde4ea0f2c05fdf",
-      "work_slug": "w-5c3ce4734b",
-      "anilist_id": 186822,
-      "title_native": "気になってる人が男じゃなかった",
-      "status": "announced",
-      "our_status": "announced",
-      "format": "tv",
-      "episodes": null,
-      "broadcast_start": "2027-01-08",
-      "broadcast_end": null,
-      "studio": "CloverWorks",
-      "source_url": "https://anilist.co/anime/186822",
       "adaptation_source": "manga"
     },
     {
